@@ -195,6 +195,7 @@
 .higher-lower-result-velho {
   background-image: radial-gradient(ellipse at 100% 0%, rgb(122 163 214 / 0.18), transparent 75%);
 }
+
 @media (max-height: 740px) and (max-width: 767px) {
   .higher-lower-result-score,
   .higher-lower-result-velho { gap: 0.75rem; padding: 1rem 1.25rem; }

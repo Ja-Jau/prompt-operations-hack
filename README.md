@@ -105,6 +105,21 @@ from the public Finnish filing index and Jobly listings rather than a fixed list
 Missing disclosures are excluded from play. `src/data/efficiency.json` supplies these
 metrics; `src/data/game_companies.json` supplies automatically discovered company metadata.
 
+## POV: You are the CEO
+
+A first-person boardroom game in the top navigation: sit at the head of the table while
+the COO presents live questions and choices on the projector. Five fictional business decisions, three choices
+per question, and a 20-second timer bar under the choices. Pick the process improvement
+before the clock runs out. Wrong answers and timeouts reveal the better move and let you
+continue. Each play shuffles the scenarios and answer positions. The result shows your
+score, personal best and a link to velho.io.
+
+Scenarios live in `src/lib/ceo/scenarios.ts`; timing and grading rules are in
+`src/lib/ceo/game.ts`. The timer starts when you select **Start the board meeting**. The fictional board-confidence
+meter responds to decisions, presenter captions explain outcomes, and the room gains a
+warning glow in the final ten seconds. The generated backdrop is stored locally at
+`public/images/ceo/boardroom.webp`; all questions and choices remain interactive HTML.
+
 ## How it gets Velho into the room
 
 | Step | What happens | Where in the code |

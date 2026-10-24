@@ -5,11 +5,12 @@ import Link from "next/link";
 import { VELHO_URL } from "@/lib/velho";
 import { Icon } from "@/components/ui/Icon";
 
-export type GameId = "case" | "higherLower";
+export type GameId = "case" | "higherLower" | "ceo";
 
 const GAMES: { id: GameId; label: string }[] = [
   { id: "case", label: "Who's hiring?" },
   { id: "higherLower", label: "Higher or lower" },
+  { id: "ceo", label: "POV: You are the CEO" },
 ];
 
 type Props = {
@@ -23,10 +24,10 @@ type Props = {
   onHelp?: () => void;
 };
 
-/** Navy header shared by both games: wordmark, game links, status, help and the way to Velho. */
+/** Shared navigation for all three games, with a second row on smaller screens. */
 export function TopBar({ game, onGameChange, status, controls, onHelp }: Props) {
   return (
-    <header className="sticky top-0 z-30 flex h-[60px] shrink-0 items-center gap-5 bg-navy px-4 text-ivory md:h-[72px] md:gap-8 md:px-8">
+    <header className="sticky top-0 z-30 flex min-h-[60px] shrink-0 flex-wrap items-center gap-x-4 gap-y-1 bg-navy px-3 py-2 text-ivory sm:px-4 lg:h-[72px] lg:flex-nowrap lg:gap-4 lg:px-6 lg:py-0 xl:gap-6">
       <div className="flex items-baseline gap-2">
         <Link
           href="/"
@@ -36,15 +37,16 @@ export function TopBar({ game, onGameChange, status, controls, onHelp }: Props) 
         >
           Tehokas
         </Link>
-        <span className="eyebrow hidden text-on-dark-2 lg:inline">by Velho</span>
+        <span className="eyebrow hidden text-on-dark-2 xl:inline">by Velho</span>
       </div>
 
-      <nav className="flex gap-4 md:gap-7">
+      <nav aria-label="Games" className="order-last flex w-full min-w-0 items-center gap-3 overflow-x-auto lg:order-none lg:w-auto lg:gap-4 xl:gap-5">
         {GAMES.map((g) => (
           <button
             key={g.id}
             onClick={() => onGameChange(g.id)}
-            className={`border-b py-1 text-[13px] transition md:text-[15px] ${
+            aria-current={game === g.id ? "page" : undefined}
+            className={`shrink-0 whitespace-nowrap border-b py-1.5 text-[11px] transition sm:text-[13px] lg:text-[14px] ${
               game === g.id ? "border-sky text-ivory" : "border-transparent text-on-dark hover:text-ivory"
             }`}
           >
@@ -54,7 +56,7 @@ export function TopBar({ game, onGameChange, status, controls, onHelp }: Props) 
       </nav>
 
       <div className="ml-auto flex items-center gap-3">
-        {status && <div className="hidden font-mono text-xs text-on-dark md:block">{status}</div>}
+        {status && <div className="hidden whitespace-nowrap font-mono text-xs text-on-dark xl:block">{status}</div>}
         {controls}
         {onHelp && (
           <button
