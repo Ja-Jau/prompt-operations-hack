@@ -134,11 +134,11 @@ def main() -> None:
             continue
 
         manual_ads = [ad for ad in ads if ad["describesManualWork"] and ad["quote"]]
-        example = manual_ads[0] if manual_ads else None
         results[company_id] = {
             "checked": len(ads),
             "manual": len(manual_ads),
-            "example": {"title": example["title"], "quote": example["quote"], "url": example["url"]} if example else None,
+            # Every manual-work quote: the daily case reveals them one by one as clues.
+            "ads": [{"title": ad["title"], "quote": ad["quote"], "url": ad["url"]} for ad in manual_ads],
             "source": "Open job ads read by Claude",
             "fetchedAt": date.today().isoformat(),
         }

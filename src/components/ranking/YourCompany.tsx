@@ -6,8 +6,8 @@ import { formatEur } from "@/lib/format";
 import { revenuePerEmployee } from "@/lib/game/rules";
 import { placeOnLadder } from "@/lib/ranking";
 import { CompanyLogo } from "@/components/game/CompanyLogo";
-
-const VELHO_URL = process.env.NEXT_PUBLIC_VELHO_URL ?? "#";
+import { VELHO_URL } from "@/lib/velho";
+import { Icon } from "@/components/ui/Icon";
 
 type State =
   | { status: "idle" }
@@ -32,22 +32,24 @@ function fromDataset(c: Company): LookupResult {
 function LadderRow({ company, rpe, highlight }: { company: Company | null; rpe: number; highlight?: string }) {
   return (
     <div
-      className={`flex items-center gap-3 rounded-xl px-3 py-2 ${highlight ? "bg-amber-300 text-neutral-900" : "bg-white/5"}`}
+      className={`flex items-center gap-3 rounded-[9px] px-3 py-2 ${
+        highlight ? "bg-navy text-ivory" : "border border-sand-2 bg-white text-ink"
+      }`}
     >
       {company ? (
-        <CompanyLogo company={company} className="h-8 w-8 rounded-lg p-1" />
+        <CompanyLogo company={company} className="h-8 w-8 rounded-[7px] p-1" />
       ) : (
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-900 text-[10px] font-black text-amber-300">
-          YOU
-        </div>
+        <span className="eyebrow flex h-8 w-8 items-center justify-center rounded-[7px] bg-sky/20 text-[10px] text-sky">
+          You
+        </span>
       )}
-      <span className="flex-1 truncate text-left font-semibold">{highlight ?? company?.name}</span>
-      <span className="tabular-nums">{formatEur(rpe)}</span>
+      <span className="flex-1 truncate font-medium">{highlight ?? company?.name}</span>
+      <span className="font-mono text-sm tabular-nums">{formatEur(rpe)}</span>
     </div>
   );
 }
 
-/** "Where does YOUR company rank?": type a name, get placed on the ladder of real companies. */
+/** "What would Velho find in yours?": type a name, get placed on the ladder of real companies. */
 export function YourCompany({ companies }: { companies: Company[] }) {
   const [name, setName] = useState("");
   const [state, setState] = useState<State>({ status: "idle" });
@@ -81,15 +83,12 @@ export function YourCompany({ companies }: { companies: Company[] }) {
   };
 
   return (
-    <section className="w-full rounded-3xl border border-white/10 bg-white/5 p-5">
-      <h3 className="text-xl font-bold">Where does your company rank?</h3>
-      <p className="mt-1 text-sm text-white/60">Just type the name. Velho looks up the numbers.</p>
-
-      <form onSubmit={submit} className="mt-4 flex gap-2">
+    <section className="card w-full p-6 text-ink">
+      <form onSubmit={submit} className="flex gap-2">
         <input
           list="tehokas-companies"
-          className="min-w-0 flex-1 rounded-xl border border-white/15 bg-white/5 px-4 py-3 outline-none focus:border-amber-300"
-          placeholder="e.g. Paulig"
+          className="min-w-0 flex-1 rounded-[9px] border border-sand-2 bg-white px-4 py-3 outline-none transition placeholder:text-ink-3 focus:border-navy-3"
+          placeholder="Your company, e.g. Paulig"
           value={name}
           onChange={(e) => setName(e.target.value)}
           maxLength={80}
@@ -99,26 +98,22 @@ export function YourCompany({ companies }: { companies: Company[] }) {
             <option key={c.id} value={c.name} />
           ))}
         </datalist>
-        <button
-          type="submit"
-          disabled={state.status === "loading"}
-          className="rounded-xl bg-amber-300 px-5 font-semibold text-neutral-900 hover:bg-amber-200 disabled:opacity-50"
-        >
-          Rank it
+        <button type="submit" disabled={state.status === "loading"} className="btn btn-dark">
+          Look up
         </button>
       </form>
 
       {state.status === "loading" && (
-        <p className="mt-4 animate-pulse text-sm text-white/70">
-          ⚡ Velho is looking up {state.name}&apos;s latest figures… (about 20 seconds)
+        <p className="mt-4 animate-pulse text-sm text-ink-2">
+          Velho is looking up {state.name}&apos;s latest public figures. This takes about 20 seconds.
         </p>
       )}
       {state.status === "not-found" && (
-        <p className="mt-4 text-sm text-white/70">
+        <p className="mt-4 text-sm text-ink-2">
           Couldn&apos;t find reliable public figures for {state.name}. Try the full company name.
         </p>
       )}
-      {state.status === "error" && <p className="mt-4 text-sm text-rose-300">{state.message}</p>}
+      {state.status === "error" && <p className="mt-4 text-sm text-clay">{state.message}</p>}
       {state.status === "found" && <Placement companies={companies} result={state.result} datasetId={state.datasetId} />}
     </section>
   );
@@ -129,32 +124,29 @@ function Placement({ companies, result, datasetId }: { companies: Company[]; res
   const place = placeOnLadder(companies, rpe, datasetId);
 
   return (
-    <div className="mt-4 space-y-3">
-      <p>
-        <strong>{result.name}</strong> is <strong className="text-amber-300">#{place.rank}</strong> of {place.total}
+    <div className="animate-rise mt-6 space-y-4">
+      <p className="eyebrow text-sage-d">
+        Rank {place.rank} of {place.total} on revenue per employee
       </p>
       <div className="space-y-1.5 text-sm">
         {place.above && <LadderRow company={place.above} rpe={revenuePerEmployee(place.above)} />}
         <LadderRow company={null} rpe={rpe} highlight={result.name} />
         {place.below && <LadderRow company={place.below} rpe={revenuePerEmployee(place.below)} />}
       </div>
-      <p className="text-sm text-white/80">
+      <p className="text-[15px] text-ink-2">
         {place.above ? (
           <>
-            To overtake <strong>{place.above.name}</strong>: free up about{" "}
-            <strong className="text-amber-300">{place.hoursToOvertake.toFixed(1)} h per person per week</strong>.
+            To overtake <strong className="text-ink">{place.above.name}</strong>, free up about{" "}
+            <strong className="text-ink">{place.hoursToOvertake.toFixed(1)} hours per person per week</strong>.
           </>
         ) : (
-          <>Top of the board. Velho helps companies stay there.</>
+          <>Top of the list. Velho helps companies stay there.</>
         )}
       </p>
-      <a
-        href={VELHO_URL}
-        className="inline-block rounded-full bg-amber-300 px-5 py-2.5 font-semibold text-neutral-900 hover:bg-amber-200"
-      >
-        Find those hours with Velho →
+      <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-dark">
+        Find those hours with Velho <Icon name="arrowRight" />
       </a>
-      <p className="text-[11px] text-white/40">
+      <p className="text-[11px] text-ink-3">
         {result.origin === "ai" ? "Figures found by AI from public sources and may be off. " : ""}
         FY{result.fiscalYear}: €{result.revenueEurM.toLocaleString("en")}M, {result.employees.toLocaleString("en")}{" "}
         employees.{" "}

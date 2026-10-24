@@ -1,13 +1,13 @@
-import { Game } from "@/components/game/Game";
-import { getCompanies } from "@/lib/data/companies";
+import { AppShell } from "@/components/layout/AppShell";
+import { getCompanies, getHiringCompanies } from "@/lib/data/companies";
 
 export default async function Home() {
   const companies = await getCompanies();
-  const unverifiedCount = companies.filter((c) => !c.verified).length;
+  const hiring = await getHiringCompanies();
 
   return (
     <main className="flex h-dvh flex-col overflow-hidden">
-      <Game companies={companies} unverifiedCount={unverifiedCount} />
+      <AppShell companies={companies} hiring={hiring} />
     </main>
   );
 }

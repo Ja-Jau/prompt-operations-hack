@@ -1,0 +1,309 @@
+{
+  "_about": "Quotes selected by Claude from velho-game-data/data/jobs_raw.json: sentences that describe routine work software could take over. Every quote must appear verbatim in the ad with that job id (pipeline/import_jobs.py checks this; '…' marks a trimmed sentence). velhoCase is Velho's take for companies that become daily cases.",
+  "companies": {
+    "Sandvik": {
+      "quotes": [
+        { "job": "71e8709905c1", "quote": "Receiving and processing customer orders for mining and tunnelling equipment and components, including validating the commercial and technical information of orders and ensuring accurate order handling throughout the process." },
+        { "job": "71e8709905c1", "quote": "Preparing export documentation and invoices in compliance with prevailing laws and regulations." }
+      ],
+      "velhoCase": {
+        "analystHint": "Every incoming order is checked by a person against commercial and technical data, then turned into export papers.",
+        "fixOptions": ["Validate incoming orders automatically", "Hire a third order coordinator", "Move the order desk to a new office"],
+        "correctIndex": 0,
+        "fixReasoning": "Order validation follows rules the team already knows. Checking standard orders automatically leaves people only the unusual ones, and the export documents can be drafted from the same data.",
+        "adoptNote": "Let the order desk review every drafted order for two weeks, then only the flagged ones.",
+        "serviceArea": "Quotes and order intake"
+      }
+    },
+    "Nostokonepalvelu Oy": {
+      "quotes": [
+        { "job": "099d7a3987ea", "quote": "Tehtäviisi kuuluu monipuoliset back office -tehtävät kuten moniyritysten laskutus, asiakkaiden perustaminen järjestelmiin, sisäinen laskutus, kustannusjaot ja HR-rekisterin ylläpito käyttäen yrityksen ERP-järjestelmää ja Heeros-ohjelmistoa." },
+        { "job": "1aad271a4b24", "quote": "Lisäksi huolehdit nosto- ja kuljetustapahtumien laskutustietojen oikeellisuudesta toiminnanohjausjärjestelmässä." },
+        { "job": "1aad271a4b24", "quote": "Ajojärjestelijänä vastaat nostureiden, kuljetusten ja henkilöstöresurssien päivittäisestä suunnittelusta ja järjestelystä." }
+      ],
+      "velhoCase": {
+        "analystHint": "Billing data is checked by the dispatcher and then invoiced again by the office, across several companies.",
+        "fixOptions": ["Generate invoices straight from completed jobs", "Add a second invoicing day each month", "Buy a new ERP first"],
+        "correctIndex": 0,
+        "fixReasoning": "The dispatcher already records every lift and transport. Turning those records into invoices removes the double handling and the corrections that come with it.",
+        "adoptNote": "Start with one company's billing and let the office approve each batch before it goes out.",
+        "serviceArea": "Scheduling and dispatch"
+      }
+    },
+    "ABB Robotics Finland Oy": {
+      "quotes": [
+        { "job": "63e0d0002bb7", "quote": "Tehtäviin kuuluu markkinoinnin tuottamien liidien käsittely, asiakaskontaktit puhelimitse, sähköpostilla ja virtuaalisesti sekä myyntiprosessin tukeminen ja Salesforce-tietojen ylläpito." },
+        { "job": "63e0d0002bb7", "quote": "ylläpidät asiakastietoja Salesforce-järjestelmässä" }
+      ],
+      "velhoCase": {
+        "analystHint": "A sales role where a big part of the job is keeping the CRM up to date by hand.",
+        "fixOptions": ["Log calls and emails to Salesforce automatically", "Run more marketing campaigns", "Hire a CRM administrator"],
+        "correctIndex": 0,
+        "fixReasoning": "Every call and email is already a record. Capturing them automatically keeps Salesforce current and gives the specialist the time back for actual selling.",
+        "adoptNote": "Show the specialist a ready draft of each update to accept, so the CRM stays theirs.",
+        "serviceArea": "Customer follow-up"
+      }
+    },
+    "St1 Oy": {
+      "quotes": [
+        { "job": "63af9060a644", "quote": "Are you a Senior Finance Data Analyst who sees opportunities where others see manual work?" },
+        { "job": "63af9060a644", "quote": "Identify repetitive, manual and insight-intensive Finance activities where automation, AI or analytics can create meaningful value." },
+        { "job": "63af9060a644", "quote": "Your mission is to convert those foundations into practical solutions that reduce manual work, accelerate insight and help Finance teams make better decisions." }
+      ],
+      "velhoCase": {
+        "analystHint": "They are hiring one person to find and remove manual work across the whole Finance team.",
+        "fixOptions": ["Map Finance's manual work and fix the biggest first", "Wait until the new hire has started", "Buy an analytics licence for everyone"],
+        "correctIndex": 0,
+        "fixReasoning": "They already know the manual work is there. Mapping it across the team and shipping the first fix quickly gives the new analyst a running start instead of a blank page.",
+        "adoptNote": "Pair the fixes with the new analyst so they own them after launch.",
+        "serviceArea": "Management reporting"
+      }
+    },
+    "Workpower Oy": {
+      "quotes": [
+        { "job": "7403029f91dc", "quote": "Lisäksi osallistut saapuvan tavaran vastaanottoon ja varaston ylläpitoon sekä kirjaat tilaukset ja toimitukset toiminnanohjausjärjestelmään." },
+        { "job": "9b8b23724370", "quote": "Työtehtäviisi kuuluvat ostotilausten tekeminen ERP-järjestelmässä, tilausvahvistusten käsittely, toimitusaikojen seuranta sekä mahdollisten poikkeamien selvittäminen." },
+        { "job": "ce33d0bbdd83", "quote": "Työtehtäviisi kuuluvat kuukausikirjanpito, pankkiaineistojen käsittely, tilinpäätösten laatiminen, arvonlisäveroasiat sekä laskutukseen liittyvät tehtävät." }
+      ],
+      "velhoCase": {
+        "analystHint": "They recruit for many client companies, and order confirmations keep being typed into ERPs.",
+        "fixOptions": ["Read order confirmations straight into the ERP", "Recruit faster for the same roles", "Print the purchase orders"],
+        "correctIndex": 0,
+        "fixReasoning": "Purchase orders and confirmations follow a fixed pattern. Matching confirmations to orders automatically leaves buyers only the exceptions and the supplier conversations.",
+        "adoptNote": "Flag mismatches in the buyer's existing inbox rather than in a new tool.",
+        "serviceArea": "Quotes and order intake"
+      }
+    },
+    "Lassila & Tikanoja Oyj": {
+      "quotes": [
+        { "job": "87e15be1a091", "quote": "Työ pitää sisällään kuormalavojen lajittelua, jota tehdään sekä käsin että koneellisesti, sekä lastaus- ja lastinpurkutyötä, jota tapahtuu trukilla." },
+        { "job": "cdec7712b71c", "quote": "Tehtäviin kuuluu kuukausiraportointi, ennusteiden ja budjettien laatiminen ja seuranta, kannattavuusanalyysit sekä johdon taloudellinen sparraus." }
+      ],
+      "velhoCase": {
+        "analystHint": "Manual work in two places: pallets sorted by hand at the plant, and monthly reports built in finance.",
+        "fixOptions": ["Machine vision to sort pallets", "Another shift at the sorting line", "Bigger forklifts"],
+        "correctIndex": 0,
+        "fixReasoning": "Sorting pallets by hand is physical, repetitive and easy to measure. Cameras can grade pallets as they arrive, so people handle only the damaged ones.",
+        "adoptNote": "Pilot on one line with the people who sort today, and measure their time before and after.",
+        "serviceArea": "Robotics and physical automation"
+      }
+    },
+    "Destia Oy": {
+      "quotes": [
+        { "job": "fe8f5f9de620", "quote": "Tehtävä sisältää aikataulujen laadinnan ja seurannan, määrähallinnan ja raportoinnin, talouden seurannan, lisä- ja muutostöiden hallinnan sekä viranomaisyhteistyön." },
+        { "job": "9b78bd3fa2f1", "quote": "määrien, kustannusten ja toteuman seuranta sekä poikkeamien analysointi" },
+        { "job": "9b78bd3fa2f1", "quote": "aliurakoitsijoiden ja toimittajien sopimusten, kustannusten ja laskutuksen seuranta" }
+      ],
+      "velhoCase": {
+        "analystHint": "Several site roles spend their week tracking quantities, costs and subcontractor invoices.",
+        "fixOptions": ["One live cost view per project", "A weekly cost meeting per site", "More site engineers"],
+        "correctIndex": 0,
+        "fixReasoning": "The figures already exist in contracts, invoices and quantity records. Pulling them into one current view per project replaces the tracking work and flags overruns early.",
+        "adoptNote": "Build it with one project team first and use their weekly report as the test.",
+        "serviceArea": "Management reporting"
+      }
+    },
+    "Valmet": {
+      "quotes": [
+        { "job": "acb040f37a4a", "quote": "Partner with Finance Development and relevant process owners to identify and define AI-enabled improvements to reporting and planning controls, validation and reconciliation, and support their implementation." },
+        { "job": "fb6027d303d0", "quote": "Planning/coordinating/administrating service jobs globally by using our extensive service network." }
+      ],
+      "velhoCase": {
+        "analystHint": "Finance wants AI in reconciliation, and service jobs worldwide are coordinated by hand.",
+        "fixOptions": ["Schedule routine service jobs automatically", "Add regional coordinators", "Standardise the travel policy"],
+        "correctIndex": 0,
+        "fixReasoning": "Matching technicians, locations and job needs is routine for most service jobs. Scheduling those automatically lets coordinators focus on the urgent and unusual ones.",
+        "adoptNote": "Coordinators approve each proposed schedule until the suggestions are right most of the time.",
+        "serviceArea": "Scheduling and dispatch"
+      }
+    },
+    "Greenstep Oy": {
+      "quotes": [
+        { "job": "9b8a766c3f1c", "quote": "…asiakasdatan raportointi ja oikeellisuuden varmistaminen, asiakastyytyvyyskyselyjen ja exit-prosessin back office -tehtävät sekä sisäisten sidosryhmien tukeminen." },
+        { "job": "f2a55ce0feec", "quote": "Työnkuvasi sisältää kuukausikirjanpitoa, tilinpäätösten sekä veroilmoitusten tekoa ja raportointia, mutta myös asiakkaidemme konsultointia ja heidän taloushallinnon prosessiensa ohjaamista tehokkaammiksi." }
+      ],
+      "velhoCase": {
+        "analystHint": "Customer data is reported and checked by hand, next to monthly bookkeeping.",
+        "fixOptions": ["Check customer data quality automatically", "Survey customers more often", "Hire a data assistant"],
+        "correctIndex": 0,
+        "fixReasoning": "Checking that customer data is correct is rule-based. Flagging errors automatically frees the assistant for the customer conversations that need a person.",
+        "adoptNote": "Show flagged records in the CRM the team already uses.",
+        "serviceArea": "Customer follow-up"
+      }
+    },
+    "HUS": {
+      "quotes": [
+        { "job": "56e1ad6566ba", "quote": "Työhösi kuuluu potilaiden sisään- ja uloskirjaukset, ajanvaraukset ja tutkimustilaukset, asiakirjojen käsittely, läheteliikenne sekä monikanavainen asiakaspalvelu…" },
+        { "job": "0d9702fe5a42", "quote": "Palveluvastaavana vastaat päivittäisestä operatiivisesta työnjohtamisesta, tilauksista, kassatyöskentelystä, osastoyhteistyöstä ja työntekijöiden perehdyttämisestä." }
+      ],
+      "velhoCase": {
+        "analystHint": "Ward secretaries handle check-ins, bookings, test orders and referrals across channels.",
+        "fixOptions": ["Draft test orders and referrals from the record", "Open a new booking phone line", "Extend reception hours"],
+        "correctIndex": 0,
+        "fixReasoning": "Test orders and referrals repeat information already in the patient record. Drafting them automatically gives secretaries time for patients instead of forms.",
+        "adoptNote": "Secretaries confirm every draft, so responsibility stays where it is today.",
+        "serviceArea": "Quotes and order intake"
+      }
+    },
+    "Terveystalo": {
+      "quotes": [
+        { "job": "b856452957c1", "quote": "Työsi vahvistaa HR-palveluiden tehokkuutta, laatua ja skaalautuvuutta sekä vähentää manuaalista työtä." },
+        { "job": "b856452957c1", "quote": "Selvität häiriöitä ja havaittuja poikkeamia, koordinoit korjauksia sekä huolehdit siitä, että prosessit toimivat ja tieto liikkuu järjestelmien välillä laadukkaasti." }
+      ],
+      "velhoCase": {
+        "analystHint": "They are hiring to make information move between HR systems without people carrying it.",
+        "fixOptions": ["Sync HR data between systems automatically", "Add an HR helpdesk", "Replace every HR system"],
+        "correctIndex": 0,
+        "fixReasoning": "When data has to be fixed between systems, people end up re-entering it. Syncing the systems removes the re-entry and most of the errors behind the incidents.",
+        "adoptNote": "Start with the integration that causes the most tickets and track tickets before and after.",
+        "serviceArea": "Management reporting"
+      }
+    },
+    "CSC – Tieteen tietotekniikan keskus Oy": {
+      "quotes": [
+        { "job": "40f61524f73d", "quote": "palkka-aineiston tuottaminen ulkoistettuun palkanlaskentaan" },
+        { "job": "40f61524f73d", "quote": "palkanlaskenta-aineiston tuottamisen automatisointi, HR-järjestelmien ja datanhallinnan parantaminen)" }
+      ],
+      "velhoCase": {
+        "analystHint": "Payroll input for an outsourced provider is still produced in-house, and they want it automated.",
+        "fixOptions": ["Generate payroll input straight from HR data", "Switch payroll provider", "Monthly payroll meetings"],
+        "correctIndex": 0,
+        "fixReasoning": "The payroll file is built from data HR already holds. Generating it automatically turns a monthly task into a quick review.",
+        "adoptNote": "Run the automated file next to the manual one for two pay cycles before switching.",
+        "serviceArea": "Management reporting"
+      }
+    },
+    "Lapland Hotels": {
+      "quotes": [
+        { "job": "dbe9b919beb0", "quote": "Työhön kuuluvat vastaanoton perusasiakaspalvelutehtävät, tulo- ja lähtöselvitykset sekä yövuoron raportointi-, laskutus-, seuraavan päivän valmistelu-, varausten tarkistus-, yleisten tilojen siivous-, aulabaarin anniskelu- ja kokousvalmistelutehtävät." },
+        { "job": "dbe9b919beb0", "quote": "erilaiset raportointi- ja laskutustehtävät." }
+      ],
+      "velhoCase": {
+        "analystHint": "The night receptionist does reporting, billing and booking checks between serving guests.",
+        "fixOptions": ["Build the night report and booking checks automatically", "Add a second night receptionist", "Close reception at night"],
+        "correctIndex": 0,
+        "fixReasoning": "Night reports and booking checks pull from the same hotel system every night. Automating them leaves the receptionist free for guests.",
+        "adoptNote": "Let one hotel's night team shape the report before rolling it out to others.",
+        "serviceArea": "Management reporting"
+      }
+    },
+    "Uggla Engineering Oy": {
+      "quotes": [
+        { "job": "d4e2e113ce10", "quote": "Päivittäisiin tehtäviisi kuuluu tiedon kerääminen työmaalta, projektinjohdolta ja urakoitsijoilta, aikataulujen päivittäminen sekä eri työvaiheiden yhteensovittaminen." },
+        { "job": "d4e2e113ce10", "quote": "Seuraat projektin etenemistä suhteessa tavoitteisiin, tunnistat mahdollisia aikatauluriskejä ja tuotat raportteja projektiorganisaation tueksi." }
+      ],
+      "velhoCase": {
+        "analystHint": "A planner's day starts by collecting updates from the site, management and contractors.",
+        "fixOptions": ["Collect site updates in one flow", "Daily stand-up at the site", "A bigger planning team"],
+        "correctIndex": 0,
+        "fixReasoning": "Updates arrive by phone, email and site visits. Collecting them in one flow updates the schedule as they come in and leaves the planner time to spot risks.",
+        "adoptNote": "Make reporting from site take one minute on a phone, or it won't happen.",
+        "serviceArea": "Field reporting"
+      }
+    },
+    "Broman Group Oy": {
+      "quotes": [
+        { "job": "8b93a71c40cf", "quote": "Selvität ja kokoat tarvittavia vastuullisuustietoja yhdessä hankinnan ja toimittajien kanssa sekä huolehdit dokumentaatiosta ja tietojen tallentamisen koordinoinnista." },
+        { "job": "3cd701c75221", "quote": "Huolehdit tuotedatan laadusta ja ylläpidosta sekä teet yhteistyötä markkinoinnin ja muiden sisäisten sidosryhmien kanssa." }
+      ],
+      "velhoCase": {
+        "analystHint": "Sustainability data from suppliers is chased and filed by hand, and product data is maintained the same way.",
+        "fixOptions": ["Collect supplier sustainability data automatically", "Send suppliers a yearly survey", "Hire a reporting consultant"],
+        "correctIndex": 0,
+        "fixReasoning": "CBAM and EUDR reporting needs the same supplier data every period. Collecting and checking it automatically turns a recurring chase into a review.",
+        "adoptNote": "Start with the largest suppliers and keep the purchasing team as the contact point.",
+        "serviceArea": "Management reporting"
+      }
+    },
+    "Biolin Scientific Oy": {
+      "quotes": [
+        { "job": "167af50398ce", "quote": "Tehtäviisi kuuluu materiaalien keräys, kokoonpano, testaus, poikkeamien kirjaus, pakkaus ja ERP-järjestelmän päivittäinen käyttö." },
+        { "job": "167af50398ce", "quote": "Tehtäviisi kuuluvat myös tuotteiden pakkaaminen ja kirjaaminen lähetystä varten, ja ERP-järjestelmä on päivittäinen työkalusi." }
+      ],
+      "velhoCase": {
+        "analystHint": "Production staff log deviations and shipments into the ERP between assembly and testing.",
+        "fixOptions": ["Log deviations and shipments at the bench", "Add an end-of-day ERP session", "Hire a production clerk"],
+        "correctIndex": 0,
+        "fixReasoning": "Every logged deviation or shipment interrupts production work. Capturing it at the bench, with a scan or a photo, keeps the record without the trip to the ERP.",
+        "adoptNote": "Design it with the people at the bench and keep it to one tap per entry.",
+        "serviceArea": "Field reporting"
+      }
+    },
+    "UPM": {
+      "quotes": [
+        { "job": "ba5ae426bfff", "quote": "You will contribute to payroll and time management transformation projects, coordinate with external providers and internal stakeholders, perform pre- and post-payroll reconciliations, and ensure legal and tax compliance." }
+      ]
+    },
+    "KONE": {
+      "quotes": [
+        { "job": "fda5f3e35707", "quote": "Acting as the key interface towards the outsourced payroll provider, the role ensures accurate payroll execution, data integrity, compliance and efficient people administration throughout the employee lifecycle." }
+      ]
+    },
+    "Olvi Oyj": {
+      "quotes": [
+        { "job": "e8d6554f9abf", "quote": "We are looking for someone who is motivated to develop data-driven decision-making and build solutions where data, analytics and automation help reduce manual work, including through the use of AI." }
+      ]
+    },
+    "KPMG": {
+      "quotes": [
+        { "job": "074d478ab151", "quote": "Toimit tärkeänä apuna tarkastusraporttien ja muiden asiakirjojen ja esitysten stilisoinnissa, CRM-asiakasrekisterin ylläpitämisessä sekä sisäisissä riskienhallinnan prosesseissamme" }
+      ]
+    },
+    "Securitas Oy": {
+      "quotes": [
+        { "job": "f58733a574a8", "quote": "Päivittäisessä työssäsi hoidat työvuoro- ja poissaolojärjestelyt sekä toimit tiiviissä yhteistyössä sisäisten sidosryhmien kanssa." }
+      ]
+    },
+    "Casemet Oy": {
+      "quotes": [
+        { "job": "2f052dacbd55", "quote": "Tehtäviisi kuuluu muun muassa ostotilausten ja tilausvahvistusten käsittelyä, toimitusten ja hankintaan liittyvien poikkeamien seurantaa, toimittajien kartoittamista sekä kaupallisiin neuvotteluihin osallistumista." }
+      ]
+    },
+    "Amerplast Oy": {
+      "quotes": [
+        { "job": "c7fc7326bbe5", "quote": "Vastuullesi kuuluu palkka-aineistojen valmistelu ja yhteistyö ulkoistetun palkanlaskennan kumppanin kanssa." }
+      ]
+    },
+    "Wihanto Oy": {
+      "quotes": [
+        { "job": "3a3fbd0640e6", "quote": "Kirjanpitäjänä vastaat itsenäisesti pienen konsernin koko taloushallinnosta, mukaan lukien kuukausikirjanpito, osto- ja myyntireskontra, laskujen tiliöinti ja maksuliikenne sekä vuokrien laskutus." }
+      ]
+    },
+    "Akaan Vuokra-asunnot Oy": {
+      "quotes": [
+        { "job": "2051cc0145fd", "quote": "Tehtäviisi kuuluu kirjanpito, tilinpäätösten ja veroilmoitusten laatiminen, palkanlaskenta, ostoreskontra sekä vuokravalvonta ja perintätoimet maksukehotuksista ulosottoon saakka." }
+      ]
+    },
+    "Kaskea Group": {
+      "quotes": [
+        { "job": "8181b1177930", "quote": "Laadit tuoterakenteita ja työvaihetietoja ERP-järjestelmään sekä pidät yhteyttä asiakkaisiin puhelimitse ja sähköpostitse." }
+      ]
+    },
+    "Compass Group Finland Oy": {
+      "quotes": [
+        { "job": "651b2ed873bc", "quote": "Vastaat koko toimipaikan keittiötoiminnoista ja toimit esihenkilönä, eli vastaat ruoanvalmistuksesta, tilausten tekemisestä, laskutuksesta, omavalvonnasta, hävikin hallinnasta sekä asiakaspalvelusta." }
+      ]
+    },
+    "NTG Air & Ocean Oy": {
+      "quotes": [{ "job": "cf7bd260733d", "quote": "Lähetyksien laskutus ja kuluseuranta" }]
+    },
+    "Helsinki Shipyard": {
+      "quotes": [
+        { "job": "83d413dfd4d0", "quote": "Dokumenttien arkistointi sekä loppudokumentaation kokoaminen projektien luovutusvaiheessa" }
+      ]
+    },
+    "Heimondo Finland Oy": {
+      "quotes": [
+        { "job": "29db974ec0f1", "quote": "Laadit maksusopimuksia ja maksusuunnitelmia, seuraat niiden toteutumista ja reagoit maksuviiveisiin." }
+      ]
+    },
+    "Mentek Advisors Oy": {
+      "quotes": [{ "job": "8a984758616a", "quote": "Ostolaskujen tarkastaminen" }]
+    },
+    "Tilitoimisto Taloushotelli Oy": {
+      "quotes": [
+        { "job": "c8b8d30d2c8f", "quote": "Perinteisten tilitoimistojen paperinpyörittely tuskin jatkuu enää kovin pitkään." }
+      ]
+    }
+  }
+}
