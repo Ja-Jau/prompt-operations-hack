@@ -1,15 +1,121 @@
 @import "tailwindcss";
 
-:root {
-  --background: #0d1117;
-  --foreground: #f5f5f4;
+/* Velho's palette (velho.io): cream pages, navy ink, sand surfaces, sky/clay accents. */
+@theme inline {
+  --color-cream: #fbfaf6;
+  --color-ivory: #fffaf1;
+  --color-sand: #f4f1ea;
+  --color-sand-2: #e7e1d3;
+  --color-ink: #0a1b34;
+  --color-ink-2: #465266;
+  --color-ink-3: #6b7383;
+  --color-navy: #0a1b34;
+  --color-navy-2: #13274a;
+  --color-navy-3: #3b5379;
+  --color-sky: #7aa3d6;
+  --color-clay: #a0533c;
+  --color-sage: #7c8768;
+  --color-sage-d: #5e6a4c;
+  --color-line-dark: rgb(255 250 241 / 0.16);
+  --color-on-dark: rgb(255 250 241 / 0.84);
+  --color-on-dark-2: rgb(255 250 241 / 0.68);
+  --font-sans: var(--font-geist-sans), -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, var(--font-geist-mono), monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+  }
+}
+
+@layer components {
+  /* Small monospace label above headings, as on velho.io */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 15.5px;
+    line-height: 1;
+    padding: 15px 22px;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    transition:
+      transform 0.15s ease,
+      background-color 0.15s ease,
+      border-color 0.15s ease;
+  }
+  .btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
+  .btn:disabled {
+    cursor: default;
+    opacity: 0.45;
+  }
+  .btn-sm {
+    font-size: 14px;
+    padding: 11px 16px;
+  }
+  .btn-dark {
+    background: var(--color-navy);
+    color: var(--color-ivory);
+  }
+  .btn-dark:hover:not(:disabled) {
+    background: var(--color-navy-2);
+  }
+  .btn-light {
+    background: var(--color-ivory);
+    color: var(--color-navy);
+  }
+  .btn-light:hover:not(:disabled) {
+    background: #fff;
+  }
+  .btn-line {
+    background: #fff;
+    color: var(--color-navy);
+    border-color: var(--color-sand-2);
+  }
+  .btn-line:hover:not(:disabled) {
+    border-color: var(--color-navy-3);
+  }
+  .btn-line-dark {
+    background: transparent;
+    color: var(--color-ivory);
+    border-color: var(--color-line-dark);
+  }
+  .btn-line-dark:hover:not(:disabled) {
+    border-color: var(--color-on-dark-2);
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--color-sand-2);
+    border-radius: 14px;
+  }
 }
 
 @keyframes panel-in {
@@ -28,7 +134,7 @@
     transform: scale(0.6);
   }
   60% {
-    transform: scale(1.15);
+    transform: scale(1.12);
   }
   100% {
     transform: scale(1);
@@ -64,12 +170,4 @@
   .animate-rise {
     animation: none;
   }
-}
-
-body {
-  background:
-    radial-gradient(1200px 600px at 50% -10%, rgb(252 211 77 / 0.08), transparent),
-    var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
 }

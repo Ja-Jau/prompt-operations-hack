@@ -1,54 +1,44 @@
 # Tehokas
 
-**Which Finnish company earns more per employee?** A daily higher/lower game built for the
-Velho challenge at the Prompt Operations Hackathon (Startup Sauna, 24–25 Oct 2026).
+**Finnish companies advertise their manual work in public job ads. Velho reads them every
+day and turns them into a game people share, and a list of companies to talk to, each with
+proof.** Built for the Velho challenge at the Prompt Operations Hackathon (Startup Sauna,
+24–25 Oct 2026).
 
-Two real Finnish companies appear side by side. You guess whether the second one earns
-**more or less revenue per employee** than the first. The number rolls up, you see *why*
-(the business model behind it), and the next company slides in.
+## The games
 
-## Why this is marketing for Velho, without looking like marketing
+### 🕵️ Who's hiring for this? (main, daily)
+Every day there's one real Finnish company. You see a **verbatim quote from one of its open
+job ads** describing manual work (company names hidden) and guess who it is. Each wrong
+guess unlocks a new clue (another quote, the industry, the size, a blurred logo) and shows
+how close you were: 🏭 same industry, 👥 more/fewer employees, 💶 more/less revenue per
+employee. 6 guesses.
 
-Velho's problem is getting **seen** by the right people (CEOs, CFOs, COOs and heads of
-operations at established companies) without cold outreach.
+The reveal is Velho's moment:
+- **"4 of 9 of their open job ads describe work AI could take over"**, with every quote linked to its ad
+- **⚡ Think like Velho:** what should they automate first? Velho's answer and reasoning
+- **Making it stick:** how Velho would get the people doing this work to adopt the fix
+- **What would Velho find in your company?** Type a name, get placed on the ladder
 
-- **Revenue per employee is Velho's number.** Velho frees up people's time from manual work,
-  which is exactly what raises this metric. Every reveal makes that point without an ad.
-- **Real companies spread the game.** When Kone or Fazer shows up, their employees and their
+```
+Who's hiring for this? #3 🕵️ 3/6
+🟥🟨🟩
+🔧 Picked the same fix as Velho
+```
+
+### ▲▼ Higher/Lower (bonus)
+Which company earns more per employee? Daily or endless streak, one ⚡ Velho save per game,
+and every 4th card a Velho round about manual work in job ads.
+
+## Why this works for Velho
+
+- **Seen, without looking like marketing:** people play for curiosity and recognition, and
+  every round still delivers Velho's message with evidence. Featured companies' employees and
   competitors share it.
-- **"Where does YOUR company rank?"** After the game, players enter their own revenue and
-  headcount. They see their percentile among peers, the gap to the top 25%, and roughly how
-  many hours per person per week closing that gap means, with a link to Velho. A CEO
-  checking their own company's rank is the warmest lead there is.
-- **Shareable daily result:** the same 10 matchups for everyone each day, plus an emoji
-  result that's easy to post:
-
-  ```
-  Tehokas #1 🇫🇮
-  🟩🟩🟩🟥🟩🟩🟩🟩🟥🟩 8/10
-  ⚡ used a Velho tip
-  ```
-
-## Features
-
-| Status | Feature |
-|---|---|
-| ✅ | Daily streak: the same chain of companies for everyone, play until your first wrong guess |
-| ✅ | Endless mode: random order, play until your first wrong guess; best scores remembered |
-| ✅ | ⚡ Velho save: your first wrong guess doesn't end the run |
-| ✅ | ⚡ Velho rounds (every 4th card): which company's open job ads describe more manual work? With a quoted ad as proof |
-| ✅ | One-screen split layout: photo background per company, logo, VS badge that turns ✓/✗ |
-| ✅ | Stats always visible (employees; revenue after the reveal), plus € per working hour |
-| ✅ | Rolling-number reveal, plus a "Velho insight" for every company |
-| ✅ | Result titles to share: from "Still in Manual Mode" to "Chief Efficiency Officer" |
-| ✅ | ⚡ **Ask Velho** lifeline: one hint per game, Velho as the helpful expert |
-| ✅ | Share result (copied to clipboard) |
-| ✅ | "Where does your company rank?": type only a name, Claude + web search finds the figures, you land on the ladder with hours needed to overtake the next company |
-| ✅ | Python data pipeline: validate figures, generate text with Claude, export JSON |
-| ⏳ | Verified figures for every company, from annual reports |
-| ⏳ | Live stats APIs behind `/api/companies` |
-| ⏳ | Rivalry matchups and theme days |
-| ⏳ | Shareable result image (OG image) |
+- **Into the room:** the same data is a list of companies hiring for manual work *right now*,
+  with quotes, and every "your company" lookup is a self-identified lead.
+- **Velho's method, playable:** find the manual work (guess), fix it (bonus round), make it
+  stick (adoption note).
 
 ## Tech stack
 
@@ -70,7 +60,8 @@ pipeline/                     # Python: offline data work, never runs during the
   build.py                    #   validate → enrich with Claude → write src/data/companies.json
   fetch_logos.py              #   download logos into public/logos/
   fetch_images.py             #   download background photos into public/images/
-  fetch_job_ads.py            #   Claude reads open job ads → share describing manual work
+  fetch_job_ads.py            #   Claude reads open job ads → manual-work quotes
+  build_cases.py              #   Claude writes Velho's take for each daily case
   requirements.txt
 src/
   app/                        # Next.js routes
@@ -139,12 +130,17 @@ Google's favicon service. For the best look, put an official press-kit logo at
 `public/logos/<id>.svg`, which beats a downloaded `.png`. Companies without a logo show their
 initials on their brand colour (`brand_color` in the CSV).
 
-### Job ads (Velho rounds)
+### Job ads and daily cases
 
 ```bash
-python pipeline/fetch_job_ads.py   # needs Anthropic credentials; ~1 min per company
+python pipeline/fetch_job_ads.py   # Claude reads open ads; ~1 min per company
+python pipeline/build_cases.py     # Claude writes Velho's take for each case
 python pipeline/build.py --no-ai
 ```
+
+A company becomes a daily case once it has 3+ manual-work quotes. `build_cases.py` writes,
+from the quotes only, the analyst hint, the "what to fix first" options and the adoption
+note.
 
 Claude reads up to 10 currently open job ads per company (company careers sites, public job
 boards; web search and fetch respect robots.txt) and flags the ones that describe manual,

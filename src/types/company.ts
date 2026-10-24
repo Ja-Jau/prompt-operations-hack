@@ -22,17 +22,30 @@ export type Company = {
   hint: string;
   /** Open job ads read by pipeline/fetch_job_ads.py, or null if not checked yet. */
   jobAds: JobAds | null;
+  /** Velho's take for the daily case (pipeline/build_cases.py), or null. */
+  velhoCase: VelhoCase | null;
 };
+
+export type JobAd = { title: string; quote: string; url: string };
 
 export type JobAds = {
   /** Open ads that were read. */
   checked: number;
   /** Of those, ads describing manual, repetitive work (Excel upkeep, data entry, "käsin", ...). */
   manual: number;
-  /** A verbatim quote from one manual-work ad, shown on the reveal. */
-  example: { title: string; quote: string; url: string } | null;
+  /** The manual-work ads, each with a verbatim quote. */
+  ads: JobAd[];
   source: string;
   fetchedAt: string;
+};
+
+export type VelhoCase = {
+  /** The "Ask Velho" lifeline: a pattern an analyst would spot across the ads. */
+  analystHint: string;
+  fixOptions: string[];
+  correctIndex: number;
+  fixReasoning: string;
+  adoptNote: string;
 };
 
 export type Mode = "daily" | "endless";

@@ -20,35 +20,30 @@ type Props = {
 
 function RevealDetails({ company, metric }: { company: Company; metric: MetricId }) {
   if (metric === "manualAds" && company.jobAds) {
-    const { example, checked, manual } = company.jobAds;
+    const { ads, checked, manual } = company.jobAds;
     return (
-      <div className="animate-rise mt-2 flex max-w-md flex-col items-center gap-2">
-        <p className="text-xs text-white/70 md:text-sm">
+      <div className="animate-rise mt-3 flex max-w-md flex-col items-center gap-3">
+        <p className="text-sm text-on-dark">
           {manual} of {checked} open job ads read
         </p>
-        {example && (
-          <a
-            href={example.url}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden rounded-2xl border border-amber-300/30 bg-neutral-950/60 px-4 py-2 text-left text-sm backdrop-blur hover:border-amber-300/60 md:block"
-          >
-            <span className="line-clamp-2 italic text-white/90">“{example.quote}”</span>
-            <span className="mt-1 block text-xs text-amber-300">{example.title} →</span>
-          </a>
+        {ads[0] && (
+          <div className="hidden rounded-[14px] border border-line-dark bg-navy/60 px-4 py-3 text-left text-sm backdrop-blur md:block">
+            <p className="line-clamp-2 text-ivory">“{ads[0].quote}”</p>
+            <p className="eyebrow mt-1.5 text-sky">{ads[0].title}</p>
+          </div>
         )}
       </div>
     );
   }
 
   return (
-    <div className="animate-rise flex flex-col items-center">
-      <p className="text-xs text-white/75 md:text-sm">
-        ≈ <strong className="text-white">€{Math.round(revenuePerHour(company))}</strong> per working hour
+    <div className="animate-rise mt-2 flex flex-col items-center">
+      <p className="text-sm text-on-dark">
+        About <strong className="text-ivory">€{Math.round(revenuePerHour(company))}</strong> per working hour
       </p>
-      <div className="mt-2 hidden max-w-md md:block">
-        <p className="line-clamp-2 text-sm text-white/90">
-          <span className="font-semibold text-amber-300">Velho insight: </span>
+      <div className="mt-3 hidden max-w-md md:block">
+        <p className="line-clamp-2 text-[15px] text-on-dark">
+          <span className="eyebrow mr-2 text-sky">Velho insight</span>
           {company.why}
         </p>
       </div>
@@ -56,7 +51,7 @@ function RevealDetails({ company, metric }: { company: Company; metric: MetricId
   );
 }
 
-/** One half of the split screen: photo background, logo and stats. Sized to never scroll. */
+/** One half of the full-screen split: photo with Velho's navy shade, logo and stats. Sized to never scroll. */
 export function CompanyPanel({ company, metric, revealed, value, children }: Props) {
   const m = METRICS[metric];
   const raw = m.value(company);
@@ -65,59 +60,45 @@ export function CompanyPanel({ company, metric, revealed, value, children }: Pro
   const showRevenue = revealed || metric !== "rpe";
 
   return (
-    <section className="relative isolate flex min-h-0 flex-1 flex-col items-center justify-center overflow-hidden bg-neutral-900 px-4 py-3 text-center">
+    <section className="relative isolate flex min-h-0 flex-1 flex-col items-center justify-center overflow-hidden bg-navy px-4 py-3 text-center text-ivory">
       {company.image && (
         // eslint-disable-next-line @next/next/no-img-element -- full-bleed background photo
-        <img
-          src={company.image}
-          alt=""
-          aria-hidden
-          className="absolute inset-0 -z-20 h-full w-full scale-105 object-cover blur-[2px]"
-        />
+        <img src={company.image} alt="" aria-hidden className="absolute inset-0 -z-20 h-full w-full object-cover" />
       )}
-      {/* Dark scrim + vignette so white text stays readable on any photo */}
-      <div className="absolute inset-0 -z-10 bg-neutral-950/65" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgb(0_0_0/0.6)_100%)]" />
-      {velhoRound && <div className="pointer-events-none absolute inset-0 -z-10 bg-amber-400/10" />}
+      {/* Velho's hero shade: navy over the photo so ivory text always reads */}
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgb(10_27_52/0.95)_0%,rgb(10_27_52/0.78)_55%,rgb(10_27_52/0.7)_100%)]" />
+      {velhoRound && <div className="pointer-events-none absolute inset-0 -z-10 bg-clay/15" />}
 
       {/* key: replay the entrance animation whenever a new company slides in */}
       <div key={company.id} className="animate-panel-in flex flex-col items-center">
-        <CompanyLogo company={company} className="h-12 w-12 md:h-20 md:w-20" />
+        <CompanyLogo company={company} className="h-12 w-12 md:h-16 md:w-16" />
+        <h2 className="mt-3 text-[clamp(26px,3.6vw,48px)] leading-none tracking-[-0.035em]">{company.name}</h2>
+        <p className="eyebrow mt-2 text-on-dark-2">{company.industry}</p>
 
-        <h2 className="mt-2 text-2xl font-black leading-tight tracking-tight drop-shadow-lg md:mt-3 md:text-5xl">
-          {company.name}
-        </h2>
-        <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-white/60 md:text-xs">{company.industry}</p>
+        <p className="mt-3 font-mono text-xs text-on-dark md:text-[13px]">
+          {company.employees.toLocaleString("en")} employees
+          <span className="mx-2 text-on-dark-2">/</span>
+          {showRevenue ? `€${company.revenueEurM.toLocaleString("en")}M` : "€ ?"} revenue
+        </p>
 
-        <div className="mt-2 flex gap-2 text-xs md:mt-3 md:text-sm">
-          <span className="rounded-full bg-white/10 px-3 py-1 backdrop-blur">
-            <strong className="tabular-nums">{company.employees.toLocaleString("en")}</strong> employees
-          </span>
-          <span className="rounded-full bg-white/10 px-3 py-1 backdrop-blur">
-            <strong className="tabular-nums">{showRevenue ? `€${company.revenueEurM.toLocaleString("en")}M` : "€ ?"}</strong>{" "}
-            revenue
-          </span>
-        </div>
-
-        <div className="mt-3 text-4xl font-black text-amber-300 drop-shadow-[0_0_28px_rgb(252_211_77/0.35)] md:mt-4 md:text-7xl">
+        <div className="mt-4 text-[clamp(40px,6vw,76px)] font-semibold leading-none tracking-[-0.035em] text-sky md:mt-6">
           {value ?? (raw === null ? "–" : m.format(raw))}
         </div>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-white/60 md:text-xs">{m.label}</p>
+        <p className="eyebrow mt-2 text-on-dark-2">{m.label}</p>
 
         {revealed && <RevealDetails company={company} metric={metric} />}
       </div>
 
-      {children && <div className="mt-3 md:mt-5">{children}</div>}
+      {children && <div className="mt-4 md:mt-6">{children}</div>}
 
       {company.imageCredit && (
         <a
           href={company.imageCredit.url}
           target="_blank"
           rel="noreferrer"
-          className="absolute bottom-1 right-2 text-[10px] text-white/35 hover:text-white/70"
+          className="absolute bottom-1.5 right-3 text-[10px] text-on-dark-2/70 hover:text-ivory"
         >
           Photo: {company.imageCredit.author} / {company.imageCredit.source}
-          {company.imageCredit.license && ` (${company.imageCredit.license})`}
         </a>
       )}
     </section>
