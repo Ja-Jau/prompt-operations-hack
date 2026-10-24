@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { Mode } from "@/types/company";
 import { dailyNumber } from "@/lib/game/daily";
 
@@ -18,9 +19,14 @@ export function TopBar({ mode, streak, best, saveAvailable, unverifiedCount, onM
   return (
     <header className="relative z-20 grid shrink-0 grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-white/10 bg-neutral-950/90 px-4 py-2.5 backdrop-blur">
       <div className="flex items-baseline gap-2">
-        <span className="text-xl font-black tracking-tight md:text-2xl">
+        <Link
+          href="/"
+          onNavigate={() => onModeChange("daily")}
+          aria-label="Tehokas home"
+          className="rounded-sm text-xl font-black tracking-tight transition hover:text-amber-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300 md:text-2xl"
+        >
           Tehokas<span className="text-amber-300">.</span>
-        </span>
+        </Link>
         <span className="hidden text-[10px] uppercase tracking-[0.2em] text-white/40 lg:inline">
           {mode === "daily" ? `Daily #${dailyNumber()}` : "Endless"} · by Velho
         </span>
