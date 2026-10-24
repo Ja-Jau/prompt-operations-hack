@@ -4,7 +4,7 @@ import { seededRandom } from "@/lib/game/random";
 
 /** A company needs this many verified quotes to be a case. Keep in sync with pipeline/import_jobs.py. */
 export const MIN_CASE_QUOTES = 2;
-/** Six options: at most five misses before the answer is the only card left. */
+/** Picks per case. With more cards than picks, a case can be lost. */
 export const MAX_GUESSES = 6;
 
 const LEGAL_SUFFIX = /\s*\b(oyj|oy|ab|ltd|inc|gmbh|abp|ry)\b\.?/gi;
@@ -43,44 +43,52 @@ export function redact(text: string, company: Pick<HiringCompany, "name">): stri
   );
 }
 
-/** Each clue has a playful title, e.g. "Exhibit A", so unlocking one feels like opening a file. */
-export type Clue = { kind: "quote"; title: string; ad: JobAd } | { kind: "fact"; title: string; value: string };
-
-function plural(n: number, one: string, many: string) {
-  return `${n} ${n === 1 ? one : many}`;
-}
+/**
+ * A clue, each kind with its own look: a job-ad quote, the hiring map, role or title chips,
+ * or a note from a Velho analyst. Titles are playful so unlocking one feels like opening a file.
+ */
+export type Clue =
+  | { kind: "quote"; title: string; ad: JobAd }
+  | { kind: "map"; title: string; openRoles: number; cities: string[] }
+  | { kind: "chips"; title: string; items: string[] }
+  | { kind: "analyst"; title: string; note: string };
 
 /**
- * The clues in reveal order: one at the start, one more per wrong pick or analyst tip.
- * Ordered so each one helps tell the six options apart.
+ * The clues in reveal order: one at the start, one more per wrong pick or free clue.
+ * Ordered so each one helps tell the cards apart.
  */
 export function caseClues(company: HiringCompany): Clue[] {
   const [a, b, c] = company.jobAds.ads;
-  const otherTitles = company.titles.filter((t) => t !== a.title && t !== b.title).slice(0, 3);
-  const cities = company.locations.slice(0, 3).join(", ") || "Finland";
-  const open = plural(company.jobAds.checked, "open role", "open roles");
+  const otherTitles = company.titles.filter((t) => t !== a.title && t !== b.title).slice(0, 4);
 
   const exhibitC: Clue = c
     ? { kind: "quote", title: "Exhibit C", ad: c }
-    : { kind: "fact", title: "Also on their job board", value: otherTitles.map((t) => redact(t, company)).join(" · ") || open };
+    : { kind: "chips", title: "Also on their job board", items: otherTitles.map((t) => redact(t, company)) };
 
   return [
     { kind: "quote", title: "Exhibit A", ad: a },
-    { kind: "fact", title: "The hiring map", value: `${open} in ${cities}` },
+    { kind: "map", title: "The hiring map", openRoles: company.jobAds.checked, cities: company.locations.slice(0, 4) },
     { kind: "quote", title: "Exhibit B", ad: b },
-    { kind: "fact", title: "What they hire for", value: company.functions.join(" · ") },
+    { kind: "chips", title: "What they hire for", items: company.functions },
     ...(company.velhoCase
-      ? [{ kind: "fact" as const, title: "Velho analyst's note", value: redact(company.velhoCase.analystHint, company) }]
+      ? [{ kind: "analyst" as const, title: "The analyst's note", note: redact(company.velhoCase.analystHint, company) }]
       : []),
-    exhibitC,
+    ...(c || otherTitles.length > 0 ? [exhibitC] : []),
   ];
 }
 
-export const OPTION_COUNT = 6;
+/**
+ * Words in a job ad that point at routine work, highlighted in quotes so the manual work jumps out.
+ * Finnish and English stems; matched case-insensitively inside longer words.
+ */
+export const ROUTINE_WORK =
+  /[\p{L}-]*(kirjau|kirjaa|laskut|laskuj|tilau|tilaus|ylläpi|päivit|raport|syöt|tarkast|käsittel|täsmäy|reskontr|tiliöin|arkistoi|dokumen|ajanvara|lähete|palkka-aineist|aineisto)\p{L}*|(?<!\p{L})(ERP|Excel|Salesforce|CRM|orders?|invoices?|reconciliations?|validating|processing|documentation|manual|repetitive|data)(?!\p{L})/giu;
+
+export const OPTION_COUNT = 9;
 
 /**
- * The six cards for a case: the answer, three look-alikes that hire for similar roles in similar
- * places, and two better-known companies. Seeded by the case, so everyone sees the same six.
+ * The cards for a case: the answer, look-alikes that hire for similar roles in similar places, and
+ * better-known companies. Seeded by the case, so everyone sees the same cards.
  */
 export function caseOptions(target: HiringCompany, pool: HiringCompany[], ranks: Map<string, number>): HiringCompany[] {
   const rand = seededRandom(`options-${target.id}`);
@@ -92,8 +100,8 @@ export function caseOptions(target: HiringCompany, pool: HiringCompany[], ranks:
   };
   const others = pool.filter((c) => c.id !== target.id);
   const lookalikes = pick(
-    [...others].sort((a, b) => (ranks.get(a.id) ?? 0) - (ranks.get(b.id) ?? 0)).slice(0, 10),
-    3,
+    [...others].sort((a, b) => (ranks.get(a.id) ?? 0) - (ranks.get(b.id) ?? 0)).slice(0, 12),
+    Math.floor((OPTION_COUNT - 1) / 2),
   );
   const taken = new Set([target.id, ...lookalikes.map((c) => c.id)]);
   const wellKnown = pick(
@@ -159,13 +167,10 @@ export function caseShareText(opts: {
   label: string;
   feedback: Feedback[];
   solved: boolean;
-  fixedRight: boolean | null;
   url: string;
 }): string {
   // ✓ found it, ● warm guess, ○ cold guess. Plain symbols, no emoji, no spoilers.
   const grid = opts.feedback.map((f) => (f.correct ? "✓" : f.closeness >= 0.6 ? "●" : "○")).join(" ");
   const score = opts.solved ? `Solved in ${opts.feedback.length}/${MAX_GUESSES}` : `Not solved (${MAX_GUESSES}/${MAX_GUESSES})`;
-  const fix =
-    opts.fixedRight === null ? "" : opts.fixedRight ? "\nSame first fix as Velho" : "\nVelho would fix it differently";
-  return `Who's hiring? ${opts.label}\n${score}\n${grid}${fix}\n${opts.url}`;
+  return `Who's hiring? ${opts.label}\n${score}\n${grid}\n${opts.url}`;
 }

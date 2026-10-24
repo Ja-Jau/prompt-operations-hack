@@ -14,80 +14,26 @@ type Props = {
   label: string;
   feedback: Feedback[];
   solved: boolean;
-  fixChoice: number | null;
-  onFixChoice: (index: number) => void;
   onPlayAnother: () => void;
   /** Set while playing a practice case. */
   onBackToDaily?: () => void;
   onPlayHigherLower: () => void;
 };
 
-/** Velho's take in one card: pick the first fix, then see Velho's call. */
-function ThinkLikeVelho({ company, choice, onChoice }: { company: HiringCompany; choice: number | null; onChoice: (i: number) => void }) {
-  const take = company.velhoCase!;
-  const answered = choice !== null;
-  return (
-    <section className="card p-6 md:p-8">
-      <p className="eyebrow text-sage-d">Think like Velho</p>
-      <h2 className="mt-3 text-[clamp(24px,2.6vw,32px)]">What should they automate first?</h2>
-      <div className="mt-5 grid gap-2">
-        {take.fixOptions.map((option, i) => {
-          const isRight = i === take.correctIndex;
-          const state = !answered
-            ? "border-sand-2 hover:border-navy-3"
-            : isRight
-              ? "border-sage-d bg-sage/15"
-              : choice === i
-                ? "border-clay/60 bg-clay/10"
-                : "border-sand-2 opacity-45";
-          return (
-            <button
-              key={option}
-              disabled={answered}
-              onClick={() => onChoice(i)}
-              className={`flex items-center justify-between gap-3 rounded-[9px] border bg-white px-4 py-3.5 text-left font-medium transition ${state}`}
-            >
-              {option}
-              {answered && isRight && <Icon name="check" className="h-4 w-4 shrink-0 text-sage-d" />}
-              {answered && !isRight && choice === i && <Icon name="cross" className="h-4 w-4 shrink-0 text-clay" />}
-            </button>
-          );
-        })}
-      </div>
-      {answered && (
-        <div className="animate-rise mt-5 space-y-2 border-t border-sand-2 pt-5 text-[15.5px]">
-          <p>
-            <strong>{choice === take.correctIndex ? "Same call as Velho." : "Velho would start elsewhere."}</strong>{" "}
-            <span className="text-ink-2">{take.fixReasoning}</span>
-          </p>
-          <p className="text-ink-2">
-            <span className="eyebrow mr-2 text-sage-d">Making it stick</span>
-            {take.adoptNote}
-          </p>
-        </div>
-      )}
-    </section>
-  );
-}
-
 export function CaseReveal({
   company,
   label,
   feedback,
   solved,
-  fixChoice,
-  onFixChoice,
   onPlayAnother,
   onBackToDaily,
   onPlayHigherLower,
 }: Props) {
   const [copied, setCopied] = useState(false);
   const ads = company.jobAds!;
-  const take = company.velhoCase;
-  const fixedRight = take && fixChoice !== null ? fixChoice === take.correctIndex : null;
 
   const share = async () => {
-    const text = caseShareText({ label, feedback, solved, fixedRight, url: window.location.origin });
+    const text = caseShareText({ label, feedback, solved, url: window.location.origin });
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -169,8 +115,6 @@ export function CaseReveal({
             Or go to velho.io <Icon name="arrowRight" className="h-3.5 w-3.5" />
           </a>
         </section>
-
-        {take && <ThinkLikeVelho company={company} choice={fixChoice} onChoice={onFixChoice} />}
 
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
           {onBackToDaily && (

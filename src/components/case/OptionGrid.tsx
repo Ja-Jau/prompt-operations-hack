@@ -40,10 +40,10 @@ type Props = {
   onPick: (company: HiringCompany) => void;
 };
 
-/** Six company cards: pick the one hiring for the quotes above. */
+/** The company cards, 3 × 3: pick the one hiring for the quotes above. */
 export function OptionGrid({ options, picked, disabled, onPick }: Props) {
   return (
-    <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+    <div className="grid grid-cols-3 gap-2 md:gap-3">
       {options.map((company) => {
         const f = picked.get(company.id);
         const state = !f
@@ -56,21 +56,21 @@ export function OptionGrid({ options, picked, disabled, onPick }: Props) {
             key={company.id}
             disabled={disabled || Boolean(f)}
             onClick={() => onPick(company)}
-            className={`relative flex min-h-[132px] flex-col items-start gap-3 rounded-[14px] border p-4 text-left transition ${state}`}
+            className={`relative flex min-h-[112px] flex-col items-start gap-2 rounded-[14px] border p-3 text-left transition md:min-h-[128px] md:gap-3 md:p-4 ${state}`}
           >
             <div className={f && !f.correct ? "opacity-40 grayscale" : ""}>
-              <CompanyLogo company={company} className="h-11 w-11" />
+              <CompanyLogo company={company} className="h-9 w-9 md:h-11 md:w-11" />
             </div>
             <div className="min-w-0">
-              <p className={`text-[17px] font-semibold leading-tight tracking-tight ${f && !f.correct ? "text-ink-3 line-through" : ""}`}>
+              <p className={`text-[15px] font-semibold leading-tight tracking-tight md:text-[17px] ${f && !f.correct ? "text-ink-3 line-through" : ""}`}>
                 {shortName(company)}
               </p>
-              {!f && <p className="mt-1 truncate text-xs text-ink-3">{company.functions.slice(0, 2).join(" · ")}</p>}
+              {!f && <p className="mt-1 hidden truncate text-xs text-ink-3 sm:block">{company.functions.slice(0, 2).join(" · ")}</p>}
             </div>
             {f?.correct && (
               <>
                 <Burst />
-                <span className="eyebrow absolute right-4 top-4 flex items-center gap-1 text-sky">
+                <span className="eyebrow absolute right-3 top-3 hidden items-center gap-1 text-sky sm:flex">
                   <Icon name="check" className="h-3.5 w-3.5" /> Found it
                 </span>
               </>

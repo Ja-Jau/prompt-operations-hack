@@ -12,8 +12,8 @@ import { Evidence } from "./Evidence";
 import { HowToPlay } from "./HowToPlay";
 import { OptionGrid } from "./OptionGrid";
 
-type Saved = { guesses: string[]; fixChoice: number | null; tipUsed: boolean; gaveUp: boolean };
-const EMPTY: Saved = { guesses: [], fixChoice: null, tipUsed: false, gaveUp: false };
+type Saved = { guesses: string[]; tipUsed: boolean; gaveUp: boolean };
+const EMPTY: Saved = { guesses: [], tipUsed: false, gaveUp: false };
 const SEEN_HELP_KEY = "tehokas-seen-help";
 const CELEBRATION_MS = 1300;
 
@@ -176,8 +176,6 @@ export function WhosHiring({ companies, onGameChange }: Props) {
           label={label}
           feedback={feedback}
           solved={solved}
-          fixChoice={saved.fixChoice}
-          onFixChoice={(i) => update({ fixChoice: i })}
           onPlayAnother={playAnother}
           onBackToDaily={isPractice ? backToDaily : undefined}
           onPlayHigherLower={() => onGameChange("higherLower")}
@@ -204,16 +202,17 @@ export function WhosHiring({ companies, onGameChange }: Props) {
       <main className="mx-auto max-w-[820px] px-4 pb-20">
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
 
-        <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
+        <Evidence
+          key={target.id}
+          clues={clues}
+          revealed={revealed}
+          company={target}
+          onUnlock={!saved.tipUsed && revealed < clues.length ? askAnalyst : undefined}
+        />
 
         <div className="mt-8 flex items-center justify-between gap-3">
           <p className="eyebrow text-sage-d">Which company is hiring for this?</p>
           <div className="relative flex items-center gap-2">
-            {!saved.tipUsed && revealed < clues.length && (
-              <button onClick={askAnalyst} className="btn btn-line btn-sm">
-                <Icon name="spark" /> Free clue
-              </button>
-            )}
             <button
               onClick={() => setMenuOpen((o) => !o)}
               aria-label="More options"
