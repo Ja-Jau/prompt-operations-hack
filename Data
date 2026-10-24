@@ -1,112 +1,196 @@
 import pandas as pd
 import yfinance as yf
 
-def get_finnish_tickers():
-    """Täckande lista över finska börsbolag på Nasdaq Helsinki (.HE)."""
-    return [
-        "NESTE.HE", "NOKIA.HE", "FORTUM.HE", "KESKOA.HE", "KNEBV.HE", "UPM.HE", "STERV.HE", 
-        "WRT1V.HE", "METSA.HE", "VALMT.HE", "OUT1V.HE", "CGCBV.HE", "ELISA.HE", "ORNBV.HE", 
-        "HUH1V.HE", "TYRES.HE", "FSKRS.HE", "KEMIRA.HE", "TIETO.HE", "YIT.HE", "KCR.HE", 
-        "MEO1V.HE", "QTCOM.HE", "REMEDY.HE", "HARVIA.HE", "MUSTI.HE", "KROS.HE", "TLT1V.HE", 
-        "TAL1V.HE", "TOKMAN.HE", "PON1V.HE", "KAMUX.HE", "VERK.HE", "NOHO.HE", "PIZZ.HE", 
-        "PUUILO.HE", "STCBV.HE", "SANOMA.HE", "AKTIA.HE", "OHO1V.HE", "CITY1S.HE", "OLVAS.HE", 
-        "SSABBH.HE", "NEXI.HE", "ALBBV.HE", "BITTI.HE", "AAPNT.HE", "ENERS.HE", "DIGIA.HE", 
-        "INDER.HE", "FCA1V.HE", "HONBS.HE", "LASS88.HE", "MARAS.HE", "RAUTE.HE", "SRV1V.HE", 
-        "SSH1V.HE", "TEL11V.HE", "UNR1V.HE", "VAIAS.HE", "VIK1V.HE", "WSC1V.HE"
+def get_all_finnish_tickers():
+    """Hämtar alla fungerande finländska börsbolag."""
+    
+    tickers = [
+        "NESTE.HE", "NOKIA.HE", "FORTUM.HE", "KESKOA.HE", "KNEBV.HE", "UPM.HE", 
+        "STERV.HE", "WRT1V.HE", "METSA.HE", "VALMT.HE", "OUT1V.HE", "ELISA.HE", 
+        "ORNBV.HE", "HUH1V.HE", "TYRES.HE", "FSKRS.HE", "KEMIRA.HE", "TIETO.HE", 
+        "YIT.HE", "KCR.HE", "QTCOM.HE", "REMEDY.HE", "HARVIA.HE", "MUSTI.HE", 
+        "TLT1V.HE", "TOKMAN.HE", "PON1V.HE", "KAMUX.HE", "VERK.HE", "NOHO.HE", 
+        "PUUILO.HE", "SANOMA.HE", "AKTIA.HE", "OLVAS.HE", "SSABBH.HE", "ALBBV.HE", 
+        "BITTI.HE", "DIGIA.HE", "HONBS.HE", "MARAS.HE", "RAUTE.HE", "SRV1V.HE", 
+        "SSH1V.HE", "VAIAS.HE", "VIK1V.HE", "SAMPO.HE", "NDA-FI.HE", "CTY1S.HE", 
+        "DOV1V.HE", "ETTE.HE", "INVEST.HE", "KELAS.HE", "METSB.HE", "PNA1V.HE", 
+        "SAGCV.HE", "SOLTEQ.HE", "SUY1V.HE", "TULAV.HE", "ALMA.HE", "ANORA.HE", 
+        "ASPO.HE", "ATRAV.HE", "SIILI.HE", "TRH1V.HE", "TNOM.HE", "LINDEX.HE", 
+        "FIA1S.HE", "METSO.HE",
+        "EQV1V.HE", "TAALA.HE", "KEMPOWR.HE", "MANTA.HE", "ENENTO.HE", "FSECURE.HE",
+        "TTALO.HE", "PIHLIS.HE", "GOFORE.HE", "VINCIT.HE", "REG1V.HE", "CAPMAN.HE", 
+        "EVLI.HE", "OMASP.HE", "ALBAV.HE", "KREATE.HE", "CONSTI.HE", 
+        "EEZY.HE", "TEM1V.HE", "ICP1V.HE", "DETEC.HE", "BOREO.HE", 
+        "GLA1V.HE", "ACG1V.HE", "CTH1V.HE", "WUF1V.HE", "QPR1V.HE", 
+        "FONDIA.HE", "ROBIT.HE", "LOIHDE.HE", "WETTERI.HE", "SITOWS.HE", 
+        "RELAIS.HE", "SPINN.HE", "LEADD.HE", "AALLON.HE", 
+        "ILKKA.HE", "FARON.HE", "HEALTH.HE", "LAPWALL.HE", "REKA.HE", 
+        "AFAGR.HE", "WITTED.HE"
     ]
+    return list(set(tickers))
 
-def fetch_advanced_company_data():
-    """Hämtar djupgående nyckeltal för alla finska börsbolag."""
-    tickers = get_finnish_tickers()
+def calculate_ai_efficiency_score(row):
+    """
+    Beräknar AI-konsultpotentialen utifrån finansiell struktur (sparas i CSV).
+    """
+    score = 50  
+    
+    rev_emp = row.get("Omsättning/Anställd") or 0
+    if rev_emp > 1_000_000: score += 15
+    elif rev_emp > 300_000: score += 10
+    
+    gap = row.get("Marginalgap (%)") or 0
+    if gap > 25: score += 15
+    elif gap > 15: score += 10
+
+    emp = row.get("Anställda") or 0
+    if emp > 5_000: score += 10
+    elif emp > 1_000: score += 5
+
+    prof_margin = row.get("Vinstmarginal (%)")
+    if prof_margin is not None:
+        if prof_margin < 5: score += 10
+        elif prof_margin < 10: score += 5
+
+    return min(100, max(0, score))
+
+
+def fetch_comprehensive_data():
+    """Hämtar alla finansiella nyckeltal för bolagen och filtrerar bort ickefungerande."""
+    tickers = get_all_finnish_tickers()
     company_data = []
+    ickefungerande_foretag = []
     total = len(tickers)
     
-    print(f"Hämtar avancerad företagsdata för {total} finska bolag via Yahoo Finance...\n")
+    print(f"Hämtar komplett finansiell data för {total} företag via Yahoo Finance...\n")
 
     for index, symbol in enumerate(tickers, start=1):
         try:
             ticker = yf.Ticker(symbol)
             info = ticker.info
             
+            # Kolla om info är tomt (vissa avnoterade/felaktiga tickers returnerar tom dict)
+            if not info or ('shortName' not in info and 'longName' not in info and 'totalRevenue' not in info):
+                raise ValueError("Saknar all grundläggande info")
+                
             name = info.get("shortName") or info.get("longName") or symbol
             employees = info.get("fullTimeEmployees")
             revenue = info.get("totalRevenue")
             net_income = info.get("netIncomeToCommon")
             
-            # Vi kräver både omsättning och anställda för att kunna beräkna per-anställd-data
-            if revenue and employees and employees > 0:
+            # Om vi varken får omsättning eller anställda skippar vi företaget
+            if pd.isna(revenue) and pd.isna(employees):
+                ickefungerande_foretag.append(name)
+                print(f"[{index}/{total}] Hoppar över {name} ({symbol}) - Saknar data")
+                continue
+            
+            # Sätt till None som standard om någon av dem saknas
+            rev_per_emp = None
+            net_income_per_emp = None
+            
+            if pd.notnull(revenue) and pd.notnull(employees) and employees > 0:
                 rev_per_emp = revenue / employees
-                net_income_per_emp = (net_income / employees) if net_income else None
+            
+            if pd.notnull(net_income) and pd.notnull(employees) and employees > 0:
+                net_income_per_emp = net_income / employees
                 
-                # Hämtar ytterligare kategorier
-                market_cap = info.get("marketCap")
-                profit_margin = info.get("profitMargins")
-                operating_margin = info.get("operatingMargins")
-                revenue_growth = info.get("revenueGrowth")
-                pe_ratio = info.get("trailingPE")
-                ps_ratio = info.get("priceToSalesTrailing12Months")
-                debt_to_equity = info.get("debtToEquity")
-                dividend_yield = info.get("dividendYield")
-                sector = info.get("sector", "Okänd")
+            gross_margins = info.get("grossMargins")
+            operating_margins = info.get("operatingMargins")
+            profit_margins = info.get("profitMargins")
+            
+            gross_margin_pct = (gross_margins * 100) if pd.notnull(gross_margins) else None
+            op_margin_pct = (operating_margins * 100) if pd.notnull(operating_margins) else None
+            profit_margin_pct = (profit_margins * 100) if pd.notnull(profit_margins) else None
+            
+            margin_gap = (gross_margin_pct - op_margin_pct) if (pd.notnull(gross_margin_pct) and pd.notnull(op_margin_pct)) else None
+            revenue_growth = info.get("revenueGrowth")
+            dividend_yield = info.get("dividendYield")
 
-                company_data.append({
-                    "Symbol": symbol,
-                    "Företag": name,
-                    "Sektor": sector,
-                    "Anställda": employees,
-                    "Omsättning (EUR)": revenue,
-                    "Vinst (EUR)": net_income,
-                    "Börsvärde (EUR)": market_cap,
-                    
-                    # Beräknade & Kvantifierade Nyckeltal
-                    "Omsättning/Anställd": rev_per_emp,
-                    "Vinst/Anställd": net_income_per_emp,
-                    "Vinstmarginal (%)": (profit_margin * 100) if profit_margin else None,
-                    "Rörelsemarginal (%)": (operating_margin * 100) if operating_margin else None,
-                    "Omsättningstillväxt (%)": (revenue_growth * 100) if revenue_growth else None,
-                    "P/E-tal": pe_ratio,
-                    "P/S-tal": ps_ratio,
-                    "Skuldsättningsgrad (%)": debt_to_equity,
-                    "Direktavkastning (%)": (dividend_yield * 100) if dividend_yield else None
-                })
-                print(f"[{index}/{total}] Hämtat: {name}")
-            else:
-                print(f"[{index}/{total}] Hoppar över {symbol} (Saknar anställda/omsättning)")
+            row = {
+                "Symbol": symbol,
+                "Företag": name,
+                "Sektor": info.get("sector", "Okänd"),
+                "Anställda": employees,
+                "Omsättning (EUR)": revenue,
+                "Vinst (EUR)": net_income,
+                "Börsvärde (EUR)": info.get("marketCap"),
+                
+                "Omsättning/Anställd": rev_per_emp,
+                "Vinst/Anställd": net_income_per_emp,
+                "Marginalgap (%)": margin_gap,
+                
+                "Bruttomarginal (%)": gross_margin_pct,
+                "Rörelsemarginal (%)": op_margin_pct,
+                "Vinstmarginal (%)": profit_margin_pct,
+                "Omsättningstillväxt (%)": (revenue_growth * 100) if pd.notnull(revenue_growth) else None,
+                
+                "P/E-tal": info.get("trailingPE"),
+                "P/S-tal": info.get("priceToSalesTrailing12Months"),
+                "Skuldsättningsgrad (%)": info.get("debtToEquity"),
+                "Direktavkastning (%)": (dividend_yield * 100) if pd.notnull(dividend_yield) else None
+            }
+            
+            row["AI Efficiency Score (0-100)"] = calculate_ai_efficiency_score(row)
+            company_data.append(row)
+            print(f"[{index}/{total}] Hämtat data för: {name}")
 
         except Exception as e:
-            print(f"[{index}/{total}] Fel vid hämtning av {symbol}: {e}")
+            # Fångar upp 404 och andra hämtningsfel och sparar i den skilda listan
+            print(f"[{index}/{total}] Saknas (404/Error) - lägger till i ickefungerande_foretag: {symbol}")
+            ickefungerande_foretag.append(symbol)
 
-    return pd.DataFrame(company_data)
+    return pd.DataFrame(company_data), ickefungerande_foretag
 
 
 # ==========================================
 # HUVUDPROGRAM
 # ==========================================
 if __name__ == "__main__":
-    df = fetch_advanced_company_data()
+    df, ickefungerande_foretag = fetch_comprehensive_data()
     
     if not df.empty:
-        # Sortera primärt på Omsättning per Anställd
-        df = df.sort_values(by="Omsättning/Anställd", ascending=False).reset_index(drop=True)
+        # Sortera på Omsättning/Anställd, na_position='last' lägger ev. bolag som saknar just den siffran i botten
+        df = df.sort_values(by="Omsättning/Anställd", ascending=False, na_position='last').reset_index(drop=True)
         
-        # Spara hela datasetet med alla nyckeltal till CSV för Excel-analys
-        filename = "finska_foretag_utokad_analys.csv"
+        # Spara den fullständiga CSV-filen
+        filename = "finska_foretag_alla_nyckeltal.csv"
         df.to_csv(filename, index=False, encoding="utf-8-sig")
-        print(f"\n" + "="*80)
-        print(f"KLART! {len(df)} företag hämtade med alla nyckeltal.")
-        print(f"Hela datasetet har sparats till filen: '{filename}'")
-        print("="*80 + "\n")
         
-        # Visa topp 10 i konsolen med utvalda kategorier
-        preview = df[["Företag", "Sektor", "Anställda", "Omsättning/Anställd", "Vinst/Anställd", "Vinstmarginal (%)", "P/E-tal"]].head(10).copy()
+        print("\n" + "="*95)
+        print(f" KLART! {len(df)} fungerande företag analyserade med finansiella kategorier.")
+        print(f" Hela datasetet har sparats till: '{filename}'")
+        print("="*95 + "\n")
         
+        # Valda kolumner för förhandsgranskning i terminalen
+        preview_cols = [
+            "Företag", 
+            "Sektor", 
+            "Anställda", 
+            "Omsättning/Anställd", 
+            "Marginalgap (%)", 
+            "Vinstmarginal (%)", 
+            "P/E-tal", 
+            "Skuldsättningsgrad (%)"
+        ]
+        preview = df[preview_cols].head(15).copy()
+        
+        # Formatera siffrorna så de ser snygga ut i utskriften
         preview["Omsättning/Anställd"] = preview["Omsättning/Anställd"].apply(lambda x: f"€{x:,.0f}" if pd.notnull(x) else "N/A")
-        preview["Vinst/Anställd"] = preview["Vinst/Anställd"].apply(lambda x: f"€{x:,.0f}" if pd.notnull(x) else "N/A")
+        preview["Marginalgap (%)"] = preview["Marginalgap (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
         preview["Vinstmarginal (%)"] = preview["Vinstmarginal (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
+        preview["P/E-tal"] = preview["P/E-tal"].apply(lambda x: f"{x:.1f}" if pd.notnull(x) else "N/A")
+        preview["Skuldsättningsgrad (%)"] = preview["Skuldsättningsgrad (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
         
         pd.set_option('display.max_columns', 10)
         pd.set_option('display.width', 1000)
-        print("FÖRHANDSGRANSKNING (TOPP 10 SORTERAT PÅ OMSÄTTNING/ANSTÄLLD):")
+        print("TOPP 15 FUNGERANDE FÖRETAG (Sorterat på Omsättning/Anställd):\n")
         print(preview.to_string(index=True))
+        print(f"\nTotalt antal bolag i DataFrame: {df.shape[0]}")
     else:
         print("Ingen data kunde hämtas.")
+        
+    # Skriver ut listan över ickefungerande företag
+    print("\n" + "="*95)
+    print(f" ICKEFUNGERANDE FÖRETAG (Totalt: {len(ickefungerande_foretag)} st)")
+    print("="*95)
+    print(ickefungerande_foretag)
