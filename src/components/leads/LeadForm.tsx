@@ -46,7 +46,7 @@ export function LeadForm({ source, contextCompanyId, tone = "dark", cta = "Get t
   if (status === "done") {
     return (
       <p className={`animate-rise flex items-center gap-2 font-medium ${dark ? "text-ivory" : "text-ink"}`}>
-        <Icon name="check" className={dark ? "text-sky" : "text-sage-d"} />
+        <Icon name="check" className={`h-5 w-5 shrink-0 ${dark ? "text-sky" : "text-sage-d"}`} />
         Thanks. Velho will send your analysis and suggest a time to talk.
       </p>
     );

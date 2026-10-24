@@ -33,14 +33,26 @@ export function shortName(company: Pick<HiringCompany, "name">): string {
   return company.name.replace(LEGAL_SUFFIX, "").trim();
 }
 
-/** Hides the company's name in a quote, so the clue doesn't give the answer away. */
+/** Matches any whole word containing `part`, e.g. "Nostokonepalveluille" for "Nostokonepalvelu". */
+function wordContaining(part: string): RegExp {
+  const escaped = part.replace(/[.*+?^$|()[\]{}\\]/g, "\\$&");
+  const word = "[\\p{L}\\d'’:-]*";
+  return new RegExp(word + escaped + word, "giu");
+}
+
+/**
+ * Takes the company's name out of a quote or title, so the clue doesn't give the answer away.
+ * Whole words go, Finnish endings included ("Nostokonepalveluille"), so no gap is left behind.
+ */
 export function redact(text: string, company: Pick<HiringCompany, "name">): string {
   const base = shortName(company);
   const names = [company.name, base, ...base.split(/[\s&–-]+/)].filter((w) => w.length >= 3);
-  return names.reduce(
-    (out, name) => out.replace(new RegExp(name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "▇▇▇"),
-    text,
-  );
+  const removed = names.reduce((out, name) => out.replace(wordContaining(name), ""), text);
+  return removed
+    .replace(/\s+([,.;:!?)])/g, "$1")
+    .replace(/\(\s*\)/g, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/^[\s,–-]+|[\s,–-]+$/g, "");
 }
 
 /**
@@ -51,29 +63,31 @@ export type Clue =
   | { kind: "quote"; title: string; ad: JobAd }
   | { kind: "map"; title: string; openRoles: number; cities: string[] }
   | { kind: "chips"; title: string; items: string[] }
-  | { kind: "analyst"; title: string; note: string };
+  | { kind: "analyst"; title: string; note: string }
+  | { kind: "fact"; title: string; text: string };
+
+/** The last clue: the name's first letter and length, so the final pick is always winnable. */
+function nameClue(company: HiringCompany): Clue {
+  const words = shortName(company).split(/\s+/).filter((w) => /\p{L}/u.test(w));
+  const letters = words.join("").replace(/[^\p{L}]/gu, "").length;
+  const shape = words.length === 1 ? `${letters} letters` : `${words.length} words, ${letters} letters`;
+  return { kind: "fact", title: "Their name", text: `Starts with “${words[0][0].toUpperCase()}”, ${shape}` };
+}
 
 /**
  * The clues in reveal order: one at the start, one more per wrong pick or free clue.
- * Ordered so each one helps tell the cards apart.
+ * All from the job ads themselves, going from the quote to things anyone can place (the jobs,
+ * the cities), ending with the name's first letter so the last pick is always winnable.
  */
 export function caseClues(company: HiringCompany): Clue[] {
-  const [a, b, c] = company.jobAds.ads;
-  const otherTitles = company.titles.filter((t) => t !== a.title && t !== b.title).slice(0, 4);
-
-  const exhibitC: Clue = c
-    ? { kind: "quote", title: "Exhibit C", ad: c }
-    : { kind: "chips", title: "Also on their job board", items: otherTitles.map((t) => redact(t, company)) };
-
+  const [a, b] = company.jobAds.ads;
   return [
-    { kind: "quote", title: "Exhibit A", ad: a },
-    { kind: "map", title: "The hiring map", openRoles: company.jobAds.checked, cities: company.locations.slice(0, 4) },
-    { kind: "quote", title: "Exhibit B", ad: b },
+    { kind: "quote", title: "From a job ad", ad: a },
+    { kind: "chips", title: "Jobs they're hiring for", items: company.titles.slice(0, 4).map((t) => redact(t, company)) },
+    { kind: "map", title: "Where they hire", openRoles: company.jobAds.checked, cities: company.locations.slice(0, 4) },
+    { kind: "quote", title: "Another of their job ads", ad: b },
     { kind: "chips", title: "What they hire for", items: company.functions },
-    ...(company.velhoCase
-      ? [{ kind: "analyst" as const, title: "The analyst's note", note: redact(company.velhoCase.analystHint, company) }]
-      : []),
-    ...(c || otherTitles.length > 0 ? [exhibitC] : []),
+    nameClue(company),
   ];
 }
 

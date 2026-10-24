@@ -31,6 +31,8 @@ VELHO_CASES_PATH = ROOT / "pipeline" / "data" / "velho_cases.json"
 COMPANIES_JSON = ROOT / "src" / "data" / "companies.json"
 HIRING_OUT = ROOT / "src" / "data" / "hiring.json"
 JOB_ADS_OUT = ROOT / "pipeline" / "data" / "job_ads.json"
+DOMAINS_PATH = ROOT / "pipeline" / "data" / "company_domains.json"
+LOGO_DIR = ROOT / "public" / "logos"
 
 SOURCE = "Open job ads on Jobly.fi"
 MIN_CASE_QUOTES = 2  # keep in sync with MIN_CASE_QUOTES in src/lib/case/cases.ts
@@ -76,6 +78,7 @@ def main() -> None:
     claude_cases = json.loads(VELHO_CASES_PATH.read_text(encoding="utf-8")) if VELHO_CASES_PATH.exists() else {}
     known = {c["name"].casefold(): c for c in json.loads(COMPANIES_JSON.read_text(encoding="utf-8"))}
     jobs_by_id = {job["id"]: job for job in jobs}
+    domains = json.loads(DOMAINS_PATH.read_text(encoding="utf-8")) if DOMAINS_PATH.exists() else {}
 
     by_company: dict[str, list[dict]] = defaultdict(list)
     for job in jobs:
@@ -110,9 +113,9 @@ def main() -> None:
             {
                 "id": company_id,
                 "name": name,
-                "domain": match["domain"] if match else None,
+                "domain": match["domain"] if match else next(iter(domains.get(company_id, [])), None),
                 "brandColor": match["brandColor"] if match else "#3b5379",
-                "logo": match["logo"] if match else None,
+                "logo": (match and match["logo"]) or (f"/logos/{company_id}.png" if (LOGO_DIR / f"{company_id}.png").exists() else None),
                 "image": match["image"] if match else None,
                 "imageCredit": match["imageCredit"] if match else None,
                 "locations": locations,

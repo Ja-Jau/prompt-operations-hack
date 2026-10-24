@@ -37,7 +37,7 @@ def logo_url(domain: str) -> str:
     return f"https://www.google.com/s2/favicons?domain={urllib.parse.quote(domain)}&sz=256"
 
 
-def download(url: str) -> bytes | None:
+def download(url: str, min_bytes: int = MIN_BYTES) -> bytes | None:
     request = urllib.request.Request(url, headers={"User-Agent": "tehokas-logo-fetcher"})
     try:
         with urllib.request.urlopen(request, timeout=15) as response:
@@ -46,7 +46,7 @@ def download(url: str) -> bytes | None:
             data = response.read()
     except OSError:
         return None
-    return data if len(data) >= MIN_BYTES else None
+    return data if len(data) >= min_bytes else None
 
 
 def main() -> None:
