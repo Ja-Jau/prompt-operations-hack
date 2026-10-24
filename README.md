@@ -34,7 +34,9 @@ Then open:
 | URL | What it is |
 |---|---|
 | http://localhost:3000 | **Who's hiring?**: today's case (the main game) |
-`destia-oy`, `terveystalo`) |
+| http://localhost:3000/velho | **Signals dashboard**: who is hiring for routine work, leads, today's post |
+| http://localhost:3000/outreach | **Outreach desk**: targets → contacts → draft emails → demo send (nothing is sent) |
+| http://localhost:3000/brief/`<id>` | One-page CEO brief for a company (e.g. `destia-oy`, `terveystalo`) |
 
 Higher or lower, the bonus game, is in the top bar.
 
@@ -113,6 +115,26 @@ metrics; `src/data/game_companies.json` supplies automatically discovered compan
 | **Understood** | Every reveal is a small Velho case study: real quotes, the share of routine-work ads, the first thing to fix and which Velho service fixes it. | `CaseReveal.tsx`, `pipeline/data/curated_signals.json` |
 | **Invited** | "Want this analysis for your company?" Leaving a name and email on a reveal or a brief creates a lead. Nobody is cold-contacted, because the player asks first. | `LeadForm.tsx`, `/api/leads` |
 | **In the room** | The dashboard ranks companies by how much of their hiring is routine work. Each one gets a printable CEO brief built only from its own public ads, plus a draft opener. Velho decides whether to use it. | `/velho`, `/brief/[id]`, `src/lib/signals.ts` |
+
+## Outreach desk (demo)
+
+`/outreach` is Velho's side of the funnel turned proactive: instead of waiting for players to
+leave a lead, it finds the companies worth inviting to play and drafts the invitation.
+
+| Step | What it does | Where in the code |
+|---|---|---|
+| **1. Find targets** | Scores every hiring company on routine-work ads, share, breadth (cities, functions) and whether Velho's take is ready. Staffing agencies are flagged and de-prioritised because their ads describe clients' work. | `src/lib/outreach/targets.ts` |
+| **2. Compile** | Quotes, locations, functions, the first fix and the brief link, per company. | `src/app/outreach/page.tsx` |
+| **3. Resolve contacts** | Domain from the pipeline when known, otherwise *derived* from the name and labelled as such. Role inboxes only (`info@`, `talous@`, `hr@`…), never a guessed personal address, plus the decision-maker role to look up with a LinkedIn search. Every contact carries a confidence. | `src/lib/outreach/contacts.ts` |
+| **4. Draft & send** | A proposal email that quotes the ad verbatim, links the game and the brief and asks for 30 minutes. Editable in the page. | `src/lib/outreach/email.ts`, `src/components/outreach/` |
+
+**The Send button is a demo and sends nothing.** `POST /api/outreach` validates the drafts, waits
+a moment so the batch visibly drains, and appends rows marked `simulated: true` to
+`.data/outreach-log.json`. There is no SMTP client, mail API or mail library anywhere in the
+project; `npm run test:outreach` fails if one is ever added to the outreach code or
+`package.json`. A production version would hand each draft to a person at Velho for approval.
+
+Like `/velho`, the page is gated by `DASHBOARD_KEY` when that variable is set.
 
 ## Why the content can be trusted
 

@@ -10,6 +10,6 @@
     "outDir": "/tmp/tehokas-game-tests",
     "plugins": []
   },
-  "include": ["game.test.ts"],
+  "include": ["game.test.ts", "outreach.test.ts"],
   "exclude": ["../node_modules"]
 }

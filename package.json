@@ -11,6 +11,7 @@
     "data:financials": "python3 pipeline/fetch_efficiency.py",
     "data:build": "python3 pipeline/fetch_efficiency.py --offline",
     "test:game": "tsc -p tests/tsconfig.json && node --test /tmp/tehokas-game-tests/tests/game.test.js",
+    "test:outreach": "tsc -p tests/tsconfig.json && node --require /tmp/tehokas-game-tests/tests/resolve-alias.cjs --test /tmp/tehokas-game-tests/tests/outreach.test.js",
     "test:data": "python3 -m unittest discover -s pipeline -p 'test_*.py'",
     "data:sample": "python3 pipeline/fetch_efficiency.py --refresh-jobs"
   },

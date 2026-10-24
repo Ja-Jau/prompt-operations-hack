@@ -22,7 +22,9 @@ type Props = { searchParams: Promise<{ key?: string }> };
  */
 export default async function VelhoDashboard({ searchParams }: Props) {
   const requiredKey = process.env.DASHBOARD_KEY;
-  if (requiredKey && (await searchParams).key !== requiredKey) {
+  const key = (await searchParams).key;
+  const keyQuery = key ? `?key=${encodeURIComponent(key)}` : "";
+  if (requiredKey && key !== requiredKey) {
     return (
       <main className="flex min-h-dvh items-center justify-center bg-cream px-4">
         <p className="card p-8 text-ink-2">This page is for the Velho team. Add the access key to the link.</p>
@@ -48,9 +50,14 @@ export default async function VelhoDashboard({ searchParams }: Props) {
             <span className="text-xl font-semibold tracking-tight">Velho</span>
             <span className="eyebrow text-on-dark-2">Signals from Finnish job ads</span>
           </div>
-          <Link href="/" className="btn btn-line-dark btn-sm">
-            Open the game <Icon name="arrowRight" className="h-3.5 w-3.5" />
-          </Link>
+          <nav className="flex items-center gap-2">
+            <Link href={`/outreach${keyQuery}`} className="btn btn-line-dark btn-sm">
+              Outreach desk
+            </Link>
+            <Link href="/" className="btn btn-line-dark btn-sm">
+              Open the game <Icon name="arrowRight" className="h-3.5 w-3.5" />
+            </Link>
+          </nav>
         </div>
       </header>
 
