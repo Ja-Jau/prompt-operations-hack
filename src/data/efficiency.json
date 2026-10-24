@@ -1,0 +1,1324 @@
+{
+  "supercell": {
+    "metrics": {},
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "remedy": {
+    "metrics": {},
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "kesko": {
+    "metrics": {
+      "growthGap": {
+        "value": 2.580579,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageFte",
+        "sources": [
+          {
+            "url": "https://www.kesko.fi/492ff6/globalassets/03-sijoittaja/raporttikeskus/2026/q1/vuosiraportti-2025/743700ox6hsvmcahpb95-2025-12-31-0-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 1.24747e+10; ifrs-full:RevenueFromContractsWithCustomers [c-2] = 1.19201e+10; table:Average number of personnel converted into full-time employees [FY2025] = 15665 (Year columns [2023, 2024, 2025]: Average number of personnel converted into full-time employees | 14,766 | 15,347 | 15,665); table:Average number of personnel converted into full-time employees [FY2024] = 15347 (Year columns [2023, 2024, 2025]: Average number of personnel converted into full-time employees | 14,766 | 15,347 | 15,665)"
+          }
+        ],
+        "inputs": {
+          "revenue": 12474700000.0,
+          "previousRevenue": 11920100000.0,
+          "employees": 15665.0,
+          "previousEmployees": 15347.0
+        },
+        "fetchedAt": "2026-10-24T18:37:40.545481+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/ketjupaallikko-k-market-ketjuun-2777068",
+            "label": "Ketjupäällikkö K-Market-ketjuun Pohjois-Suomen alueelle",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/manager-team-lead-content-creators-k-ryhmaan-2776867",
+            "label": "Manager, Team Lead Content Creators K-ryhmään",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-specialist-power-platform-k-ryhmaan-2785261",
+            "label": "Senior Specialist, Power Platform K-ryhmään",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myyja-joulusesonkiin-10-h-vko-k-citymarket-jamsa-2784089",
+            "label": "Myyjä joulusesonkiin (10 h/vko) K-Citymarket Jämsä",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myyjia-16-20h-vko-kespron-rovaniemen-tukkuun-2783955",
+            "label": "Myyjiä (16-20h/vko) Kespron Rovaniemen tukkuun",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/e-com-sales-manager-intersport-finland-oy-2782115",
+            "label": "E-com Sales Manager, Intersport Finland Oy",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/k-trainee-digital-sales-2781135",
+            "label": "K Trainee, Digital Sales",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/k-trainee-sales-2781216",
+            "label": "K Trainee, Sales",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/k-trainee-development-specialist-2781133",
+            "label": "K Trainee, Development Specialist",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/k-trainee-sales-2781134",
+            "label": "K Trainee, Sales",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/k-trainee-finance-2781137",
+            "label": "K Trainee, Finance",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/k-trainee-procurement-2781136",
+            "label": "K Trainee, Procurement",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 12,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "tokmanni": {
+    "metrics": {
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyjia-jouluavuksi-vantaa-porttipuisto-maaraaikainen-24h-vko-2785127",
+            "label": "Kassa-myyjiä joulusesonkiin, Vantaa, Porttipuisto (määräaikainen 24h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyjia-jouluavuksi-pietarsaari-maaraaikainen-5-10h-vko-2785126",
+            "label": "Kassa-myyjiä joulusesonkiin, Pietarsaari (määräaikainen 5-10h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyjia-joulusesonkiin-joensuu-raatekangas-maaraaikainen-10-h-vko-2785460",
+            "label": "Kassa-myyjiä joulusesonkiin, Joensuu Raatekangas (määräaikainen 10 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyja-joulusesonkiin-kurikka-maaraaikainen-10-h-vko-2784859",
+            "label": "Kassa-myyjä joulusesonkiin, Kurikka (määräaikainen 10 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyja-aura-vakituinen-35h-vko-2783000",
+            "label": "Kassa-myyjä/vuorovastaava, Aura (vakituinen 35 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyja-nivala-maaraaikainen-5h-vko-2783079",
+            "label": "Kassa-myyjä, Nivala (määräaikainen 5h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyja-tuusula-maaraaikainen-12h-vko-2782998",
+            "label": "Kassa-myyjä, Tuusula (määräaikainen 12h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyja-jouluavuksi-parainen-maaraaikainen-5-h-vko-2782790",
+            "label": "Kassa-myyjä jouluavuksi, Parainen (määräaikainen 5 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyjia-jouluavuksi-rovaniemi-maaraaikainen-15-h-vko-2782592",
+            "label": "Kassa-myyjiä jouluavuksi, Rovaniemi (määräaikainen 15 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myymalapaallikko-joutsa-vakituinen-375-h-vko-2782591",
+            "label": "Myymäläpäällikkö, Joutsa (vakituinen 37,5 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-outokumpu-vakituinen-375-h-vko-2778289",
+            "label": "Palveluvastaava, Outokumpu (vakituinen 37,5 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kassa-myyja-lapinlahti-maaraaikainen-15-h-vko-2778147",
+            "label": "Kassa-myyjä, Lapinlahti (määräaikainen 15 h/vko)",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 12,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    }
+  },
+  "nokia": {
+    "metrics": {
+      "inventoryDays": {
+        "value": 71.049866,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://ml-eu.globenewswire.com/Resource/Download/6fd247fe-760d-4d57-83c5-68e716206015",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-4] = 2.209e+09; ifrs-full:Inventories [c-5] = 2.163e+09; ifrs-full:CostOfSales [c-1] = 1.123e+10"
+          }
+        ],
+        "inputs": {
+          "inventory": 2209000000.0,
+          "previousInventory": 2163000000.0,
+          "costOfSales": 11230000000.0
+        },
+        "fetchedAt": "2026-10-24T18:44:22.309979+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      },
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-ai-data-engineer-2785481",
+            "label": "Senior AI Data Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-wi-fi-standardization-researcher-and-delegate-2783538",
+            "label": "Senior Wi-Fi Standardization Researcher and Delegate",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/privacy-data-cyber-regulatory-counsel-2753777",
+            "label": "Privacy, Data & Cyber Regulatory Counsel",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/specialist-licensing-2749609",
+            "label": "Specialist, Licensing",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/director-hw-development-2757729",
+            "label": "Director, HW Development",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/trainee-strategy-presales-market-intelligence-2766197",
+            "label": "Trainee, Strategy/Presales/Market Intelligence",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-staff-research-standardization-specialist-2687917",
+            "label": "Senior Staff Research/Standardization Specialist",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/finance-legal-government-and-geopolitical-relations-executive-communications-lead-2702070",
+            "label": "Finance, Legal, Government and Geopolitical Relations Executive Communications Lead",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-standards-researcher-6g-physical-layer-2686056",
+            "label": "Senior Standards researcher, 6G Physical Layer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-patent-counsel-agent-2671933",
+            "label": "(Senior) Patent Counsel/Agent",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/lead-counsel-2772480",
+            "label": "Lead Counsel",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/principal-standardization-lead-2754553",
+            "label": "Principal Standardization Lead",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 12,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
+    }
+  },
+  "elisa": {
+    "metrics": {
+      "growthGap": {
+        "value": -4.825333,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageHeadcount",
+        "sources": [
+          {
+            "url": "https://static.elisa.com/v2/image/2tqybbhjs47b/1xErL96gEH443ZPwzpHFEv/743700TU2S3DXWGU7H32-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.2571e+09; ifrs-full:Revenue [c-2] = 2.1915e+09; table:Average number of employees during the period [FY2025] = 6233 (Year columns [2025, 2024, 2023, 2022, 2021]: Average number of employees during the period | 6,233 | 5,781 | 5,721 | 5,523 | 5,391); table:Average number of employees during the period [FY2024] = 5781 (Year columns [2025, 2024, 2023, 2022, 2021]: Average number of employees during the period | 6,233 | 5,781 | 5,721 | 5,523 | 5,391)"
+          }
+        ],
+        "inputs": {
+          "revenue": 2257100000.0,
+          "previousRevenue": 2191500000.0,
+          "employees": 6233.0,
+          "previousEmployees": 5781.0
+        },
+        "fetchedAt": "2026-10-24T18:37:43.816906+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-tampere-2780808",
+            "label": "Myymälämyyjä Elisa Oyj, Tampere",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-espoo-ja-uusimaa-2783781",
+            "label": "Myymälämyyjä Elisa Oyj, Espoo ja Uusimaa",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-espoo-ja-uusimaa-2783836",
+            "label": "Myymälämyyjä Elisa Oyj, Espoo ja Uusimaa",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-tampere-2780856",
+            "label": "Myymälämyyjä Elisa Oyj, Tampere",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 4,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "kone": {
+    "metrics": {},
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "wartsila": {
+    "metrics": {
+      "growthGap": {
+        "value": 6.188885,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageFte",
+        "sources": [
+          {
+            "url": "https://www.wartsila.com/static/financial-statements-2025.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 6.914e+09; ifrs-full:Revenue [c-2] = 6.449e+09; table:Personnel on average, full-time equivalent [FY2025] = 18295 (Year columns [2025, 2024]: Personnel on average, full-time equivalent | 18,295 | 18,110); table:Personnel on average, full-time equivalent [FY2024] = 18110 (Year columns [2025, 2024]: Personnel on average, full-time equivalent | 18,295 | 18,110)"
+          }
+        ],
+        "inputs": {
+          "revenue": 6914000000.0,
+          "previousRevenue": 6449000000.0,
+          "employees": 18295.0,
+          "previousEmployees": 18110.0
+        },
+        "fetchedAt": "2026-10-24T18:37:48.792808+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/maintenance-processes-and-tools-expert-2746125",
+            "label": "Maintenance processes and tools Expert",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/legal-counsel-2784466",
+            "label": "Legal Counsel",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/proposal-manager-proposal-engineer-2783377",
+            "label": "Proposal Manager / Proposal Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/vibration-engineer-2774578",
+            "label": "Vibration Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/engine-automation-commissioning-engineer-new-build-energy-sites-2783260",
+            "label": "Engine Automation Commissioning Engineer - New-Build Energy Sites",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/general-manager-trade-compliance-2782017",
+            "label": "General Manager, Trade Compliance",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/chief-project-engineer-electrical-and-automation-2724953",
+            "label": "Project Engineer, Electrical and Automation",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/service-manager-mywartsila-2780818",
+            "label": "Service Manager, MyWärtsilä",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/project-manager-2780709",
+            "label": "Project Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/global-travel-manager-2780710",
+            "label": "Global Travel Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/mechanical-design-engineer-rd-2779710",
+            "label": "Mechanical Design Engineer, R&D",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/call-trainee-legal-2779602",
+            "label": "On-Call Trainee, Legal",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 12,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "valmet": {
+    "metrics": {
+      "growthGap": {
+        "value": -1.390574,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageHeadcount",
+        "sources": [
+          {
+            "url": "https://www.valmet.com/globalassets/investors/reports--presentations/annual-reports/2025/213800d9o7fuqdh83v62-2025-12-31-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 5.197e+09; ifrs-full:Revenue [c-2] = 5.359e+09; table:Average number of personnel [FY2025] = 18982 (Year columns [2025, 2024, 2023, 2022, 2021]: Average number of personnel | 18,982 | 19,297 | 18,130 | 16,554 | 14,163); table:Average number of personnel [FY2024] = 19297 (Year columns [2025, 2024, 2023, 2022, 2021]: Average number of personnel | 18,982 | 19,297 | 18,130 | 16,554 | 14,163)"
+          }
+        ],
+        "inputs": {
+          "revenue": 5197000000.0,
+          "previousRevenue": 5359000000.0,
+          "employees": 18982.0,
+          "previousEmployees": 19297.0
+        },
+        "fetchedAt": "2026-10-24T18:37:49.969740+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "inventoryDays": {
+        "value": 86.967333,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://www.valmet.com/globalassets/investors/reports--presentations/annual-reports/2025/213800d9o7fuqdh83v62-2025-12-31-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 8.84e+08; ifrs-full:Inventories [c-4] = 9.03e+08; ifrs-full:CostOfSales [c-1] = 3.75e+09"
+          }
+        ],
+        "inputs": {
+          "inventory": 884000000.0,
+          "previousInventory": 903000000.0,
+          "costOfSales": 3750000000.0
+        },
+        "fetchedAt": "2026-10-24T18:37:49.969740+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      },
+      "manualAds": {
+        "value": 22.222222,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/software-senior-design-engineer-2774556",
+            "label": "Software (Senior) Design Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000",
+            "label": "Service Coordinator/Engineer",
+            "evidence": "Managing orders from quotation to invoicing, creating work orders in the ERP system, and coordinating timelines with involved parties"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/director-pricing-availability-2781111",
+            "label": "Director, Pricing & Availability",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/director-manufacturing-pressure-parts-2785283",
+            "label": "Director, Manufacturing, Pressure Parts",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/technical-documentation-manager-2784626",
+            "label": "Technical Documentation Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/coordinator-production-2781961",
+            "label": "Coordinator, Production",
+            "evidence": "You will act as the local key user for the Nepton working time system and Abloy OS, review and correct working time transactions, create shift calendars, calculate annual working hours and prepare operational reports"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/project-engineer-2781116",
+            "label": "Project Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-sales-manager-partner-business-2774306",
+            "label": "Senior Sales Manager - Partner Business",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/manager-group-control-2777996",
+            "label": "Manager, Group Control",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 9,
+          "manual": 2
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
+    }
+  },
+  "neste": {
+    "metrics": {
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-business-controller-2785528",
+            "label": "Senior Business Controller",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/automaatioasentaja-2780813",
+            "label": "Automaatioasentaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/business-process-development-manager-2785262",
+            "label": "Business Process Development Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-refinery-data-engineer-2770929",
+            "label": "Senior Refinery Data Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/solution-manager-2775849",
+            "label": "Solution Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/sahkoasentaja-2775696",
+            "label": "Sähköasentaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/hr-specialist-2784414",
+            "label": "HR Specialist",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/liikepaikkapaallikko-2784151",
+            "label": "Liikepaikkapäällikkö",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/automation-lead-engineer-2774297",
+            "label": "Automation Lead Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-manager-mechanical-2773851",
+            "label": "Senior Manager, Mechanical",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/program-manager-2778141",
+            "label": "Program Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/it-solution-manager-sap-supply-chain-and-logistics-2777864",
+            "label": "IT Solution Manager, SAP Supply Chain and Logistics",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 12,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "fortum": {
+    "metrics": {
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/operaattori-vedenkasittely-2776782",
+            "label": "Operaattori, vedenkäsittely",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/project-manager-it-mergers-acquisitions-and-divestments-mad-2776674",
+            "label": "Project Manager, IT Mergers, Acquisitions and Divestments (MAD)",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/solution-specialist-asset-2776327",
+            "label": "Solution Specialist, Asset",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/it-service-manager-2775224",
+            "label": "People/HR Systems Service Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-engineer-electrical-design-2761396",
+            "label": "Senior Engineer, Electrical Design",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/manager-operational-technology-2771777",
+            "label": "Manager Operational Technology",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/sahkoasentaja-2769925",
+            "label": "Sähköasentaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/sustainability-manager-compliance-2766912",
+            "label": "Sustainability Manager, Compliance",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 8,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "upm": {
+    "metrics": {
+      "growthGap": {
+        "value": -2.183233,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-closingHeadcount",
+        "sources": [
+          {
+            "url": "https://mb.cision.com/Public/23100/4315173/b3fc1a1ae015c1c7.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 9.656e+09; ifrs-full:RevenueFromContractsWithCustomers [c-2] = 1.0339e+10; table:Personnel at the end of period [FY2025] = 15127 (Year columns [2025, 2024, 2023]: Personnel at the end of period | 15,127 | 15,827 | 16,573); table:Personnel at the end of period [FY2024] = 15827 (Year columns [2025, 2024, 2023]: Personnel at the end of period | 15,127 | 15,827 | 16,573)"
+          }
+        ],
+        "inputs": {
+          "revenue": 9656000000.0,
+          "previousRevenue": 10339000000.0,
+          "employees": 15127.0,
+          "previousEmployees": 15827.0
+        },
+        "fetchedAt": "2026-10-24T18:37:54.410264+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "manualAds": {
+        "value": 8.333333,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/sahko-ja-automaatiokunnossapidon-oppisopimus-2780181",
+            "label": "Sähkö- ja automaatiokunnossapidon oppisopimus",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/sahko-ja-automaatiokunnossapitoasentaja-2784163",
+            "label": "Sähkö- ja automaatiokunnossapitoasentaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/manager-treasury-accounting-2769749",
+            "label": "Manager, Treasury Accounting",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kaynnissapitoinsinoori-2783552",
+            "label": "Käynnissäpitoinsinööri",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/senior-manager-service-management-2778928",
+            "label": "Senior Manager, Service Management",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/manager-business-accounting-and-reporting-2778642",
+            "label": "Manager, Business Accounting and Reporting",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/sahkoautomaatioasentaja-2773899",
+            "label": "Sähköautomaatioasentaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327",
+            "label": "Specialist/Senior Specialist, Payroll Services",
+            "evidence": "You will contribute to payroll and time management transformation projects, coordinate with external providers and internal stakeholders, perform pre- and post-payroll reconciliations, and ensure legal and tax compliance"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/mekaanisen-kunnossapidon-paallikko-2782788",
+            "label": "Mekaanisen kunnossapidon päällikkö",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/projekti-insinoori-2782490",
+            "label": "Projekti-insinööri",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/director-it-sourcing-category-2777935",
+            "label": "Director, IT Sourcing Category",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/metsaasiantuntija-2777379",
+            "label": "Metsäasiantuntija",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 12,
+          "manual": 1
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "huhtamaki": {
+    "metrics": {
+      "growthGap": {
+        "value": -3.273434,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageHeadcount",
+        "sources": [
+          {
+            "url": "https://www.huhtamaki.com/globalassets/global/investors/reports-and-presentations/en/2025/5493007050sjvmxn6l29-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [P01_01_2025To12_31_2025] = 3.9602e+09; ifrs-full:Revenue [P01_01_2024To12_31_2024] = 4.1263e+09; table:Group [FY2025] = 17686 (Year columns [2025, 2024]: Group | 17,686 | 17,820); table:Group [FY2024] = 17820 (Year columns [2025, 2024]: Group | 17,686 | 17,820)"
+          }
+        ],
+        "inputs": {
+          "revenue": 3960200000.0,
+          "previousRevenue": 4126300000.0,
+          "employees": 17686.0,
+          "previousEmployees": 17820.0
+        },
+        "fetchedAt": "2026-10-24T18:37:55.951314+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "adminRatio": {
+        "value": 7.68648,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://www.huhtamaki.com/globalassets/global/investors/reports-and-presentations/en/2025/5493007050sjvmxn6l29-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [P01_01_2025To12_31_2025] = 3.9602e+09; ifrs-full:AdministrativeExpense [P01_01_2025To12_31_2025] = 3.044e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 3960200000.0,
+          "administrativeExpenses": 304400000.0
+        },
+        "fetchedAt": "2026-10-24T18:37:55.951314+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 70.766104,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://www.huhtamaki.com/globalassets/global/investors/reports-and-presentations/en/2025/5493007050sjvmxn6l29-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [PAsOn12_31_2025] = 5.999e+08; ifrs-full:Inventories [PAsOn12_31_2024] = 6.666e+08; ifrs-full:CostOfSales [P01_01_2025To12_31_2025] = 3.2662e+09"
+          }
+        ],
+        "inputs": {
+          "inventory": 599900000.0,
+          "previousInventory": 666600000.0,
+          "costOfSales": 3266200000.0
+        },
+        "fetchedAt": "2026-10-24T18:37:55.951314+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
+    "missing": {
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "outokumpu": {
+    "metrics": {
+      "adminRatio": {
+        "value": 4.809802,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/5493009yrujjdcff0r80-2025-12-31-1-en.zip?revision=fd89c8ff-12c8-49a2-b142-e593d630f715&modified=20260227085619&hash=E1DE298AB4F779BDA0470C2D4F3F9A8E",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 5.468e+09; ifrs-full:AdministrativeExpense [c-1] = 2.63e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 5468000000.0,
+          "administrativeExpenses": 263000000.0
+        },
+        "fetchedAt": "2026-10-24T18:38:01.809006+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 116.573215,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/5493009yrujjdcff0r80-2025-12-31-1-en.zip?revision=fd89c8ff-12c8-49a2-b142-e593d630f715&modified=20260227085619&hash=E1DE298AB4F779BDA0470C2D4F3F9A8E",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 1.608e+09; ifrs-full:Inventories [c-4] = 1.764e+09; ifrs-full:CostOfSales [c-1] = 5.279e+09"
+          }
+        ],
+        "inputs": {
+          "inventory": 1608000000.0,
+          "previousInventory": 1764000000.0,
+          "costOfSales": 5279000000.0
+        },
+        "fetchedAt": "2026-10-24T18:38:01.809006+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "fiskars": {
+    "metrics": {
+      "growthGap": {
+        "value": 3.209015,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageFte",
+        "sources": [
+          {
+            "url": "https://fiskarsgroup.com/wp-content/uploads/2026/02/Fiskars-2025-12-31-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.1402e+09; ifrs-full:Revenue [ctx-2] = 1.1571e+09; table:Personnel (FTE), average [FY2025] = 6145 (Year columns [2025, 2024, 2023, 2022, 2021]: Personnel (FTE), average | 6,145 | 6,446 | 6,133 | 6,273 | 6,081); table:Personnel (FTE), average [FY2024] = 6446 (Year columns [2025, 2024, 2023, 2022, 2021]: Personnel (FTE), average | 6,145 | 6,446 | 6,133 | 6,273 | 6,081)"
+          }
+        ],
+        "inputs": {
+          "revenue": 1140200000.0,
+          "previousRevenue": 1157100000.0,
+          "employees": 6145.0,
+          "previousEmployees": 6446.0
+        },
+        "fetchedAt": "2026-10-24T18:38:03.430610+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "adminRatio": {
+        "value": 11.147167,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://fiskarsgroup.com/wp-content/uploads/2026/02/Fiskars-2025-12-31-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.1402e+09; ifrs-full:AdministrativeExpense [ctx-1] = 1.271e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 1140200000.0,
+          "administrativeExpenses": 127100000.0
+        },
+        "fetchedAt": "2026-10-24T18:38:03.430610+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 197.127747,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://fiskarsgroup.com/wp-content/uploads/2026/02/Fiskars-2025-12-31-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [ctx-3] = 3.229e+08; ifrs-full:Inventories [ctx-4] = 3.307e+08; ifrs-full:CostOfSales [ctx-1] = 6.051e+08"
+          }
+        ],
+        "inputs": {
+          "inventory": 322900000.0,
+          "previousInventory": 330700000.0,
+          "costOfSales": 605100000.0
+        },
+        "fetchedAt": "2026-10-24T18:38:03.430610+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
+    "missing": {
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "marimekko": {
+    "metrics": {
+      "growthGap": {
+        "value": -0.45833,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageHeadcount",
+        "sources": [
+          {
+            "url": "https://company.marimekko.com/app/uploads/2026/03/74370053IOY42B9YJ350-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.896e+08; ifrs-full:Revenue [ctx-2] = 1.826e+08; table:Average personnel [FY2025] = 486 (Year columns [2025, 2024, 2023]: Average personnel | 486 | 466 | 462); table:Average personnel [FY2024] = 466 (Year columns [2025, 2024, 2023]: Average personnel | 486 | 466 | 462)"
+          }
+        ],
+        "inputs": {
+          "revenue": 189600000.0,
+          "previousRevenue": 182600000.0,
+          "employees": 486.0,
+          "previousEmployees": 466.0
+        },
+        "fetchedAt": "2026-10-24T18:38:05.641482+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      }
+    },
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "harvia": {
+    "metrics": {},
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "orion": {
+    "metrics": {
+      "growthGap": {
+        "value": 14.66445,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "growth-gap-averageHeadcount",
+        "sources": [
+          {
+            "url": "https://www.orionpharma.com/4932a1/globalassets/investors/hallinnointi/yhtiokokous/yhtiokokous-2026/74370029vahcxdr7b745-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.8895e+09; ifrs-full:Revenue [c-2] = 1.5424e+09; table:Average number of personnel [FY2025] = 4003 (Year columns [2025, 2024]: Average number of personnel | 4,003 | 3,712); table:Average number of personnel [FY2024] = 3712 (Year columns [2025, 2024]: Average number of personnel | 4,003 | 3,712)"
+          }
+        ],
+        "inputs": {
+          "revenue": 1889500000.0,
+          "previousRevenue": 1542400000.0,
+          "employees": 4003.0,
+          "previousEmployees": 3712.0
+        },
+        "fetchedAt": "2026-10-24T18:38:10.693418+00:00",
+        "note": "Revenue growth minus employee growth, 2024–2025, in percentage points. Acquisitions, prices and restructuring can affect both figures."
+      },
+      "adminRatio": {
+        "value": 4.593808,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://www.orionpharma.com/4932a1/globalassets/investors/hallinnointi/yhtiokokous/yhtiokokous-2026/74370029vahcxdr7b745-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.8895e+09; ifrs-full:AdministrativeExpense [c-1] = 8.68e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 1889500000.0,
+          "administrativeExpenses": 86800000.0
+        },
+        "fetchedAt": "2026-10-24T18:38:10.693418+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 236.022542,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://www.orionpharma.com/4932a1/globalassets/investors/hallinnointi/yhtiokokous/yhtiokokous-2026/74370029vahcxdr7b745-2025-12-31-1-en.zip",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 4.563e+08; ifrs-full:Inventories [c-4] = 4.186e+08; ifrs-full:CostOfSales [c-1] = 6.765e+08"
+          }
+        ],
+        "inputs": {
+          "inventory": 456300000.0,
+          "previousInventory": 418600000.0,
+          "costOfSales": 676500000.0
+        },
+        "fetchedAt": "2026-10-24T18:38:10.693418+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      },
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/qc-assistant-associate-2721853",
+            "label": "QC Assistant/Associate",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/regulatory-affairs-lead-2784479",
+            "label": "Regulatory Affairs Lead",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/prosessinhoitaja-2781960",
+            "label": "Prosessinhoitaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/qa-pharmacist-2781246",
+            "label": "QA Pharmacist",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/project-manager-2779517",
+            "label": "Project Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kunnossapitoasentaja-2775320",
+            "label": "Kunnossapitoasentaja",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/head-predictive-pharmaceutical-sciences-pharmaceutical-sciences-rd-orion-pharma-2771334",
+            "label": "Head of Predictive Pharmaceutical Sciences, Pharmaceutical Sciences, R&D, Orion Pharma",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 7,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {}
+  },
+  "finnair": {
+    "metrics": {
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/flight-sales-accounting-senior-accountant-2769834",
+            "label": "Senior Accountant, Flight Sales Accounting",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/fleet-transitions-manager-2781951",
+            "label": "Fleet Transitions Manager",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/it-product-owner-operations-control-2781227",
+            "label": "IT Product Owner, Operations Control",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/customer-insight-analyst-2776326",
+            "label": "Customer Insight Analyst",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/maintenance-planning-engineer-2773037",
+            "label": "Maintenance Planning Engineer",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 5,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    }
+  },
+  "fazer": {
+    "metrics": {},
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    }
+  },
+  "valio": {
+    "metrics": {
+      "manualAds": {
+        "value": 0.0,
+        "year": null,
+        "period": "Ads sampled 2026-10-24",
+        "scope": "job-ad-sample",
+        "definition": "explicit-tasks-v1",
+        "sources": [
+          {
+            "url": "https://www.jobly.fi/tyopaikka/valmistuksenohjaajia-ja-varastonhoitajia-joensuu-maaraaikainen-2785287",
+            "label": "Valmistuksenohjaajia ja varastonhoitajia, Joensuu, määräaikainen",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/elintarviketyontekijoita-vantaa-maaraaikainen-2785289",
+            "label": "Elintarviketyöntekijöitä, Vantaa, määräaikainen",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kehitysasiantuntija-prosessiautomaatio-maaraaikainen-2775060",
+            "label": "Kehitysasiantuntija (prosessiautomaatio), määräaikainen",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/myyntipaallikko-helsinki-2778549",
+            "label": "Myyntipäällikkö, Helsinki",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/asiantuntija-toiden-suunnittelu-kunnossapito-riihimaki-2777471",
+            "label": "Asiantuntija, töiden suunnittelu/ kunnossapito, Riihimäki",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/kunnossapitovastaava-riihimaki-2777470",
+            "label": "Kunnossapitovastaava, Riihimäki",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/siistija-riihimaki-maaraaikainen-2773709",
+            "label": "Siistijä, Riihimäki, määräaikainen",
+            "evidence": "No explicit task matched the documented rules"
+          },
+          {
+            "url": "https://www.jobly.fi/tyopaikka/tuotantovastaava-joensuu-2763253",
+            "label": "Tuotantovastaava, Joensuu",
+            "evidence": "No explicit task matched the documented rules"
+          }
+        ],
+        "inputs": {
+          "checked": 8,
+          "manual": 0
+        },
+        "fetchedAt": "2026-10-24",
+        "note": "Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, not the share of staff doing manual work. Zero means no rule matched."
+      }
+    },
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    }
+  }
+}

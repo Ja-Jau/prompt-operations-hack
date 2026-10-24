@@ -1,6 +1,7 @@
 import companies from "@/data/companies.json";
 import hiring from "@/data/hiring.json";
-import type { Company, HiringCompany } from "@/types/company";
+import efficiency from "@/data/efficiency.json";
+import type { Company, EfficiencyMetricId, EfficiencyObservation, HiringCompany } from "@/types/company";
 
 /**
  * Single entry point for company data. Today it reads the JSON exported by
@@ -8,7 +9,11 @@ import type { Company, HiringCompany } from "@/types/company";
  * every caller keeps working.
  */
 export async function getCompanies(): Promise<Company[]> {
-  return companies as Company[];
+  const observations = efficiency as Record<string, { metrics: Partial<Record<EfficiencyMetricId, EfficiencyObservation>> }>;
+  return (companies as Company[]).map((company) => ({
+    ...company,
+    efficiency: observations[company.id]?.metrics ?? {},
+  }));
 }
 
 /** Every company with open job ads, from pipeline/import_jobs.py. */

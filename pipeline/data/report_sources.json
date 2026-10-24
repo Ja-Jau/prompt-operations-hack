@@ -1,0 +1,106 @@
+{
+  "supercell": {
+    "landingUrl": "https://supercell.com/en/news/",
+    "note": "Private company: no public ESEF filing expected; add a reviewed annual-report source when available."
+  },
+  "remedy": {
+    "landingUrl": "https://view.news.eu.nasdaq.com/view?id=b0b2e3139edc14c8380937d941d2dce8a&lang=en&src=micro"
+  },
+  "kesko": {
+    "landingUrl": "https://www.kesko.fi/en/investor/reports-and-presentations/",
+    "employeeTable": {
+      "rowLabel": "Average number of personnel converted into full-time employees",
+      "tableContains": "Personnel as at 31 Dec.",
+      "basis": "averageFte"
+    }
+  },
+  "tokmanni": {
+    "landingUrl": "https://view.news.eu.nasdaq.com/view?id=b10eaa93085e478f4e48cc39438b6f11a&lang=en&src=micro"
+  },
+  "nokia": {
+    "landingUrl": "https://www.nokia.com/newsroom/nokia-has-published-its-nokia-in-2025-annual-report-and-filed-its-annual-report-on-form-20-f-for-2025/"
+  },
+  "elisa": {
+    "landingUrl": "https://elisa.com/corporate/investors/annual-report/",
+    "employeeTable": {
+      "rowLabel": "Average number of employees during the period",
+      "basis": "averageHeadcount"
+    }
+  },
+  "kone": {
+    "landingUrl": "https://www.kone.com/en/investors/reports-and-presentations/"
+  },
+  "wartsila": {
+    "landingUrl": "https://www.wartsila.com/investors/reports-presentations/annual-report/annual-report-material",
+    "employeeTable": {
+      "rowLabel": "Personnel on average, full-time equivalent",
+      "basis": "averageFte"
+    }
+  },
+  "valmet": {
+    "landingUrl": "https://www.valmet.com/archive/{year}/",
+    "employeeTable": {
+      "rowLabel": "Average number of personnel",
+      "basis": "averageHeadcount"
+    }
+  },
+  "neste": {
+    "landingUrl": "https://www.neste.com/news/neste-has-published-its-annual-report-2025"
+  },
+  "fortum": {
+    "landingUrl": "https://www.fortum.com/media/2026/02/fortums-financial-statements-and-operating-and-financial-review-2025-published"
+  },
+  "upm": {
+    "landingUrl": "https://www.upm.com/news-and-stories/releases/2026/03/upm-annual-report-2025-corporate-governance-statement-and-remuneration-report-published/",
+    "employeeTable": {
+      "rowLabel": "Personnel at the end of period",
+      "basis": "closingHeadcount"
+    }
+  },
+  "huhtamaki": {
+    "landingUrl": "https://www.huhtamaki.com/en/investors/reports-and-releases/{year}/",
+    "employeeTable": {
+      "rowLabel": "Group",
+      "tableContains": "Average number of personnel",
+      "basis": "averageHeadcount"
+    }
+  },
+  "outokumpu": {
+    "landingUrl": "https://www.outokumpu.com/en/investors/materials/annual-report-2025"
+  },
+  "fiskars": {
+    "landingUrl": "https://fiskarsgroup.com/investors/reports-and-presentations/annual-and-interim-reports/",
+    "employeeTable": {
+      "rowLabel": "Personnel (FTE), average",
+      "basis": "averageFte"
+    }
+  },
+  "marimekko": {
+    "landingUrl": "https://company.marimekko.com/releases-publications/annual-reports/",
+    "employeeTable": {
+      "rowLabel": "Average personnel",
+      "basis": "averageHeadcount"
+    }
+  },
+  "harvia": {
+    "landingUrl": "https://harviagroup.com/reports-and-presentations/"
+  },
+  "orion": {
+    "landingUrl": "https://www.orionpharma.com/investors/reports-and-presentations/annual-reports/",
+    "employeeTable": {
+      "rowLabel": "Average number of personnel",
+      "basis": "averageHeadcount"
+    }
+  },
+  "finnair": {
+    "landingUrl": "https://news.cision.com/finnair/r/finnair-s-annual-report-2025-has-been-published,c4313265"
+  },
+  "fazer": {
+    "landingUrl": "https://www.fazergroup.com/about-us/annual-review/",
+    "note": "Private company: a reviewed PDF extraction may be needed."
+  },
+  "valio": {
+    "landingUrl": "https://www.valio.com/sustainability/management/reporting/",
+    "note": "Private company: a reviewed PDF extraction may be needed."
+  }
+}

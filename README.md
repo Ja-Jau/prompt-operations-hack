@@ -27,8 +27,14 @@ Who's hiring for this? #3 🕵️ 3/6
 ```
 
 ### ▲▼ Higher/Lower (bonus)
-Which company earns more per employee? Daily or endless streak, one ⚡ Velho save per game,
-and every 4th card a Velho round about manual work in job ads.
+Compare revenue growth versus employee growth, repetitive tasks in sampled job ads,
+administrative expenses as a share of revenue, and estimated inventory days. Each
+question picks a random available category and two companies with sourced comparable
+data. Five rounds per play, fresh random categories, a score out of five, and sources on every reveal. Wrong guesses do not end the game.
+
+Run `npm run data:refresh` to collect public reports and job-ad samples for the company
+catalog. See [the efficiency data guide](pipeline/EFFICIENCY.md) for definitions,
+coverage, refresh options and validation. Missing disclosures are excluded from play.
 
 ## Why this works for Velho
 
@@ -44,7 +50,7 @@ and every 4th card a Velho round about manual work in job ads.
 
 | Part | Tech | Why |
 |---|---|---|
-| Game and API | **Next.js 15 (App Router), TypeScript, Tailwind CSS v4** | One app for the UI and the server routes; deploys to Vercel in a minute |
+| Game and API | **Next.js 16 (App Router), TypeScript, Tailwind CSS v4** | One app for the UI and the server routes; deploys to Vercel in a minute |
 | Data pipeline | **Python 3.11 + Anthropic SDK** | Validates figures, has Claude write the "why" and hint text, exports JSON |
 | AI | **Claude** (`claude-opus-5-5`) | Offline text generation, plus the live company lookup (web search) in `/api/lookup` |
 
@@ -71,7 +77,7 @@ src/
     api/lookup/route.ts       #   POST /api/lookup: Claude + web search finds a company's figures
   components/
     game/                     # the higher/lower game
-      Game.tsx                #   game loop: daily + endless, guesses, lifeline, results
+      Game.tsx                #   game loop: five random rounds, guesses, tips, results
       CompanyPanel.tsx        #   one half of the split screen (photo, logo, stats)
       CompanyLogo.tsx         #   logo with fallbacks: local file → logo.dev → favicon → initials
       RollingNumber.tsx

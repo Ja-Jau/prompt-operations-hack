@@ -1,0 +1,248 @@
+{
+  "supercell": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": "Private company: no public ESEF filing expected; add a reviewed annual-report source when available.",
+    "financialFetchedAt": null
+  },
+  "remedy": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": "No ESEF report link found; configure reportUrl or use a reviewed extraction",
+    "financialFetchedAt": null
+  },
+  "kesko": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:40.545481+00:00"
+  },
+  "tokmanni": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": "No ESEF report link found; configure reportUrl or use a reviewed extraction",
+    "financialFetchedAt": null
+  },
+  "nokia": {
+    "available": [
+      "inventoryDays",
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:44:22.309979+00:00"
+  },
+  "elisa": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:43.816906+00:00"
+  },
+  "kone": {
+    "available": [],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:45.707548+00:00"
+  },
+  "wartsila": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:48.792808+00:00"
+  },
+  "valmet": {
+    "available": [
+      "growthGap",
+      "inventoryDays",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:49.969740+00:00"
+  },
+  "neste": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:51.535402+00:00"
+  },
+  "fortum": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:52.805292+00:00"
+  },
+  "upm": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:54.410264+00:00"
+  },
+  "huhtamaki": {
+    "available": [
+      "growthGap",
+      "adminRatio",
+      "inventoryDays"
+    ],
+    "missing": {
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:55.951314+00:00"
+  },
+  "outokumpu": {
+    "available": [
+      "adminRatio",
+      "inventoryDays"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:01.809006+00:00"
+  },
+  "fiskars": {
+    "available": [
+      "growthGap",
+      "adminRatio",
+      "inventoryDays"
+    ],
+    "missing": {
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:03.430610+00:00"
+  },
+  "marimekko": {
+    "available": [
+      "growthGap"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:05.641482+00:00"
+  },
+  "harvia": {
+    "available": [],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:08.501403+00:00"
+  },
+  "orion": {
+    "available": [
+      "growthGap",
+      "adminRatio",
+      "inventoryDays",
+      "manualAds"
+    ],
+    "missing": {},
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:10.693418+00:00"
+  },
+  "finnair": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:58:59.544968+00:00"
+  },
+  "fazer": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": "HTTP Error 404: Not Found",
+    "financialFetchedAt": null
+  },
+  "valio": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": "Private company: a reviewed PDF extraction may be needed.",
+    "financialFetchedAt": null
+  }
+}

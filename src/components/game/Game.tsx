@@ -1,14 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import type { Company, Mode } from "@/types/company";
-import { buildDailyRun, dailyNumber } from "@/lib/game/daily";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import type { Company } from "@/types/company";
 import { METRICS } from "@/lib/game/metrics";
-import { firstStep, nextStep, type Step } from "@/lib/game/sequence";
+import { availableRounds, buildRandomRun, type Round } from "@/lib/game/sequence";
 import { rankTitle, shareText } from "@/lib/game/share";
 import { VELHO_URL } from "@/lib/velho";
-import { YourCompany } from "@/components/ranking/YourCompany";
-import { PageTitle } from "@/components/layout/PageTitle";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { CompanyPanel } from "./CompanyPanel";
@@ -16,41 +13,28 @@ import { RollingNumber } from "./RollingNumber";
 import { VelhoTip } from "./VelhoTip";
 
 type Phase = "guess" | "rolling" | "revealed" | "done";
-/** "saved": wrong, but the once-per-game Velho save kept the streak alive. */
-type Outcome = "hit" | "saved" | "miss";
+type Outcome = "hit" | "miss";
 
-/** Endless mode avoids repeating any of the last few companies. */
-const ENDLESS_MEMORY = 5;
+const BEST_KEY = "tehokas-efficiency-best-five-rounds";
 
-function bestKey(mode: Mode) {
-  return `tehokas-best-${mode}`;
-}
-
-function readBest(mode: Mode): number {
+function readBest(): number {
   try {
-    return Number(localStorage.getItem(bestKey(mode))) || 0;
+    return Number(localStorage.getItem(BEST_KEY)) || 0;
   } catch {
     return 0;
   }
 }
 
-function writeBest(mode: Mode, value: number) {
+function writeBest(value: number) {
   try {
-    localStorage.setItem(bestKey(mode), String(value));
+    localStorage.setItem(BEST_KEY, String(value));
   } catch {
     // Private mode or blocked storage: the best score just isn't remembered.
   }
 }
 
-function startEndless(pool: Company[]): Step[] {
-  const first = firstStep(pool, Math.random);
-  const second = nextStep(pool, first.company, 1, new Set([first.company.id]), Math.random);
-  return second ? [first, second] : [first];
-}
-
 const OUTCOME_UI: Record<Outcome, { icon: IconName; badgeClass: string; message: string }> = {
   hit: { icon: "check", badgeClass: "bg-sage text-ivory", message: "Correct." },
-  saved: { icon: "spark", badgeClass: "bg-sky text-navy", message: "Wrong, but Velho saved you. That was your one save." },
   miss: { icon: "cross", badgeClass: "bg-clay text-ivory", message: "Not quite." },
 };
 
@@ -59,81 +43,66 @@ type Props = {
   onGameChange: (game: GameId) => void;
 };
 
-/** Higher or lower: guess whether the next company earns more or less per employee. */
+/** Higher or lower: sourced efficiency signals, a random category every question. */
 export function Game({ companies, onGameChange }: Props) {
-  const [mode, setMode] = useState<Mode>("daily");
-  const [steps, setSteps] = useState<Step[]>([]);
+  const [rounds, setRounds] = useState<Round[]>([]);
+  const pairs = useMemo(() => availableRounds(companies), [companies]);
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("guess");
   const [outcome, setOutcome] = useState<Outcome>("hit");
-  const [streak, setStreak] = useState(0);
+  const [score, setScore] = useState(0);
   const [best, setBest] = useState(0);
-  const [saveUsed, setSaveUsed] = useState(false);
-  const [perfect, setPerfect] = useState(false);
   const [tipUsed, setTipUsed] = useState(false);
   const [tipOpen, setTipOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const start = useCallback(
-    (next: Mode) => {
-      setMode(next);
-      setSteps(next === "daily" ? buildDailyRun(companies) : startEndless(companies));
-      setIndex(0);
-      setPhase("guess");
-      setStreak(0);
-      setBest(readBest(next));
-      setSaveUsed(false);
-      setPerfect(false);
-      setTipUsed(false);
-      setTipOpen(false);
-      setCopied(false);
-    },
-    [companies],
-  );
+  const start = useCallback(() => {
+    setRounds(buildRandomRun(pairs));
+    setIndex(0);
+    setPhase("guess");
+    setScore(0);
+    setBest(readBest());
+    setTipUsed(false);
+    setTipOpen(false);
+    setCopied(false);
+  }, [pairs]);
 
-  // The run depends on the date and Math.random, so build it on the client only.
-  useEffect(() => start("daily"), [start]);
+  // Random runs are generated on the client after mounting.
+  useEffect(() => start(), [start]);
 
   const topBar = (
     <TopBar
       game="higherLower"
       onGameChange={onGameChange}
-      status={`Streak ${streak} · Best ${best} · Save ${saveUsed ? "used" : "ready"}`}
-      controls={
-        <div className="flex rounded-full border border-line-dark p-0.5 text-xs md:text-sm">
-          {(["daily", "endless"] as const).map((m) => (
-            <button
-              key={m}
-              onClick={() => start(m)}
-              className={`rounded-full px-3 py-1 capitalize transition ${
-                mode === m ? "bg-ivory text-navy" : "text-on-dark hover:text-ivory"
-              }`}
-            >
-              {m}
-            </button>
-          ))}
-        </div>
-      }
+      status={`Score ${score}/5 · Best ${best}/5`}
     />
   );
 
-  const left = steps[index]?.company;
-  const right = steps[index + 1];
-  if (!left || !right) return <div className="flex min-h-0 flex-1 flex-col">{topBar}</div>;
+  const round = rounds[index];
+  if (!round) return (
+    <div className="higher-lower flex min-h-0 flex-1 flex-col overflow-hidden">
+      {topBar}
+      {pairs.length === 0 && (
+        <div className="m-auto max-w-md px-4 text-center">
+          <h1 className="text-3xl">More evidence needed</h1>
+          <p className="mt-3 text-ink-2">There aren’t enough sourced company figures for a fair comparison yet. Try today’s hiring case.</p>
+          <button onClick={() => onGameChange("case")} className="btn btn-dark mt-6">Play who’s hiring?</button>
+        </div>
+      )}
+    </div>
+  );
+  const { left, right } = round;
 
-  const metric = METRICS[right.metric];
-  const velhoRound = right.metric === "manualAds";
+  const metric = METRICS[round.metric];
 
   const guess = (dir: "higher" | "lower") => {
+    if (phase !== "guess") return;
     const l = metric.value(left)!;
-    const r = metric.value(right.company)!;
+    const r = metric.value(right)!;
     const correct = dir === "higher" ? r > l : r < l;
     if (correct) {
       setOutcome("hit");
-      setStreak((s) => s + 1);
-    } else if (!saveUsed) {
-      setOutcome("saved");
-      setSaveUsed(true);
+      setScore((s) => s + 1);
     } else {
       setOutcome("miss");
     }
@@ -141,31 +110,23 @@ export function Game({ companies, onGameChange }: Props) {
     setPhase("rolling");
   };
 
-  const finish = (completedRun: boolean) => {
-    setPerfect(completedRun);
+  const finish = () => {
     setPhase("done");
-    if (streak > best) {
-      setBest(streak);
-      writeBest(mode, streak);
+    if (score > best) {
+      setBest(score);
+      writeBest(score);
     }
   };
 
   const advance = () => {
-    if (outcome === "miss") return finish(false);
-    if (mode === "endless") {
-      const recent = new Set(steps.slice(-ENDLESS_MEMORY).map((s) => s.company.id));
-      const next = nextStep(companies, right.company, steps.length, recent, Math.random);
-      if (!next) return finish(true);
-      setSteps((prev) => [...prev, next]);
-    } else if (index + 2 >= steps.length) {
-      return finish(true);
-    }
+    if (phase !== "revealed") return;
+    if (index + 1 >= rounds.length) return finish();
     setIndex((i) => i + 1);
     setPhase("guess");
   };
 
   const share = async () => {
-    const text = shareText({ mode, streak, savedByVelho: saveUsed, url: window.location.origin });
+    const text = shareText({ score: score, url: window.location.origin });
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -176,37 +137,34 @@ export function Game({ companies, onGameChange }: Props) {
 
   if (phase === "done") {
     return (
-      <div className="min-h-0 flex-1 overflow-y-auto">
+      <div className="higher-lower flex min-h-0 flex-1 flex-col overflow-hidden">
         {topBar}
-        <main className="mx-auto flex max-w-[760px] flex-col gap-8 px-4 pb-14">
-          <PageTitle
-            compact
-            title={perfect ? "Run cleared" : "Streak over"}
-            eyebrow={mode === "daily" ? `Higher or lower · Daily No. ${dailyNumber()}` : "Higher or lower · Endless"}
-          />
-          <section className="card animate-rise p-8 text-center">
-            <p className="text-[clamp(72px,10vw,112px)] font-semibold leading-none tracking-[-0.05em]">{streak}</p>
-            <p className="mt-3 text-2xl font-semibold tracking-tight">{rankTitle(streak)}</p>
-            <p className="mt-2 font-mono text-xs text-ink-3">
-              Best {Math.max(best, streak)}
-              {saveUsed && " · saved once by Velho"}
+        <main className="mx-auto flex min-h-0 w-full max-w-[760px] flex-1 flex-col justify-center gap-3 p-3">
+          <div className="text-center">
+            <h1 className="text-3xl leading-none">Game complete</h1>
+            <p className="mt-1 text-xs text-ink-3">Higher or lower · 5 rounds</p>
+          </div>
+          <section className="card animate-rise p-4 text-center">
+            <p className="text-[clamp(48px,10dvh,88px)] font-semibold leading-none tracking-[-0.05em]">{score}/5</p>
+            <p className="mt-1 text-xl font-semibold tracking-tight">{rankTitle(score)}</p>
+            <p className="mt-1 font-mono text-xs text-ink-3">
+              Best {Math.max(best, score)}
             </p>
-            <div className="mt-7 flex flex-wrap justify-center gap-3">
-              <button onClick={share} className="btn btn-dark">
+            <div className="mt-3 flex flex-wrap justify-center gap-2">
+              <button onClick={share} className="btn btn-dark btn-sm">
                 {copied ? "Copied" : "Share result"}
               </button>
-              <button onClick={() => start("endless")} className="btn btn-line">
-                {mode === "endless" ? "Try again" : "Play endless"} <Icon name="arrowRight" />
+              <button onClick={start} className="btn btn-line btn-sm">
+                Play again <Icon name="arrowRight" />
               </button>
             </div>
           </section>
-          <YourCompany companies={companies} />
-          <section className="rounded-[14px] bg-navy p-7 text-ivory md:p-9">
+          <section className="higher-lower-promo rounded-[14px] bg-navy p-4 text-center text-ivory">
             <p className="eyebrow text-sky">Velho</p>
-            <h2 className="mt-3 text-[clamp(26px,3vw,38px)] tracking-[-0.03em]">
+            <h2 className="mt-1 text-[clamp(20px,3vw,26px)] leading-tight tracking-[-0.03em]">
               Less manual work. More room to <span className="text-sky">grow.</span>
             </h2>
-            <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-light mt-6">
+            <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-light btn-sm mt-3">
               Go to Velho <Icon name="arrowRight" />
             </a>
           </section>
@@ -218,25 +176,20 @@ export function Game({ companies, onGameChange }: Props) {
   const ui = phase === "revealed" ? OUTCOME_UI[outcome] : null;
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
+    <div className="higher-lower flex min-h-0 flex-1 flex-col overflow-hidden">
       {topBar}
 
-      <div className="relative flex min-h-0 flex-1 flex-col md:flex-row">
-        <div className="eyebrow absolute left-1/2 top-4 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-ivory px-4 py-2 text-navy shadow-xl">
-          {velhoRound ? (
-            <span className="text-clay">Velho round · Manual work in job ads</span>
-          ) : mode === "daily" ? (
-            `Daily No. ${dailyNumber()} · Revenue per employee`
-          ) : (
-            "Endless · Revenue per employee"
-          )}
-        </div>
+      <div className="shrink-0 bg-cream px-3 py-2 text-center">
+        <p className="eyebrow text-sage-d">Round {index + 1}/{rounds.length} · {metric.title}</p>
+        <p className="mx-auto mt-1 hidden max-w-2xl text-xs text-ink-2 sm:block">{metric.explanation}</p>
+      </div>
+      <div className="higher-lower-board relative flex min-h-0 flex-1 flex-col overflow-hidden sm:flex-row">
 
-        <CompanyPanel company={left} metric={right.metric} revealed />
+        <CompanyPanel company={left} metric={round.metric} revealed />
 
         <div
           key={ui ? outcome : "vs"}
-          className={`absolute left-1/2 top-1/2 z-10 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full font-mono text-sm shadow-2xl ring-4 ring-navy md:h-16 md:w-16 ${
+          className={`higher-lower-vs absolute left-1/2 top-1/2 z-10 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full font-mono text-xs shadow-2xl ring-2 ring-navy sm:h-12 sm:w-12 ${
             ui ? `animate-pop ${ui.badgeClass}` : "bg-ivory text-navy"
           }`}
         >
@@ -244,15 +197,16 @@ export function Game({ companies, onGameChange }: Props) {
         </div>
 
         <CompanyPanel
-          company={right.company}
-          metric={right.metric}
+          company={right}
+          metric={round.metric}
           revealed={phase === "revealed"}
           value={
             phase === "guess" ? (
               <span className="text-on-dark-2">?</span>
             ) : (
               <RollingNumber
-                value={metric.value(right.company)!}
+                key={`${index}-${round.metric}`}
+                value={metric.value(right)!}
                 format={metric.format}
                 onDone={() => setPhase("revealed")}
               />
@@ -260,22 +214,23 @@ export function Game({ companies, onGameChange }: Props) {
           }
         >
           {phase === "guess" && (
-            <div className="flex flex-col items-center gap-3">
-              <p className="max-w-xs text-sm text-on-dark">
-                {velhoRound ? "More or less manual work in its job ads than " : "More or less per employee than "}
+            <div className="flex flex-col items-center gap-2">
+              <p className="max-w-xs text-xs text-on-dark sm:text-sm">
+                {metric.question}{" "}
                 <strong className="text-ivory">{left.name}</strong>?
               </p>
               <div className="flex gap-3">
-                <button onClick={() => guess("higher")} className="btn btn-light">
+                <button onClick={() => guess("higher")} className="btn btn-light btn-sm">
                   <Icon name="arrowUp" /> {metric.higherLabel}
                 </button>
-                <button onClick={() => guess("lower")} className="btn btn-line-dark">
+                <button onClick={() => guess("lower")} className="btn btn-line-dark btn-sm">
                   <Icon name="arrowDown" /> {metric.lowerLabel}
                 </button>
               </div>
               <VelhoTip
                 left={left}
-                right={right.company}
+                right={right}
+                metric={round.metric}
                 used={tipUsed}
                 open={tipOpen}
                 onAsk={() => {
@@ -286,10 +241,11 @@ export function Game({ companies, onGameChange }: Props) {
             </div>
           )}
           {ui && (
-            <div className="animate-rise flex flex-col items-center gap-3">
+            <div className="animate-rise flex flex-col items-center gap-2">
               <p className="text-[17px] font-semibold">{ui.message}</p>
-              <button onClick={advance} className="btn btn-light">
-                {outcome === "miss" ? "See result" : "Next"} <Icon name="arrowRight" />
+              <p className="hidden max-w-sm text-sm text-on-dark sm:block">{metric.opportunity}</p>
+              <button onClick={advance} className="btn btn-light btn-sm">
+                {index + 1 >= rounds.length ? "See result" : "Next"} <Icon name="arrowRight" />
               </button>
             </div>
           )}

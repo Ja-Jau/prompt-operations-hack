@@ -1,0 +1,1082 @@
+{
+  "kesko": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageFte",
+    "sourceUrl": "https://www.kesko.fi/492ff6/globalassets/03-sijoittaja/raporttikeskus/2026/q1/vuosiraportti-2025/743700ox6hsvmcahpb95-2025-12-31-0-en.zip",
+    "fetchedAt": "2026-10-24T18:37:40.545481+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 12474700000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700OX6HSVMCAHPB95"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 11920100000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700OX6HSVMCAHPB95"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1204000000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-83",
+        "instant": "2025-12-31",
+        "entity": "743700OX6HSVMCAHPB95"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1101500000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-84",
+        "instant": "2024-12-31",
+        "entity": "743700OX6HSVMCAHPB95"
+      },
+      "employees": {
+        "concept": "table:Average number of personnel converted into full-time employees",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 15665.0,
+        "entity": "743700OX6HSVMCAHPB95",
+        "evidence": "Year columns [2023, 2024, 2025]: Average number of personnel converted into full-time employees | 14,766 | 15,347 | 15,665"
+      },
+      "previousEmployees": {
+        "concept": "table:Average number of personnel converted into full-time employees",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 15347.0,
+        "entity": "743700OX6HSVMCAHPB95",
+        "evidence": "Year columns [2023, 2024, 2025]: Average number of personnel converted into full-time employees | 14,766 | 15,347 | 15,665"
+      }
+    }
+  },
+  "elisa": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageHeadcount",
+    "sourceUrl": "https://static.elisa.com/v2/image/2tqybbhjs47b/1xErL96gEH443ZPwzpHFEv/743700TU2S3DXWGU7H32-2025-12-31-1-en.zip",
+    "fetchedAt": "2026-10-24T18:37:43.816906+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 2257100000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700TU2S3DXWGU7H32"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 2191500000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700TU2S3DXWGU7H32"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 47500000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-77",
+        "instant": "2025-12-31",
+        "entity": "743700TU2S3DXWGU7H32"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 75600000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-78",
+        "instant": "2024-12-31",
+        "entity": "743700TU2S3DXWGU7H32"
+      },
+      "employees": {
+        "concept": "table:Average number of employees during the period",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 6233.0,
+        "entity": "743700TU2S3DXWGU7H32",
+        "evidence": "Year columns [2025, 2024, 2023, 2022, 2021]: Average number of employees during the period | 6,233 | 5,781 | 5,721 | 5,523 | 5,391"
+      },
+      "previousEmployees": {
+        "concept": "table:Average number of employees during the period",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 5781.0,
+        "entity": "743700TU2S3DXWGU7H32",
+        "evidence": "Year columns [2025, 2024, 2023, 2022, 2021]: Average number of employees during the period | 6,233 | 5,781 | 5,721 | 5,523 | 5,391"
+      }
+    }
+  },
+  "kone": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://assets.kone.com/adobe/assets/urn:aaid:aem:13d03a7d-e83b-4620-9bfa-9da9befb9196/renditions/original/as/Annual%20Review%202025%20(European%20single%20electronic%20format%20esef).zip",
+    "fetchedAt": "2026-10-24T18:37:45.707548+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 11245200000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-29",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "2138001CNF45JP5XZK38"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 11098400000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-30",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "2138001CNF45JP5XZK38"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 843100000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-87",
+        "instant": "2025-12-31",
+        "entity": "2138001CNF45JP5XZK38"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 856700000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-88",
+        "instant": "2024-12-31",
+        "entity": "2138001CNF45JP5XZK38"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "wartsila": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageFte",
+    "sourceUrl": "https://www.wartsila.com/static/financial-statements-2025.xhtml",
+    "fetchedAt": "2026-10-24T18:37:48.792808+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 6914000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700G7A9J1PHM3X223"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 6449000000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700G7A9J1PHM3X223"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1440000000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-97",
+        "instant": "2025-12-31",
+        "entity": "743700G7A9J1PHM3X223"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1483000000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-98",
+        "instant": "2024-12-31",
+        "entity": "743700G7A9J1PHM3X223"
+      },
+      "employees": {
+        "concept": "table:Personnel on average, full-time equivalent",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 18295.0,
+        "entity": "743700G7A9J1PHM3X223",
+        "evidence": "Year columns [2025, 2024]: Personnel on average, full-time equivalent | 18,295 | 18,110"
+      },
+      "previousEmployees": {
+        "concept": "table:Personnel on average, full-time equivalent",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 18110.0,
+        "entity": "743700G7A9J1PHM3X223",
+        "evidence": "Year columns [2025, 2024]: Personnel on average, full-time equivalent | 18,295 | 18,110"
+      }
+    }
+  },
+  "valmet": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageHeadcount",
+    "sourceUrl": "https://www.valmet.com/globalassets/investors/reports--presentations/annual-reports/2025/213800d9o7fuqdh83v62-2025-12-31-en.zip",
+    "fetchedAt": "2026-10-24T18:37:49.969740+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 5197000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "213800D9O7FUQDH83V62"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 3750000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-3",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "213800D9O7FUQDH83V62"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 5359000000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "213800D9O7FUQDH83V62"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 884000000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-109",
+        "instant": "2025-12-31",
+        "entity": "213800D9O7FUQDH83V62"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 903000000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-110",
+        "instant": "2024-12-31",
+        "entity": "213800D9O7FUQDH83V62"
+      },
+      "employees": {
+        "concept": "table:Average number of personnel",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 18982.0,
+        "entity": "213800D9O7FUQDH83V62",
+        "evidence": "Year columns [2025, 2024, 2023, 2022, 2021]: Average number of personnel | 18,982 | 19,297 | 18,130 | 16,554 | 14,163"
+      },
+      "previousEmployees": {
+        "concept": "table:Average number of personnel",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 19297.0,
+        "entity": "213800D9O7FUQDH83V62",
+        "evidence": "Year columns [2025, 2024, 2023, 2022, 2021]: Average number of personnel | 18,982 | 19,297 | 18,130 | 16,554 | 14,163"
+      }
+    }
+  },
+  "neste": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://neste.com/files/pdf/4BD46BD7EFBD79AD-wkr0008.zip",
+    "fetchedAt": "2026-10-24T18:37:51.535402+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 19016000000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__2__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493009GY1X8GQ66AM14"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 20635000000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s1__3__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "5493009GY1X8GQ66AM14"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 2895000000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s3__3__16",
+        "instant": "2025-12-31",
+        "entity": "5493009GY1X8GQ66AM14"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 2898000000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s3__4__16",
+        "instant": "2024-12-31",
+        "entity": "5493009GY1X8GQ66AM14"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "fortum": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://mb.cision.com/Main/15253/4306078/3931427.zip",
+    "fetchedAt": "2026-10-24T18:37:52.805292+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 4989000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "635400IUIZZIUJSAMF76"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 5800000000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "635400IUIZZIUJSAMF76"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 512000000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-111",
+        "instant": "2025-12-31",
+        "entity": "635400IUIZZIUJSAMF76"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 420000000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-112",
+        "instant": "2024-12-31",
+        "entity": "635400IUIZZIUJSAMF76"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "upm": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "closingHeadcount",
+    "sourceUrl": "https://mb.cision.com/Public/23100/4315173/b3fc1a1ae015c1c7.zip",
+    "fetchedAt": "2026-10-24T18:37:54.410264+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 9656000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-4",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "213800EC6PW5VU4J9U64"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 10339000000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "213800EC6PW5VU4J9U64"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1886000000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-84",
+        "instant": "2025-12-31",
+        "entity": "213800EC6PW5VU4J9U64"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 2104000000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-85",
+        "instant": "2024-12-31",
+        "entity": "213800EC6PW5VU4J9U64"
+      },
+      "employees": {
+        "concept": "table:Personnel at the end of period",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 15127.0,
+        "entity": "213800EC6PW5VU4J9U64",
+        "evidence": "Year columns [2025, 2024, 2023]: Personnel at the end of period | 15,127 | 15,827 | 16,573"
+      },
+      "previousEmployees": {
+        "concept": "table:Personnel at the end of period",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 15827.0,
+        "entity": "213800EC6PW5VU4J9U64",
+        "evidence": "Year columns [2025, 2024, 2023]: Personnel at the end of period | 15,127 | 15,827 | 16,573"
+      }
+    }
+  },
+  "huhtamaki": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageHeadcount",
+    "sourceUrl": "https://www.huhtamaki.com/globalassets/global/investors/reports-and-presentations/en/2025/5493007050sjvmxn6l29-2025-12-31-1-en.zip",
+    "fetchedAt": "2026-10-24T18:37:55.951314+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 3960200000.0,
+        "unit": "EUR",
+        "contextId": "P01_01_2025To12_31_2025",
+        "factId": "ConsolidatedStatementOfIncome_TerseLabel_002",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493007050SJVMXN6L29"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 304400000.0,
+        "unit": "EUR",
+        "contextId": "P01_01_2025To12_31_2025",
+        "factId": "ConsolidatedStatementOfIncome_NegatedLabel_0013",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493007050SJVMXN6L29"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 3266200000.0,
+        "unit": "EUR",
+        "contextId": "P01_01_2025To12_31_2025",
+        "factId": "ConsolidatedStatementOfIncome_NegatedLabel_003",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493007050SJVMXN6L29"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 4126300000.0,
+        "unit": "EUR",
+        "contextId": "P01_01_2024To12_31_2024",
+        "factId": "ConsolidatedStatementOfIncome_TerseLabel_001",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "5493007050SJVMXN6L29"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 599900000.0,
+        "unit": "EUR",
+        "contextId": "PAsOn12_31_2025",
+        "factId": "ConsolidatedStatementOfFinancialPosition_TerseLabel_0080",
+        "instant": "2025-12-31",
+        "entity": "5493007050SJVMXN6L29"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 666600000.0,
+        "unit": "EUR",
+        "contextId": "PAsOn12_31_2024",
+        "factId": "ConsolidatedStatementOfFinancialPosition_TerseLabel_0079",
+        "instant": "2024-12-31",
+        "entity": "5493007050SJVMXN6L29"
+      },
+      "employees": {
+        "concept": "table:Group",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 17686.0,
+        "entity": "5493007050SJVMXN6L29",
+        "evidence": "Year columns [2025, 2024]: Group | 17,686 | 17,820"
+      },
+      "previousEmployees": {
+        "concept": "table:Group",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 17820.0,
+        "entity": "5493007050SJVMXN6L29",
+        "evidence": "Year columns [2025, 2024]: Group | 17,686 | 17,820"
+      }
+    }
+  },
+  "outokumpu": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/5493009yrujjdcff0r80-2025-12-31-1-en.zip?revision=fd89c8ff-12c8-49a2-b142-e593d630f715&modified=20260227085619&hash=E1DE298AB4F779BDA0470C2D4F3F9A8E",
+    "fetchedAt": "2026-10-24T18:38:01.809006+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 5468000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-3",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493009YRUJJDCFF0R80"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 263000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-13",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493009YRUJJDCFF0R80"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 5279000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "5493009YRUJJDCFF0R80"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 5942000000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-4",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "5493009YRUJJDCFF0R80"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1608000000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-81",
+        "instant": "2025-12-31",
+        "entity": "5493009YRUJJDCFF0R80"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1764000000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-82",
+        "instant": "2024-12-31",
+        "entity": "5493009YRUJJDCFF0R80"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "fiskars": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageFte",
+    "sourceUrl": "https://fiskarsgroup.com/wp-content/uploads/2026/02/Fiskars-2025-12-31-en.zip",
+    "fetchedAt": "2026-10-24T18:38:03.430610+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 1140200000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s3__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700BKTW4EQIVKYY42"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 127100000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s3__3__10",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700BKTW4EQIVKYY42"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 605100000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s3__3__6",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700BKTW4EQIVKYY42"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 1157100000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s3__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700BKTW4EQIVKYY42"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 322900000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s5__3__18",
+        "instant": "2025-12-31",
+        "entity": "743700BKTW4EQIVKYY42"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 330700000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s5__4__18",
+        "instant": "2024-12-31",
+        "entity": "743700BKTW4EQIVKYY42"
+      },
+      "employees": {
+        "concept": "table:Personnel (FTE), average",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 6145.0,
+        "entity": "743700BKTW4EQIVKYY42",
+        "evidence": "Year columns [2025, 2024, 2023, 2022, 2021]: Personnel (FTE), average | 6,145 | 6,446 | 6,133 | 6,273 | 6,081"
+      },
+      "previousEmployees": {
+        "concept": "table:Personnel (FTE), average",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 6446.0,
+        "entity": "743700BKTW4EQIVKYY42",
+        "evidence": "Year columns [2025, 2024, 2023, 2022, 2021]: Personnel (FTE), average | 6,145 | 6,446 | 6,133 | 6,273 | 6,081"
+      }
+    }
+  },
+  "marimekko": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageHeadcount",
+    "sourceUrl": "https://company.marimekko.com/app/uploads/2026/03/74370053IOY42B9YJ350-2025-12-31-1-en.zip",
+    "fetchedAt": "2026-10-24T18:38:05.641482+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 189600000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370053IOY42B9YJ350"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 182600000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370053IOY42B9YJ350"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 35600000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s3__3__12",
+        "instant": "2025-12-31",
+        "entity": "74370053IOY42B9YJ350"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 35400000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s3__4__12",
+        "instant": "2024-12-31",
+        "entity": "74370053IOY42B9YJ350"
+      },
+      "employees": {
+        "concept": "table:Average personnel",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 486.0,
+        "entity": "74370053IOY42B9YJ350",
+        "evidence": "Year columns [2025, 2024, 2023]: Average personnel | 486 | 466 | 462"
+      },
+      "previousEmployees": {
+        "concept": "table:Average personnel",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 466.0,
+        "entity": "74370053IOY42B9YJ350",
+        "evidence": "Year columns [2025, 2024, 2023]: Average personnel | 486 | 466 | 462"
+      }
+    }
+  },
+  "harvia": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://harviagroup.com/wp-content/uploads/2026/03/7437002ULTBOWQQOXL69-2025-12-31-1-en-1-1.zip",
+    "fetchedAt": "2026-10-24T18:38:08.501403+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 198900000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437002ULTBOWQQOXL69"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 175206000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437002ULTBOWQQOXL69"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 52078000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s2__3__14",
+        "instant": "2025-12-31",
+        "entity": "7437002ULTBOWQQOXL69"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 49151000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s2__4__14",
+        "instant": "2024-12-31",
+        "entity": "7437002ULTBOWQQOXL69"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "orion": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": "averageHeadcount",
+    "sourceUrl": "https://www.orionpharma.com/4932a1/globalassets/investors/hallinnointi/yhtiokokous/yhtiokokous-2026/74370029vahcxdr7b745-2025-12-31-1-en.zip",
+    "fetchedAt": "2026-10-24T18:38:10.693418+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 1889500000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-3",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370029VAHCXDR7B745"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 86800000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-15",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370029VAHCXDR7B745"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 676500000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370029VAHCXDR7B745"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 1542400000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-4",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370029VAHCXDR7B745"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 456300000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-69",
+        "instant": "2025-12-31",
+        "entity": "74370029VAHCXDR7B745"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 418600000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-70",
+        "instant": "2024-12-31",
+        "entity": "74370029VAHCXDR7B745"
+      },
+      "employees": {
+        "concept": "table:Average number of personnel",
+        "contextId": "FY2025",
+        "unit": "pure",
+        "value": 4003.0,
+        "entity": "74370029VAHCXDR7B745",
+        "evidence": "Year columns [2025, 2024]: Average number of personnel | 4,003 | 3,712"
+      },
+      "previousEmployees": {
+        "concept": "table:Average number of personnel",
+        "contextId": "FY2024",
+        "unit": "pure",
+        "value": 3712.0,
+        "entity": "74370029VAHCXDR7B745",
+        "evidence": "Year columns [2025, 2024]: Average number of personnel | 4,003 | 3,712"
+      }
+    }
+  },
+  "nokia": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://ml-eu.globenewswire.com/Resource/Download/6fd247fe-760d-4d57-83c5-68e716206015",
+    "fetchedAt": "2026-10-24T18:44:22.309979+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 19889000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "549300A0JPRWG1KI7U06"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 11230000000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-4",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "549300A0JPRWG1KI7U06"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 19220000000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "549300A0JPRWG1KI7U06"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 2209000000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-149",
+        "instant": "2025-12-31",
+        "entity": "549300A0JPRWG1KI7U06"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 2163000000.0,
+        "unit": "EUR",
+        "contextId": "c-5",
+        "factId": "f-150",
+        "instant": "2024-12-31",
+        "entity": "549300A0JPRWG1KI7U06"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "finnair": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://mb.cision.com/Public/3718/4313265/bc5cb915883a9b34.zip",
+    "fetchedAt": "2026-10-24T18:58:59.544968+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 3106200000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s2__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "213800SB6EOB8SSK9W63"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 3048800000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s2__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "213800SB6EOB8SSK9W63"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  }
+}

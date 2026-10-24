@@ -24,6 +24,22 @@ export type Company = {
   jobAds: JobAds | null;
   /** Velho's take for the daily case (pipeline/build_cases.py), or null. */
   velhoCase: VelhoCase | null;
+  /** Sourced observations from pipeline/fetch_efficiency.py; missing means unavailable. */
+  efficiency?: Partial<Record<EfficiencyMetricId, EfficiencyObservation>>;
+};
+
+export type EfficiencyMetricId = "growthGap" | "manualAds" | "adminRatio" | "inventoryDays";
+
+export type EfficiencyObservation = {
+  value: number;
+  year: number | null;
+  period: string;
+  scope: string;
+  definition: string;
+  fetchedAt: string;
+  sources: { url: string; label: string; evidence: string }[];
+  inputs: Record<string, number>;
+  note: string;
 };
 
 /**

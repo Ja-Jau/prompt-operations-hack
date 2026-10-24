@@ -1,47 +1,48 @@
 import type { Company } from "@/types/company";
-import { METRICS, metricForRound, type MetricId } from "./metrics";
+import { comparable, METRIC_IDS, type MetricId } from "./metrics";
 
-/** One card in a run: the company, and the metric it is compared on against the card before it. */
-export type Step = { company: Company; metric: MetricId };
+/** Independent pairs prevent sparse data from locking a run to one category. */
+export type Round = { left: Company; right: Company; metric: MetricId };
 
-function pickNext(
-  pool: Company[],
-  last: Company,
-  recent: Set<string>,
-  rand: () => number,
-  metricId: MetricId,
-): Company | null {
-  const metric = METRICS[metricId];
-  const lastValue = metric.value(last);
-  if (lastValue === null) return null;
-  const candidates = pool.filter((c) => {
-    const value = metric.value(c);
-    return !recent.has(c.id) && value !== null && metric.farEnough(value, lastValue);
-  });
-  if (candidates.length === 0) return null;
-  return candidates[Math.floor(rand() * candidates.length)];
+export function roundKey(round: Round): string {
+  return `${round.metric}:${[round.left.id, round.right.id].sort().join(":")}`;
 }
 
-/**
- * The card for guess number `round` (1-based). Velho rounds fall back to revenue per
- * employee when no company has comparable job-ad data.
- */
-export function nextStep(
-  pool: Company[],
-  last: Company,
-  round: number,
-  recent: Set<string>,
-  rand: () => number,
-): Step | null {
-  const preferred = metricForRound(round);
-  const order: MetricId[] = preferred === "rpe" ? ["rpe"] : [preferred, "rpe"];
-  for (const metric of order) {
-    const company = pickNext(pool, last, recent, rand, metric);
-    if (company) return { company, metric };
+export function availableRounds(pool: Company[]): Round[] {
+  const sorted = [...pool].sort((a, b) => a.id.localeCompare(b.id));
+  return METRIC_IDS.flatMap((metric) => sorted.flatMap((left, i) =>
+    sorted.slice(i + 1).filter((right) => comparable(left, right, metric)).map((right) => ({ left, right, metric })),
+  ));
+}
+
+/** Sample categories uniformly, then a pair. Larger datasets get no extra weight. */
+export function pickRound(rounds: Round[], rand: () => number, recent: Set<string> = new Set(), previousMetric?: MetricId): Round | null {
+  const eligible = rounds.filter((round) => !recent.has(roundKey(round)));
+  if (!eligible.length) return null;
+  const categories = METRIC_IDS.filter((metric) => eligible.some((round) => round.metric === metric));
+  const different = categories.filter((metric) => metric !== previousMetric);
+  const choices = different.length ? different : categories;
+  const metric = choices[Math.floor(rand() * choices.length)];
+  const pairs = eligible.filter((round) => round.metric === metric);
+  const pair = pairs[Math.floor(rand() * pairs.length)];
+  return rand() < 0.5 ? pair : { ...pair, left: pair.right, right: pair.left };
+}
+
+export function nextEndlessRound(rounds: Round[], history: Round[], rand: () => number): Round | null {
+  const recent = new Set(history.slice(-5).map(roundKey));
+  const previous = history.at(-1);
+  return pickRound(rounds, rand, recent, previous?.metric)
+    ?? pickRound(rounds, rand, new Set(previous ? [roundKey(previous)] : []), previous?.metric)
+    ?? pickRound(rounds, rand);
+}
+
+/** A fresh five-question game; sparse datasets may reuse pairs. */
+export function buildRandomRun(pairs: Round[], rand: () => number = Math.random): Round[] {
+  const rounds: Round[] = [];
+  while (rounds.length < 5) {
+    const next = nextEndlessRound(pairs, rounds, rand);
+    if (!next) break;
+    rounds.push(next);
   }
-  return null;
-}
-
-export function firstStep(pool: Company[], rand: () => number): Step {
-  return { company: pool[Math.floor(rand() * pool.length)], metric: "rpe" };
+  return rounds;
 }

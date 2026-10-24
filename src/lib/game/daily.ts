@@ -1,6 +1,6 @@
 import type { Company } from "@/types/company";
 import { seededRandom } from "./random";
-import { firstStep, nextStep, type Step } from "./sequence";
+import { availableRounds, pickRound, roundKey, type Round } from "./sequence";
 
 const LAUNCH_DATE = "2026-10-24";
 
@@ -15,18 +15,19 @@ export function dailyNumber(key = todayKey()): number {
 }
 
 /**
- * Today's run: the same chain of companies for every player, each used once, as long as
- * the pool allows. Players go until their first wrong guess, so scores are comparable.
+ * Ten sourced comparisons with random categories and no repeated pair/category.
+ * Date-seeded so players with the same dataset get the same daily challenge.
  */
-export function buildDailyRun(pool: Company[], key = todayKey()): Step[] {
+export function buildDailyRun(pool: Company[], key = todayKey()): Round[] {
   const rand = seededRandom(key);
-  const steps = [firstStep(pool, rand)];
-  const used = new Set([steps[0].company.id]);
-  for (;;) {
-    const next = nextStep(pool, steps[steps.length - 1].company, steps.length, used, rand);
+  const pairs = availableRounds(pool);
+  const rounds: Round[] = [];
+  const used = new Set<string>();
+  while (rounds.length < 10) {
+    const next = pickRound(pairs, rand, used, rounds.at(-1)?.metric);
     if (!next) break;
-    steps.push(next);
-    used.add(next.company.id);
+    rounds.push(next);
+    used.add(roundKey(next));
   }
-  return steps;
+  return rounds;
 }

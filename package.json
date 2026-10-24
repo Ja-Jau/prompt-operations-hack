@@ -6,9 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "data:refresh": "python3 pipeline/fetch_efficiency.py --refresh-jobs",
+    "data:financials": "python3 pipeline/fetch_efficiency.py",
+    "data:build": "python3 pipeline/fetch_efficiency.py --offline",
+    "test:game": "tsc -p tests/tsconfig.json && node --test /tmp/tehokas-game-tests/tests/game.test.js",
+    "test:data": "python3 -m unittest discover -s pipeline -p 'test_*.py'"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
     "next": "^16.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"

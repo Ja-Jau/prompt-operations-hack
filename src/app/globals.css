@@ -188,3 +188,23 @@
     animation: none;
   }
 }
+
+/* Keep both comparisons and their actions inside the game viewport. */
+@media (max-width: 639px) {
+  .higher-lower > header { gap: 0.5rem; padding-inline: 0.75rem; }
+  .higher-lower > header nav { min-width: 0; gap: 0.5rem; }
+  .higher-lower > header nav button { font-size: 11px; }
+  .higher-lower > header > div:last-child > a { display: none; }
+  .higher-lower-panel:first-child { flex: 0.8; }
+  .higher-lower-panel:last-child { flex: 1.2; }
+  .higher-lower-vs { top: 40%; }
+}
+@media (max-height: 500px) {
+  .higher-lower-promo { display: none; }
+  .higher-lower-board { flex-direction: row; }
+  .higher-lower-panel:first-child, .higher-lower-panel:last-child { flex: 1; }
+  .higher-lower-vs { top: 50%; }
+  .higher-lower-logo { display: none; }
+  .higher-lower-panel { padding-block: 0.5rem; }
+  .higher-lower-panel .btn { padding: 8px 12px; font-size: 12px; }
+}
