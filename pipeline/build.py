@@ -30,7 +30,6 @@ IMAGE_DIR = ROOT / "public" / "images"
 CREDITS_PATH = IMAGE_DIR / "credits.json"
 JOB_ADS_PATH = ROOT / "pipeline" / "data" / "job_ads.json"
 VELHO_CASES_PATH = ROOT / "pipeline" / "data" / "velho_cases.json"
-MIN_CASE_QUOTES = 3  # keep in sync with src/lib/case/cases.ts
 
 MODEL = "claude-opus-5-5"
 
@@ -254,11 +253,8 @@ def main() -> None:
     print(f"Wrote {len(rows)} companies to {JSON_PATH.relative_to(ROOT)}")
     no_image = [r["id"] for r in rows if not r["image"]]
     with_ads = sum(1 for r in rows if r["jobAds"])
-    cases = sum(1 for r in rows if r["jobAds"] and len(r["jobAds"]["ads"]) >= MIN_CASE_QUOTES)
-    print(f"{with_ads} of {len(rows)} companies have job-ad data"
-          + ("" if with_ads else " (run pipeline/fetch_job_ads.py)"))
-    print(f"{cases} qualify as daily cases (3+ manual-work quotes), "
-          f"{sum(1 for r in rows if r['velhoCase'])} have Velho's take (pipeline/build_cases.py)")
+    print(f"{with_ads} of {len(rows)} companies have job-ad stats for Higher or lower's Velho rounds"
+          + ("" if with_ads else " (run pipeline/import_jobs.py)"))
     if no_logo:
         print(f"{len(no_logo)} without a logo (run pipeline/fetch_logos.py): {', '.join(no_logo)}")
     if no_image:

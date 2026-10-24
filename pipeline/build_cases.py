@@ -1,17 +1,18 @@
 """Write Velho's take on each daily case with Claude.
 
-A company becomes a "Who's hiring for this?" case once it has at least MIN_QUOTES manual-work
-quotes in pipeline/data/job_ads.json. For each case Claude writes, from those quotes only:
+A company becomes a "Who's hiring?" case once it has at least MIN_QUOTES verified quotes in
+src/data/hiring.json (pipeline/import_jobs.py). For each case Claude writes, from those quotes only:
   - analystHint: the "Ask Velho" lifeline, a pattern an analyst would spot across the ads
   - fixOptions / correctIndex / fixReasoning: the "what would you fix first?" bonus round
   - adoptNote: how Velho would make sure people actually use the fix
 
-Output: pipeline/data/velho_cases.json, merged into the game data by build.py.
+Output: pipeline/data/velho_cases.json. Re-run import_jobs.py afterwards: these takes replace
+the curated ones in pipeline/data/curated_signals.json.
 
 Usage:
-  python pipeline/build_cases.py            # cases without Velho's take yet
+  python pipeline/build_cases.py            # cases without a Claude-written take yet
   python pipeline/build_cases.py --force    # rewrite all
-  python pipeline/build.py --no-ai
+  python pipeline/import_jobs.py
 
 Needs Anthropic credentials (ANTHROPIC_API_KEY or `ant auth login`).
 """
@@ -19,7 +20,6 @@ Needs Anthropic credentials (ANTHROPIC_API_KEY or `ant auth login`).
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import sys
 from pathlib import Path
@@ -27,12 +27,11 @@ from pathlib import Path
 import anthropic
 
 ROOT = Path(__file__).resolve().parent.parent
-COMPANIES_CSV = ROOT / "pipeline" / "data" / "companies.csv"
-JOB_ADS_PATH = ROOT / "pipeline" / "data" / "job_ads.json"
+HIRING_PATH = ROOT / "src" / "data" / "hiring.json"
 OUT_PATH = ROOT / "pipeline" / "data" / "velho_cases.json"
 
 MODEL = "claude-opus-5-5"
-MIN_QUOTES = 3  # keep in sync with MIN_CASE_QUOTES in src/lib/case/cases.ts
+MIN_QUOTES = 2  # keep in sync with MIN_CASE_QUOTES in src/lib/case/cases.ts
 FIX_OPTIONS = 3
 # Velho's service areas, as listed under "Where we help" on velho.io (src/lib/velho.ts).
 SERVICE_AREAS = [
@@ -79,7 +78,10 @@ CASE_SCHEMA = {
 
 def write_case(client: anthropic.Anthropic, company: dict, ads: list[dict]) -> dict | None:
     quotes = "\n".join(f'- {ad["title"]}: "{ad["quote"]}"' for ad in ads)
-    prompt = f"Company: {company['name']} ({company['industry']}, {company['employees']} employees)\n\nQuotes:\n{quotes}"
+    prompt = (
+        f"Company: {company['name']} (hiring for {', '.join(company['functions'])} "
+        f"in {', '.join(company['locations'][:3])})\n\nQuotes:\n{quotes}"
+    )
     response = client.beta.messages.create(
         model=MODEL,
         max_tokens=4096,
@@ -105,17 +107,15 @@ def main() -> None:
     parser.add_argument("--force", action="store_true", help="rewrite cases that already exist")
     args = parser.parse_args()
 
-    if not JOB_ADS_PATH.exists():
-        sys.exit("No job-ad data yet. Run pipeline/fetch_job_ads.py first.")
-    job_ads = json.loads(JOB_ADS_PATH.read_text(encoding="utf-8"))
+    if not HIRING_PATH.exists():
+        sys.exit("No hiring data yet. Run pipeline/import_jobs.py first.")
+    companies = {c["id"]: c for c in json.loads(HIRING_PATH.read_text(encoding="utf-8"))}
     cases = json.loads(OUT_PATH.read_text(encoding="utf-8")) if OUT_PATH.exists() else {}
-    with COMPANIES_CSV.open(encoding="utf-8", newline="") as f:
-        companies = {row["id"]: row for row in csv.DictReader(f)}
 
     client = anthropic.Anthropic()
-    for company_id, data in job_ads.items():
-        ads = data.get("ads", [])
-        if company_id not in companies or len(ads) < MIN_QUOTES:
+    for company_id, company in companies.items():
+        ads = company["jobAds"]["ads"]
+        if len(ads) < MIN_QUOTES:
             continue
         if company_id in cases and not args.force:
             print(f"  {company_id}: already written")
@@ -130,8 +130,8 @@ def main() -> None:
             cases[company_id] = case
             OUT_PATH.write_text(json.dumps(cases, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    eligible = sum(1 for d in job_ads.values() if len(d.get("ads", [])) >= MIN_QUOTES)
-    print(f"{eligible} companies qualify as daily cases. Now run: python pipeline/build.py --no-ai")
+    eligible = sum(1 for c in companies.values() if len(c["jobAds"]["ads"]) >= MIN_QUOTES)
+    print(f"{eligible} daily cases. Now run: python pipeline/import_jobs.py")
 
 
 if __name__ == "__main__":

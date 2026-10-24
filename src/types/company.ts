@@ -26,6 +26,30 @@ export type Company = {
   velhoCase: VelhoCase | null;
 };
 
+/**
+ * A company with open job ads (src/data/hiring.json, from pipeline/import_jobs.py). Only what the
+ * ads themselves show: no revenue or headcount, which the ads don't contain.
+ */
+export type HiringCompany = {
+  id: string;
+  name: string;
+  domain: string | null;
+  brandColor: string;
+  logo: string | null;
+  image: string | null;
+  imageCredit: Company["imageCredit"];
+  /** Cities named in the ads. */
+  locations: string[];
+  /** Job functions the ads are filed under, e.g. "Procurement". */
+  functions: string[];
+  /** Titles of every open ad. */
+  titles: string[];
+  jobAds: JobAds;
+  velhoCase: VelhoCase | null;
+  /** The same company in Higher or lower, if it's there. */
+  gameCompanyId: string | null;
+};
+
 export type JobAd = { title: string; quote: string; url: string };
 
 export type JobAds = {

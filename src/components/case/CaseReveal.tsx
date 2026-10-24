@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
-import type { Company } from "@/types/company";
+import { useState } from "react";
+import type { HiringCompany } from "@/types/company";
 import { MAX_GUESSES, caseShareText, type Feedback } from "@/lib/case/cases";
 import { VELHO_SERVICES, VELHO_URL } from "@/lib/velho";
 import { CompanyLogo } from "@/components/game/CompanyLogo";
@@ -9,7 +9,7 @@ import { LeadForm } from "@/components/leads/LeadForm";
 import { Icon } from "@/components/ui/Icon";
 
 type Props = {
-  company: Company;
+  company: HiringCompany;
   /** "Case No. 3" or "Practice case". */
   label: string;
   feedback: Feedback[];
@@ -20,7 +20,6 @@ type Props = {
   /** Set while playing a practice case. */
   onBackToDaily?: () => void;
   onPlayHigherLower: () => void;
-  exampleNote?: ReactNode;
 };
 
 /** The player's guesses as a row of rank tiles: a spoiler-free picture of how it went. */
@@ -45,7 +44,7 @@ function GuessTrail({ feedback }: { feedback: Feedback[] }) {
 }
 
 /** Velho's take in one card: pick the first fix, then see Velho's call. */
-function ThinkLikeVelho({ company, choice, onChoice }: { company: Company; choice: number | null; onChoice: (i: number) => void }) {
+function ThinkLikeVelho({ company, choice, onChoice }: { company: HiringCompany; choice: number | null; onChoice: (i: number) => void }) {
   const take = company.velhoCase!;
   const answered = choice !== null;
   return (
@@ -102,7 +101,6 @@ export function CaseReveal({
   onPlayAnother,
   onBackToDaily,
   onPlayHigherLower,
-  exampleNote,
 }: Props) {
   const [copied, setCopied] = useState(false);
   const ads = company.jobAds!;
@@ -140,7 +138,7 @@ export function CaseReveal({
             <span className="font-semibold text-sky">
               {ads.manual} of {ads.checked}
             </span>{" "}
-            open job ads describe work software could do.
+            of their open job ads describe work software could take over.
           </p>
           <div className="mt-7">
             <GuessTrail feedback={feedback} />
@@ -167,8 +165,6 @@ export function CaseReveal({
       </section>
 
       <main className="mx-auto flex max-w-[760px] flex-col gap-8 px-4 py-10 md:py-14">
-        {exampleNote}
-
         {take && <ThinkLikeVelho company={company} choice={fixChoice} onChoice={onFixChoice} />}
 
         {/* The evidence, short */}

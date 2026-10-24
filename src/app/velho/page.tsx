@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { getSignalCompanies } from "@/lib/data/companies";
+import { getHiringCompanies } from "@/lib/data/companies";
 import { dailyCase } from "@/lib/case/cases";
 import { readLeads } from "@/lib/leads";
 import { buildSignals, draftOpener, linkedInPost } from "@/lib/signals";
@@ -32,7 +32,7 @@ export default async function VelhoDashboard({ searchParams }: Props) {
 
   const h = await headers();
   const origin = `${h.get("x-forwarded-proto") ?? "http"}://${h.get("host")}`;
-  const { companies, isExample } = await getSignalCompanies();
+  const companies = await getHiringCompanies();
   const signals = buildSignals(companies);
   const leads = await readLeads();
   const today = dailyCase(companies);
@@ -55,13 +55,6 @@ export default async function VelhoDashboard({ searchParams }: Props) {
       </header>
 
       <main className="mx-auto max-w-6xl px-5 py-10 md:px-8">
-        {isExample && (
-          <p className="mb-6 rounded-[9px] border border-clay/30 bg-white px-4 py-2 text-sm text-ink-2">
-            <span className="eyebrow mr-2 text-clay">Example data</span>
-            Made-up companies until the job-ad reader has run (pipeline/fetch_job_ads.py).
-          </p>
-        )}
-
         <p className="eyebrow text-sage-d">This week</p>
         <h1 className="mt-3 text-[clamp(32px,4.4vw,52px)] leading-none tracking-[-0.04em]">
           Who to talk to, and why now
@@ -69,8 +62,8 @@ export default async function VelhoDashboard({ searchParams }: Props) {
 
         <dl className="mt-8 grid gap-3 sm:grid-cols-3">
           {[
-            { label: "Companies hiring for manual work", value: signals.length },
-            { label: "Open roles describing manual work", value: roles },
+            { label: "Companies hiring for routine work", value: signals.length },
+            { label: "Open roles software could help with", value: roles },
             { label: "Leads from the game", value: leads.length },
           ].map((stat) => (
             <div key={stat.label} className="card p-5">
@@ -100,7 +93,7 @@ export default async function VelhoDashboard({ searchParams }: Props) {
                           </span>
                         </div>
                         <p className="eyebrow mt-1 text-ink-3">
-                          {s.company.industry} · {s.company.employees.toLocaleString("en")} employees
+                          {s.company.functions.join(" · ")} · {s.company.locations.slice(0, 3).join(", ")}
                         </p>
                         <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-sand">
                           <div className="h-full bg-navy-3" style={{ width: `${Math.round(s.share)}%` }} />

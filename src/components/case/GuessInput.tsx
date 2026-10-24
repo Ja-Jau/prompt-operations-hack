@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, type KeyboardEvent } from "react";
-import type { Company } from "@/types/company";
+import type { HiringCompany } from "@/types/company";
 import { CompanyLogo } from "@/components/game/CompanyLogo";
 import { Icon } from "@/components/ui/Icon";
 
@@ -10,18 +10,15 @@ const MAX_SUGGESTIONS = 6;
 /** Company search that only accepts companies in the game, so every guess can be scored. */
 export function GuessInput({
   companies,
-  exampleIds,
   excluded,
   counter,
   onGuess,
 }: {
-  companies: Company[];
-  /** Made-up companies, tagged in the list so nobody mistakes them for real ones. */
-  exampleIds: Set<string>;
+  companies: HiringCompany[];
   excluded: Set<string>;
   /** Shown at the right edge of the field, e.g. "2/6". */
   counter: string;
-  onGuess: (company: Company) => void;
+  onGuess: (company: HiringCompany) => void;
 }) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
@@ -35,7 +32,7 @@ export function GuessInput({
       .slice(0, MAX_SUGGESTIONS);
   }, [companies, excluded, query]);
 
-  const pick = (company: Company) => {
+  const pick = (company: HiringCompany) => {
     onGuess(company);
     setQuery("");
     setActive(0);
@@ -83,10 +80,7 @@ export function GuessInput({
               >
                 <CompanyLogo company={c} className="h-8 w-8 rounded-[7px] p-1" />
                 <span className="flex-1 font-medium">{c.name}</span>
-                {exampleIds.has(c.id) && (
-                  <span className="eyebrow rounded-full border border-clay/40 px-2 py-0.5 text-[10px] text-clay">Example</span>
-                )}
-                <span className="text-xs text-ink-3">{c.industry}</span>
+                <span className="truncate text-xs text-ink-3">{c.functions.slice(0, 2).join(" · ")}</span>
               </button>
             </li>
           ))}

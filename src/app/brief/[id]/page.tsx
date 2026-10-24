@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getSignalCompanies } from "@/lib/data/companies";
+import { getHiringCompanies } from "@/lib/data/companies";
 import { firstFix, serviceFor } from "@/lib/signals";
 import { VELHO_URL } from "@/lib/velho";
 import { CompanyLogo } from "@/components/game/CompanyLogo";
@@ -12,19 +12,18 @@ import { PrintButton } from "@/components/ui/PrintButton";
 type Params = { params: Promise<{ id: string }> };
 
 async function findCompany(id: string) {
-  const { companies, isExample } = await getSignalCompanies();
-  return { company: companies.find((c) => c.id === id), isExample };
+  return (await getHiringCompanies()).find((c) => c.id === id);
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { company } = await findCompany((await params).id);
+  const company = await findCompany((await params).id);
   return { title: company ? `${company.name}: where time goes | Velho` : "Brief | Velho" };
 }
 
 /** A one-page note for one company's CEO, built only from its own public job ads. */
 export default async function BriefPage({ params }: Params) {
-  const { company, isExample } = await findCompany((await params).id);
-  if (!company?.jobAds) notFound();
+  const company = await findCompany((await params).id);
+  if (!company || company.jobAds.ads.length === 0) notFound();
 
   const { manual, checked, ads, fetchedAt } = company.jobAds;
   const take = company.velhoCase;
@@ -41,12 +40,6 @@ export default async function BriefPage({ params }: Params) {
       </header>
 
       <main className="mx-auto max-w-[820px] px-5 py-10 md:py-14">
-        {isExample && (
-          <p className="mb-6 rounded-[9px] border border-clay/30 bg-white px-4 py-2 text-sm text-ink-2">
-            <span className="eyebrow mr-2 text-clay">Example</span>A made-up company, to show the format.
-          </p>
-        )}
-
         <div className="flex items-center gap-4">
           <CompanyLogo company={company} className="h-14 w-14" />
           <p className="eyebrow text-sage-d">

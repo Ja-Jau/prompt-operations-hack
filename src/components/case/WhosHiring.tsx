@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { Company } from "@/types/company";
-import { MAX_GUESSES, caseClues, caseCompanies, closenessRanks, compare, dailyCase, redact } from "@/lib/case/cases";
+import type { HiringCompany } from "@/types/company";
+import { MAX_GUESSES, caseClues, caseCompanies, closenessRanks, compare, dailyCase } from "@/lib/case/cases";
 import { dailyNumber } from "@/lib/game/daily";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
 import { PageTitle } from "@/components/layout/PageTitle";
@@ -17,7 +17,7 @@ type Saved = { guesses: string[]; fixChoice: number | null; tipUsed: boolean; ga
 const EMPTY: Saved = { guesses: [], fixChoice: null, tipUsed: false, gaveUp: false };
 const SEEN_HELP_KEY = "tehokas-seen-help";
 
-/** Per day and per case, so switching from example to real data starts a fresh game. */
+/** Per day and per case, so a new data import starts a fresh game. */
 function storageKey(caseId: string) {
   return `tehokas-case-${dailyNumber()}-${caseId}`;
 }
@@ -55,9 +55,8 @@ function markHelpSeen() {
 }
 
 type Props = {
-  companies: Company[];
-  /** Made-up cases, played until real job-ad data exists. */
-  exampleCompanies: Company[];
+  /** Every company with open job ads; the ones with enough quotes become cases. */
+  companies: HiringCompany[];
   onGameChange: (game: GameId) => void;
 };
 
@@ -66,12 +65,11 @@ type Props = {
  * After (or instead of) the daily case, players can run practice cases as often as they like;
  * those are picked at random and never saved.
  */
-export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props) {
-  const [dailyTarget, setDailyTarget] = useState<Company | null | undefined>(undefined);
+export function WhosHiring({ companies, onGameChange }: Props) {
+  const [dailyTarget, setDailyTarget] = useState<HiringCompany | null | undefined>(undefined);
   const [dailySaved, setDailySaved] = useState<Saved>(EMPTY);
-  const [practiceTarget, setPracticeTarget] = useState<Company | null>(null);
+  const [practiceTarget, setPracticeTarget] = useState<HiringCompany | null>(null);
   const [practiceSaved, setPracticeSaved] = useState<Saved>(EMPTY);
-  const [isExample, setIsExample] = useState(false);
   const [tipOpen, setTipOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
@@ -79,27 +77,22 @@ export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props)
 
   // Today's case and saved progress depend on the date and localStorage: client only.
   useEffect(() => {
-    const real = dailyCase(companies);
-    const today = real ?? dailyCase(exampleCompanies);
-    setIsExample(!real && today !== null);
+    const today = dailyCase(companies);
     setDailyTarget(today);
     if (today) setDailySaved(load(today.id));
     setHelpOpen(!seenHelp());
-  }, [companies, exampleCompanies]);
+  }, [companies]);
 
   const target = practiceTarget ?? dailyTarget;
   const isPractice = practiceTarget !== null;
   const saved = isPractice ? practiceSaved : dailySaved;
 
-  // In example mode the made-up companies must be guessable too.
-  const pool = useMemo(
-    () => (isExample ? [...companies, ...exampleCompanies] : companies),
-    [companies, exampleCompanies, isExample],
+  const casePool = useMemo(() => caseCompanies(companies), [companies]);
+  const byId = useMemo(() => new Map(companies.map((c) => [c.id, c])), [companies]);
+  const ranks = useMemo(
+    () => (target ? closenessRanks(companies, target) : new Map<string, number>()),
+    [companies, target],
   );
-  const casePool = useMemo(() => caseCompanies(isExample ? exampleCompanies : companies), [companies, exampleCompanies, isExample]);
-  const byId = useMemo(() => new Map(pool.map((c) => [c.id, c])), [pool]);
-  const exampleIds = useMemo(() => new Set(exampleCompanies.map((c) => c.id)), [exampleCompanies]);
-  const ranks = useMemo(() => (target ? closenessRanks(pool, target) : new Map<string, number>()), [pool, target]);
 
   const update = (next: Partial<Saved>) => {
     if (isPractice) {
@@ -142,13 +135,6 @@ export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props)
     <TopBar game="case" onGameChange={onGameChange} status={status} onHelp={() => setHelpOpen(true)} />
   );
 
-  const exampleNote = isExample && (
-    <p className="mx-auto mb-6 w-fit rounded-full border border-clay/30 bg-white px-4 py-1.5 text-center text-xs text-ink-2">
-      <span className="eyebrow mr-2 text-clay">Example case</span>
-      Made-up company and job ads, until Velho&apos;s job-ad reader has run
-    </p>
-  );
-
   if (target === undefined) return <div className="flex-1">{header()}</div>;
 
   if (target === null) {
@@ -160,9 +146,8 @@ export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props)
             <p className="eyebrow text-sage-d">Daily case</p>
             <h2 className="mt-3 text-3xl">No case today yet</h2>
             <p className="mt-3 text-ink-2">
-              Velho&apos;s job-ad reader hasn&apos;t found a company with enough manual-work ads. Run{" "}
-              <code className="font-mono text-sm text-clay">pipeline/fetch_job_ads.py</code> and{" "}
-              <code className="font-mono text-sm text-clay">build.py</code>.
+              No company has enough verified job-ad quotes yet. Run{" "}
+              <code className="font-mono text-sm text-clay">pipeline/import_jobs.py</code>.
             </p>
             <button onClick={() => onGameChange("higherLower")} className="btn btn-dark mt-6">
               Play higher or lower <Icon name="arrowRight" />
@@ -197,7 +182,6 @@ export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props)
           onPlayAnother={playAnother}
           onBackToDaily={isPractice ? backToDaily : undefined}
           onPlayHigherLower={() => onGameChange("higherLower")}
-          exampleNote={exampleNote}
         />
       </div>
     );
@@ -205,7 +189,9 @@ export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props)
 
   const latest = feedback[feedback.length - 1];
   const sorted = [...feedback].sort((a, b) => a.rank - b.rank);
-  const tip = target.velhoCase?.analystHint ?? redact(target.hint, target);
+  const tip =
+    target.velhoCase?.analystHint ??
+    `They are hiring for ${target.functions.join(", ").toLowerCase()} roles in ${target.locations.slice(0, 2).join(" and ")}.`;
   const menuItem = "flex w-full items-center gap-2 rounded-[7px] px-3 py-2.5 text-left font-medium hover:bg-sand";
 
   return (
@@ -215,15 +201,13 @@ export function WhosHiring({ companies, exampleCompanies, onGameChange }: Props)
 
       <main className="mx-auto max-w-[760px] px-4 pb-20 pl-8 md:pl-4">
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Someone is hiring for this. Who?`} />
-        {exampleNote}
 
         <Evidence key={target.id} clues={clues} revealed={Math.min(feedback.length + 1, clues.length)} company={target} />
 
         <div className="relative mt-8 flex gap-3">
           <div className="flex-1">
             <GuessInput
-              companies={pool}
-              exampleIds={exampleIds}
+              companies={companies}
               excluded={new Set(saved.guesses)}
               counter={`${feedback.length}/${MAX_GUESSES}`}
               onGuess={(c) => {

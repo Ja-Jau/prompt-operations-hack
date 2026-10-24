@@ -1,0 +1,60 @@
+{
+  "kone": {
+    "checked": 1,
+    "manual": 1,
+    "ads": [
+      {
+        "title": "HR Operations & Payroll Specialist, Nordic",
+        "quote": "Acting as the key interface towards the outsourced payroll provider, the role ensures accurate payroll execution, data integrity, compliance and efficient people administration throughout the employee lifecycle.",
+        "url": "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500"
+      }
+    ],
+    "source": "Open job ads on Jobly.fi",
+    "fetchedAt": "2026-10-24"
+  },
+  "neste": {
+    "checked": 4,
+    "manual": 0,
+    "ads": [],
+    "source": "Open job ads on Jobly.fi",
+    "fetchedAt": "2026-10-24"
+  },
+  "upm": {
+    "checked": 3,
+    "manual": 1,
+    "ads": [
+      {
+        "title": "Specialist/Senior Specialist, Payroll Services",
+        "quote": "You will contribute to payroll and time management transformation projects, coordinate with external providers and internal stakeholders, perform pre- and post-payroll reconciliations, and ensure legal and tax compliance.",
+        "url": "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327"
+      }
+    ],
+    "source": "Open job ads on Jobly.fi",
+    "fetchedAt": "2026-10-22"
+  },
+  "valmet": {
+    "checked": 3,
+    "manual": 2,
+    "ads": [
+      {
+        "title": "Manager, Group Control",
+        "quote": "Partner with Finance Development and relevant process owners to identify and define AI-enabled improvements to reporting and planning controls, validation and reconciliation, and support their implementation.",
+        "url": "https://www.jobly.fi/tyopaikka/manager-group-control-2777996"
+      },
+      {
+        "title": "Service Coordinator/Engineer",
+        "quote": "Planning/coordinating/administrating service jobs globally by using our extensive service network.",
+        "url": "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000"
+      }
+    ],
+    "source": "Open job ads on Jobly.fi",
+    "fetchedAt": "2026-10-24"
+  },
+  "wartsila": {
+    "checked": 5,
+    "manual": 0,
+    "ads": [],
+    "source": "Open job ads on Jobly.fi",
+    "fetchedAt": "2026-10-23"
+  }
+}

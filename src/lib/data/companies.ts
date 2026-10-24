@@ -1,6 +1,6 @@
 import companies from "@/data/companies.json";
-import exampleCases from "@/data/example-cases.json";
-import type { Company } from "@/types/company";
+import hiring from "@/data/hiring.json";
+import type { Company, HiringCompany } from "@/types/company";
 
 /**
  * Single entry point for company data. Today it reads the JSON exported by
@@ -11,22 +11,7 @@ export async function getCompanies(): Promise<Company[]> {
   return companies as Company[];
 }
 
-/** Made-up companies with made-up job ads, used for the daily case until real data exists. */
-export async function getExampleCompanies(): Promise<Company[]> {
-  const real = await getCompanies();
-  // Borrow the industry background photo (and its credit) from a real company.
-  return (exampleCases as Company[]).map((example) => {
-    const sameIndustry = real.find((c) => c.industry === example.industry && c.image);
-    return { ...example, image: sameIndustry?.image ?? null, imageCredit: sameIndustry?.imageCredit ?? null };
-  });
-}
-
-/**
- * Companies with job-ad signals, for the Velho dashboard and the briefs: the real ones once
- * the job-ad reader has run, the example cases until then.
- */
-export async function getSignalCompanies(): Promise<{ companies: Company[]; isExample: boolean }> {
-  const real = (await getCompanies()).filter((c) => (c.jobAds?.manual ?? 0) > 0);
-  if (real.length > 0) return { companies: real, isExample: false };
-  return { companies: await getExampleCompanies(), isExample: true };
+/** Every company with open job ads, from pipeline/import_jobs.py. */
+export async function getHiringCompanies(): Promise<HiringCompany[]> {
+  return hiring as HiringCompany[];
 }

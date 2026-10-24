@@ -25,29 +25,23 @@ function Chip({ match, icon, children }: { match: boolean; icon?: IconName; chil
   );
 }
 
-function sizeHint(d: Direction) {
-  if (d === "same") return { match: true, icon: "check" as const, text: "Similar size" };
-  return { match: false, icon: d === "up" ? ("arrowUp" as const) : ("arrowDown" as const), text: d === "up" ? "Answer is bigger" : "Answer is smaller" };
-}
-
-function earningsHint(d: Direction) {
-  if (d === "same") return { match: true, icon: "check" as const, text: "Similar € per employee" };
+function rolesHint(d: Direction) {
+  if (d === "same") return { match: true, icon: "check" as const, text: "Same number of open roles" };
   return {
     match: false,
     icon: d === "up" ? ("arrowUp" as const) : ("arrowDown" as const),
-    text: d === "up" ? "Answer earns more per employee" : "Answer earns less per employee",
+    text: d === "up" ? "Answer has more open roles" : "Answer has fewer open roles",
   };
 }
 
 /**
  * One guess: a closeness bar with the company name and its rank (1 = the answer),
- * and underneath, plain-language hints about how the answer differs.
+ * and underneath, plain-language hints about how the answer's hiring differs.
  */
 export function GuessBar({ feedback, poolSize, latest }: { feedback: Feedback; poolSize: number; latest?: boolean }) {
-  const { company, rank, correct, sameIndustry, employees, revenuePerEmployee } = feedback;
+  const { company, rank, correct, sameCity, sameRoles, openRoles } = feedback;
   const { width, color } = barStyle(rank, poolSize);
-  const size = sizeHint(employees);
-  const earnings = earningsHint(revenuePerEmployee);
+  const roles = rolesHint(openRoles);
 
   return (
     <div className={`relative ${latest ? "animate-rise" : ""}`}>
@@ -64,14 +58,14 @@ export function GuessBar({ feedback, poolSize, latest }: { feedback: Feedback; p
         </div>
         {!correct && (
           <div className="flex flex-wrap gap-1.5 border-t border-sand-2 px-4 py-2.5">
-            <Chip match={sameIndustry} icon={sameIndustry ? "check" : "cross"}>
-              {sameIndustry ? "Same industry" : "Different industry"}
+            <Chip match={sameRoles} icon={sameRoles ? "check" : "cross"}>
+              {sameRoles ? "Hiring for similar roles" : "Hiring for different roles"}
             </Chip>
-            <Chip match={size.match} icon={size.icon}>
-              {size.text}
+            <Chip match={sameCity} icon={sameCity ? "check" : "cross"}>
+              {sameCity ? "Hiring in the same city" : "Hiring in other cities"}
             </Chip>
-            <Chip match={earnings.match} icon={earnings.icon}>
-              {earnings.text}
+            <Chip match={roles.match} icon={roles.icon}>
+              {roles.text}
             </Chip>
           </div>
         )}
