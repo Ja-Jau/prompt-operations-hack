@@ -42,27 +42,40 @@ export function redact(text: string, company: Pick<HiringCompany, "name">): stri
   );
 }
 
+/** Each clue has a playful title, e.g. "Exhibit A", so unlocking one feels like opening a file. */
 export type Clue =
-  | { kind: "quote"; ad: JobAd }
-  | { kind: "fact"; label: string; value: string };
+  | { kind: "quote"; title: string; ad: JobAd }
+  | { kind: "fact"; title: string; value: string }
+  /** The company name as letter tiles: only each word's first letter shown. */
+  | { kind: "name"; title: string; words: string[] };
 
-/** The six clues in reveal order: one at the start, one more after each wrong guess. */
+function plural(n: number, one: string, many: string) {
+  return `${n} ${n === 1 ? one : many}`;
+}
+
+/** The six clues, hardest first: one at the start, one more per wrong guess or analyst tip. */
 export function caseClues(company: HiringCompany): Clue[] {
   const [a, b, c] = company.jobAds.ads;
   const otherTitles = company.titles.filter((t) => t !== a.title && t !== b.title).slice(0, 3);
-  const third: Clue = c
-    ? { kind: "quote", ad: c }
+  const cities = company.locations.slice(0, 3).join(", ") || "Finland";
+  const open = plural(company.jobAds.checked, "open role", "open roles");
+
+  const exhibitC: Clue = c
+    ? { kind: "quote", title: "Exhibit C", ad: c }
     : otherTitles.length > 0
-      ? { kind: "fact", label: "Also hiring", value: otherTitles.map((t) => redact(t, company)).join(" · ") }
-      : { kind: "fact", label: "Open roles", value: String(company.jobAds.checked) };
-  const base = shortName(company);
+      ? { kind: "fact", title: "Also on their job board", value: otherTitles.map((t) => redact(t, company)).join(" · ") }
+      : { kind: "fact", title: "What they hire for", value: company.functions.join(" · ") };
+  const analyst: Clue = company.velhoCase
+    ? { kind: "fact", title: "Velho analyst's note", value: redact(company.velhoCase.analystHint, company) }
+    : { kind: "fact", title: "What they hire for", value: company.functions.join(" · ") };
+
   return [
-    { kind: "quote", ad: a },
-    { kind: "quote", ad: b },
-    third,
-    { kind: "fact", label: "Hiring for", value: company.functions.join(" · ") },
-    { kind: "fact", label: "Located in", value: company.locations.slice(0, 4).join(" · ") || "Finland" },
-    { kind: "fact", label: "Name", value: `Starts with “${base[0]}”, ${base.length} characters` },
+    { kind: "quote", title: "Exhibit A", ad: a },
+    { kind: "quote", title: "Exhibit B", ad: b },
+    { kind: "fact", title: "The hiring map", value: `${open} in ${cities}` },
+    exhibitC,
+    analyst,
+    { kind: "name", title: "The name", words: shortName(company).split(/\s+/) },
   ];
 }
 
@@ -71,15 +84,26 @@ export type Direction = "up" | "down" | "same";
 export type Feedback = {
   company: HiringCompany;
   correct: boolean;
-  /** Hires in at least one of the same cities. */
-  sameCity: boolean;
-  /** Hires for at least one of the same job functions. */
-  sameRoles: boolean;
+  /** Cities both companies hire in, e.g. ["Tampere"]. */
+  sharedCities: string[];
+  /** Job functions both companies hire for, e.g. ["Finance"]. */
+  sharedRoles: string[];
   /** Whether the answer has more (up) or fewer (down) open ads than the guess. */
   openRoles: Direction;
   /** 1 = the answer; lower is closer. Ranked among every guessable company. */
   rank: number;
+  /** 0–1, 1 = the answer. Drives the bar length and the temperature. */
+  closeness: number;
 };
+
+/** Hot-or-cold name for how close a guess is. */
+export function temperature(closeness: number): { label: string; tone: "burning" | "hot" | "warm" | "cold" | "freezing" } {
+  if (closeness >= 0.97) return { label: "Burning", tone: "burning" };
+  if (closeness >= 0.85) return { label: "Hot", tone: "hot" };
+  if (closeness >= 0.6) return { label: "Warm", tone: "warm" };
+  if (closeness >= 0.3) return { label: "Cold", tone: "cold" };
+  return { label: "Freezing", tone: "freezing" };
+}
 
 function overlap(a: string[], b: string[]): number {
   const set = new Set(a);
@@ -103,13 +127,15 @@ export function closenessRanks(pool: HiringCompany[], target: HiringCompany): Ma
 
 export function compare(guess: HiringCompany, target: HiringCompany, ranks: Map<string, number>): Feedback {
   const diff = target.jobAds.checked - guess.jobAds.checked;
+  const rank = ranks.get(guess.id) ?? ranks.size;
   return {
     company: guess,
     correct: guess.id === target.id,
-    sameCity: overlap(guess.locations, target.locations) > 0,
-    sameRoles: overlap(guess.functions, target.functions) > 0,
+    sharedCities: guess.locations.filter((city) => target.locations.includes(city)),
+    sharedRoles: guess.functions.filter((role) => target.functions.includes(role)),
     openRoles: diff === 0 ? "same" : diff > 0 ? "up" : "down",
-    rank: ranks.get(guess.id) ?? ranks.size,
+    rank,
+    closeness: ranks.size > 1 ? 1 - (rank - 1) / (ranks.size - 1) : 1,
   };
 }
 
@@ -121,8 +147,8 @@ export function caseShareText(opts: {
   fixedRight: boolean | null;
   url: string;
 }): string {
-  // ✓ found it, ~ hiring for similar roles, × miss. Plain symbols, no emoji, no spoilers.
-  const grid = opts.feedback.map((f) => (f.correct ? "✓" : f.sameRoles ? "~" : "×")).join(" ");
+  // ✓ found it, ● warm guess, ○ cold guess. Plain symbols, no emoji, no spoilers.
+  const grid = opts.feedback.map((f) => (f.correct ? "✓" : f.closeness >= 0.6 ? "●" : "○")).join(" ");
   const score = opts.solved ? `Solved in ${opts.feedback.length}/${MAX_GUESSES}` : `Not solved (${MAX_GUESSES}/${MAX_GUESSES})`;
   const fix =
     opts.fixedRight === null ? "" : opts.fixedRight ? "\nSame first fix as Velho" : "\nVelho would fix it differently";

@@ -70,7 +70,6 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   const [dailySaved, setDailySaved] = useState<Saved>(EMPTY);
   const [practiceTarget, setPracticeTarget] = useState<HiringCompany | null>(null);
   const [practiceSaved, setPracticeSaved] = useState<Saved>(EMPTY);
-  const [tipOpen, setTipOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -112,14 +111,12 @@ export function WhosHiring({ companies, onGameChange }: Props) {
     const next = options[Math.floor(Math.random() * options.length)] ?? casePool[0];
     setPracticeTarget(next);
     setPracticeSaved(EMPTY);
-    setTipOpen(false);
     setMenuOpen(false);
     scrollRef.current?.scrollTo({ top: 0 });
   };
 
   const backToDaily = () => {
     setPracticeTarget(null);
-    setTipOpen(false);
     setMenuOpen(false);
     scrollRef.current?.scrollTo({ top: 0 });
   };
@@ -189,9 +186,12 @@ export function WhosHiring({ companies, onGameChange }: Props) {
 
   const latest = feedback[feedback.length - 1];
   const sorted = [...feedback].sort((a, b) => a.rank - b.rank);
-  const tip =
-    target.velhoCase?.analystHint ??
-    `They are hiring for ${target.functions.join(", ").toLowerCase()} roles in ${target.locations.slice(0, 2).join(" and ")}.`;
+  // One clue per wrong guess, plus one free clue from the analyst lifeline.
+  const revealed = Math.min(feedback.length + 1 + (saved.tipUsed ? 1 : 0), clues.length);
+  const askAnalyst = () => {
+    update({ tipUsed: true });
+    setMenuOpen(false);
+  };
   const menuItem = "flex w-full items-center gap-2 rounded-[7px] px-3 py-2.5 text-left font-medium hover:bg-sand";
 
   return (
@@ -202,7 +202,12 @@ export function WhosHiring({ companies, onGameChange }: Props) {
       <main className="mx-auto max-w-[760px] px-4 pb-20 pl-8 md:pl-4">
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Someone is hiring for this. Who?`} />
 
-        <Evidence key={target.id} clues={clues} revealed={Math.min(feedback.length + 1, clues.length)} company={target} />
+        <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
+        {!saved.tipUsed && revealed < clues.length && (
+          <button onClick={askAnalyst} className="btn btn-line btn-sm mt-3">
+            <Icon name="spark" /> Ask a Velho analyst: unlock the next clue for free
+          </button>
+        )}
 
         <div className="relative mt-8 flex gap-3">
           <div className="flex-1">
@@ -210,10 +215,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
               companies={companies}
               excluded={new Set(saved.guesses)}
               counter={`${feedback.length}/${MAX_GUESSES}`}
-              onGuess={(c) => {
-                setTipOpen(false);
-                update({ guesses: [...saved.guesses, c.id] });
-              }}
+              onGuess={(c) => update({ guesses: [...saved.guesses, c.id] })}
             />
           </div>
           <button
@@ -226,15 +228,11 @@ export function WhosHiring({ companies, onGameChange }: Props) {
           {menuOpen && (
             <div className="card animate-rise absolute right-0 top-[68px] z-30 w-64 overflow-hidden p-1.5 shadow-[0_18px_40px_-20px_rgb(10_27_52/0.35)]">
               <button
-                disabled={saved.tipUsed}
-                onClick={() => {
-                  update({ tipUsed: true });
-                  setTipOpen(true);
-                  setMenuOpen(false);
-                }}
+                disabled={saved.tipUsed || revealed >= clues.length}
+                onClick={askAnalyst}
                 className={`${menuItem} disabled:opacity-40 disabled:hover:bg-transparent`}
               >
-                <Icon name="spark" /> {saved.tipUsed ? "Analyst tip used" : "Ask a Velho analyst"}
+                <Icon name="spark" /> {saved.tipUsed ? "Free clue used" : "Ask a Velho analyst"}
               </button>
               <button onClick={playAnother} className={menuItem}>
                 <Icon name="swap" /> Play a different case
@@ -266,22 +264,15 @@ export function WhosHiring({ companies, onGameChange }: Props) {
           )}
         </div>
 
-        {tipOpen && (
-          <div className="card animate-rise mt-4 flex gap-4 p-5">
-            <span className="eyebrow shrink-0 pt-0.5 text-sage-d">Velho analyst</span>
-            <p className="text-[15.5px] leading-snug">{tip}</p>
-          </div>
-        )}
-
         {latest && (
           <div className="mt-8">
             <div className="mb-3 flex items-baseline justify-between">
-              <p className="eyebrow text-sage-d">Your guesses, closest first</p>
+              <p className="eyebrow text-sage-d">Your guesses, hottest first</p>
               <p className="font-mono text-xs text-ink-3">Rank 1 = the answer</p>
             </div>
             <div className="flex flex-col gap-3">
               {sorted.map((f) => (
-                <GuessBar key={f.company.id} feedback={f} poolSize={ranks.size} latest={f === latest} />
+                <GuessBar key={f.company.id} feedback={f} latest={f === latest} />
               ))}
             </div>
           </div>

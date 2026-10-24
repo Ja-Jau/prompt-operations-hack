@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { HiringCompany } from "@/types/company";
 import { MAX_GUESSES, caseShareText, type Feedback } from "@/lib/case/cases";
-import { VELHO_SERVICES, VELHO_URL } from "@/lib/velho";
+import { VELHO_URL } from "@/lib/velho";
 import { CompanyLogo } from "@/components/game/CompanyLogo";
 import { LeadForm } from "@/components/leads/LeadForm";
 import { Icon } from "@/components/ui/Icon";
@@ -21,27 +21,6 @@ type Props = {
   onBackToDaily?: () => void;
   onPlayHigherLower: () => void;
 };
-
-/** The player's guesses as a row of rank tiles: a spoiler-free picture of how it went. */
-function GuessTrail({ feedback }: { feedback: Feedback[] }) {
-  return (
-    <div className="flex justify-center gap-1.5">
-      {Array.from({ length: MAX_GUESSES }, (_, i) => {
-        const f = feedback[i];
-        const style = !f
-          ? "border-line-dark text-on-dark-2"
-          : f.correct
-            ? "border-sage bg-sage text-ivory"
-            : "border-line-dark bg-ivory/10 text-ivory";
-        return (
-          <span key={i} className={`flex h-9 w-9 items-center justify-center rounded-[7px] border font-mono text-xs ${style}`}>
-            {f ? f.correct ? <Icon name="check" className="h-4 w-4" /> : f.rank : ""}
-          </span>
-        );
-      })}
-    </div>
-  );
-}
 
 /** Velho's take in one card: pick the first fix, then see Velho's call. */
 function ThinkLikeVelho({ company, choice, onChoice }: { company: HiringCompany; choice: number | null; onChoice: (i: number) => void }) {
@@ -140,12 +119,12 @@ export function CaseReveal({
             </span>{" "}
             of their open job ads describe work software could take over.
           </p>
-          <div className="mt-7">
-            <GuessTrail feedback={feedback} />
-          </div>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <button onClick={onPlayAnother} className="btn btn-light">
-              Play another case <Icon name="arrowRight" />
+          <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-light mt-8">
+            See how Velho fixes this <Icon name="arrowRight" />
+          </a>
+          <div className="mt-4 flex flex-wrap justify-center gap-3">
+            <button onClick={onPlayAnother} className="btn btn-line-dark">
+              Play another case
             </button>
             <button onClick={share} className="btn btn-line-dark">
               {copied ? "Copied" : "Share result"}
@@ -165,57 +144,6 @@ export function CaseReveal({
       </section>
 
       <main className="mx-auto flex max-w-[760px] flex-col gap-8 px-4 py-10 md:py-14">
-        {take && <ThinkLikeVelho company={company} choice={fixChoice} onChoice={onFixChoice} />}
-
-        {/* The evidence, short */}
-        <section>
-          <p className="eyebrow mb-3 text-sage-d">From their job ads</p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {ads.ads.slice(0, 4).map((ad) => (
-              <figure key={ad.url + ad.quote} className="card flex flex-col justify-between p-4">
-                <blockquote className="line-clamp-4 text-[15px] leading-snug">“{ad.quote}”</blockquote>
-                <figcaption className="eyebrow mt-3 flex items-center justify-between gap-2 text-ink-3">
-                  <span className="truncate">{ad.title}</span>
-                  {ad.url && (
-                    <a href={ad.url} target="_blank" rel="noreferrer" aria-label="View ad" className="text-navy-3 hover:text-ink">
-                      <Icon name="arrowRight" className="h-3.5 w-3.5" />
-                    </a>
-                  )}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </section>
-
-        {/* What Velho actually fixes, in Velho's own words */}
-        <section>
-          <p className="eyebrow text-sage-d">Where Velho helps</p>
-          <h2 className="mt-3 text-[clamp(26px,3vw,38px)] tracking-[-0.03em]">
-            Temporary fixes have become permanent work
-          </h2>
-          <p className="mt-3 max-w-xl text-ink-2">
-            Velho finds the manual work that slows a company down, builds the fix and makes sure people actually use
-            it.
-          </p>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            {VELHO_SERVICES.map((s) => (
-              <article key={s.title} className="card p-5">
-                <h3 className="text-[17px] tracking-tight">{s.title}</h3>
-                <dl className="mt-3 space-y-2 text-sm">
-                  <div className="flex gap-3">
-                    <dt className="eyebrow w-12 shrink-0 pt-0.5 text-[10px] text-clay">Before</dt>
-                    <dd className="text-ink-2">{s.before}</dd>
-                  </div>
-                  <div className="flex gap-3">
-                    <dt className="eyebrow w-12 shrink-0 pt-0.5 text-[10px] text-sage-d">After</dt>
-                    <dd className="text-ink">{s.after}</dd>
-                  </div>
-                </dl>
-              </article>
-            ))}
-          </div>
-        </section>
-
         {/* The way to Velho, framed by the case itself */}
         <section className="rounded-[14px] bg-navy p-7 text-ivory md:p-9">
           <p className="eyebrow text-sky">Your company</p>
@@ -241,6 +169,8 @@ export function CaseReveal({
             Or go to velho.io <Icon name="arrowRight" className="h-3.5 w-3.5" />
           </a>
         </section>
+
+        {take && <ThinkLikeVelho company={company} choice={fixChoice} onChoice={onFixChoice} />}
 
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
           {onBackToDaily && (
