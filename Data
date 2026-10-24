@@ -33,7 +33,7 @@ def get_all_finnish_tickers():
         "BRAV.ST", "VITR.ST", "KFAST-B.ST", "NOVO-B.CO", "DSV.CO", "VWS.CO", 
         "MAERSK-B.CO", "ORSTED.CO", "CARL-B.CO", "GMAB.CO", "PNDORA.CO", 
         "DANSKE.CO", "ROCK-B.CO", "TRYG.CO", "JYSK.CO", "EQNR.OL", "DNB.OL", 
-        "AKERBP.OL", "YAR.OL", "NHY.OL", "ORK.OL", "TEL.OL", "MOWI.OL", "SALM.OL", 
+        "YAR.OL", "NHY.OL", "ORK.OL", "TEL.OL", "MOWI.OL", "SALM.OL", 
         "KOG.OL", "TOM.OL", "STB.OL", "NEL.OL"
     ]
 
