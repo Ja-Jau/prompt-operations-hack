@@ -78,7 +78,7 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
 
   return (
     <div className="ceo-decision" data-urgent={urgent} data-outcome={decision ? decision.correct ? "correct" : "wrong" : "waiting"}>
-      <ProjectorScreen label={`0${number} / 0${CEO_ROUNDS} · ${scenario.topic}`}>
+      <ProjectorScreen label={`${number}/${CEO_ROUNDS} · ${scenario.topic}`} progress={number}>
         <h1 id="ceo-scenario-title" className="ceo-scenario-title">{scenario.title}</h1>
         <div className="ceo-choices" role="group" aria-label="Choose your next move">
           {scenario.choices.map((choice, i) => {
@@ -86,9 +86,12 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
             const wrong = Boolean(decision && choice.id === decision.choiceId && !choice.correct);
             return (
               <button key={choice.id} onClick={() => choose(choice.id)} disabled={Boolean(decision)}
+                aria-label={choice.text}
                 className={`ceo-choice ${right ? "ceo-choice-correct" : wrong ? "ceo-choice-wrong" : ""}`}>
                 <span className="ceo-choice-number">{right ? <Icon name="check" /> : wrong ? <Icon name="cross" /> : `0${i + 1}`}</span>
                 <span>{choice.text}</span>
+                <Icon name="arrowRight" className="ceo-choice-arrow" />
+                {right && <span className="sr-only">Correct choice</span>}
               </button>
             );
           })}
@@ -96,7 +99,7 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
         <div className="ceo-timer" aria-label="Decision timer">
           <div className="ceo-timer-label">
             <span>{decision ? "Locked" : urgent ? "Decide now" : "Time left"}</span>
-            <span role="timer" aria-live="off">{(remaining / 1000).toFixed(1)}<small> SEC</small></span>
+            <span className="ceo-time-pill"><Icon name="clock" /><span role="timer" aria-live="off">{(remaining / 1000).toFixed(1)}<small> SEC</small></span></span>
           </div>
           <div role="progressbar" aria-label="Time remaining" aria-valuemin={0} aria-valuemax={CEO_ROUND_MS / 1000} aria-valuenow={Math.round(remaining / 100) / 10} className="ceo-timer-track">
             <div className="ceo-timer-fill" style={{ transform: `scaleX(${remaining / CEO_ROUND_MS})` }} />
@@ -105,11 +108,11 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
         </div>
       </ProjectorScreen>
       <aside className="boardroom-briefing" aria-live="polite" aria-atomic="true">
-        <div className="boardroom-speaker"><span className="boardroom-speaker-light" /><span>COO</span></div>
+        <div className="boardroom-speaker"><Icon name="quote" /><span>COO</span><span className="boardroom-speaker-line" /></div>
         {decision ? (
           <div className="boardroom-response">
             <div>
-              <p className="boardroom-response-title">{decision.timedOut ? "Time’s up." : decision.correct ? "Approved." : "Reconsider."}</p>
+              <p className="boardroom-response-title"><Icon name={decision.correct ? "check" : "cross"} />{decision.timedOut ? "Time’s up." : decision.correct ? "Approved." : "Reconsider."}</p>
               <p>{decision.timedOut ? correct.explanation : selected?.explanation}</p>
             </div>
             <button ref={nextButton} onClick={onNext} className="boardroom-next">{last ? "Results" : "Next"}<Icon name="arrowRight" /></button>
@@ -165,20 +168,18 @@ export function CeoGame({ onGameChange }: Props) {
       <TopBar game="ceo" onGameChange={onGameChange} status={stage === "playing" ? `Score ${score}/${CEO_ROUNDS}` : undefined} />
       <BoardroomScene confidence={boardConfidence(answers)} stage={stage}>
           {stage === "intro" && (
-            <>
               <ProjectorScreen label="CEO simulation" className="boardroom-opening">
+                <div className="ceo-opening-emblem" aria-hidden="true"><Icon name="target" /></div>
                 <h1 id="ceo-title">POV: You are<br /><span>the CEO.</span></h1>
                 <p className="ceo-opening-copy">5 decisions. {CEO_ROUND_MS / 1000} seconds each.</p>
                 <button onClick={start} className="boardroom-start">Start meeting <Icon name="arrowRight" /></button>
               </ProjectorScreen>
-            </>
           )}
           {stage === "playing" && rounds[index] && (
             <TimedDecision key={rounds[index].id} scenario={rounds[index]} number={index + 1} onAnswer={recordAnswer} onNext={advance} last={index + 1 === rounds.length} />
           )}
           {stage === "results" && (
-            <>
-              <ProjectorScreen label="Results" className="boardroom-debrief">
+              <ProjectorScreen label="Results" progress={CEO_ROUNDS} className="boardroom-debrief">
                 <div className="ceo-debrief-top">
                   <p className="ceo-final-score"><strong>{score}</strong><span>/{CEO_ROUNDS}</span><small>smart moves</small></p>
                   <div><h1 id="ceo-result-title">{score === CEO_ROUNDS ? "Well played, CEO." : "Meeting complete."}</h1><p className="ceo-personal-best">Best {best}/{CEO_ROUNDS}</p></div>
@@ -186,14 +187,13 @@ export function CeoGame({ onGameChange }: Props) {
                 <ul className="ceo-debrief-list" aria-label="Your decisions">
                   {rounds.map((scenario) => {
                     const answer = answers.find((item) => item.scenarioId === scenario.id);
-                    return <li key={scenario.id}><Icon name={answer?.correct ? "check" : "cross"} /><span>{scenario.topic}</span><span className="sr-only">{answer?.timedOut ? "Timed out" : answer?.correct ? "Correct" : "Incorrect"}</span></li>;
+                    return <li key={scenario.id} data-correct={Boolean(answer?.correct)}><span className="ceo-recap-icon"><Icon name={answer?.correct ? "check" : "cross"} /></span><span>{scenario.topic}</span><span className="sr-only">{answer?.timedOut ? "Timed out" : answer?.correct ? "Correct" : "Incorrect"}</span></li>;
                   })}
                 </ul>
                 <a href={VELHO_URL} target="_blank" rel="noopener noreferrer" className="boardroom-start ceo-velho-link">Visit velho.io <Icon name="arrowRight" /></a>
                 <div className="ceo-debrief-actions"><button onClick={start}>Play again</button><button onClick={share}>{copied ? "Copied!" : "Share"}</button></div>
               </ProjectorScreen>
 
-            </>
           )}
       </BoardroomScene>
     </div>

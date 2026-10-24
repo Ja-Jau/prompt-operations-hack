@@ -18,6 +18,7 @@ const PATHS = {
   calendar: "M4 7h16v13H4zM4 11h16M8 3v4M16 3v4",
   quote: "M6 7h5v5H6zM6 12c0 3-1 4.5-2.5 5.5M14 7h5v5h-5zM14 12c0 3-1 4.5-2.5 5.5",
   target: "M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM12 12h.01",
+  clock: "M12 8v4l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z",
 } as const;
 
 export type IconName = keyof typeof PATHS;

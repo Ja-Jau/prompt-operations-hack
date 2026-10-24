@@ -14,7 +14,7 @@ export function BoardroomScene({ children, confidence, stage }: {
       <div className="boardroom-vignette" aria-hidden="true" />
       <div className="boardroom-projector-beam" aria-hidden="true" />
       <div className="boardroom-pressure" aria-hidden="true" />
-      {stage !== "intro" && <aside className="boardroom-confidence" aria-label={`Board confidence: ${confidence} percent`}>
+      {stage !== "intro" && <aside className="boardroom-confidence" data-low={confidence < 35} aria-label={`Board confidence: ${confidence} percent`}>
         <div><Icon name="target" /><span>Board confidence</span><strong>{confidence}%</strong></div>
         <div className="boardroom-confidence-track"><span style={{ width: `${confidence}%` }} /></div>
       </aside>}
@@ -23,11 +23,15 @@ export function BoardroomScene({ children, confidence, stage }: {
   );
 }
 
-export function ProjectorScreen({ children, label, className = "" }: { children: ReactNode; label: string; className?: string }) {
+export function ProjectorScreen({ children, label, progress = 0, className = "" }: { children: ReactNode; label: string; progress?: number; className?: string }) {
   return (
     <section className={`boardroom-projector ${className}`} aria-label="Projected presentation">
-      <div className="boardroom-projector-rail"><span><i /> Velho</span><span>{label}</span></div>
-      <div className="boardroom-projector-content">{children}</div>
+      <div className="boardroom-projector-rail">
+        <span className="boardroom-projector-brand"><Icon name="spark" /> Velho</span>
+        <span className="boardroom-slide-label">{label}</span>
+        <span className="boardroom-slide-progress" aria-hidden="true">{Array.from({ length: 5 }, (_, i) => <i key={i} className={i < progress ? "is-complete" : ""} />)}</span>
+      </div>
+      <div key={label} className="boardroom-projector-content">{children}</div>
     </section>
   );
 }
