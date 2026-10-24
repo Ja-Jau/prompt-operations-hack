@@ -2,14 +2,17 @@
 
 import { useCallback, useEffect, useState } from "react";
 import type { Company, Mode } from "@/types/company";
-import { buildDailyRun } from "@/lib/game/daily";
+import { buildDailyRun, dailyNumber } from "@/lib/game/daily";
 import { METRICS } from "@/lib/game/metrics";
 import { firstStep, nextStep, type Step } from "@/lib/game/sequence";
 import { rankTitle, shareText } from "@/lib/game/share";
+import { VELHO_URL } from "@/lib/velho";
 import { YourCompany } from "@/components/ranking/YourCompany";
+import { PageTitle } from "@/components/layout/PageTitle";
+import { TopBar, type GameId } from "@/components/layout/TopBar";
+import { Icon, type IconName } from "@/components/ui/Icon";
 import { CompanyPanel } from "./CompanyPanel";
 import { RollingNumber } from "./RollingNumber";
-import { TopBar } from "./TopBar";
 import { VelhoTip } from "./VelhoTip";
 
 type Phase = "guess" | "rolling" | "revealed" | "done";
@@ -45,13 +48,19 @@ function startEndless(pool: Company[]): Step[] {
   return second ? [first, second] : [first];
 }
 
-const OUTCOME_UI: Record<Outcome, { badge: string; badgeClass: string; message: string }> = {
-  hit: { badge: "✓", badgeClass: "bg-emerald-400 text-neutral-900", message: "✅ Correct!" },
-  saved: { badge: "⚡", badgeClass: "bg-amber-300 text-neutral-900", message: "⚡ Wrong, but Velho saved you. No more saves." },
-  miss: { badge: "✗", badgeClass: "bg-rose-500 text-white", message: "❌ Not quite." },
+const OUTCOME_UI: Record<Outcome, { icon: IconName; badgeClass: string; message: string }> = {
+  hit: { icon: "check", badgeClass: "bg-sage text-ivory", message: "Correct." },
+  saved: { icon: "spark", badgeClass: "bg-sky text-navy", message: "Wrong, but Velho saved you. That was your one save." },
+  miss: { icon: "cross", badgeClass: "bg-clay text-ivory", message: "Not quite." },
 };
 
-export function Game({ companies, unverifiedCount }: { companies: Company[]; unverifiedCount: number }) {
+type Props = {
+  companies: Company[];
+  onGameChange: (game: GameId) => void;
+};
+
+/** Higher or lower: guess whether the next company earns more or less per employee. */
+export function Game({ companies, onGameChange }: Props) {
   const [mode, setMode] = useState<Mode>("daily");
   const [steps, setSteps] = useState<Step[]>([]);
   const [index, setIndex] = useState(0);
@@ -87,12 +96,24 @@ export function Game({ companies, unverifiedCount }: { companies: Company[]; unv
 
   const topBar = (
     <TopBar
-      mode={mode}
-      streak={streak}
-      best={best}
-      saveAvailable={!saveUsed}
-      unverifiedCount={unverifiedCount}
-      onModeChange={start}
+      game="higherLower"
+      onGameChange={onGameChange}
+      status={`Streak ${streak} · Best ${best} · Save ${saveUsed ? "used" : "ready"}`}
+      controls={
+        <div className="flex rounded-full border border-line-dark p-0.5 text-xs md:text-sm">
+          {(["daily", "endless"] as const).map((m) => (
+            <button
+              key={m}
+              onClick={() => start(m)}
+              className={`rounded-full px-3 py-1 capitalize transition ${
+                mode === m ? "bg-ivory text-navy" : "text-on-dark hover:text-ivory"
+              }`}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+      }
     />
   );
 
@@ -155,44 +176,41 @@ export function Game({ companies, unverifiedCount }: { companies: Company[]; unv
 
   if (phase === "done") {
     return (
-      <div className="flex min-h-0 flex-1 flex-col">
+      <div className="min-h-0 flex-1 overflow-y-auto">
         {topBar}
-        <div className="flex min-h-0 flex-1 items-center justify-center overflow-y-auto bg-[radial-gradient(ellipse_at_top,rgb(252_211_77/0.12),transparent_60%)] px-4 py-6">
-          <div className="grid w-full max-w-5xl items-center gap-8 md:grid-cols-2">
-            <div className="animate-rise flex flex-col items-center gap-4 text-center">
-              <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                {perfect ? "You cleared today's run" : mode === "daily" ? "Today's streak" : "Streak over"}
-              </p>
-              <p className="text-8xl font-black text-amber-300 drop-shadow-[0_0_40px_rgb(252_211_77/0.35)]">
-                🔥 {streak}
-              </p>
-              <p className="text-2xl font-bold">{rankTitle(streak)}</p>
-              <p className="text-sm text-white/50">
-                Best {Math.max(best, streak)}
-                {saveUsed && " · ⚡ saved once by Velho"}
-              </p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <button
-                  onClick={share}
-                  className="rounded-full bg-amber-300 px-6 py-3 font-semibold text-neutral-900 transition hover:bg-amber-200"
-                >
-                  {copied ? "Copied!" : "Share result"}
-                </button>
-                <button
-                  onClick={() => start("endless")}
-                  className="rounded-full border border-white/20 px-6 py-3 font-semibold transition hover:bg-white/10"
-                >
-                  {mode === "endless" ? "Try again" : "Play endless mode"}
-                </button>
-              </div>
-              <p className="max-w-sm text-sm text-white/60">
-                The companies at the top get more done per person. Velho helps companies climb this list by freeing
-                up time from manual work.
-              </p>
+        <main className="mx-auto flex max-w-[760px] flex-col gap-8 px-4 pb-14">
+          <PageTitle
+            compact
+            title={perfect ? "Run cleared" : "Streak over"}
+            eyebrow={mode === "daily" ? `Higher or lower · Daily No. ${dailyNumber()}` : "Higher or lower · Endless"}
+          />
+          <section className="card animate-rise p-8 text-center">
+            <p className="text-[clamp(72px,10vw,112px)] font-semibold leading-none tracking-[-0.05em]">{streak}</p>
+            <p className="mt-3 text-2xl font-semibold tracking-tight">{rankTitle(streak)}</p>
+            <p className="mt-2 font-mono text-xs text-ink-3">
+              Best {Math.max(best, streak)}
+              {saveUsed && " · saved once by Velho"}
+            </p>
+            <div className="mt-7 flex flex-wrap justify-center gap-3">
+              <button onClick={share} className="btn btn-dark">
+                {copied ? "Copied" : "Share result"}
+              </button>
+              <button onClick={() => start("endless")} className="btn btn-line">
+                {mode === "endless" ? "Try again" : "Play endless"} <Icon name="arrowRight" />
+              </button>
             </div>
-            <YourCompany companies={companies} />
-          </div>
-        </div>
+          </section>
+          <YourCompany companies={companies} />
+          <section className="rounded-[14px] bg-navy p-7 text-ivory md:p-9">
+            <p className="eyebrow text-sky">Velho</p>
+            <h2 className="mt-3 text-[clamp(26px,3vw,38px)] tracking-[-0.03em]">
+              Less manual work. More room to <span className="text-sky">grow.</span>
+            </h2>
+            <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-light mt-6">
+              Go to Velho <Icon name="arrowRight" />
+            </a>
+          </section>
+        </main>
       </div>
     );
   }
@@ -204,21 +222,25 @@ export function Game({ companies, unverifiedCount }: { companies: Company[]; unv
       {topBar}
 
       <div className="relative flex min-h-0 flex-1 flex-col md:flex-row">
-        {velhoRound && (
-          <div className="animate-rise absolute left-1/2 top-3 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-amber-300 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-neutral-900 shadow-xl md:text-sm">
-            ⚡ Velho round · manual work in job ads
-          </div>
-        )}
+        <div className="eyebrow absolute left-1/2 top-4 z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-ivory px-4 py-2 text-navy shadow-xl">
+          {velhoRound ? (
+            <span className="text-clay">Velho round · Manual work in job ads</span>
+          ) : mode === "daily" ? (
+            `Daily No. ${dailyNumber()} · Revenue per employee`
+          ) : (
+            "Endless · Revenue per employee"
+          )}
+        </div>
 
         <CompanyPanel company={left} metric={right.metric} revealed />
 
         <div
           key={ui ? outcome : "vs"}
-          className={`absolute left-1/2 top-1/2 z-10 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full text-lg font-black shadow-2xl ring-4 ring-neutral-950/60 md:h-16 md:w-16 md:text-xl ${
-            ui ? `animate-pop ${ui.badgeClass}` : "bg-white text-neutral-900"
+          className={`absolute left-1/2 top-1/2 z-10 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full font-mono text-sm shadow-2xl ring-4 ring-navy md:h-16 md:w-16 ${
+            ui ? `animate-pop ${ui.badgeClass}` : "bg-ivory text-navy"
           }`}
         >
-          {ui ? ui.badge : "VS"}
+          {ui ? <Icon name={ui.icon} className="h-6 w-6" /> : "VS"}
         </div>
 
         <CompanyPanel
@@ -227,7 +249,7 @@ export function Game({ companies, unverifiedCount }: { companies: Company[]; unv
           revealed={phase === "revealed"}
           value={
             phase === "guess" ? (
-              <span className="text-white/40">?</span>
+              <span className="text-on-dark-2">?</span>
             ) : (
               <RollingNumber
                 value={metric.value(right.company)!}
@@ -239,22 +261,16 @@ export function Game({ companies, unverifiedCount }: { companies: Company[]; unv
         >
           {phase === "guess" && (
             <div className="flex flex-col items-center gap-3">
-              <p className="max-w-xs text-sm text-white/80">
+              <p className="max-w-xs text-sm text-on-dark">
                 {velhoRound ? "More or less manual work in its job ads than " : "More or less per employee than "}
-                <strong>{left.name}</strong>?
+                <strong className="text-ivory">{left.name}</strong>?
               </p>
               <div className="flex gap-3">
-                <button
-                  onClick={() => guess("higher")}
-                  className="rounded-full border-2 border-white bg-white/10 px-6 py-2 font-bold backdrop-blur transition hover:-translate-y-0.5 hover:bg-emerald-400 hover:text-neutral-900 md:px-7 md:py-3 md:text-lg"
-                >
-                  ▲ {metric.higherLabel}
+                <button onClick={() => guess("higher")} className="btn btn-light">
+                  <Icon name="arrowUp" /> {metric.higherLabel}
                 </button>
-                <button
-                  onClick={() => guess("lower")}
-                  className="rounded-full border-2 border-white bg-white/10 px-6 py-2 font-bold backdrop-blur transition hover:-translate-y-0.5 hover:bg-rose-400 hover:text-neutral-900 md:px-7 md:py-3 md:text-lg"
-                >
-                  ▼ {metric.lowerLabel}
+                <button onClick={() => guess("lower")} className="btn btn-line-dark">
+                  <Icon name="arrowDown" /> {metric.lowerLabel}
                 </button>
               </div>
               <VelhoTip
@@ -270,13 +286,10 @@ export function Game({ companies, unverifiedCount }: { companies: Company[]; unv
             </div>
           )}
           {ui && (
-            <div className="animate-rise flex flex-col items-center gap-2">
-              <p className="text-base font-bold md:text-lg">{ui.message}</p>
-              <button
-                onClick={advance}
-                className="rounded-full bg-white px-8 py-2 font-semibold text-neutral-900 transition hover:bg-white/90 md:py-3"
-              >
-                {outcome === "miss" ? "See result" : "Next →"}
+            <div className="animate-rise flex flex-col items-center gap-3">
+              <p className="text-[17px] font-semibold">{ui.message}</p>
+              <button onClick={advance} className="btn btn-light">
+                {outcome === "miss" ? "See result" : "Next"} <Icon name="arrowRight" />
               </button>
             </div>
           )}

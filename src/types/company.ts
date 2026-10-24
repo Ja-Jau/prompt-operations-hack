@@ -22,17 +22,68 @@ export type Company = {
   hint: string;
   /** Open job ads read by pipeline/fetch_job_ads.py, or null if not checked yet. */
   jobAds: JobAds | null;
+  /** Velho's take for the daily case (pipeline/build_cases.py), or null. */
+  velhoCase: VelhoCase | null;
 };
+
+/**
+ * A company with open job ads (src/data/hiring.json, from pipeline/import_jobs.py). Only what the
+ * ads themselves show: no revenue or headcount, which the ads don't contain.
+ */
+export type HiringCompany = {
+  id: string;
+  name: string;
+  domain: string | null;
+  brandColor: string;
+  logo: string | null;
+  image: string | null;
+  imageCredit: Company["imageCredit"];
+  /** Cities named in the ads. */
+  locations: string[];
+  /** Job functions the ads are filed under, e.g. "Procurement". */
+  functions: string[];
+  /** Titles of every open ad. */
+  titles: string[];
+  jobAds: JobAds;
+  velhoCase: VelhoCase | null;
+  /** The same company in Higher or lower, if it's there. */
+  gameCompanyId: string | null;
+};
+
+export type JobAd = { title: string; quote: string; url: string };
 
 export type JobAds = {
   /** Open ads that were read. */
   checked: number;
   /** Of those, ads describing manual, repetitive work (Excel upkeep, data entry, "käsin", ...). */
   manual: number;
-  /** A verbatim quote from one manual-work ad, shown on the reveal. */
-  example: { title: string; quote: string; url: string } | null;
+  /** The manual-work ads, each with a verbatim quote. */
+  ads: JobAd[];
   source: string;
   fetchedAt: string;
+};
+
+export type VelhoCase = {
+  /** The "Ask Velho" lifeline: a pattern an analyst would spot across the ads. */
+  analystHint: string;
+  fixOptions: string[];
+  correctIndex: number;
+  fixReasoning: string;
+  adoptNote: string;
+  /** Which of Velho's service areas (src/lib/velho.ts) the first fix belongs to. */
+  serviceArea?: string;
+};
+
+export type Lead = {
+  id: string;
+  name: string;
+  email: string;
+  company: string;
+  /** Where the lead came from, e.g. "case-reveal" or "brief". */
+  source: string;
+  /** The case or brief company the player was looking at. */
+  contextCompanyId: string | null;
+  createdAt: string;
 };
 
 export type Mode = "daily" | "endless";

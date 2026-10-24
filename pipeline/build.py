@@ -29,6 +29,7 @@ DEFAULT_BRAND_COLOR = "#334155"
 IMAGE_DIR = ROOT / "public" / "images"
 CREDITS_PATH = IMAGE_DIR / "credits.json"
 JOB_ADS_PATH = ROOT / "pipeline" / "data" / "job_ads.json"
+VELHO_CASES_PATH = ROOT / "pipeline" / "data" / "velho_cases.json"
 
 MODEL = "claude-opus-5-5"
 
@@ -226,8 +227,16 @@ def main() -> None:
     rows = load_rows()
     attach_images(rows)
     job_ads = json.loads(JOB_ADS_PATH.read_text(encoding="utf-8")) if JOB_ADS_PATH.exists() else {}
+    velho_cases = json.loads(VELHO_CASES_PATH.read_text(encoding="utf-8")) if VELHO_CASES_PATH.exists() else {}
     for row in rows:
-        row["jobAds"] = job_ads.get(row["id"])
+        ads = job_ads.get(row["id"])
+        if ads is not None:
+            # Older job_ads.json files kept a single `example` instead of every quote.
+            if "ads" not in ads:
+                ads["ads"] = [ads["example"]] if ads.get("example") else []
+            ads.pop("example", None)
+        row["jobAds"] = ads
+        row["velhoCase"] = velho_cases.get(row["id"])
     if not args.no_ai:
         enrich(rows, force=args.force_ai)
 
@@ -244,8 +253,8 @@ def main() -> None:
     print(f"Wrote {len(rows)} companies to {JSON_PATH.relative_to(ROOT)}")
     no_image = [r["id"] for r in rows if not r["image"]]
     with_ads = sum(1 for r in rows if r["jobAds"])
-    print(f"{with_ads} of {len(rows)} companies have job-ad data for Velho rounds"
-          + ("" if with_ads else " (run pipeline/fetch_job_ads.py)"))
+    print(f"{with_ads} of {len(rows)} companies have job-ad stats for Higher or lower's Velho rounds"
+          + ("" if with_ads else " (run pipeline/import_jobs.py)"))
     if no_logo:
         print(f"{len(no_logo)} without a logo (run pipeline/fetch_logos.py): {', '.join(no_logo)}")
     if no_image:

@@ -1,0 +1,4476 @@
+[
+  {
+    "id": "abb-robotics-finland-oy",
+    "name": "ABB Robotics Finland Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vantaa"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Inside Sales and Marketing Specialist, ABB Robotics"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Inside Sales and Marketing Specialist, ABB Robotics",
+          "quote": "Tehtäviin kuuluu markkinoinnin tuottamien liidien käsittely, asiakaskontaktit puhelimitse, sähköpostilla ja virtuaalisesti sekä myyntiprosessin tukeminen ja Salesforce-tietojen ylläpito.",
+          "url": "https://www.jobly.fi/tyopaikka/inside-sales-and-marketing-specialist-abb-robotics-2779964"
+        },
+        {
+          "title": "Inside Sales and Marketing Specialist, ABB Robotics",
+          "quote": "ylläpidät asiakastietoja Salesforce-järjestelmässä",
+          "url": "https://www.jobly.fi/tyopaikka/inside-sales-and-marketing-specialist-abb-robotics-2779964"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": {
+      "analystHint": "A sales role where a big part of the job is keeping the CRM up to date by hand.",
+      "fixOptions": [
+        "Log calls and emails to Salesforce automatically",
+        "Run more marketing campaigns",
+        "Hire a CRM administrator"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Every call and email is already a record. Capturing them automatically keeps Salesforce current and gives the specialist the time back for actual selling.",
+      "adoptNote": "Show the specialist a ready draft of each update to accept, so the CRM stays theirs.",
+      "serviceArea": "Customer follow-up"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "ai-roots",
+    "name": "AI Roots",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Tampere"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Freelance GCP Data Engineers (multiple positions)"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "aallon-group-oyj",
+    "name": "Aallon Group Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Pohjois-Pohjanmaa",
+      "Varsinais-Suomi"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "En specialist inom ekonomiförvaltning till Åbolands skärgård / Taloushallinnon asiantuntija Turun saaristoon",
+      "Taloushallinnon asiantuntija Haapavesi, Kärsämäki tai muu Pohjois-Pohjanmaa"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "aaltovoima-pohjoinen-oy",
+    "name": "Aaltovoima Pohjoinen Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Lappi",
+      "Rovaniemi"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR-konsultti, Rovaniemi"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "akaan-vuokra-asunnot-oy",
+    "name": "Akaan Vuokra-asunnot Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Akaa"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Kirjanpitäjä/hallintosihteeri"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Kirjanpitäjä/hallintosihteeri",
+          "quote": "Tehtäviisi kuuluu kirjanpito, tilinpäätösten ja veroilmoitusten laatiminen, palkanlaskenta, ostoreskontra sekä vuokravalvonta ja perintätoimet maksukehotuksista ulosottoon saakka.",
+          "url": "https://www.jobly.fi/tyopaikka/kirjanpitaja-hallintosihteeri-2785133"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "aktia",
+    "name": "Aktia",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kokkola"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Premium Banker - Pohjanmaa"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "amerplast-oy",
+    "name": "Amerplast Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tampere"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Specialist"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "HR Specialist",
+          "quote": "Vastuullesi kuuluu palkka-aineistojen valmistelu ja yhteistyö ulkoistetun palkanlaskennan kumppanin kanssa.",
+          "url": "https://www.jobly.fi/tyopaikka/hr-specialist-2781072"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "ardor-oy",
+    "name": "Ardor Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Raisio",
+      "Varsinais-Suomi"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Tuotannon ja projektien assistentti, Ardor Oy"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "are-oy",
+    "name": "Are Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Äänekoski"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Projektipäällikkö (sähkö), Äänekoski"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "aspia",
+    "name": "Aspia",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Alavus",
+      "Espoo",
+      "Helsinki",
+      "Joensuu",
+      "Jyväskylä",
+      "Järvenpää",
+      "Kauhajoki",
+      "Kemi",
+      "Kokkola",
+      "Kotka",
+      "Kouvola",
+      "Kuopio",
+      "Kurikka",
+      "Lahti",
+      "Lappeenranta",
+      "Lapua",
+      "Lieksa",
+      "Lohja",
+      "Loimaa",
+      "Mikkeli",
+      "Oulu",
+      "Pori",
+      "Rovaniemi",
+      "Savonlinna",
+      "Seinäjoki",
+      "Tampere",
+      "Turku",
+      "Vaasa",
+      "Ylivieska"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Senior HR-Konsultti: Tekoäly, HR-transformaatio ja organisaation uudistuminen"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "avila-oy",
+    "name": "Avila Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Avila Oy - Coordinator, Office & Marketing"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "beneq",
+    "name": "Beneq",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Sourcing Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "beneq-oy",
+    "name": "Beneq Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "Logistics",
+      "Procurement"
+    ],
+    "titles": [
+      "Sourcing Manager",
+      "Warehouse Operator"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "berner-oy",
+    "name": "Berner Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HRIS Manager, Berner Oy"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "biolin-scientific-oy",
+    "name": "Biolin Scientific Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Production Specialist"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Production Specialist",
+          "quote": "Tehtäviisi kuuluu materiaalien keräys, kokoonpano, testaus, poikkeamien kirjaus, pakkaus ja ERP-järjestelmän päivittäinen käyttö.",
+          "url": "https://www.jobly.fi/tyopaikka/production-specialist-2784318"
+        },
+        {
+          "title": "Production Specialist",
+          "quote": "Tehtäviisi kuuluvat myös tuotteiden pakkaaminen ja kirjaaminen lähetystä varten, ja ERP-järjestelmä on päivittäinen työkalusi.",
+          "url": "https://www.jobly.fi/tyopaikka/production-specialist-2784318"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": {
+      "analystHint": "Production staff log deviations and shipments into the ERP between assembly and testing.",
+      "fixOptions": [
+        "Log deviations and shipments at the bench",
+        "Add an end-of-day ERP session",
+        "Hire a production clerk"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Every logged deviation or shipment interrupts production work. Capturing it at the bench, with a scan or a photo, keeps the record without the trip to the ERP.",
+      "adoptNote": "Design it with the people at the bench and keep it to one tap per entry.",
+      "serviceArea": "Field reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "broman-group-oy",
+    "name": "Broman Group Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Turku"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Buyer, metsästys, retkeily ja lemmikkitarvikkeet",
+      "Purchasing Sustainability Specialist"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Purchasing Sustainability Specialist",
+          "quote": "Selvität ja kokoat tarvittavia vastuullisuustietoja yhdessä hankinnan ja toimittajien kanssa sekä huolehdit dokumentaatiosta ja tietojen tallentamisen koordinoinnista.",
+          "url": "https://www.jobly.fi/tyopaikka/purchasing-sustainability-specialist-2778537"
+        },
+        {
+          "title": "Buyer, metsästys, retkeily ja lemmikkitarvikkeet",
+          "quote": "Huolehdit tuotedatan laadusta ja ylläpidosta sekä teet yhteistyötä markkinoinnin ja muiden sisäisten sidosryhmien kanssa.",
+          "url": "https://www.jobly.fi/tyopaikka/buyer-metsastys-retkeily-ja-lemmikkitarvikkeet-2782677"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": {
+      "analystHint": "Sustainability data from suppliers is chased and filed by hand, and product data is maintained the same way.",
+      "fixOptions": [
+        "Collect supplier sustainability data automatically",
+        "Send suppliers a yearly survey",
+        "Hire a reporting consultant"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "CBAM and EUDR reporting needs the same supplier data every period. Collecting and checking it automatically turns a recurring chase into a review.",
+      "adoptNote": "Start with the largest suppliers and keep the purchasing team as the contact point.",
+      "serviceArea": "Management reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "compute-nordic-finland-oy",
+    "name": "COMPUTE NORDIC FINLAND Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Heinola",
+      "Kouvola",
+      "Lahti",
+      "Mikkeli",
+      "Pieksämäki",
+      "Savonlinna",
+      "Varkaus"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Security Specialist, Compute Nordic Finland, Mikkeli"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "csc-tieteen-tietotekniikan-keskus-oy",
+    "name": "CSC – Tieteen tietotekniikan keskus Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "HR-asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "HR-asiantuntija",
+          "quote": "palkka-aineiston tuottaminen ulkoistettuun palkanlaskentaan",
+          "url": "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848"
+        },
+        {
+          "title": "HR-asiantuntija",
+          "quote": "palkanlaskenta-aineiston tuottamisen automatisointi, HR-järjestelmien ja datanhallinnan parantaminen)",
+          "url": "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "Payroll input for an outsourced provider is still produced in-house, and they want it automated.",
+      "fixOptions": [
+        "Generate payroll input straight from HR data",
+        "Switch payroll provider",
+        "Monthly payroll meetings"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "The payroll file is built from data HR already holds. Generating it automatically turns a monthly task into a quick review.",
+      "adoptNote": "Run the automated file next to the manual one for two pay cycles before switching.",
+      "serviceArea": "Management reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "cts-nordics-oy",
+    "name": "CTS Nordics OY",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Seinäjoki"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Purchasing Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "career-fi",
+    "name": "Career.fi",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Etelä-Suomi"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Myynti- ja rekrytointiasiantuntija, Horeca-ala – Etelä-Suomi"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "casemet-oy",
+    "name": "Casemet Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Etelä-Savo",
+      "Mikkeli"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Procurement Specialist"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Procurement Specialist",
+          "quote": "Tehtäviisi kuuluu muun muassa ostotilausten ja tilausvahvistusten käsittelyä, toimitusten ja hankintaan liittyvien poikkeamien seurantaa, toimittajien kartoittamista sekä kaupallisiin neuvotteluihin osallistumista.",
+          "url": "https://www.jobly.fi/tyopaikka/procurement-specialist-2777113"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "compass-group-finland-oy",
+    "name": "Compass Group Finland Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Palveluvastaava Ärrävaaraan"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Palveluvastaava Ärrävaaraan",
+          "quote": "Vastaat koko toimipaikan keittiötoiminnoista ja toimit esihenkilönä, eli vastaat ruoanvalmistuksesta, tilausten tekemisestä, laskutuksesta, omavalvonnasta, hävikin hallinnasta sekä asiakaspalvelusta.",
+          "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-arravaaraan-2778922"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "dhl-supply-chain-danfoss",
+    "name": "DHL Supply Chain Danfoss",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vaasa"
+    ],
+    "functions": [
+      "Logistics"
+    ],
+    "titles": [
+      "Logistiikkatyöntekijä DHL Danfoss, Runsor"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "dna",
+    "name": "DNA",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kuopio",
+      "Pohjois-Savo",
+      "Turku",
+      "Varsinais-Suomi"
+    ],
+    "functions": [
+      "Customer service",
+      "Sales"
+    ],
+    "titles": [
+      "Myyntineuvottelija, DNA, Kuopio",
+      "Myyntineuvottelija, DNA, Turku"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "danfoss",
+    "name": "Danfoss",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Lappeenranta"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Sourcing Project Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-06"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "danone-finland-oy",
+    "name": "Danone Finland Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Manager Finland"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "deloitte",
+    "name": "Deloitte",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Business Partner"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-14"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "destia-oy",
+    "name": "Destia Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Jyväskylä",
+      "Kirkkonummi",
+      "Kuopio",
+      "Oulu",
+      "Piitimen kunta",
+      "Pirkkala",
+      "Pori",
+      "Suomi",
+      "Tampere",
+      "Turku",
+      "Uusimaa",
+      "Vantaa",
+      "Vihanti"
+    ],
+    "functions": [
+      "Finance",
+      "Office and admin",
+      "Project management"
+    ],
+    "titles": [
+      "Commercial Project Manager (QS Manager)",
+      "Projekti-insinööri",
+      "Projektin kaupallinen päällikkö",
+      "Safety Manager (HS Lead)",
+      "Site Manager",
+      "Turvallisuuspäällikkö",
+      "Työmaainsinööri, Tuulivoimahankkeet",
+      "Työmaapäällikkö, Etelä-Suomi",
+      "Työmaapäällikkö, Pirkanmaan rakentamisurakat",
+      "Työmaapäällikkö,Tuulivoimahankkeet"
+    ],
+    "jobAds": {
+      "checked": 11,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Työmaainsinööri, Tuulivoimahankkeet",
+          "quote": "Tehtävä sisältää aikataulujen laadinnan ja seurannan, määrähallinnan ja raportoinnin, talouden seurannan, lisä- ja muutostöiden hallinnan sekä viranomaisyhteistyön.",
+          "url": "https://www.jobly.fi/tyopaikka/tyomaainsinoori-tuulivoimahankkeet-2771498"
+        },
+        {
+          "title": "Projektin kaupallinen päällikkö",
+          "quote": "määrien, kustannusten ja toteuman seuranta sekä poikkeamien analysointi",
+          "url": "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396"
+        },
+        {
+          "title": "Projektin kaupallinen päällikkö",
+          "quote": "aliurakoitsijoiden ja toimittajien sopimusten, kustannusten ja laskutuksen seuranta",
+          "url": "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": {
+      "analystHint": "Several site roles spend their week tracking quantities, costs and subcontractor invoices.",
+      "fixOptions": [
+        "One live cost view per project",
+        "A weekly cost meeting per site",
+        "More site engineers"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "The figures already exist in contracts, invoices and quantity records. Pulling them into one current view per project replaces the tracking work and flags overruns early.",
+      "adoptNote": "Build it with one project team first and use their weekly report as the test.",
+      "serviceArea": "Management reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "dinolla-oy",
+    "name": "Dinolla Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Porvoo",
+      "Sipoo",
+      "Vantaa"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Puheterapeutti (alihankkija): Huoletonta yrittäjyyttä – täysi tuki työllesi vain 25 % provisiolla"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-09"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "dottir",
+    "name": "Dottir",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Event & Workplace Coordinator"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "eaton",
+    "name": "Eaton",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Dublin",
+      "France",
+      "Ireland",
+      "Italy",
+      "Kööpenhamina",
+      "Malmö",
+      "Netherlands",
+      "Oslo",
+      "Spain",
+      "Stockholm",
+      "Vantaa"
+    ],
+    "functions": [
+      "Procurement",
+      "Sales"
+    ],
+    "titles": [
+      "Global Category Manager - Electronic Components",
+      "Product Line Sales Manager (Distributed Power Quality) - Nordics"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "eltel-networks-oy",
+    "name": "Eltel Networks Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Kajaani"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Hankintainsinööri",
+      "Procurement Specialist, Data Centers"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "energiavirasto",
+    "name": "Energiavirasto",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Uusimaa"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Energiatehokkuuden asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "fvr-suomen-rokotetutkimus",
+    "name": "FVR - Suomen rokotetutkimus",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Oulu",
+      "Tampere"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Data- ja AI-asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "finanssiala-ry",
+    "name": "Finanssiala ry",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Henkivakuutustoimintaan perehtynyt asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "finferries-suomen-lauttaliikenne",
+    "name": "Finferries - Suomen Lauttaliikenne",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Turku"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "REKRY: Harjoittelija hankintatoimintoihin / Praktikant till inköpsverksamheten"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "flaktgroup-finland-oy",
+    "name": "FläktGroup Finland Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vihti"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Projekti-insinööri datakeskusprojekteihin"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "forcit-group",
+    "name": "Forcit Group",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tuusula"
+    ],
+    "functions": [
+      "Logistics"
+    ],
+    "titles": [
+      "Palveluhenkilö / Kuljettaja (Tuusula), FORCIT Explosives"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "gasum-oyj",
+    "name": "Gasum Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Senior Trader"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "greenstep-oy",
+    "name": "Greenstep Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Oulu",
+      "Tampere",
+      "Turku",
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service",
+      "Finance"
+    ],
+    "titles": [
+      "Customer Excellence Assistant",
+      "Customer Success Manager / Senior Customer Success Manager",
+      "Senior Accounting Specialist, Tampere",
+      "Senior Accounting Specialist, Turku"
+    ],
+    "jobAds": {
+      "checked": 4,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Customer Excellence Assistant",
+          "quote": "…asiakasdatan raportointi ja oikeellisuuden varmistaminen, asiakastyytyvyyskyselyjen ja exit-prosessin back office -tehtävät sekä sisäisten sidosryhmien tukeminen.",
+          "url": "https://www.jobly.fi/tyopaikka/customer-excellence-assistant-2778839"
+        },
+        {
+          "title": "Senior Accounting Specialist, Turku",
+          "quote": "Työnkuvasi sisältää kuukausikirjanpitoa, tilinpäätösten sekä veroilmoitusten tekoa ja raportointia, mutta myös asiakkaidemme konsultointia ja heidän taloushallinnon prosessiensa ohjaamista tehokkaammiksi.",
+          "url": "https://www.jobly.fi/tyopaikka/senior-accounting-specialist-turku-2769235"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "Customer data is reported and checked by hand, next to monthly bookkeeping.",
+      "fixOptions": [
+        "Check customer data quality automatically",
+        "Survey customers more often",
+        "Hire a data assistant"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Checking that customer data is correct is rule-based. Flagging errors automatically frees the assistant for the customer conversations that need a person.",
+      "adoptNote": "Show flagged records in the CRM the team already uses.",
+      "serviceArea": "Customer follow-up"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "hus",
+    "name": "HUS",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Uusimaa",
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service",
+      "Finance",
+      "Office and admin",
+      "Procurement"
+    ],
+    "titles": [
+      "Osastonsihteeri Avoin haku",
+      "Ostaja",
+      "Palvelutyöntekijä Meilahti",
+      "Palveluvastaava Ruokapalvelut Jorvin sairaala"
+    ],
+    "jobAds": {
+      "checked": 5,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Osastonsihteeri Avoin haku",
+          "quote": "Työhösi kuuluu potilaiden sisään- ja uloskirjaukset, ajanvaraukset ja tutkimustilaukset, asiakirjojen käsittely, läheteliikenne sekä monikanavainen asiakaspalvelu…",
+          "url": "https://www.jobly.fi/tyopaikka/osastonsihteeri-avoin-haku-2775468"
+        },
+        {
+          "title": "Palveluvastaava Ruokapalvelut Jorvin sairaala",
+          "quote": "Palveluvastaavana vastaat päivittäisestä operatiivisesta työnjohtamisesta, tilauksista, kassatyöskentelystä, osastoyhteistyöstä ja työntekijöiden perehdyttämisestä.",
+          "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-ruokapalvelut-jorvin-sairaala-2782930"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "Ward secretaries handle check-ins, bookings, test orders and referrals across channels.",
+      "fixOptions": [
+        "Draft test orders and referrals from the record",
+        "Open a new booking phone line",
+        "Extend reception hours"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Test orders and referrals repeat information already in the patient record. Drafting them automatically gives secretaries time for patients instead of forms.",
+      "adoptNote": "Secretaries confirm every draft, so responsibility stays where it is today.",
+      "serviceArea": "Quotes and order intake"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "hankkija-oy",
+    "name": "Hankkija Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Eura"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Puutarhavastaava, Hankkija Eura"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "hartela-oy",
+    "name": "Hartela Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Oulu"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Laskentapäällikkö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "heimondo-finland-oy",
+    "name": "Heimondo Finland Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tallinn"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Perintäasiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Perintäasiantuntija",
+          "quote": "Laadit maksusopimuksia ja maksusuunnitelmia, seuraat niiden toteutumista ja reagoit maksuviiveisiin.",
+          "url": "https://www.jobly.fi/tyopaikka/perintaasiantuntija-2782196"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "helmihunter-oy",
+    "name": "Helmihunter Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Tekninen projektipäällikkö, Varustelu Look"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "helsingin-asumisoikeus-oy",
+    "name": "Helsingin Asumisoikeus Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Analyst"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "helsingin-kaupunki",
+    "name": "Helsingin kaupunki",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Customer service",
+      "HR",
+      "Office and admin"
+    ],
+    "titles": [
+      "Asiakasmaksupäällikkö, asiakasmaksupäätökset ja asiantuntijatuki",
+      "Asiantuntija, rekrytoinnin strateginen kehittäminen",
+      "Henkilöstösuunnittelupäällikkö",
+      "Ruokapalvelutyöntekijä, Myllypuron seniorikeskus",
+      "Vahtimestari, Helsingin sotepe-toimialan aulapalvelut, sijaisuudet"
+    ],
+    "jobAds": {
+      "checked": 5,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "helsingin-yliopisto",
+    "name": "Helsingin yliopisto",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance",
+      "Office and admin",
+      "Project management"
+    ],
+    "titles": [
+      "Johtava asiantuntija, jatkuva oppiminen",
+      "Koordinaattori CERN-yhteistyöhön (osa-aikainen)",
+      "Koulutuskoordinaattori",
+      "Opetusavustaja kevääksi 2027",
+      "Postdoctoral Researcher in Economics",
+      "Promootioharjoittelija (korkeakouluharjoittelija) filosofisen tiedekunnan promootioon",
+      "Promootioharjoittelija (korkeakouluharjoittelija) lääketieteellisen tiedekunnan promootioon",
+      "Ympäristö- ja maatalousekonomian yliopistonlehtori"
+    ],
+    "jobAds": {
+      "checked": 8,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "helsinki-shipyard",
+    "name": "Helsinki Shipyard",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Document Controller"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Document Controller",
+          "quote": "Dokumenttien arkistointi sekä loppudokumentaation kokoaminen projektien luovutusvaiheessa",
+          "url": "https://www.jobly.fi/tyopaikka/document-controller-2778655"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "henkilostoliiga",
+    "name": "Henkilöstöliiga",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tampere"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Ostaja teollisuusyritykseen"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "henkilostovuokraus-yhtio-kipina-oy",
+    "name": "Henkilöstövuokraus yhtiö Kipinä Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tampere"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Asiakkuuspäällikkö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "hitachi-energy",
+    "name": "Hitachi Energy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Madrid",
+      "Tampere",
+      "Vaasa"
+    ],
+    "functions": [
+      "Procurement",
+      "Project management",
+      "Sales"
+    ],
+    "titles": [
+      "Project Engineer",
+      "Sales Manager",
+      "Senior PSCM"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "huoltovarmuuskeskus",
+    "name": "Huoltovarmuuskeskus",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Hankinta-asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "ilmarinen",
+    "name": "Ilmarinen",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR-asiantuntija (perhevapaansijaisuus)"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-14"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "j-rinta-jouppi-oy",
+    "name": "J. Rinta-Jouppi Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kuopio"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Autojen sisäänostaja, Kuopio"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-06"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "jtt-sales-oy",
+    "name": "JTT Sales Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Joensuu"
+    ],
+    "functions": [
+      "Sales"
+    ],
+    "titles": [
+      "Telemyynti"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "kone",
+    "name": "KONE",
+    "domain": "kone.com",
+    "brandColor": "#1450f5",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Operations & Payroll Specialist, Nordic"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "HR Operations & Payroll Specialist, Nordic",
+          "quote": "Acting as the key interface towards the outsourced payroll provider, the role ensures accurate payroll execution, data integrity, compliance and efficient people administration throughout the employee lifecycle.",
+          "url": "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": "kone"
+  },
+  {
+    "id": "kpmg",
+    "name": "KPMG",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Turku"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Administrative Assistant",
+      "Application Security Tester",
+      "Cloud Security Specialist",
+      "Sisäisen tarkastuksen ja riskienhallinnan asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 4,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Administrative Assistant",
+          "quote": "Toimit tärkeänä apuna tarkastusraporttien ja muiden asiakirjojen ja esitysten stilisoinnissa, CRM-asiakasrekisterin ylläpitämisessä sekä sisäisissä riskienhallinnan prosesseissamme",
+          "url": "https://www.jobly.fi/tyopaikka/administrative-assistant-2780708"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "kaiku-hr",
+    "name": "Kaiku HR",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kirkkonummi"
+    ],
+    "functions": [
+      "Logistics"
+    ],
+    "titles": [
+      "Maarakennustyöntekijä / kaivinkoneen perämies"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "kaskea-group",
+    "name": "Kaskea Group",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Ylihärmä"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Tarjouslaskentainsinööri (konepajateollisuus)"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Tarjouslaskentainsinööri (konepajateollisuus)",
+          "quote": "Laadit tuoterakenteita ja työvaihetietoja ERP-järjestelmään sekä pidät yhteyttä asiakkaisiin puhelimitse ja sähköpostitse.",
+          "url": "https://www.jobly.fi/tyopaikka/tekninen-tarjouslaskija-konepajateollisuus-2778632"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "katrium",
+    "name": "Katrium",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Hämeenlinna",
+      "Joensuu",
+      "Kuopio",
+      "Lahti",
+      "Lappeenranta",
+      "Oulu",
+      "Rovaniemi",
+      "Suomi",
+      "Tampere",
+      "Turku",
+      "Vaasa"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR-harjoittelija - Etäharjoittelu",
+      "Launch Your International Career: Remote Business Internship at Katrium"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "kela",
+    "name": "Kela",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Jyväskylä",
+      "Lahti",
+      "Lappeenranta",
+      "Rovaniemi",
+      "Tampere"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Harjoittelija, perintätehtävät",
+      "Harjoittelija, sijoitustoiminta"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "kymppivoima-oy",
+    "name": "Kymppivoima Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Energy & Asset Controller"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "karkkainen-oy",
+    "name": "Kärkkäinen Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Jyväskylä",
+      "Lahti",
+      "Oulu",
+      "Seinäjoki",
+      "Vantaa",
+      "Ylivieska"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Retkeilyn tuotepäällikkö, Kärkkäinen Oy"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "lapland-hotels",
+    "name": "Lapland Hotels",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Enontekiö",
+      "Kilpisjärvi",
+      "Lappi",
+      "Muonio"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Vastaanottovirkailija yötyöhön, Lapland Hotels Kilpis, Kilpisjärvi",
+      "Vastaanottovirkailija yötyöhön, Lapland Hotels Olos, Muonio",
+      "Vastaanottovirkailija, Lapland Hotels Kilpis, Kilpisjärvi"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Vastaanottovirkailija yötyöhön, Lapland Hotels Olos, Muonio",
+          "quote": "Työhön kuuluvat vastaanoton perusasiakaspalvelutehtävät, tulo- ja lähtöselvitykset sekä yövuoron raportointi-, laskutus-, seuraavan päivän valmistelu-, varausten tarkistus-, yleisten tilojen siivous-, aulabaarin anniskelu- ja kokousvalmistelutehtävät.",
+          "url": "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689"
+        },
+        {
+          "title": "Vastaanottovirkailija yötyöhön, Lapland Hotels Olos, Muonio",
+          "quote": "erilaiset raportointi- ja laskutustehtävät.",
+          "url": "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "The night receptionist does reporting, billing and booking checks between serving guests.",
+      "fixOptions": [
+        "Build the night report and booking checks automatically",
+        "Add a second night receptionist",
+        "Close reception at night"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Night reports and booking checks pull from the same hotel system every night. Automating them leaves the receptionist free for guests.",
+      "adoptNote": "Let one hotel's night team shape the report before rolling it out to others.",
+      "serviceArea": "Management reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "lassila-tikanoja-oyj",
+    "name": "Lassila & Tikanoja Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Lieto",
+      "Pieksämäki"
+    ],
+    "functions": [
+      "Finance",
+      "Logistics"
+    ],
+    "titles": [
+      "Business Controller Helsinkiin",
+      "Kuorma-autonkuljettaja Pieksämäelle",
+      "Tuotantotyöntekijä Liedon kuormalavayksikköön"
+    ],
+    "jobAds": {
+      "checked": 5,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Tuotantotyöntekijä Liedon kuormalavayksikköön",
+          "quote": "Työ pitää sisällään kuormalavojen lajittelua, jota tehdään sekä käsin että koneellisesti, sekä lastaus- ja lastinpurkutyötä, jota tapahtuu trukilla.",
+          "url": "https://www.jobly.fi/tyopaikka/tuotantotyontekija-liedon-kuormalavayksikkoon-2776046"
+        },
+        {
+          "title": "Business Controller Helsinkiin",
+          "quote": "Tehtäviin kuuluu kuukausiraportointi, ennusteiden ja budjettien laatiminen ja seuranta, kannattavuusanalyysit sekä johdon taloudellinen sparraus.",
+          "url": "https://www.jobly.fi/tyopaikka/business-controller-helsinkiin-2785458"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "Manual work in two places: pallets sorted by hand at the plant, and monthly reports built in finance.",
+      "fixOptions": [
+        "Machine vision to sort pallets",
+        "Another shift at the sorting line",
+        "Bigger forklifts"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Sorting pallets by hand is physical, repetitive and easy to measure. Cameras can grade pallets as they arrive, so people handle only the damaged ones.",
+      "adoptNote": "Pilot on one line with the people who sort today, and measure their time before and after.",
+      "serviceArea": "Robotics and physical automation"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "loviisan-kaupunki",
+    "name": "Loviisan kaupunki",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Loviisa"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Hankintapäällikkö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "luotea-oyj",
+    "name": "Luotea Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Huittinen",
+      "Kristiinankaupunki",
+      "Pori",
+      "Turku"
+    ],
+    "functions": [
+      "Customer service",
+      "Project management"
+    ],
+    "titles": [
+      "Elintarvikehygienian esihenkilö, Pori",
+      "Kokoaikainen kohdevastaava/siivooja, Turku",
+      "Palveluvastaava pääkaupunkiseudulle"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "maahanmuuttovirasto",
+    "name": "Maahanmuuttovirasto",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Uusimaa"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR-juristi (hakuaikaa jatkettu 2.11.2026 asti)"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "maakuntien-tilakeskus",
+    "name": "Maakuntien tilakeskus",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Kokenut asiantuntija, kiinteistötalous ja tilahallinta"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "mentek-advisors-oy",
+    "name": "Mentek Advisors Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vöyri"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Tekninen hankinta- ja ostoasiantuntija / JTK Power Oy"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Tekninen hankinta- ja ostoasiantuntija / JTK Power Oy",
+          "quote": "Ostolaskujen tarkastaminen",
+          "url": "https://www.jobly.fi/tyopaikka/tekninen-hankinta-ja-ostoasiantuntija-jtk-power-oy-2784413"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "metso",
+    "name": "Metso",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Senior Project Planner"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "minjon-oy",
+    "name": "Minjon Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Legal Recruiter @ Minjon"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "mipro-oy",
+    "name": "Mipro Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Mikkeli"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Projektipäällikkö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "ntg-air-ocean-oy",
+    "name": "NTG Air & Ocean Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vantaa"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Lento-osaston asiakaspalvelutehtävät"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Lento-osaston asiakaspalvelutehtävät",
+          "quote": "Lähetyksien laskutus ja kuluseuranta",
+          "url": "https://www.jobly.fi/tyopaikka/lento-osaston-asiakaspalvelutehtavat-2784183"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "neste-oyj",
+    "name": "Neste Oyj",
+    "domain": "neste.com",
+    "brandColor": "#0063a3",
+    "logo": null,
+    "image": "/images/industry/energy.jpg",
+    "imageCredit": {
+      "author": "Matthew T Rader",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "locations": [
+      "Espoo",
+      "Kilpilahti",
+      "Porvoo"
+    ],
+    "functions": [
+      "Finance",
+      "Office and admin",
+      "Project management"
+    ],
+    "titles": [
+      "HR Specialist",
+      "Senior Business Controller",
+      "Senior Refinery Data Engineer",
+      "Solution Manager"
+    ],
+    "jobAds": {
+      "checked": 4,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": "neste"
+  },
+  {
+    "id": "nextpharma-oy",
+    "name": "NextPharma Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tampere"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Manager lääketehtaaseen"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "nicole-beauty",
+    "name": "Nicole Beauty",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Seinäjoki"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "HOITOLATYÖNTEKIJÄ"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "nordic-career",
+    "name": "Nordic Career",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Keski-Suomi",
+      "Kittilä",
+      "Pirkanmaa",
+      "Päijät-Häme",
+      "Satakunta",
+      "Uusimaa",
+      "Varsinais-Suomi"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Myynti- ja rekrytointiasiantuntija, Horeca-ala – Etelä-Suomi"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "normet",
+    "name": "Normet",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Iisalmi",
+      "Tampere"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Sourcing Specialist"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "nostokonepalvelu-oy",
+    "name": "Nostokonepalvelu Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Turku"
+    ],
+    "functions": [
+      "Logistics",
+      "Office and admin"
+    ],
+    "titles": [
+      "Ajojärjestelijä Nostokonepalveluille",
+      "Myyntisihteeri Nostokonepalveluille"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Myyntisihteeri Nostokonepalveluille",
+          "quote": "Tehtäviisi kuuluu monipuoliset back office -tehtävät kuten moniyritysten laskutus, asiakkaiden perustaminen järjestelmiin, sisäinen laskutus, kustannusjaot ja HR-rekisterin ylläpito käyttäen yrityksen ERP-järjestelmää ja Heeros-ohjelmistoa.",
+          "url": "https://www.jobly.fi/tyopaikka/myyntisihteeri-nostokonepalveluille-2780041"
+        },
+        {
+          "title": "Ajojärjestelijä Nostokonepalveluille",
+          "quote": "Lisäksi huolehdit nosto- ja kuljetustapahtumien laskutustietojen oikeellisuudesta toiminnanohjausjärjestelmässä.",
+          "url": "https://www.jobly.fi/tyopaikka/ajojarjestelija-nostokonepalveluille-2784144"
+        },
+        {
+          "title": "Ajojärjestelijä Nostokonepalveluille",
+          "quote": "Ajojärjestelijänä vastaat nostureiden, kuljetusten ja henkilöstöresurssien päivittäisestä suunnittelusta ja järjestelystä.",
+          "url": "https://www.jobly.fi/tyopaikka/ajojarjestelija-nostokonepalveluille-2784144"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": {
+      "analystHint": "Billing data is checked by the dispatcher and then invoiced again by the office, across several companies.",
+      "fixOptions": [
+        "Generate invoices straight from completed jobs",
+        "Add a second invoicing day each month",
+        "Buy a new ERP first"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "The dispatcher already records every lift and transport. Turning those records into invoices removes the double handling and the corrections that come with it.",
+      "adoptNote": "Start with one company's billing and let the office approve each batch before it goes out.",
+      "serviceArea": "Scheduling and dispatch"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "olvi-oyj",
+    "name": "Olvi Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Iisalmi"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Sourcing Analyst"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Sourcing Analyst",
+          "quote": "We are looking for someone who is motivated to develop data-driven decision-making and build solutions where data, analytics and automation help reduce manual work, including through the use of AI.",
+          "url": "https://www.jobly.fi/tyopaikka/sourcing-analyst-2784860"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "oy-scandic-trading-house-ltd",
+    "name": "Oy Scandic Trading House Ltd",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Pirkanmaa",
+      "Tampere"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Ostaja"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-05"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "palvelualojen-tyonantajat-palta",
+    "name": "Palvelualojen työnantajat Palta",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Johtava asiantuntija, talous ja tilastot"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "poliisi",
+    "name": "Poliisi",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Uusimaa",
+      "Vantaa"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Talousasiantuntija 40.14.02 - hakuaikaa jatkettu"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "porvoon-kaupunki-borga-stad",
+    "name": "Porvoon kaupunki - Borgå stad",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Porvoo",
+      "Uusimaa"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Hankinta-asiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "rainmaker",
+    "name": "Rainmaker",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service",
+      "Sales"
+    ],
+    "titles": [
+      "Myynnillinen asiakaspalvelija, pk-seutu",
+      "Tiiminvetäjä myyntiin, Uusimaa"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "red-hat-holdings-ltd",
+    "name": "Red Hat Holdings Ltd.",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Suomi"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Asiakaspalvelija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "ricoh-finland",
+    "name": "Ricoh Finland",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Uusimaa"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Finance Manager, Ricoh Finland, Espoo"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "riihimaen-kaupunki",
+    "name": "Riihimäen kaupunki",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Riihimäki"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Hankintapäällikkö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-09"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "robit-finland-oy",
+    "name": "Robit Finland Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Lempäälä"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-14"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "robit-finland-oy-ltd",
+    "name": "Robit Finland Oy Ltd",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Lempäälä"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-14"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "rovaniemen-koulutuskuntayhtyma",
+    "name": "Rovaniemen Koulutuskuntayhtymä",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Rovaniemi"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Henkilöstöjohtaja/REDU"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "rukakeskus-oy",
+    "name": "Rukakeskus Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kuusamo"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Asiakaspalvelija Rukalle ja Kuusamoon"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sok",
+    "name": "SOK",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Kehityspäällikkö (talousjärjestelmät ja -prosessit)"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sos-international-oy",
+    "name": "SOS International Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Assistance Coordinator, SOS International"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sandvik",
+    "name": "Sandvik",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Tampere"
+    ],
+    "functions": [
+      "Logistics",
+      "Office and admin"
+    ],
+    "titles": [
+      "Order Delivery Coordinator",
+      "Supervisor, Logistics/Manufacturing"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Order Delivery Coordinator",
+          "quote": "Receiving and processing customer orders for mining and tunnelling equipment and components, including validating the commercial and technical information of orders and ensuring accurate order handling throughout the process.",
+          "url": "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040"
+        },
+        {
+          "title": "Order Delivery Coordinator",
+          "quote": "Preparing export documentation and invoices in compliance with prevailing laws and regulations.",
+          "url": "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "Every incoming order is checked by a person against commercial and technical data, then turned into export papers.",
+      "fixOptions": [
+        "Validate incoming orders automatically",
+        "Hire a third order coordinator",
+        "Move the order desk to a new office"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Order validation follows rules the team already knows. Checking standard orders automatically leaves people only the unusual ones, and the export documents can be drafted from the same data.",
+      "adoptNote": "Let the order desk review every drafted order for two weeks, then only the flagged ones.",
+      "serviceArea": "Quotes and order intake"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "sandvik-mining-and-construction-oy",
+    "name": "Sandvik Mining and Construction Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Lahti",
+      "Pirkkala",
+      "Turku"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "HR Manager, Talent Acquisition",
+      "HR Specialist, Talent Acquisition"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "savon-koulutuskuntayhtyma",
+    "name": "Savon Koulutuskuntayhtymä",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Iisalmi",
+      "Kuopio",
+      "Pohjois-Savo",
+      "Siilinjärvi",
+      "Varkaus"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Avoin haku, Tukipalvelut"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sector-alarm",
+    "name": "Sector Alarm",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Fuengirola",
+      "Málaga"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Suomenkielinen Asiakaspalvelija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-20"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "securitas-oy",
+    "name": "Securitas Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kouvola"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Henkilöstösuunnittelija Kouvolaan"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Henkilöstösuunnittelija Kouvolaan",
+          "quote": "Päivittäisessä työssäsi hoidat työvuoro- ja poissaolojärjestelyt sekä toimit tiiviissä yhteistyössä sisäisten sidosryhmien kanssa.",
+          "url": "https://www.jobly.fi/tyopaikka/henkilostosuunnittelija-kouvolaan-2779883"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "select-service-partner-finland",
+    "name": "Select Service Partner Finland",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Uusimaa",
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Loungetyöntekijöitä, Helsinki-Vantaan lentoasema, SSP Finland"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "senaatti-kiinteistot",
+    "name": "Senaatti-kiinteistöt",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Tekoälyasiantuntija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sihti",
+    "name": "Sihti",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Kirkkonummi",
+      "Turku",
+      "Vantaa"
+    ],
+    "functions": [
+      "Logistics"
+    ],
+    "titles": [
+      "Ajoneuvonosturinkuljettajaa Etelä-Suomen alueelle",
+      "Torninosturinkuljettaja"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sipoon-kunta-sibbo-kommun",
+    "name": "Sipoon kunta Sibbo kommun",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Sipoo"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Investointipäällikkö, Yhdyskunta ja ympäristö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sodexo-oy",
+    "name": "Sodexo Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Helsinki",
+      "Oulu",
+      "Suomi"
+    ],
+    "functions": [
+      "Customer service",
+      "Office and admin"
+    ],
+    "titles": [
+      "Monipalvelutyöntekijä Helsinkiin",
+      "Puhdistuspalvelun esihenkilö Ouluun",
+      "Toimitilakoordinaattori (Facility Coordinator) Espooseen",
+      "Työharjoittelu/koulutussopimus 2026 - 2027"
+    ],
+    "jobAds": {
+      "checked": 4,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "sonepar-suomi-oy",
+    "name": "Sonepar Suomi Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Suomi"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Category Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "specim-spectral-imaging-oy-ltd",
+    "name": "Specim, Spectral Imaging Oy Ltd",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Oulu"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Purchasing Manager"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-17"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "st1-oy",
+    "name": "St1 Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Finance",
+      "Project management"
+    ],
+    "titles": [
+      "Senior Finance Data Analyst",
+      "Senior Project Manager"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Senior Finance Data Analyst",
+          "quote": "Are you a Senior Finance Data Analyst who sees opportunities where others see manual work?",
+          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782"
+        },
+        {
+          "title": "Senior Finance Data Analyst",
+          "quote": "Identify repetitive, manual and insight-intensive Finance activities where automation, AI or analytics can create meaningful value.",
+          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782"
+        },
+        {
+          "title": "Senior Finance Data Analyst",
+          "quote": "Your mission is to convert those foundations into practical solutions that reduce manual work, accelerate insight and help Finance teams make better decisions.",
+          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "They are hiring one person to find and remove manual work across the whole Finance team.",
+      "fixOptions": [
+        "Map Finance's manual work and fix the biggest first",
+        "Wait until the new hire has started",
+        "Buy an analytics licence for everyone"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "They already know the manual work is there. Mapping it across the team and shipping the first fix quickly gives the new analyst a running start instead of a blank page.",
+      "adoptNote": "Pair the fixes with the new analyst so they own them after launch.",
+      "serviceArea": "Management reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "staria-oyj",
+    "name": "Staria Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Kotka",
+      "Suomi",
+      "Tampere"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Palkanlaskennan Trainee-ohjelma 2027",
+      "Senior Payroll Specialist | International Payroll Environment"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "stora-enso-oyj",
+    "name": "Stora Enso Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki",
+      "Nacka",
+      "Oulu"
+    ],
+    "functions": [
+      "Finance",
+      "Procurement"
+    ],
+    "titles": [
+      "Business Unit Controller, Business Unit Oulu",
+      "Category Manager, IT And Professional Services"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "suomen-rakennuslogistiikka-oy",
+    "name": "Suomen Rakennuslogistiikka Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Jyväskylä"
+    ],
+    "functions": [
+      "Logistics"
+    ],
+    "titles": [
+      "Rakennuslogistiikkatyöntekijöitä Jyväskylään (PIKAHAKU)"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "tampereen-kaupunki",
+    "name": "Tampereen kaupunki",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Pirkanmaa",
+      "Tampere"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Erityisasiantuntija / Työllisyys- ja kasvupalvelut, Osaamisen ja työllistymisen palveluratkaisut",
+      "Hankintapäällikkö / Hankintapalvelut"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "tampereen-yliopisto",
+    "name": "Tampereen yliopisto",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Pirkanmaa",
+      "Tampere"
+    ],
+    "functions": [
+      "Customer service",
+      "Finance",
+      "Office and admin"
+    ],
+    "titles": [
+      "Assistant Professor (Tenure-track) in Economics / Apulaisprofessori (tenure track), taloustiede",
+      "Harjoittelija, opiskelija- ja hakijapalvelut",
+      "Tutkijakoulutuksen asiantuntija Tampereen yliopiston tutkijakouluun"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "telia-finland-oyj",
+    "name": "Telia Finland Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Head of People & Culture, Telia Finland"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "tempu-oy",
+    "name": "Tempu Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Espoo",
+      "Uusimaa"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Taksinkuljettaja (Bolt & Uber) - Alihankkija"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "terveystalo",
+    "name": "Terveystalo",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "(Senior) HR Specialist, HRIS & AI"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "(Senior) HR Specialist, HRIS & AI",
+          "quote": "Työsi vahvistaa HR-palveluiden tehokkuutta, laatua ja skaalautuvuutta sekä vähentää manuaalista työtä.",
+          "url": "https://www.jobly.fi/tyopaikka/senior-hr-specialist-hris-ai-2781972"
+        },
+        {
+          "title": "(Senior) HR Specialist, HRIS & AI",
+          "quote": "Selvität häiriöitä ja havaittuja poikkeamia, koordinoit korjauksia sekä huolehdit siitä, että prosessit toimivat ja tieto liikkuu järjestelmien välillä laadukkaasti.",
+          "url": "https://www.jobly.fi/tyopaikka/senior-hr-specialist-hris-ai-2781972"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": {
+      "analystHint": "They are hiring to make information move between HR systems without people carrying it.",
+      "fixOptions": [
+        "Sync HR data between systems automatically",
+        "Add an HR helpdesk",
+        "Replace every HR system"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "When data has to be fixed between systems, people end up re-entering it. Syncing the systems removes the re-entry and most of the errors behind the incidents.",
+      "adoptNote": "Start with the integration that causes the most tickets and track tickets before and after.",
+      "serviceArea": "Management reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "tietoakseli-group",
+    "name": "TietoAkseli Group",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Hamina",
+      "Helsinki",
+      "Jyväskylä",
+      "Kouvola",
+      "Lahti",
+      "Mikkeli",
+      "Oulu",
+      "Pieksämäki",
+      "Savonlinna",
+      "Tampere",
+      "Turku"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Mepco HRM Product Owner"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "tilitoimisto-taloushotelli-oy",
+    "name": "Tilitoimisto Taloushotelli Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Suomi"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Tilinpäätöstaitoinen, tekoälystä innostunut kirjanpitäjä | 100 % etätyö"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Tilinpäätöstaitoinen, tekoälystä innostunut kirjanpitäjä | 100 % etätyö",
+          "quote": "Perinteisten tilitoimistojen paperinpyörittely tuskin jatkuu enää kovin pitkään.",
+          "url": "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-tekoalysta-innostunut-kirjanpitaja-100-etatyo-2779593"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-15"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "tribedo-oy",
+    "name": "Tribedo Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Solution Analyst - lainaprosessit"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "twoday-oy",
+    "name": "Twoday Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Talent Acquisition Business Partner"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "upm",
+    "name": "UPM",
+    "domain": "upm.com",
+    "brandColor": "#007a3d",
+    "logo": null,
+    "image": "/images/industry/forest.jpg",
+    "imageCredit": {
+      "author": "kallerna",
+      "url": "https://commons.wikimedia.org/wiki/File:Spring_forest_Yyteri_3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "locations": [
+      "Helsinki",
+      "Krakova",
+      "Tampere"
+    ],
+    "functions": [
+      "Finance",
+      "Procurement"
+    ],
+    "titles": [
+      "Director, IT Sourcing Category",
+      "Manager, Treasury Accounting",
+      "Specialist/Senior Specialist, Payroll Services"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Specialist/Senior Specialist, Payroll Services",
+          "quote": "You will contribute to payroll and time management transformation projects, coordinate with external providers and internal stakeholders, perform pre- and post-payroll reconciliations, and ensure legal and tax compliance.",
+          "url": "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": "upm"
+  },
+  {
+    "id": "uggla-engineering-oy",
+    "name": "Uggla Engineering Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kouvola",
+      "Mikkeli"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Cost Manager - Kouvola",
+      "Project Planner datakeskusprojektiin - Mikkeli"
+    ],
+    "jobAds": {
+      "checked": 2,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Project Planner datakeskusprojektiin - Mikkeli",
+          "quote": "Päivittäisiin tehtäviisi kuuluu tiedon kerääminen työmaalta, projektinjohdolta ja urakoitsijoilta, aikataulujen päivittäminen sekä eri työvaiheiden yhteensovittaminen.",
+          "url": "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287"
+        },
+        {
+          "title": "Project Planner datakeskusprojektiin - Mikkeli",
+          "quote": "Seuraat projektin etenemistä suhteessa tavoitteisiin, tunnistat mahdollisia aikatauluriskejä ja tuotat raportteja projektiorganisaation tueksi.",
+          "url": "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "A planner's day starts by collecting updates from the site, management and contractors.",
+      "fixOptions": [
+        "Collect site updates in one flow",
+        "Daily stand-up at the site",
+        "A bigger planning team"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Updates arrive by phone, email and site visits. Collecting them in one flow updates the schedule as they come in and leaves the planner time to spot risks.",
+      "adoptNote": "Make reporting from site take one minute on a phone, or it won't happen.",
+      "serviceArea": "Field reporting"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "vuorenmaa-yhtiot-oy",
+    "name": "VUORENMAA Yhtiöt Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Lapua"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Ostaja, Vuorenmaa Yhtiöt Oy"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "vahterus-oy",
+    "name": "Vahterus Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Kalanti",
+      "Uusikaupunki"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "People & Culture Generalist"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "valmet",
+    "name": "Valmet",
+    "domain": "valmet.com",
+    "brandColor": "#c8102e",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "locations": [
+      "Espoo",
+      "Gliwice",
+      "Lier",
+      "Tampere",
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service",
+      "Finance",
+      "Office and admin"
+    ],
+    "titles": [
+      "Manager, Group Control",
+      "Service Coordinator/Engineer",
+      "Technical Documentation Manager"
+    ],
+    "jobAds": {
+      "checked": 3,
+      "manual": 2,
+      "ads": [
+        {
+          "title": "Manager, Group Control",
+          "quote": "Partner with Finance Development and relevant process owners to identify and define AI-enabled improvements to reporting and planning controls, validation and reconciliation, and support their implementation.",
+          "url": "https://www.jobly.fi/tyopaikka/manager-group-control-2777996"
+        },
+        {
+          "title": "Service Coordinator/Engineer",
+          "quote": "Planning/coordinating/administrating service jobs globally by using our extensive service network.",
+          "url": "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-24"
+    },
+    "velhoCase": {
+      "analystHint": "Finance wants AI in reconciliation, and service jobs worldwide are coordinated by hand.",
+      "fixOptions": [
+        "Schedule routine service jobs automatically",
+        "Add regional coordinators",
+        "Standardise the travel policy"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Matching technicians, locations and job needs is routine for most service jobs. Scheduling those automatically lets coordinators focus on the urgent and unusual ones.",
+      "adoptNote": "Coordinators approve each proposed schedule until the suggestions are right most of the time.",
+      "serviceArea": "Scheduling and dispatch"
+    },
+    "gameCompanyId": "valmet"
+  },
+  {
+    "id": "veikkaus",
+    "name": "Veikkaus",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Helsinki"
+    ],
+    "functions": [
+      "Project management"
+    ],
+    "titles": [
+      "Head of Analytics & Insights"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-21"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "verohallinto",
+    "name": "Verohallinto",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Etelä-Karjala",
+      "Etelä-Pohjanmaa",
+      "Helsinki",
+      "Joensuu",
+      "Jyväskylä",
+      "Keski-Suomi",
+      "Kuopio",
+      "Lappeenranta",
+      "Lappi",
+      "Oulu",
+      "Pirkanmaa",
+      "Pohjanmaa",
+      "Pohjois-Karjala",
+      "Pohjois-Pohjanmaa",
+      "Pohjois-Savo",
+      "Rovaniemi",
+      "Seinäjoki",
+      "Tampere",
+      "Turku",
+      "Uusimaa",
+      "Vaasa",
+      "Varsinais-Suomi"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "Ryhmäpäällikkö, vt.13"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-22"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "wasatalent-oy",
+    "name": "WasaTalent Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Vaasa"
+    ],
+    "functions": [
+      "HR"
+    ],
+    "titles": [
+      "REKRYTOINTIKONSULTTI"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-14"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "weidmuller",
+    "name": "Weidmüller",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Uusimaa",
+      "Vantaa"
+    ],
+    "functions": [
+      "Customer service"
+    ],
+    "titles": [
+      "Technical Support, Weidmüller, Vantaa"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "wihanto-oy",
+    "name": "Wihanto Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Turku"
+    ],
+    "functions": [
+      "Finance"
+    ],
+    "titles": [
+      "Kirjanpitäjä"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 1,
+      "ads": [
+        {
+          "title": "Kirjanpitäjä",
+          "quote": "Kirjanpitäjänä vastaat itsenäisesti pienen konsernin koko taloushallinnosta, mukaan lukien kuukausikirjanpito, osto- ja myyntireskontra, laskujen tiliöinti ja maksuliikenne sekä vuokrien laskutus.",
+          "url": "https://www.jobly.fi/tyopaikka/kirjanpitaja-2776564"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-19"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "workpower-oy",
+    "name": "Workpower Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Forssa",
+      "Humppila",
+      "Jokioinen",
+      "Kaarina",
+      "Karkkila",
+      "Kouvola",
+      "Lahti",
+      "Loimaa",
+      "Naantali",
+      "Raisio",
+      "Rauma",
+      "Somero",
+      "Tammela",
+      "Tampere",
+      "Turku",
+      "Tuusula",
+      "Vantaa",
+      "Ypäjä"
+    ],
+    "functions": [
+      "Customer service",
+      "Finance",
+      "Logistics",
+      "Procurement"
+    ],
+    "titles": [
+      "Kuorma-autonkuljettaja, Postnord-kappaletavarajakelu, Uusimaa",
+      "Kuorma-autonkuljettaja, maansiirto, vaihtolava, koukkuauto, Tuusula",
+      "Maansiirtoautonkuljettaja, työkoneenkuljettaja, Tampere",
+      "Ostaja Bucher Hydraulics Oy:lle",
+      "Tilinpäätöstaitoinen kirjanpitäjä, Nättinummen Isännöinti Oy, Turku",
+      "Täysperävaununkuljettaja, koukkuauto",
+      "Vaihtolava-auton kuljettaja, koukku, CE, Vantaa",
+      "Varaosamyyjä West Diesel Engineering Oy:lle Forssaan",
+      "Yhdistelmäajoneuvonkuljettaja, jakelutehtävät, Kouvola",
+      "Yhdistelmäajoneuvonkuljettaja, kappaletavarajakelu, Lahti"
+    ],
+    "jobAds": {
+      "checked": 10,
+      "manual": 3,
+      "ads": [
+        {
+          "title": "Varaosamyyjä West Diesel Engineering Oy:lle Forssaan",
+          "quote": "Lisäksi osallistut saapuvan tavaran vastaanottoon ja varaston ylläpitoon sekä kirjaat tilaukset ja toimitukset toiminnanohjausjärjestelmään.",
+          "url": "https://www.jobly.fi/tyopaikka/varaosamyyja-west-diesel-engineering-oylle-forssaan-2785410"
+        },
+        {
+          "title": "Ostaja Bucher Hydraulics Oy:lle",
+          "quote": "Työtehtäviisi kuuluvat ostotilausten tekeminen ERP-järjestelmässä, tilausvahvistusten käsittely, toimitusaikojen seuranta sekä mahdollisten poikkeamien selvittäminen.",
+          "url": "https://www.jobly.fi/tyopaikka/ostaja-bucher-hydraulics-oylle-2783369"
+        },
+        {
+          "title": "Tilinpäätöstaitoinen kirjanpitäjä, Nättinummen Isännöinti Oy, Turku",
+          "quote": "Työtehtäviisi kuuluvat kuukausikirjanpito, pankkiaineistojen käsittely, tilinpäätösten laatiminen, arvonlisäveroasiat sekä laskutukseen liittyvät tehtävät.",
+          "url": "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-kirjanpitaja-nattinummen-isannointi-oy-turku-2785407"
+        }
+      ],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": {
+      "analystHint": "They recruit for many client companies, and order confirmations keep being typed into ERPs.",
+      "fixOptions": [
+        "Read order confirmations straight into the ERP",
+        "Recruit faster for the same roles",
+        "Print the purchase orders"
+      ],
+      "correctIndex": 0,
+      "fixReasoning": "Purchase orders and confirmations follow a fixed pattern. Matching confirmations to orders automatically leaves buyers only the exceptions and the supplier conversations.",
+      "adoptNote": "Flag mismatches in the buyer's existing inbox rather than in a new tool.",
+      "serviceArea": "Quotes and order intake"
+    },
+    "gameCompanyId": null
+  },
+  {
+    "id": "wartsila",
+    "name": "Wärtsilä",
+    "domain": "wartsila.com",
+    "brandColor": "#ff7300",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "locations": [
+      "Gdańsk",
+      "Helsinki",
+      "Turku",
+      "Vaasa"
+    ],
+    "functions": [
+      "Finance",
+      "HR",
+      "Office and admin",
+      "Procurement"
+    ],
+    "titles": [
+      "Category Manager",
+      "Global Travel Manager",
+      "Maintenance processes and tools Expert",
+      "People Analytics Partner",
+      "Senior Advisor"
+    ],
+    "jobAds": {
+      "checked": 5,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": "wartsila"
+  },
+  {
+    "id": "yit-housing-oy",
+    "name": "YIT Housing Oy",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Jyväskylä",
+      "Kuopio",
+      "Oulu"
+    ],
+    "functions": [
+      "Office and admin"
+    ],
+    "titles": [
+      "Työturvallisuusinsinööri rakennusalalle Itä- & Pohjois-Suomeen, YIT Asuminen"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-23"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  },
+  {
+    "id": "yit-oyj",
+    "name": "YIT Oyj",
+    "domain": null,
+    "brandColor": "#3b5379",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "locations": [
+      "Turku"
+    ],
+    "functions": [
+      "Procurement"
+    ],
+    "titles": [
+      "Hankintainsinööri Turkuun"
+    ],
+    "jobAds": {
+      "checked": 1,
+      "manual": 0,
+      "ads": [],
+      "source": "Open job ads on Jobly.fi",
+      "fetchedAt": "2026-10-13"
+    },
+    "velhoCase": null,
+    "gameCompanyId": null
+  }
+]

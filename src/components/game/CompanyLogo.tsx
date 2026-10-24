@@ -20,6 +20,7 @@ function logoSources(company: Pick<Company, "id" | "logo" | "domain">): string[]
 function initials(name: string): string {
   return name
     .split(/\s+/)
+    .filter((w) => w.toLowerCase() !== "oy")
     .slice(0, 2)
     .map((w) => w[0])
     .join("")
@@ -38,7 +39,9 @@ export function CompanyLogo({ company, className = "h-16 w-16" }: Props) {
   const src = sources[attempt];
 
   return (
-    <div className={`flex shrink-0 items-center justify-center rounded-2xl bg-white p-2 shadow-xl ${className}`}>
+    <div
+      className={`flex shrink-0 items-center justify-center rounded-[9px] border border-sand-2 bg-white p-2 ${className}`}
+    >
       {src ? (
         // eslint-disable-next-line @next/next/no-img-element -- mixed local/remote logos of unknown size
         <img
@@ -49,7 +52,7 @@ export function CompanyLogo({ company, className = "h-16 w-16" }: Props) {
           onError={() => setAttempt((a) => a + 1)}
         />
       ) : (
-        <span className="text-xl font-black" style={{ color: company.brandColor }}>
+        <span className="text-sm font-semibold" style={{ color: company.brandColor }}>
           {initials(company.name)}
         </span>
       )}
