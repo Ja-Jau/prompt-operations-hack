@@ -80,8 +80,16 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   useEffect(() => {
     const today = dailyCase(companies);
     setDailyTarget(today);
-    if (today) setDailySaved(load(today.id));
     setHelpOpen(!seenHelp());
+    if (!today) return;
+    const saved = load(today.id);
+    setDailySaved(saved);
+    // Already finished today's case: open a fresh practice case instead of the old result.
+    const finished = saved.gaveUp || saved.guesses.includes(today.id) || saved.guesses.length >= MAX_GUESSES;
+    if (finished) {
+      const others = caseCompanies(companies).filter((c) => c.id !== today.id);
+      if (others.length > 0) setPracticeTarget(others[Math.floor(Math.random() * others.length)]);
+    }
   }, [companies]);
 
   const target = practiceTarget ?? dailyTarget;
