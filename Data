@@ -55,21 +55,36 @@ def calculate_ai_efficiency_score(row):
     return min(100, max(0, score))
 
 
-def fetch_comprehensive_data():
+def fetch_comprehensive_data(extra_tickers=None):
     """Fetches all financial key metrics for the companies and filters out non-working ones."""
-    tickers = get_all_finnish_tickers()
+    base_tickers = get_all_finnish_tickers()
+    tickers = []
+    
+    # Prioritize user input by adding it to the front of the list
+    if extra_tickers:
+        for t in extra_tickers:
+            # Using upper() ensures case-insensitivity in the matching list
+            t_upper = t.upper()
+            if t_upper not in tickers:
+                tickers.append(t_upper)
+                
+    # Add the remaining base tickers
+    for t in base_tickers:
+        t_upper = t.upper()
+        if t_upper not in tickers:
+            tickers.append(t_upper)
+            
     company_data = []
     non_working_companies = []
     total = len(tickers)
     
-    print(f"Fetching comprehensive financial data for {total} companies via Yahoo Finance...\n")
+    print(f"\nFetching comprehensive financial data for {total} companies via Yahoo Finance...\n")
 
     for index, symbol in enumerate(tickers, start=1):
         try:
             ticker = yf.Ticker(symbol)
             info = ticker.info
             
-            # Check if info is empty (some delisted/invalid tickers return an empty dict)
             if not info or ('shortName' not in info and 'longName' not in info and 'totalRevenue' not in info):
                 raise ValueError("Missing all basic info")
                 
@@ -78,13 +93,11 @@ def fetch_comprehensive_data():
             revenue = info.get("totalRevenue")
             net_income = info.get("netIncomeToCommon")
             
-            # If we get neither revenue nor employees, skip the company
             if pd.isna(revenue) and pd.isna(employees):
                 non_working_companies.append(name)
                 print(f"[{index}/{total}] Skipping {name} ({symbol}) - Missing data")
                 continue
             
-            # Set to None by default if any of them are missing
             rev_per_emp = None
             net_income_per_emp = None
             
@@ -135,20 +148,44 @@ def fetch_comprehensive_data():
             print(f"[{index}/{total}] Fetched data for: {name}")
 
         except Exception as e:
-            # Catch 404 and other fetch errors and save in the separate list
             print(f"[{index}/{total}] Missing (404/Error) - adding to non_working_companies: {symbol}")
             non_working_companies.append(symbol)
 
     return pd.DataFrame(company_data), non_working_companies
 
+
 if __name__ == "__main__":
-    df, non_working_companies = fetch_comprehensive_data()
+    print("="*95)
+    print(" FINANCIAL DATA MATCHER & AI POTENTIAL CALCULATOR")
+    print("="*95)
+    
+    # Allow the user to input a custom ticker (case-insensitive handling via .upper())
+    user_input = input("Enter a custom ticker to add to the list (e.g., 'MSFT', 'KONE.HE') or press Enter to skip: ").strip().upper()
+    
+    custom_tickers = []
+    if user_input:
+        custom_tickers.append(user_input)
+        print(f"-> Added '{user_input}' to the fetching queue.")
+        
+    df, non_working_companies = fetch_comprehensive_data(extra_tickers=custom_tickers)
     
     if not df.empty:
-        # Sort by Revenue/Employee, na_position='last' puts companies missing this metric at the bottom
-        df = df.sort_values(by="Revenue/Employee", ascending=False, na_position='last').reset_index(drop=True)
+        # Sort by Revenue/Employee normally
+        df = df.sort_values(by="Revenue/Employee", ascending=False, na_position='last')
         
-        # Save the full CSV file
+        # Initialize an empty DataFrame for df_user with the same columns as df
+        df_user = pd.DataFrame(columns=df.columns)
+        
+        # Extract the user's custom input to df_user and prioritize it at the top of df
+        # We use .str.upper() on the dataframe symbols to ensure complete case-insensitivity
+        if user_input and user_input in df['Symbol'].str.upper().values:
+            df_user = df[df['Symbol'].str.upper() == user_input].copy()
+            other_rows = df[df['Symbol'].str.upper() != user_input]
+            df = pd.concat([df_user, other_rows])
+            
+        df = df.reset_index(drop=True)
+        df_user = df_user.reset_index(drop=True)
+        
         filename = "finnish_companies_all_metrics.csv"
         df.to_csv(filename, index=False, encoding="utf-8-sig")
         
@@ -157,7 +194,6 @@ if __name__ == "__main__":
         print(f" The entire dataset has been saved to: '{filename}'")
         print("="*95 + "\n")
         
-        # Selected columns for terminal preview
         preview_cols = [
             "Company", 
             "Sector", 
@@ -168,9 +204,24 @@ if __name__ == "__main__":
             "P/E Ratio", 
             "Debt to Equity (%)"
         ]
+        
+        # Print the df_user specifically if a user input was provided and found
+        if not df_user.empty:
+            user_preview = df_user[preview_cols].copy()
+            user_preview["Revenue/Employee"] = user_preview["Revenue/Employee"].apply(lambda x: f"€{x:,.0f}" if pd.notnull(x) else "N/A")
+            user_preview["Margin Gap (%)"] = user_preview["Margin Gap (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
+            user_preview["Profit Margin (%)"] = user_preview["Profit Margin (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
+            user_preview["P/E Ratio"] = user_preview["P/E Ratio"].apply(lambda x: f"{x:.1f}" if pd.notnull(x) else "N/A")
+            user_preview["Debt to Equity (%)"] = user_preview["Debt to Equity (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
+            
+            print("YOUR SELECTED COMPANY (df_user):")
+            print("-" * 95)
+            print(user_preview.to_string(index=False))
+            print("-" * 95 + "\n")
+
+        # Prepare and print the general preview
         preview = df[preview_cols].head(15).copy()
         
-        # Format the numbers for a clean print output
         preview["Revenue/Employee"] = preview["Revenue/Employee"].apply(lambda x: f"€{x:,.0f}" if pd.notnull(x) else "N/A")
         preview["Margin Gap (%)"] = preview["Margin Gap (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
         preview["Profit Margin (%)"] = preview["Profit Margin (%)"].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "N/A")
@@ -179,13 +230,12 @@ if __name__ == "__main__":
         
         pd.set_option('display.max_columns', 10)
         pd.set_option('display.width', 1000)
-        print("TOP 15 WORKING COMPANIES (Sorted by Revenue/Employee):\n")
+        print("TOP 15 WORKING COMPANIES (User Input First, then Sorted by Revenue/Employee):\n")
         print(preview.to_string(index=True))
         print(f"\nTotal number of companies in DataFrame: {df.shape[0]}")
     else:
         print("No data could be fetched.")
         
-    # Print the list of non-working companies
     print("\n" + "="*95)
     print(f" NON-WORKING COMPANIES (Total: {len(non_working_companies)})")
     print("="*95)
