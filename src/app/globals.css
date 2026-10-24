@@ -189,22 +189,49 @@
   }
 }
 
+.higher-lower-results {
+  background-image: radial-gradient(ellipse at 80% 80%, rgb(122 163 214 / 0.14), transparent 60%);
+}
+.higher-lower-result-velho {
+  background-image: radial-gradient(ellipse at 100% 0%, rgb(122 163 214 / 0.18), transparent 75%);
+}
+@media (max-height: 740px) and (max-width: 767px) {
+  .higher-lower-result-score,
+  .higher-lower-result-velho { gap: 0.75rem; padding: 1rem 1.25rem; }
+  .higher-lower-result-description { font-size: 13px; line-height: 1.45; }
+}
+@media (max-height: 500px) {
+  .higher-lower-results-card { grid-template-columns: 0.9fr 1.1fr; }
+  .higher-lower-result-score,
+  .higher-lower-result-velho { gap: 0.75rem; padding: 1rem; }
+  .higher-lower-result-velho { border-top: 0; border-left: 1px solid var(--color-line-dark); }
+  .higher-lower-result-description { display: none; }
+}
+
 /* Keep both comparisons and their actions inside the game viewport. */
+.higher-lower-board > .higher-lower-panel {
+  padding-top: 7rem;
+}
 @media (max-width: 639px) {
   .higher-lower > header { gap: 0.5rem; padding-inline: 0.75rem; }
   .higher-lower > header nav { min-width: 0; gap: 0.5rem; }
   .higher-lower > header nav button { font-size: 11px; }
   .higher-lower > header > div:last-child > a { display: none; }
-  .higher-lower-panel:first-child { flex: 0.8; }
+  .higher-lower-panel:first-of-type { flex: 0.8; padding-top: 5rem; }
   .higher-lower-panel:last-child { flex: 1.2; }
+  .higher-lower-board > .higher-lower-panel:last-child { padding-top: 0.75rem; }
   .higher-lower-vs { top: 40%; }
 }
 @media (max-height: 500px) {
   .higher-lower-promo { display: none; }
   .higher-lower-board { flex-direction: row; }
-  .higher-lower-panel:first-child, .higher-lower-panel:last-child { flex: 1; }
+  .higher-lower-panel:first-of-type, .higher-lower-panel:last-child { flex: 1; }
   .higher-lower-vs { top: 50%; }
   .higher-lower-logo { display: none; }
-  .higher-lower-panel { padding-block: 0.5rem; }
+  .higher-lower-board > .higher-lower-panel,
+  .higher-lower-board > .higher-lower-panel:last-child { padding-block: 4.5rem 0.5rem; }
+  .higher-lower-category { padding-block: 0.5rem; }
+  .higher-lower-category > p:last-child { display: none; }
+  .higher-lower-question { font-size: 16px; padding-block: 0.375rem; }
   .higher-lower-panel .btn { padding: 8px 12px; font-size: 12px; }
 }

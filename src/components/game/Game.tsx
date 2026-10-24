@@ -166,38 +166,60 @@ export function Game({ companies, onGameChange }: Props) {
   };
 
   if (phase === "done") {
+    const total = mode === "five" ? 5 : answered;
+    const accuracy = total ? Math.round((score / total) * 100) : 0;
+
     return (
-      <div className="higher-lower flex min-h-0 flex-1 flex-col overflow-hidden">
+      <div className="higher-lower higher-lower-results relative isolate flex min-h-0 flex-1 flex-col overflow-hidden bg-navy text-ivory">
         {topBar}
-        <main className="mx-auto flex min-h-0 w-full max-w-[760px] flex-1 flex-col justify-center gap-3 p-3">
-          <div className="text-center">
-            <h1 className="text-3xl leading-none">Game complete</h1>
-            <p className="mt-1 text-xs text-ink-3">Higher or lower · {mode === "five" ? "5 rounds" : `${answered} rounds · Endless`}</p>
+        <main className="relative mx-auto flex min-h-0 w-full max-w-[1080px] flex-1 items-center justify-center p-3 sm:p-6">
+          <div className="higher-lower-results-card animate-rise grid w-full overflow-hidden rounded-3xl border border-line-dark bg-navy-2/70 shadow-2xl md:grid-cols-[0.9fr_1.1fr]">
+            <section aria-labelledby="result-title" className="higher-lower-result-score flex min-w-0 flex-col justify-center gap-4 p-5 sm:p-8 md:gap-6 md:p-10">
+              <p className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.14em] text-on-dark-2 sm:text-xs">
+                <Icon name="check" className="h-4 w-4 text-sky" />
+                Run complete · {mode === "five" ? "5 rounds" : "Endless"}
+              </p>
+              <div className="flex items-center gap-5 md:flex-col md:items-start md:gap-4">
+                <p className="shrink-0 font-semibold leading-none tracking-[-0.07em]" aria-label={`${score} correct out of ${total}`}>
+                  <span className="text-[clamp(64px,10dvh,120px)] text-ivory">{score}</span>
+                  <span className="ml-1 text-[clamp(24px,4dvh,40px)] tracking-tight text-sky">/{total}</span>
+                </p>
+                <h1 id="result-title" className="max-w-xs text-[clamp(22px,3vw,36px)] leading-tight tracking-tight">{rankTitle(score)}</h1>
+              </div>
+              <div>
+                <div className="mb-2 flex justify-between font-mono text-xs text-on-dark">
+                  <span>{accuracy}% correct</span>
+                  <span>Best {Math.max(best, score)}</span>
+                </div>
+                <div role="progressbar" aria-label="Correct answers" aria-valuemin={0} aria-valuemax={total} aria-valuenow={score} className="h-1.5 overflow-hidden rounded-full bg-white/10">
+                  <div className="h-full rounded-full bg-sky" style={{ width: `${accuracy}%` }} />
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-x-5 gap-y-2">
+                <button onClick={() => start(mode)} className="inline-flex items-center gap-2 rounded py-1 text-sm font-medium text-on-dark transition hover:text-ivory focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky">
+                  <Icon name="play" /> Play again
+                </button>
+                <button onClick={share} className="inline-flex items-center gap-2 rounded py-1 text-sm font-medium text-on-dark transition hover:text-ivory focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky">
+                  <Icon name={copied ? "check" : "arrowUp"} /> {copied ? "Copied!" : "Share result"}
+                </button>
+              </div>
+            </section>
+            <section aria-labelledby="velho-next-step" className="higher-lower-result-velho relative isolate flex min-w-0 flex-col justify-center gap-4 border-t border-line-dark p-5 sm:p-8 md:gap-6 md:border-l md:border-t-0 md:p-10">
+              <p className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.14em] text-sky sm:text-xs">
+                <Icon name="spark" className="h-4 w-4" /> Make your next move
+              </p>
+              <h2 id="velho-next-step" className="max-w-md text-[clamp(28px,4.2vw,48px)] leading-[1.08] tracking-[-0.04em]">
+                Less manual work.<br /><span className="text-sky">More room to grow.</span>
+              </h2>
+              <p className="higher-lower-result-description max-w-sm text-sm leading-relaxed text-on-dark md:text-base">
+                What could your team do with more time? Velho helps companies simplify repetitive work and make everyday operations more efficient.
+              </p>
+              <a href={VELHO_URL} target="_blank" rel="noopener noreferrer" className="group flex w-full items-center justify-between gap-4 rounded-xl bg-sky px-5 py-4 text-lg font-semibold text-navy shadow-[0_8px_32px_rgb(122_163_214/0.2)] transition hover:bg-ivory hover:shadow-[0_8px_40px_rgb(122_163_214/0.35)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory">
+                Visit velho.io
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy/10 transition group-hover:translate-x-1"><Icon name="arrowRight" className="h-5 w-5" /></span>
+              </a>
+            </section>
           </div>
-          <section className="card animate-rise p-4 text-center">
-            <p className="text-[clamp(48px,10dvh,88px)] font-semibold leading-none tracking-[-0.05em]">{score}/{mode === "five" ? 5 : answered}</p>
-            <p className="mt-1 text-xl font-semibold tracking-tight">{rankTitle(score)}</p>
-            <p className="mt-1 font-mono text-xs text-ink-3">
-              Best {Math.max(best, score)}
-            </p>
-            <div className="mt-3 flex flex-wrap justify-center gap-2">
-              <button onClick={share} className="btn btn-dark btn-sm">
-                {copied ? "Copied" : "Share result"}
-              </button>
-              <button onClick={() => start(mode)} className="btn btn-line btn-sm">
-                Play again <Icon name="arrowRight" />
-              </button>
-            </div>
-          </section>
-          <section className="higher-lower-promo rounded-[14px] bg-navy p-4 text-center text-ivory">
-            <p className="eyebrow text-sky">Velho</p>
-            <h2 className="mt-1 text-[clamp(20px,3vw,26px)] leading-tight tracking-[-0.03em]">
-              Less manual work. More room to <span className="text-sky">grow.</span>
-            </h2>
-            <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-light btn-sm mt-3">
-              Go to Velho <Icon name="arrowRight" />
-            </a>
-          </section>
         </main>
       </div>
     );
@@ -209,11 +231,12 @@ export function Game({ companies, onGameChange }: Props) {
     <div className="higher-lower flex min-h-0 flex-1 flex-col overflow-hidden">
       {topBar}
 
-      <div className="shrink-0 bg-cream px-3 py-2 text-center">
-        <p className="eyebrow text-sage-d">Round {index + 1}{mode === "five" ? `/${rounds.length}` : " · Endless"} · {metric.title}</p>
-        <p className="mx-auto mt-1 hidden max-w-2xl text-xs text-ink-2 sm:block">{metric.explanation}</p>
-      </div>
       <div className="higher-lower-board relative flex min-h-0 flex-1 flex-col overflow-hidden sm:flex-row">
+        <div className="higher-lower-category pointer-events-none absolute inset-x-0 top-0 z-20 bg-transparent px-4 py-3 text-center text-ivory [text-shadow:0_2px_12px_rgb(0_0_0/0.7)] sm:py-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-on-dark sm:text-xs">Round {index + 1}{mode === "five" ? `/${rounds.length}` : " · Endless"}</p>
+          <h1 className="mt-1 text-[clamp(20px,3vw,34px)] font-semibold leading-tight tracking-tight text-sky">{metric.title}</h1>
+          <p className="mx-auto mt-1 hidden max-w-2xl text-sm text-on-dark sm:block">{metric.explanation}</p>
+        </div>
 
         <CompanyPanel company={left} metric={round.metric} revealed />
 
@@ -245,9 +268,9 @@ export function Game({ companies, onGameChange }: Props) {
         >
           {phase === "guess" && (
             <div className="flex flex-col items-center gap-2">
-              <p className="max-w-xs text-xs text-on-dark sm:text-sm">
+              <p className="higher-lower-question max-w-md rounded-xl border border-sky/40 bg-transparent px-3 py-2 text-[clamp(17px,2.2vw,25px)] font-semibold leading-snug tracking-tight text-ivory [text-shadow:0_2px_12px_rgb(0_0_0/0.5)]">
                 {metric.question}{" "}
-                <strong className="text-ivory">{left.name}</strong>?
+                <strong className="text-sky">{left.name}</strong>?
               </p>
               <div className="flex gap-3">
                 <button onClick={() => guess("higher")} className="btn btn-light btn-sm">
