@@ -46,6 +46,20 @@ export type VelhoCase = {
   correctIndex: number;
   fixReasoning: string;
   adoptNote: string;
+  /** Which of Velho's service areas (src/lib/velho.ts) the first fix belongs to. */
+  serviceArea?: string;
+};
+
+export type Lead = {
+  id: string;
+  name: string;
+  email: string;
+  company: string;
+  /** Where the lead came from, e.g. "case-reveal" or "brief". */
+  source: string;
+  /** The case or brief company the player was looking at. */
+  contextCompanyId: string | null;
+  createdAt: string;
 };
 
 export type Mode = "daily" | "endless";

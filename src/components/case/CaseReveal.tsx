@@ -5,6 +5,7 @@ import type { Company } from "@/types/company";
 import { MAX_GUESSES, caseShareText, type Feedback } from "@/lib/case/cases";
 import { VELHO_SERVICES, VELHO_URL } from "@/lib/velho";
 import { CompanyLogo } from "@/components/game/CompanyLogo";
+import { LeadForm } from "@/components/leads/LeadForm";
 import { Icon } from "@/components/ui/Icon";
 
 type Props = {
@@ -223,13 +224,25 @@ export function CaseReveal({
         <section className="rounded-[14px] bg-navy p-7 text-ivory md:p-9">
           <p className="eyebrow text-sky">Your company</p>
           <h2 className="mt-3 text-[clamp(26px,3vw,38px)] tracking-[-0.03em]">
-            Hiring people for work like this? Let&apos;s find the first <span className="text-sky">opportunity.</span>
+            Want this analysis for your company?
           </h2>
           <p className="mt-3 max-w-lg text-on-dark">
-            In 30 minutes, Velho maps where work gets stuck and what a useful first improvement could be.
+            Velho reads your open job ads, sends a one-page note like{" "}
+            <a href={`/brief/${company.id}`} target="_blank" className="text-sky underline underline-offset-4">
+              this one for {company.name}
+            </a>
+            , and suggests 30 minutes to find the first opportunity.
           </p>
-          <a href={VELHO_URL} target="_blank" rel="noreferrer" className="btn btn-light mt-6">
-            Go to Velho <Icon name="arrowRight" />
+          <div className="mt-6">
+            <LeadForm source="case-reveal" contextCompanyId={company.id} />
+          </div>
+          <a
+            href={VELHO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 inline-flex items-center gap-1.5 text-sm text-on-dark hover:text-ivory"
+          >
+            Or go to velho.io <Icon name="arrowRight" className="h-3.5 w-3.5" />
           </a>
         </section>
 

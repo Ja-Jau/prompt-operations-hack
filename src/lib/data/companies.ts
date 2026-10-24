@@ -20,3 +20,13 @@ export async function getExampleCompanies(): Promise<Company[]> {
     return { ...example, image: sameIndustry?.image ?? null, imageCredit: sameIndustry?.imageCredit ?? null };
   });
 }
+
+/**
+ * Companies with job-ad signals, for the Velho dashboard and the briefs: the real ones once
+ * the job-ad reader has run, the example cases until then.
+ */
+export async function getSignalCompanies(): Promise<{ companies: Company[]; isExample: boolean }> {
+  const real = (await getCompanies()).filter((c) => (c.jobAds?.manual ?? 0) > 0);
+  if (real.length > 0) return { companies: real, isExample: false };
+  return { companies: await getExampleCompanies(), isExample: true };
+}

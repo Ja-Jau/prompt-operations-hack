@@ -52,7 +52,8 @@
       ],
       "correctIndex": 0,
       "fixReasoning": "Orders arrive by email and are retyped twice. Capturing them once at the source removes the Excel step and the errors that come with it.",
-      "adoptNote": "Run it beside the order team for two weeks and let them approve every order until they trust it."
+      "adoptNote": "Run it beside the order team for two weeks and let them approve every order until they trust it.",
+      "serviceArea": "Quotes and order intake"
     }
   },
   {
@@ -103,7 +104,8 @@
       ],
       "correctIndex": 1,
       "fixReasoning": "The forecast drives production, purchasing and stock. Feeding retailer reports in automatically frees the planner's week and speeds up every decision downstream.",
-      "adoptNote": "Keep the planner in charge: the model proposes, the planner adjusts and approves."
+      "adoptNote": "Keep the planner in charge: the model proposes, the planner adjusts and approves.",
+      "serviceArea": "Management reporting"
     }
   },
   {
@@ -154,7 +156,8 @@
       ],
       "correctIndex": 0,
       "fixReasoning": "Every delivery waits for its certificate. Generating it straight from test results ships orders faster and removes copy errors that customers notice.",
-      "adoptNote": "Start with one product line, show the quality engineers the hours saved, then roll it out."
+      "adoptNote": "Start with one product line, show the quality engineers the hours saved, then roll it out.",
+      "serviceArea": "Field reporting"
     }
   },
   {
@@ -205,7 +208,8 @@
       ],
       "correctIndex": 1,
       "fixReasoning": "Till differences are checked store by store in Excel. Automatic matching flags only the real issues and frees the controller for analysis.",
-      "adoptNote": "Send flagged differences to store managers in the tool they already use, not a new dashboard."
+      "adoptNote": "Send flagged differences to store managers in the tool they already use, not a new dashboard.",
+      "serviceArea": "Management reporting"
     }
   },
   {
@@ -261,7 +265,8 @@
       ],
       "correctIndex": 0,
       "fixReasoning": "A single change is retyped three times, so mistakes multiply. One booking record that syncs removes the retyping and makes invoice matching easy too.",
-      "adoptNote": "Migrate one team's bookings first and keep the old screens read-only until everyone has switched."
+      "adoptNote": "Migrate one team's bookings first and keep the old screens read-only until everyone has switched.",
+      "serviceArea": "Quotes and order intake"
     }
   }
 ]

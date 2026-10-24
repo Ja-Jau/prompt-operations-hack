@@ -34,6 +34,15 @@ OUT_PATH = ROOT / "pipeline" / "data" / "velho_cases.json"
 MODEL = "claude-opus-5-5"
 MIN_QUOTES = 3  # keep in sync with MIN_CASE_QUOTES in src/lib/case/cases.ts
 FIX_OPTIONS = 3
+# Velho's service areas, as listed under "Where we help" on velho.io (src/lib/velho.ts).
+SERVICE_AREAS = [
+    "Customer follow-up",
+    "Quotes and order intake",
+    "Field reporting",
+    "Scheduling and dispatch",
+    "Management reporting",
+    "Robotics and physical automation",
+]
 
 SYSTEM = """You are an analyst at Velho, a Finnish AI growth partner. Velho finds the manual
 work that slows a company down, builds the fix, and makes sure people actually use it.
@@ -50,7 +59,8 @@ opportunity, not criticism.
 - correctIndex: index (0-2) of the best option.
 - fixReasoning: max 35 words. Why that is the right first fix.
 - adoptNote: max 20 words. How Velho would make sure the people doing this work today
-  actually adopt the fix."""
+  actually adopt the fix.
+- serviceArea: which of Velho's service areas the best first fix belongs to."""
 
 CASE_SCHEMA = {
     "type": "object",
@@ -60,8 +70,9 @@ CASE_SCHEMA = {
         "correctIndex": {"type": "integer"},
         "fixReasoning": {"type": "string"},
         "adoptNote": {"type": "string"},
+        "serviceArea": {"type": "string", "enum": SERVICE_AREAS},
     },
-    "required": ["analystHint", "fixOptions", "correctIndex", "fixReasoning", "adoptNote"],
+    "required": ["analystHint", "fixOptions", "correctIndex", "fixReasoning", "adoptNote", "serviceArea"],
     "additionalProperties": False,
 }
 
