@@ -1,60 +1,44 @@
 "use client";
 
 import type { Mode } from "@/types/company";
-import { DAILY_ROUNDS, dailyNumber } from "@/lib/game/daily";
+import { dailyNumber } from "@/lib/game/daily";
 
 type Props = {
   mode: Mode;
-  results: boolean[];
-  /** True while a guess is open, so the next empty dot pulses. */
-  awaitingGuess: boolean;
+  streak: number;
+  best: number;
+  /** Whether the once-per-game Velho save is still available. */
+  saveAvailable: boolean;
   unverifiedCount: number;
   onModeChange: (mode: Mode) => void;
 };
 
-function ProgressDots({ results, awaitingGuess }: { results: boolean[]; awaitingGuess: boolean }) {
-  return (
-    <div className="flex items-center gap-1.5" aria-label={`${results.length} of ${DAILY_ROUNDS} rounds played`}>
-      {Array.from({ length: DAILY_ROUNDS }, (_, i) => {
-        const result = results[i];
-        const isCurrent = awaitingGuess && i === results.length;
-        const color =
-          result === true ? "bg-emerald-400" : result === false ? "bg-rose-500" : isCurrent ? "bg-white" : "bg-white/20";
-        return (
-          <span
-            key={i}
-            className={`h-2.5 w-2.5 rounded-full transition-colors md:h-3 md:w-3 ${color} ${isCurrent ? "animate-pulse" : ""}`}
-          />
-        );
-      })}
-    </div>
-  );
-}
-
-/** Logo, round progress and mode switch in one bar. */
-export function TopBar({ mode, results, awaitingGuess, unverifiedCount, onModeChange }: Props) {
-  const streak = results.filter(Boolean).length;
-
+/** Logo, streak and mode switch in one bar. */
+export function TopBar({ mode, streak, best, saveAvailable, unverifiedCount, onModeChange }: Props) {
   return (
     <header className="relative z-20 grid shrink-0 grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-white/10 bg-neutral-950/90 px-4 py-2.5 backdrop-blur">
       <div className="flex items-baseline gap-2">
         <span className="text-xl font-black tracking-tight md:text-2xl">
           Tehokas<span className="text-amber-300">.</span>
         </span>
-        <span className="hidden text-[10px] uppercase tracking-[0.2em] text-white/40 lg:inline">by Velho</span>
+        <span className="hidden text-[10px] uppercase tracking-[0.2em] text-white/40 lg:inline">
+          {mode === "daily" ? `Daily #${dailyNumber()}` : "Endless"} · by Velho
+        </span>
       </div>
 
-      <div className="flex flex-col items-center gap-1">
-        {mode === "daily" ? (
-          <>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50">
-              Daily #{dailyNumber()}
-            </span>
-            <ProgressDots results={results} awaitingGuess={awaitingGuess} />
-          </>
-        ) : (
-          <span className="rounded-full bg-amber-300/15 px-3 py-1 text-sm font-bold text-amber-300">🔥 Streak {streak}</span>
-        )}
+      <div className="flex items-center gap-2 text-sm">
+        <span key={streak} className="animate-pop rounded-full bg-amber-300/15 px-3 py-1 font-bold text-amber-300">
+          🔥 {streak}
+        </span>
+        <span className="hidden text-white/50 sm:inline">Best {best}</span>
+        <span
+          title={saveAvailable ? "Velho saves you from one wrong guess" : "Velho save used"}
+          className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
+            saveAvailable ? "bg-white/10 text-white" : "bg-white/5 text-white/30 line-through"
+          }`}
+        >
+          ⚡ save
+        </span>
       </div>
 
       <div className="flex items-center justify-end gap-2">

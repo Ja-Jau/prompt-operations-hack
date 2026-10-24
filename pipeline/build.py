@@ -28,6 +28,7 @@ LOGO_EXTENSIONS = (".svg", ".png", ".webp", ".jpg")  # first match wins, so pres
 DEFAULT_BRAND_COLOR = "#334155"
 IMAGE_DIR = ROOT / "public" / "images"
 CREDITS_PATH = IMAGE_DIR / "credits.json"
+JOB_ADS_PATH = ROOT / "pipeline" / "data" / "job_ads.json"
 
 MODEL = "claude-opus-5-5"
 
@@ -224,6 +225,9 @@ def main() -> None:
 
     rows = load_rows()
     attach_images(rows)
+    job_ads = json.loads(JOB_ADS_PATH.read_text(encoding="utf-8")) if JOB_ADS_PATH.exists() else {}
+    for row in rows:
+        row["jobAds"] = job_ads.get(row["id"])
     if not args.no_ai:
         enrich(rows, force=args.force_ai)
 
@@ -239,6 +243,9 @@ def main() -> None:
     no_logo = [r["id"] for r in rows if not r["logo"]]
     print(f"Wrote {len(rows)} companies to {JSON_PATH.relative_to(ROOT)}")
     no_image = [r["id"] for r in rows if not r["image"]]
+    with_ads = sum(1 for r in rows if r["jobAds"])
+    print(f"{with_ads} of {len(rows)} companies have job-ad data for Velho rounds"
+          + ("" if with_ads else " (run pipeline/fetch_job_ads.py)"))
     if no_logo:
         print(f"{len(no_logo)} without a logo (run pipeline/fetch_logos.py): {', '.join(no_logo)}")
     if no_image:

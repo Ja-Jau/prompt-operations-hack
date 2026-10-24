@@ -20,6 +20,19 @@ export type Company = {
   why: string;
   /** Shown by the "Ask Velho" lifeline: what the company does, without naming numbers. */
   hint: string;
+  /** Open job ads read by pipeline/fetch_job_ads.py, or null if not checked yet. */
+  jobAds: JobAds | null;
+};
+
+export type JobAds = {
+  /** Open ads that were read. */
+  checked: number;
+  /** Of those, ads describing manual, repetitive work (Excel upkeep, data entry, "käsin", ...). */
+  manual: number;
+  /** A verbatim quote from one manual-work ad, shown on the reveal. */
+  example: { title: string; quote: string; url: string } | null;
+  source: string;
+  fetchedAt: string;
 };
 
 export type Mode = "daily" | "endless";

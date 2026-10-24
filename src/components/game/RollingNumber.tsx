@@ -1,12 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { formatEur } from "@/lib/format";
 
 const DURATION_MS = 1100;
 
 /** Counts up from zero to `value` like a slot machine, then calls `onDone`. */
-export function RollingNumber({ value, onDone }: { value: number; onDone?: () => void }) {
+export function RollingNumber({
+  value,
+  format,
+  onDone,
+}: {
+  value: number;
+  format: (v: number) => string;
+  onDone?: () => void;
+}) {
   const [shown, setShown] = useState(0);
   const onDoneRef = useRef(onDone);
   onDoneRef.current = onDone;
@@ -28,5 +35,5 @@ export function RollingNumber({ value, onDone }: { value: number; onDone?: () =>
     return () => cancelAnimationFrame(frame);
   }, [value]);
 
-  return <span className="tabular-nums">{formatEur(shown)}</span>;
+  return <span className="tabular-nums">{format(shown)}</span>;
 }

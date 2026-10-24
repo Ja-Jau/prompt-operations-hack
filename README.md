@@ -33,8 +33,10 @@ operations at established companies) without cold outreach.
 
 | Status | Feature |
 |---|---|
-| ✅ | Daily challenge: 10 matchups, the same for everyone (seeded by date) |
-| ✅ | Endless mode: play until your first wrong guess |
+| ✅ | Daily streak: the same chain of companies for everyone, play until your first wrong guess |
+| ✅ | Endless mode: random order, play until your first wrong guess; best scores remembered |
+| ✅ | ⚡ Velho save: your first wrong guess doesn't end the run |
+| ✅ | ⚡ Velho rounds (every 4th card): which company's open job ads describe more manual work? With a quoted ad as proof |
 | ✅ | One-screen split layout: photo background per company, logo, VS badge that turns ✓/✗ |
 | ✅ | Stats always visible (employees; revenue after the reveal), plus € per working hour |
 | ✅ | Rolling-number reveal, plus a "Velho insight" for every company |
@@ -45,7 +47,6 @@ operations at established companies) without cold outreach.
 | ✅ | Python data pipeline: validate figures, generate text with Claude, export JSON |
 | ⏳ | Verified figures for every company, from annual reports |
 | ⏳ | Live stats APIs behind `/api/companies` |
-| ⏳ | Manual-work bonus cards ("Which company has more job ads describing manual Excel work?") |
 | ⏳ | Rivalry matchups and theme days |
 | ⏳ | Shareable result image (OG image) |
 
@@ -68,7 +69,8 @@ pipeline/                     # Python: offline data work, never runs during the
   data/industries.csv         #   photo search term per industry (fallback backgrounds)
   build.py                    #   validate → enrich with Claude → write src/data/companies.json
   fetch_logos.py              #   download logos into public/logos/
-  fetch_images.py             #   download Unsplash background photos into public/images/
+  fetch_images.py             #   download background photos into public/images/
+  fetch_job_ads.py            #   Claude reads open job ads → share describing manual work
   requirements.txt
 src/
   app/                        # Next.js routes
@@ -90,7 +92,9 @@ src/
       rules.ts                #   revenue per employee, picking a fair next card
       daily.ts                #   seeded daily run, puzzle number
       random.ts               #   deterministic PRNG
-      share.ts                #   emoji grid and share text
+      metrics.ts              #   what a round compares: revenue/employee or manual-work job ads
+      sequence.ts             #   picking a fair next card for each round
+      share.ts                #   share text and result titles
     ranking.ts                # place a company on the ladder, hours to overtake
     format.ts                 # € formatting
   types/company.ts            # Company, Mode and LookupResult types
@@ -134,6 +138,20 @@ Set `LOGO_DEV_TOKEN` (free at logo.dev) for sharp logos; without it the script f
 Google's favicon service. For the best look, put an official press-kit logo at
 `public/logos/<id>.svg`, which beats a downloaded `.png`. Companies without a logo show their
 initials on their brand colour (`brand_color` in the CSV).
+
+### Job ads (Velho rounds)
+
+```bash
+python pipeline/fetch_job_ads.py   # needs Anthropic credentials; ~1 min per company
+python pipeline/build.py --no-ai
+```
+
+Claude reads up to 10 currently open job ads per company (company careers sites, public job
+boards; web search and fetch respect robots.txt) and flags the ones that describe manual,
+repetitive work, with a verbatim quote and link as evidence. The Velho round compares the
+**share** of manual-work ads. Companies with fewer than 3 ads read sit those rounds out, and
+until any data exists Velho rounds are simply skipped. Duunitori's API is not used: its
+robots.txt disallows `/api/` for bots.
 
 ### Background photos
 
