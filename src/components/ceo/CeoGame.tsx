@@ -78,7 +78,7 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
 
   return (
     <div className="ceo-decision" data-urgent={urgent} data-outcome={decision ? decision.correct ? "correct" : "wrong" : "waiting"}>
-      <ProjectorScreen label={`${number}/${CEO_ROUNDS} · ${scenario.topic}`} progress={number}>
+      <ProjectorScreen label={`${number}/${CEO_ROUNDS} · ${scenario.topic}`} progress={number} className="boardroom-question">
         <h1 id="ceo-scenario-title" className="ceo-scenario-title">{scenario.title}</h1>
         <div className="ceo-choices" role="group" aria-label="Choose your next move">
           {scenario.choices.map((choice, i) => {
@@ -180,18 +180,25 @@ export function CeoGame({ onGameChange }: Props) {
           )}
           {stage === "results" && (
               <ProjectorScreen label="Results" progress={CEO_ROUNDS} className="boardroom-debrief">
-                <div className="ceo-debrief-top">
+                <div className="ceo-result-summary">
+                  <h1 id="ceo-result-title">{score === CEO_ROUNDS ? "Well played, CEO." : "Meeting complete."}</h1>
                   <p className="ceo-final-score"><strong>{score}</strong><span>/{CEO_ROUNDS}</span><small>smart moves</small></p>
-                  <div><h1 id="ceo-result-title">{score === CEO_ROUNDS ? "Well played, CEO." : "Meeting complete."}</h1><p className="ceo-personal-best">Best {best}/{CEO_ROUNDS}</p></div>
+                  <ul className="ceo-result-dots" aria-label="Your decisions">
+                    {rounds.map((scenario) => {
+                      const answer = answers.find((item) => item.scenarioId === scenario.id);
+                      const result = answer?.timedOut ? "Timed out" : answer?.correct ? "Correct" : "Incorrect";
+                      return <li key={scenario.id} data-correct={Boolean(answer?.correct)} title={`${scenario.topic}: ${result}`}><Icon name={answer?.correct ? "check" : "cross"} /><span className="sr-only">{scenario.topic}: {result}</span></li>;
+                    })}
+                  </ul>
+                  <p className="ceo-personal-best">Best {best}/{CEO_ROUNDS}</p>
+                  <div className="ceo-debrief-actions"><button onClick={start}>Play again</button><button onClick={share}>{copied ? "Copied!" : "Share"}</button></div>
                 </div>
-                <ul className="ceo-debrief-list" aria-label="Your decisions">
-                  {rounds.map((scenario) => {
-                    const answer = answers.find((item) => item.scenarioId === scenario.id);
-                    return <li key={scenario.id} data-correct={Boolean(answer?.correct)}><span className="ceo-recap-icon"><Icon name={answer?.correct ? "check" : "cross"} /></span><span>{scenario.topic}</span><span className="sr-only">{answer?.timedOut ? "Timed out" : answer?.correct ? "Correct" : "Incorrect"}</span></li>;
-                  })}
-                </ul>
-                <a href={VELHO_URL} target="_blank" rel="noopener noreferrer" className="boardroom-start ceo-velho-link">Visit velho.io <Icon name="arrowRight" /></a>
-                <div className="ceo-debrief-actions"><button onClick={start}>Play again</button><button onClick={share}>{copied ? "Copied!" : "Share"}</button></div>
+                <div className="ceo-result-invitation">
+                  <span className="ceo-result-brand"><Icon name="spark" /> Velho</span>
+                  <h2>Your next move.<br /><span>With Velho.</span></h2>
+                  <p>Less manual work.<br />More room to grow.</p>
+                  <a href={VELHO_URL} target="_blank" rel="noopener noreferrer" className="ceo-velho-link">Visit velho.io <Icon name="arrowRight" /></a>
+                </div>
               </ProjectorScreen>
 
           )}
