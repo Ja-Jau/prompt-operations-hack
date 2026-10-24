@@ -1,0 +1,38 @@
+export type Company = {
+  id: string;
+  name: string;
+  industry: string;
+  revenueEurM: number;
+  employees: number;
+  fiscalYear: number;
+  domain: string | null;
+  /** Used for the initials fallback when no logo loads. */
+  brandColor: string;
+  /** Public path under /logos, or null to fall back to a logo service, then initials. */
+  logo: string | null;
+  /** Background photo under /images: the company's own, else its industry's, else null. */
+  image: string | null;
+  imageCredit: { author: string; url: string; source: string; license: string | null } | null;
+  sourceUrl: string | null;
+  /** True once the figures have been checked against the company's annual report. */
+  verified: boolean;
+  /** Shown as the "Velho insight": why revenue per employee is high or low. */
+  why: string;
+  /** Shown by the "Ask Velho" lifeline: what the company does, without naming numbers. */
+  hint: string;
+};
+
+export type Mode = "daily" | "endless";
+
+/** A company the player looked up for "Where does your company rank?". */
+export type LookupResult = {
+  name: string;
+  industry: string;
+  revenueEurM: number;
+  employees: number;
+  fiscalYear: number;
+  why: string;
+  sources: string[];
+  /** "dataset": already in the game. "ai": found by Claude with web search. */
+  origin: "dataset" | "ai";
+};

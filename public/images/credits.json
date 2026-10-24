@@ -1,0 +1,77 @@
+{
+  "industries": {
+    "retail": {
+      "author": "Wilfredor",
+      "url": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "telecom": {
+      "author": "Wee Hong",
+      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "energy": {
+      "author": "Matthew T Rader",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "forest": {
+      "author": "kallerna",
+      "url": "https://commons.wikimedia.org/wiki/File:Spring_forest_Yyteri_3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "packaging": {
+      "author": "Axisadman",
+      "url": "https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "steel": {
+      "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
+      "url": "https://commons.wikimedia.org/wiki/File:13_Industry_of_Australia_-_Steelworks_of_BlueScope_Steel_Limited_company_in_Port_Kembla,_Australia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 3.0"
+    },
+    "food": {
+      "author": "Catherine Sharman",
+      "url": "https://commons.wikimedia.org/wiki/File:Bread_Ahead_Vanilla_Doughnuts.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "industrial": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "consumer-goods": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "pharma": {
+      "author": "Tehran Times",
+      "url": "https://commons.wikimedia.org/wiki/File:COVIran_Barekat_vaccine_production_03.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "gaming": {
+      "author": "AzureSaturn",
+      "url": "https://commons.wikimedia.org/wiki/File:Logitech_G_PRO_TKL_gaming_keyboard_-_English_(United_States)_layout.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "travel": {
+      "author": "Diliff",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_2,_London,_England_-_Diliff.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    }
+  },
+  "companies": {}
+}
