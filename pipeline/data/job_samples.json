@@ -1969,5 +1969,10 @@
     ],
     "error": null,
     "sampledAt": "2026-10-24T19:18:28.084778+00:00"
+  },
+  "ardor-6790c15f": {
+    "ads": [],
+    "error": "HTTP Error 403: Forbidden",
+    "sampledAt": "2026-10-24T19:21:48.396242+00:00"
   }
 }

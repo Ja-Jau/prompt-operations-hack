@@ -13,8 +13,10 @@
     "vahittais-ja-tukkukauppa": 2,
     "it": 2
   },
-  "lastRunAt": "2026-10-24T19:17:45.940162+00:00",
-  "companyCount": 253,
+  "lastRunAt": "2026-10-24T19:21:48.248112+00:00",
+  "companyCount": 252,
   "filingCompanies": 122,
-  "errors": []
+  "errors": [
+    "https://www.jobly.fi/tyopaikat: HTTP Error 403: Forbidden"
+  ]
 }

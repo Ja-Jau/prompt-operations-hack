@@ -310,7 +310,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "are-ba78973d": {
@@ -321,7 +321,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "avila-d4d38dd6": {
@@ -332,7 +332,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-3b3ea071": {
@@ -343,7 +343,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-horeca-4bf40cbe": {
@@ -354,7 +354,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-ict-services-poland-sp-z-o-o-65662540": {
@@ -365,7 +365,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-julkiset-palvelut-7d5e02e0": {
@@ -376,7 +376,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-kauppa-405c91a6": {
@@ -387,7 +387,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-logistiikkaratkaisut-b6dd76b6": {
@@ -398,7 +398,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-services-spain-sl-f15d370a": {
@@ -409,7 +409,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-teollisuus-7e940940": {
@@ -420,7 +420,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "barona-varastopalvelut-d90028aa": {
@@ -431,7 +431,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "beneq-c4ea4286": {
@@ -443,7 +443,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "broman-group-e12cdd2d": {
@@ -454,7 +454,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "casemet-6c53bbb6": {
@@ -465,7 +465,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "celsius-finland-37a71201": {
@@ -476,7 +476,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "clevry-ac2f6738": {
@@ -487,7 +487,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "click-henkilostopalvelut-86bc2960": {
@@ -498,7 +498,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "compass-group-finland-3283bd83": {
@@ -509,7 +509,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "coptersafety-42e4df63": {
@@ -520,7 +520,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "csc-tieteen-tietotekniikan-keskus-d4eaf80e": {
@@ -531,7 +531,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "csc-tieteen-tietotekniikan-keskus-ecfd7ef0": {
@@ -542,7 +542,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "destia-55eab80d": {
@@ -554,7 +554,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "dna-d0331ca0": {
@@ -565,7 +565,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "dna-puhelinpalvelukeskus-9be10125": {
@@ -576,7 +576,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "dottir-daca7089": {
@@ -587,7 +587,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "eaton-28236bb6": {
@@ -598,7 +598,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "eezy-henkilostopalvelut-d0b90f18": {
@@ -609,7 +609,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "eltel-networks-ef74e2cb": {
@@ -620,7 +620,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "energiavirasto-2dcad82c": {
@@ -631,7 +631,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "experis-c785f9f8": {
@@ -642,7 +642,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "fazer": {
@@ -664,7 +664,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "finferries-suomen-lauttaliikenne-9f68706c": {
@@ -675,7 +675,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "flaktgroup-finland-36216d66": {
@@ -686,7 +686,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "forcit-group-162ed457": {
@@ -697,7 +697,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "fvr-suomen-rokotetutkimus-6bb57e6c": {
@@ -708,7 +708,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "gasum-fb415c64": {
@@ -719,7 +719,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "granlund-e3df051c": {
@@ -730,7 +730,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "greenstep-e2846f4a": {
@@ -742,7 +742,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "hankkija-88001113": {
@@ -753,7 +753,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "helsingin-kaupunki-2666f0ea": {

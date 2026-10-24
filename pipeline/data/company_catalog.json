@@ -1,392 +1,5 @@
 [
   {
-    "id": "elisa",
-    "name": "Elisa",
-    "industry": "Telecom",
-    "domain": "elisa.fi",
-    "brandColor": "#0019af",
-    "logo": null,
-    "image": "/images/industry/telecom.jpg",
-    "imageCredit": {
-      "author": "Wee Hong",
-      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Sells mobile and broadband subscriptions.",
-    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json",
-      "https://www.jobly.fi/tyopaikat/myynti"
-    ],
-    "lei": "743700TU2S3DXWGU7H32",
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-tampere-2780808"
-    ]
-  },
-  {
-    "id": "finnair",
-    "name": "Finnair",
-    "industry": "Travel",
-    "domain": "finnair.com",
-    "brandColor": "#0b1560",
-    "logo": null,
-    "image": "/images/industry/travel.jpg",
-    "imageCredit": {
-      "author": "Diliff",
-      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_2,_London,_England_-_Diliff.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0"
-    },
-    "hint": "Finland's national airline.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "213800SB6EOB8SSK9W63"
-  },
-  {
-    "id": "fiskars",
-    "name": "Fiskars",
-    "industry": "Consumer goods",
-    "domain": "fiskarsgroup.com",
-    "brandColor": "#f47b20",
-    "logo": null,
-    "image": "/images/industry/consumer-goods.jpg",
-    "imageCredit": {
-      "author": "Slyronit",
-      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Orange-handled scissors, and much more.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "743700BKTW4EQIVKYY42"
-  },
-  {
-    "id": "fortum",
-    "name": "Fortum",
-    "industry": "Energy",
-    "domain": "fortum.com",
-    "brandColor": "#2e9e5b",
-    "logo": null,
-    "image": "/images/industry/energy.jpg",
-    "imageCredit": {
-      "author": "Matthew T Rader",
-      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Produces and sells electricity in the Nordics.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "635400IUIZZIUJSAMF76"
-  },
-  {
-    "id": "harvia",
-    "name": "Harvia",
-    "industry": "Consumer goods",
-    "domain": "harvia.com",
-    "brandColor": "#b3121f",
-    "logo": null,
-    "image": "/images/industry/consumer-goods.jpg",
-    "imageCredit": {
-      "author": "Slyronit",
-      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Sauna heaters, exported worldwide.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "7437002ULTBOWQQOXL69"
-  },
-  {
-    "id": "huhtamaki",
-    "name": "Huhtamäki",
-    "industry": "Packaging",
-    "domain": "huhtamaki.com",
-    "brandColor": "#0057b8",
-    "logo": null,
-    "image": "/images/industry/packaging.jpg",
-    "imageCredit": {
-      "author": "Axisadman",
-      "url": "https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0"
-    },
-    "hint": "Coffee cups and food packaging.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "5493007050SJVMXN6L29"
-  },
-  {
-    "id": "kesko",
-    "name": "Kesko",
-    "industry": "Retail",
-    "domain": "kesko.fi",
-    "brandColor": "#f36f21",
-    "logo": null,
-    "image": "/images/industry/retail.jpg",
-    "imageCredit": {
-      "author": "Wilfredor",
-      "url": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Runs grocery, building and car retail across Finland.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "743700OX6HSVMCAHPB95"
-  },
-  {
-    "id": "kone",
-    "name": "Kone",
-    "industry": "Industrial",
-    "domain": "kone.com",
-    "brandColor": "#1450f5",
-    "logo": null,
-    "image": "/images/industry/industrial.jpg",
-    "imageCredit": {
-      "author": "Henrysz",
-      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
-    },
-    "hint": "Elevators and escalators, plus the people who service them.",
-    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json",
-      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
-    ],
-    "lei": "2138001CNF45JP5XZK38",
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500"
-    ]
-  },
-  {
-    "id": "marimekko",
-    "name": "Marimekko",
-    "industry": "Consumer goods",
-    "domain": "marimekko.com",
-    "brandColor": "#2b2b2b",
-    "logo": null,
-    "image": "/images/industry/consumer-goods.jpg",
-    "imageCredit": {
-      "author": "Slyronit",
-      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Famous for its poppy-print fabrics.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "74370053IOY42B9YJ350"
-  },
-  {
-    "id": "neste",
-    "name": "Neste",
-    "industry": "Energy",
-    "domain": "neste.com",
-    "brandColor": "#0063a3",
-    "logo": null,
-    "image": "/images/industry/energy.jpg",
-    "imageCredit": {
-      "author": "Matthew T Rader",
-      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Renewable diesel and jet fuel.",
-    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json",
-      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
-      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
-      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
-      "https://www.jobly.fi/tyopaikat/projektihallinto",
-      "https://www.jobly.fi/tyopaikat/it"
-    ],
-    "lei": "5493009GY1X8GQ66AM14",
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/senior-refinery-data-engineer-2770929",
-      "https://www.jobly.fi/tyopaikka/senior-business-controller-2785528",
-      "https://www.jobly.fi/tyopaikka/hr-specialist-2784414",
-      "https://www.jobly.fi/tyopaikka/solution-manager-2775849"
-    ]
-  },
-  {
-    "id": "nokia",
-    "name": "Nokia",
-    "industry": "Telecom",
-    "domain": "nokia.com",
-    "brandColor": "#124191",
-    "logo": null,
-    "image": "/images/industry/telecom.jpg",
-    "imageCredit": {
-      "author": "Wee Hong",
-      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Builds the networks your phone connects to.",
-    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json",
-      "https://www.jobly.fi/tyopaikat/it"
-    ],
-    "lei": "549300A0JPRWG1KI7U06",
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/senior-ai-data-engineer-2785481"
-    ]
-  },
-  {
-    "id": "orion",
-    "name": "Orion",
-    "industry": "Pharma",
-    "domain": "orion.fi",
-    "brandColor": "#0072ce",
-    "logo": null,
-    "image": "/images/industry/pharma.jpg",
-    "imageCredit": {
-      "author": "Tehran Times",
-      "url": "https://commons.wikimedia.org/wiki/File:COVIran_Barekat_vaccine_production_03.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
-    },
-    "hint": "Finnish pharmaceutical company.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "74370029VAHCXDR7B745"
-  },
-  {
-    "id": "outokumpu",
-    "name": "Outokumpu",
-    "industry": "Steel",
-    "domain": "outokumpu.com",
-    "brandColor": "#0a2240",
-    "logo": null,
-    "image": "/images/industry/steel.jpg",
-    "imageCredit": {
-      "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
-      "url": "https://commons.wikimedia.org/wiki/File:13_Industry_of_Australia_-_Steelworks_of_BlueScope_Steel_Limited_company_in_Port_Kembla,_Australia.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY 3.0"
-    },
-    "hint": "Stainless steel producer.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "lei": "5493009YRUJJDCFF0R80"
-  },
-  {
-    "id": "upm",
-    "name": "UPM",
-    "industry": "Forest",
-    "domain": "upm.com",
-    "brandColor": "#007a3d",
-    "logo": null,
-    "image": "/images/industry/forest.jpg",
-    "imageCredit": {
-      "author": "kallerna",
-      "url": "https://commons.wikimedia.org/wiki/File:Spring_forest_Yyteri_3.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
-    },
-    "hint": "Pulp, paper, timber and biofuels.",
-    "lastSeenAt": "2026-10-24T19:17:37.354679+00:00",
-    "discoverySources": [
-      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
-      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
-      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
-      "https://filings.xbrl.org/indexes/filings-2025.json"
-    ],
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/manager-treasury-accounting-2769749",
-      "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327",
-      "https://www.jobly.fi/tyopaikka/director-it-sourcing-category-2777935"
-    ],
-    "lei": "213800EC6PW5VU4J9U64"
-  },
-  {
-    "id": "valmet",
-    "name": "Valmet",
-    "industry": "Industrial",
-    "domain": "valmet.com",
-    "brandColor": "#c8102e",
-    "logo": null,
-    "image": "/images/industry/industrial.jpg",
-    "imageCredit": {
-      "author": "Henrysz",
-      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
-    },
-    "hint": "Machinery for pulp, paper and energy plants.",
-    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
-    "discoverySources": [
-      "https://filings.xbrl.org/indexes/filings-2025.json",
-      "https://www.jobly.fi/tyopaikat",
-      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
-      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
-      "https://www.jobly.fi/tyopaikat/projektihallinto"
-    ],
-    "lei": "213800D9O7FUQDH83V62",
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/software-senior-design-engineer-2774556",
-      "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000",
-      "https://www.jobly.fi/tyopaikka/director-pricing-availability-2781111",
-      "https://www.jobly.fi/tyopaikka/technical-documentation-manager-2784626"
-    ]
-  },
-  {
-    "id": "wartsila",
-    "name": "Wärtsilä",
-    "industry": "Industrial",
-    "domain": "wartsila.com",
-    "brandColor": "#ff7300",
-    "logo": null,
-    "image": "/images/industry/industrial.jpg",
-    "imageCredit": {
-      "author": "Henrysz",
-      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
-      "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
-    },
-    "hint": "Engines and power systems for ships and power plants.",
-    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
-    "discoverySources": [
-      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
-      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
-      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
-      "https://www.jobly.fi/tyopaikat/it"
-    ],
-    "listingUrls": [
-      "https://www.jobly.fi/tyopaikka/maintenance-processes-and-tools-expert-2746125",
-      "https://www.jobly.fi/tyopaikka/global-travel-manager-2780710",
-      "https://www.jobly.fi/tyopaikka/category-manager-2779297",
-      "https://www.jobly.fi/tyopaikka/senior-advisor-2779505",
-      "https://www.jobly.fi/tyopaikka/people-analytics-partner-2776343"
-    ],
-    "lei": "743700G7A9J1PHM3X223"
-  },
-  {
     "id": "a-asioimistulkkikeskuspaivystys-a67e9dce",
     "name": "A-asioimistulkkikeskuspäivystys OY",
     "industry": "Public-source company",
@@ -1248,6 +861,31 @@
     ]
   },
   {
+    "id": "elisa",
+    "name": "Elisa",
+    "industry": "Telecom",
+    "domain": "elisa.fi",
+    "brandColor": "#0019af",
+    "logo": null,
+    "image": "/images/industry/telecom.jpg",
+    "imageCredit": {
+      "author": "Wee Hong",
+      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Sells mobile and broadband subscriptions.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "lei": "743700TU2S3DXWGU7H32",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-tampere-2780808"
+    ]
+  },
+  {
     "id": "eltel-networks-ef74e2cb",
     "name": "Eltel Networks Oy",
     "industry": "Public-source company",
@@ -1374,6 +1012,48 @@
     ]
   },
   {
+    "id": "finnair",
+    "name": "Finnair",
+    "industry": "Travel",
+    "domain": "finnair.com",
+    "brandColor": "#0b1560",
+    "logo": null,
+    "image": "/images/industry/travel.jpg",
+    "imageCredit": {
+      "author": "Diliff",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_2,_London,_England_-_Diliff.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "hint": "Finland's national airline.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "213800SB6EOB8SSK9W63"
+  },
+  {
+    "id": "fiskars",
+    "name": "Fiskars",
+    "industry": "Consumer goods",
+    "domain": "fiskarsgroup.com",
+    "brandColor": "#f47b20",
+    "logo": null,
+    "image": "/images/industry/consumer-goods.jpg",
+    "imageCredit": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Orange-handled scissors, and much more.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700BKTW4EQIVKYY42"
+  },
+  {
     "id": "flaktgroup-finland-36216d66",
     "name": "FläktGroup Finland Oy",
     "industry": "Public-source company",
@@ -1410,6 +1090,27 @@
     "listingUrls": [
       "https://www.jobly.fi/tyopaikka/palveluhenkilo-kuljettaja-tuusula-forcit-explosives-2775681"
     ]
+  },
+  {
+    "id": "fortum",
+    "name": "Fortum",
+    "industry": "Energy",
+    "domain": "fortum.com",
+    "brandColor": "#2e9e5b",
+    "logo": null,
+    "image": "/images/industry/energy.jpg",
+    "imageCredit": {
+      "author": "Matthew T Rader",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Produces and sells electricity in the Nordics.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "635400IUIZZIUJSAMF76"
   },
   {
     "id": "fvr-suomen-rokotetutkimus-6bb57e6c",
@@ -1513,6 +1214,27 @@
     "listingUrls": [
       "https://www.jobly.fi/tyopaikka/puutarhavastaava-hankkija-eura-2772668"
     ]
+  },
+  {
+    "id": "harvia",
+    "name": "Harvia",
+    "industry": "Consumer goods",
+    "domain": "harvia.com",
+    "brandColor": "#b3121f",
+    "logo": null,
+    "image": "/images/industry/consumer-goods.jpg",
+    "imageCredit": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Sauna heaters, exported worldwide.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437002ULTBOWQQOXL69"
   },
   {
     "id": "helsingin-kaupunki-2666f0ea",
@@ -1657,6 +1379,27 @@
       "https://www.jobly.fi/tyopaikka/senior-pscm-2687502",
       "https://www.jobly.fi/tyopaikka/sales-engineer-sales-manager-2709423"
     ]
+  },
+  {
+    "id": "huhtamaki",
+    "name": "Huhtamäki",
+    "industry": "Packaging",
+    "domain": "huhtamaki.com",
+    "brandColor": "#0057b8",
+    "logo": null,
+    "image": "/images/industry/packaging.jpg",
+    "imageCredit": {
+      "author": "Axisadman",
+      "url": "https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "hint": "Coffee cups and food packaging.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "5493007050SJVMXN6L29"
   },
   {
     "id": "huoltovarmuuskeskus-98fdf0fa",
@@ -1817,6 +1560,27 @@
     ]
   },
   {
+    "id": "kesko",
+    "name": "Kesko",
+    "industry": "Retail",
+    "domain": "kesko.fi",
+    "brandColor": "#f36f21",
+    "logo": null,
+    "image": "/images/industry/retail.jpg",
+    "imageCredit": {
+      "author": "Wilfredor",
+      "url": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Runs grocery, building and car retail across Finland.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700OX6HSVMCAHPB95"
+  },
+  {
     "id": "kiinteistomaailma-ae2a1fa0",
     "name": "Kiinteistömaailma",
     "industry": "Public-source company",
@@ -1833,6 +1597,31 @@
     ],
     "listingUrls": [
       "https://www.jobly.fi/tyopaikka/kiinteistonvalityksen-ammattilaisia-ja-myyntineuvottelijoita-2750646"
+    ]
+  },
+  {
+    "id": "kone",
+    "name": "Kone",
+    "industry": "Industrial",
+    "domain": "kone.com",
+    "brandColor": "#1450f5",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Elevators and escalators, plus the people who service them.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "lei": "2138001CNF45JP5XZK38",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500"
     ]
   },
   {
@@ -1891,7 +1680,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -1908,7 +1697,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -1925,7 +1714,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -1942,7 +1731,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
@@ -1963,7 +1752,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -1980,7 +1769,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -1997,7 +1786,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2014,7 +1803,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2031,7 +1820,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2048,7 +1837,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2065,7 +1854,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/projektihallinto"
@@ -2086,7 +1875,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/it"
@@ -2107,7 +1896,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
@@ -2134,7 +1923,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2151,7 +1940,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2168,7 +1957,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2185,7 +1974,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2202,7 +1991,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2219,7 +2008,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
@@ -2240,7 +2029,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2257,7 +2046,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2274,7 +2063,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2291,7 +2080,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2308,7 +2097,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2325,7 +2114,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
@@ -2346,7 +2135,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2363,7 +2152,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2380,7 +2169,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2397,7 +2186,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2414,7 +2203,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2431,7 +2220,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2448,7 +2237,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2465,7 +2254,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2482,7 +2271,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2499,7 +2288,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2516,7 +2305,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2533,7 +2322,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2550,7 +2339,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2567,7 +2356,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2584,7 +2373,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2601,7 +2390,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2618,7 +2407,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2635,7 +2424,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2652,7 +2441,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2669,7 +2458,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2686,7 +2475,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2703,7 +2492,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2720,7 +2509,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2737,7 +2526,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2754,7 +2543,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2771,7 +2560,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2788,7 +2577,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2805,7 +2594,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2822,7 +2611,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2839,7 +2628,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2856,7 +2645,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2873,7 +2662,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2890,7 +2679,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2907,7 +2696,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2924,7 +2713,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/it"
@@ -2945,7 +2734,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2962,7 +2751,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2979,7 +2768,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -2996,7 +2785,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3013,7 +2802,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3030,7 +2819,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3047,7 +2836,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3064,7 +2853,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3081,7 +2870,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3098,7 +2887,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3115,7 +2904,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3132,7 +2921,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3149,7 +2938,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3166,7 +2955,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3183,7 +2972,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3200,7 +2989,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3217,7 +3006,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3234,7 +3023,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3251,7 +3040,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3268,7 +3057,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3285,7 +3074,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3302,7 +3091,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3319,7 +3108,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3336,7 +3125,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3353,7 +3142,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3370,7 +3159,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3387,7 +3176,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3404,7 +3193,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3421,7 +3210,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3438,7 +3227,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3455,7 +3244,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3472,7 +3261,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3489,7 +3278,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3506,7 +3295,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3523,7 +3312,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3540,7 +3329,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3557,7 +3346,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3574,7 +3363,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3591,7 +3380,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3608,7 +3397,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3625,7 +3414,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json",
       "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
@@ -3649,7 +3438,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3666,7 +3455,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3683,7 +3472,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3700,7 +3489,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3717,7 +3506,7 @@
     "imageCredit": null,
     "hint": "Compare the sourced figures and the definition of this category.",
     "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -3822,6 +3611,27 @@
     ]
   },
   {
+    "id": "marimekko",
+    "name": "Marimekko",
+    "industry": "Consumer goods",
+    "domain": "marimekko.com",
+    "brandColor": "#2b2b2b",
+    "logo": null,
+    "image": "/images/industry/consumer-goods.jpg",
+    "imageCredit": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Famous for its poppy-print fabrics.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370053IOY42B9YJ350"
+  },
+  {
     "id": "mentek-advisors-190d673c",
     "name": "Mentek Advisors Oy",
     "industry": "Public-source company",
@@ -3876,6 +3686,38 @@
     ],
     "listingUrls": [
       "https://www.jobly.fi/tyopaikka/legal-recruiter-minjon-2783699"
+    ]
+  },
+  {
+    "id": "neste",
+    "name": "Neste",
+    "industry": "Energy",
+    "domain": "neste.com",
+    "brandColor": "#0063a3",
+    "logo": null,
+    "image": "/images/industry/energy.jpg",
+    "imageCredit": {
+      "author": "Matthew T Rader",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Renewable diesel and jet fuel.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "lei": "5493009GY1X8GQ66AM14",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-refinery-data-engineer-2770929",
+      "https://www.jobly.fi/tyopaikka/senior-business-controller-2785528",
+      "https://www.jobly.fi/tyopaikka/hr-specialist-2784414",
+      "https://www.jobly.fi/tyopaikka/solution-manager-2775849"
     ]
   },
   {
@@ -3935,6 +3777,31 @@
     ],
     "listingUrls": [
       "https://www.jobly.fi/tyopaikka/hoitolatyontekija-2782917"
+    ]
+  },
+  {
+    "id": "nokia",
+    "name": "Nokia",
+    "industry": "Telecom",
+    "domain": "nokia.com",
+    "brandColor": "#124191",
+    "logo": null,
+    "image": "/images/industry/telecom.jpg",
+    "imageCredit": {
+      "author": "Wee Hong",
+      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Builds the networks your phone connects to.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "lei": "549300A0JPRWG1KI7U06",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-ai-data-engineer-2785481"
     ]
   },
   {
@@ -4015,6 +3882,27 @@
     ]
   },
   {
+    "id": "orion",
+    "name": "Orion",
+    "industry": "Pharma",
+    "domain": "orion.fi",
+    "brandColor": "#0072ce",
+    "logo": null,
+    "image": "/images/industry/pharma.jpg",
+    "imageCredit": {
+      "author": "Tehran Times",
+      "url": "https://commons.wikimedia.org/wiki/File:COVIran_Barekat_vaccine_production_03.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Finnish pharmaceutical company.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370029VAHCXDR7B745"
+  },
+  {
     "id": "osuma-henkilostopalvelut-1ad2ced6",
     "name": "Osuma Henkilöstöpalvelut Oy",
     "industry": "Public-source company",
@@ -4041,6 +3929,27 @@
       "https://www.jobly.fi/tyopaikka/hitsaaja-ht-laser-2769407",
       "https://www.jobly.fi/tyopaikka/hitsaaja-ht-laser-2769403"
     ]
+  },
+  {
+    "id": "outokumpu",
+    "name": "Outokumpu",
+    "industry": "Steel",
+    "domain": "outokumpu.com",
+    "brandColor": "#0a2240",
+    "logo": null,
+    "image": "/images/industry/steel.jpg",
+    "imageCredit": {
+      "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
+      "url": "https://commons.wikimedia.org/wiki/File:13_Industry_of_Australia_-_Steelworks_of_BlueScope_Steel_Limited_company_in_Port_Kembla,_Australia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 3.0"
+    },
+    "hint": "Stainless steel producer.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "5493009YRUJJDCFF0R80"
   },
   {
     "id": "oy-vaasan-ammattikorkeakoulu-vasa-yrkeshogskola-9005fccc",
@@ -4180,7 +4089,7 @@
       "license": "CC0"
     },
     "hint": "Makes story-driven console games that take years to build.",
-    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
     "discoverySources": [
       "https://filings.xbrl.org/indexes/filings-2025.json"
     ],
@@ -4778,6 +4687,35 @@
     ]
   },
   {
+    "id": "upm",
+    "name": "UPM",
+    "industry": "Forest",
+    "domain": "upm.com",
+    "brandColor": "#007a3d",
+    "logo": null,
+    "image": "/images/industry/forest.jpg",
+    "imageCredit": {
+      "author": "kallerna",
+      "url": "https://commons.wikimedia.org/wiki/File:Spring_forest_Yyteri_3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Pulp, paper, timber and biofuels.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/manager-treasury-accounting-2769749",
+      "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327",
+      "https://www.jobly.fi/tyopaikka/director-it-sourcing-category-2777935"
+    ],
+    "lei": "213800EC6PW5VU4J9U64"
+  },
+  {
     "id": "vaihtoautomaa-ea3e0b2f",
     "name": "Vaihtoautomaa",
     "industry": "Public-source company",
@@ -4811,6 +4749,37 @@
       "license": "CC BY 2.0"
     },
     "hint": "Milk, cheese and the Oltermanni brand."
+  },
+  {
+    "id": "valmet",
+    "name": "Valmet",
+    "industry": "Industrial",
+    "domain": "valmet.com",
+    "brandColor": "#c8102e",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Machinery for pulp, paper and energy plants.",
+    "lastSeenAt": "2026-10-24T19:21:48.022617+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "lei": "213800D9O7FUQDH83V62",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/software-senior-design-engineer-2774556",
+      "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000",
+      "https://www.jobly.fi/tyopaikka/director-pricing-availability-2781111",
+      "https://www.jobly.fi/tyopaikka/technical-documentation-manager-2784626"
+    ]
   },
   {
     "id": "vianor-d750292c",
@@ -4849,6 +4818,37 @@
     "listingUrls": [
       "https://www.jobly.fi/tyopaikka/ostaja-vuorenmaa-yhtiot-oy-2776064"
     ]
+  },
+  {
+    "id": "wartsila",
+    "name": "Wärtsilä",
+    "industry": "Industrial",
+    "domain": "wartsila.com",
+    "brandColor": "#ff7300",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Engines and power systems for ships and power plants.",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/maintenance-processes-and-tools-expert-2746125",
+      "https://www.jobly.fi/tyopaikka/global-travel-manager-2780710",
+      "https://www.jobly.fi/tyopaikka/category-manager-2779297",
+      "https://www.jobly.fi/tyopaikka/senior-advisor-2779505",
+      "https://www.jobly.fi/tyopaikka/people-analytics-partner-2776343"
+    ],
+    "lei": "743700G7A9J1PHM3X223"
   },
   {
     "id": "weidmuller-4e04b40b",
