@@ -11,10 +11,8 @@ import { Icon } from "@/components/ui/Icon";
 
 type State =
   | { status: "idle" }
-  | { status: "loading"; name: string }
   | { status: "found"; result: LookupResult; datasetId?: string }
-  | { status: "not-found"; name: string }
-  | { status: "error"; message: string };
+  | { status: "not-found"; name: string };
 
 function fromDataset(c: Company): LookupResult {
   return {
@@ -54,32 +52,15 @@ export function YourCompany({ companies }: { companies: Company[] }) {
   const [name, setName] = useState("");
   const [state, setState] = useState<State>({ status: "idle" });
 
-  const submit = async (e: FormEvent) => {
+  // Only companies in the game's dataset, so every figure shown has been through the pipeline.
+  const submit = (e: FormEvent) => {
     e.preventDefault();
     const query = name.trim();
     if (!query) return;
-
-    // Companies already in the game answer instantly; anything else goes to the AI lookup.
     const known = companies.find((c) => c.name.toLowerCase() === query.toLowerCase());
-    if (known) {
-      setState({ status: "found", result: fromDataset(known), datasetId: known.id });
-      return;
-    }
-
-    setState({ status: "loading", name: query });
-    try {
-      const response = await fetch("/api/lookup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: query }),
-      });
-      const data = await response.json();
-      if (!response.ok) setState({ status: "error", message: data.error ?? "Lookup failed." });
-      else if (data.result) setState({ status: "found", result: data.result });
-      else setState({ status: "not-found", name: query });
-    } catch {
-      setState({ status: "error", message: "Couldn't reach the server." });
-    }
+    setState(
+      known ? { status: "found", result: fromDataset(known), datasetId: known.id } : { status: "not-found", name: query },
+    );
   };
 
   return (
@@ -98,22 +79,16 @@ export function YourCompany({ companies }: { companies: Company[] }) {
             <option key={c.id} value={c.name} />
           ))}
         </datalist>
-        <button type="submit" disabled={state.status === "loading"} className="btn btn-dark">
+        <button type="submit" className="btn btn-dark">
           Look up
         </button>
       </form>
 
-      {state.status === "loading" && (
-        <p className="mt-4 animate-pulse text-sm text-ink-2">
-          Velho is looking up {state.name}&apos;s latest public figures. This takes about 20 seconds.
-        </p>
-      )}
       {state.status === "not-found" && (
         <p className="mt-4 text-sm text-ink-2">
-          Couldn&apos;t find reliable public figures for {state.name}. Try the full company name.
+          {state.name} isn&apos;t in the game yet. Pick a company from the list.
         </p>
       )}
-      {state.status === "error" && <p className="mt-4 text-sm text-clay">{state.message}</p>}
       {state.status === "found" && <Placement companies={companies} result={state.result} datasetId={state.datasetId} />}
     </section>
   );
