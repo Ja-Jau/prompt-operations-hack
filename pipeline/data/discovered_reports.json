@@ -1,0 +1,734 @@
+{
+  "kone": {
+    "reportUrl": "https://filings.xbrl.org/2138001CNF45JP5XZK38/2025-12-31/ESEF/FI/0/2138001CNF45JP5XZK38-2025-12-31-en/reports/2138001CNF45JP5XZK38-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "2138001CNF45JP5XZK38",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "valmet": {
+    "reportUrl": "https://filings.xbrl.org/213800D9O7FUQDH83V62/2025-12-31/ESEF/FI/1/213800D9O7FUQDH83V62-2025-12-31-en/reports/213800D9O7FUQDH83V62-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "213800D9O7FUQDH83V62",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "upm": {
+    "reportUrl": "https://filings.xbrl.org/213800EC6PW5VU4J9U64/2025-12-31/ESEF/FI/0/213800EC6PW5VU4J9U64-2025-12-31-en/reports/213800EC6PW5VU4J9U64-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "213800EC6PW5VU4J9U64",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "finnair": {
+    "reportUrl": "https://filings.xbrl.org/213800SB6EOB8SSK9W63/2025-12-31/ESEF/FI/0/213800SB6EOB8SSK9W63-2025-12-31-1-en/reports/213800SB6EOB8SSK9W63-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "213800SB6EOB8SSK9W63",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-52990007axnss4pnx352": {
+    "reportUrl": "https://filings.xbrl.org/52990007AXNSS4PNX352/2025-12-31/ESEF/FI/0/52990007AXNSS4PNX352-2025-12-31-en/reports/52990007AXNSS4PNX352-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "52990007AXNSS4PNX352",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-529900c4p88aphfz5h47": {
+    "reportUrl": "https://filings.xbrl.org/529900C4P88APHFZ5H47/2025-12-31/ESEF/FI/0/529900C4P88APHFZ5H47-2025-12-31-1-fi/reports/529900C4P88APHFZ5H47-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "529900C4P88APHFZ5H47",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-529900hekoenjhpnn480": {
+    "reportUrl": "https://filings.xbrl.org/529900HEKOENJHPNN480/2025-12-31/ESEF/FI/0/529900HEKOENJHPNN480-2025-12-31-1-en/reports/529900HEKOENJHPNN480-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "529900HEKOENJHPNN480",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-529900m13gm4vste6w80": {
+    "reportUrl": "https://filings.xbrl.org/529900M13GM4VSTE6W80/2025-12-31/ESEF/FI/0/529900M13GM4VSTE6W80-2025-12-31-fi/reports/529900M13GM4VSTE6W80-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "529900M13GM4VSTE6W80",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-529900odi3047e2liv03": {
+    "reportUrl": "https://filings.xbrl.org/529900ODI3047E2LIV03/2025-12-31/ESEF/FI/0/nordea-2025-12-31-1-sv/reports/nordea-2025-12-31-1-sv.xhtml",
+    "reportYear": 2025,
+    "lei": "529900ODI3047E2LIV03",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-5493002b0govf42kwx33": {
+    "reportUrl": "https://filings.xbrl.org/5493002B0GOVF42KWX33/2025-12-31/ESEF/FI/0/5493002B0GOVF42KWX33-2025-12-31-fi/reports/5493002B0GOVF42KWX33-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "5493002B0GOVF42KWX33",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "huhtamaki": {
+    "reportUrl": "https://filings.xbrl.org/5493007050SJVMXN6L29/2025-12-31/ESEF/FI/0/5493007050SJVMXN6L29-2025-12-31-1-en/reports/5493007050SJVMXN6L29-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "5493007050SJVMXN6L29",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "neste": {
+    "reportUrl": "https://filings.xbrl.org/5493009GY1X8GQ66AM14/2025-12-31/ESEF/FI/0/5493009GY1X8GQ66AM14-2025-12-31-1-en/reports/5493009GY1X8GQ66AM14-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "5493009GY1X8GQ66AM14",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "outokumpu": {
+    "reportUrl": "https://filings.xbrl.org/5493009YRUJJDCFF0R80/2025-12-31/ESEF/FI/1/5493009YRUJJDCFF0R80-2025-12-31-1-en/reports/5493009YRUJJDCFF0R80-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "5493009YRUJJDCFF0R80",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-5493009zdbvg2co1o689": {
+    "reportUrl": "https://filings.xbrl.org/5493009ZDBVG2CO1O689/2025-12-31/ESEF/FI/0/5493009ZDBVG2CO1O689-2025-12-31-fi/reports/5493009ZDBVG2CO1O689-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "5493009ZDBVG2CO1O689",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "nokia": {
+    "reportUrl": "https://filings.xbrl.org/549300A0JPRWG1KI7U06/2025-12-31/ESEF/FI/0/549300A0JPRWG1KI7U06-2025-12-31-1-fi/reports/549300A0JPRWG1KI7U06-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "549300A0JPRWG1KI7U06",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-549300ef0cdeqzbma096": {
+    "reportUrl": "https://filings.xbrl.org/549300EF0CDEQZBMA096/2025-12-31/ESEF/FI/0/549300EF0CDEQZBMA096-2025-12-31-en/reports/549300EF0CDEQZBMA096-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "549300EF0CDEQZBMA096",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-549300ew2km4krokqv31": {
+    "reportUrl": "https://filings.xbrl.org/549300EW2KM4KROKQV31/2025-12-31/ESEF/FI/1/549300EW2KM4KROKQV31-2025-12-31-en/reports/549300EW2KM4KROKQV31-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "549300EW2KM4KROKQV31",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-549300p8n0p6kdgtj206": {
+    "reportUrl": "https://filings.xbrl.org/549300P8N0P6KDGTJ206/2025-12-31/ESEF/FI/1/549300P8N0P6KDGTJ206-2025-12-31-1-en/reports/549300P8N0P6KDGTJ206-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "549300P8N0P6KDGTJ206",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-549300r0vn9c371w0e07": {
+    "reportUrl": "https://filings.xbrl.org/549300R0VN9C371W0E07/2025-12-31/ESEF/FI/1/549300R0VN9C371W0E07-2025-12-31-en/reports/549300R0VN9C371W0E07-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "549300R0VN9C371W0E07",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-549300uwb1air85bm957": {
+    "reportUrl": "https://filings.xbrl.org/549300UWB1AIR85BM957/2025-12-31/ESEF/FI/3/549300UWB1AIR85BM957-2025-12-31-2-en/reports/549300UWB1AIR85BM957-2025-12-31-2-en.xhtml",
+    "reportYear": 2025,
+    "lei": "549300UWB1AIR85BM957",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "fortum": {
+    "reportUrl": "https://filings.xbrl.org/635400IUIZZIUJSAMF76/2025-12-31/ESEF/FI/0/635400IUIZZIUJSAMF76-2025-12-31-fi/reports/635400IUIZZIUJSAMF76-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "635400IUIZZIUJSAMF76",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-636700ebb0sa4501at18": {
+    "reportUrl": "https://filings.xbrl.org/636700EBB0SA4501AT18/2025-12-31/ESEF/FI/0/636700EBB0SA4501AT18-2025-12-31-0-en/reports/636700EBB0SA4501AT18-2025-12-31-0-en.xhtml",
+    "reportYear": 2025,
+    "lei": "636700EBB0SA4501AT18",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-636700z25zqxlmz3cy73": {
+    "reportUrl": "https://filings.xbrl.org/636700Z25ZQXLMZ3CY73/2025-12-31/ESEF/FI/0/636700Z25ZQXLMZ3CY73-2025-12-31-fi/reports/636700Z25ZQXLMZ3CY73-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "636700Z25ZQXLMZ3CY73",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437000iqjs6zc1fr041": {
+    "reportUrl": "https://filings.xbrl.org/7437000IQJS6ZC1FR041/2025-12-31/ESEF/FI/0/7437000IQJS6ZC1FR041-2025-12-31-1-fi/reports/7437000IQJS6ZC1FR041-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "7437000IQJS6ZC1FR041",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437000na1i6y1oqwl24": {
+    "reportUrl": "https://filings.xbrl.org/7437000NA1I6Y1OQWL24/2025-12-31/ESEF/FI/0/7437000NA1I6Y1OQWL24-2025-12-31-1-en/reports/7437000NA1I6Y1OQWL24-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437000NA1I6Y1OQWL24",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437000pn6e448npgy86": {
+    "reportUrl": "https://filings.xbrl.org/7437000PN6E448NPGY86/2025-12-31/ESEF/FI/0/7437000PN6E448NPGY86-2025-12-31-fi/reports/7437000PN6E448NPGY86-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "7437000PN6E448NPGY86",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437000tb0ghdhlpx677": {
+    "reportUrl": "https://filings.xbrl.org/7437000TB0GHDHLPX677/2025-12-31/ESEF/FI/0/aspooyj-2025-12-31-1-en/reports/aspooyj-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437000TB0GHDHLPX677",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437000zp669lkutz738": {
+    "reportUrl": "https://filings.xbrl.org/7437000ZP669LKUTZ738/2025-12-31/ESEF/FI/0/7437000ZP669LKUTZ738-2025-12-31-fi/reports/7437000ZP669LKUTZ738-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "7437000ZP669LKUTZ738",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-74370016pw2v4w02lx91": {
+    "reportUrl": "https://filings.xbrl.org/74370016PW2V4W02LX91/2025-12-31/ESEF/FI/0/74370016PW2V4W02LX91-2025-12-31-0-en/reports/74370016PW2V4W02LX91-2025-12-31-0-en.xhtml",
+    "reportYear": 2025,
+    "lei": "74370016PW2V4W02LX91",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437001aezhll3uex093": {
+    "reportUrl": "https://filings.xbrl.org/7437001AEZHLL3UEX093/2025-12-31/ESEF/FI/0/7437001AEZHLL3UEX093-2025-12-31-1-en/reports/7437001AEZHLL3UEX093-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437001AEZHLL3UEX093",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700205jamgm80qd88": {
+    "reportUrl": "https://filings.xbrl.org/743700205JAMGM80QD88/2025-12-31/ESEF/FI/0/743700205JAMGM80QD88-2025-12-31/reports/743700205JAMGM80QD88-2025-12-31-0-en.html",
+    "reportYear": 2025,
+    "lei": "743700205JAMGM80QD88",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "orion": {
+    "reportUrl": "https://filings.xbrl.org/74370029VAHCXDR7B745/2025-12-31/ESEF/FI/0/74370029VAHCXDR7B745-2025-12-31-1-en/reports/74370029VAHCXDR7B745-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "74370029VAHCXDR7B745",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "harvia": {
+    "reportUrl": "https://filings.xbrl.org/7437002ULTBOWQQOXL69/2025-12-31/ESEF/FI/0/7437002ULTBOWQQOXL69-2025-12-31-1-en/reports/7437002ULTBOWQQOXL69-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437002ULTBOWQQOXL69",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-74370031y7rk5h88cq48": {
+    "reportUrl": "https://filings.xbrl.org/74370031Y7RK5H88CQ48/2025-12-31/ESEF/FI/1/74370031Y7RK5H88CQ48-2025-12-31-en/reports/74370031Y7RK5H88CQ48-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "74370031Y7RK5H88CQ48",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437003b5wfboiefy714": {
+    "reportUrl": "https://filings.xbrl.org/7437003B5WFBOIEFY714/2025-12-31/ESEF/FI/1/7437003B5WFBOIEFY714-2025-12-31-en/reports/7437003B5WFBOIEFY714-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437003B5WFBOIEFY714",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437003nx7wwvrt6aj55": {
+    "reportUrl": "https://filings.xbrl.org/7437003NX7WWVRT6AJ55/2025-12-31/ESEF/FI/0/7437003NX7WWVRT6AJ55-2025-12-31-1-fi/reports/7437003NX7WWVRT6AJ55-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "7437003NX7WWVRT6AJ55",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "remedy": {
+    "reportUrl": "https://filings.xbrl.org/7437003VZ3JPF7DBTG92/2025-12-31/ESEF/FI/0/7437003VZ3JPF7DBTG92-2025-12-31-1-fi/reports/7437003VZ3JPF7DBTG92-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "7437003VZ3JPF7DBTG92",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437003wyxjusv27q316": {
+    "reportUrl": "https://filings.xbrl.org/7437003WYXJUSV27Q316/2025-12-31/ESEF/FI/0/7437003WYXJUSV27Q316-2025-12-31-1-en/reports/7437003WYXJUSV27Q316-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437003WYXJUSV27Q316",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700498l5thnqwvl66": {
+    "reportUrl": "https://filings.xbrl.org/743700498L5THNQWVL66/2025-12-31/ESEF/FI/1/743700498L5THNQWVL66-2025-12-31-en/reports/743700498L5THNQWVL66-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700498L5THNQWVL66",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437004genttqhmnq407": {
+    "reportUrl": "https://filings.xbrl.org/7437004GENTTQHMNQ407/2025-12-31/ESEF/FI/1/7437004GENTTQHMNQ407-2025-12-31-1-en/reports/7437004GENTTQHMNQ407-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437004GENTTQHMNQ407",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437004xd6u0ffdct507": {
+    "reportUrl": "https://filings.xbrl.org/7437004XD6U0FFDCT507/2025-12-31/ESEF/FI/0/7437004XD6U0FFDCT507-2025-12-31-en/reports/7437004XD6U0FFDCT507-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437004XD6U0FFDCT507",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "marimekko": {
+    "reportUrl": "https://filings.xbrl.org/74370053IOY42B9YJ350/2025-12-31/ESEF/FI/0/74370053IOY42B9YJ350-2025-12-31-1-en/reports/74370053IOY42B9YJ350-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "74370053IOY42B9YJ350",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-74370058mtrledochv67": {
+    "reportUrl": "https://filings.xbrl.org/74370058MTRLEDOCHV67/2025-12-31/ESEF/FI/0/74370058MTRLEDOCHV67-2025-12-31-1-en/reports/74370058MTRLEDOCHV67-2025-12-31-1-en.html",
+    "reportYear": 2025,
+    "lei": "74370058MTRLEDOCHV67",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-74370058zyob0giyut38": {
+    "reportUrl": "https://filings.xbrl.org/74370058ZYOB0GIYUT38/2025-12-31/ESEF/FI/0/74370058ZYOB0GIYUT38-2025-12-31-1-fi/reports/74370058ZYOB0GIYUT38-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "74370058ZYOB0GIYUT38",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437006i5533r06ju690": {
+    "reportUrl": "https://filings.xbrl.org/7437006I5533R06JU690/2025-12-31/ESEF/FI/0/7437006I5533R06JU690-2025-12-31-1-en/reports/7437006I5533R06JU690-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437006I5533R06JU690",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437007n96fk4n3wht09": {
+    "reportUrl": "https://filings.xbrl.org/7437007N96FK4N3WHT09/2025-12-31/ESEF/FI/0/7437007N96FK4N3WHT09-2025-12-31-1-fi/reports/7437007N96FK4N3WHT09-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "7437007N96FK4N3WHT09",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437007ypuoqz8ov1r42": {
+    "reportUrl": "https://filings.xbrl.org/7437007YPUOQZ8OV1R42/2025-12-31/ESEF/FI/0/7437007YPUOQZ8OV1R42-2025-12-31-1-en/reports/7437007YPUOQZ8OV1R42-2025-12-31-1-en.html",
+    "reportYear": 2025,
+    "lei": "7437007YPUOQZ8OV1R42",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-74370083282nhip4qd02": {
+    "reportUrl": "https://filings.xbrl.org/74370083282NHIP4QD02/2025-12-31/ESEF/FI/0/74370083282NHIP4QD02-2025-12-31-1-fi/reports/74370083282NHIP4QD02-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "74370083282NHIP4QD02",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-74370089attsnbxjvt29": {
+    "reportUrl": "https://filings.xbrl.org/74370089ATTSNBXJVT29/2025-12-31/ESEF/FI/0/74370089ATTSNBXJVT29-2025-12-31-1-en/reports/74370089ATTSNBXJVT29-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "74370089ATTSNBXJVT29",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437008rmk8bswn39t09": {
+    "reportUrl": "https://filings.xbrl.org/7437008RMK8BSWN39T09/2025-12-31/ESEF/FI/1/7437008RMK8BSWN39T09-2025-12-31-1-en/reports/7437008RMK8BSWN39T09-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437008RMK8BSWN39T09",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437009ivywgee4s7b77": {
+    "reportUrl": "https://filings.xbrl.org/7437009IVYWGEE4S7B77/2025-12-31/ESEF/FI/0/7437009IVYWGEE4S7B77-2025-12-31-1-en/reports/7437009IVYWGEE4S7B77-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437009IVYWGEE4S7B77",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-7437009tb42o2ab3jw91": {
+    "reportUrl": "https://filings.xbrl.org/7437009TB42O2AB3JW91/2025-12-31/ESEF/FI/0/7437009TB42O2AB3JW91-2025-12-31-1-en/reports/7437009TB42O2AB3JW91-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "7437009TB42O2AB3JW91",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700al68pux6jms644": {
+    "reportUrl": "https://filings.xbrl.org/743700AL68PUX6JMS644/2025-12-31/ESEF/FI/0/743700AL68PUX6JMS644-2025-12-31-1-fi/reports/743700AL68PUX6JMS644-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700AL68PUX6JMS644",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700ax3tiwvl1lc349": {
+    "reportUrl": "https://filings.xbrl.org/743700AX3TIWVL1LC349/2025-12-31/ESEF/FI/0/743700AX3TIWVL1LC349-2025-12-31-1-fi/reports/743700AX3TIWVL1LC349-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700AX3TIWVL1LC349",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "fiskars": {
+    "reportUrl": "https://filings.xbrl.org/743700BKTW4EQIVKYY42/2025-12-31/ESEF/FI/0/Fiskars-2025-12-31-1-en/reports/Fiskars-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700BKTW4EQIVKYY42",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700cjrqru0007gn59": {
+    "reportUrl": "https://filings.xbrl.org/743700CJRQRU0007GN59/2025-12-31/ESEF/FI/0/743700CJRQRU0007GN59-2025-12-31-0-fi/reports/743700CJRQRU0007GN59-2025-12-31-0-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700CJRQRU0007GN59",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700dohlqienktc391": {
+    "reportUrl": "https://filings.xbrl.org/743700DOHLQIENKTC391/2025-12-31/ESEF/FI/1/743700DOHLQIENKTC391-2025-12-31-en/reports/743700DOHLQIENKTC391-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700DOHLQIENKTC391",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700dyz6r1qnlwqa56": {
+    "reportUrl": "https://filings.xbrl.org/743700DYZ6R1QNLWQA56/2025-12-31/ESEF/FI/0/743700DYZ6R1QNLWQA56-2025-12-31-en/reports/743700DYZ6R1QNLWQA56-2025-12-31-0-en.html",
+    "reportYear": 2025,
+    "lei": "743700DYZ6R1QNLWQA56",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700eig9tdb5qnzs09": {
+    "reportUrl": "https://filings.xbrl.org/743700EIG9TDB5QNZS09/2025-12-31/ESEF/FI/0/743700EIG9TDB5QNZS09-2025-12-31-en/reports/743700EIG9TDB5QNZS09-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700EIG9TDB5QNZS09",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700epluwxe25hgm03": {
+    "reportUrl": "https://filings.xbrl.org/743700EPLUWXE25HGM03/2025-12-31/ESEF/FI/0/743700EPLUWXE25HGM03-2025-12-31-1-en/reports/743700EPLUWXE25HGM03-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700EPLUWXE25HGM03",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700f6clx8jmydep21": {
+    "reportUrl": "https://filings.xbrl.org/743700F6CLX8JMYDEP21/2025-12-31/ESEF/FI/0/743700F6CLX8JMYDEP21-2025-12-31-1-fi/reports/743700F6CLX8JMYDEP21-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700F6CLX8JMYDEP21",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700ftbnxaun57rh30": {
+    "reportUrl": "https://filings.xbrl.org/743700FTBNXAUN57RH30/2025-12-31/ESEF/FI/0/743700FTBNXAUN57RH30-2025-12-31-1-fi/reports/743700FTBNXAUN57RH30-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700FTBNXAUN57RH30",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700g00629v99pe435": {
+    "reportUrl": "https://filings.xbrl.org/743700G00629V99PE435/2025-12-31/ESEF/FI/0/743700G00629V99PE435-2025-12-31-1-fi/reports/743700G00629V99PE435-2025-12-31-1-fi.html",
+    "reportYear": 2025,
+    "lei": "743700G00629V99PE435",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700gb29fxc0vxf414": {
+    "reportUrl": "https://filings.xbrl.org/743700GB29FXC0VXF414/2025-12-31/ESEF/FI/0/743700GB29FXC0VXF414-2025-12-31-en/reports/743700GB29FXC0VXF414-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700GB29FXC0VXF414",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700gc62jlhfbund16": {
+    "reportUrl": "https://filings.xbrl.org/743700GC62JLHFBUND16/2025-12-31/ESEF/FI/0/743700GC62JLHFBUND16-2025-12-31-1-sv/reports/743700GC62JLHFBUND16-2025-12-31-1-sv.xhtml",
+    "reportYear": 2025,
+    "lei": "743700GC62JLHFBUND16",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700go2xu2zyydkw67": {
+    "reportUrl": "https://filings.xbrl.org/743700GO2XU2ZYYDKW67/2025-12-31/ESEF/FI/0/qtgroupoyj-2025-12-31-1-en/reports/qtgroupoyj-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700GO2XU2ZYYDKW67",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700gsl41h2dxzy963": {
+    "reportUrl": "https://filings.xbrl.org/743700GSL41H2DXZY963/2025-12-31/ESEF/FI/0/743700GSL41H2DXZY963-2025-12-31-1-fi/reports/743700GSL41H2DXZY963-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700GSL41H2DXZY963",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700hohmohaanhff73": {
+    "reportUrl": "https://filings.xbrl.org/743700HOHMOHAANHFF73/2025-12-31/ESEF/FI/1/743700HOHMOHAANHFF73-2025-12-31-1-en/reports/743700HOHMOHAANHFF73-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700HOHMOHAANHFF73",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700hsiesz75x06h10": {
+    "reportUrl": "https://filings.xbrl.org/743700HSIESZ75X06H10/2025-12-31/ESEF/FI/0/743700HSIESZ75X06H10-2025-12-31-1-fi/reports/743700HSIESZ75X06H10-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700HSIESZ75X06H10",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700hxwtm31zhbxw13": {
+    "reportUrl": "https://filings.xbrl.org/743700HXWTM31ZHBXW13/2025-12-31/ESEF/FI/0/743700HXWTM31ZHBXW13-2025-12-31-fi/reports/743700HXWTM31ZHBXW13-2025-12-31-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700HXWTM31ZHBXW13",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700i27e0fwsxlkk04": {
+    "reportUrl": "https://filings.xbrl.org/743700I27E0FWSXLKK04/2025-12-31/ESEF/FI/0/reveniogroup-2025-12-31-0-en/reports/reveniogroup-2025-12-31-0-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700I27E0FWSXLKK04",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700ie9nqgf9yzai97": {
+    "reportUrl": "https://filings.xbrl.org/743700IE9NQGF9YZAI97/2025-12-31/ESEF/FI/0/must-2025-12-31-1-en/reports/must-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700IE9NQGF9YZAI97",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700ifqi6w89m1iy95": {
+    "reportUrl": "https://filings.xbrl.org/743700IFQI6W89M1IY95/2025-12-31/ESEF/FI/0/743700IFQI6W89M1IY95-2025-12-31-1-en/reports/743700IFQI6W89M1IY95-2025-12-31-1-en.html",
+    "reportYear": 2025,
+    "lei": "743700IFQI6W89M1IY95",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700ilu1pl86iw3429": {
+    "reportUrl": "https://filings.xbrl.org/743700ILU1PL86IW3429/2025-12-31/ESEF/FI/0/743700ILU1PL86IW3429-2025-12-31-1-en/reports/743700ILU1PL86IW3429-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700ILU1PL86IW3429",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700j2wo3j6xgfpg77": {
+    "reportUrl": "https://filings.xbrl.org/743700J2WO3J6XGFPG77/2025-12-31/ESEF/FI/0/743700J2WO3J6XGFPG77-2025-12-31-0-fi/reports/743700J2WO3J6XGFPG77-2025-12-31-0-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700J2WO3J6XGFPG77",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700j7nht5olsj3b78": {
+    "reportUrl": "https://filings.xbrl.org/743700J7NHT5OLSJ3B78/2025-12-31/ESEF/FI/0/743700J7NHT5OLSJ3B78-2025-12-31-1-fi/reports/743700J7NHT5OLSJ3B78-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700J7NHT5OLSJ3B78",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700jiw1lauzdh9012": {
+    "reportUrl": "https://filings.xbrl.org/743700JIW1LAUZDH9012/2025-12-31/ESEF/FI/0/743700JIW1LAUZDH9012-2025-12-31-fi/reports/743700JIW1LAUZDH9012-2025-12-31-fi.html",
+    "reportYear": 2025,
+    "lei": "743700JIW1LAUZDH9012",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700jmxcc11crjcs71": {
+    "reportUrl": "https://filings.xbrl.org/743700JMXCC11CRJCS71/2025-12-31/ESEF/FI/0/743700JMXCC11CRJCS71-2025-12-31-1-fi/reports/743700JMXCC11CRJCS71-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700JMXCC11CRJCS71",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700kkb8q035k38488": {
+    "reportUrl": "https://filings.xbrl.org/743700KKB8Q035K38488/2025-12-31/ESEF/FI/1/743700KKB8Q035K38488-2025-12-31-1-en/reports/743700KKB8Q035K38488-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700KKB8Q035K38488",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700kmzl7e8pli5x73": {
+    "reportUrl": "https://filings.xbrl.org/743700KMZL7E8PLI5X73/2025-12-31/ESEF/FI/0/743700KMZL7E8PLI5X73-2025-12-31-1-fi/reports/743700KMZL7E8PLI5X73-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700KMZL7E8PLI5X73",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700koul1gqqqrep40": {
+    "reportUrl": "https://filings.xbrl.org/743700KOUL1GQQQREP40/2025-12-31/ESEF/FI/0/743700KOUL1GQQQREP40-2025-12-31-1-en/reports/743700KOUL1GQQQREP40-2025-12-31-1-en.html",
+    "reportYear": 2025,
+    "lei": "743700KOUL1GQQQREP40",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700lsjbdd7tmlad92": {
+    "reportUrl": "https://filings.xbrl.org/743700LSJBDD7TMLAD92/2025-12-31/ESEF/FI/0/Taaleri-2025-12-31-0-en/reports/Taaleri-2025-12-31-0-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700LSJBDD7TMLAD92",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700m4eievd61pnn55": {
+    "reportUrl": "https://filings.xbrl.org/743700M4EIEVD61PNN55/2025-12-31/ESEF/FI/0/743700M4EIEVD61PNN55-2025-12-31-en/reports/743700M4EIEVD61PNN55-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700M4EIEVD61PNN55",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700mrpvyi7ashcx38": {
+    "reportUrl": "https://filings.xbrl.org/743700MRPVYI7ASHCX38/2025-12-31/ESEF/FI/0/743700MRPVYI7ASHCX38-2025-12-31-1-fi/reports/743700MRPVYI7ASHCX38-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700MRPVYI7ASHCX38",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700nc0v49ajsqkw42": {
+    "reportUrl": "https://filings.xbrl.org/743700NC0V49AJSQKW42/2025-12-31/ESEF/FI/0/trai-2025-12-31-0-fi/reports/trai-2025-12-31-0-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700NC0V49AJSQKW42",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700nfg5w5i59ovx65": {
+    "reportUrl": "https://filings.xbrl.org/743700NFG5W5I59OVX65/2025-12-31/ESEF/FI/1/743700NFG5W5I59OVX65-2025-12-31-en/reports/743700NFG5W5I59OVX65-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700NFG5W5I59OVX65",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700nrl9eh2flph480": {
+    "reportUrl": "https://filings.xbrl.org/743700NRL9EH2FLPH480/2025-12-31/ESEF/FI/0/743700NRL9EH2FLPH480-2025-12-31-1-fi/reports/743700NRL9EH2FLPH480-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700NRL9EH2FLPH480",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700o69nchtnev0362": {
+    "reportUrl": "https://filings.xbrl.org/743700O69NCHTNEV0362/2025-12-31/ESEF/FI/1/743700O69NCHTNEV0362-2025-12-31-1-en/reports/743700O69NCHTNEV0362-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700O69NCHTNEV0362",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700oajk6l28y2nn56": {
+    "reportUrl": "https://filings.xbrl.org/743700OAJK6L28Y2NN56/2025-12-31/ESEF/FI/0/743700OAJK6L28Y2NN56-2025-12-31-1-fi/reports/743700OAJK6L28Y2NN56-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700OAJK6L28Y2NN56",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "kesko": {
+    "reportUrl": "https://filings.xbrl.org/743700OX6HSVMCAHPB95/2025-12-31/ESEF/FI/1/743700OX6HSVMCAHPB95-2025-12-31-0-en/reports/743700OX6HSVMCAHPB95-2025-12-31-0-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700OX6HSVMCAHPB95",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700pembij4gpcyx48": {
+    "reportUrl": "https://filings.xbrl.org/743700PEMBIJ4GPCYX48/2025-12-31/ESEF/FI/0/743700PEMBIJ4GPCYX48-2025-12-31-fi/reports/743700PEMBIJ4GPCYX48-2025-12-31-fi.html",
+    "reportYear": 2025,
+    "lei": "743700PEMBIJ4GPCYX48",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700pouuq3cs3q7s40": {
+    "reportUrl": "https://filings.xbrl.org/743700POUUQ3CS3Q7S40/2025-12-31/ESEF/FI/0/743700POUUQ3CS3Q7S40-2025-12-31-1-fi/reports/743700POUUQ3CS3Q7S40-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700POUUQ3CS3Q7S40",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700qvag6oxk5op587": {
+    "reportUrl": "https://filings.xbrl.org/743700QVAG6OXK5OP587/2025-12-31/ESEF/FI/0/743700QVAG6OXK5OP587-2025-12-31-en/reports/743700QVAG6OXK5OP587-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700QVAG6OXK5OP587",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700qze6b52shhtv75": {
+    "reportUrl": "https://filings.xbrl.org/743700QZE6B52SHHTV75/2025-12-31/ESEF/FI/0/743700QZE6B52SHHTV75-2025-12-31-1-en/reports/743700QZE6B52SHHTV75-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700QZE6B52SHHTV75",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700r4fa6avh5j3d68": {
+    "reportUrl": "https://filings.xbrl.org/743700R4FA6AVH5J3D68/2025-12-31/ESEF/FI/0/743700R4FA6AVH5J3D68-2025-12-31-1-en/reports/743700R4FA6AVH5J3D68-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700R4FA6AVH5J3D68",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700rndd7ku11hw873": {
+    "reportUrl": "https://filings.xbrl.org/743700RNDD7KU11HW873/2025-12-31/ESEF/FI/0/743700RNDD7KU11HW873-2025-12-31-1-en/reports/743700RNDD7KU11HW873-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700RNDD7KU11HW873",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700rsfzuiqyabyt14": {
+    "reportUrl": "https://filings.xbrl.org/743700RSFZUIQYABYT14/2025-12-31/ESEF/FI/0/743700RSFZUIQYABYT14-2025-12-31-1-en/reports/743700RSFZUIQYABYT14-2025-12-31-1-en.html",
+    "reportYear": 2025,
+    "lei": "743700RSFZUIQYABYT14",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700t69obbjo7tca15": {
+    "reportUrl": "https://filings.xbrl.org/743700T69OBBJO7TCA15/2025-12-31/ESEF/FI/0/743700T69OBBJO7TCA15-2025-12-31-1-en/reports/743700T69OBBJO7TCA15-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700T69OBBJO7TCA15",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700tdb62dgafrob24": {
+    "reportUrl": "https://filings.xbrl.org/743700TDB62DGAFROB24/2025-12-31/ESEF/FI/0/743700TDB62DGAFROB24-2025-12-31-1-fi/reports/743700TDB62DGAFROB24-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700TDB62DGAFROB24",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700tsb08bo83sjr33": {
+    "reportUrl": "https://filings.xbrl.org/743700TSB08BO83SJR33/2025-12-31/ESEF/FI/0/743700TSB08BO83SJR33-2025-12-31-1-fi/reports/743700TSB08BO83SJR33-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700TSB08BO83SJR33",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "elisa": {
+    "reportUrl": "https://filings.xbrl.org/743700TU2S3DXWGU7H32/2025-12-31/ESEF/FI/1/743700TU2S3DXWGU7H32-2025-12-31-1-en/reports/743700TU2S3DXWGU7H32-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700TU2S3DXWGU7H32",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700uf3rl386wida22": {
+    "reportUrl": "https://filings.xbrl.org/743700UF3RL386WIDA22/2025-12-31/ESEF/FI/0/743700UF3RL386WIDA22-2025-12-31-1-en/reports/743700UF3RL386WIDA22-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700UF3RL386WIDA22",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700v3i7cli3dj8l62": {
+    "reportUrl": "https://filings.xbrl.org/743700V3I7CLI3DJ8L62/2025-12-31/ESEF/FI/1/743700V3I7CLI3DJ8L62-2025-12-31-1-en/reports/743700V3I7CLI3DJ8L62-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700V3I7CLI3DJ8L62",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700vk1nb8hrgtqh74": {
+    "reportUrl": "https://filings.xbrl.org/743700VK1NB8HRGTQH74/2025-12-31/ESEF/FI/0/743700VK1NB8HRGTQH74-2025-12-31-1-en/reports/743700VK1NB8HRGTQH74-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700VK1NB8HRGTQH74",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700vmg6kwf0fw1560": {
+    "reportUrl": "https://filings.xbrl.org/743700VMG6KWF0FW1560/2025-12-31/ESEF/FI/0/743700VMG6KWF0FW1560-2025-12-31-fi/reports/743700VMG6KWF0FW1560-2025-12-31-0-fi.html",
+    "reportYear": 2025,
+    "lei": "743700VMG6KWF0FW1560",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700x6kuj0z8gjif03": {
+    "reportUrl": "https://filings.xbrl.org/743700X6KUJ0Z8GJIF03/2025-12-31/ESEF/FI/0/743700X6KUJ0Z8GJIF03-2025-12-31-1-fi/reports/743700X6KUJ0Z8GJIF03-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700X6KUJ0Z8GJIF03",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700x9s8fvyri20j88": {
+    "reportUrl": "https://filings.xbrl.org/743700X9S8FVYRI20J88/2025-12-31/ESEF/FI/0/743700X9S8FVYRI20J88-2025-12-31-0-fi/reports/743700X9S8FVYRI20J88-2025-12-31-0-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700X9S8FVYRI20J88",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700xjc24thupk0s03": {
+    "reportUrl": "https://filings.xbrl.org/743700XJC24THUPK0S03/2025-12-31/ESEF/FI/0/743700XJC24THUPK0S03-2025-12-31-en/reports/743700XJC24THUPK0S03-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700XJC24THUPK0S03",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700xlyonpsko15z91": {
+    "reportUrl": "https://filings.xbrl.org/743700XLYONPSKO15Z91/2025-12-31/ESEF/FI/0/743700XLYONPSKO15Z91-2025-12-31-1-fi/reports/743700XLYONPSKO15Z91-2025-12-31-1-fi.html",
+    "reportYear": 2025,
+    "lei": "743700XLYONPSKO15Z91",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700xq240jmmybnw69": {
+    "reportUrl": "https://filings.xbrl.org/743700XQ240JMMYBNW69/2025-12-31/ESEF/FI/0/743700XQ240JMMYBNW69-2025-12-31-1-fi/reports/743700XQ240JMMYBNW69-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700XQ240JMMYBNW69",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700xsmvpr48ximl56": {
+    "reportUrl": "https://filings.xbrl.org/743700XSMVPR48XIML56/2025-12-31/ESEF/FI/0/743700XSMVPR48XIML56-2025-12-31-1-fi/reports/743700XSMVPR48XIML56-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700XSMVPR48XIML56",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700y8qwc1ft6r0f34": {
+    "reportUrl": "https://filings.xbrl.org/743700Y8QWC1FT6R0F34/2025-12-31/ESEF/FI/0/743700Y8QWC1FT6R0F34-2025-12-31-1-fi/reports/743700Y8QWC1FT6R0F34-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700Y8QWC1FT6R0F34",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700yehy9i3zdhnx66": {
+    "reportUrl": "https://filings.xbrl.org/743700YEHY9I3ZDHNX66/2025-12-31/ESEF/FI/0/743700YEHY9I3ZDHNX66-2025-12-31-1-fi/reports/743700YEHY9I3ZDHNX66-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700YEHY9I3ZDHNX66",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700yge1gq2dnt5t52": {
+    "reportUrl": "https://filings.xbrl.org/743700YGE1GQ2DNT5T52/2025-12-31/ESEF/FI/0/743700YGE1GQ2DNT5T52-2025-12-31-1-fi/reports/743700YGE1GQ2DNT5T52-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700YGE1GQ2DNT5T52",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700yqio8y4l4wkr40": {
+    "reportUrl": "https://filings.xbrl.org/743700YQIO8Y4L4WKR40/2025-12-31/ESEF/FI/1/tyres-2025-12-31-1-en/reports/tyres-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700YQIO8Y4L4WKR40",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700z1bnfyr9prdf52": {
+    "reportUrl": "https://filings.xbrl.org/743700Z1BNFYR9PRDF52/2025-12-31/ESEF/FI/0/743700Z1BNFYR9PRDF52-2025-12-31-1-en/reports/743700Z1BNFYR9PRDF52-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700Z1BNFYR9PRDF52",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700z9z54vghza0028": {
+    "reportUrl": "https://filings.xbrl.org/743700Z9Z54VGHZA0028/2025-12-31/ESEF/FI/0/743700Z9Z54VGHZA0028-2025-12-31-0-fi/reports/743700Z9Z54VGHZA0028-2025-12-31-0-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700Z9Z54VGHZA0028",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700zgh7gd27uoqo12": {
+    "reportUrl": "https://filings.xbrl.org/743700ZGH7GD27UOQO12/2025-12-31/ESEF/FI/0/743700ZGH7GD27UOQO12-2025-12-31-1-fi/reports/743700ZGH7GD27UOQO12-2025-12-31-1-fi.xhtml",
+    "reportYear": 2025,
+    "lei": "743700ZGH7GD27UOQO12",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-743700zkomtb7x00ow54": {
+    "reportUrl": "https://filings.xbrl.org/743700ZKOMTB7X00OW54/2025-12-31/ESEF/FI/0/743700ZKOMTB7X00OW54-2025-12-31-1-en/reports/743700ZKOMTB7X00OW54-2025-12-31-1-en.xhtml",
+    "reportYear": 2025,
+    "lei": "743700ZKOMTB7X00OW54",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-9845000d85046ecfff27": {
+    "reportUrl": "https://filings.xbrl.org/9845000D85046ECFFF27/2025-12-31/ESEF/FI/0/9845000D85046ECFFF27-2025-12-31-en/reports/9845000D85046ECFFF27-2025-12-31-en.xhtml",
+    "reportYear": 2025,
+    "lei": "9845000D85046ECFFF27",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-9845006bfdjf0375e466": {
+    "reportUrl": "https://filings.xbrl.org/9845006BFDJF0375E466/2025-12-31/ESEF/FI/0/9845006BFDJF0375E466-2025-12-31-1-en/reports/9845006BFDJF0375E466-2025-12-31-1-en.html",
+    "reportYear": 2025,
+    "lei": "9845006BFDJF0375E466",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  },
+  "lei-984500f4ccf3ad74f766": {
+    "reportUrl": "https://filings.xbrl.org/984500F4CCF3AD74F766/2025-12-31/ESEF/FI/0/evli-2025-12-31-en/reports/evli-2025-12-31-en.html",
+    "reportYear": 2025,
+    "lei": "984500F4CCF3AD74F766",
+    "indexUrl": "https://filings.xbrl.org/indexes/filings-2025.json"
+  }
+}

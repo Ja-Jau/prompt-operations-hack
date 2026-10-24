@@ -4,8 +4,10 @@ import type { Company, EfficiencyMetricId, EfficiencyObservation } from "../src/
 import { comparable, METRIC_IDS, METRICS } from "../src/lib/game/metrics";
 import { availableRounds, buildRandomRun, nextEndlessRound, pickRound, roundKey } from "../src/lib/game/sequence";
 import { buildDailyRun } from "../src/lib/game/daily";
+import { shareText } from "../src/lib/game/share";
 import { seededRandom } from "../src/lib/game/random";
 import companies from "../src/data/companies.json";
+import gameCompanies from "../src/data/game_companies.json";
 import efficiency from "../src/data/efficiency.json";
 
 function company(id: string, value: number, ids: EfficiencyMetricId[] = [...METRIC_IDS]): Company {
@@ -65,7 +67,7 @@ test("endless remains playable with just one eligible pair", () => {
 
 test("committed real data supplies every category without placeholder fallbacks", () => {
   const data = efficiency as Record<string, { metrics: Partial<Record<EfficiencyMetricId, EfficiencyObservation>> }>;
-  const pool = (companies as Company[]).map((c) => ({ ...c, efficiency: data[c.id]?.metrics ?? {} }));
+  const pool = gameCompanies.map((c) => ({ ...c, efficiency: data[c.id]?.metrics ?? {} }));
   const pairs = availableRounds(pool);
   for (const id of METRIC_IDS) {
     assert.ok(pairs.some((r) => r.metric === id), `No playable pair for ${id}`);
@@ -89,4 +91,18 @@ test("five-round games get fresh random categories on each play", () => {
   }
   assert.equal(buildRandomRun(pairs.slice(0, 1), random).length, 5);
   assert.deepEqual(buildRandomRun([], random), []);
+});
+
+test("endless continues beyond five rounds and shares the actual total", () => {
+  const pairs = availableRounds([company("a", 1), company("b", 40), company("c", 70)]);
+  const history = [];
+  const random = seededRandom("long-session");
+  for (let i = 0; i < 50; i++) {
+    const next = nextEndlessRound(pairs, history, random);
+    assert.ok(next);
+    if (history.length) assert.notEqual(next.metric, history.at(-1)!.metric);
+    history.push(next);
+  }
+  assert.match(shareText({ score: 30, total: 50, mode: "endless", url: "https://example.com" }), /Endless\nScore 30\/50/);
+  assert.match(shareText({ score: 3, url: "https://example.com" }), /Score 3\/5/);
 });

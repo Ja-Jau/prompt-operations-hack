@@ -1,0 +1,20 @@
+{
+  "cursors": {
+    "": 2,
+    "hallinto-ja-toimistotyo": 2,
+    "talous-ja-rahoitus": 2,
+    "asiakaspalvelu": 2,
+    "kuljetus-ja-logistiikka": 2,
+    "osto-ja-hankinta": 2,
+    "henkilostohallinto": 2,
+    "projektihallinto": 2,
+    "myynti": 2,
+    "teollisuus": 2,
+    "vahittais-ja-tukkukauppa": 2,
+    "it": 2
+  },
+  "lastRunAt": "2026-10-24T19:17:45.940162+00:00",
+  "companyCount": 253,
+  "filingCompanies": 122,
+  "errors": []
+}

@@ -144,25 +144,38 @@ def parse_posting(content: bytes, url: str, aliases: set[str], fetched_at: str) 
     return None
 
 
+class SourceClient:
+    """Shared pacing and a run-wide stop on source access/rate-limit errors."""
+    def __init__(self, delay: float = 0.25):
+        self.delay, self.last_request, self.blocked = delay, 0.0, False
+
+    def get(self, url):
+        if urlparse(url).hostname != urlparse(BASE).hostname:
+            raise ValueError("Job sample URL is outside the configured source")
+        if self.blocked:
+            raise ValueError("Job source paused after access/rate-limit response")
+        def wait_for_source():
+            time.sleep(max(0, self.delay - (time.monotonic() - self.last_request)))
+            self.last_request = time.monotonic()
+        try:
+            return fetch(url, max_age_days=1, before_request=wait_for_source)
+        except HTTPError as exc:
+            if exc.code in (401, 403, 429):
+                self.blocked = True
+            raise
+
+
 def refresh_samples(companies: list[dict], config: dict, selected: set[str], delay: float = 0.25) -> None:
     path = ROOT / "pipeline/data/job_samples.json"
     results = read_json(path, {})
     names = {c["id"]: {employer_key(c["name"]), *(employer_key(n) for n in config.get(c["id"], {}).get("jobNames", []))} for c in companies}
-    last_request = 0.0
-
-    def get(url):
-        if urlparse(url).hostname != urlparse(BASE).hostname:
-            raise ValueError("Job sample URL is outside the configured source")
-        def wait_for_source():
-            nonlocal last_request
-            time.sleep(max(0, delay - (time.monotonic() - last_request)))
-            last_request = time.monotonic()
-        # Resume interrupted refreshes without downloading identical pages again.
-        # Sampling time comes from the cache metadata, never from this run's clock.
-        return fetch(url, max_age_days=1, before_request=wait_for_source)
+    client = SourceClient(delay)
+    get = client.get
 
     for company in companies:
         cid = company["id"]
+        if client.blocked:
+            break
         if cid not in selected:
             continue
         print(f"{cid}: sampling public job ads", flush=True)
@@ -187,7 +200,7 @@ def refresh_samples(companies: list[dict], config: dict, selected: set[str], del
                         job = parse_posting(content, url, names[cid], sampled_at)
                         if job:
                             samples.append(job)
-                    except (HTTPError, URLError, ValueError) as exc:
+                    except (OSError, ValueError) as exc:
                         error = str(exc)
                         if isinstance(exc, HTTPError) and exc.code in (401, 403, 429):
                             raise
@@ -195,7 +208,7 @@ def refresh_samples(companies: list[dict], config: dict, selected: set[str], del
                         break
                 if len(samples) >= MAX_ADS or len(seen) >= MAX_ADS * 2:
                     break
-        except (HTTPError, URLError, ValueError) as exc:
+        except (OSError, ValueError) as exc:
             error = str(exc)
         if error and not samples:
             # Retain a previous sample on transient errors; its original date is kept.

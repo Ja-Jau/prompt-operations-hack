@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import type { Company } from "@/types/company";
+import type { GameCompany as Company } from "@/types/company";
 import { METRICS, type MetricId } from "@/lib/game/metrics";
 import { Icon } from "@/components/ui/Icon";
 

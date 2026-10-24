@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import argparse
 from collections import defaultdict
-import csv
 from datetime import datetime, timezone
 import hashlib
 from html.parser import HTMLParser
@@ -31,7 +30,7 @@ FACTS_PATH = ROOT / "pipeline/data/financial_facts.json"
 OUTPUT_PATH = ROOT / "src/data/efficiency.json"
 COVERAGE_PATH = ROOT / "pipeline/data/efficiency_coverage.json"
 CACHE = ROOT / "pipeline/.cache/efficiency"
-USER_AGENT = "TehokasResearch/1.0 (public annual-report data; low-volume research)"
+USER_AGENT = "TehokasResearch/1.0 (+https://github.com/Ja-Jau/prompt-operations-hack)"
 MAX_BYTES = 80_000_000
 
 
@@ -56,19 +55,27 @@ def fetch(url: str, force: bool = False, *, max_age_days: int = 7, before_reques
         info = read_json(metadata, {})
         if (datetime.now(timezone.utc) - datetime.fromisoformat(info["fetchedAt"])).total_seconds() < max_age_days * 86_400:
             return cached.read_bytes(), info["fetchedAt"]
+    info = read_json(metadata, {})
+    headers = {"User-Agent": USER_AGENT}
+    if cached.exists() and info.get("lastModified") and not force:
+        headers["If-Modified-Since"] = info["lastModified"]
     for attempt in range(3):
         try:
             if before_request:
                 before_request()
-            with urlopen(Request(url, headers={"User-Agent": USER_AGENT}), timeout=35) as response:
+            with urlopen(Request(url, headers=headers), timeout=35) as response:
                 content = response.read(MAX_BYTES + 1)
+                last_modified = response.headers.get("Last-Modified")
             if len(content) > MAX_BYTES:
                 raise ValueError("Report exceeds download size limit")
             fetched_at = datetime.now(timezone.utc).isoformat()
             cached.write_bytes(content)
-            write_json(metadata, {"url": url, "fetchedAt": fetched_at})
+            write_json(metadata, {"url": url, "fetchedAt": fetched_at, "lastModified": last_modified})
             return content, fetched_at
         except HTTPError as exc:
+            if exc.code == 304 and cached.exists():
+                # Original sampling time is preserved when the source has not changed.
+                return cached.read_bytes(), info["fetchedAt"]
             if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
                 raise
         except URLError:
@@ -166,11 +173,18 @@ def main() -> None:
     args = parser.parse_args()
     if args.job_delay < 0:
         parser.error("--job-delay must be non-negative")
-    companies = list(csv.DictReader((ROOT / "pipeline/data/companies.csv").open(encoding="utf-8")))
+    from company_catalog import load_catalog
+    companies = load_catalog()
     ids = {c["id"] for c in companies}
     if args.company and set(args.company) - ids:
         parser.error("Unknown company ID: " + ", ".join(set(args.company) - ids))
-    sources = read_json(ROOT / "pipeline/data/report_sources.json", {})
+    discovered = read_json(ROOT / "pipeline/data/discovered_reports.json", {})
+    reviewed = read_json(ROOT / "pipeline/data/report_sources.json", {})
+    sources = {cid: {**discovered.get(cid, {}), **reviewed.get(cid, {})} for cid in ids}
+    # Reviewed mappings stay authoritative; fresh indexed report URLs avoid year-specific landing pages.
+    for cid, entry in discovered.items():
+        if cid in sources and entry.get("reportYear") == args.year:
+            sources[cid].update(entry)
     if args.refresh_jobs:
         if args.offline:
             parser.error("--refresh-jobs cannot be combined with --offline")
@@ -184,7 +198,7 @@ def main() -> None:
             if args.company and cid not in args.company:
                 continue
             config = sources.get(cid)
-            if not config:
+            if not config or not (config.get("reportUrl") or config.get("landingUrl")):
                 failures[cid] = "No official report source configured"
                 continue
             print(f"{cid}: looking for FY {args.year} report", flush=True)
@@ -202,6 +216,8 @@ def main() -> None:
                             record["facts"].update(employee_table_facts(content, config["employeeTable"], args.year,
                                 record["facts"]["revenue"]["entity"]))
                             record["employeeBasis"] = config["employeeTable"]["basis"]
+                        if config.get("lei") and any(f and f["entity"] != config["lei"] for f in record["facts"].values()):
+                            raise ValueError("Report entity does not match the discovered issuer LEI")
                         if not any(record["facts"].values()):
                             raise ValueError("No supported unsegmented facts for the requested year")
                         financials[cid] = record
@@ -211,11 +227,11 @@ def main() -> None:
                         write_json(CACHE / f"{cid}-concepts.json", sorted({f["concept"] for f in facts}))
                         print(f"  imported {sum(v is not None for v in record['facts'].values())} inputs", flush=True)
                         break
-                    except (HTTPError, URLError, ParseError, BadZipFile, ValueError) as exc:
+                    except (OSError, ParseError, BadZipFile, ValueError) as exc:
                         errors.append(str(exc))
                 else:
                     raise ValueError("; ".join(errors))
-            except (HTTPError, URLError, ParseError, ValueError) as exc:
+            except (OSError, ParseError, ValueError) as exc:
                 failures[cid] = str(exc)
                 print(f"  unavailable: {exc}", flush=True)
             time.sleep(0.3)
@@ -238,6 +254,9 @@ def main() -> None:
         coverage[cid] = {"available": list(metrics), "missing": missing, "fetchError": failures.get(cid),
                          "financialFetchedAt": record["fetchedAt"] if record else None}
     write_json(OUTPUT_PATH, output)
+    # Game metadata contains no fabricated revenue/headcount fields for newly discovered employers.
+    fields = ("id", "name", "industry", "domain", "brandColor", "logo", "image", "imageCredit", "hint")
+    write_json(ROOT / "src/data/game_companies.json", [{k: c[k] for k in fields} for c in companies])
     write_json(COVERAGE_PATH, coverage)
     print(f"\nExported {len(output)} companies to {OUTPUT_PATH.relative_to(ROOT)}")
     counts = {m: sum(m in c["metrics"] for c in output.values()) for m in METRICS}

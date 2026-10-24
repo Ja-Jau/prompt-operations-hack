@@ -116,3 +116,8 @@ export type LookupResult = {
   /** "dataset": already in the game. "ai": found by Claude with web search. */
   origin: "dataset" | "ai";
 };
+
+/** Display identity and sourced observations; unknown financial totals are not invented. */
+export type GameCompany = Pick<Company,
+  "id" | "name" | "industry" | "domain" | "brandColor" | "logo" | "image" | "imageCredit" | "hint" | "efficiency"
+>;

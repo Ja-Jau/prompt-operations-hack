@@ -1,0 +1,4992 @@
+[
+  {
+    "id": "elisa",
+    "name": "Elisa",
+    "industry": "Telecom",
+    "domain": "elisa.fi",
+    "brandColor": "#0019af",
+    "logo": null,
+    "image": "/images/industry/telecom.jpg",
+    "imageCredit": {
+      "author": "Wee Hong",
+      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Sells mobile and broadband subscriptions.",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "lei": "743700TU2S3DXWGU7H32",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myymalamyyja-elisa-oyj-tampere-2780808"
+    ]
+  },
+  {
+    "id": "finnair",
+    "name": "Finnair",
+    "industry": "Travel",
+    "domain": "finnair.com",
+    "brandColor": "#0b1560",
+    "logo": null,
+    "image": "/images/industry/travel.jpg",
+    "imageCredit": {
+      "author": "Diliff",
+      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_2,_London,_England_-_Diliff.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "hint": "Finland's national airline.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "213800SB6EOB8SSK9W63"
+  },
+  {
+    "id": "fiskars",
+    "name": "Fiskars",
+    "industry": "Consumer goods",
+    "domain": "fiskarsgroup.com",
+    "brandColor": "#f47b20",
+    "logo": null,
+    "image": "/images/industry/consumer-goods.jpg",
+    "imageCredit": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Orange-handled scissors, and much more.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700BKTW4EQIVKYY42"
+  },
+  {
+    "id": "fortum",
+    "name": "Fortum",
+    "industry": "Energy",
+    "domain": "fortum.com",
+    "brandColor": "#2e9e5b",
+    "logo": null,
+    "image": "/images/industry/energy.jpg",
+    "imageCredit": {
+      "author": "Matthew T Rader",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Produces and sells electricity in the Nordics.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "635400IUIZZIUJSAMF76"
+  },
+  {
+    "id": "harvia",
+    "name": "Harvia",
+    "industry": "Consumer goods",
+    "domain": "harvia.com",
+    "brandColor": "#b3121f",
+    "logo": null,
+    "image": "/images/industry/consumer-goods.jpg",
+    "imageCredit": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Sauna heaters, exported worldwide.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437002ULTBOWQQOXL69"
+  },
+  {
+    "id": "huhtamaki",
+    "name": "Huhtamäki",
+    "industry": "Packaging",
+    "domain": "huhtamaki.com",
+    "brandColor": "#0057b8",
+    "logo": null,
+    "image": "/images/industry/packaging.jpg",
+    "imageCredit": {
+      "author": "Axisadman",
+      "url": "https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "hint": "Coffee cups and food packaging.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "5493007050SJVMXN6L29"
+  },
+  {
+    "id": "kesko",
+    "name": "Kesko",
+    "industry": "Retail",
+    "domain": "kesko.fi",
+    "brandColor": "#f36f21",
+    "logo": null,
+    "image": "/images/industry/retail.jpg",
+    "imageCredit": {
+      "author": "Wilfredor",
+      "url": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Runs grocery, building and car retail across Finland.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700OX6HSVMCAHPB95"
+  },
+  {
+    "id": "kone",
+    "name": "Kone",
+    "industry": "Industrial",
+    "domain": "kone.com",
+    "brandColor": "#1450f5",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Elevators and escalators, plus the people who service them.",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "lei": "2138001CNF45JP5XZK38",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500"
+    ]
+  },
+  {
+    "id": "marimekko",
+    "name": "Marimekko",
+    "industry": "Consumer goods",
+    "domain": "marimekko.com",
+    "brandColor": "#2b2b2b",
+    "logo": null,
+    "image": "/images/industry/consumer-goods.jpg",
+    "imageCredit": {
+      "author": "Slyronit",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Famous for its poppy-print fabrics.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370053IOY42B9YJ350"
+  },
+  {
+    "id": "neste",
+    "name": "Neste",
+    "industry": "Energy",
+    "domain": "neste.com",
+    "brandColor": "#0063a3",
+    "logo": null,
+    "image": "/images/industry/energy.jpg",
+    "imageCredit": {
+      "author": "Matthew T Rader",
+      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Renewable diesel and jet fuel.",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "lei": "5493009GY1X8GQ66AM14",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-refinery-data-engineer-2770929",
+      "https://www.jobly.fi/tyopaikka/senior-business-controller-2785528",
+      "https://www.jobly.fi/tyopaikka/hr-specialist-2784414",
+      "https://www.jobly.fi/tyopaikka/solution-manager-2775849"
+    ]
+  },
+  {
+    "id": "nokia",
+    "name": "Nokia",
+    "industry": "Telecom",
+    "domain": "nokia.com",
+    "brandColor": "#124191",
+    "logo": null,
+    "image": "/images/industry/telecom.jpg",
+    "imageCredit": {
+      "author": "Wee Hong",
+      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Builds the networks your phone connects to.",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "lei": "549300A0JPRWG1KI7U06",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-ai-data-engineer-2785481"
+    ]
+  },
+  {
+    "id": "orion",
+    "name": "Orion",
+    "industry": "Pharma",
+    "domain": "orion.fi",
+    "brandColor": "#0072ce",
+    "logo": null,
+    "image": "/images/industry/pharma.jpg",
+    "imageCredit": {
+      "author": "Tehran Times",
+      "url": "https://commons.wikimedia.org/wiki/File:COVIran_Barekat_vaccine_production_03.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Finnish pharmaceutical company.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370029VAHCXDR7B745"
+  },
+  {
+    "id": "outokumpu",
+    "name": "Outokumpu",
+    "industry": "Steel",
+    "domain": "outokumpu.com",
+    "brandColor": "#0a2240",
+    "logo": null,
+    "image": "/images/industry/steel.jpg",
+    "imageCredit": {
+      "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
+      "url": "https://commons.wikimedia.org/wiki/File:13_Industry_of_Australia_-_Steelworks_of_BlueScope_Steel_Limited_company_in_Port_Kembla,_Australia.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 3.0"
+    },
+    "hint": "Stainless steel producer.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "5493009YRUJJDCFF0R80"
+  },
+  {
+    "id": "upm",
+    "name": "UPM",
+    "industry": "Forest",
+    "domain": "upm.com",
+    "brandColor": "#007a3d",
+    "logo": null,
+    "image": "/images/industry/forest.jpg",
+    "imageCredit": {
+      "author": "kallerna",
+      "url": "https://commons.wikimedia.org/wiki/File:Spring_forest_Yyteri_3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Pulp, paper, timber and biofuels.",
+    "lastSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/manager-treasury-accounting-2769749",
+      "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327",
+      "https://www.jobly.fi/tyopaikka/director-it-sourcing-category-2777935"
+    ],
+    "lei": "213800EC6PW5VU4J9U64"
+  },
+  {
+    "id": "valmet",
+    "name": "Valmet",
+    "industry": "Industrial",
+    "domain": "valmet.com",
+    "brandColor": "#c8102e",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Machinery for pulp, paper and energy plants.",
+    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "lei": "213800D9O7FUQDH83V62",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/software-senior-design-engineer-2774556",
+      "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000",
+      "https://www.jobly.fi/tyopaikka/director-pricing-availability-2781111",
+      "https://www.jobly.fi/tyopaikka/technical-documentation-manager-2784626"
+    ]
+  },
+  {
+    "id": "wartsila",
+    "name": "Wärtsilä",
+    "industry": "Industrial",
+    "domain": "wartsila.com",
+    "brandColor": "#ff7300",
+    "logo": null,
+    "image": "/images/industry/industrial.jpg",
+    "imageCredit": {
+      "author": "Henrysz",
+      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Engines and power systems for ships and power plants.",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/maintenance-processes-and-tools-expert-2746125",
+      "https://www.jobly.fi/tyopaikka/global-travel-manager-2780710",
+      "https://www.jobly.fi/tyopaikka/category-manager-2779297",
+      "https://www.jobly.fi/tyopaikka/senior-advisor-2779505",
+      "https://www.jobly.fi/tyopaikka/people-analytics-partner-2776343"
+    ],
+    "lei": "743700G7A9J1PHM3X223"
+  },
+  {
+    "id": "a-asioimistulkkikeskuspaivystys-a67e9dce",
+    "name": "A-asioimistulkkikeskuspäivystys OY",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tulkki-kinyarwanda-2784712"
+    ]
+  },
+  {
+    "id": "aallon-group-62f88472",
+    "name": "Aallon Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:31.144914+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/en-specialist-inom-ekonomiforvaltning-till-abolands-skargard-taloushallinnon-asiantuntija",
+      "https://www.jobly.fi/tyopaikka/taloushallinnon-asiantuntija-haapavesi-karsamaki-tai-muu-pohjois-pohjanmaa-2780179"
+    ]
+  },
+  {
+    "id": "academic-work-e2ac9541",
+    "name": "Academic Work",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/projektipaallikko-teollisuuden-sahkonjakelu-eltel-2756538",
+      "https://www.jobly.fi/tyopaikka/hankekehityspaallikko-vantaan-energia-oy-vantaa-hybridi-2784941",
+      "https://www.jobly.fi/tyopaikka/site-manager-reissutyo-ulkomaille-2780241",
+      "https://www.jobly.fi/tyopaikka/project-engineer-electrical-and-automation-wartsila-vaasa-2775388",
+      "https://www.jobly.fi/tyopaikka/it-business-partner-vantaa-2784494",
+      "https://www.jobly.fi/tyopaikka/it-project-manager-swedish-speaking-matrix42-espoo-kuopio-tukholma-oulu-2769995",
+      "https://www.jobly.fi/tyopaikka/it-projektipaallikko-ruotsinkielinen-matrix42-espoo-kuopio-tukholma-oulu-2769996",
+      "https://www.jobly.fi/tyopaikka/sales-executive-hypergene-helsinki-2780962",
+      "https://www.jobly.fi/tyopaikka/myynti-insinoori-ndt-teknologiat-holger-hartmann-oy-2776227",
+      "https://www.jobly.fi/tyopaikka/tekninen-myyja-tuotepaallikko-pori-2770810",
+      "https://www.jobly.fi/tyopaikka/sales-manager-german-speaking-helsinki-2765432",
+      "https://www.jobly.fi/tyopaikka/ai-fullstack-developer-avain-vuokra-asunnot-oy-helsinki-2785498",
+      "https://www.jobly.fi/tyopaikka/frontend-developer-banking-sector-joensuu-2776323",
+      "https://www.jobly.fi/tyopaikka/lead-senior-system-engineer-sahkoasemien-suojaus-ja-automaatio-siemens-2756536",
+      "https://www.jobly.fi/tyopaikka/erikoistu-tietoliikenne-ja-automaatiosuunnittelijaksi-sahkoasemille-2-viikon-koulutus",
+      "https://www.jobly.fi/tyopaikka/hcc-architect-it-tampere-2776112",
+      "https://www.jobly.fi/tyopaikka/data-scientist-engineer-espoo-2780696",
+      "https://www.jobly.fi/tyopaikka/jarjestelmaasiantuntija-s-pankki-helsinki-2785256",
+      "https://www.jobly.fi/tyopaikka/ohjelmistokehittaja-patria-tampere-halli-2780575",
+      "https://www.jobly.fi/tyopaikka/software-developer-cimcorp-ulvila-2780065",
+      "https://www.jobly.fi/tyopaikka/it-service-manager-international-energy-company-espoo-2765291",
+      "https://www.jobly.fi/tyopaikka/ohjelmistovalidointi-insinoori-jyvaskyla-2779959",
+      "https://www.jobly.fi/tyopaikka/senior-information-architect-helsinki-2779960",
+      "https://www.jobly.fi/tyopaikka/tekninen-asiantuntija-photomate-2621495"
+    ]
+  },
+  {
+    "id": "adecco-0d9c9c9a",
+    "name": "Adecco",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/aluemyyntipaallikko-zarges-oy-2785454",
+      "https://www.jobly.fi/tyopaikka/tekninen-myyntipaallikko-fescon-2784757"
+    ]
+  },
+  {
+    "id": "ai-roots-ca394cbd",
+    "name": "AI Roots",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.918588+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/freelance-gcp-data-engineers-multiple-positions-2784260"
+    ]
+  },
+  {
+    "id": "akaan-vuokra-asunnot-15b39572",
+    "name": "Akaan Vuokra-asunnot Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:31.144914+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kirjanpitaja-hallintosihteeri-2785133"
+    ]
+  },
+  {
+    "id": "aktia-623e4ceb",
+    "name": "Aktia",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/premium-banker-pohjanmaa-2768156"
+    ]
+  },
+  {
+    "id": "alrekry-f9385cc8",
+    "name": "Alrekry Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/cnc-koneistaja-2785253",
+      "https://www.jobly.fi/tyopaikka/aloitteleva-cnc-koneistaja-2785252",
+      "https://www.jobly.fi/tyopaikka/hitsaaja-2785251"
+    ]
+  },
+  {
+    "id": "alvasar-ou-ddd78195",
+    "name": "Alvasar OU",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/cnc-operator-job-mazak-keuruu-finland-2785029"
+    ]
+  },
+  {
+    "id": "amerplast-a28540a6",
+    "name": "Amerplast Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hr-specialist-2781072"
+    ]
+  },
+  {
+    "id": "ardor-6790c15f",
+    "name": "Ardor Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tuotannon-ja-projektien-assistentti-ardor-oy-2785263"
+    ]
+  },
+  {
+    "id": "are-ba78973d",
+    "name": "Are Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/projektipaallikko-sahko-aanekoski-2764395"
+    ]
+  },
+  {
+    "id": "avila-d4d38dd6",
+    "name": "Avila Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/avila-oy-coordinator-office-marketing-2785402"
+    ]
+  },
+  {
+    "id": "barona-3b3ea071",
+    "name": "Barona",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/talent-acquisition-specialist-fixed-term-2780809",
+      "https://www.jobly.fi/tyopaikka/nosturinkayttaja-vaasaan-2780926",
+      "https://www.jobly.fi/tyopaikka/varastotyontekijoita-keravalle-viikonloppuvuoroihin-2775923",
+      "https://www.jobly.fi/tyopaikka/varastotyontekijoita-vantaalle-iltavuoroon-2784943",
+      "https://www.jobly.fi/tyopaikka/kokenut-logistiikkatyontekija-nurmijarvelle-2784852",
+      "https://www.jobly.fi/tyopaikka/koneistaja-pirkanmaa-2683281",
+      "https://www.jobly.fi/tyopaikka/sarmaaja-pirkanmaa-2682828"
+    ]
+  },
+  {
+    "id": "barona-horeca-4bf40cbe",
+    "name": "Barona HoReCa Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/liikennemyymalatyontekijaksi-keikkatyohon-eri-puolille-suomea-2754796"
+    ]
+  },
+  {
+    "id": "barona-ict-services-poland-sp-z-o-o-65662540",
+    "name": "Barona ICT Services Poland SP Z.o.o",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/it-tukihenkilo-service-desk-ja-valvontatehtaviin-barona-poland-katowice-2780096"
+    ]
+  },
+  {
+    "id": "barona-julkiset-palvelut-7d5e02e0",
+    "name": "Barona Julkiset Palvelut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/ruokapalvelutyontekija-2783452"
+    ]
+  },
+  {
+    "id": "barona-kauppa-405c91a6",
+    "name": "Barona Kauppa Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:34.372131+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kerailyn-osaajia-keikkatoihin-paakaupunkiseutu-2780927",
+      "https://www.jobly.fi/tyopaikka/keikkatyontekijoita-hyvinkaan-jarvenpaan-ja-keravan-alueen-ruokakauppoihin-2784755",
+      "https://www.jobly.fi/tyopaikka/keikkatyontekijoita-paakaupunkiseudun-ruokakauppoihin-2784756"
+    ]
+  },
+  {
+    "id": "barona-logistiikkaratkaisut-b6dd76b6",
+    "name": "Barona Logistiikkaratkaisut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:34.372131+00:00",
+    "lastSeenAt": "2026-10-24T19:17:34.372131+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tiiminvetaja-varastolle-2785117"
+    ]
+  },
+  {
+    "id": "barona-services-spain-sl-f15d370a",
+    "name": "Barona Services Spain SL",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/teknisk-supportkonsulent-barona-services-spain-sl-fuengirola-2769533"
+    ]
+  },
+  {
+    "id": "barona-teollisuus-7e940940",
+    "name": "Barona Teollisuus Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:34.372131+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/pakkaaja-teollisuuteen-2780807"
+    ]
+  },
+  {
+    "id": "barona-varastopalvelut-d90028aa",
+    "name": "Barona Varastopalvelut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "lastSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/verkkokauppatyontekijaksi-plugolle-2785021"
+    ]
+  },
+  {
+    "id": "beneq-c4ea4286",
+    "name": "Beneq Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:34.372131+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/warehouse-operator-2778874",
+      "https://www.jobly.fi/tyopaikka/sourcing-manager-2778135"
+    ]
+  },
+  {
+    "id": "broman-group-e12cdd2d",
+    "name": "Broman Group Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/buyer-metsastys-retkeily-ja-lemmikkitarvikkeet-2782677",
+      "https://www.jobly.fi/tyopaikka/purchasing-sustainability-specialist-2778537"
+    ]
+  },
+  {
+    "id": "casemet-6c53bbb6",
+    "name": "Casemet Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/procurement-specialist-2777113"
+    ]
+  },
+  {
+    "id": "celsius-finland-37a71201",
+    "name": "Celsius Finland Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/head-of-marketing-2781757"
+    ]
+  },
+  {
+    "id": "clevry-ac2f6738",
+    "name": "Clevry",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/pmo-asiantuntija-lahitapiola-espoo-clevry-2785163",
+      "https://www.jobly.fi/tyopaikka/ai-operations-specialist-truster-helsinki-clevry-2785188",
+      "https://www.jobly.fi/tyopaikka/package-manager-metso-espoo-2785270",
+      "https://www.jobly.fi/tyopaikka/hr-assistentti-clevry-helsinki-clevry-2785191",
+      "https://www.jobly.fi/tyopaikka/perintaalan-asiantuntija-testaus-lowell-suomi-oy-clevry-2785185",
+      "https://www.jobly.fi/tyopaikka/talent-acquisition-partner-fortum-clevry-2785168",
+      "https://www.jobly.fi/tyopaikka/kirjanpitaja-truster-helsinki-clevry-2785184",
+      "https://www.jobly.fi/tyopaikka/talent-acquisition-partner-fortum-2782352",
+      "https://www.jobly.fi/tyopaikka/hr-assistentti-clevry-helsinki-2777387",
+      "https://www.jobly.fi/tyopaikka/package-manager-metso-espoo-clevry-2785169",
+      "https://www.jobly.fi/tyopaikka/sahkoasemien-paasuunnittelija-coe-group-clevry-2785192",
+      "https://www.jobly.fi/tyopaikka/account-manager-clevrylle-clevry-2785193",
+      "https://www.jobly.fi/tyopaikka/kokenut-testiautomaatiokehittaja-coe-group-clevry-2785190",
+      "https://www.jobly.fi/tyopaikka/junior-developer-clevry-clevry-2785164"
+    ]
+  },
+  {
+    "id": "click-henkilostopalvelut-86bc2960",
+    "name": "Click Henkilöstöpalvelut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/varaosamyyja-diesel-ja-bensiinimoottorit-forssa-2785257",
+      "https://www.jobly.fi/tyopaikka/c-kortillinen-viemariautonkuljettaja-nurmijarvi-2785456",
+      "https://www.jobly.fi/tyopaikka/kaivinkoneenkuljettajia-reissutyohon-kokoaikainen-2785369",
+      "https://www.jobly.fi/tyopaikka/kaivinkoneenkuljettaja-salaojaremontteihin-2784496"
+    ]
+  },
+  {
+    "id": "compass-group-finland-3283bd83",
+    "name": "Compass Group Finland Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/palveluvastaava-arravaaraan-2778922",
+      "https://www.jobly.fi/tyopaikka/kassatarjoilija-ravintola-bistro-mattilanniemi-2778284"
+    ]
+  },
+  {
+    "id": "coptersafety-42e4df63",
+    "name": "Coptersafety Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/simulaattoriteknikko-2770935"
+    ]
+  },
+  {
+    "id": "csc-tieteen-tietotekniikan-keskus-d4eaf80e",
+    "name": "CSC - Tieteen tietotekniikan keskus Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/service-manager-eurohpc-federation-platform-2785128"
+    ]
+  },
+  {
+    "id": "csc-tieteen-tietotekniikan-keskus-ecfd7ef0",
+    "name": "CSC – Tieteen tietotekniikan keskus Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848"
+    ]
+  },
+  {
+    "id": "destia-55eab80d",
+    "name": "Destia Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:29.171216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tyomaapaallikko-pirkanmaan-rakentamisurakat-2761559",
+      "https://www.jobly.fi/tyopaikka/tyomaapaallikkotuulivoimahankkeet-2771496",
+      "https://www.jobly.fi/tyopaikka/tyonjohtoharjoittelija-vantaan-ratikka-2771497",
+      "https://www.jobly.fi/tyopaikka/tyomaainsinoori-tuulivoimahankkeet-2771498",
+      "https://www.jobly.fi/tyopaikka/tyomaapaallikko-ratarakentaminen-2776387",
+      "https://www.jobly.fi/tyopaikka/environmental-manager-2780980",
+      "https://www.jobly.fi/tyopaikka/qa-qc-manager-2780982",
+      "https://www.jobly.fi/tyopaikka/site-engineers-2780983",
+      "https://www.jobly.fi/tyopaikka/safety-manager-hs-lead-2780986",
+      "https://www.jobly.fi/tyopaikka/commercial-project-manager-qs-manager-2780987",
+      "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396",
+      "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2779741",
+      "https://www.jobly.fi/tyopaikka/projekti-insinoori-2768414",
+      "https://www.jobly.fi/tyopaikka/site-manager-2780984"
+    ]
+  },
+  {
+    "id": "dna-d0331ca0",
+    "name": "DNA",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myyntineuvottelija-dna-kuopio-2785482",
+      "https://www.jobly.fi/tyopaikka/myyntineuvottelija-dna-turku-2785499"
+    ]
+  },
+  {
+    "id": "dna-puhelinpalvelukeskus-9be10125",
+    "name": "DNA Puhelinpalvelukeskus",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/dna-etamyyja-kuopio-2784700"
+    ]
+  },
+  {
+    "id": "dottir-daca7089",
+    "name": "Dottir",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/event-workplace-coordinator-2783167"
+    ]
+  },
+  {
+    "id": "eaton-28236bb6",
+    "name": "Eaton",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/global-category-manager-electronic-components-2783536",
+      "https://www.jobly.fi/tyopaikka/product-line-sales-manager-distributed-power-quality-nordics-2785480"
+    ]
+  },
+  {
+    "id": "eezy-henkilostopalvelut-d0b90f18",
+    "name": "Eezy Henkilöstöpalvelut",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.918588+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/teollisuus",
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/keikkailevia-kassatyontekija-hameenlinnaan-2780208",
+      "https://www.jobly.fi/tyopaikka/b2c-myyja-valokuitunen-oy-2784736",
+      "https://www.jobly.fi/tyopaikka/vakituinen-kokoonpanija-harmaan-2785494",
+      "https://www.jobly.fi/tyopaikka/haemme-tyontekijaa-raskaskaluston-rengaspinnoittamoon-2771298",
+      "https://www.jobly.fi/tyopaikka/hitsaaja-hsj-product-oy-purmo-2780737",
+      "https://www.jobly.fi/tyopaikka/kunnossapitoasentaja-2780706",
+      "https://www.jobly.fi/tyopaikka/kokoonpanija-abb-drivesille-2785320",
+      "https://www.jobly.fi/tyopaikka/koneistaja-fanuc-2785374",
+      "https://www.jobly.fi/tyopaikka/tig-hitsaaja-2756529",
+      "https://www.jobly.fi/tyopaikka/myymalatyontekija-k-market-pirkkatori-halikko-2783874",
+      "https://www.jobly.fi/tyopaikka/keikkatyohon-palvelutiskille-ja-ruokatorille-kauppaan-2774405",
+      "https://www.jobly.fi/tyopaikka/osa-aikainen-varastotyontekija-meira-novalle-2782948",
+      "https://www.jobly.fi/tyopaikka/jouluksi-toihin-2778282",
+      "https://www.jobly.fi/tyopaikka/keikkatyontekija-kaupan-alalle-2782357",
+      "https://www.jobly.fi/tyopaikka/elakkeelta-toihin-2777188",
+      "https://www.jobly.fi/tyopaikka/keikkatyontekija-kaupan-alalle-meri-lappi-2772240",
+      "https://www.jobly.fi/tyopaikka/osaavia-palvelutiskimyyjia-keikkatyohon-porvoon-ja-sipoon-alueelle-2781663",
+      "https://www.jobly.fi/tyopaikka/myyja-2757027",
+      "https://www.jobly.fi/tyopaikka/palvelutiskimyyja-keikkatyohon-2781400",
+      "https://www.jobly.fi/tyopaikka/kassa-palvelutiskimyyja-paakaupunkiseudun-alue-2771766",
+      "https://www.jobly.fi/tyopaikka/palvelutiskimyyja-2781353",
+      "https://www.jobly.fi/tyopaikka/kassatyontekija-2781342",
+      "https://www.jobly.fi/tyopaikka/keikkatyontekija-kaupan-alalle-kittila-sirkka-2771653",
+      "https://www.jobly.fi/tyopaikka/it-business-partner-2758761"
+    ]
+  },
+  {
+    "id": "eltel-networks-ef74e2cb",
+    "name": "Eltel Networks Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/procurement-specialist-data-centers-2778667",
+      "https://www.jobly.fi/tyopaikka/hankintainsinoori-2775245"
+    ]
+  },
+  {
+    "id": "energiavirasto-2dcad82c",
+    "name": "Energiavirasto",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/energiatehokkuuden-asiantuntija-2777938"
+    ]
+  },
+  {
+    "id": "experis-c785f9f8",
+    "name": "Experis",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.918588+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/test-23102026-experis-2785541",
+      "https://www.jobly.fi/tyopaikka/business-controller-2785123",
+      "https://www.jobly.fi/tyopaikka/test-job-231026-2785540",
+      "https://www.jobly.fi/tyopaikka/test-experis-2785542",
+      "https://www.jobly.fi/tyopaikka/taloushallinnon-ammattilaisia-interim-tyosuhteisiin-2785121",
+      "https://www.jobly.fi/tyopaikka/hr-asiantuntija-perhevapaansijaisuus-2779893",
+      "https://www.jobly.fi/tyopaikka/henkilostojohtaja-grano-konserni-2779897",
+      "https://www.jobly.fi/tyopaikka/projektipaallikko-datacenter-2784855",
+      "https://www.jobly.fi/tyopaikka/tietoliikenneasiantuntija-kuopio-2780075",
+      "https://www.jobly.fi/tyopaikka/julkaisu-ja-testauspaallikko-highered-hub-finland-oy-2779903"
+    ]
+  },
+  {
+    "id": "fazer",
+    "name": "Fazer",
+    "industry": "Food",
+    "domain": "fazergroup.com",
+    "brandColor": "#0035a0",
+    "logo": null,
+    "image": "/images/industry/food.jpg",
+    "imageCredit": {
+      "author": "Catherine Sharman",
+      "url": "https://commons.wikimedia.org/wiki/File:Bread_Ahead_Vanilla_Doughnuts.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "hint": "Blue-wrapped chocolate and bakeries."
+  },
+  {
+    "id": "finelcomp-073ac653",
+    "name": "Finelcomp Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/jauhemaalari-finelcomp-oylle-outokumpuun-2785258"
+    ]
+  },
+  {
+    "id": "finferries-suomen-lauttaliikenne-9f68706c",
+    "name": "Finferries - Suomen Lauttaliikenne",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/rekry-harjoittelija-hankintatoimintoihin-praktikant-till-inkopsverksamheten-2784345"
+    ]
+  },
+  {
+    "id": "flaktgroup-finland-36216d66",
+    "name": "FläktGroup Finland Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/projekti-insinoori-datakeskusprojekteihin-2780702"
+    ]
+  },
+  {
+    "id": "forcit-group-162ed457",
+    "name": "Forcit Group",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "lastSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/palveluhenkilo-kuljettaja-tuusula-forcit-explosives-2775681"
+    ]
+  },
+  {
+    "id": "fvr-suomen-rokotetutkimus-6bb57e6c",
+    "name": "FVR - Suomen rokotetutkimus",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/data-ja-ai-asiantuntija-2776062"
+    ]
+  },
+  {
+    "id": "gasum-fb415c64",
+    "name": "Gasum Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-trader-2782697"
+    ]
+  },
+  {
+    "id": "granlund-e3df051c",
+    "name": "Granlund",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakkuuspaallikko-kiinteistojohtaminen-2780331",
+      "https://www.jobly.fi/tyopaikka/senior-full-stack-developer-c-react-2780697"
+    ]
+  },
+  {
+    "id": "greenstep-e2846f4a",
+    "name": "Greenstep Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-accounting-specialist-turku-2769235",
+      "https://www.jobly.fi/tyopaikka/senior-accounting-specialist-tampere-2783418",
+      "https://www.jobly.fi/tyopaikka/customer-success-manager-senior-customer-success-manager-2775804"
+    ]
+  },
+  {
+    "id": "hankkija-88001113",
+    "name": "Hankkija Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/puutarhavastaava-hankkija-eura-2772668"
+    ]
+  },
+  {
+    "id": "helsingin-kaupunki-2666f0ea",
+    "name": "Helsingin kaupunki",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakasmaksupaallikko-asiakasmaksupaatokset-ja-asiantuntijatuki-2785259",
+      "https://www.jobly.fi/tyopaikka/ruokapalvelutyontekija-myllypuron-seniorikeskus-2784854",
+      "https://www.jobly.fi/tyopaikka/vahtimestari-helsingin-sotepe-toimialan-aulapalvelut-sijaisuudet-2784321",
+      "https://www.jobly.fi/tyopaikka/henkilostosuunnittelupaallikko-2777260",
+      "https://www.jobly.fi/tyopaikka/asiantuntija-rekrytoinnin-strateginen-kehittaminen-2776233"
+    ]
+  },
+  {
+    "id": "helsingin-yliopisto-483dd348",
+    "name": "Helsingin yliopisto",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/johtava-asiantuntija-jatkuva-oppiminen-2785046",
+      "https://www.jobly.fi/tyopaikka/ymparisto-ja-maatalousekonomian-yliopistonlehtori-2779107",
+      "https://www.jobly.fi/tyopaikka/postdoctoral-researcher-economics-2776776"
+    ]
+  },
+  {
+    "id": "helsinki-shipyard-29383ee1",
+    "name": "Helsinki Shipyard",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/document-controller-2778655"
+    ]
+  },
+  {
+    "id": "henkilostoliiga-eac0f5b9",
+    "name": "Henkilöstöliiga",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/ostaja-teollisuusyritykseen-2785061"
+    ]
+  },
+  {
+    "id": "henkilostopalvelut-duuri-tiimi-81339c01",
+    "name": "Henkilöstöpalvelut Duuri-tiimi Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/b2b-myyja-vakituinen-jarvenpaa-2784515"
+    ]
+  },
+  {
+    "id": "henkilostovuokraus-yhtio-kipina-31a6c639",
+    "name": "Henkilöstövuokraus yhtiö Kipinä Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakkuuspaallikko-2783879"
+    ]
+  },
+  {
+    "id": "hitachi-energy-9f5b5b5b",
+    "name": "Hitachi Energy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-pscm-2687502",
+      "https://www.jobly.fi/tyopaikka/sales-engineer-sales-manager-2709423"
+    ]
+  },
+  {
+    "id": "huoltovarmuuskeskus-98fdf0fa",
+    "name": "Huoltovarmuuskeskus",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hankinta-asiantuntija-2779379"
+    ]
+  },
+  {
+    "id": "hus-699f41dd",
+    "name": "HUS",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/osastonsihteeri-avoin-haku-2775468",
+      "https://www.jobly.fi/tyopaikka/palvelutyontekija-meilahti-2784032",
+      "https://www.jobly.fi/tyopaikka/ostaja-2781103"
+    ]
+  },
+  {
+    "id": "jtt-sales-febf6433",
+    "name": "JTT Sales Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/telemyynti-2785452"
+    ]
+  },
+  {
+    "id": "k-auto-e54ab452",
+    "name": "K Auto Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/k-trainee-ai-2781219"
+    ]
+  },
+  {
+    "id": "kaiku-hr-d10e895e",
+    "name": "Kaiku HR",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "lastSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/maarakennustyontekija-kaivinkoneen-peramies-2784800"
+    ]
+  },
+  {
+    "id": "karkkainen-fd7ce658",
+    "name": "Kärkkäinen Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/retkeilyn-tuotepaallikko-karkkainen-oy-2783456"
+    ]
+  },
+  {
+    "id": "kaskea-group-9c42de02",
+    "name": "Kaskea Group",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tekninen-tarjouslaskija-konepajateollisuus-2778632"
+    ]
+  },
+  {
+    "id": "katrium-5f1530e7",
+    "name": "Katrium",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/launch-your-international-career-remote-business-internship-katrium-2778235",
+      "https://www.jobly.fi/tyopaikka/hr-harjoittelija-etaharjoittelu-2777755"
+    ]
+  },
+  {
+    "id": "kiinteistomaailma-ae2a1fa0",
+    "name": "Kiinteistömaailma",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kiinteistonvalityksen-ammattilaisia-ja-myyntineuvottelijoita-2750646"
+    ]
+  },
+  {
+    "id": "kpmg-344bff8b",
+    "name": "KPMG",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.008216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/sisaisen-tarkastuksen-ja-riskienhallinnan-asiantuntija-2776131",
+      "https://www.jobly.fi/tyopaikka/administrative-assistant-2780708",
+      "https://www.jobly.fi/tyopaikka/cloud-security-specialist-2780343",
+      "https://www.jobly.fi/tyopaikka/application-security-tester-2780344"
+    ]
+  },
+  {
+    "id": "lapland-hotels-f39a2cab",
+    "name": "Lapland Hotels",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-kilpis-kilpisjarvi-2784706",
+      "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-lapland-hotels-kilpis-kilpisjarvi-2784762",
+      "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689"
+    ]
+  },
+  {
+    "id": "lei-52990007axnss4pnx352",
+    "name": "Anora Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "52990007AXNSS4PNX352"
+  },
+  {
+    "id": "lei-529900c4p88aphfz5h47",
+    "name": "Ovaro Kiinteistösijoitus Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "529900C4P88APHFZ5H47"
+  },
+  {
+    "id": "lei-529900hekoenjhpnn480",
+    "name": "Kuntarahoitus Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "529900HEKOENJHPNN480"
+  },
+  {
+    "id": "lei-529900m13gm4vste6w80",
+    "name": "YIT Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "lei": "529900M13GM4VSTE6W80",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hankintainsinoori-turkuun-2778329"
+    ]
+  },
+  {
+    "id": "lei-529900odi3047e2liv03",
+    "name": "Nordea Bank Abp",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "529900ODI3047E2LIV03"
+  },
+  {
+    "id": "lei-5493002b0govf42kwx33",
+    "name": "Hiab Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "5493002B0GOVF42KWX33"
+  },
+  {
+    "id": "lei-5493009zdbvg2co1o689",
+    "name": "Suomen Hypoteekkiyhdistys",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "5493009ZDBVG2CO1O689"
+  },
+  {
+    "id": "lei-549300ef0cdeqzbma096",
+    "name": "Konecranes Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "549300EF0CDEQZBMA096"
+  },
+  {
+    "id": "lei-549300ew2km4krokqv31",
+    "name": "Tieto Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "549300EW2KM4KROKQV31"
+  },
+  {
+    "id": "lei-549300p8n0p6kdgtj206",
+    "name": "Citycon Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "549300P8N0P6KDGTJ206"
+  },
+  {
+    "id": "lei-549300r0vn9c371w0e07",
+    "name": "METSO OYJ",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "lei": "549300R0VN9C371W0E07",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-project-planner-2784167"
+    ]
+  },
+  {
+    "id": "lei-549300uwb1air85bm957",
+    "name": "Oriola Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "lei": "549300UWB1AIR85BM957",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/oriola-it-manager-cloud-prem-datacenter-2784758"
+    ]
+  },
+  {
+    "id": "lei-636700ebb0sa4501at18",
+    "name": "Lassila & Tikanoja Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "lei": "636700EBB0SA4501AT18",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/business-controller-helsinkiin-2785458",
+      "https://www.jobly.fi/tyopaikka/business-controller-helsinkiin-2785453",
+      "https://www.jobly.fi/tyopaikka/tuotantotyontekija-liedon-kuormalavayksikkoon-2776046",
+      "https://www.jobly.fi/tyopaikka/kuorma-autonkuljettaja-pieksamaelle-2776040",
+      "https://www.jobly.fi/tyopaikka/kuorma-autonkuljettaja-pieksamaelle-2776034"
+    ]
+  },
+  {
+    "id": "lei-636700z25zqxlmz3cy73",
+    "name": "Kalmar Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "636700Z25ZQXLMZ3CY73"
+  },
+  {
+    "id": "lei-7437000iqjs6zc1fr041",
+    "name": "Ponsse Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437000IQJS6ZC1FR041"
+  },
+  {
+    "id": "lei-7437000na1i6y1oqwl24",
+    "name": "Dovre Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437000NA1I6Y1OQWL24"
+  },
+  {
+    "id": "lei-7437000pn6e448npgy86",
+    "name": "HKFoods Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437000PN6E448NPGY86"
+  },
+  {
+    "id": "lei-7437000tb0ghdhlpx677",
+    "name": "Aspo Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437000TB0GHDHLPX677"
+  },
+  {
+    "id": "lei-7437000zp669lkutz738",
+    "name": "Stora Enso Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "lei": "7437000ZP669LKUTZ738",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/category-manager-it-and-professional-services-2782261"
+    ]
+  },
+  {
+    "id": "lei-74370016pw2v4w02lx91",
+    "name": "Wulff-Yhtiöt Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370016PW2V4W02LX91"
+  },
+  {
+    "id": "lei-7437001aezhll3uex093",
+    "name": "Terveystalo Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437001AEZHLL3UEX093"
+  },
+  {
+    "id": "lei-743700205jamgm80qd88",
+    "name": "Exel Composites Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700205JAMGM80QD88"
+  },
+  {
+    "id": "lei-74370031y7rk5h88cq48",
+    "name": "Kemira Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370031Y7RK5H88CQ48"
+  },
+  {
+    "id": "lei-7437003b5wfboiefy714",
+    "name": "OP Osuuskunta",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437003B5WFBOIEFY714"
+  },
+  {
+    "id": "lei-7437003nx7wwvrt6aj55",
+    "name": "Olvi Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "lei": "7437003NX7WWVRT6AJ55",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/sourcing-analyst-2784860"
+    ]
+  },
+  {
+    "id": "lei-7437003wyxjusv27q316",
+    "name": "Siili Solutions Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437003WYXJUSV27Q316"
+  },
+  {
+    "id": "lei-743700498l5thnqwvl66",
+    "name": "CapMan Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700498L5THNQWVL66"
+  },
+  {
+    "id": "lei-7437004genttqhmnq407",
+    "name": "Incap Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437004GENTTQHMNQ407"
+  },
+  {
+    "id": "lei-7437004xd6u0ffdct507",
+    "name": "Scanfil Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437004XD6U0FFDCT507"
+  },
+  {
+    "id": "lei-74370058mtrledochv67",
+    "name": "Pihlajalinna Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370058MTRLEDOCHV67"
+  },
+  {
+    "id": "lei-74370058zyob0giyut38",
+    "name": "Investors House Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370058ZYOB0GIYUT38"
+  },
+  {
+    "id": "lei-7437006i5533r06ju690",
+    "name": "Etteplan Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437006I5533R06JU690"
+  },
+  {
+    "id": "lei-7437007n96fk4n3wht09",
+    "name": "SSH Communications Security Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437007N96FK4N3WHT09"
+  },
+  {
+    "id": "lei-7437007ypuoqz8ov1r42",
+    "name": "Kojamo Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437007YPUOQZ8OV1R42"
+  },
+  {
+    "id": "lei-74370083282nhip4qd02",
+    "name": "Raisio Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370083282NHIP4QD02"
+  },
+  {
+    "id": "lei-74370089attsnbxjvt29",
+    "name": "Biohit Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "74370089ATTSNBXJVT29"
+  },
+  {
+    "id": "lei-7437008rmk8bswn39t09",
+    "name": "Orthex Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437008RMK8BSWN39T09"
+  },
+  {
+    "id": "lei-7437009ivywgee4s7b77",
+    "name": "Optomed Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437009IVYWGEE4S7B77"
+  },
+  {
+    "id": "lei-7437009tb42o2ab3jw91",
+    "name": "Rapala VMC Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437009TB42O2AB3JW91"
+  },
+  {
+    "id": "lei-743700al68pux6jms644",
+    "name": "Digitalist Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700AL68PUX6JMS644"
+  },
+  {
+    "id": "lei-743700ax3tiwvl1lc349",
+    "name": "Fortaco Group Holdco Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700AX3TIWVL1LC349"
+  },
+  {
+    "id": "lei-743700cjrqru0007gn59",
+    "name": "Teleste Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700CJRQRU0007GN59"
+  },
+  {
+    "id": "lei-743700dohlqienktc391",
+    "name": "Posti Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700DOHLQIENKTC391"
+  },
+  {
+    "id": "lei-743700dyz6r1qnlwqa56",
+    "name": "NoHo Partners Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700DYZ6R1QNLWQA56"
+  },
+  {
+    "id": "lei-743700eig9tdb5qnzs09",
+    "name": "Kempower Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700EIG9TDB5QNZS09"
+  },
+  {
+    "id": "lei-743700epluwxe25hgm03",
+    "name": "Enento Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700EPLUWXE25HGM03"
+  },
+  {
+    "id": "lei-743700f6clx8jmydep21",
+    "name": "KH Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700F6CLX8JMYDEP21"
+  },
+  {
+    "id": "lei-743700ftbnxaun57rh30",
+    "name": "S-Pankki Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700FTBNXAUN57RH30"
+  },
+  {
+    "id": "lei-743700g00629v99pe435",
+    "name": "Raute Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700G00629V99PE435"
+  },
+  {
+    "id": "lei-743700gb29fxc0vxf414",
+    "name": "SRV Yhtiöt Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700GB29FXC0VXF414"
+  },
+  {
+    "id": "lei-743700gc62jlhfbund16",
+    "name": "Aktia Bank Abp",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700GC62JLHFBUND16"
+  },
+  {
+    "id": "lei-743700go2xu2zyydkw67",
+    "name": "Qt Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700GO2XU2ZYYDKW67"
+  },
+  {
+    "id": "lei-743700gsl41h2dxzy963",
+    "name": "Tulikivi Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700GSL41H2DXZY963"
+  },
+  {
+    "id": "lei-743700hohmohaanhff73",
+    "name": "Sitowise Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700HOHMOHAANHFF73"
+  },
+  {
+    "id": "lei-743700hsiesz75x06h10",
+    "name": "Rebl Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700HSIESZ75X06H10"
+  },
+  {
+    "id": "lei-743700hxwtm31zhbxw13",
+    "name": "Solteq Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700HXWTM31ZHBXW13"
+  },
+  {
+    "id": "lei-743700i27e0fwsxlkk04",
+    "name": "Revenio Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700I27E0FWSXLKK04"
+  },
+  {
+    "id": "lei-743700ie9nqgf9yzai97",
+    "name": "Musti Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700IE9NQGF9YZAI97"
+  },
+  {
+    "id": "lei-743700ifqi6w89m1iy95",
+    "name": "Lindex Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700IFQI6W89M1IY95"
+  },
+  {
+    "id": "lei-743700ilu1pl86iw3429",
+    "name": "Alma Media Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "lei": "743700ILU1PL86IW3429",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/service-devops-lead-support-helpdesk-services-2771183"
+    ]
+  },
+  {
+    "id": "lei-743700j2wo3j6xgfpg77",
+    "name": "United Bankers Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700J2WO3J6XGFPG77"
+  },
+  {
+    "id": "lei-743700j7nht5olsj3b78",
+    "name": "Keskisuomalainen Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700J7NHT5OLSJ3B78"
+  },
+  {
+    "id": "lei-743700jiw1lauzdh9012",
+    "name": "Gofore Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700JIW1LAUZDH9012"
+  },
+  {
+    "id": "lei-743700jmxcc11crjcs71",
+    "name": "Consti Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700JMXCC11CRJCS71"
+  },
+  {
+    "id": "lei-743700kkb8q035k38488",
+    "name": "Metsä Board Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700KKB8Q035K38488"
+  },
+  {
+    "id": "lei-743700kmzl7e8pli5x73",
+    "name": "Ilkka Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700KMZL7E8PLI5X73"
+  },
+  {
+    "id": "lei-743700koul1gqqqrep40",
+    "name": "Afarak Group SE",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700KOUL1GQQQREP40"
+  },
+  {
+    "id": "lei-743700lsjbdd7tmlad92",
+    "name": "Taaleri Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700LSJBDD7TMLAD92"
+  },
+  {
+    "id": "lei-743700m4eievd61pnn55",
+    "name": "Martela Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700M4EIEVD61PNN55"
+  },
+  {
+    "id": "lei-743700mrpvyi7ashcx38",
+    "name": "Tecnotree Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700MRPVYI7ASHCX38"
+  },
+  {
+    "id": "lei-743700nc0v49ajsqkw42",
+    "name": "Trainers' House Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700NC0V49AJSQKW42"
+  },
+  {
+    "id": "lei-743700nfg5w5i59ovx65",
+    "name": "Bittium Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700NFG5W5I59OVX65"
+  },
+  {
+    "id": "lei-743700nrl9eh2flph480",
+    "name": "Robit Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700NRL9EH2FLPH480"
+  },
+  {
+    "id": "lei-743700o69nchtnev0362",
+    "name": "Nurminen Logistics Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700O69NCHTNEV0362"
+  },
+  {
+    "id": "lei-743700oajk6l28y2nn56",
+    "name": "Mandatum Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700OAJK6L28Y2NN56"
+  },
+  {
+    "id": "lei-743700pembij4gpcyx48",
+    "name": "Elecster Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700PEMBIJ4GPCYX48"
+  },
+  {
+    "id": "lei-743700pouuq3cs3q7s40",
+    "name": "Kreate Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700POUUQ3CS3Q7S40"
+  },
+  {
+    "id": "lei-743700qvag6oxk5op587",
+    "name": "Digia Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700QVAG6OXK5OP587"
+  },
+  {
+    "id": "lei-743700qze6b52shhtv75",
+    "name": "Verkkokauppa.com Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700QZE6B52SHHTV75"
+  },
+  {
+    "id": "lei-743700r4fa6avh5j3d68",
+    "name": "eQ Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700R4FA6AVH5J3D68"
+  },
+  {
+    "id": "lei-743700rndd7ku11hw873",
+    "name": "Vaisala Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700RNDD7KU11HW873"
+  },
+  {
+    "id": "lei-743700rsfzuiqyabyt14",
+    "name": "Apetit Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700RSFZUIQYABYT14"
+  },
+  {
+    "id": "lei-743700t69obbjo7tca15",
+    "name": "Finnvera Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700T69OBBJO7TCA15"
+  },
+  {
+    "id": "lei-743700tdb62dgafrob24",
+    "name": "Wetteri Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700TDB62DGAFROB24"
+  },
+  {
+    "id": "lei-743700tsb08bo83sjr33",
+    "name": "Reka Industrial Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700TSB08BO83SJR33"
+  },
+  {
+    "id": "lei-743700uf3rl386wida22",
+    "name": "Sampo Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700UF3RL386WIDA22"
+  },
+  {
+    "id": "lei-743700v3i7cli3dj8l62",
+    "name": "Glaston Oyj Abp",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700V3I7CLI3DJ8L62"
+  },
+  {
+    "id": "lei-743700vk1nb8hrgtqh74",
+    "name": "Alisa Pankki Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700VK1NB8HRGTQH74"
+  },
+  {
+    "id": "lei-743700vmg6kwf0fw1560",
+    "name": "Tokmanni Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700VMG6KWF0FW1560"
+  },
+  {
+    "id": "lei-743700x6kuj0z8gjif03",
+    "name": "Pohjolan Voima Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700X6KUJ0Z8GJIF03"
+  },
+  {
+    "id": "lei-743700x9s8fvyri20j88",
+    "name": "Relais Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700X9S8FVYRI20J88"
+  },
+  {
+    "id": "lei-743700xjc24thupk0s03",
+    "name": "Sanoma Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700XJC24THUPK0S03"
+  },
+  {
+    "id": "lei-743700xlyonpsko15z91",
+    "name": "Atria Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700XLYONPSKO15Z91"
+  },
+  {
+    "id": "lei-743700xq240jmmybnw69",
+    "name": "VR-Yhtymä Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700XQ240JMMYBNW69"
+  },
+  {
+    "id": "lei-743700xsmvpr48ximl56",
+    "name": "Enersense International Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700XSMVPR48XIML56"
+  },
+  {
+    "id": "lei-743700y8qwc1ft6r0f34",
+    "name": "GRK Infra Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700Y8QWC1FT6R0F34"
+  },
+  {
+    "id": "lei-743700yehy9i3zdhnx66",
+    "name": "Lehto Group Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700YEHY9I3ZDHNX66"
+  },
+  {
+    "id": "lei-743700yge1gq2dnt5t52",
+    "name": "Kesla Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700YGE1GQ2DNT5T52"
+  },
+  {
+    "id": "lei-743700yqio8y4l4wkr40",
+    "name": "Nokian Renkaat Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700YQIO8Y4L4WKR40"
+  },
+  {
+    "id": "lei-743700z1bnfyr9prdf52",
+    "name": "Suominen Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700Z1BNFYR9PRDF52"
+  },
+  {
+    "id": "lei-743700z9z54vghza0028",
+    "name": "Luotea Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "lei": "743700Z9Z54VGHZA0028",
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/palveluvastaava-paakaupunkiseudulle-2785026",
+      "https://www.jobly.fi/tyopaikka/elintarvikehygienian-esihenkilo-pori-2775039",
+      "https://www.jobly.fi/tyopaikka/kokoaikainen-kohdevastaava-siivooja-turku-2784410"
+    ]
+  },
+  {
+    "id": "lei-743700zgh7gd27uoqo12",
+    "name": "Panostaja Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700ZGH7GD27UOQO12"
+  },
+  {
+    "id": "lei-743700zkomtb7x00ow54",
+    "name": "Eezy Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "743700ZKOMTB7X00OW54"
+  },
+  {
+    "id": "lei-9845000d85046ecfff27",
+    "name": "Koskisen Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "9845000D85046ECFFF27"
+  },
+  {
+    "id": "lei-9845006bfdjf0375e466",
+    "name": "F-Secure Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "9845006BFDJF0375E466"
+  },
+  {
+    "id": "lei-984500f4ccf3ad74f766",
+    "name": "Evli Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "984500F4CCF3AD74F766"
+  },
+  {
+    "id": "lokki-henkilostopalvelut-2fd2c18e",
+    "name": "Lokki Henkilöstöpalvelut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/it-sourcing-manager-2785565"
+    ]
+  },
+  {
+    "id": "loviisan-kaupunki-b18561e6",
+    "name": "Loviisan kaupunki",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hankintapaallikko-2770534"
+    ]
+  },
+  {
+    "id": "lp-group-79171273",
+    "name": "LP-GROUP",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/lp-group-asiakkuuspaallikko-tuotanto-2779923"
+    ]
+  },
+  {
+    "id": "maakuntien-tilakeskus-9834df44",
+    "name": "Maakuntien tilakeskus",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kokenut-asiantuntija-kiinteistotalous-ja-tilahallinta-2779431"
+    ]
+  },
+  {
+    "id": "manpower-5ac66e81",
+    "name": "Manpower",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakaspalvelukoordinaattori-cloetta-suomi-oy-2785527",
+      "https://www.jobly.fi/tyopaikka/ict-data-support-echa-2779848"
+    ]
+  },
+  {
+    "id": "mentek-advisors-190d673c",
+    "name": "Mentek Advisors Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tekninen-hankinta-ja-ostoasiantuntija-jtk-power-oy-2784413"
+    ]
+  },
+  {
+    "id": "mestarit-henkilostopalvelut-7cfa60ac",
+    "name": "Mestarit Henkilöstöpalvelut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kokenut-hankintainsinoori-helsinki-2784791"
+    ]
+  },
+  {
+    "id": "minjon-222b8d99",
+    "name": "Minjon Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/legal-recruiter-minjon-2783699"
+    ]
+  },
+  {
+    "id": "nextpharma-31fb43e4",
+    "name": "NextPharma Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.918588+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.354679+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kiinteistotyonjohtaja-2777254",
+      "https://www.jobly.fi/tyopaikka/hr-manager-laaketehtaaseen-2778843"
+    ]
+  },
+  {
+    "id": "nice-business-consulting-oy-nico-8450312b",
+    "name": "Nice-business Consulting Oy (Nico)",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/onsite-technician-lahitukihenkilo-turku-2785055"
+    ]
+  },
+  {
+    "id": "nicole-beauty-d2f773d4",
+    "name": "Nicole Beauty",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hoitolatyontekija-2782917"
+    ]
+  },
+  {
+    "id": "nordic-green-energy-0541a37a",
+    "name": "Nordic Green Energy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakaspalvelija-nordic-green-energy-vaasa-2777991"
+    ]
+  },
+  {
+    "id": "normet-7f9c97f1",
+    "name": "Normet",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/sourcing-specialist-2784214"
+    ]
+  },
+  {
+    "id": "northern-solutions-d2470fae",
+    "name": "Northern solutions",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myyntineuvottelija-etatyo-2784942"
+    ]
+  },
+  {
+    "id": "ntg-air-ocean-761f9ce8",
+    "name": "NTG Air & Ocean Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.362814+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/lento-osaston-asiakaspalvelutehtavat-2784183"
+    ]
+  },
+  {
+    "id": "osuma-henkilostopalvelut-1ad2ced6",
+    "name": "Osuma Henkilöstöpalvelut Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "lastSeenAt": "2026-10-24T19:17:42.231951+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tyomaalogistiikkatyontekijoita-jyvaskylaan-2784885",
+      "https://www.jobly.fi/tyopaikka/asiakkuuspaallikko-ouluun-2774437",
+      "https://www.jobly.fi/tyopaikka/kokoonpanotyontekija-metallityo-vainio-oy-2769406",
+      "https://www.jobly.fi/tyopaikka/puuelementtityontekijoita-omatalo-oy-2769414",
+      "https://www.jobly.fi/tyopaikka/koneistaja-ja-sorvaajia-ht-laser-2769405",
+      "https://www.jobly.fi/tyopaikka/hitsaaja-metallityo-vainio-oy-2769401",
+      "https://www.jobly.fi/tyopaikka/hitsaaja-ht-laser-2769407",
+      "https://www.jobly.fi/tyopaikka/hitsaaja-ht-laser-2769403"
+    ]
+  },
+  {
+    "id": "oy-vaasan-ammattikorkeakoulu-vasa-yrkeshogskola-9005fccc",
+    "name": "Oy Vaasan ammattikorkeakoulu - Vasa yrkeshögskola Ab",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:29.171216+00:00",
+    "lastSeenAt": "2026-10-24T19:17:29.171216+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tuntiopettaja-tekniikka-2027307",
+      "https://www.jobly.fi/tyopaikka/tuntiopettaja-liiketalous-ja-tietojenkasittely-2027308"
+    ]
+  },
+  {
+    "id": "poliisi-d0aebc7f",
+    "name": "Poliisi",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "lastSeenAt": "2026-10-24T19:17:36.162798+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/talousasiantuntija-401402-2775215"
+    ]
+  },
+  {
+    "id": "porvoon-kaupunki-borga-stad-98f1a899",
+    "name": "Porvoon kaupunki - Borgå stad",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hankinta-asiantuntija-2765178"
+    ]
+  },
+  {
+    "id": "rainmaker-739de437",
+    "name": "Rainmaker",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tiiminvetaja-myyntiin-uusimaa-2785408",
+      "https://www.jobly.fi/tyopaikka/myyntiedustaja-kajaani-2775793",
+      "https://www.jobly.fi/tyopaikka/paikka-auki-myyntitiimissa-turussa-2784737",
+      "https://www.jobly.fi/tyopaikka/myyntineuvottelija-dna-kuopio-2784714"
+    ]
+  },
+  {
+    "id": "red-hat-holdings-ltd-858fb707",
+    "name": "Red Hat Holdings Ltd.",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakaspalvelija-2784644"
+    ]
+  },
+  {
+    "id": "reitan-convenience-finland-b8cb128e",
+    "name": "Reitan Convenience Finland Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myyja-keikkatyo-2782495",
+      "https://www.jobly.fi/tyopaikka/yrittaja-r-kioskille-oulu-tuiraan-2744503",
+      "https://www.jobly.fi/tyopaikka/myyja-keikkatyo-2778246",
+      "https://www.jobly.fi/tyopaikka/myyja-keikkatyo-2777753",
+      "https://www.jobly.fi/tyopaikka/myyja-keikkatyo-2777754",
+      "https://www.jobly.fi/tyopaikka/myyja-keikkatyo-2777752"
+    ]
+  },
+  {
+    "id": "remedy",
+    "name": "Remedy Entertainment",
+    "industry": "Gaming",
+    "domain": "remedygames.com",
+    "brandColor": "#8b1a1a",
+    "logo": null,
+    "image": "/images/industry/gaming.jpg",
+    "imageCredit": {
+      "author": "AzureSaturn",
+      "url": "https://commons.wikimedia.org/wiki/File:Logitech_G_PRO_TKL_gaming_keyboard_-_English_(United_States)_layout.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "hint": "Makes story-driven console games that take years to build.",
+    "lastSeenAt": "2026-10-24T19:17:28.657289+00:00",
+    "discoverySources": [
+      "https://filings.xbrl.org/indexes/filings-2025.json"
+    ],
+    "lei": "7437003VZ3JPF7DBTG92"
+  },
+  {
+    "id": "rituals-cosmetics-ce4b7c3b",
+    "name": "Rituals Cosmetics",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.226272+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/apulaismyymalapaallikko-vaasa-rewell-25-375h-2783541"
+    ]
+  },
+  {
+    "id": "robit-finland-568c64f2",
+    "name": "Robit Finland Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hr-manager-2778476"
+    ]
+  },
+  {
+    "id": "rukakeskus-01a9814f",
+    "name": "Rukakeskus Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakaspalvelija-rukalle-ja-kuusamoon-2745323"
+    ]
+  },
+  {
+    "id": "sandvik-a3f429d7",
+    "name": "Sandvik",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040",
+      "https://www.jobly.fi/tyopaikka/supervisor-logistics-manufacturing-2780695",
+      "https://www.jobly.fi/tyopaikka/konekunnossapitoinsinoori-maintenance-engineer-2780703"
+    ]
+  },
+  {
+    "id": "sandvik-mining-and-construction-4fa2b30d",
+    "name": "Sandvik Mining and Construction Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/hr-manager-talent-acquisition-2777508",
+      "https://www.jobly.fi/tyopaikka/hr-specialist-talent-acquisition-2777492"
+    ]
+  },
+  {
+    "id": "savon-koulutuskuntayhtyma-ac84d899",
+    "name": "Savon Koulutuskuntayhtymä",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/avoin-haku-tukipalvelut-2587930"
+    ]
+  },
+  {
+    "id": "select-service-partner-finland-cbc7385b",
+    "name": "Select Service Partner Finland",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/loungetyontekijoita-helsinki-vantaan-lentoasema-ssp-finland-2785372"
+    ]
+  },
+  {
+    "id": "sepa-c71d5e04",
+    "name": "Sepa Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myynti-ja-markkinointijohtaja-2771160"
+    ]
+  },
+  {
+    "id": "sihti-1ec2acd3",
+    "name": "Sihti",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "lastSeenAt": "2026-10-24T19:17:35.275696+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/torninosturinkuljettaja-2784761"
+    ]
+  },
+  {
+    "id": "sipoon-kunta-sibbo-kommun-5f389ae9",
+    "name": "Sipoon kunta Sibbo kommun",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:31.144914+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/investointipaallikko-yhdyskunta-ja-ymparisto-2776035"
+    ]
+  },
+  {
+    "id": "sodexo-cbf7d0a1",
+    "name": "Sodexo Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/toimitilakoordinaattori-facility-coordinatori-espooseen-2780399",
+      "https://www.jobly.fi/tyopaikka/monipalvelutyontekija-helsinkiin-2785272",
+      "https://www.jobly.fi/tyopaikka/siivouspalvelun-esihenkilo-ouluun-2781864",
+      "https://www.jobly.fi/tyopaikka/tyoharjoittelu-koulutussopimus-2025-2571776"
+    ]
+  },
+  {
+    "id": "sok-ffa67ff8",
+    "name": "SOK",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/kehityspaallikko-talousjarjestelmat-ja-prosessit-2780330",
+      "https://www.jobly.fi/tyopaikka/head-international-sales-sok-mara-ketjuohjaus-2785023"
+    ]
+  },
+  {
+    "id": "sonepar-suomi-affac673",
+    "name": "Sonepar Suomi Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/category-manager-2783091"
+    ]
+  },
+  {
+    "id": "sos-international-cc4c44d0",
+    "name": "SOS International Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.089619+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/assistance-coordinator-sos-international-2775924"
+    ]
+  },
+  {
+    "id": "specim-spectral-imaging-d5e7af26",
+    "name": "Specim, Spectral Imaging Oy Ltd",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/purchasing-manager-2781025"
+    ]
+  },
+  {
+    "id": "st1-68f1c007",
+    "name": "St1 Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:31.144914+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782",
+      "https://www.jobly.fi/tyopaikka/senior-project-manager-2775781"
+    ]
+  },
+  {
+    "id": "staffpoint-084ceb80",
+    "name": "StaffPoint Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:31.144914+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.086795+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/vahittais-ja-tukkukauppa"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/rahankasittelija-reila-oy-vantaa-2763972",
+      "https://www.jobly.fi/tyopaikka/myyntineuvottelijoita-operaattorialalle-koko-suomi-2775049",
+      "https://www.jobly.fi/tyopaikka/varastotyontekijoita-keikkatoihin-turku-2784705",
+      "https://www.jobly.fi/tyopaikka/procurement-professionals-specialist-buyer-lead-manager-data-center-projects-2779180",
+      "https://www.jobly.fi/tyopaikka/hankinnan-osaajia-asiantuntijoita-ostajia-ja-paallikoita-datakeskushankkeet-2778349",
+      "https://www.jobly.fi/tyopaikka/hr-harjoittelija-horeca-tiimiin-staffpointille-2780586",
+      "https://www.jobly.fi/tyopaikka/rekrytointiasiantuntija-kesatyorekrytointiprojektiin-sipoo-2777174",
+      "https://www.jobly.fi/tyopaikka/rekrytointikonsultti-rovaniemi-2773968",
+      "https://www.jobly.fi/tyopaikka/vastuumyyja-30h-vk-makia-pop-jyvaskyla-sokkari-2785457",
+      "https://www.jobly.fi/tyopaikka/myyja-15-5h-vk-makia-pop-jyvaskyla-seppala-2785024",
+      "https://www.jobly.fi/tyopaikka/tutkimushaastattelija-rovaniemi-norstat-oy-2766081",
+      "https://www.jobly.fi/tyopaikka/myyja-moomin-shop-levi-2770473",
+      "https://www.jobly.fi/tyopaikka/myyjia-keikkatyohon-uusikaupunki-vehmaa-2780466",
+      "https://www.jobly.fi/tyopaikka/asiakaspalvelija-joulupukin-pajakylaan-2780337"
+    ]
+  },
+  {
+    "id": "staria-38afe71d",
+    "name": "Staria Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-payroll-specialist-international-payroll-environment-2782905"
+    ]
+  },
+  {
+    "id": "suoramarkkinointi-mega-43bc75c6",
+    "name": "Suoramarkkinointi Mega Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "lastSeenAt": "2026-10-24T19:17:33.513156+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/asiakashankkija-2768754"
+    ]
+  },
+  {
+    "id": "supercell",
+    "name": "Supercell",
+    "industry": "Gaming",
+    "domain": "supercell.com",
+    "brandColor": "#1c1c1c",
+    "logo": null,
+    "image": "/images/industry/gaming.jpg",
+    "imageCredit": {
+      "author": "AzureSaturn",
+      "url": "https://commons.wikimedia.org/wiki/File:Logitech_G_PRO_TKL_gaming_keyboard_-_English_(United_States)_layout.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "hint": "Makes mobile games with famously small teams."
+  },
+  {
+    "id": "tampereen-kaupunki-2a6a843d",
+    "name": "Tampereen kaupunki",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/erityisasiantuntija-tyollisyys-ja-kasvupalvelut-osaamisen-ja-tyollistymisen-0",
+      "https://www.jobly.fi/tyopaikka/hankintapaallikko-hankintapalvelut-2785129",
+      "https://www.jobly.fi/tyopaikka/hankintapaallikko-hankintapalvelut-2785075"
+    ]
+  },
+  {
+    "id": "tampereen-yliopisto-11a7cf06",
+    "name": "Tampereen yliopisto",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tutkijakoulutuksen-asiantuntija-tampereen-yliopiston-tutkijakouluun-2785022",
+      "https://www.jobly.fi/tyopaikka/assistant-professor-tenure-track-economics-apulaisprofessori-tenure-track-taloustiede",
+      "https://www.jobly.fi/tyopaikka/harjoittelija-opiskelija-ja-hakijapalvelut-2784857"
+    ]
+  },
+  {
+    "id": "target-headhunting-d350bf92",
+    "name": "Target Headhunting Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/recruitment-sales-consultant-2782350"
+    ]
+  },
+  {
+    "id": "tempu-be1c0cea",
+    "name": "Tempu Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/taksinkuljettaja-bolt-uber-alihankkija-2782070"
+    ]
+  },
+  {
+    "id": "tietoakseli-group-2ebd1bfa",
+    "name": "TietoAkseli Group",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/mepco-hrm-product-owner-2778049"
+    ]
+  },
+  {
+    "id": "tokmanni",
+    "name": "Tokmanni",
+    "industry": "Retail",
+    "domain": "tokmanni.fi",
+    "brandColor": "#d6001c",
+    "logo": null,
+    "image": "/images/industry/retail.jpg",
+    "imageCredit": {
+      "author": "Wilfredor",
+      "url": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Discount retailer with hundreds of stores."
+  },
+  {
+    "id": "tribedo-5c3f81a9",
+    "name": "Tribedo Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/projektihallinto",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/solution-analyst-lainaprosessit-2780810"
+    ]
+  },
+  {
+    "id": "twoday-c2b04adf",
+    "name": "Twoday Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "lastSeenAt": "2026-10-24T19:17:38.381162+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/henkilostohallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/talent-acquisition-business-partner-2785501"
+    ]
+  },
+  {
+    "id": "uggla-engineering-6745deda",
+    "name": "Uggla Engineering Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:31.144914+00:00",
+    "lastSeenAt": "2026-10-24T19:17:39.241919+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/projektihallinto"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287",
+      "https://www.jobly.fi/tyopaikka/cost-manager-kouvola-2778283"
+    ]
+  },
+  {
+    "id": "vaihtoautomaa-ea3e0b2f",
+    "name": "Vaihtoautomaa",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "lastSeenAt": "2026-10-24T19:17:41.175044+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/automyyja-2783532"
+    ]
+  },
+  {
+    "id": "valio",
+    "name": "Valio",
+    "industry": "Food",
+    "domain": "valio.fi",
+    "brandColor": "#0047bb",
+    "logo": null,
+    "image": "/images/industry/food.jpg",
+    "imageCredit": {
+      "author": "Catherine Sharman",
+      "url": "https://commons.wikimedia.org/wiki/File:Bread_Ahead_Vanilla_Doughnuts.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "hint": "Milk, cheese and the Oltermanni brand."
+  },
+  {
+    "id": "vianor-d750292c",
+    "name": "Vianor Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "lastSeenAt": "2026-10-24T19:17:40.308727+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/myynti"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/myyja-vianor-rauma-2772684"
+    ]
+  },
+  {
+    "id": "vuorenmaa-yhtiot-b410fb2e",
+    "name": "VUORENMAA Yhtiöt Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "lastSeenAt": "2026-10-24T19:17:37.191374+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/ostaja-vuorenmaa-yhtiot-oy-2776064"
+    ]
+  },
+  {
+    "id": "weidmuller-4e04b40b",
+    "name": "Weidmüller",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:32.568722+00:00",
+    "lastSeenAt": "2026-10-24T19:17:45.919785+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/technical-support-weidmuller-vantaa-2783540"
+    ]
+  },
+  {
+    "id": "worker-henkilostoratkaisut-8ce0611a",
+    "name": "Worker Henkilöstöratkaisut",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.918588+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/blokkari-yokerhoon-palkka-1221-1504eu-marava-tes-2776404",
+      "https://www.jobly.fi/tyopaikka/rakennusalan-avustavat-tyot-palkka-1224-1664eu-rakennusalan-tes-2776405",
+      "https://www.jobly.fi/tyopaikka/kokki-turkuun-palkka-1221-17eu-marava-tes-2776406",
+      "https://www.jobly.fi/tyopaikka/baarityontekija-palkka-1370-17eu-marava-tes-2776408",
+      "https://www.jobly.fi/tyopaikka/asiakaspalvelija-ravintola-ja-majoituskohteeseen-ivaloon-2766074",
+      "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-tunturikohteisiin-talvikausi-26-27-avoin-haku-2695595",
+      "https://www.jobly.fi/tyopaikka/autojen-siirtokuljettaja-europcarille-rovaniemi-2774240",
+      "https://www.jobly.fi/tyopaikka/imuauton-kuljettaja-2664535",
+      "https://www.jobly.fi/tyopaikka/puoliperavaunuyhdistelman-kuljettaja-suoraan-asiakasyritykseen-2779818",
+      "https://www.jobly.fi/tyopaikka/rakennusalan-tyontekijoita-vihtiin-talonrakennus-ja-lvis-ala-2455192",
+      "https://www.jobly.fi/tyopaikka/rakennusalan-tekijoita-vaasaan-2782682",
+      "https://www.jobly.fi/tyopaikka/ajoneuvonosturinkuljettaja-kymenlaaksoon-2756413",
+      "https://www.jobly.fi/tyopaikka/kaivostyontekija-kreikka-tapojarvi-oy-2617315",
+      "https://www.jobly.fi/tyopaikka/kurottajan-kuljettaja-ymparipyoriva-vaasaan-2770175",
+      "https://www.jobly.fi/tyopaikka/hitsaaja-urjalaan-2690458",
+      "https://www.jobly.fi/tyopaikka/teollisuussahkoasentaja-pitajanmakeen-2751484",
+      "https://www.jobly.fi/tyopaikka/putkihitsaaja-2355108",
+      "https://www.jobly.fi/tyopaikka/tig-hitsaaja-2758290",
+      "https://www.jobly.fi/tyopaikka/cnc-koneistaja-jyrsimelle-2684597",
+      "https://www.jobly.fi/tyopaikka/putkihitsaaja-2729579",
+      "https://www.jobly.fi/tyopaikka/teollisuusputkihitsaajia-ja-asentajia-komennustyo-2684007",
+      "https://www.jobly.fi/tyopaikka/metallialan-tuotantotyontekija-2769233",
+      "https://www.jobly.fi/tyopaikka/manuaalikoneistaja-vakituinen-tyosuhde-2732035",
+      "https://www.jobly.fi/tyopaikka/kokoonpanotyontekija-hitsaus-mynamakeen-2603054"
+    ]
+  },
+  {
+    "id": "workpower-fba42691",
+    "name": "Workpower Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:28.918588+00:00",
+    "lastSeenAt": "2026-10-24T19:17:43.018682+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat",
+      "https://www.jobly.fi/tyopaikat/talous-ja-rahoitus",
+      "https://www.jobly.fi/tyopaikat/asiakaspalvelu",
+      "https://www.jobly.fi/tyopaikat/kuljetus-ja-logistiikka",
+      "https://www.jobly.fi/tyopaikat/osto-ja-hankinta",
+      "https://www.jobly.fi/tyopaikat/myynti",
+      "https://www.jobly.fi/tyopaikat/teollisuus"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/lahihoitajan-keikkatyo-turenki-2771072",
+      "https://www.jobly.fi/tyopaikka/lahihoitajan-kotihoidon-keikkatoita-kotka-2209499",
+      "https://www.jobly.fi/tyopaikka/lahihoitajan-keikkatyo-jyvaskyla-2385157",
+      "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-kirjanpitaja-nattinummen-isannointi-oy-turku-2785407",
+      "https://www.jobly.fi/tyopaikka/varaosamyyja-west-diesel-engineering-oylle-forssaan-2785410",
+      "https://www.jobly.fi/tyopaikka/kuorma-autonkuljettaja-postnord-kappaletavarajakelu-uusimaa-2783296",
+      "https://www.jobly.fi/tyopaikka/yhdistelmaajoneuvonkuljettaja-jakelutehtavat-kouvola-2783302",
+      "https://www.jobly.fi/tyopaikka/maansiirtoautonkuljettaja-tyokoneenkuljettaja-tampere-2783295",
+      "https://www.jobly.fi/tyopaikka/ostaja-bucher-hydraulics-oylle-2783369",
+      "https://www.jobly.fi/tyopaikka/cnc-koneistaja-tyostokeskukselle-2783114",
+      "https://www.jobly.fi/tyopaikka/teollisuusmaalari-pintakasittelytyontekija-lp-group-kangasniemi-oy-2785166",
+      "https://www.jobly.fi/tyopaikka/tuotannonsuunnittelija-tervakoskelle-2785160"
+    ]
+  },
+  {
+    "id": "wunderdog-5d213b5c",
+    "name": "Wunderdog",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "lastSeenAt": "2026-10-24T19:17:44.960907+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/it"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/senior-mobile-developer-oulu-2761089"
+    ]
+  },
+  {
+    "id": "yit-housing-f53e8ee1",
+    "name": "YIT Housing Oy",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category.",
+    "firstSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "lastSeenAt": "2026-10-24T19:17:30.921938+00:00",
+    "discoverySources": [
+      "https://www.jobly.fi/tyopaikat/hallinto-ja-toimistotyo"
+    ],
+    "listingUrls": [
+      "https://www.jobly.fi/tyopaikka/tyoturvallisuusinsinoori-rakennusalalle-ita-pohjois-suomeen-yit-asuminen-2780464"
+    ]
+  }
+]

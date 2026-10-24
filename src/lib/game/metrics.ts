@@ -1,4 +1,4 @@
-import type { Company, EfficiencyMetricId, EfficiencyObservation } from "@/types/company";
+import type { GameCompany as Company, EfficiencyMetricId, EfficiencyObservation } from "@/types/company";
 
 export type MetricId = EfficiencyMetricId;
 export type Metric = {

@@ -1,9 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { Company } from "@/types/company";
+import type { GameCompany as Company } from "@/types/company";
 import { METRICS } from "@/lib/game/metrics";
-import { availableRounds, buildRandomRun, type Round } from "@/lib/game/sequence";
+import { availableRounds, buildRandomRun, nextEndlessRound, type Round } from "@/lib/game/sequence";
 import { rankTitle, shareText } from "@/lib/game/share";
 import { VELHO_URL } from "@/lib/velho";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
@@ -15,19 +15,20 @@ import { VelhoTip } from "./VelhoTip";
 type Phase = "guess" | "rolling" | "revealed" | "done";
 type Outcome = "hit" | "miss";
 
-const BEST_KEY = "tehokas-efficiency-best-five-rounds";
+type GameMode = "five" | "endless";
+const bestKey = (mode: GameMode) => `tehokas-efficiency-best-${mode === "five" ? "five-rounds" : "endless-score"}`;
 
-function readBest(): number {
+function readBest(mode: GameMode): number {
   try {
-    return Number(localStorage.getItem(BEST_KEY)) || 0;
+    return Number(localStorage.getItem(bestKey(mode))) || 0;
   } catch {
     return 0;
   }
 }
 
-function writeBest(value: number) {
+function writeBest(mode: GameMode, value: number) {
   try {
-    localStorage.setItem(BEST_KEY, String(value));
+    localStorage.setItem(bestKey(mode), String(value));
   } catch {
     // Private mode or blocked storage: the best score just isn't remembered.
   }
@@ -45,6 +46,8 @@ type Props = {
 
 /** Higher or lower: sourced efficiency signals, a random category every question. */
 export function Game({ companies, onGameChange }: Props) {
+  const [mode, setMode] = useState<GameMode>("five");
+  const [answered, setAnswered] = useState(0);
   const [rounds, setRounds] = useState<Round[]>([]);
   const pairs = useMemo(() => availableRounds(companies), [companies]);
   const [index, setIndex] = useState(0);
@@ -56,12 +59,15 @@ export function Game({ companies, onGameChange }: Props) {
   const [tipOpen, setTipOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const start = useCallback(() => {
-    setRounds(buildRandomRun(pairs));
+  const start = useCallback((nextMode: GameMode = "five") => {
+    setMode(nextMode);
+    setAnswered(0);
+    const first = nextMode === "endless" ? nextEndlessRound(pairs, [], Math.random) : null;
+    setRounds(nextMode === "five" ? buildRandomRun(pairs) : first ? [first] : []);
     setIndex(0);
     setPhase("guess");
     setScore(0);
-    setBest(readBest());
+    setBest(readBest(nextMode));
     setTipUsed(false);
     setTipOpen(false);
     setCopied(false);
@@ -74,7 +80,26 @@ export function Game({ companies, onGameChange }: Props) {
     <TopBar
       game="higherLower"
       onGameChange={onGameChange}
-      status={`Score ${score}/5 · Best ${best}/5`}
+      status={mode === "five" ? `Score ${score}/5 · Best ${best}/5` : `Score ${score}/${answered} · Best ${best}`}
+      controls={
+        <div className="flex items-center gap-2">
+          <div className="flex rounded-full border border-line-dark p-0.5 text-xs">
+            {(["five", "endless"] as const).map((option) => (
+              <button
+                key={option}
+                aria-pressed={mode === option}
+                onClick={() => start(option)}
+                className={`rounded-full px-3 py-1 transition ${mode === option ? "bg-ivory text-navy" : "text-on-dark hover:text-ivory"}`}
+              >
+                {option === "five" ? "5 rounds" : "Endless"}
+              </button>
+            ))}
+          </div>
+          {mode === "endless" && phase !== "done" && (
+            <button disabled={phase === "rolling" || answered === 0} onClick={finish} className="text-xs text-ivory disabled:opacity-40">Finish</button>
+          )}
+        </div>
+      }
     />
   );
 
@@ -106,27 +131,32 @@ export function Game({ companies, onGameChange }: Props) {
     } else {
       setOutcome("miss");
     }
+    setAnswered((count) => count + 1);
     setTipOpen(false);
     setPhase("rolling");
   };
 
-  const finish = () => {
+  function finish() {
     setPhase("done");
     if (score > best) {
       setBest(score);
-      writeBest(score);
+      writeBest(mode, score);
     }
   };
 
   const advance = () => {
     if (phase !== "revealed") return;
-    if (index + 1 >= rounds.length) return finish();
+    if (mode === "endless") {
+      const next = nextEndlessRound(pairs, rounds, Math.random);
+      if (!next) return finish();
+      setRounds((previous) => [...previous, next]);
+    } else if (index + 1 >= rounds.length) return finish();
     setIndex((i) => i + 1);
     setPhase("guess");
   };
 
   const share = async () => {
-    const text = shareText({ score: score, url: window.location.origin });
+    const text = shareText({ score, mode, total: answered, url: window.location.origin });
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -142,10 +172,10 @@ export function Game({ companies, onGameChange }: Props) {
         <main className="mx-auto flex min-h-0 w-full max-w-[760px] flex-1 flex-col justify-center gap-3 p-3">
           <div className="text-center">
             <h1 className="text-3xl leading-none">Game complete</h1>
-            <p className="mt-1 text-xs text-ink-3">Higher or lower · 5 rounds</p>
+            <p className="mt-1 text-xs text-ink-3">Higher or lower · {mode === "five" ? "5 rounds" : `${answered} rounds · Endless`}</p>
           </div>
           <section className="card animate-rise p-4 text-center">
-            <p className="text-[clamp(48px,10dvh,88px)] font-semibold leading-none tracking-[-0.05em]">{score}/5</p>
+            <p className="text-[clamp(48px,10dvh,88px)] font-semibold leading-none tracking-[-0.05em]">{score}/{mode === "five" ? 5 : answered}</p>
             <p className="mt-1 text-xl font-semibold tracking-tight">{rankTitle(score)}</p>
             <p className="mt-1 font-mono text-xs text-ink-3">
               Best {Math.max(best, score)}
@@ -154,7 +184,7 @@ export function Game({ companies, onGameChange }: Props) {
               <button onClick={share} className="btn btn-dark btn-sm">
                 {copied ? "Copied" : "Share result"}
               </button>
-              <button onClick={start} className="btn btn-line btn-sm">
+              <button onClick={() => start(mode)} className="btn btn-line btn-sm">
                 Play again <Icon name="arrowRight" />
               </button>
             </div>
@@ -180,7 +210,7 @@ export function Game({ companies, onGameChange }: Props) {
       {topBar}
 
       <div className="shrink-0 bg-cream px-3 py-2 text-center">
-        <p className="eyebrow text-sage-d">Round {index + 1}/{rounds.length} · {metric.title}</p>
+        <p className="eyebrow text-sage-d">Round {index + 1}{mode === "five" ? `/${rounds.length}` : " · Endless"} · {metric.title}</p>
         <p className="mx-auto mt-1 hidden max-w-2xl text-xs text-ink-2 sm:block">{metric.explanation}</p>
       </div>
       <div className="higher-lower-board relative flex min-h-0 flex-1 flex-col overflow-hidden sm:flex-row">
@@ -205,7 +235,7 @@ export function Game({ companies, onGameChange }: Props) {
               <span className="text-on-dark-2">?</span>
             ) : (
               <RollingNumber
-                key={`${index}-${round.metric}`}
+                key={`${mode}-${index}-${round.metric}`}
                 value={metric.value(right)!}
                 format={metric.format}
                 onDone={() => setPhase("revealed")}
@@ -245,7 +275,7 @@ export function Game({ companies, onGameChange }: Props) {
               <p className="text-[17px] font-semibold">{ui.message}</p>
               <p className="hidden max-w-sm text-sm text-on-dark sm:block">{metric.opportunity}</p>
               <button onClick={advance} className="btn btn-light btn-sm">
-                {index + 1 >= rounds.length ? "See result" : "Next"} <Icon name="arrowRight" />
+                {mode === "five" && index + 1 >= rounds.length ? "See result" : "Next"} <Icon name="arrowRight" />
               </button>
             </div>
           )}

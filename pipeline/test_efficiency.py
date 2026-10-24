@@ -113,6 +113,11 @@ class JobTests(unittest.TestCase):
         self.assertIsNone(job_metric(jobs, date(2027, 5, 1))[0])
         self.assertIsNone(job_metric(jobs[:1], date(2026, 10, 24))[0])
 
+    def test_expired_ads_leave_the_sample_even_without_another_fetch(self):
+        jobs = [self.job(f"https://example.com/job/{i}") for i in range(3)]
+        jobs[0]["valid_through"] = "2026-10-23"
+        self.assertIsNone(job_metric(jobs, date(2026, 10, 24))[0])
+
     def test_zero_is_a_reviewed_sample_not_a_failed_fetch(self):
         jobs = [self.job(f"https://example.com/job/{i}", "Develop software.") for i in range(3)]
         metric, _ = job_metric(jobs, date(2026, 10, 24))

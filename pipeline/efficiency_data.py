@@ -126,9 +126,12 @@ def job_metric(company_jobs: list[dict], today: date | None = None) -> tuple[dic
         try:
             scraped = date.fromisoformat(job["scraped_at"][:10])
             posted = date.fromisoformat(job["posted_date"][:10]) if job.get("posted_date") else None
+            expires = date.fromisoformat(job["valid_through"][:10]) if job.get("valid_through") else None
         except (ValueError, TypeError, KeyError):
             continue
         if not 0 <= (today - scraped).days <= MAX_AD_AGE_DAYS:
+            continue
+        if expires and expires < today:
             continue
         if posted and not 0 <= (today - posted).days <= MAX_AD_AGE_DAYS:
             continue

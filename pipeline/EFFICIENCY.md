@@ -1,48 +1,70 @@
 # Efficiency data for Higher or lower
 
-The game uses four sourced observations, never the placeholder financial figures in
-`companies.csv`. All companies in that CSV are processed. Availability differs by
-company: a company without a disclosure or enough ads stays in the coverage report
-but cannot appear in a question for that metric. Public data cannot provide every
-metric for every company.
+The game uses four sourced observations. Its company catalog grows automatically;
+there is no fixed company universe in `companies.csv`.
 
-## Refresh
+## Automatic refresh
 
-No new Python packages or API credentials are required (Python 3.11+).
+`.github/workflows/refresh-company-data.yml` runs every six hours (00:23, 06:23,
+12:23 and 18:23 UTC) and supports GitHub's **Run workflow** button. The workflow
+must be present on the repository's default branch for scheduling to start.
+GitHub Actions must be enabled and allowed to write repository contents. Protected
+branches may need a bot exception. Scheduled runs can be delayed by GitHub.
+
+The routine:
+
+1. Downloads the previous calendar year's annual index from
+   [XBRL International](https://filings.xbrl.org/docs/api). It discovers Finnish
+   issuers, legal names, LEIs and report links. It selects December year ends and
+   prefers valid English filings, then the most recently processed report.
+2. Reads Jobly's general listing and eleven category listings. It revisits page one
+   for new employers and advances a saved cursor through deeper pages. These are
+   source categories, not preselected employers. Exact employer identity is retained;
+   an agency posting is attributed to the agency, never its undisclosed client.
+3. Refreshes the 40 least recently attempted companies, including failed attempts,
+   so repeated failures cannot starve the rest. Each company gets a bounded job-ad
+   sample and, where available, a tagged financial report. The queue keeps rotating
+   as new companies enter; a large catalog takes several runs to refresh fully.
+4. Recalculates observations for the entire catalog, validates the results, and
+   commits only generated data to `main`. A connected Git deployment can publish
+   the new snapshot. Players load this automatically maintained snapshot rather
+   than waiting for scraping while playing.
+
+No API keys or new Python packages are required (Python 3.11+). A local process lock
+and GitHub concurrency group prevent overlapping routine runs. Network downloads
+are cached; financial cache lifetime is seven days, listings one day. Conditional
+requests reuse unchanged files where Last-Modified is available. Job requests have
+configurable spacing and stop for the run on access/rate-limit responses.
 
 ```sh
-npm run data:refresh       # fresh Jobly samples + official financial reports + export
-npm run data:financials    # financial reports + existing job samples + export
-npm run data:build         # offline rebuild from saved facts and sampled ads
+npm run data:refresh                     # automatic discovery + next batch
+npm run data:refresh -- --batch-size 80   # larger batch
+npm run data:sample -- --company harvia   # focused refresh, no discovery
+npm run data:financials                  # catalog reports + export
+npm run data:build                       # offline export; no scraping
 ```
 
-Run the full refresh weekly on a machine with network access. It uses a configurable
-0.25-second interval between job-source requests, rather than the site's advertised
-crawl delay. Review the generated
-coverage and data diff before committing the new snapshot. The website continues
-using the committed snapshot while sources are unavailable; gameplay makes no
-live research requests.
+Refresh health, batches, timestamps, discovery errors and metric counts are saved
+in `data/refresh_status.json`; workflow runs also upload coverage as an artifact.
+A network failure preserves previous raw records with their original dates. Expired
+job samples (90 days), expired job ads, and financial records for another fiscal year
+are excluded from observations. Missing data never becomes an invented zero.
 
-Useful options:
-
-```sh
-python3 pipeline/fetch_efficiency.py --company harvia --force
-python3 pipeline/fetch_efficiency.py --year 2025 --strict
-python3 pipeline/fetch_efficiency.py --company valmet --refresh-jobs
-python3 pipeline/fetch_efficiency.py --refresh-jobs --job-delay 0.1
-```
-
-`--company` limits network refreshes, while the export always contains every
-configured company. `--force` bypasses the seven-day financial download cache.
-`--strict` fails when a category has fewer than two observations; game tests also
-check that each category actually has an eligible pair. The fiscal year defaults
-to the previous calendar year. This importer intentionally supports full
-January–December years; other reporting calendars need an explicit extension.
+The catalog bootstraps old company artwork on its first run, then is maintained
+independently. Reviewed `report_sources.json` mappings supplement automatically
+indexed reports; they do not determine which companies can enter the catalog.
+Public data cannot supply all four metrics for every employer. Missing disclosures
+remain in the coverage report and those companies skip the affected category.
 
 ## Files and provenance
 
 | File | Purpose |
 | --- | --- |
+| `data/company_catalog.json` | Discovered employer identities, provenance and first/last seen times |
+| `data/discovered_reports.json` | Indexed report URLs and issuer LEIs |
+| `data/discovery_state.json` | Listing-page cursors and discovery health |
+| `data/refresh_status.json` | Batch queue attempts and refresh health |
+| `../src/data/game_companies.json` | Game metadata exported from the discovered catalog |
 | `data/report_sources.json` | Official report landing pages, optional direct `reportUrl`, reviewed concept/table mappings, employer aliases |
 | `data/financial_facts.json` | Downloaded financial inputs, exact XBRL concept/context, legal-entity identifier, report URL, retrieval time |
 | `data/job_samples.json` | Refreshed ads, source URLs, original sampling times, per-company scrape errors |
@@ -91,7 +113,8 @@ report pages, with a bounded follow of report subpages. `esef.py` reads numeric
 iXBRL or XBRL facts using their scale, sign, format, unit and reporting context.
 Segment/subsidiary contexts, conflicting duplicates, unsupported transforms and
 non-EUR facts are rejected. Financial inputs must belong to one legal reporting
-entity. The source catalog is the trust boundary; add official sources only.
+entity. Reviewed sources and XBRL International’s indexed filings are the financial source boundary.
+Indexed report facts must match the discovered issuer LEI.
 
 Employee counts are often not numeric XBRL facts. `employeeTable` mappings select
 an exact reviewed row and optional `tableContains` text, align values to year
@@ -114,8 +137,8 @@ must be within 30 days. Minimum gaps avoid ties after display rounding.
 
 Each new question selects a category uniformly, then a pair. When possible it
 changes category from the previous question. A company with missing data cannot
-trap a chain in one category because questions use independent pairs. The daily
-run contains up to ten date-seeded questions with no repeated category/pair.
+trap a chain in one category because questions use independent pairs. The default
+run has five fresh random questions, and wrong guesses do not end the run.
 Endless uses fresh randomness and avoids the last five pairs when coverage permits.
 
 ## Validation

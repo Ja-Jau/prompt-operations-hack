@@ -94,12 +94,16 @@ The bonus game compares revenue growth versus employee growth, repetitive tasks 
 job ads, administrative expenses as a share of revenue, and estimated inventory days.
 Each play has five rounds with fresh random categories and sourced, comparable company
 figures. Wrong guesses do not end the game; the result is a score out of five.
+Switch to **Endless** for unlimited random rounds, including after wrong guesses; select
+**Finish** to see and share your score. Each mode tracks its own best score.
 Sources and tips open in dialogs so the game fits on one page.
 
-Run `npm run data:refresh` to collect public reports and job-ad samples. See the
+A GitHub Actions workflow discovers companies and refreshes a rotating batch every six
+hours. Run `npm run data:refresh` locally for the same routine. The company pool grows
+from the public Finnish filing index and Jobly listings rather than a fixed list. See the
 [efficiency data guide](pipeline/EFFICIENCY.md) for definitions, coverage and validation.
 Missing disclosures are excluded from play. `src/data/efficiency.json` supplies these
-metrics; `src/data/companies.json` supplies company metadata.
+metrics; `src/data/game_companies.json` supplies automatically discovered company metadata.
 
 ## How it gets Velho into the room
 

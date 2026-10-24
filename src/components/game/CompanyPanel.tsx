@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, type ReactNode } from "react";
-import type { Company } from "@/types/company";
+import type { GameCompany as Company } from "@/types/company";
 import { METRICS, metricObservation, type MetricId } from "@/lib/game/metrics";
 import { formatEur } from "@/lib/format";
 import { CompanyLogo } from "./CompanyLogo";

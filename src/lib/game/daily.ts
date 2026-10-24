@@ -1,4 +1,4 @@
-import type { Company } from "@/types/company";
+import type { GameCompany as Company } from "@/types/company";
 import { seededRandom } from "./random";
 import { availableRounds, pickRound, roundKey, type Round } from "./sequence";
 

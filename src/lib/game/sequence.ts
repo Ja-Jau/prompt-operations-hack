@@ -1,4 +1,4 @@
-import type { Company } from "@/types/company";
+import type { GameCompany as Company } from "@/types/company";
 import { comparable, METRIC_IDS, type MetricId } from "./metrics";
 
 /** Independent pairs prevent sparse data from locking a run to one category. */

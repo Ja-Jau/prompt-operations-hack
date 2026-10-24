@@ -1,62 +1,4 @@
 {
-  "supercell": {
-    "available": [],
-    "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": "Private company: no public ESEF filing expected; add a reviewed annual-report source when available.",
-    "financialFetchedAt": null
-  },
-  "remedy": {
-    "available": [],
-    "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": "No ESEF report link found; configure reportUrl or use a reviewed extraction",
-    "financialFetchedAt": null
-  },
-  "kesko": {
-    "available": [
-      "growthGap",
-      "manualAds"
-    ],
-    "missing": {
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:40.545481+00:00"
-  },
-  "tokmanni": {
-    "available": [
-      "manualAds"
-    ],
-    "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported"
-    },
-    "fetchError": "No ESEF report link found; configure reportUrl or use a reviewed extraction",
-    "financialFetchedAt": null
-  },
-  "nokia": {
-    "available": [
-      "inventoryDays",
-      "manualAds"
-    ],
-    "missing": {
-      "growthGap": "Needs revenue and the same employee-count definition for two full years",
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:44:22.309979+00:00"
-  },
   "elisa": {
     "available": [
       "growthGap",
@@ -68,147 +10,6 @@
     },
     "fetchError": null,
     "financialFetchedAt": "2026-10-24T18:37:43.816906+00:00"
-  },
-  "kone": {
-    "available": [],
-    "missing": {
-      "growthGap": "Needs revenue and the same employee-count definition for two full years",
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:45.707548+00:00"
-  },
-  "wartsila": {
-    "available": [
-      "growthGap",
-      "manualAds"
-    ],
-    "missing": {
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:48.792808+00:00"
-  },
-  "valmet": {
-    "available": [
-      "growthGap",
-      "inventoryDays",
-      "manualAds"
-    ],
-    "missing": {
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:49.969740+00:00"
-  },
-  "neste": {
-    "available": [
-      "manualAds"
-    ],
-    "missing": {
-      "growthGap": "Needs revenue and the same employee-count definition for two full years",
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:51.535402+00:00"
-  },
-  "fortum": {
-    "available": [
-      "manualAds"
-    ],
-    "missing": {
-      "growthGap": "Needs revenue and the same employee-count definition for two full years",
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:52.805292+00:00"
-  },
-  "upm": {
-    "available": [
-      "growthGap",
-      "manualAds"
-    ],
-    "missing": {
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:54.410264+00:00"
-  },
-  "huhtamaki": {
-    "available": [
-      "growthGap",
-      "adminRatio",
-      "inventoryDays"
-    ],
-    "missing": {
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:37:55.951314+00:00"
-  },
-  "outokumpu": {
-    "available": [
-      "adminRatio",
-      "inventoryDays"
-    ],
-    "missing": {
-      "growthGap": "Needs revenue and the same employee-count definition for two full years",
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:38:01.809006+00:00"
-  },
-  "fiskars": {
-    "available": [
-      "growthGap",
-      "adminRatio",
-      "inventoryDays"
-    ],
-    "missing": {
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:38:03.430610+00:00"
-  },
-  "marimekko": {
-    "available": [
-      "growthGap"
-    ],
-    "missing": {
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:38:05.641482+00:00"
-  },
-  "harvia": {
-    "available": [],
-    "missing": {
-      "growthGap": "Needs revenue and the same employee-count definition for two full years",
-      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
-      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
-      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
-    },
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:38:08.501403+00:00"
-  },
-  "orion": {
-    "available": [
-      "growthGap",
-      "adminRatio",
-      "inventoryDays",
-      "manualAds"
-    ],
-    "missing": {},
-    "fetchError": null,
-    "financialFetchedAt": "2026-10-24T18:38:10.693418+00:00"
   },
   "finnair": {
     "available": [
@@ -222,6 +23,628 @@
     "fetchError": null,
     "financialFetchedAt": "2026-10-24T18:58:59.544968+00:00"
   },
+  "fiskars": {
+    "available": [
+      "growthGap",
+      "adminRatio",
+      "inventoryDays"
+    ],
+    "missing": {
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:03.430610+00:00"
+  },
+  "fortum": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:52.805292+00:00"
+  },
+  "harvia": {
+    "available": [],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:08.501403+00:00"
+  },
+  "huhtamaki": {
+    "available": [
+      "growthGap",
+      "adminRatio",
+      "inventoryDays"
+    ],
+    "missing": {
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:55.951314+00:00"
+  },
+  "kesko": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:40.545481+00:00"
+  },
+  "kone": {
+    "available": [],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:45.707548+00:00"
+  },
+  "marimekko": {
+    "available": [
+      "growthGap"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:05.641482+00:00"
+  },
+  "neste": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:51.535402+00:00"
+  },
+  "nokia": {
+    "available": [
+      "inventoryDays",
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:44:22.309979+00:00"
+  },
+  "orion": {
+    "available": [
+      "growthGap",
+      "adminRatio",
+      "inventoryDays",
+      "manualAds"
+    ],
+    "missing": {},
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:10.693418+00:00"
+  },
+  "outokumpu": {
+    "available": [
+      "adminRatio",
+      "inventoryDays"
+    ],
+    "missing": {
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:38:01.809006+00:00"
+  },
+  "upm": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:54.410264+00:00"
+  },
+  "valmet": {
+    "available": [
+      "growthGap",
+      "inventoryDays",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:49.969740+00:00"
+  },
+  "wartsila": {
+    "available": [
+      "growthGap",
+      "manualAds"
+    ],
+    "missing": {
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
+    },
+    "fetchError": null,
+    "financialFetchedAt": "2026-10-24T18:37:48.792808+00:00"
+  },
+  "a-asioimistulkkikeskuspaivystys-a67e9dce": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "aallon-group-62f88472": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "academic-work-e2ac9541": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "adecco-0d9c9c9a": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "ai-roots-ca394cbd": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "akaan-vuokra-asunnot-15b39572": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "aktia-623e4ceb": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "alrekry-f9385cc8": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "alvasar-ou-ddd78195": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "amerplast-a28540a6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "ardor-6790c15f": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "are-ba78973d": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "avila-d4d38dd6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-3b3ea071": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-horeca-4bf40cbe": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-ict-services-poland-sp-z-o-o-65662540": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-julkiset-palvelut-7d5e02e0": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-kauppa-405c91a6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-logistiikkaratkaisut-b6dd76b6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-services-spain-sl-f15d370a": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-teollisuus-7e940940": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "barona-varastopalvelut-d90028aa": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "beneq-c4ea4286": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "broman-group-e12cdd2d": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "casemet-6c53bbb6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "celsius-finland-37a71201": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "clevry-ac2f6738": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "click-henkilostopalvelut-86bc2960": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "compass-group-finland-3283bd83": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "coptersafety-42e4df63": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "csc-tieteen-tietotekniikan-keskus-d4eaf80e": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "csc-tieteen-tietotekniikan-keskus-ecfd7ef0": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "destia-55eab80d": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "dna-d0331ca0": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "dna-puhelinpalvelukeskus-9be10125": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "dottir-daca7089": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "eaton-28236bb6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "eezy-henkilostopalvelut-d0b90f18": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "eltel-networks-ef74e2cb": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "energiavirasto-2dcad82c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "experis-c785f9f8": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
   "fazer": {
     "available": [],
     "missing": {
@@ -231,6 +654,2065 @@
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": "HTTP Error 404: Not Found",
+    "financialFetchedAt": null
+  },
+  "finelcomp-073ac653": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "finferries-suomen-lauttaliikenne-9f68706c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "flaktgroup-finland-36216d66": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "forcit-group-162ed457": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "fvr-suomen-rokotetutkimus-6bb57e6c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "gasum-fb415c64": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "granlund-e3df051c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "greenstep-e2846f4a": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "hankkija-88001113": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "helsingin-kaupunki-2666f0ea": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "helsingin-yliopisto-483dd348": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "helsinki-shipyard-29383ee1": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "henkilostoliiga-eac0f5b9": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "henkilostopalvelut-duuri-tiimi-81339c01": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "henkilostovuokraus-yhtio-kipina-31a6c639": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "hitachi-energy-9f5b5b5b": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "huoltovarmuuskeskus-98fdf0fa": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "hus-699f41dd": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "jtt-sales-febf6433": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "k-auto-e54ab452": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "kaiku-hr-d10e895e": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "karkkainen-fd7ce658": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "kaskea-group-9c42de02": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "katrium-5f1530e7": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "kiinteistomaailma-ae2a1fa0": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "kpmg-344bff8b": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lapland-hotels-f39a2cab": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-52990007axnss4pnx352": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-529900c4p88aphfz5h47": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-529900hekoenjhpnn480": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-529900m13gm4vste6w80": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-529900odi3047e2liv03": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-5493002b0govf42kwx33": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-5493009zdbvg2co1o689": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-549300ef0cdeqzbma096": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-549300ew2km4krokqv31": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-549300p8n0p6kdgtj206": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-549300r0vn9c371w0e07": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-549300uwb1air85bm957": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-636700ebb0sa4501at18": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-636700z25zqxlmz3cy73": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437000iqjs6zc1fr041": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437000na1i6y1oqwl24": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437000pn6e448npgy86": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437000tb0ghdhlpx677": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437000zp669lkutz738": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-74370016pw2v4w02lx91": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437001aezhll3uex093": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700205jamgm80qd88": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-74370031y7rk5h88cq48": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437003b5wfboiefy714": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437003nx7wwvrt6aj55": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437003wyxjusv27q316": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700498l5thnqwvl66": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437004genttqhmnq407": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437004xd6u0ffdct507": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-74370058mtrledochv67": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-74370058zyob0giyut38": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437006i5533r06ju690": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437007n96fk4n3wht09": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437007ypuoqz8ov1r42": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-74370083282nhip4qd02": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-74370089attsnbxjvt29": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437008rmk8bswn39t09": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437009ivywgee4s7b77": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-7437009tb42o2ab3jw91": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700al68pux6jms644": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700ax3tiwvl1lc349": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700cjrqru0007gn59": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700dohlqienktc391": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700dyz6r1qnlwqa56": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700eig9tdb5qnzs09": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700epluwxe25hgm03": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700f6clx8jmydep21": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700ftbnxaun57rh30": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700g00629v99pe435": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700gb29fxc0vxf414": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700gc62jlhfbund16": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700go2xu2zyydkw67": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700gsl41h2dxzy963": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700hohmohaanhff73": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700hsiesz75x06h10": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700hxwtm31zhbxw13": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700i27e0fwsxlkk04": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700ie9nqgf9yzai97": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700ifqi6w89m1iy95": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700ilu1pl86iw3429": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700j2wo3j6xgfpg77": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700j7nht5olsj3b78": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700jiw1lauzdh9012": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700jmxcc11crjcs71": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700kkb8q035k38488": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700kmzl7e8pli5x73": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700koul1gqqqrep40": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700lsjbdd7tmlad92": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700m4eievd61pnn55": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700mrpvyi7ashcx38": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700nc0v49ajsqkw42": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700nfg5w5i59ovx65": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700nrl9eh2flph480": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700o69nchtnev0362": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700oajk6l28y2nn56": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700pembij4gpcyx48": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700pouuq3cs3q7s40": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700qvag6oxk5op587": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700qze6b52shhtv75": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700r4fa6avh5j3d68": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700rndd7ku11hw873": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700rsfzuiqyabyt14": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700t69obbjo7tca15": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700tdb62dgafrob24": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700tsb08bo83sjr33": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700uf3rl386wida22": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700v3i7cli3dj8l62": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700vk1nb8hrgtqh74": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700vmg6kwf0fw1560": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700x6kuj0z8gjif03": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700x9s8fvyri20j88": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700xjc24thupk0s03": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700xlyonpsko15z91": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700xq240jmmybnw69": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700xsmvpr48ximl56": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700y8qwc1ft6r0f34": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700yehy9i3zdhnx66": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700yge1gq2dnt5t52": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700yqio8y4l4wkr40": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700z1bnfyr9prdf52": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700z9z54vghza0028": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700zgh7gd27uoqo12": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-743700zkomtb7x00ow54": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-9845000d85046ecfff27": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-9845006bfdjf0375e466": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lei-984500f4ccf3ad74f766": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lokki-henkilostopalvelut-2fd2c18e": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "loviisan-kaupunki-b18561e6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "lp-group-79171273": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "maakuntien-tilakeskus-9834df44": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "manpower-5ac66e81": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "mentek-advisors-190d673c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "mestarit-henkilostopalvelut-7cfa60ac": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "minjon-222b8d99": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "nextpharma-31fb43e4": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "nice-business-consulting-oy-nico-8450312b": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "nicole-beauty-d2f773d4": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "nordic-green-energy-0541a37a": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "normet-7f9c97f1": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "northern-solutions-d2470fae": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "ntg-air-ocean-761f9ce8": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "osuma-henkilostopalvelut-1ad2ced6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "oy-vaasan-ammattikorkeakoulu-vasa-yrkeshogskola-9005fccc": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "poliisi-d0aebc7f": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "porvoon-kaupunki-borga-stad-98f1a899": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "rainmaker-739de437": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "red-hat-holdings-ltd-858fb707": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "reitan-convenience-finland-b8cb128e": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "remedy": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": "No ESEF report link found; configure reportUrl or use a reviewed extraction",
+    "financialFetchedAt": null
+  },
+  "rituals-cosmetics-ce4b7c3b": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "robit-finland-568c64f2": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "rukakeskus-01a9814f": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sandvik-a3f429d7": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sandvik-mining-and-construction-4fa2b30d": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "savon-koulutuskuntayhtyma-ac84d899": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "select-service-partner-finland-cbc7385b": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sepa-c71d5e04": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sihti-1ec2acd3": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sipoon-kunta-sibbo-kommun-5f389ae9": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sodexo-cbf7d0a1": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sok-ffa67ff8": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sonepar-suomi-affac673": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "sos-international-cc4c44d0": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "specim-spectral-imaging-d5e7af26": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "st1-68f1c007": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "staffpoint-084ceb80": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "staria-38afe71d": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "suoramarkkinointi-mega-43bc75c6": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "supercell": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": "Private company: no public ESEF filing expected; add a reviewed annual-report source when available.",
+    "financialFetchedAt": null
+  },
+  "tampereen-kaupunki-2a6a843d": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "tampereen-yliopisto-11a7cf06": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "target-headhunting-d350bf92": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "tempu-be1c0cea": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "tietoakseli-group-2ebd1bfa": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "tokmanni": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": "No ESEF report link found; configure reportUrl or use a reviewed extraction",
+    "financialFetchedAt": null
+  },
+  "tribedo-5c3f81a9": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "twoday-c2b04adf": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "uggla-engineering-6745deda": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "vaihtoautomaa-ea3e0b2f": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
     "financialFetchedAt": null
   },
   "valio": {
@@ -243,6 +2725,84 @@
       "inventoryDays": "No supported public financial report imported"
     },
     "fetchError": "Private company: a reviewed PDF extraction may be needed.",
+    "financialFetchedAt": null
+  },
+  "vianor-d750292c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "vuorenmaa-yhtiot-b410fb2e": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "weidmuller-4e04b40b": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "worker-henkilostoratkaisut-8ce0611a": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "workpower-fba42691": {
+    "available": [
+      "manualAds"
+    ],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "wunderdog-5d213b5c": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
+    "financialFetchedAt": null
+  },
+  "yit-housing-f53e8ee1": {
+    "available": [],
+    "missing": {
+      "growthGap": "No supported public financial report imported",
+      "adminRatio": "No supported public financial report imported",
+      "inventoryDays": "No supported public financial report imported",
+      "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
+    },
+    "fetchError": null,
     "financialFetchedAt": null
   }
 }
