@@ -40,7 +40,7 @@ type Props = {
   onPick: (company: HiringCompany) => void;
 };
 
-/** The company cards, 3 × 3: pick the one hiring for the quotes above. */
+/** The company cards, 3 × 3: pick the one hiring for the clues above. */
 export function OptionGrid({ options, picked, disabled, onPick }: Props) {
   return (
     <div className="grid grid-cols-3 gap-2 md:gap-3">
@@ -62,7 +62,11 @@ export function OptionGrid({ options, picked, disabled, onPick }: Props) {
               <CompanyLogo company={company} className="h-9 w-9 md:h-11 md:w-11" />
             </div>
             <div className="min-w-0">
-              <p className={`text-[15px] font-semibold leading-tight tracking-tight md:text-[17px] ${f && !f.correct ? "text-ink-3 line-through" : ""}`}>
+              <p
+                className={`text-[15px] font-semibold leading-tight tracking-tight md:text-[17px] ${
+                  f && !f.correct ? "text-ink-3 line-through" : ""
+                }`}
+              >
                 {shortName(company)}
               </p>
               {!f && <p className="mt-1 hidden truncate text-xs text-ink-3 sm:block">{company.functions.slice(0, 2).join(" · ")}</p>}
@@ -75,9 +79,7 @@ export function OptionGrid({ options, picked, disabled, onPick }: Props) {
                 </span>
               </>
             )}
-            {f && !f.correct && (
-              <p className="animate-rise mt-auto text-xs leading-snug text-ink-2">{bestHint(f)}</p>
-            )}
+            {f && !f.correct && <p className="animate-rise mt-auto text-xs leading-snug text-ink-2">{bestHint(f)}</p>}
           </button>
         );
       })}

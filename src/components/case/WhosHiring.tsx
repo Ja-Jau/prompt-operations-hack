@@ -188,6 +188,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   const picked = new Map(feedback.map((f) => [f.company.id, f]));
   // One clue per wrong pick, plus one free clue from the analyst lifeline.
   const revealed = Math.min(feedback.length + 1 + (saved.tipUsed ? 1 : 0), clues.length);
+  const picksLeft = MAX_GUESSES - feedback.length;
   const askAnalyst = () => {
     update({ tipUsed: true });
     setMenuOpen(false);
@@ -202,13 +203,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
       <main className="mx-auto max-w-[820px] px-4 pb-20">
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
 
-        <Evidence
-          key={target.id}
-          clues={clues}
-          revealed={revealed}
-          company={target}
-          onUnlock={!saved.tipUsed && revealed < clues.length ? askAnalyst : undefined}
-        />
+        <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
 
         <div className="mt-8 flex items-center justify-between gap-3">
           <p className="eyebrow text-sage-d">Which company is hiring for this?</p>
@@ -270,9 +265,24 @@ export function WhosHiring({ companies, onGameChange }: Props) {
             }}
           />
         </div>
-        <p className="mt-4 text-center text-sm text-ink-3">
-          Every wrong pick unlocks a new clue and a hint about the answer.
-        </p>
+        <div className="mt-6 flex flex-col items-center gap-4">
+          <div className="flex items-center gap-3 text-ink-2" aria-label={`${picksLeft} picks remaining`}>
+            <span>Picks remaining:</span>
+            <span className="flex gap-2">
+              {Array.from({ length: MAX_GUESSES }, (_, i) => (
+                <span
+                  key={i}
+                  className={`h-4 w-4 rounded-full transition-colors duration-300 ${i < picksLeft ? "bg-navy" : "bg-sand-2"}`}
+                />
+              ))}
+            </span>
+          </div>
+          {!saved.tipUsed && revealed < clues.length && (
+            <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
+              <Icon name="spark" /> Velho hint
+            </button>
+          )}
+        </div>
       </main>
     </div>
   );
