@@ -2,20 +2,20 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { HiringCompany } from "@/types/company";
-import { MAX_GUESSES, caseClues, caseCompanies, closenessRanks, compare, dailyCase } from "@/lib/case/cases";
+import { MAX_GUESSES, caseClues, caseCompanies, caseOptions, closenessRanks, compare, dailyCase } from "@/lib/case/cases";
 import { dailyNumber } from "@/lib/game/daily";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
 import { PageTitle } from "@/components/layout/PageTitle";
 import { Icon } from "@/components/ui/Icon";
 import { CaseReveal } from "./CaseReveal";
 import { Evidence } from "./Evidence";
-import { GuessBar } from "./GuessBar";
-import { GuessInput } from "./GuessInput";
 import { HowToPlay } from "./HowToPlay";
+import { OptionGrid } from "./OptionGrid";
 
 type Saved = { guesses: string[]; fixChoice: number | null; tipUsed: boolean; gaveUp: boolean };
 const EMPTY: Saved = { guesses: [], fixChoice: null, tipUsed: false, gaveUp: false };
 const SEEN_HELP_KEY = "tehokas-seen-help";
+const CELEBRATION_MS = 1300;
 
 /** Per day and per case, so a new data import starts a fresh game. */
 function storageKey(caseId: string) {
@@ -72,6 +72,8 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   const [practiceSaved, setPracticeSaved] = useState<Saved>(EMPTY);
   const [menuOpen, setMenuOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
+  // True for a moment after the right pick, so the celebration plays before the ending.
+  const [celebrating, setCelebrating] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Today's case and saved progress depend on the date and localStorage: client only.
@@ -163,7 +165,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   const over = solved || saved.gaveUp || feedback.length >= MAX_GUESSES;
   const clues = caseClues(target);
 
-  if (over) {
+  if (over && !celebrating) {
     return (
       <div ref={scrollRef} className="flex min-h-0 flex-1 flex-col overflow-y-auto">
         {header(label)}
@@ -184,9 +186,9 @@ export function WhosHiring({ companies, onGameChange }: Props) {
     );
   }
 
-  const latest = feedback[feedback.length - 1];
-  const sorted = [...feedback].sort((a, b) => a.rank - b.rank);
-  // One clue per wrong guess, plus one free clue from the analyst lifeline.
+  const options = caseOptions(target, companies, ranks);
+  const picked = new Map(feedback.map((f) => [f.company.id, f]));
+  // One clue per wrong pick, plus one free clue from the analyst lifeline.
   const revealed = Math.min(feedback.length + 1 + (saved.tipUsed ? 1 : 0), clues.length);
   const askAnalyst = () => {
     update({ tipUsed: true });
@@ -196,93 +198,82 @@ export function WhosHiring({ companies, onGameChange }: Props) {
 
   return (
     <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto">
-      {header(`${label} · ${MAX_GUESSES - feedback.length} guesses left`)}
+      {header(`${label} · ${MAX_GUESSES - feedback.length} picks left`)}
       {helpOpen && <HowToPlay onClose={closeHelp} />}
 
-      <main className="mx-auto max-w-[760px] px-4 pb-20 pl-8 md:pl-4">
-        <PageTitle title="Who's hiring?" eyebrow={`${label} · Someone is hiring for this. Who?`} />
+      <main className="mx-auto max-w-[820px] px-4 pb-20">
+        <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
 
         <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
-        {!saved.tipUsed && revealed < clues.length && (
-          <button onClick={askAnalyst} className="btn btn-line btn-sm mt-3">
-            <Icon name="spark" /> Ask a Velho analyst: unlock the next clue for free
-          </button>
-        )}
 
-        <div className="relative mt-8 flex gap-3">
-          <div className="flex-1">
-            <GuessInput
-              companies={companies}
-              excluded={new Set(saved.guesses)}
-              counter={`${feedback.length}/${MAX_GUESSES}`}
-              onGuess={(c) => update({ guesses: [...saved.guesses, c.id] })}
-            />
-          </div>
-          <button
-            onClick={() => setMenuOpen((o) => !o)}
-            aria-label="More options"
-            className="flex h-[60px] w-[60px] shrink-0 items-center justify-center rounded-[9px] border border-sand-2 bg-white text-ink transition hover:border-navy-3"
-          >
-            <Icon name="more" className="h-5 w-5" />
-          </button>
-          {menuOpen && (
-            <div className="card animate-rise absolute right-0 top-[68px] z-30 w-64 overflow-hidden p-1.5 shadow-[0_18px_40px_-20px_rgb(10_27_52/0.35)]">
-              <button
-                disabled={saved.tipUsed || revealed >= clues.length}
-                onClick={askAnalyst}
-                className={`${menuItem} disabled:opacity-40 disabled:hover:bg-transparent`}
-              >
-                <Icon name="spark" /> {saved.tipUsed ? "Free clue used" : "Ask a Velho analyst"}
+        <div className="mt-8 flex items-center justify-between gap-3">
+          <p className="eyebrow text-sage-d">Which company is hiring for this?</p>
+          <div className="relative flex items-center gap-2">
+            {!saved.tipUsed && revealed < clues.length && (
+              <button onClick={askAnalyst} className="btn btn-line btn-sm">
+                <Icon name="spark" /> Free clue
               </button>
-              <button onClick={playAnother} className={menuItem}>
-                <Icon name="swap" /> Play a different case
-              </button>
-              {isPractice && (
-                <button onClick={backToDaily} className={menuItem}>
-                  <Icon name="calendar" /> Back to today&apos;s case
+            )}
+            <button
+              onClick={() => setMenuOpen((o) => !o)}
+              aria-label="More options"
+              className="flex h-10 w-10 items-center justify-center rounded-[9px] border border-sand-2 bg-white text-ink transition hover:border-navy-3"
+            >
+              <Icon name="more" className="h-4 w-4" />
+            </button>
+            {menuOpen && (
+              <div className="card animate-rise absolute right-0 top-12 z-30 w-64 overflow-hidden p-1.5 shadow-[0_18px_40px_-20px_rgb(10_27_52/0.35)]">
+                <button onClick={playAnother} className={menuItem}>
+                  <Icon name="swap" /> Play a different case
                 </button>
-              )}
-              <button
-                onClick={() => {
-                  setHelpOpen(true);
-                  setMenuOpen(false);
-                }}
-                className={menuItem}
-              >
-                <Icon name="help" /> How to play
-              </button>
-              <button
-                onClick={() => {
-                  update({ gaveUp: true });
-                  setMenuOpen(false);
-                }}
-                className={`${menuItem} text-clay`}
-              >
-                <Icon name="cross" /> Give up and reveal
-              </button>
-            </div>
-          )}
+                {isPractice && (
+                  <button onClick={backToDaily} className={menuItem}>
+                    <Icon name="calendar" /> Back to today&apos;s case
+                  </button>
+                )}
+                <button
+                  onClick={() => {
+                    setHelpOpen(true);
+                    setMenuOpen(false);
+                  }}
+                  className={menuItem}
+                >
+                  <Icon name="help" /> How to play
+                </button>
+                <button
+                  onClick={() => {
+                    update({ gaveUp: true });
+                    setMenuOpen(false);
+                  }}
+                  className={`${menuItem} text-clay`}
+                >
+                  <Icon name="cross" /> Give up and reveal
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
-        {latest && (
-          <div className="mt-8">
-            <div className="mb-3 flex items-baseline justify-between">
-              <p className="eyebrow text-sage-d">Your guesses, hottest first</p>
-              <p className="font-mono text-xs text-ink-3">Rank 1 = the answer</p>
-            </div>
-            <div className="flex flex-col gap-3">
-              {sorted.map((f) => (
-                <GuessBar key={f.company.id} feedback={f} latest={f === latest} />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {!latest && (
-          <p className="mt-8 text-center text-sm text-ink-3">
-            Your guesses appear here, ranked by how close they are. 1 is the answer.
-          </p>
-        )}
+        <div className="mt-4">
+          <OptionGrid
+            options={options}
+            picked={picked}
+            disabled={over}
+            onPick={(c) => {
+              if (c.id === target.id) {
+                setCelebrating(true);
+                setTimeout(() => {
+                  setCelebrating(false);
+                  scrollRef.current?.scrollTo({ top: 0 });
+                }, CELEBRATION_MS);
+              }
+              update({ guesses: [...saved.guesses, c.id] });
+            }}
+          />
+        </div>
+        <p className="mt-4 text-center text-sm text-ink-3">
+          Every wrong pick unlocks a new clue and a hint about the answer.
+        </p>
       </main>
     </div>
   );

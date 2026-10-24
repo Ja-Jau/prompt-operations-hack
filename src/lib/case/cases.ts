@@ -4,6 +4,7 @@ import { seededRandom } from "@/lib/game/random";
 
 /** A company needs this many verified quotes to be a case. Keep in sync with pipeline/import_jobs.py. */
 export const MIN_CASE_QUOTES = 2;
+/** Six options: at most five misses before the answer is the only card left. */
 export const MAX_GUESSES = 6;
 
 const LEGAL_SUFFIX = /\s*\b(oyj|oy|ab|ltd|inc|gmbh|abp|ry)\b\.?/gi;
@@ -43,17 +44,16 @@ export function redact(text: string, company: Pick<HiringCompany, "name">): stri
 }
 
 /** Each clue has a playful title, e.g. "Exhibit A", so unlocking one feels like opening a file. */
-export type Clue =
-  | { kind: "quote"; title: string; ad: JobAd }
-  | { kind: "fact"; title: string; value: string }
-  /** The company name as letter tiles: only each word's first letter shown. */
-  | { kind: "name"; title: string; words: string[] };
+export type Clue = { kind: "quote"; title: string; ad: JobAd } | { kind: "fact"; title: string; value: string };
 
 function plural(n: number, one: string, many: string) {
   return `${n} ${n === 1 ? one : many}`;
 }
 
-/** The six clues, hardest first: one at the start, one more per wrong guess or analyst tip. */
+/**
+ * The clues in reveal order: one at the start, one more per wrong pick or analyst tip.
+ * Ordered so each one helps tell the six options apart.
+ */
 export function caseClues(company: HiringCompany): Clue[] {
   const [a, b, c] = company.jobAds.ads;
   const otherTitles = company.titles.filter((t) => t !== a.title && t !== b.title).slice(0, 3);
@@ -62,21 +62,45 @@ export function caseClues(company: HiringCompany): Clue[] {
 
   const exhibitC: Clue = c
     ? { kind: "quote", title: "Exhibit C", ad: c }
-    : otherTitles.length > 0
-      ? { kind: "fact", title: "Also on their job board", value: otherTitles.map((t) => redact(t, company)).join(" · ") }
-      : { kind: "fact", title: "What they hire for", value: company.functions.join(" · ") };
-  const analyst: Clue = company.velhoCase
-    ? { kind: "fact", title: "Velho analyst's note", value: redact(company.velhoCase.analystHint, company) }
-    : { kind: "fact", title: "What they hire for", value: company.functions.join(" · ") };
+    : { kind: "fact", title: "Also on their job board", value: otherTitles.map((t) => redact(t, company)).join(" · ") || open };
 
   return [
     { kind: "quote", title: "Exhibit A", ad: a },
-    { kind: "quote", title: "Exhibit B", ad: b },
     { kind: "fact", title: "The hiring map", value: `${open} in ${cities}` },
+    { kind: "quote", title: "Exhibit B", ad: b },
+    { kind: "fact", title: "What they hire for", value: company.functions.join(" · ") },
+    ...(company.velhoCase
+      ? [{ kind: "fact" as const, title: "Velho analyst's note", value: redact(company.velhoCase.analystHint, company) }]
+      : []),
     exhibitC,
-    analyst,
-    { kind: "name", title: "The name", words: shortName(company).split(/\s+/) },
   ];
+}
+
+export const OPTION_COUNT = 6;
+
+/**
+ * The six cards for a case: the answer, three look-alikes that hire for similar roles in similar
+ * places, and two better-known companies. Seeded by the case, so everyone sees the same six.
+ */
+export function caseOptions(target: HiringCompany, pool: HiringCompany[], ranks: Map<string, number>): HiringCompany[] {
+  const rand = seededRandom(`options-${target.id}`);
+  const pick = (from: HiringCompany[], n: number) => {
+    const copy = [...from];
+    const out: HiringCompany[] = [];
+    while (out.length < n && copy.length) out.push(copy.splice(Math.floor(rand() * copy.length), 1)[0]);
+    return out;
+  };
+  const others = pool.filter((c) => c.id !== target.id);
+  const lookalikes = pick(
+    [...others].sort((a, b) => (ranks.get(a.id) ?? 0) - (ranks.get(b.id) ?? 0)).slice(0, 10),
+    3,
+  );
+  const taken = new Set([target.id, ...lookalikes.map((c) => c.id)]);
+  const wellKnown = pick(
+    others.filter((c) => !taken.has(c.id) && c.jobAds.checked >= 2),
+    OPTION_COUNT - 1 - lookalikes.length,
+  );
+  return pick([target, ...lookalikes, ...wellKnown], OPTION_COUNT);
 }
 
 export type Direction = "up" | "down" | "same";
@@ -92,18 +116,9 @@ export type Feedback = {
   openRoles: Direction;
   /** 1 = the answer; lower is closer. Ranked among every guessable company. */
   rank: number;
-  /** 0–1, 1 = the answer. Drives the bar length and the temperature. */
+  /** 0–1, 1 = the answer. Used for the warm/cold marks in the share text. */
   closeness: number;
 };
-
-/** Hot-or-cold name for how close a guess is. */
-export function temperature(closeness: number): { label: string; tone: "burning" | "hot" | "warm" | "cold" | "freezing" } {
-  if (closeness >= 0.97) return { label: "Burning", tone: "burning" };
-  if (closeness >= 0.85) return { label: "Hot", tone: "hot" };
-  if (closeness >= 0.6) return { label: "Warm", tone: "warm" };
-  if (closeness >= 0.3) return { label: "Cold", tone: "cold" };
-  return { label: "Freezing", tone: "freezing" };
-}
 
 function overlap(a: string[], b: string[]): number {
   const set = new Set(a);

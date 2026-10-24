@@ -1,28 +1,26 @@
 "use client";
 
-import { MAX_GUESSES } from "@/lib/case/cases";
 import { Icon, type IconName } from "@/components/ui/Icon";
 
 const STEPS: { icon: IconName; text: string }[] = [
   { icon: "quote", text: "Read real quotes from a company's job ads." },
-  { icon: "search", text: `Guess who's hiring. ${MAX_GUESSES} tries, a new clue after each miss.` },
-  { icon: "target", text: "Each guess runs hot or cold. 1 is the answer." },
+  { icon: "target", text: "Pick the company from six cards." },
+  { icon: "spark", text: "Each miss unlocks a clue and a hint about the answer." },
 ];
 
-/** A static picture of two guesses, so the bars make sense before the first guess. */
-function ExampleBars() {
-  const bars = [
-    { name: "Hot guess", rank: 2, width: "92%", color: "bg-clay/30", temp: "Hot" },
-    { name: "Cold guess", rank: 84, width: "30%", color: "bg-navy-3/20", temp: "Cold" },
+/** A static picture of the cards after two misses, so the hints make sense before the first pick. */
+function ExampleCards() {
+  const cards = [
+    { name: "Company A", hint: "Different cities and roles", out: true },
+    { name: "Company B", hint: "Answer also hires in Tampere", out: true },
+    { name: "Company C", hint: "", out: false },
   ];
   return (
-    <div className="space-y-2" aria-hidden>
-      {bars.map((b) => (
-        <div key={b.name} className="relative flex h-11 items-center overflow-hidden rounded-[9px] border border-sand-2 bg-white">
-          <div className={`absolute inset-y-0 left-0 ${b.color}`} style={{ width: b.width }} />
-          <span className="relative ml-4 flex-1 font-semibold">{b.name}</span>
-          <span className="eyebrow relative mr-3 text-ink-3">{b.temp}</span>
-          <span className="relative mr-4 font-mono font-semibold">{b.rank}</span>
+    <div className="grid grid-cols-3 gap-2" aria-hidden>
+      {cards.map((c) => (
+        <div key={c.name} className={`rounded-[9px] border border-sand-2 p-2.5 ${c.out ? "bg-sand" : "bg-white"}`}>
+          <p className={`text-sm font-semibold ${c.out ? "text-ink-3 line-through" : ""}`}>{c.name}</p>
+          {c.hint && <p className="mt-2 text-[10px] leading-tight text-ink-2">{c.hint}</p>}
         </div>
       ))}
     </div>
@@ -60,7 +58,7 @@ export function HowToPlay({ onClose }: { onClose: () => void }) {
         </ul>
 
         <div className="mt-6">
-          <ExampleBars />
+          <ExampleCards />
         </div>
 
         <button onClick={onClose} className="btn btn-dark mt-7 w-full">

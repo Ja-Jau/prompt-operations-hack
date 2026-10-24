@@ -152,6 +152,22 @@
   }
 }
 
+/* Confetti piece flying out along its own angle (--a), then fading. */
+@keyframes burst {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(var(--a)) translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(var(--a)) translateY(-90px) rotate(120deg) scale(0.5);
+  }
+}
+
+.animate-burst {
+  animation: burst 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
 .animate-panel-in {
   animation: panel-in 450ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
@@ -167,7 +183,8 @@
 @media (prefers-reduced-motion: reduce) {
   .animate-panel-in,
   .animate-pop,
-  .animate-rise {
+  .animate-rise,
+  .animate-burst {
     animation: none;
   }
 }
