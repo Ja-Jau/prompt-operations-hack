@@ -2,9 +2,9 @@
   {
     "id": "abb-robotics-finland-oy",
     "name": "ABB Robotics Finland Oy",
-    "domain": null,
+    "domain": "abb.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/abb-robotics-finland-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -51,9 +51,9 @@
   {
     "id": "ai-roots",
     "name": "AI Roots",
-    "domain": null,
+    "domain": "airoots.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/ai-roots.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -79,9 +79,9 @@
   {
     "id": "aallon-group-oyj",
     "name": "Aallon Group Oyj",
-    "domain": null,
+    "domain": "aallon.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/aallon-group-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -108,9 +108,9 @@
   {
     "id": "aaltovoima-pohjoinen-oy",
     "name": "Aaltovoima Pohjoinen Oy",
-    "domain": null,
+    "domain": "aaltovoima.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/aaltovoima-pohjoinen-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -136,7 +136,7 @@
   {
     "id": "akaan-vuokra-asunnot-oy",
     "name": "Akaan Vuokra-asunnot Oy",
-    "domain": null,
+    "domain": "akaanvuokra-asunnot.fi",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -169,9 +169,9 @@
   {
     "id": "aktia",
     "name": "Aktia",
-    "domain": null,
+    "domain": "aktia.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/aktia.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -196,9 +196,9 @@
   {
     "id": "amerplast-oy",
     "name": "Amerplast Oy",
-    "domain": null,
+    "domain": "amerplast.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/amerplast-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -229,9 +229,9 @@
   {
     "id": "ardor-oy",
     "name": "Ardor Oy",
-    "domain": null,
+    "domain": "ardor.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/ardor-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -257,9 +257,9 @@
   {
     "id": "are-oy",
     "name": "Are Oy",
-    "domain": null,
+    "domain": "are.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/are-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -284,9 +284,9 @@
   {
     "id": "aspia",
     "name": "Aspia",
-    "domain": null,
+    "domain": "aspia.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/aspia.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -339,9 +339,9 @@
   {
     "id": "avila-oy",
     "name": "Avila Oy",
-    "domain": null,
+    "domain": "avila.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/avila-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -366,9 +366,9 @@
   {
     "id": "beneq",
     "name": "Beneq",
-    "domain": null,
+    "domain": "beneq.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/beneq.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -393,9 +393,9 @@
   {
     "id": "beneq-oy",
     "name": "Beneq Oy",
-    "domain": null,
+    "domain": "beneq.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/beneq-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -422,9 +422,9 @@
   {
     "id": "berner-oy",
     "name": "Berner Oy",
-    "domain": null,
+    "domain": "berner.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/berner-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -449,9 +449,9 @@
   {
     "id": "biolin-scientific-oy",
     "name": "Biolin Scientific Oy",
-    "domain": null,
+    "domain": "biolinscientific.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/biolin-scientific-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -498,9 +498,9 @@
   {
     "id": "broman-group-oy",
     "name": "Broman Group Oy",
-    "domain": null,
+    "domain": "bromangroup.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/broman-group-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -548,7 +548,7 @@
   {
     "id": "compute-nordic-finland-oy",
     "name": "COMPUTE NORDIC FINLAND Oy",
-    "domain": null,
+    "domain": "computenordic.com",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -581,9 +581,9 @@
   {
     "id": "csc-tieteen-tietotekniikan-keskus-oy",
     "name": "CSC – Tieteen tietotekniikan keskus Oy",
-    "domain": null,
+    "domain": "csc.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/csc-tieteen-tietotekniikan-keskus-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -630,9 +630,9 @@
   {
     "id": "cts-nordics-oy",
     "name": "CTS Nordics OY",
-    "domain": null,
+    "domain": "ctsnordics.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/cts-nordics-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -657,9 +657,9 @@
   {
     "id": "career-fi",
     "name": "Career.fi",
-    "domain": null,
+    "domain": "career.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/career-fi.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -684,9 +684,9 @@
   {
     "id": "casemet-oy",
     "name": "Casemet Oy",
-    "domain": null,
+    "domain": "casemet.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/casemet-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -718,9 +718,9 @@
   {
     "id": "compass-group-finland-oy",
     "name": "Compass Group Finland Oy",
-    "domain": null,
+    "domain": "compass-group.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/compass-group-finland-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -751,9 +751,9 @@
   {
     "id": "dhl-supply-chain-danfoss",
     "name": "DHL Supply Chain Danfoss",
-    "domain": null,
+    "domain": "dhl.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/dhl-supply-chain-danfoss.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -778,9 +778,9 @@
   {
     "id": "dna",
     "name": "DNA",
-    "domain": null,
+    "domain": "dna.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/dna.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -810,9 +810,9 @@
   {
     "id": "danfoss",
     "name": "Danfoss",
-    "domain": null,
+    "domain": "danfoss.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/danfoss.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -837,9 +837,9 @@
   {
     "id": "danone-finland-oy",
     "name": "Danone Finland Oy",
-    "domain": null,
+    "domain": "danone.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/danone-finland-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -864,9 +864,9 @@
   {
     "id": "deloitte",
     "name": "Deloitte",
-    "domain": null,
+    "domain": "deloitte.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/deloitte.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -891,9 +891,9 @@
   {
     "id": "destia-oy",
     "name": "Destia Oy",
-    "domain": null,
+    "domain": "destia.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/destia-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -970,9 +970,9 @@
   {
     "id": "dinolla-oy",
     "name": "Dinolla Oy",
-    "domain": null,
+    "domain": "dinolla.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/dinolla-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1001,9 +1001,9 @@
   {
     "id": "dottir",
     "name": "Dottir",
-    "domain": null,
+    "domain": "dottir.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/dottir.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1028,9 +1028,9 @@
   {
     "id": "eaton",
     "name": "Eaton",
-    "domain": null,
+    "domain": "eaton.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/eaton.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1067,9 +1067,9 @@
   {
     "id": "eltel-networks-oy",
     "name": "Eltel Networks Oy",
-    "domain": null,
+    "domain": "eltelnetworks.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/eltel-networks-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1096,9 +1096,9 @@
   {
     "id": "energiavirasto",
     "name": "Energiavirasto",
-    "domain": null,
+    "domain": "energiavirasto.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/energiavirasto.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1124,7 +1124,7 @@
   {
     "id": "fvr-suomen-rokotetutkimus",
     "name": "FVR - Suomen rokotetutkimus",
-    "domain": null,
+    "domain": "rokotetutkimus.fi",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -1153,9 +1153,9 @@
   {
     "id": "finanssiala-ry",
     "name": "Finanssiala ry",
-    "domain": null,
+    "domain": "finanssiala.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/finanssiala-ry.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1180,9 +1180,9 @@
   {
     "id": "finferries-suomen-lauttaliikenne",
     "name": "Finferries - Suomen Lauttaliikenne",
-    "domain": null,
+    "domain": "finferries.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/finferries-suomen-lauttaliikenne.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1207,9 +1207,9 @@
   {
     "id": "flaktgroup-finland-oy",
     "name": "FläktGroup Finland Oy",
-    "domain": null,
+    "domain": "flaktgroup.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/flaktgroup-finland-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1234,9 +1234,9 @@
   {
     "id": "forcit-group",
     "name": "Forcit Group",
-    "domain": null,
+    "domain": "forcit.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/forcit-group.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1261,9 +1261,9 @@
   {
     "id": "gasum-oyj",
     "name": "Gasum Oyj",
-    "domain": null,
+    "domain": "gasum.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/gasum-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1288,9 +1288,9 @@
   {
     "id": "greenstep-oy",
     "name": "Greenstep Oy",
-    "domain": null,
+    "domain": "greenstep.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/greenstep-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1345,9 +1345,9 @@
   {
     "id": "hus",
     "name": "HUS",
-    "domain": null,
+    "domain": "hus.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/hus.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1403,9 +1403,9 @@
   {
     "id": "hankkija-oy",
     "name": "Hankkija Oy",
-    "domain": null,
+    "domain": "hankkija.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/hankkija-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1430,9 +1430,9 @@
   {
     "id": "hartela-oy",
     "name": "Hartela Oy",
-    "domain": null,
+    "domain": "hartela.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/hartela-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1457,9 +1457,9 @@
   {
     "id": "heimondo-finland-oy",
     "name": "Heimondo Finland Oy",
-    "domain": null,
+    "domain": "heimondo.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/heimondo-finland-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1490,9 +1490,9 @@
   {
     "id": "helmihunter-oy",
     "name": "Helmihunter Oy",
-    "domain": null,
+    "domain": "helmihunter.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/helmihunter-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1517,9 +1517,9 @@
   {
     "id": "helsingin-asumisoikeus-oy",
     "name": "Helsingin Asumisoikeus Oy",
-    "domain": null,
+    "domain": "haso.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/helsingin-asumisoikeus-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1544,9 +1544,9 @@
   {
     "id": "helsingin-kaupunki",
     "name": "Helsingin kaupunki",
-    "domain": null,
+    "domain": "hel.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/helsingin-kaupunki.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1577,9 +1577,9 @@
   {
     "id": "helsingin-yliopisto",
     "name": "Helsingin yliopisto",
-    "domain": null,
+    "domain": "helsinki.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/helsingin-yliopisto.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1613,9 +1613,9 @@
   {
     "id": "helsinki-shipyard",
     "name": "Helsinki Shipyard",
-    "domain": null,
+    "domain": "helsinkishipyard.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/helsinki-shipyard.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1646,9 +1646,9 @@
   {
     "id": "henkilostoliiga",
     "name": "Henkilöstöliiga",
-    "domain": null,
+    "domain": "henkilostoliiga.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/henkilostoliiga.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1673,9 +1673,9 @@
   {
     "id": "henkilostovuokraus-yhtio-kipina-oy",
     "name": "Henkilöstövuokraus yhtiö Kipinä Oy",
-    "domain": null,
+    "domain": "kipinaoy.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/henkilostovuokraus-yhtio-kipina-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1700,9 +1700,9 @@
   {
     "id": "hitachi-energy",
     "name": "Hitachi Energy",
-    "domain": null,
+    "domain": "hitachienergy.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/hitachi-energy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1734,9 +1734,9 @@
   {
     "id": "huoltovarmuuskeskus",
     "name": "Huoltovarmuuskeskus",
-    "domain": null,
+    "domain": "huoltovarmuuskeskus.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/huoltovarmuuskeskus.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1761,9 +1761,9 @@
   {
     "id": "ilmarinen",
     "name": "Ilmarinen",
-    "domain": null,
+    "domain": "ilmarinen.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/ilmarinen.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1788,9 +1788,9 @@
   {
     "id": "j-rinta-jouppi-oy",
     "name": "J. Rinta-Jouppi Oy",
-    "domain": null,
+    "domain": "rinta-jouppi.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/j-rinta-jouppi-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1815,9 +1815,9 @@
   {
     "id": "jtt-sales-oy",
     "name": "JTT Sales Oy",
-    "domain": null,
+    "domain": "jttsales.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/jtt-sales-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1844,7 +1844,7 @@
     "name": "KONE",
     "domain": "kone.com",
     "brandColor": "#1450f5",
-    "logo": null,
+    "logo": "/logos/kone.png",
     "image": "/images/industry/industrial.jpg",
     "imageCredit": {
       "author": "Henrysz",
@@ -1880,9 +1880,9 @@
   {
     "id": "kpmg",
     "name": "KPMG",
-    "domain": null,
+    "domain": "kpmg.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/kpmg.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1917,9 +1917,9 @@
   {
     "id": "kaiku-hr",
     "name": "Kaiku HR",
-    "domain": null,
+    "domain": "kaikuhr.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/kaiku-hr.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1944,9 +1944,9 @@
   {
     "id": "kaskea-group",
     "name": "Kaskea Group",
-    "domain": null,
+    "domain": "kaskea.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/kaskea-group.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -1977,9 +1977,9 @@
   {
     "id": "katrium",
     "name": "Katrium",
-    "domain": null,
+    "domain": "katrium.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/katrium.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2016,9 +2016,9 @@
   {
     "id": "kela",
     "name": "Kela",
-    "domain": null,
+    "domain": "kela.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/kela.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2049,9 +2049,9 @@
   {
     "id": "kymppivoima-oy",
     "name": "Kymppivoima Oy",
-    "domain": null,
+    "domain": "kymppivoima.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/kymppivoima-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2076,9 +2076,9 @@
   {
     "id": "karkkainen-oy",
     "name": "Kärkkäinen Oy",
-    "domain": null,
+    "domain": "karkkainen.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/karkkainen-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2108,9 +2108,9 @@
   {
     "id": "lapland-hotels",
     "name": "Lapland Hotels",
-    "domain": null,
+    "domain": "laplandhotels.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/lapland-hotels.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2162,9 +2162,9 @@
   {
     "id": "lassila-tikanoja-oyj",
     "name": "Lassila & Tikanoja Oyj",
-    "domain": null,
+    "domain": "lt.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/lassila-tikanoja-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2216,9 +2216,9 @@
   {
     "id": "loviisan-kaupunki",
     "name": "Loviisan kaupunki",
-    "domain": null,
+    "domain": "loviisa.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/loviisan-kaupunki.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2243,9 +2243,9 @@
   {
     "id": "luotea-oyj",
     "name": "Luotea Oyj",
-    "domain": null,
+    "domain": "luotea.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/luotea-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2277,9 +2277,9 @@
   {
     "id": "maahanmuuttovirasto",
     "name": "Maahanmuuttovirasto",
-    "domain": null,
+    "domain": "migri.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/maahanmuuttovirasto.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2305,9 +2305,9 @@
   {
     "id": "maakuntien-tilakeskus",
     "name": "Maakuntien tilakeskus",
-    "domain": null,
+    "domain": "maakuntientilakeskus.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/maakuntien-tilakeskus.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2332,9 +2332,9 @@
   {
     "id": "mentek-advisors-oy",
     "name": "Mentek Advisors Oy",
-    "domain": null,
+    "domain": "mentek.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/mentek-advisors-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2365,9 +2365,9 @@
   {
     "id": "metso",
     "name": "Metso",
-    "domain": null,
+    "domain": "metso.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/metso.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2392,9 +2392,9 @@
   {
     "id": "minjon-oy",
     "name": "Minjon Oy",
-    "domain": null,
+    "domain": "minjon.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/minjon-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2419,9 +2419,9 @@
   {
     "id": "mipro-oy",
     "name": "Mipro Oy",
-    "domain": null,
+    "domain": "mipro.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/mipro-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2446,9 +2446,9 @@
   {
     "id": "ntg-air-ocean-oy",
     "name": "NTG Air & Ocean Oy",
-    "domain": null,
+    "domain": "ntg.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/ntg-air-ocean-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2481,7 +2481,7 @@
     "name": "Neste Oyj",
     "domain": "neste.com",
     "brandColor": "#0063a3",
-    "logo": null,
+    "logo": "/logos/neste-oyj.png",
     "image": "/images/industry/energy.jpg",
     "imageCredit": {
       "author": "Matthew T Rader",
@@ -2518,9 +2518,9 @@
   {
     "id": "nextpharma-oy",
     "name": "NextPharma Oy",
-    "domain": null,
+    "domain": "nextpharma.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/nextpharma-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2545,9 +2545,9 @@
   {
     "id": "nicole-beauty",
     "name": "Nicole Beauty",
-    "domain": null,
+    "domain": "nicolebeauty.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/nicole-beauty.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2572,9 +2572,9 @@
   {
     "id": "nordic-career",
     "name": "Nordic Career",
-    "domain": null,
+    "domain": "nordiccareer.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/nordic-career.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2605,9 +2605,9 @@
   {
     "id": "normet",
     "name": "Normet",
-    "domain": null,
+    "domain": "normet.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/normet.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2634,9 +2634,9 @@
   {
     "id": "nostokonepalvelu-oy",
     "name": "Nostokonepalvelu Oy",
-    "domain": null,
+    "domain": "nostokonepalvelu.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/nostokonepalvelu-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2690,9 +2690,9 @@
   {
     "id": "olvi-oyj",
     "name": "Olvi Oyj",
-    "domain": null,
+    "domain": "olvi.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/olvi-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2724,7 +2724,7 @@
   {
     "id": "oy-scandic-trading-house-ltd",
     "name": "Oy Scandic Trading House Ltd",
-    "domain": null,
+    "domain": "scandictradinghouse.fi",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -2752,9 +2752,9 @@
   {
     "id": "palvelualojen-tyonantajat-palta",
     "name": "Palvelualojen työnantajat Palta",
-    "domain": null,
+    "domain": "palta.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/palvelualojen-tyonantajat-palta.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2779,9 +2779,9 @@
   {
     "id": "poliisi",
     "name": "Poliisi",
-    "domain": null,
+    "domain": "poliisi.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/poliisi.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2807,9 +2807,9 @@
   {
     "id": "porvoon-kaupunki-borga-stad",
     "name": "Porvoon kaupunki - Borgå stad",
-    "domain": null,
+    "domain": "porvoo.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/porvoon-kaupunki-borga-stad.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2835,9 +2835,9 @@
   {
     "id": "rainmaker",
     "name": "Rainmaker",
-    "domain": null,
+    "domain": "rainmaker.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/rainmaker.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2866,9 +2866,9 @@
   {
     "id": "red-hat-holdings-ltd",
     "name": "Red Hat Holdings Ltd.",
-    "domain": null,
+    "domain": "redhat.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/red-hat-holdings-ltd.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2893,9 +2893,9 @@
   {
     "id": "ricoh-finland",
     "name": "Ricoh Finland",
-    "domain": null,
+    "domain": "ricoh.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/ricoh-finland.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2921,9 +2921,9 @@
   {
     "id": "riihimaen-kaupunki",
     "name": "Riihimäen kaupunki",
-    "domain": null,
+    "domain": "riihimaki.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/riihimaen-kaupunki.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2948,9 +2948,9 @@
   {
     "id": "robit-finland-oy",
     "name": "Robit Finland Oy",
-    "domain": null,
+    "domain": "robitgroup.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/robit-finland-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -2975,9 +2975,9 @@
   {
     "id": "robit-finland-oy-ltd",
     "name": "Robit Finland Oy Ltd",
-    "domain": null,
+    "domain": "robitgroup.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/robit-finland-oy-ltd.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3002,9 +3002,9 @@
   {
     "id": "rovaniemen-koulutuskuntayhtyma",
     "name": "Rovaniemen Koulutuskuntayhtymä",
-    "domain": null,
+    "domain": "redu.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/rovaniemen-koulutuskuntayhtyma.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3029,9 +3029,9 @@
   {
     "id": "rukakeskus-oy",
     "name": "Rukakeskus Oy",
-    "domain": null,
+    "domain": "ruka.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/rukakeskus-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3056,9 +3056,9 @@
   {
     "id": "sok",
     "name": "SOK",
-    "domain": null,
+    "domain": "sok.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sok.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3083,9 +3083,9 @@
   {
     "id": "sos-international-oy",
     "name": "SOS International Oy",
-    "domain": null,
+    "domain": "sos.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sos-international-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3110,9 +3110,9 @@
   {
     "id": "sandvik",
     "name": "Sandvik",
-    "domain": null,
+    "domain": "sandvik.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sandvik.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3161,9 +3161,9 @@
   {
     "id": "sandvik-mining-and-construction-oy",
     "name": "Sandvik Mining and Construction Oy",
-    "domain": null,
+    "domain": "sandvik.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sandvik-mining-and-construction-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3191,9 +3191,9 @@
   {
     "id": "savon-koulutuskuntayhtyma",
     "name": "Savon Koulutuskuntayhtymä",
-    "domain": null,
+    "domain": "sakky.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/savon-koulutuskuntayhtyma.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3222,9 +3222,9 @@
   {
     "id": "sector-alarm",
     "name": "Sector Alarm",
-    "domain": null,
+    "domain": "sectoralarm.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sector-alarm.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3250,9 +3250,9 @@
   {
     "id": "securitas-oy",
     "name": "Securitas Oy",
-    "domain": null,
+    "domain": "securitas.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/securitas-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3283,9 +3283,9 @@
   {
     "id": "select-service-partner-finland",
     "name": "Select Service Partner Finland",
-    "domain": null,
+    "domain": "foodtravelexperts.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/select-service-partner-finland.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3313,9 +3313,9 @@
   {
     "id": "senaatti-kiinteistot",
     "name": "Senaatti-kiinteistöt",
-    "domain": null,
+    "domain": "senaatti.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/senaatti-kiinteistot.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3340,9 +3340,9 @@
   {
     "id": "sihti",
     "name": "Sihti",
-    "domain": null,
+    "domain": "sihti.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sihti.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3372,9 +3372,9 @@
   {
     "id": "sipoon-kunta-sibbo-kommun",
     "name": "Sipoon kunta Sibbo kommun",
-    "domain": null,
+    "domain": "sipoo.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sipoon-kunta-sibbo-kommun.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3399,9 +3399,9 @@
   {
     "id": "sodexo-oy",
     "name": "Sodexo Oy",
-    "domain": null,
+    "domain": "sodexo.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sodexo-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3433,9 +3433,9 @@
   {
     "id": "sonepar-suomi-oy",
     "name": "Sonepar Suomi Oy",
-    "domain": null,
+    "domain": "sonepar.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/sonepar-suomi-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3460,9 +3460,9 @@
   {
     "id": "specim-spectral-imaging-oy-ltd",
     "name": "Specim, Spectral Imaging Oy Ltd",
-    "domain": null,
+    "domain": "specim.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/specim-spectral-imaging-oy-ltd.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3487,9 +3487,9 @@
   {
     "id": "st1-oy",
     "name": "St1 Oy",
-    "domain": null,
+    "domain": "st1.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/st1-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3543,9 +3543,9 @@
   {
     "id": "staria-oyj",
     "name": "Staria Oyj",
-    "domain": null,
+    "domain": "staria.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/staria-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3574,9 +3574,9 @@
   {
     "id": "stora-enso-oyj",
     "name": "Stora Enso Oyj",
-    "domain": null,
+    "domain": "storaenso.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/stora-enso-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3605,7 +3605,7 @@
   {
     "id": "suomen-rakennuslogistiikka-oy",
     "name": "Suomen Rakennuslogistiikka Oy",
-    "domain": null,
+    "domain": "rakennuslogistiikka.fi",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -3632,9 +3632,9 @@
   {
     "id": "tampereen-kaupunki",
     "name": "Tampereen kaupunki",
-    "domain": null,
+    "domain": "tampere.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/tampereen-kaupunki.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3661,9 +3661,9 @@
   {
     "id": "tampereen-yliopisto",
     "name": "Tampereen yliopisto",
-    "domain": null,
+    "domain": "tuni.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/tampereen-yliopisto.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3693,9 +3693,9 @@
   {
     "id": "telia-finland-oyj",
     "name": "Telia Finland Oyj",
-    "domain": null,
+    "domain": "telia.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/telia-finland-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3720,7 +3720,7 @@
   {
     "id": "tempu-oy",
     "name": "Tempu Oy",
-    "domain": null,
+    "domain": "tempu.fi",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -3748,9 +3748,9 @@
   {
     "id": "terveystalo",
     "name": "Terveystalo",
-    "domain": null,
+    "domain": "terveystalo.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/terveystalo.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3797,9 +3797,9 @@
   {
     "id": "tietoakseli-group",
     "name": "TietoAkseli Group",
-    "domain": null,
+    "domain": "tietoakseli.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/tietoakseli-group.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3834,9 +3834,9 @@
   {
     "id": "tilitoimisto-taloushotelli-oy",
     "name": "Tilitoimisto Taloushotelli Oy",
-    "domain": null,
+    "domain": "taloushotelli.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/tilitoimisto-taloushotelli-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3867,9 +3867,9 @@
   {
     "id": "tribedo-oy",
     "name": "Tribedo Oy",
-    "domain": null,
+    "domain": "tribedo.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/tribedo-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3894,9 +3894,9 @@
   {
     "id": "twoday-oy",
     "name": "Twoday Oy",
-    "domain": null,
+    "domain": "twoday.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/twoday-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -3923,7 +3923,7 @@
     "name": "UPM",
     "domain": "upm.com",
     "brandColor": "#007a3d",
-    "logo": null,
+    "logo": "/logos/upm.png",
     "image": "/images/industry/forest.jpg",
     "imageCredit": {
       "author": "kallerna",
@@ -3964,9 +3964,9 @@
   {
     "id": "uggla-engineering-oy",
     "name": "Uggla Engineering Oy",
-    "domain": null,
+    "domain": "uggla.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/uggla-engineering-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4015,9 +4015,9 @@
   {
     "id": "vuorenmaa-yhtiot-oy",
     "name": "VUORENMAA Yhtiöt Oy",
-    "domain": null,
+    "domain": "vuorenmaa.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/vuorenmaa-yhtiot-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4042,9 +4042,9 @@
   {
     "id": "vahterus-oy",
     "name": "Vahterus Oy",
-    "domain": null,
+    "domain": "vahterus.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/vahterus-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4072,7 +4072,7 @@
     "name": "Valmet",
     "domain": "valmet.com",
     "brandColor": "#c8102e",
-    "logo": null,
+    "logo": "/logos/valmet.png",
     "image": "/images/industry/industrial.jpg",
     "imageCredit": {
       "author": "Henrysz",
@@ -4132,9 +4132,9 @@
   {
     "id": "veikkaus",
     "name": "Veikkaus",
-    "domain": null,
+    "domain": "veikkaus.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/veikkaus.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4159,9 +4159,9 @@
   {
     "id": "verohallinto",
     "name": "Verohallinto",
-    "domain": null,
+    "domain": "vero.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/verohallinto.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4207,9 +4207,9 @@
   {
     "id": "wasatalent-oy",
     "name": "WasaTalent Oy",
-    "domain": null,
+    "domain": "wasatalent.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/wasatalent-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4234,9 +4234,9 @@
   {
     "id": "weidmuller",
     "name": "Weidmüller",
-    "domain": null,
+    "domain": "weidmueller.com",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/weidmuller.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4262,7 +4262,7 @@
   {
     "id": "wihanto-oy",
     "name": "Wihanto Oy",
-    "domain": null,
+    "domain": "wihanto.fi",
     "brandColor": "#3b5379",
     "logo": null,
     "image": null,
@@ -4295,9 +4295,9 @@
   {
     "id": "workpower-oy",
     "name": "Workpower Oy",
-    "domain": null,
+    "domain": "workpower.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/workpower-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4380,7 +4380,7 @@
     "name": "Wärtsilä",
     "domain": "wartsila.com",
     "brandColor": "#ff7300",
-    "logo": null,
+    "logo": "/logos/wartsila.png",
     "image": "/images/industry/industrial.jpg",
     "imageCredit": {
       "author": "Henrysz",
@@ -4420,9 +4420,9 @@
   {
     "id": "yit-housing-oy",
     "name": "YIT Housing Oy",
-    "domain": null,
+    "domain": "yit.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/yit-housing-oy.png",
     "image": null,
     "imageCredit": null,
     "locations": [
@@ -4449,9 +4449,9 @@
   {
     "id": "yit-oyj",
     "name": "YIT Oyj",
-    "domain": null,
+    "domain": "yit.fi",
     "brandColor": "#3b5379",
-    "logo": null,
+    "logo": "/logos/yit-oyj.png",
     "image": null,
     "imageCredit": null,
     "locations": [

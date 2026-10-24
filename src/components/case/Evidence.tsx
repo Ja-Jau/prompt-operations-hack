@@ -10,9 +10,11 @@ const KIND_LABEL: Record<Clue["kind"], string> = {
   map: "Hiring map",
   chips: "What they hire for",
   analyst: "Velho analyst",
+  fact: "Fact",
 };
 
 function label(clue: Clue): string {
+  if (clue.kind === "fact") return clue.title;
   return clue.kind === "chips" && clue.title !== "What they hire for" ? clue.title : KIND_LABEL[clue.kind];
 }
 
@@ -41,6 +43,8 @@ function ClueBody({ clue, company }: { clue: Clue; company: HiringCompany }) {
       return <p className="text-lg">{clue.items.join(" · ")}</p>;
     case "analyst":
       return <p className="text-lg leading-snug">{clue.note}</p>;
+    case "fact":
+      return <p className="text-lg leading-snug">{clue.text}</p>;
   }
 }
 

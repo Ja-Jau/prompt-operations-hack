@@ -204,6 +204,13 @@ export function WhosHiring({ companies, onGameChange }: Props) {
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
 
         <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
+        {!saved.tipUsed && revealed < clues.length && (
+          <div className="mt-3 flex justify-center">
+            <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
+              <Icon name="spark" /> Velho hint
+            </button>
+          </div>
+        )}
 
         <div className="mt-8 flex items-center justify-between gap-3">
           <p className="eyebrow text-sage-d">Which company is hiring for this?</p>
@@ -265,7 +272,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
             }}
           />
         </div>
-        <div className="mt-6 flex flex-col items-center gap-4">
+        <div className="mt-6 flex justify-center">
           <div className="flex items-center gap-3 text-ink-2" aria-label={`${picksLeft} picks remaining`}>
             <span>Picks remaining:</span>
             <span className="flex gap-2">
@@ -277,11 +284,6 @@ export function WhosHiring({ companies, onGameChange }: Props) {
               ))}
             </span>
           </div>
-          {!saved.tipUsed && revealed < clues.length && (
-            <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
-              <Icon name="spark" /> Velho hint
-            </button>
-          )}
         </div>
       </main>
     </div>
