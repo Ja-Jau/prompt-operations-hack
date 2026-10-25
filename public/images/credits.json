@@ -73,5 +73,204 @@
       "license": "CC BY-SA 3.0"
     }
   },
-  "companies": {}
+  "companies": {
+    "kesko": {
+      "author": "Arkke",
+      "url": "https://commons.wikimedia.org/wiki/File:K-Citymarket_Porvoo.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "elisa": {
+      "author": "Santeri Viinamäki",
+      "url": "https://commons.wikimedia.org/wiki/File:Mobile_phone_mast_antenna.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "nokia": {
+      "author": "Aniprasanth",
+      "url": "https://commons.wikimedia.org/wiki/File:Athirumala_Base_Station_in_Agastya_Mala.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "kone": {
+      "author": "Baron Maddock",
+      "url": "https://commons.wikimedia.org/wiki/File:KONE_EcoMod_escalators_at_Marriott_Marquis_New_York_City.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "wartsila": {
+      "author": "Gwafton",
+      "url": "https://commons.wikimedia.org/wiki/File:W%C3%A4rtsil%C3%A4_6L20.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "neste": {
+      "author": "Jukka Wallinheimo",
+      "url": "https://commons.wikimedia.org/wiki/File:Porvoo_refinery_from_air.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 3.0"
+    },
+    "fortum": {
+      "author": "Thomas Gartz",
+      "url": "https://commons.wikimedia.org/wiki/File:Loviisa_Nuclear_Power_Plant_1.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "valmet": {
+      "author": "Unknown",
+      "url": "https://commons.wikimedia.org/wiki/File:Kaipola_paper_machines_1956.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain"
+    },
+    "upm": {
+      "author": "Kymi-info",
+      "url": "https://commons.wikimedia.org/wiki/File:Kymi_Paper_Mill_06-2019.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "huhtamaki": {
+      "author": "Santeri Viinamäki",
+      "url": "https://commons.wikimedia.org/wiki/File:Paper_coffee_cups_and_sugar_cubes_in_cafeteria.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "outokumpu": {
+      "author": "Methem (Mikko J. Putkonen)",
+      "url": "https://commons.wikimedia.org/wiki/File:Outokumpu_mills_in_Tornio_May2009.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 3.0"
+    },
+    "fiskars": {
+      "author": "Evan-amos",
+      "url": "https://commons.wikimedia.org/wiki/File:Fiskars-scissors.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain"
+    },
+    "marimekko": {
+      "author": "Marty B",
+      "url": "https://commons.wikimedia.org/wiki/File:Marimekko_store,_Helsinki_airport_(52890139867).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 2.0"
+    },
+    "harvia": {
+      "author": "Omegaosiris",
+      "url": "https://commons.wikimedia.org/wiki/File:Heat_Storage_Sauna_Stove.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "orion": {
+      "author": "epSos .de",
+      "url": "https://commons.wikimedia.org/wiki/File:Medicine_Drug_Pills_on_Plate.png",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "finnair": {
+      "author": "AleGranholm from Helsinki, Finland",
+      "url": "https://commons.wikimedia.org/wiki/File:Finnair_Airbus_A350_(26371973032).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "lei-52990007axnss4pnx352": {
+      "author": "Belenois",
+      "url": "https://commons.wikimedia.org/wiki/File:Koskenkorva_Votka.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-529900m13gm4vste6w80": {
+      "author": "Htm",
+      "url": "https://commons.wikimedia.org/wiki/File:Suomi100_Tripla_crane_1.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "lei-5493002b0govf42kwx33": {
+      "author": "Dorieo",
+      "url": "https://commons.wikimedia.org/wiki/File:Crane_Hiab_102.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-549300ef0cdeqzbma096": {
+      "author": "kallerna",
+      "url": "https://commons.wikimedia.org/wiki/File:Konecranes_Nowy_Port.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-549300ew2km4krokqv31": {
+      "author": "Carl Lender from Sunrise, USA",
+      "url": "https://commons.wikimedia.org/wiki/File:Server_Room_(22397102849).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "lei-549300r0vn9c371w0e07": {
+      "author": "Nuno Madeira Alves",
+      "url": "https://commons.wikimedia.org/wiki/File:UG_jaw_crusher.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-549300uwb1air85bm957": {
+      "author": "Jisis",
+      "url": "https://commons.wikimedia.org/wiki/File:Pharmacy-Suomenlinna-D11.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-636700ebb0sa4501at18": {
+      "author": "Kotivalo",
+      "url": "https://commons.wikimedia.org/wiki/File:White_Volvo_with_L_%26_T_branding.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-636700z25zqxlmz3cy73": {
+      "author": "AlfvanBeem",
+      "url": "https://commons.wikimedia.org/wiki/File:SISU_Valmet_44011_Straddle_carrier_p5.JPG",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "lei-7437000iqjs6zc1fr041": {
+      "author": "Ermell",
+      "url": "https://commons.wikimedia.org/wiki/File:Ponsse_Ergo_harvester-20230305-RM-153235.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-7437000na1i6y1oqwl24": {
+      "author": "W. Bulach",
+      "url": "https://commons.wikimedia.org/wiki/File:00_3783_Oil_and_gas_platform_in_Norway.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-7437000pn6e448npgy86": {
+      "author": "The Digital Marketing Collaboration thedmcsa",
+      "url": "https://commons.wikimedia.org/wiki/File:Grilling_Sausages_(Unsplash).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "lei-7437000tb0ghdhlpx677": {
+      "author": "Pekka Vyhtinen",
+      "url": "https://commons.wikimedia.org/wiki/File:Haaga_(IMO_9797632)_Tammisaari_2022_(cropped).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "lei-7437000zp669lkutz738": {
+      "author": "Estormiz",
+      "url": "https://commons.wikimedia.org/wiki/File:Stora_Enso_Oulu_20110219_03.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "lei-74370016pw2v4w02lx91": {
+      "author": "Dietmar Rabich",
+      "url": "https://commons.wikimedia.org/wiki/File:B%C3%BCroklammern_--_2021_--_6481.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-7437001aezhll3uex093": {
+      "author": "Pkivimak",
+      "url": "https://commons.wikimedia.org/wiki/File:Terveystalo_Kamppi.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "lei-743700205jamgm80qd88": {
+      "author": "Proto INSA Club",
+      "url": "https://commons.wikimedia.org/wiki/File:Carbon_fiber_pieces_for_Shell_Eco-marathon_prototype_wheels_Proto_INSA_Club.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    }
+  }
 }

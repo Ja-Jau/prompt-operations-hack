@@ -23,8 +23,35 @@ export function metricObservation(company: Company, id: MetricId): EfficiencyObs
 
 const valueFor = (id: MetricId) => (company: Company) => metricObservation(company, id)?.value ?? null;
 const percent = (v: number) => `${v.toFixed(1)}%`;
+const euros = (v: number) => (v >= 1e9 ? `€${(v / 1e9).toFixed(1)}B` : `€${Math.round(v / 1e6)}M`);
 
 export const METRICS: Record<MetricId, Metric> = {
+  revenue: {
+    id: "revenue",
+    title: "Annual revenue",
+    label: "revenue last financial year",
+    question: "Higher or lower revenue than",
+    explanation: "Total revenue from the company's audited annual report.",
+    opportunity: "Velho helps teams grow revenue without growing the routine work at the same pace.",
+    value: valueFor("revenue"),
+    format: euros,
+    higherLabel: "Higher",
+    lowerLabel: "Lower",
+    farEnough: (a, b) => Math.max(a, b) / Math.min(a, b) >= 1.15,
+  },
+  revenueGrowth: {
+    id: "revenueGrowth",
+    title: "Revenue growth",
+    label: "revenue change on the year before",
+    question: "Higher or lower growth than",
+    explanation: "How much revenue changed from the year before, from the company's annual report.",
+    opportunity: "Velho helps growing teams take on more work without hiring for every manual step.",
+    value: valueFor("revenueGrowth"),
+    format: (v) => `${v > 0 ? "+" : ""}${v.toFixed(1)}%`,
+    higherLabel: "Higher",
+    lowerLabel: "Lower",
+    farEnough: (a, b) => Math.abs(a - b) >= 1,
+  },
   growthGap: {
     id: "growthGap",
     title: "Growth vs headcount",

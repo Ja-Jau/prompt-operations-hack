@@ -28,7 +28,7 @@ export type Company = {
   efficiency?: Partial<Record<EfficiencyMetricId, EfficiencyObservation>>;
 };
 
-export type EfficiencyMetricId = "growthGap" | "manualAds" | "adminRatio" | "inventoryDays";
+export type EfficiencyMetricId = "revenue" | "revenueGrowth" | "growthGap" | "manualAds" | "adminRatio" | "inventoryDays";
 
 export type EfficiencyObservation = {
   value: number;

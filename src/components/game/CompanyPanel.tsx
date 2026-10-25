@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
 import type { GameCompany as Company } from "@/types/company";
 import { METRICS, metricObservation, type MetricId } from "@/lib/game/metrics";
 import { formatEur } from "@/lib/format";
@@ -29,6 +29,7 @@ function RevealDetails({ company, metric }: { company: Company; metric: MetricId
         <p className="mt-2 text-xs">{observation.note}</p>
         <p className="mt-2 text-xs">{observation.period}</p>
         {metric === "manualAds" && <p className="mt-2 text-xs">{inputs.manual} of {inputs.checked} sampled ads mention repetitive tasks.</p>}
+        {metric === "revenueGrowth" && <p className="mt-2 text-xs">Revenue {formatEur(inputs.previousRevenue)} → {formatEur(inputs.revenue)}</p>}
         {metric === "growthGap" && <p className="mt-2 text-xs">Revenue {((inputs.revenue / inputs.previousRevenue - 1) * 100).toFixed(1)}% · Employees {((inputs.employees / inputs.previousEmployees - 1) * 100).toFixed(1)}%</p>}
         {metric === "adminRatio" && <p className="mt-2 text-xs">Administration {formatEur(Math.abs(inputs.administrativeExpenses))} / revenue {formatEur(inputs.revenue)}</p>}
         {metric === "inventoryDays" && <p className="mt-2 text-xs">Opening inventory {formatEur(inputs.previousInventory)} · Closing inventory {formatEur(inputs.inventory)} · Annual cost of sales {formatEur(Math.abs(inputs.costOfSales))}</p>}
@@ -53,25 +54,14 @@ function RevealDetails({ company, metric }: { company: Company; metric: MetricId
 export function CompanyPanel({ company, metric, revealed, value, children }: Props) {
   const m = METRICS[metric];
   const raw = m.value(company);
-  const fallback = company.image ? { image: company.image, imageCredit: company.imageCredit } : companyPhotoFallback(company);
-  const [photo, setPhoto] = useState<{ id: string; image: string; imageCredit: Company["imageCredit"]; kind: string } | null>(null);
-  const [broken, setBroken] = useState<string | null>(null);
-  const activePhoto = photo?.id === company.id && broken !== photo.image ? photo : fallback;
-  useEffect(() => {
-    const controller = new AbortController();
-    fetch(`/api/companies/photo?id=${encodeURIComponent(company.id)}`, { signal: controller.signal })
-      .then((response) => response.ok ? response.json() : null)
-      .then((result) => { if (result?.image) setPhoto({ ...result, id: company.id }); })
-      .catch(() => { /* Local artwork remains visible. */ });
-    return () => controller.abort();
-  }, [company.id]);
+  const photo = company.image ? { image: company.image, imageCredit: company.imageCredit } : companyPhotoFallback(company);
+  // Reviewed per-company photos live in /images/company/; the rest share an industry photo.
+  const ownPhoto = photo.image.startsWith("/images/company/");
 
   return (
     <section className="higher-lower-panel relative isolate flex min-h-0 min-w-0 flex-1 flex-col items-center justify-center overflow-hidden bg-navy px-3 py-3 text-center text-ivory sm:px-5">
-      {activePhoto.image && (
-        // eslint-disable-next-line @next/next/no-img-element -- full-bleed background photo
-        <img src={activePhoto.image} onError={() => setBroken(activePhoto.image)} alt="" aria-hidden className="absolute inset-0 -z-20 h-full w-full object-cover" />
-      )}
+      {/* eslint-disable-next-line @next/next/no-img-element -- full-bleed background photo */}
+      <img key={photo.image} src={photo.image} alt="" aria-hidden className="absolute inset-0 -z-20 h-full w-full object-cover" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgb(10_27_52/0.95)_0%,rgb(10_27_52/0.78)_55%,rgb(10_27_52/0.7)_100%)]" />
 
       <div key={`${company.id}-${metric}`} className="animate-panel-in flex flex-col items-center">
@@ -85,10 +75,10 @@ export function CompanyPanel({ company, metric, revealed, value, children }: Pro
       </div>
 
       {children && <div className="mt-2 sm:mt-3">{children}</div>}
-      {activePhoto.imageCredit && (
-        <a href={activePhoto.imageCredit.url} target="_blank" rel="noreferrer" title={`${activePhoto.imageCredit.author} / ${activePhoto.imageCredit.source}`}
+      {photo.imageCredit && (
+        <a href={photo.imageCredit.url} target="_blank" rel="noreferrer" title={`${photo.imageCredit.author} / ${photo.imageCredit.source}`}
           className="absolute bottom-1.5 right-3 max-w-[calc(100%-1.5rem)] truncate text-[10px] text-on-dark-2/70 hover:text-ivory">
-          {photo?.id === company.id && activePhoto === photo && photo.kind === "company" ? "Company image" : "Industry photo"} · {activePhoto.imageCredit.author}
+          {ownPhoto ? "Photo" : "Industry photo"} · {photo.imageCredit.author}
         </a>
       )}
     </section>
