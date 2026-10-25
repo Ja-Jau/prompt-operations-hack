@@ -1,0 +1,36 @@
+name: Refresh dashboard Jobly ads
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-dashboard-jobs.yml'
+      - 'pipeline/sync_dashboard_jobs.py'
+      - 'pipeline/refresh_dashboard_jobs.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dashboard-jobly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install scraper dependencies
+        run: python -m pip install -r velho-game-data/requirements.txt
+      - name: Fetch Jobly ads and save to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: python pipeline/sync_dashboard_jobs.py

@@ -63,8 +63,7 @@ class FreshFetcher(PoliteFetcher):
 
 
 
-def main():
-    offset = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+def collect_ads(offset: int):
     slug, category = CATEGORIES[offset % len(CATEGORIES)]
     fetcher = FreshFetcher("jobly-dashboard")
     try:
@@ -93,10 +92,11 @@ def main():
                 break
         if not ads:
             raise RuntimeError("No readable job descriptions found. Existing data was kept.")
-        print(json.dumps({"ads": ads, "category": category}, ensure_ascii=False))
+        return {"ads": ads, "category": category}
     finally:
         fetcher.client.close()
 
 
 if __name__ == "__main__":
-    main()
+    offset = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+    print(json.dumps(collect_ads(offset), ensure_ascii=False))

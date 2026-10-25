@@ -20,7 +20,7 @@ type DemoActivity = { companyId: string; company: string; to: string; at: string
 const PAGE_SIZE = 5;
 
 /** Draft editing stays local; demo invitations and responses persist without email delivery. */
-export function MarketingDashboard({ prospects, totalCompanies, updatedAt }: { prospects: MarketingProspect[]; totalCompanies: number; updatedAt: string }) {
+export function MarketingDashboard({ prospects, totalCompanies, updatedAt, automatic = false, lastRefreshError = null }: { prospects: MarketingProspect[]; totalCompanies: number; updatedAt: string; automatic?: boolean; lastRefreshError?: string | null }) {
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
   const [filter, setFilter] = useState<"all" | "reviewed" | "employers">("all");
@@ -105,7 +105,7 @@ export function MarketingDashboard({ prospects, totalCompanies, updatedAt }: { p
 
   return <main className="marketing-main">
     <div className="marketing-heading"><h1>Marketing dashboard</h1><span className="marketing-demo-badge"><i /> Demo · no emails sent</span></div>
-    <FetchJobAds updatedAt={updatedAt} />
+    <FetchJobAds updatedAt={updatedAt} automatic={automatic} lastError={lastRefreshError} />
     <section className="marketing-overview" aria-label="Company analysis overview">
       <PriorityChart counts={counts} selected={tier} onSelect={(value) => { setTier(value); setPage(0); }} />
       <dl className="marketing-counts">{[

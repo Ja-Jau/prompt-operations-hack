@@ -336,6 +336,16 @@ Invitations persist in Upstash Redis when the existing `KV_REST_API_URL`/`KV_RES
 
 ### Dashboard job-ad refresh
 
+**Supabase + hourly background refresh:** `/velho` reads saved Jobly ad samples
+from Supabase when `SUPABASE_URL` and `SUPABASE_SECRET_KEY` are configured. A separate
+GitHub Actions worker fetches up to ten ads from a rotating category each hour,
+without a browser visit or a running web server. Follow the
+[database and secrets setup](supabase/README.md) to create the tables, configure
+Vercel and GitHub, and run the first batch. Ads are updated by URL; failed batches
+keep the previous data. Samples older than 30 days are excluded from rankings.
+
+**Local mode (without Supabase):**
+
 **Fetch job ads** on `/velho` automatically reads a current Jobly category listing and up to ten ad pages, flags explicit repetitive-task phrases, and saves verbatim evidence. Each successful fetch rotates to the next category. The dashboard reloads its opportunity scores from the saved sample; existing game snapshots remain unchanged. Automatically flagged evidence is a keyword-based shortlist for review, not an AI audit. Companies sampled by the refresh show counts for that saved sample. Unvisited companies retain their existing snapshot.
 
 Run on a Node server with Python 3 and a writable `.data/` directory:
