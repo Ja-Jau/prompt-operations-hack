@@ -5,7 +5,7 @@ from datetime import date, datetime, timezone
 import math
 import re
 
-METRICS = ("growthGap", "manualAds", "adminRatio", "inventoryDays")
+METRICS = ("revenue", "revenueGrowth", "growthGap", "manualAds", "adminRatio", "inventoryDays")
 MIN_ADS = 3
 MAX_AD_AGE_DAYS = 90
 
@@ -85,6 +85,15 @@ def financial_metrics(record: dict | None) -> tuple[dict, dict]:
                           (" (" + f["evidence"] + ")" if f.get("evidence") else "") for f in selected)}])
 
     r, prior_r, e, prior_e = (get(k) for k in ("revenue", "previousRevenue", "employees", "previousEmployees"))
+    if r is not None and r > 0:
+        make("revenue", r, ["revenue"], "revenue", f"Reported revenue for {year}, in euros.")
+    else:
+        missing["revenue"] = "Revenue not reported"
+    if r is not None and prior_r is not None and r > 0 and prior_r > 0:
+        make("revenueGrowth", (r / prior_r - 1) * 100, ["revenue", "previousRevenue"], "revenue-growth",
+             f"Revenue change from {year - 1} to {year}. Acquisitions, divestments and prices affect it.")
+    else:
+        missing["revenueGrowth"] = "Needs revenue for two full years"
     if all(v is not None and v > 0 for v in (r, prior_r, e, prior_e)) and record.get("employeeBasis"):
         gap = ((r / prior_r - 1) - (e / prior_e - 1)) * 100
         make("growthGap", gap, ["revenue", "previousRevenue", "employees", "previousEmployees"],
@@ -140,6 +149,9 @@ def job_metric(company_jobs: list[dict], today: date | None = None) -> tuple[dic
         return None, f"Needs at least {MIN_ADS} distinct, non-empty ads sampled within {MAX_AD_AGE_DAYS} days"
     matches = [(job, classify_task(job["description_raw"])) for job in recent]
     positives = [(job, quote) for job, quote in matches if quote]
+    # No match proves little about a small sample, so it is not shown as 0%.
+    if not positives:
+        return None, "No sampled ad describes an explicit repetitive task"
     sampled = max(j["scraped_at"][:10] for j in recent)
     # Include evidence for positives and source links for every ad in the denominator.
     sources = [{"url": j["url"], "label": j["job_title"], "evidence": quote or "No explicit task matched the documented rules"}
@@ -148,5 +160,5 @@ def job_metric(company_jobs: list[dict], today: date | None = None) -> tuple[dic
         scope="job-ad-sample", definition=CLASSIFIER_VERSION, fetched_at=sampled,
         sources=sources, inputs={"checked": len(recent), "manual": len(positives)},
         note="Share of sampled ads matching explicit repetitive-task rules. A conservative text signal, "
-             "not the share of staff doing manual work. Zero means no rule matched.")
+             "not the share of staff doing manual work.")
     return value, None

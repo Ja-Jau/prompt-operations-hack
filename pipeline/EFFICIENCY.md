@@ -1,6 +1,6 @@
 # Efficiency data for Higher or lower
 
-The game uses four sourced observations. Its company catalog grows automatically;
+The game uses six sourced observations: revenue, revenue growth, growth vs headcount, repetitive tasks in job ads, administrative expenses and time holding stock. Its company catalog grows automatically;
 there is no fixed company universe in `companies.csv`.
 
 ## Game data and images
@@ -9,13 +9,12 @@ Higher or lower loads precomputed observations from `src/data/efficiency.json`,
 joined to the discovered catalog in `src/data/game_companies.json`. No metrics
 are fetched during play. The scheduled pipeline below refreshes these snapshots.
 
-Each displayed company also requests `/api/companies/photo?id=...`. This checks
-its known official homepage for an Open Graph/Twitter image and credits the
-company's website. Successful image discoveries are cached for a day. Missing
-domains, source errors, missing metadata and broken remote image loads fall back
-to an existing locally bundled, credited industry photograph. Industry pictures
-are labelled as such; a specific company photograph cannot be guaranteed for
-employers without public imagery. Every discovered identity has a local fallback.
+Each company in play has its own background photo showing what it does (a cell
+tower for Nokia, a refinery for Neste, a forest harvester for Ponsse). The photos are
+reviewed Wikimedia Commons files listed in `data/company_photos.json`, downloaded by
+`python pipeline/fetch_company_photos.py` into `public/images/company/` and credited
+in `public/images/credits.json`. Companies without one fall back to a credited
+industry photo, labelled as such.
 
 ## Automatic refresh
 
@@ -67,7 +66,7 @@ are excluded from observations. Missing data never becomes an invented zero.
 The catalog bootstraps old company artwork on its first run, then is maintained
 independently. Reviewed `report_sources.json` mappings supplement automatically
 indexed reports; they do not determine which companies can enter the catalog.
-Public data cannot supply all four metrics for every employer. Missing disclosures
+Public data cannot supply all six metrics for every employer. Missing disclosures
 remain in the coverage report and those companies skip the affected category.
 
 ## Files and provenance
@@ -96,6 +95,9 @@ with its original date. The error remains in `job_samples.json`.
 
 ## Definitions
 
+- **Revenue (EUR):** reported revenue for the financial year, from the annual report.
+- **Revenue growth (%):** `100 × (revenue / previousRevenue - 1)`, both years from
+  the same report and reporting entity.
 - **Growth gap (percentage points):**
   `100 × [(revenue / previousRevenue - 1) - (employees / previousEmployees - 1)]`.
   Both years come from the same report and reporting entity. Average headcount,
@@ -105,8 +107,9 @@ with its original date. The error remains in `job_samples.json`.
   task rules / all distinct non-empty sampled ads × 100. At least three ads,
   sampled within 90 days. Terms such as Excel or ERP alone do not qualify. Negated
   tasks and sentences about automating them are excluded. Exact matching sentences
-  are retained, and every denominator ad has a source link. Zero means no rule
-  matched, not proof that the company has no repetitive work. This rules-based
+  are retained, and every denominator ad has a source link. A sample where no rule
+  matched is left out of the game rather than shown as 0%: with only a handful of
+  ads it proves little. This rules-based
   classifier prioritises precision and can miss differently worded tasks.
 - **Admin ratio (%):** absolute separately reported administrative expenses /
   revenue × 100. Combined SG&A, total operating expenses and payroll are not

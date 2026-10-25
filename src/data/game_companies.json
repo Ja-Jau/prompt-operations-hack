@@ -6,10 +6,10 @@
     "domain": "elisa.fi",
     "brandColor": "#0019af",
     "logo": null,
-    "image": "/images/industry/telecom.jpg",
+    "image": "/images/company/elisa.jpg",
     "imageCredit": {
-      "author": "Wee Hong",
-      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "author": "Santeri Viinamäki",
+      "url": "https://commons.wikimedia.org/wiki/File:Mobile_phone_mast_antenna.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY-SA 4.0"
     },
@@ -22,12 +22,12 @@
     "domain": "finnair.com",
     "brandColor": "#0b1560",
     "logo": null,
-    "image": "/images/industry/travel.jpg",
+    "image": "/images/company/finnair.jpg",
     "imageCredit": {
-      "author": "Diliff",
-      "url": "https://commons.wikimedia.org/wiki/File:Heathrow_Airport_Terminal_2,_London,_England_-_Diliff.jpg",
+      "author": "AleGranholm from Helsinki, Finland",
+      "url": "https://commons.wikimedia.org/wiki/File:Finnair_Airbus_A350_(26371973032).jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0"
+      "license": "CC BY 2.0"
     },
     "hint": "Finland's national airline."
   },
@@ -38,12 +38,12 @@
     "domain": "fiskarsgroup.com",
     "brandColor": "#f47b20",
     "logo": null,
-    "image": "/images/industry/consumer-goods.jpg",
+    "image": "/images/company/fiskars.jpg",
     "imageCredit": {
-      "author": "Slyronit",
-      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "author": "Evan-amos",
+      "url": "https://commons.wikimedia.org/wiki/File:Fiskars-scissors.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
+      "license": "Public domain"
     },
     "hint": "Orange-handled scissors, and much more."
   },
@@ -54,10 +54,10 @@
     "domain": "fortum.com",
     "brandColor": "#2e9e5b",
     "logo": null,
-    "image": "/images/industry/energy.jpg",
+    "image": "/images/company/fortum.jpg",
     "imageCredit": {
-      "author": "Matthew T Rader",
-      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "author": "Thomas Gartz",
+      "url": "https://commons.wikimedia.org/wiki/File:Loviisa_Nuclear_Power_Plant_1.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY-SA 4.0"
     },
@@ -70,12 +70,12 @@
     "domain": "harvia.com",
     "brandColor": "#b3121f",
     "logo": null,
-    "image": "/images/industry/consumer-goods.jpg",
+    "image": "/images/company/harvia.jpg",
     "imageCredit": {
-      "author": "Slyronit",
-      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "author": "Omegaosiris",
+      "url": "https://commons.wikimedia.org/wiki/File:Heat_Storage_Sauna_Stove.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
+      "license": "CC0"
     },
     "hint": "Sauna heaters, exported worldwide."
   },
@@ -86,12 +86,12 @@
     "domain": "huhtamaki.com",
     "brandColor": "#0057b8",
     "logo": null,
-    "image": "/images/industry/packaging.jpg",
+    "image": "/images/company/huhtamaki.jpg",
     "imageCredit": {
-      "author": "Axisadman",
-      "url": "https://commons.wikimedia.org/wiki/File:Modern_warehouse_with_pallet_rack_storage_system.jpg",
+      "author": "Santeri Viinamäki",
+      "url": "https://commons.wikimedia.org/wiki/File:Paper_coffee_cups_and_sugar_cubes_in_cafeteria.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0"
+      "license": "CC BY-SA 4.0"
     },
     "hint": "Coffee cups and food packaging."
   },
@@ -102,12 +102,12 @@
     "domain": "kesko.fi",
     "brandColor": "#f36f21",
     "logo": null,
-    "image": "/images/industry/retail.jpg",
+    "image": "/images/company/kesko.jpg",
     "imageCredit": {
-      "author": "Wilfredor",
-      "url": "https://commons.wikimedia.org/wiki/File:Aisle_in_L_Intermarche_supermarket_in_Quebec_City.jpg",
+      "author": "Arkke",
+      "url": "https://commons.wikimedia.org/wiki/File:K-Citymarket_Porvoo.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY 4.0"
     },
     "hint": "Runs grocery, building and car retail across Finland."
   },
@@ -118,14 +118,330 @@
     "domain": "kone.com",
     "brandColor": "#1450f5",
     "logo": null,
-    "image": "/images/industry/industrial.jpg",
+    "image": "/images/company/kone.jpg",
     "imageCredit": {
-      "author": "Henrysz",
-      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "author": "Baron Maddock",
+      "url": "https://commons.wikimedia.org/wiki/File:KONE_EcoMod_escalators_at_Marriott_Marquis_New_York_City.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY 4.0"
     },
     "hint": "Elevators and escalators, plus the people who service them."
+  },
+  {
+    "id": "lei-52990007axnss4pnx352",
+    "name": "Anora",
+    "industry": "Food",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-52990007axnss4pnx352.jpg",
+    "imageCredit": {
+      "author": "Belenois",
+      "url": "https://commons.wikimedia.org/wiki/File:Koskenkorva_Votka.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Makes and sells wines and spirits, Koskenkorva among them."
+  },
+  {
+    "id": "lei-529900c4p88aphfz5h47",
+    "name": "Ovaro Kiinteistösijoitus Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category."
+  },
+  {
+    "id": "lei-529900hekoenjhpnn480",
+    "name": "Kuntarahoitus Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category."
+  },
+  {
+    "id": "lei-529900m13gm4vste6w80",
+    "name": "YIT",
+    "industry": "Construction",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-529900m13gm4vste6w80.jpg",
+    "imageCredit": {
+      "author": "Htm",
+      "url": "https://commons.wikimedia.org/wiki/File:Suomi100_Tripla_crane_1.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0"
+    },
+    "hint": "Builds homes, offices, roads and bridges."
+  },
+  {
+    "id": "lei-5493002b0govf42kwx33",
+    "name": "Hiab",
+    "industry": "Industrial",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-5493002b0govf42kwx33.jpg",
+    "imageCredit": {
+      "author": "Dorieo",
+      "url": "https://commons.wikimedia.org/wiki/File:Crane_Hiab_102.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Makes the cranes on trucks that load and unload goods."
+  },
+  {
+    "id": "lei-5493009zdbvg2co1o689",
+    "name": "Suomen Hypoteekkiyhdistys",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category."
+  },
+  {
+    "id": "lei-549300ef0cdeqzbma096",
+    "name": "Konecranes",
+    "industry": "Industrial",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-549300ef0cdeqzbma096.jpg",
+    "imageCredit": {
+      "author": "kallerna",
+      "url": "https://commons.wikimedia.org/wiki/File:Konecranes_Nowy_Port.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Makes and services factory and harbour cranes."
+  },
+  {
+    "id": "lei-549300ew2km4krokqv31",
+    "name": "Tieto",
+    "industry": "IT services",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-549300ew2km4krokqv31.jpg",
+    "imageCredit": {
+      "author": "Carl Lender from Sunrise, USA",
+      "url": "https://commons.wikimedia.org/wiki/File:Server_Room_(22397102849).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 2.0"
+    },
+    "hint": "Builds and runs IT systems for companies and the public sector."
+  },
+  {
+    "id": "lei-549300p8n0p6kdgtj206",
+    "name": "Citycon Oyj",
+    "industry": "Public-source company",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": null,
+    "imageCredit": null,
+    "hint": "Compare the sourced figures and the definition of this category."
+  },
+  {
+    "id": "lei-549300r0vn9c371w0e07",
+    "name": "Metso",
+    "industry": "Industrial",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-549300r0vn9c371w0e07.jpg",
+    "imageCredit": {
+      "author": "Nuno Madeira Alves",
+      "url": "https://commons.wikimedia.org/wiki/File:UG_jaw_crusher.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Makes machines that crush rock and process ore for mines."
+  },
+  {
+    "id": "lei-549300uwb1air85bm957",
+    "name": "Oriola",
+    "industry": "Pharma",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-549300uwb1air85bm957.jpg",
+    "imageCredit": {
+      "author": "Jisis",
+      "url": "https://commons.wikimedia.org/wiki/File:Pharmacy-Suomenlinna-D11.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Delivers medicines to pharmacies and hospitals."
+  },
+  {
+    "id": "lei-636700ebb0sa4501at18",
+    "name": "Lassila & Tikanoja",
+    "industry": "Environmental services",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-636700ebb0sa4501at18.jpg",
+    "imageCredit": {
+      "author": "Kotivalo",
+      "url": "https://commons.wikimedia.org/wiki/File:White_Volvo_with_L_%26_T_branding.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Collects and recycles waste and cleans buildings."
+  },
+  {
+    "id": "lei-636700z25zqxlmz3cy73",
+    "name": "Kalmar",
+    "industry": "Industrial",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-636700z25zqxlmz3cy73.jpg",
+    "imageCredit": {
+      "author": "AlfvanBeem",
+      "url": "https://commons.wikimedia.org/wiki/File:SISU_Valmet_44011_Straddle_carrier_p5.JPG",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "hint": "Makes the machines that move containers around ports."
+  },
+  {
+    "id": "lei-7437000iqjs6zc1fr041",
+    "name": "Ponsse",
+    "industry": "Industrial",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-7437000iqjs6zc1fr041.jpg",
+    "imageCredit": {
+      "author": "Ermell",
+      "url": "https://commons.wikimedia.org/wiki/File:Ponsse_Ergo_harvester-20230305-RM-153235.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Makes forest machines that fell trees and carry the logs."
+  },
+  {
+    "id": "lei-7437000na1i6y1oqwl24",
+    "name": "Dovre",
+    "industry": "Project services",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-7437000na1i6y1oqwl24.jpg",
+    "imageCredit": {
+      "author": "W. Bulach",
+      "url": "https://commons.wikimedia.org/wiki/File:00_3783_Oil_and_gas_platform_in_Norway.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Provides project experts and builds energy projects."
+  },
+  {
+    "id": "lei-7437000pn6e448npgy86",
+    "name": "HKFoods",
+    "industry": "Food",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-7437000pn6e448npgy86.jpg",
+    "imageCredit": {
+      "author": "The Digital Marketing Collaboration thedmcsa",
+      "url": "https://commons.wikimedia.org/wiki/File:Grilling_Sausages_(Unsplash).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "hint": "Makes sausages, cold cuts and other meat products."
+  },
+  {
+    "id": "lei-7437000tb0ghdhlpx677",
+    "name": "Aspo",
+    "industry": "Shipping",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-7437000tb0ghdhlpx677.jpg",
+    "imageCredit": {
+      "author": "Pekka Vyhtinen",
+      "url": "https://commons.wikimedia.org/wiki/File:Haaga_(IMO_9797632)_Tammisaari_2022_(cropped).jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0"
+    },
+    "hint": "Owns ESL Shipping's cargo ships and industrial trading firms."
+  },
+  {
+    "id": "lei-7437000zp669lkutz738",
+    "name": "Stora Enso",
+    "industry": "Forest",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-7437000zp669lkutz738.jpg",
+    "imageCredit": {
+      "author": "Estormiz",
+      "url": "https://commons.wikimedia.org/wiki/File:Stora_Enso_Oulu_20110219_03.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0"
+    },
+    "hint": "Makes packaging board, pulp and wood products."
+  },
+  {
+    "id": "lei-74370016pw2v4w02lx91",
+    "name": "Wulff",
+    "industry": "Office supplies",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-74370016pw2v4w02lx91.jpg",
+    "imageCredit": {
+      "author": "Dietmar Rabich",
+      "url": "https://commons.wikimedia.org/wiki/File:B%C3%BCroklammern_--_2021_--_6481.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Sells office supplies and workplace products."
+  },
+  {
+    "id": "lei-7437001aezhll3uex093",
+    "name": "Terveystalo",
+    "industry": "Healthcare",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-7437001aezhll3uex093.jpg",
+    "imageCredit": {
+      "author": "Pkivimak",
+      "url": "https://commons.wikimedia.org/wiki/File:Terveystalo_Kamppi.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Runs private clinics and occupational health care."
+  },
+  {
+    "id": "lei-743700205jamgm80qd88",
+    "name": "Exel Composites",
+    "industry": "Industrial",
+    "domain": null,
+    "brandColor": "#18344c",
+    "logo": null,
+    "image": "/images/company/lei-743700205jamgm80qd88.jpg",
+    "imageCredit": {
+      "author": "Proto INSA Club",
+      "url": "https://commons.wikimedia.org/wiki/File:Carbon_fiber_pieces_for_Shell_Eco-marathon_prototype_wheels_Proto_INSA_Club.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0"
+    },
+    "hint": "Makes tubes and profiles from carbon and glass fibre."
   },
   {
     "id": "marimekko",
@@ -134,12 +450,12 @@
     "domain": "marimekko.com",
     "brandColor": "#2b2b2b",
     "logo": null,
-    "image": "/images/industry/consumer-goods.jpg",
+    "image": "/images/company/marimekko.jpg",
     "imageCredit": {
-      "author": "Slyronit",
-      "url": "https://commons.wikimedia.org/wiki/File:A_ceramics_workshop_at_Cappadocia.jpg",
+      "author": "Marty B",
+      "url": "https://commons.wikimedia.org/wiki/File:Marimekko_store,_Helsinki_airport_(52890139867).jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 2.0"
     },
     "hint": "Famous for its poppy-print fabrics."
   },
@@ -150,12 +466,12 @@
     "domain": "neste.com",
     "brandColor": "#0063a3",
     "logo": null,
-    "image": "/images/industry/energy.jpg",
+    "image": "/images/company/neste.jpg",
     "imageCredit": {
-      "author": "Matthew T Rader",
-      "url": "https://commons.wikimedia.org/wiki/File:Roscoe_Wind_Farm_in_West_Texas.jpg",
+      "author": "Jukka Wallinheimo",
+      "url": "https://commons.wikimedia.org/wiki/File:Porvoo_refinery_from_air.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY 3.0"
     },
     "hint": "Renewable diesel and jet fuel."
   },
@@ -166,12 +482,12 @@
     "domain": "nokia.com",
     "brandColor": "#124191",
     "logo": null,
-    "image": "/images/industry/telecom.jpg",
+    "image": "/images/company/nokia.jpg",
     "imageCredit": {
-      "author": "Wee Hong",
-      "url": "https://commons.wikimedia.org/wiki/File:Telecommunications_towers_of_Bukit_Nyabau,_Bintulu.jpg",
+      "author": "Aniprasanth",
+      "url": "https://commons.wikimedia.org/wiki/File:Athirumala_Base_Station_in_Agastya_Mala.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0"
+      "license": "CC BY-SA 3.0"
     },
     "hint": "Builds the networks your phone connects to."
   },
@@ -182,12 +498,12 @@
     "domain": "orion.fi",
     "brandColor": "#0072ce",
     "logo": null,
-    "image": "/images/industry/pharma.jpg",
+    "image": "/images/company/orion.jpg",
     "imageCredit": {
-      "author": "Tehran Times",
-      "url": "https://commons.wikimedia.org/wiki/File:COVIran_Barekat_vaccine_production_03.jpg",
+      "author": "epSos .de",
+      "url": "https://commons.wikimedia.org/wiki/File:Medicine_Drug_Pills_on_Plate.png",
       "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
+      "license": "CC BY 2.0"
     },
     "hint": "Finnish pharmaceutical company."
   },
@@ -198,10 +514,10 @@
     "domain": "outokumpu.com",
     "brandColor": "#0a2240",
     "logo": null,
-    "image": "/images/industry/steel.jpg",
+    "image": "/images/company/outokumpu.jpg",
     "imageCredit": {
-      "author": "Marek Ślusarczyk (Tupungato) Photo gallery",
-      "url": "https://commons.wikimedia.org/wiki/File:13_Industry_of_Australia_-_Steelworks_of_BlueScope_Steel_Limited_company_in_Port_Kembla,_Australia.jpg",
+      "author": "Methem (Mikko J. Putkonen)",
+      "url": "https://commons.wikimedia.org/wiki/File:Outokumpu_mills_in_Tornio_May2009.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY 3.0"
     },
@@ -214,10 +530,10 @@
     "domain": "upm.com",
     "brandColor": "#007a3d",
     "logo": null,
-    "image": "/images/industry/forest.jpg",
+    "image": "/images/company/upm.jpg",
     "imageCredit": {
-      "author": "kallerna",
-      "url": "https://commons.wikimedia.org/wiki/File:Spring_forest_Yyteri_3.jpg",
+      "author": "Kymi-info",
+      "url": "https://commons.wikimedia.org/wiki/File:Kymi_Paper_Mill_06-2019.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY-SA 4.0"
     },
@@ -230,12 +546,12 @@
     "domain": "valmet.com",
     "brandColor": "#c8102e",
     "logo": null,
-    "image": "/images/industry/industrial.jpg",
+    "image": "/images/company/valmet.jpg",
     "imageCredit": {
-      "author": "Henrysz",
-      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "author": "Unknown authorUnknown author",
+      "url": "https://commons.wikimedia.org/wiki/File:Kaipola_paper_machines_1956.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
+      "license": "Public domain"
     },
     "hint": "Machinery for pulp, paper and energy plants."
   },
@@ -246,12 +562,12 @@
     "domain": "wartsila.com",
     "brandColor": "#ff7300",
     "logo": null,
-    "image": "/images/industry/industrial.jpg",
+    "image": "/images/company/wartsila.jpg",
     "imageCredit": {
-      "author": "Henrysz",
-      "url": "https://commons.wikimedia.org/wiki/File:Robotic_Arm_Polishing_Guitars_at_Martin_Guitar_Factory.jpg",
+      "author": "Gwafton",
+      "url": "https://commons.wikimedia.org/wiki/File:W%C3%A4rtsil%C3%A4_6L20.jpg",
       "source": "Wikimedia Commons",
-      "license": "CC BY 4.0"
+      "license": "CC BY-SA 4.0"
     },
     "hint": "Engines and power systems for ships and power plants."
   },
@@ -1020,239 +1336,8 @@
     "hint": "Compare the sourced figures and the definition of this category."
   },
   {
-    "id": "lei-52990007axnss4pnx352",
-    "name": "Anora Group Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-529900c4p88aphfz5h47",
-    "name": "Ovaro Kiinteistösijoitus Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-529900hekoenjhpnn480",
-    "name": "Kuntarahoitus Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-529900m13gm4vste6w80",
-    "name": "YIT Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
     "id": "lei-529900odi3047e2liv03",
     "name": "Nordea Bank Abp",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-5493002b0govf42kwx33",
-    "name": "Hiab Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-5493009zdbvg2co1o689",
-    "name": "Suomen Hypoteekkiyhdistys",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-549300ef0cdeqzbma096",
-    "name": "Konecranes Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-549300ew2km4krokqv31",
-    "name": "Tieto Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-549300p8n0p6kdgtj206",
-    "name": "Citycon Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-549300r0vn9c371w0e07",
-    "name": "METSO OYJ",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-549300uwb1air85bm957",
-    "name": "Oriola Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-636700ebb0sa4501at18",
-    "name": "Lassila & Tikanoja Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-636700z25zqxlmz3cy73",
-    "name": "Kalmar Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-7437000iqjs6zc1fr041",
-    "name": "Ponsse Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-7437000na1i6y1oqwl24",
-    "name": "Dovre Group Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-7437000pn6e448npgy86",
-    "name": "HKFoods Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-7437000tb0ghdhlpx677",
-    "name": "Aspo Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-7437000zp669lkutz738",
-    "name": "Stora Enso Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-74370016pw2v4w02lx91",
-    "name": "Wulff-Yhtiöt Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-7437001aezhll3uex093",
-    "name": "Terveystalo Oyj",
-    "industry": "Public-source company",
-    "domain": null,
-    "brandColor": "#18344c",
-    "logo": null,
-    "image": null,
-    "imageCredit": null,
-    "hint": "Compare the sourced figures and the definition of this category."
-  },
-  {
-    "id": "lei-743700205jamgm80qd88",
-    "name": "Exel Composites Oyj",
     "industry": "Public-source company",
     "domain": null,
     "brandColor": "#18344c",

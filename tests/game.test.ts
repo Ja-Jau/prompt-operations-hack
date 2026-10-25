@@ -23,7 +23,7 @@ function company(id: string, value: number, ids: EfficiencyMetricId[] = [...METR
 
 test("only comparable sourced data becomes a question", () => {
   const a = company("a", 10), b = company("b", 30);
-  assert.equal(availableRounds([a, b]).length, 4);
+  assert.equal(availableRounds([a, b]).length, METRIC_IDS.length);
   assert.equal(availableRounds([a, { ...b, efficiency: {} }]).length, 0);
   assert.equal(availableRounds([a, company("b", 10)]).length, 0);
   const differentYear = company("b", 30);
@@ -39,7 +39,8 @@ test("categories are sampled evenly despite unequal company coverage", () => {
   const pairs = availableRounds(pool), rand = seededRandom("distribution");
   const counts = Object.fromEntries(METRIC_IDS.map((id) => [id, 0]));
   for (let i = 0; i < 12000; i++) counts[pickRound(pairs, rand)!.metric]++;
-  for (const count of Object.values(counts)) assert.ok(count > 2700 && count < 3300, String(count));
+  const expected = 12000 / METRIC_IDS.length;
+  for (const count of Object.values(counts)) assert.ok(count > expected * 0.9 && count < expected * 1.1, String(count));
 });
 
 test("daily questions are repeatable, skip repeated pairs and change categories", () => {

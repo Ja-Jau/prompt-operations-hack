@@ -55,6 +55,8 @@ class CalculationTests(unittest.TestCase):
 
     def test_formulas_and_missing_inputs(self):
         metrics, missing = financial_metrics(self.record())
+        self.assertAlmostEqual(metrics["revenue"]["value"], 120)
+        self.assertAlmostEqual(metrics["revenueGrowth"]["value"], 20)
         self.assertAlmostEqual(metrics["growthGap"]["value"], 10)
         self.assertAlmostEqual(metrics["adminRatio"]["value"], 10)
         self.assertAlmostEqual(metrics["inventoryDays"]["value"], 365 / 6, places=5)
@@ -118,10 +120,11 @@ class JobTests(unittest.TestCase):
         jobs[0]["valid_through"] = "2026-10-23"
         self.assertIsNone(job_metric(jobs, date(2026, 10, 24))[0])
 
-    def test_zero_is_a_reviewed_sample_not_a_failed_fetch(self):
+    def test_sample_without_matches_is_not_shown_as_zero(self):
         jobs = [self.job(f"https://example.com/job/{i}", "Develop software.") for i in range(3)]
-        metric, _ = job_metric(jobs, date(2026, 10, 24))
-        self.assertEqual(metric["value"], 0)
+        metric, reason = job_metric(jobs, date(2026, 10, 24))
+        self.assertIsNone(metric)
+        self.assertIn("No sampled ad", reason)
         self.assertIsNone(job_metric([], date(2026, 10, 24))[0])
 
     def test_jsonld_employer_matching_and_task_text(self):
