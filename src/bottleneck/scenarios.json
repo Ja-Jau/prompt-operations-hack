@@ -1,0 +1,373 @@
+{
+  "scenarios": [
+    {
+      "id": "order-to-cash",
+      "title": "Order to cash",
+      "industry": "Wholesale and distribution",
+      "processName": "order-processing",
+      "intro": "Orders arrive as PDFs. Someone retypes each one into the ERP. Find what is really holding the line up.",
+      "durationSeconds": 60,
+      "inflow": {
+        "base": 2.0,
+        "rampTo": 2.3
+      },
+      "slaSeconds": 6,
+      "latePenalty": 0.9,
+      "holdingCost": 0.04,
+      "reworkMult": 2,
+      "budget": 70,
+      "agents": 2,
+      "annualFactor": 38,
+      "stages": [
+        {
+          "id": "received",
+          "name": "Order received",
+          "kind": "auto",
+          "rate": 7,
+          "errorRate": 0.005,
+          "costPerItem": 0.2,
+          "queueMax": 40,
+          "deployCost": 20,
+          "agentBoost": 1.05,
+          "description": "Orders land in the shared inbox and the web shop. Already automatic."
+        },
+        {
+          "id": "pdf",
+          "name": "Manual PDF copy-paste",
+          "kind": "manual",
+          "rate": 1.2,
+          "errorRate": 0.08,
+          "costPerItem": 6,
+          "queueMax": 40,
+          "deployCost": 35,
+          "agentBoost": 3.6,
+          "description": "Someone opens each PDF and retypes customer, lines and prices into a form."
+        },
+        {
+          "id": "erp",
+          "name": "ERP entry",
+          "kind": "semi",
+          "rate": 2.7,
+          "errorRate": 0.03,
+          "costPerItem": 3,
+          "queueMax": 40,
+          "deployCost": 30,
+          "agentBoost": 1.5,
+          "description": "The clean data is posted into the ERP. Mostly clicks, some checks."
+        },
+        {
+          "id": "invoice",
+          "name": "Invoice sent",
+          "kind": "auto",
+          "rate": 6,
+          "errorRate": 0.01,
+          "costPerItem": 0.5,
+          "queueMax": 40,
+          "deployCost": 20,
+          "agentBoost": 1.05,
+          "description": "The ERP generates and emails the invoice. Fast already."
+        }
+      ],
+      "events": [
+        {
+          "id": "new-format",
+          "at": 14,
+          "title": "New customer, new PDF layout",
+          "text": "A big customer changed their order format. Manual copying gets more error-prone.",
+          "effects": [
+            {
+              "type": "stageErrorAdd",
+              "stage": "pdf",
+              "value": 0.1,
+              "duration": 40
+            }
+          ]
+        },
+        {
+          "id": "spike",
+          "at": 28,
+          "title": "Order spike +40%",
+          "text": "A promotion landed. Orders arrive 40% faster for a while.",
+          "effects": [
+            {
+              "type": "inflowMult",
+              "value": 1.4,
+              "duration": 24
+            }
+          ]
+        },
+        {
+          "id": "sick",
+          "at": 42,
+          "title": "Key employee on sick leave",
+          "text": "The one person who knows the PDF routine is out. Manual stages slow down.",
+          "effects": [
+            {
+              "type": "stageRateMult",
+              "stage": "pdf",
+              "value": 0.6,
+              "onlyManual": true,
+              "duration": 18
+            }
+          ]
+        }
+      ],
+      "explain": {
+        "bottleneckId": "pdf",
+        "text": "Orders waited at the manual copy-paste step because it handled about one order per second while two arrived. Speeding up the other steps just moved the pile around."
+      }
+    },
+    {
+      "id": "supplier-invoices",
+      "title": "Supplier invoices",
+      "industry": "Manufacturing",
+      "processName": "supplier-invoice",
+      "intro": "Invoices land in a shared inbox and get matched to purchase orders by eye. Month-end is coming.",
+      "durationSeconds": 60,
+      "inflow": {
+        "base": 1.8,
+        "rampTo": 2.0
+      },
+      "slaSeconds": 7,
+      "latePenalty": 1.1,
+      "holdingCost": 0.05,
+      "reworkMult": 2,
+      "budget": 70,
+      "agents": 2,
+      "annualFactor": 34,
+      "stages": [
+        {
+          "id": "inbox",
+          "name": "Invoice arrives by email",
+          "kind": "auto",
+          "rate": 6,
+          "errorRate": 0.01,
+          "costPerItem": 0.3,
+          "queueMax": 40,
+          "deployCost": 20,
+          "agentBoost": 0.8,
+          "description": "Invoices arrive in a shared mailbox and are filed automatically."
+        },
+        {
+          "id": "match",
+          "name": "Manual matching to PO",
+          "kind": "manual",
+          "rate": 1.3,
+          "errorRate": 0.08,
+          "costPerItem": 5,
+          "queueMax": 40,
+          "deployCost": 35,
+          "agentBoost": 3,
+          "description": "Someone compares each invoice with the purchase order and goods receipt, line by line."
+        },
+        {
+          "id": "approve",
+          "name": "Approval chain",
+          "kind": "manual",
+          "rate": 2.2,
+          "errorRate": 0.02,
+          "costPerItem": 3,
+          "queueMax": 40,
+          "deployCost": 30,
+          "agentBoost": 2,
+          "description": "Invoices wait for two managers to click approve. Fine, until someone is away."
+        },
+        {
+          "id": "pay",
+          "name": "Payment run",
+          "kind": "semi",
+          "rate": 3.0,
+          "errorRate": 0.02,
+          "costPerItem": 1.5,
+          "queueMax": 40,
+          "deployCost": 25,
+          "agentBoost": 1.2,
+          "description": "Approved invoices are bundled into the bank file. Mostly automatic already."
+        }
+      ],
+      "events": [
+        {
+          "id": "month-end",
+          "at": 16,
+          "title": "Month-end rush +30%",
+          "text": "Everyone sends invoices before the books close. Volume jumps by 30%.",
+          "effects": [
+            {
+              "type": "inflowMult",
+              "value": 1.3,
+              "duration": 26
+            }
+          ]
+        },
+        {
+          "id": "holiday",
+          "at": 34,
+          "title": "Approver on holiday",
+          "text": "One of the two approvers is away. The approval chain slows to a crawl.",
+          "effects": [
+            {
+              "type": "stageRateMult",
+              "stage": "approve",
+              "value": 0.55,
+              "onlyManual": true,
+              "duration": 20
+            }
+          ]
+        },
+        {
+          "id": "paper",
+          "at": 48,
+          "title": "A supplier sends scanned paper invoices",
+          "text": "Blurry scans make matching harder. More invoices bounce back for rework.",
+          "effects": [
+            {
+              "type": "stageErrorAdd",
+              "stage": "match",
+              "value": 0.12,
+              "duration": 12
+            }
+          ]
+        }
+      ],
+      "explain": {
+        "bottleneckId": "match",
+        "text": "Invoices first piled up at manual matching. Once that was fixed, the month-end rush and the absent approver moved the pile to the approval chain. Fixing one step revealed the next."
+      }
+    },
+    {
+      "id": "hr-onboarding",
+      "title": "New hire onboarding",
+      "industry": "Services",
+      "processName": "onboarding",
+      "intro": "A hiring wave is coming. Five steps stand between a signed offer and a productive first day. Several look slow. Only some are.",
+      "durationSeconds": 60,
+      "inflow": {
+        "base": 1.9,
+        "rampTo": 2.1
+      },
+      "slaSeconds": 7,
+      "latePenalty": 1.2,
+      "holdingCost": 0.05,
+      "reworkMult": 2,
+      "budget": 60,
+      "agents": 2,
+      "annualFactor": 30,
+      "stages": [
+        {
+          "id": "offer",
+          "name": "Offer signed",
+          "kind": "auto",
+          "rate": 5,
+          "errorRate": 0.01,
+          "costPerItem": 0.3,
+          "queueMax": 40,
+          "deployCost": 20,
+          "agentBoost": 0.8,
+          "description": "E-signature is already automatic."
+        },
+        {
+          "id": "docs",
+          "name": "Collect documents by email",
+          "kind": "manual",
+          "rate": 2.05,
+          "errorRate": 0.06,
+          "costPerItem": 4,
+          "queueMax": 40,
+          "deployCost": 30,
+          "agentBoost": 2.2,
+          "description": "HR chases bank details, tax cards and ID copies one email at a time."
+        },
+        {
+          "id": "accounts",
+          "name": "Set up accounts and equipment",
+          "kind": "manual",
+          "rate": 1.65,
+          "errorRate": 0.05,
+          "costPerItem": 5,
+          "queueMax": 40,
+          "deployCost": 30,
+          "agentBoost": 2.4,
+          "description": "IT creates logins and orders a laptop from a checklist in a spreadsheet."
+        },
+        {
+          "id": "payroll",
+          "name": "Contracts and payroll entry",
+          "kind": "semi",
+          "rate": 2.1,
+          "errorRate": 0.04,
+          "costPerItem": 3,
+          "queueMax": 40,
+          "deployCost": 30,
+          "agentBoost": 1.6,
+          "description": "Contract data is keyed into payroll by hand. Errors show up in the first paycheck."
+        },
+        {
+          "id": "schedule",
+          "name": "Day-one schedule",
+          "kind": "manual",
+          "rate": 2.5,
+          "errorRate": 0.03,
+          "costPerItem": 2,
+          "queueMax": 40,
+          "deployCost": 25,
+          "agentBoost": 1.4,
+          "description": "A coordinator books the first-week meetings and building access."
+        }
+      ],
+      "events": [
+        {
+          "id": "wave",
+          "at": 14,
+          "title": "Hiring wave +35%",
+          "text": "A new project was approved. Offers are going out faster than expected.",
+          "effects": [
+            {
+              "type": "inflowMult",
+              "value": 1.35,
+              "duration": 30
+            }
+          ]
+        },
+        {
+          "id": "leave",
+          "at": 30,
+          "title": "Key recruiter on leave",
+          "text": "The person who chases documents is out. Manual steps slow down.",
+          "effects": [
+            {
+              "type": "stageRateMult",
+              "stage": "docs",
+              "value": 0.6,
+              "onlyManual": true,
+              "duration": 18
+            }
+          ]
+        },
+        {
+          "id": "migration",
+          "at": 44,
+          "title": "Payroll system migration",
+          "text": "Payroll moved to a new system. Entry is slower and error-prone for a while.",
+          "effects": [
+            {
+              "type": "stageRateMult",
+              "stage": "payroll",
+              "value": 0.7,
+              "duration": 16
+            },
+            {
+              "type": "stageErrorAdd",
+              "stage": "payroll",
+              "value": 0.08,
+              "duration": 16
+            }
+          ]
+        }
+      ],
+      "explain": {
+        "bottleneckId": "accounts",
+        "text": "Account and laptop setup was the first limit. Then the hiring wave, the absent recruiter and the payroll migration each moved the pile somewhere new. With three agents you could not fix everything, so reading the system mattered more than clicking fast."
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "_doc": "Themes are templates for the generator. stages is an ordered pool: the first and last are always used, the generator picks the middle ones in order. kind is what the stage looks like (manual / semi / auto). Add a theme to add a workflow; no code changes.",
+  "themes": [
+    {
+      "id": "order-to-cash", "title": "Order to cash", "industry": "Wholesale and distribution",
+      "processName": "order-processing", "unit": "Orders",
+      "intro": "Orders arrive as PDFs and get retyped into the ERP. Find what really holds the line up.",
+      "stages": [
+        { "name": "Order received", "kind": "auto", "description": "Orders land in the shared inbox and the web shop." },
+        { "name": "Manual PDF copy-paste", "kind": "manual", "description": "Someone opens each PDF and retypes customer, lines and prices." },
+        { "name": "Credit check", "kind": "semi", "description": "Finance checks the customer's limit in a separate system." },
+        { "name": "Stock allocation", "kind": "semi", "description": "Warehouse stock is reserved against each order line." },
+        { "name": "ERP entry", "kind": "semi", "description": "Clean data is posted into the ERP. Mostly clicks, some checks." },
+        { "name": "Price exceptions", "kind": "manual", "description": "Special prices are checked against an Excel list." },
+        { "name": "Delivery booking", "kind": "manual", "description": "A coordinator books transport by email and phone." },
+        { "name": "Invoice sent", "kind": "auto", "description": "The ERP generates and emails the invoice." }
+      ]
+    },
+    {
+      "id": "accounts-payable", "title": "Supplier invoices", "industry": "Manufacturing",
+      "processName": "supplier-invoice", "unit": "Invoices",
+      "intro": "Invoices land in a shared inbox and get matched to purchase orders by eye.",
+      "stages": [
+        { "name": "Invoice arrives by email", "kind": "auto", "description": "Invoices arrive in a shared mailbox and are filed automatically." },
+        { "name": "Scan and read invoice", "kind": "manual", "description": "Paper and PDF invoices are read and keyed in by hand." },
+        { "name": "Manual matching to PO", "kind": "manual", "description": "Someone compares invoice, purchase order and goods receipt line by line." },
+        { "name": "Coding to accounts", "kind": "semi", "description": "Each line is coded to a cost centre from a lookup table." },
+        { "name": "Exception handling", "kind": "manual", "description": "Mismatches go into an email thread with the supplier." },
+        { "name": "Approval chain", "kind": "manual", "description": "Invoices wait for two managers to click approve." },
+        { "name": "VAT check", "kind": "semi", "description": "Tax codes are checked before posting." },
+        { "name": "Payment run", "kind": "semi", "description": "Approved invoices are bundled into the bank file." }
+      ]
+    },
+    {
+      "id": "hr-onboarding", "title": "New hire onboarding", "industry": "Services",
+      "processName": "onboarding", "unit": "Hires",
+      "intro": "A hiring wave is coming. Several steps look slow. Only some really are.",
+      "stages": [
+        { "name": "Offer signed", "kind": "auto", "description": "E-signature is already automatic." },
+        { "name": "Collect documents by email", "kind": "manual", "description": "HR chases bank details, tax cards and ID copies one email at a time." },
+        { "name": "Background checks", "kind": "semi", "description": "Checks are ordered from a provider and tracked in a sheet." },
+        { "name": "Set up accounts and equipment", "kind": "manual", "description": "IT creates logins and orders a laptop from a spreadsheet checklist." },
+        { "name": "Contracts and payroll entry", "kind": "semi", "description": "Contract data is keyed into payroll by hand." },
+        { "name": "Benefits enrolment", "kind": "manual", "description": "Forms are emailed, filled in and re-entered." },
+        { "name": "Training bookings", "kind": "manual", "description": "A coordinator books courses and rooms." },
+        { "name": "Day-one schedule", "kind": "auto", "description": "The first-week calendar is sent to the new hire and the team." }
+      ]
+    }
+  ]
+}

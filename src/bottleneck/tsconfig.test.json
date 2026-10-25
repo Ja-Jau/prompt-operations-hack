@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "noEmit": false,
+    "incremental": false,
+    "rootDir": "../..",
+    "outDir": "/tmp/bottleneck-tests",
+    "plugins": []
+  },
+  "include": ["engine.test.ts", "balance.ts", "samples.ts", "generator.test.ts"],
+  "exclude": ["../../node_modules"]
+}

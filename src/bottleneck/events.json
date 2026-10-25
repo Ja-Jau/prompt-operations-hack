@@ -1,0 +1,35 @@
+{
+  "_doc": "Event pool for the generator. kind = engine effect type. target picks the stage: manual (stage looks manual), automated (auto/semi), early (first half), any. {stage}, {unit}, {pct} are filled in. Add an entry to add an event; no code changes.",
+  "events": [
+    {
+      "id": "spike", "kind": "inflowMult", "minDifficulty": 1,
+      "title": "{unit} spike +{pct}%",
+      "text": "A promotion landed. {unit} arrive {pct}% faster for a while.",
+      "value": [1.25, 1.45], "duration": [14, 22]
+    },
+    {
+      "id": "absent", "kind": "stageRateMult", "target": "manual", "onlyManual": true, "minDifficulty": 1,
+      "title": "Key person absent at {stage}",
+      "text": "The one person who knows {stage} is out. Manual work there slows down.",
+      "value": [0.5, 0.65], "duration": [12, 20]
+    },
+    {
+      "id": "format", "kind": "stageErrorAdd", "target": "early", "minDifficulty": 2,
+      "title": "New format at {stage}",
+      "text": "A big customer changed their format. {stage} produces more errors and rework.",
+      "value": [0.08, 0.14], "duration": [14, 24]
+    },
+    {
+      "id": "outage", "kind": "stageRateMult", "target": "automated", "onlyManual": false, "minDifficulty": 3,
+      "title": "System outage at {stage}",
+      "text": "{stage} is half down for a few seconds. Even automated steps have bad days.",
+      "value": [0.3, 0.45], "duration": [7, 12]
+    },
+    {
+      "id": "audit", "kind": "stageRateMult", "target": "any", "onlyManual": false, "minDifficulty": 3,
+      "title": "Extra checks at {stage}",
+      "text": "Compliance added a check at {stage}. Throughput drops until it settles.",
+      "value": [0.6, 0.75], "duration": [10, 18]
+    }
+  ]
+}

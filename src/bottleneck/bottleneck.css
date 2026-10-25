@@ -1,0 +1,33 @@
+/* Fix the Bottleneck. Scoped under .bn-*; uses Velho tokens from globals.css. */
+.bn-root {
+  --bn-hot: var(--color-clay);
+  --bn-ok: var(--color-sage-d);
+  min-height: 100dvh; display: flex; flex-direction: column;
+  background: var(--color-cream); color: var(--color-ink);
+}
+.bn-bar {
+  display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 16px;
+  background: var(--color-navy); color: var(--color-ivory); position: sticky; top: 0; z-index: 30;
+}
+.bn-bar a { color: var(--color-on-dark); font-size: 14px; }
+.bn-bar a:hover { color: var(--color-ivory); }
+.bn-bar a:focus-visible, .bn-root button:focus-visible, .bn-root input:focus-visible, .bn-root textarea:focus-visible {
+  outline: 3px solid var(--color-sky); outline-offset: 3px;
+}
+.bn-brand { font-weight: 600; letter-spacing: -0.02em; font-size: 18px; }
+.bn-main { flex: 1; width: 100%; max-width: 1100px; margin: 0 auto; padding: 16px; }
+.bn-center { display: grid; place-items: center; text-align: center; min-height: 70dvh; }
+.bn-center h1 { font-size: clamp(34px, 8vw, 60px); margin: 8px 0 12px; }
+.bn-center p { max-width: 34rem; margin: 0 auto 8px; color: var(--color-ink-2); font-size: 18px; }
+.bn-steps { list-style: none; padding: 0; margin: 16px auto 24px; display: grid; gap: 6px; max-width: 28rem; text-align: left; color: var(--color-ink-2); }
+.bn-steps li::before { content: "→ "; color: var(--color-clay); }
+.bn-big { font-size: 18px; padding: 18px 40px; }
+
+.bn-hud { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }
+.bn-hud > div { background: #fff; border: 1px solid var(--color-sand-2); border-radius: 12px; padding: 8px 10px; }
+.bn-hud small { display: block; font: 500 11px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-ink-3); }
+.bn-hud strong { font: 600 20px var(--font-mono); font-variant-numeric: tabular-nums; }
+.bn-loss strong { color: var(--color-clay); }
+.bn-timer { grid-column: 1 / -1; height: 8px; border-radius: 99px; background: var(--color-sand-2); overflow: hidden; padding: 0 !important; border: 0 !important; }
+.bn-timer i { display: block; height: 100%; width: 100%; background: var(--color-navy); transform-origin: left; }
+.bn-sub { color: var(--color-ink-3); font-size: 13px; margin: 0 0 12px; }

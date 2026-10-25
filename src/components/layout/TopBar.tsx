@@ -44,13 +44,18 @@ export function TopBar({ game, onGameChange, status, controls, onHelp }: Props) 
           <button
             key={g.id}
             onClick={() => onGameChange(g.id)}
-            className={`border-b py-1 text-[13px] transition md:text-[15px] ${
-              game === g.id ? "border-sky text-ivory" : "border-transparent text-on-dark hover:text-ivory"
-            }`}
+            className={`border-b py-1 text-[13px] transition md:text-[15px] ${game === g.id ? "border-sky text-ivory" : "border-transparent text-on-dark hover:text-ivory"
+              }`}
           >
             {g.label}
           </button>
         ))}
+        <Link
+          href="/fix-the-bottleneck"
+          className="whitespace-nowrap border-b border-transparent py-1 text-[13px] text-on-dark transition hover:text-ivory md:text-[15px]"
+        >
+          Fix the bottleneck
+        </Link>
       </nav>
 
       <div className="ml-auto flex items-center gap-3">
