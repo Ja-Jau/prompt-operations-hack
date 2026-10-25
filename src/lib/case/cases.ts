@@ -181,8 +181,8 @@ export function compare(guess: HiringCompany, target: HiringCompany, ranks: Map<
 }
 
 export function caseShareText(opts: {
-  /** "Case No. 3" or "Practice case". */
-  label: string;
+  /** "Case No. 3", or null for a practice case. */
+  label: string | null;
   feedback: Feedback[];
   solved: boolean;
   url: string;
@@ -190,5 +190,5 @@ export function caseShareText(opts: {
   // ✓ found it, ● warm guess, ○ cold guess. Plain symbols, no emoji, no spoilers.
   const grid = opts.feedback.map((f) => (f.correct ? "✓" : f.closeness >= 0.6 ? "●" : "○")).join(" ");
   const score = opts.solved ? `Solved in ${opts.feedback.length}/${MAX_GUESSES}` : `Not solved (${MAX_GUESSES}/${MAX_GUESSES})`;
-  return `Firmle ${opts.label}\n${score}\n${grid}\n${opts.url}`;
+  return `Firmle${opts.label ? ` ${opts.label}` : ""}\n${score}\n${grid}\n${opts.url}`;
 }

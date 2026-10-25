@@ -7,6 +7,7 @@ import { dailyNumber } from "@/lib/game/daily";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
 import { PageTitle } from "@/components/layout/PageTitle";
 import { Icon } from "@/components/ui/Icon";
+import { VelhoMark } from "@/components/ui/VelhoLogo";
 import { CaseReveal } from "./CaseReveal";
 import { Evidence } from "./Evidence";
 import { HowToPlay } from "./HowToPlay";
@@ -136,7 +137,9 @@ export function WhosHiring({ companies, onGameChange }: Props) {
     markHelpSeen();
   };
 
-  const label = isPractice ? "Practice case" : `Case No. ${dailyNumber()}`;
+  // Practice cases have no label; the daily one is numbered.
+  const label = isPractice ? null : `Case No. ${dailyNumber()}`;
+  const withLabel = (text: string) => (label ? `${label} · ${text}` : text);
 
   const header = (status?: string) => (
     <TopBar game="case" onGameChange={onGameChange} status={status} onHelp={() => setHelpOpen(true)} />
@@ -176,7 +179,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   if (over && !celebrating) {
     return (
       <div ref={scrollRef} className="flex min-h-0 flex-1 flex-col overflow-y-auto">
-        {header(label)}
+        {header(label ?? undefined)}
         {helpOpen && <HowToPlay onClose={closeHelp} />}
         <CaseReveal
           key={target.id}
@@ -211,7 +214,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
 
   return (
     <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto">
-      {header(`${label} · ${MAX_GUESSES - feedback.length} picks left`)}
+      {header(withLabel(`${MAX_GUESSES - feedback.length} picks left`))}
       {helpOpen && <HowToPlay onClose={closeHelp} />}
 
       <main className="mx-auto max-w-[820px] px-4 pb-20">
@@ -221,13 +224,13 @@ export function WhosHiring({ companies, onGameChange }: Props) {
               Firm<span className="text-navy-3">le</span>
             </>
           }
-          eyebrow={`${label} · Who's hiring? Read the clues, pick the firm`} />
+          eyebrow={withLabel("Who's hiring? Read the clues, pick the firm")} />
 
         <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
         {!saved.tipUsed && revealed < earlyClues && (
           <div className="mt-3 flex justify-center">
             <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
-              <Icon name="spark" /> Velho hint
+              <VelhoMark className="h-[18px] w-[18px]" /> Velho hint
             </button>
           </div>
         )}

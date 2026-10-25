@@ -10,8 +10,8 @@ import { Icon } from "@/components/ui/Icon";
 
 type Props = {
   company: HiringCompany;
-  /** "Case No. 3" or "Practice case". */
-  label: string;
+  /** "Case No. 3", or null for a practice case. */
+  label: string | null;
   feedback: Feedback[];
   solved: boolean;
   onPlayAnother: () => void;
@@ -53,7 +53,8 @@ export function CaseReveal({
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgb(10_27_52/0.96)_0%,rgb(10_27_52/0.82)_60%,rgb(10_27_52/0.7)_100%)]" />
         <div className="animate-rise mx-auto max-w-[760px] px-4 py-12 md:py-16">
           <p className="eyebrow text-sky">
-            {label} · {solved ? `Solved in ${feedback.length} of ${MAX_GUESSES}` : "The answer was"}
+            {label && `${label} · `}
+            {solved ? `Solved in ${feedback.length} of ${MAX_GUESSES}` : "The answer was"}
           </p>
           <div className="mt-6 flex justify-center">
             <CompanyLogo company={company} className="h-20 w-20" />

@@ -36,7 +36,6 @@ export function TopBar({ game, onGameChange, status, controls, onHelp }: Props) 
         >
           Firm<span className="text-sky">le</span>
         </Link>
-        <span className="hidden text-[13px] font-medium text-on-dark-2 md:inline">by Velho</span>
       </div>
 
       <nav aria-label="Games" className="order-last flex w-full min-w-0 items-center gap-1 overflow-x-auto lg:order-none lg:w-auto">
