@@ -765,7 +765,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "helsingin-yliopisto-483dd348": {
@@ -777,7 +777,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "helsinki-shipyard-29383ee1": {
@@ -788,7 +788,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "henkilostoliiga-eac0f5b9": {
@@ -799,7 +799,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "henkilostopalvelut-duuri-tiimi-81339c01": {
@@ -810,7 +810,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "henkilostovuokraus-yhtio-kipina-31a6c639": {
@@ -821,7 +821,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "hitachi-energy-9f5b5b5b": {
@@ -833,7 +833,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "huoltovarmuuskeskus-98fdf0fa": {
@@ -844,7 +844,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "hus-699f41dd": {
@@ -856,7 +856,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "jtt-sales-febf6433": {
@@ -867,7 +867,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "k-auto-e54ab452": {
@@ -878,7 +878,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "kaiku-hr-d10e895e": {
@@ -889,7 +889,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "karkkainen-fd7ce658": {
@@ -900,7 +900,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "kaskea-group-9c42de02": {
@@ -911,7 +911,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "katrium-5f1530e7": {
@@ -922,7 +922,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "kiinteistomaailma-ae2a1fa0": {
@@ -933,7 +933,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "kpmg-344bff8b": {
@@ -945,7 +945,7 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "lapland-hotels-f39a2cab": {
@@ -957,52 +957,52 @@
       "adminRatio": "No supported public financial report imported",
       "inventoryDays": "No supported public financial report imported"
     },
-    "fetchError": null,
+    "fetchError": "No official report source configured",
     "financialFetchedAt": null
   },
   "lei-52990007axnss4pnx352": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:19.612761+00:00"
   },
   "lei-529900c4p88aphfz5h47": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:21.601393+00:00"
   },
   "lei-529900hekoenjhpnn480": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:23.542702+00:00"
   },
   "lei-529900m13gm4vste6w80": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:27.567049+00:00"
   },
   "lei-529900odi3047e2liv03": {
     "available": [],
@@ -1012,196 +1012,199 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No supported unsegmented facts for the requested year",
     "financialFetchedAt": null
   },
   "lei-5493002b0govf42kwx33": {
-    "available": [],
+    "available": [
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:33.226177+00:00"
   },
   "lei-5493009zdbvg2co1o689": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:35.377047+00:00"
   },
   "lei-549300ef0cdeqzbma096": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:37.328003+00:00"
   },
   "lei-549300ew2km4krokqv31": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:39.475722+00:00"
   },
   "lei-549300p8n0p6kdgtj206": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:41.395856+00:00"
   },
   "lei-549300r0vn9c371w0e07": {
-    "available": [],
+    "available": [
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:43.464226+00:00"
   },
   "lei-549300uwb1air85bm957": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:45.392591+00:00"
   },
   "lei-636700ebb0sa4501at18": {
     "available": [
       "manualAds"
     ],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported"
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:47.318948+00:00"
   },
   "lei-636700z25zqxlmz3cy73": {
-    "available": [],
+    "available": [
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:49.531490+00:00"
   },
   "lei-7437000iqjs6zc1fr041": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:51.603060+00:00"
   },
   "lei-7437000na1i6y1oqwl24": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:53.607438+00:00"
   },
   "lei-7437000pn6e448npgy86": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:56.046256+00:00"
   },
   "lei-7437000tb0ghdhlpx677": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:58:58.306231+00:00"
   },
   "lei-7437000zp669lkutz738": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:59:00.565933+00:00"
   },
   "lei-74370016pw2v4w02lx91": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:59:03.201569+00:00"
   },
   "lei-7437001aezhll3uex093": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:59:05.340675+00:00"
   },
   "lei-743700205jamgm80qd88": {
     "available": [],
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T04:59:07.360745+00:00"
   },
   "lei-74370031y7rk5h88cq48": {
     "available": [],
