@@ -87,6 +87,8 @@ export type JobAds = {
   manual: number;
   /** The manual-work ads, each with a verbatim quote. */
   ads: JobAd[];
+  /** Every saved listing in the dashboard sample, including ads without a task match. */
+  listings?: { title: string; url: string }[];
   source: string;
   fetchedAt: string;
 };

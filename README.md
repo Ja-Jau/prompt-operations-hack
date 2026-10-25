@@ -345,6 +345,9 @@ Vercel and GitHub, and run the first batch. Ads are updated by URL; failed batch
 keep the previous data. Samples older than 30 days are excluded from rankings.
 The **Fetch job ads** button reloads the latest saved ads from Supabase into the
 dashboard. The hourly background worker collects new ads independently.
+The company list includes every saved company, with flagged opportunities first;
+use **Flagged only** to narrow it. Companies without keyword matches show **Needs
+review**, and **View analysis** includes links to their saved job listings.
 
 **Local mode (without Supabase):**
 

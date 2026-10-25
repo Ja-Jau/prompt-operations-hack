@@ -18,7 +18,7 @@ export function FetchJobAds({ updatedAt, automatic = false, lastError = null, on
       <button disabled={pending} type="submit"><Icon name={pending ? "clock" : "search"} />{pending ? "Fetching…" : "Fetch job ads"}</button>
       <span>{pending ? "Loading saved ads…" : idleMessage}</span>
     </form>
-    {automatic && <p>New ads are collected hourly. The list shows companies with flagged repetitive tasks.</p>}
+    {automatic && <p>All saved companies are listed, with flagged opportunities first. New ads are collected hourly; reloading the same saved data can leave the list unchanged.</p>}
     {lastError && <p role="status" className="is-error">The last background refresh failed. Previously saved ads are still shown; another attempt runs next hour.</p>}
     {state.message && !pending && <p role="status" className={state.ok ? "is-success" : "is-error"}>{state.message}</p>}
   </div>;

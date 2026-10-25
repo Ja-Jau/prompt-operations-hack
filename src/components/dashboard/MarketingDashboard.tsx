@@ -26,7 +26,7 @@ export function MarketingDashboard(initialData: MarketingDashboardData) {
   const { prospects, totalCompanies, updatedAt, automatic = false, lastRefreshError = null } = loadedData ?? initialData;
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
-  const [filter, setFilter] = useState<"all" | "reviewed" | "employers">("all");
+  const [filter, setFilter] = useState<"all" | "flagged" | "reviewed" | "employers">("all");
   const [page, setPage] = useState(0);
   const [tier, setTier] = useState<Tier | "all">("all");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -46,6 +46,7 @@ export function MarketingDashboard(initialData: MarketingDashboardData) {
     const search = query.trim().toLocaleLowerCase();
     return prospects.filter((prospect) => (area === "all" || prospect.solution.area === area)
       && (tier === "all" || prospect.tier === tier)
+      && (filter !== "flagged" || prospect.company.jobAds.manual > 0)
       && (filter !== "reviewed" || prospect.solution.basis === "reviewed")
       && (filter !== "employers" || !prospect.staffing)
       && (!search || [prospect.company.name, prospect.solution.role, prospect.solution.action, ...prospect.company.locations].join(" ").toLocaleLowerCase().includes(search)));
@@ -125,7 +126,7 @@ export function MarketingDashboard(initialData: MarketingDashboardData) {
       <div className="marketing-filters">
         <label className="marketing-search"><span className="sr-only">Search companies, roles or locations</span><Icon name="target" /><input value={query} onChange={(event) => { setQuery(event.target.value); setPage(0); }} placeholder="Search companies or roles…" /></label>
         <label><span className="sr-only">Automation area</span><select aria-label="Automation area" value={area} onChange={(event) => { setArea(event.target.value); setPage(0); }}><option value="all">All areas</option>{areas.map((item) => <option key={item}>{item}</option>)}</select></label>
-        <label><span className="sr-only">Company filter</span><select aria-label="Company filter" value={filter} onChange={(event) => { setFilter(event.target.value as typeof filter); setPage(0); }}><option value="all">All companies</option><option value="reviewed">Reviewed plans</option><option value="employers">Direct employers</option></select></label>
+        <label><span className="sr-only">Company filter</span><select aria-label="Company filter" value={filter} onChange={(event) => { setFilter(event.target.value as typeof filter); setPage(0); }}><option value="all">All companies</option><option value="flagged">Flagged only</option><option value="reviewed">Reviewed plans</option><option value="employers">Direct employers</option></select></label>
       </div>
       <div className="marketing-table-wrap"><table className="marketing-table"><thead><tr><th>Company</th><th>Role / focus</th><th>Flagged ads</th><th><span className="sr-only">Actions</span></th></tr></thead><tbody>
         {rows.map((prospect) => <tr key={prospect.company.id}>
@@ -146,6 +147,7 @@ export function MarketingDashboard(initialData: MarketingDashboardData) {
           <div className="marketing-analysis-role"><p className="eyebrow">Role</p><h3>{selected.solution.role}</h3>{selected.staffing && <p className="marketing-agency-note">Staffing agency. The end employer is not identified.</p>}</div>
           <section><h3>Proposed fix</h3><p className="marketing-analysis-action">{selected.solution.action}</p><p>{selected.solution.reasoning}</p><div className="marketing-human"><Icon name="check" /><span>{selected.solution.people}</span></div></section>
           <section><h3>Ad evidence</h3>{selected.company.jobAds.ads.slice(0, 2).map((ad, i) => <figure key={`${ad.url}-${i}`}><blockquote>“{ad.quoteEn || ad.quote}”</blockquote><figcaption>{ad.titleEn || ad.title} · <a href={ad.url} target="_blank" rel="noreferrer">Source ad ↗</a></figcaption></figure>)}<p className="marketing-source-date">Sample: {selected.company.jobAds.manual}/{selected.company.jobAds.checked} ads flagged · Retrieved {selected.company.jobAds.fetchedAt}</p></section>
+          {selected.company.jobAds.listings && <section><h3>Saved job listings</h3><ul>{selected.company.jobAds.listings.map((ad) => <li key={ad.url}><a href={ad.url} target="_blank" rel="noreferrer">{ad.title} ↗</a></li>)}</ul></section>}
           <div className="marketing-analysis-footer"><a href={`/brief/${selected.company.id}`} target="_blank" rel="noreferrer">Read full company brief ↗</a><button className="btn btn-dark btn-sm" onClick={() => { ensureDraft(selected); setTab("email"); }}>Draft an email<Icon name="arrowRight" /></button></div>
         </div> : draft && <form className="marketing-composer" onSubmit={(event) => { event.preventDefault(); simulateSend(); }}>
           <p className="marketing-composer-notice"><Icon name="lock" /> Demo email. No delivery.</p>

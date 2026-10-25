@@ -60,7 +60,7 @@ export async function getDashboardCompanies(): Promise<{ companies: HiringCompan
       locations: [...new Set(samples.map((sample) => sample.location).filter(Boolean))],
       functions: [...new Set(samples.map((sample) => sample.category))],
       titles: [...new Set(samples.map((sample) => sample.title))], titlesEn: [...new Set(samples.map((sample) => sample.title))],
-      jobAds: { checked: samples.length, manual: ads.length, ads, source: "Jobly ad sample · explicit repetitive-task patterns (automatically flagged)", fetchedAt: samples.map((sample) => sample.fetchedAt).sort().at(-1)!.slice(0, 10) },
+      jobAds: { checked: samples.length, manual: ads.length, ads, listings: samples.map((sample) => ({ title: sample.title, url: sample.url })), source: "Jobly ad sample · explicit repetitive-task patterns (automatically flagged)", fetchedAt: samples.map((sample) => sample.fetchedAt).sort().at(-1)!.slice(0, 10) },
       velhoCase: null, funHint: null,
     };
     companies.set(id, company);
