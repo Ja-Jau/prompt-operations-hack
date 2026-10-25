@@ -19,9 +19,12 @@ export function dashboardUsesSupabase(): boolean {
 
 async function snapshot(): Promise<Snapshot> {
   if (dashboardUsesSupabase()) {
-    const url = process.env.SUPABASE_URL;
-    const key = process.env.SUPABASE_SECRET_KEY;
+    const url = process.env.SUPABASE_URL?.trim();
+    const key = process.env.SUPABASE_SECRET_KEY?.replace(/\s/g, "");
     if (!url || !key) throw new Error("Configure both SUPABASE_URL and SUPABASE_SECRET_KEY for the dashboard.");
+    if (!/^(?:sb_secret_[A-Za-z0-9_-]+|eyJ[A-Za-z0-9_.-]+)$/.test(key)) {
+      throw new Error("SUPABASE_SECRET_KEY must contain only the raw server key, without quotes or a variable name.");
+    }
     const project = new URL(url);
     if (project.protocol !== "https:" || project.username || project.password || project.search || project.hash || project.pathname !== "/") {
       throw new Error("SUPABASE_URL must be the HTTPS project URL without a path.");

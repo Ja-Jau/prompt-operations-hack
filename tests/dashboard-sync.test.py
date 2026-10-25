@@ -64,6 +64,30 @@ class ScheduledSyncTests(unittest.TestCase):
                 self.assertEqual(sent.get_header("Apikey"), "sb_secret_test")
                 self.assertIsNone(sent.get_header("Authorization"))
 
+    def test_pasted_newlines_are_removed_before_sending_headers(self):
+        with patch.dict(os.environ, {"SUPABASE_URL": " https://example.supabase.co/\n", "SUPABASE_SECRET_KEY": "\n sb_secret_\ntest\r\n"}):
+            with patch("sync_dashboard_jobs.urlopen") as request:
+                request.return_value.__enter__.return_value.read.return_value = b'null'
+                Supabase().rpc("claim_dashboard_job_refresh", {})
+                sent = request.call_args.args[0]
+                self.assertEqual(sent.full_url, "https://example.supabase.co/rest/v1/rpc/claim_dashboard_job_refresh")
+                self.assertEqual(sent.get_header("Apikey"), "sb_secret_test")
+
+    def test_invalid_secret_error_never_echoes_the_secret(self):
+        for key in ('"sb_secret_private"', "SUPABASE_SECRET_KEY=sb_secret_private", "sb_secret_private\x01"):
+            with patch.dict(os.environ, {"SUPABASE_URL": "https://example.supabase.co", "SUPABASE_SECRET_KEY": key}):
+                with self.assertRaises(RuntimeError) as error:
+                    Supabase()
+                self.assertNotIn(key, str(error.exception))
+                self.assertNotIn("private", str(error.exception))
+
+    def test_transport_header_error_does_not_leak_the_key(self):
+        with patch.dict(os.environ, {"SUPABASE_URL": "https://example.supabase.co", "SUPABASE_SECRET_KEY": "sb_secret_private"}):
+            with patch("sync_dashboard_jobs.urlopen", side_effect=ValueError("Invalid header value b'sb_secret_private'")):
+                with self.assertRaises(RuntimeError) as error:
+                    Supabase().rpc("claim_dashboard_job_refresh", {})
+                self.assertNotIn("sb_secret_private", str(error.exception))
+
 
 if __name__ == "__main__":
     unittest.main()

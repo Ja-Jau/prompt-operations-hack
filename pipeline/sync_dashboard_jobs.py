@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
@@ -17,13 +18,16 @@ from refresh_dashboard_jobs import collect_ads
 
 class Supabase:
     def __init__(self):
-        self.url = os.environ.get("SUPABASE_URL", "").rstrip("/")
-        self.key = os.environ.get("SUPABASE_SECRET_KEY", "")
+        self.url = os.environ.get("SUPABASE_URL", "").strip().rstrip("/")
+        # Dashboard copy/paste may include a final newline or wrap a long key.
+        self.key = "".join(os.environ.get("SUPABASE_SECRET_KEY", "").split())
         parsed = urlparse(self.url)
         if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.query or parsed.fragment or parsed.path:
             raise RuntimeError("Set SUPABASE_URL to the HTTPS project URL (without a path).")
         if not self.key:
             raise RuntimeError("Set SUPABASE_SECRET_KEY in GitHub Actions secrets.")
+        if not re.fullmatch(r"(?:sb_secret_[A-Za-z0-9_-]+|eyJ[A-Za-z0-9_.-]+)", self.key):
+            raise RuntimeError("SUPABASE_SECRET_KEY must contain only the raw server key (sb_secret_... or legacy service_role JWT), without quotes or a variable name.")
 
     def rpc(self, name: str, body: dict):
         headers = {"apikey": self.key, "Content-Type": "application/json"}
@@ -41,6 +45,8 @@ class Supabase:
             raise RuntimeError(f"Supabase {name} failed (HTTP {error.code}). Check the SQL setup and credentials.") from None
         except (URLError, TimeoutError):
             raise RuntimeError(f"Supabase {name} could not connect. Try again later.") from None
+        except ValueError:
+            raise RuntimeError("Invalid Supabase request configuration. Re-copy the project URL and raw secret key.") from None
 
 
 def sync(store=None, scrape=collect_ads):
