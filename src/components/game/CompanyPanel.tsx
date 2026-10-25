@@ -1,10 +1,11 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { GameCompany as Company } from "@/types/company";
 import { METRICS, metricObservation, type MetricId } from "@/lib/game/metrics";
 import { formatEur } from "@/lib/format";
 import { CompanyLogo } from "./CompanyLogo";
+import { companyPhotoFallback } from "@/lib/data/company-images";
 
 type Props = {
   company: Company;
@@ -57,17 +58,29 @@ export function CompanyPanel({ company, metric, revealed, value, children }: Pro
   const m = METRICS[metric];
   const observation = metricObservation(company, metric);
   const raw = m.value(company);
+  const fallback = company.image ? { image: company.image, imageCredit: company.imageCredit } : companyPhotoFallback(company);
+  const [photo, setPhoto] = useState<{ id: string; image: string; imageCredit: Company["imageCredit"]; kind: string } | null>(null);
+  const [broken, setBroken] = useState<string | null>(null);
+  const activePhoto = photo?.id === company.id && broken !== photo.image ? photo : fallback;
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(`/api/companies/photo?id=${encodeURIComponent(company.id)}`, { signal: controller.signal })
+      .then((response) => response.ok ? response.json() : null)
+      .then((result) => { if (result?.image) setPhoto({ ...result, id: company.id }); })
+      .catch(() => { /* Local artwork remains visible. */ });
+    return () => controller.abort();
+  }, [company.id]);
 
   return (
     <section className="higher-lower-panel relative isolate flex min-h-0 min-w-0 flex-1 flex-col items-center justify-center overflow-hidden bg-navy px-3 py-3 text-center text-ivory sm:px-5">
-      {company.image && (
+      {activePhoto.image && (
         // eslint-disable-next-line @next/next/no-img-element -- full-bleed background photo
-        <img src={company.image} alt="" aria-hidden className="absolute inset-0 -z-20 h-full w-full object-cover" />
+        <img src={activePhoto.image} onError={() => setBroken(activePhoto.image)} alt="" aria-hidden className="absolute inset-0 -z-20 h-full w-full object-cover" />
       )}
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgb(10_27_52/0.95)_0%,rgb(10_27_52/0.78)_55%,rgb(10_27_52/0.7)_100%)]" />
 
       <div key={`${company.id}-${metric}`} className="animate-panel-in flex flex-col items-center">
-        <CompanyLogo company={company} className="higher-lower-logo h-7 w-7 sm:h-12 sm:w-12" />
+        <CompanyLogo key={company.id} company={company} className="higher-lower-logo h-7 w-7 sm:h-12 sm:w-12" />
         <h2 className="mt-1 text-[clamp(20px,3.5dvh,40px)] leading-none tracking-[-0.035em]">{company.name}</h2>
         <p className="eyebrow mt-1 hidden text-on-dark-2 sm:block">{company.industry}</p>
         <p className="mt-1 font-mono text-[10px] text-on-dark sm:text-xs">{observation?.period}</p>
@@ -79,10 +92,10 @@ export function CompanyPanel({ company, metric, revealed, value, children }: Pro
       </div>
 
       {children && <div className="mt-2 sm:mt-3">{children}</div>}
-      {company.imageCredit && (
-        <a href={company.imageCredit.url} target="_blank" rel="noreferrer"
+      {activePhoto.imageCredit && (
+        <a href={activePhoto.imageCredit.url} target="_blank" rel="noreferrer"
           className="absolute bottom-1.5 right-3 text-[10px] text-on-dark-2/70 hover:text-ivory">
-          Photo: {company.imageCredit.author} / {company.imageCredit.source}
+          {photo?.id === company.id && activePhoto === photo && photo.kind === "company" ? "Company image" : "Industry photo"}: {activePhoto.imageCredit.author} / {activePhoto.imageCredit.source}
         </a>
       )}
     </section>

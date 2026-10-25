@@ -273,7 +273,7 @@ We'd rather say it than have you find it.
 |---|---|---|
 | **Lead storage when hosted** | Leads save locally, but not on Vercel (read-only file system). | Replace the two functions in `src/lib/leads.ts` with a KV store or a Google Sheet. Nothing else changes. |
 | **"Rank your company" only knows the game's companies** | In Higher or lower, any other name gets "isn't in the game yet". The live AI lookup was removed to keep the site free of API keys. | Add companies to the dataset, or bring back a live lookup. |
-| **Higher or lower figures unverified** | Revenue and headcount for its 21 companies are approximate, and none are checked against annual reports. | Check each one against its annual report and set `verified` in `pipeline/data/companies.csv`. |
+| **Public metric coverage** | Higher or lower uses precomputed, sourced observations refreshed by the scheduled pipeline. Companies without disclosed inputs skip the affected category. | Add tested report adapters and additional job sources to expand coverage. |
 | **Data is a snapshot** | 222 ads scraped once from Jobly.fi. Over time cases point to ads that have closed. | Run the scraper and `import_jobs.py` on a schedule, for example a nightly GitHub Action. |
 | **Only 16 cases** | After 16 days the daily case repeats. | More scraping, and more quotes in `curated_signals.json`. `build_cases.py` drafts Velho's take, a person approves it. |
 | **One job board** | Only Jobly.fi is used. Duunitori's API is off-limits by its robots.txt. | Add companies' own careers pages, which most large Finnish companies publish. |
