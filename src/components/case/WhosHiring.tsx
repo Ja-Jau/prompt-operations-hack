@@ -215,7 +215,13 @@ export function WhosHiring({ companies, onGameChange }: Props) {
       {helpOpen && <HowToPlay onClose={closeHelp} />}
 
       <main className="mx-auto max-w-[820px] px-4 pb-20">
-        <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
+        <PageTitle
+          title={
+            <>
+              Firm<span className="text-navy-3">le</span>
+            </>
+          }
+          eyebrow={`${label} · Who's hiring? Read the clues, pick the firm`} />
 
         <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
         {!saved.tipUsed && revealed < earlyClues && (

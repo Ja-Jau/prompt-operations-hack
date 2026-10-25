@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tehokas",
-  description: "Which Finnish company earns more per employee? A daily higher/lower game by Velho.",
+  title: "Firmle",
+  description: "Like Wordle, but for firms. Guess the Finnish company from its real job ads. A daily game by Velho.",
 };
 
 export default function RootLayout({
