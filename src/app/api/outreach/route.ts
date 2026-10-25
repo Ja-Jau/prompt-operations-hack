@@ -1,5 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
+import { isDashboardAuthenticated } from "@/lib/dashboard/auth";
 import { appendOutreachLog, readOutreachLog, type OutreachEntry } from "@/lib/outreach/log";
 
 /**
@@ -21,10 +22,12 @@ function field(value: unknown, max = MAX_FIELD): string {
 }
 
 export async function GET() {
+  if (!(await isDashboardAuthenticated())) return NextResponse.json({ error: "Sign in required." }, { status: 401 });
   return NextResponse.json({ simulated: true, entries: await readOutreachLog() });
 }
 
 export async function POST(request: Request) {
+  if (!(await isDashboardAuthenticated())) return NextResponse.json({ error: "Sign in required." }, { status: 401 });
   const body = await request.json().catch(() => null);
   const drafts: unknown[] = Array.isArray(body?.drafts) ? body.drafts : [];
 

@@ -10,7 +10,6 @@ export type GameId = "case" | "higherLower" | "ceo";
 const GAMES: { id: GameId; label: string }[] = [
   { id: "case", label: "Firmle" },
   { id: "higherLower", label: "Higher or lower" },
-  { id: "ceo", label: "POV: You are the CEO" },
 ];
 
 type Props = {
@@ -24,7 +23,7 @@ type Props = {
   onHelp?: () => void;
 };
 
-/** Shared navigation for all three games, with a second row on smaller screens. */
+/** Public game navigation. CEO prototypes are retained privately in the codebase. */
 export function TopBar({ game, onGameChange, status, controls, onHelp }: Props) {
   return (
     <header className="sticky top-0 z-30 flex min-h-[60px] shrink-0 flex-wrap items-center gap-x-4 gap-y-1 bg-navy px-3 py-2 text-ivory sm:px-4 lg:h-[72px] lg:flex-nowrap lg:gap-4 lg:px-6 lg:py-0 xl:gap-6">

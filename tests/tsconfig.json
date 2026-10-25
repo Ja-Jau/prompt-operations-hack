@@ -11,7 +11,8 @@
     "plugins": []
   },
   "include": [
-    "*.test.ts"
+    "*.test.ts",
+    "resolve-alias.cjs"
   ],
   "exclude": [
     "../node_modules"

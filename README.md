@@ -148,7 +148,7 @@ a moment so the batch visibly drains, and appends rows marked `simulated: true` 
 project; `npm run test:outreach` fails if one is ever added to the outreach code or
 `package.json`. A production version would hand each draft to a person at Velho for approval.
 
-Like `/velho`, the page is gated by `DASHBOARD_KEY` when that variable is set.
+Like `/velho`, the outreach page requires the `admin` / `admin` dashboard login.
 
 ## Why the content can be trusted
 
@@ -260,7 +260,7 @@ None are needed for local play.
 | `ANTHROPIC_API_KEY` | pipeline only | Claude, for the offline text. Not needed by the website. |
 | `NEXT_PUBLIC_VELHO_URL` | web | Where every "Go to Velho" link points (default `https://velho.io/`) |
 | `NEXT_PUBLIC_LOGO_DEV_TOKEN` | web | logo.dev key for sharper logos. Without it the app falls back to local files, then favicons, then initials. |
-| `DASHBOARD_KEY` | `/velho` | If set, the dashboard needs `/velho?key=<value>`. Set it for any public deploy. |
+| `DASHBOARD_SESSION_SECRET` | dashboard | Optional signing key for the eight-hour dashboard login session. |
 | `LOGO_DEV_TOKEN`, `UNSPLASH_ACCESS_KEY` | `fetch_logos.py`, `fetch_images.py` | Optional, for downloading logos and photos |
 
 ## Deploying to Vercel
@@ -271,7 +271,7 @@ None are needed for local play.
 2. Leave Root Directory as `./`, Framework as **Next.js**, and the build and install
    commands at their defaults.
 3. Under **Environment Variables**, add:
-   - `DASHBOARD_KEY`: any secret string, so `/velho` isn't public. Open it with `/velho?key=<value>`.
+   - `DASHBOARD_SESSION_SECRET`: optional deployment-specific session signing key.
    - `NEXT_PUBLIC_VELHO_URL`: optional, for example a campaign link to velho.io.
 4. Click **Deploy**.
 
@@ -303,7 +303,7 @@ We'd rather say it than have you find it.
 | **Only 16 cases** | After 16 days the daily case repeats. | More scraping, and more quotes in `curated_signals.json`. `build_cases.py` drafts Velho's take, a person approves it. |
 | **One job board** | Only Jobly.fi is used. Duunitori's API is off-limits by its robots.txt. | Add companies' own careers pages, which most large Finnish companies publish. |
 | **No analytics** | We can't yet show how many people played, shared or converted. | A privacy-friendly counter (e.g. Plausible) on case start, solve, share and lead. |
-| **Dashboard login** | `/velho` is protected by a shared key in the link, not real accounts. | Fine for a pilot. Use proper auth before wider use. |
+| **Dashboard login** | `/velho/login` uses the shared demo credentials `admin` / `admin`, with an eight-hour signed session. | Individual accounts can replace the demo login later. |
 | **Finnish ads, English game** | Quotes are in the language of the ad, the interface is in English. | A Finnish interface, since the audience is Finnish. |
 
 ## Ground rules and status
@@ -312,3 +312,37 @@ We'd rather say it than have you find it.
   been contacted. The draft openers and posts are for Velho to review and decide whether to send.
 - Everything Velho-facing, like the LinkedIn post and the openers, is a draft. Velho approves
   it before anything goes out.
+
+### Marketing dashboard demo
+
+Open `/velho` and sign in with username **admin** and password **admin**.
+The login uses a signed, HTTP-only session cookie and supports sign-out.
+`/outreach` and its demo-log API require the same session. Set
+`DASHBOARD_SESSION_SECRET` for a deployment-specific signing key; the demo
+works without additional configuration.
+
+The priority pie chart counts companies (high / medium / watch). Click a legend
+item to filter the five-row company list. Analyzed-company, flagged-ad and enquiry
+counts are separate metrics. Email drafts remain editable until recorded; **Send demo** saves an invitation for
+response tracking and never delivers an email.
+
+### Game invitations and company responses
+
+On `/velho`, email drafts invite companies to play Firmle, read their company brief, and explore improvements with Velho. The composer includes working game/contact/no-thanks links and a **Copy HTML** export with email buttons. **Send demo** records an invitation only; it never delivers email. Open a response button from the composer to try the recipient flow. The recipient confirms their choice on `/respond/[token]`; visiting a link alone does not record a response. Repeated confirmations do not add duplicate responses, and recipients can change their preference.
+
+`/velho/responses` requires the same admin login and shows interested, declined, and unanswered demo invitations in a pie chart and filterable table. Refresh responses to see new replies. Counts represent invitations, not unique people; unsent drafts are excluded. A contact request records interest and the invitation’s recipient address for manual follow-up.
+
+Invitations persist in Upstash Redis when the existing `KV_REST_API_URL`/`KV_REST_API_TOKEN` (or `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN`) variables are configured. Otherwise they use `.data/invitations.json` for local demos. Deployments with read-only or ephemeral filesystems need Redis for persistence.
+
+### Dashboard job-ad refresh
+
+**Fetch job ads** on `/velho` automatically reads a current Jobly category listing and up to five ad pages, flags explicit repetitive-task phrases, and saves verbatim evidence. Each successful fetch rotates to the next category. The dashboard reloads its opportunity scores from the saved sample; existing game snapshots remain unchanged. Automatically flagged evidence is a keyword-based shortlist for review, not an AI audit. Companies sampled by the refresh show counts for that saved sample. Unvisited companies retain their existing snapshot.
+
+Run on a Node server with Python 3 and a writable `.data/` directory:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r velho-game-data/requirements.txt
+```
+
+The app automatically uses `.venv/bin/python`, or `python3` if no virtual environment exists. Set `DASHBOARD_PYTHON` to use another interpreter. The scraper preserves robots checks, source crawl delays, throttling and block detection. Fetches take around a minute or more, time out after three minutes, and cannot overlap. Failed fetches preserve the saved dataset. This local worker is not suitable for a short-lived serverless deployment without moving the scraper to a separate worker; no simulated success is shown when fetching is unavailable.

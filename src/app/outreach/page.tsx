@@ -7,13 +7,12 @@ import { draftEmail } from "@/lib/outreach/email";
 import { readOutreachLog } from "@/lib/outreach/log";
 import { findTargets } from "@/lib/outreach/targets";
 import { Icon } from "@/components/ui/Icon";
+import { requireDashboardLogin } from "@/lib/dashboard/auth";
 import { OutreachBoard, type Prospect } from "@/components/outreach/OutreachBoard";
 
 export const metadata: Metadata = { title: "Outreach | Velho" };
 // The demo log changes while the app runs, so never serve a cached copy.
 export const dynamic = "force-dynamic";
-
-type Props = { searchParams: Promise<{ key?: string }> };
 
 /** How many targets the board shows. The rest are counted but not drafted. */
 const SHORTLIST = 24;
@@ -23,16 +22,8 @@ const SHORTLIST = 24;
  * work out who to write to, and draft a proposal to try the game. The Send button is a demo and
  * records what would have gone out; see src/app/api/outreach/route.ts.
  */
-export default async function OutreachPage({ searchParams }: Props) {
-  const requiredKey = process.env.DASHBOARD_KEY;
-  const key = (await searchParams).key;
-  if (requiredKey && key !== requiredKey) {
-    return (
-      <main className="flex min-h-dvh items-center justify-center bg-cream px-4">
-        <p className="card p-8 text-ink-2">This page is for the Velho team. Add the access key to the link.</p>
-      </main>
-    );
-  }
+export default async function OutreachPage() {
+  await requireDashboardLogin();
 
   const h = await headers();
   const origin = `${h.get("x-forwarded-proto") ?? "http"}://${h.get("host")}`;
@@ -64,8 +55,6 @@ export default async function OutreachPage({ searchParams }: Props) {
     };
   });
 
-  const keyQuery = key ? `?key=${encodeURIComponent(key)}` : "";
-
   return (
     <div className="min-h-dvh bg-cream">
       <header className="bg-navy text-ivory">
@@ -75,7 +64,7 @@ export default async function OutreachPage({ searchParams }: Props) {
             <span className="eyebrow hidden text-on-dark-2 sm:inline">Outreach desk</span>
           </div>
           <nav className="flex items-center gap-2">
-            <Link href={`/velho${keyQuery}`} className="btn btn-line-dark btn-sm">
+            <Link href="/velho" className="btn btn-line-dark btn-sm">
               Signals
             </Link>
             <Link href="/" className="btn btn-line-dark btn-sm">

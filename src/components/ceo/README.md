@@ -1,7 +1,10 @@
 # POV: You are the CEO
 
-The public CEO tab renders `CeoGame.tsx`: the clean navy-and-blue decision-card game,
-with five decisions, a 20-second timer and the Velho-focused results screen.
+Both CEO prototypes are hidden from the public app. There is no CEO navigation
+entry or public route, and `AppShell.tsx` imports neither prototype.
+
+`CeoGame.tsx` preserves the navy-and-blue decision-card game, with five decisions,
+a 20-second timer and the Velho-focused results screen.
 
 The FPS experiment is preserved as `CeoFpsGame.tsx`, `OfficeWorld.tsx`,
 `office-engine.ts`, `office.css` and `src/lib/ceo/day.ts`. It has no public
@@ -15,7 +18,7 @@ A five-minute first-person office day. `CeoFpsGame.tsx` owns the itinerary, time
 three-choice conversations, pause state and results. `OfficeWorld.tsx` loads the
 browser-only renderer on demand; `office-engine.ts` builds the office with
 Three.js and runs Rapier physics at a fixed 60 Hz. These libraries are retained as dependencies for the hidden experiment;
-the public decision-card game does not load them.
+the public app does not load them.
 
 The player starts at reception and receives seven appointments across Finance,
 Operations, the café and the boardroom. `src/lib/ceo/day.ts` sets their release

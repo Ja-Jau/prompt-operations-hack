@@ -1,0 +1,271 @@
+.marketing-page { color: var(--color-ink); }
+.marketing-topbar { background: var(--color-navy); color: var(--color-ivory); }
+.marketing-topbar > div { display: flex; justify-content: space-between; align-items: center; gap: 20px; width: min(100%, 1240px); margin-inline: auto; padding: 14px 26px; }
+.marketing-wordmark { display: flex; align-items: baseline; gap: 15px; font-size: 24px; font-weight: 600; letter-spacing: -.045em; }
+.marketing-wordmark span { padding-left: 15px; border-left: 1px solid var(--color-line-dark); color: var(--color-on-dark-2); font-size: 12px; font-weight: 400; letter-spacing: 0; }
+.marketing-topbar nav { display: flex; align-items: center; gap: 24px; font-size: 12px; color: var(--color-on-dark); }
+.marketing-topbar nav a { display: flex; align-items: center; gap: 8px; }
+.marketing-topbar nav svg { width: 14px; height: 14px; }
+.marketing-main { width: min(100%, 1240px); margin-inline: auto; padding: 22px 26px 16px; }
+.marketing-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 22px; }
+.marketing-heading h1 { max-width: 680px; font-size: clamp(25px, 3vw, 32px); line-height: 1.1; letter-spacing: -.045em; margin: 0; }
+.marketing-demo-badge { display: flex; align-items: center; gap: 8px; flex-shrink: 0; padding: 7px 12px; border: 1px solid var(--color-sand-2); border-radius: 25px; background: white; font: 10px var(--font-mono); color: var(--color-navy-3); }
+.marketing-demo-badge i { width: 6px; height: 6px; border-radius: 50%; background: var(--color-sky); }
+.marketing-companies { margin-top: 18px; overflow: hidden; border: 1px solid var(--color-sand-2); border-radius: 12px; background: white; }
+.marketing-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 18px 0; }
+.marketing-section-heading h2 { font-size: 18px; letter-spacing: -.025em; font-weight: 600; }
+.marketing-section-heading p { margin-top: 7px; font-size: 11px; line-height: 1.5; color: var(--color-ink-3); }
+.marketing-section-heading > span { white-space: nowrap; font: 10px var(--font-mono); color: var(--color-ink-3); }
+.marketing-filters { display: flex; align-items: center; gap: 10px; padding: 12px 18px; }
+.marketing-search { display: flex; align-items: center; gap: 9px; flex: 1; min-width: 0; border: 1px solid var(--color-sand-2); border-radius: 7px; padding-left: 12px; background: var(--color-cream); }
+.marketing-search svg { width: 14px; height: 14px; color: var(--color-ink-3); flex-shrink: 0; }
+.marketing-search input { width: 100%; min-width: 0; padding: 10px 10px 10px 0; font-size: 12px; background: transparent; outline: none; }
+.marketing-filters select { min-width: 0; max-width: 230px; padding: 10px 30px 10px 12px; border: 1px solid var(--color-sand-2); border-radius: 7px; font-size: 11px; color: var(--color-ink-2); background: white; }
+.marketing-table-wrap { overflow-x: auto; }
+.marketing-table { width: 100%; border-collapse: collapse; text-align: left; }
+.marketing-table th { padding: 9px 18px; background: var(--color-cream); border-block: 1px solid var(--color-sand-2); font: 9px var(--font-mono); color: var(--color-ink-3); text-transform: uppercase; letter-spacing: .06em; }
+.marketing-table th:first-child { width: 29%; }
+.marketing-table th:nth-child(2) { width: 38%; }
+.marketing-table th:nth-child(3) { width: 16%; }
+.marketing-table td { padding: 12px 18px; border-bottom: 1px solid var(--color-sand-2); vertical-align: top; }
+.marketing-table tbody tr:last-child td { border-bottom: 0; }
+.marketing-table tbody tr:hover { background: #fbfaf680; }
+.marketing-company { display: flex; align-items: center; gap: 11px; width: 100%; text-align: left; cursor: pointer; }
+.marketing-company > div { padding: 5px; }
+.marketing-company > span { min-width: 0; }
+.marketing-company strong { display: block; font-size: 13px; font-weight: 600; line-height: 1.35; }
+.marketing-company small { display: block; margin-top: 5px; color: var(--color-ink-3); font-size: 10px; line-height: 1.4; }
+.marketing-status { display: inline-block; margin-top: 5px; margin-left: 47px; color: var(--color-navy-3); font-size: 9px; }
+.marketing-status.is-simulated { color: var(--color-sage-d); }
+.marketing-role { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; color: var(--color-ink); font-size: 12px; font-weight: 550; line-height: 1.4; }
+.marketing-area { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; color: var(--color-navy-3); background: #7aa3d60e; font-size: 9px; }
+.marketing-evidence-count { display: block; font-size: 19px; font-weight: 550; line-height: 1; letter-spacing: -.035em; white-space: nowrap; }
+.marketing-evidence-count > span { color: var(--color-ink-3); font-size: 14px; font-weight: 400; }
+.marketing-priority { display: inline-block; margin-top: 7px; padding: 3px 6px; border-radius: 4px; font-size: 9px; white-space: nowrap; color: var(--color-ink-3); background: var(--color-sand); }
+.marketing-priority.is-hot { color: var(--color-navy); background: #7aa3d622; }
+.marketing-priority.is-warm { color: #687449; background: #7c876817; }
+.marketing-row-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.marketing-row-actions button:first-child { display: flex; align-items: center; justify-content: space-between; gap: 12px; white-space: nowrap; border: 1px solid var(--color-navy); border-radius: 6px; padding: 9px 11px; background: var(--color-navy); color: var(--color-ivory); font-size: 11px; cursor: pointer; }
+.marketing-row-actions button:first-child:hover { background: var(--color-navy-3); }
+.marketing-row-actions svg { width: 12px; height: 12px; }
+.marketing-row-actions button:last-child { font-size: 10px; color: var(--color-navy-3); cursor: pointer; }
+.marketing-pagination { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 18px; border-top: 1px solid var(--color-sand-2); color: var(--color-ink-3); font-size: 11px; }
+.marketing-pagination > div { display: flex; align-items: center; gap: 18px; }
+.marketing-pagination button { padding: 5px 0; cursor: pointer; color: var(--color-ink-2); }
+.marketing-pagination button:disabled { opacity: .35; cursor: default; }
+.marketing-empty { padding: 50px 20px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.marketing-empty > svg { color: var(--color-navy-3); }
+.marketing-empty h3 { font-size: 18px; }
+.marketing-empty p { color: var(--color-ink-3); font-size: 12px; }
+.marketing-empty button { color: var(--color-navy-3); font-size: 12px; text-decoration: underline; cursor: pointer; }
+.marketing-activity { margin-top: 22px; padding: 20px 24px; border: 1px solid var(--color-sand-2); border-radius: 11px; background: white; }
+.marketing-activity h2 { font-size: 14px; margin-bottom: 14px; }
+.marketing-activity p { display: flex; flex-wrap: wrap; gap: 6px 15px; margin-top: 8px; color: var(--color-ink-3); font-size: 11px; }
+.marketing-activity strong { color: var(--color-ink-2); font-weight: 500; }
+.marketing-dialog { position: fixed; inset: 0 0 0 auto; margin: 0; width: min(720px, 100%); height: 100dvh; max-height: 100dvh; max-width: 100%; padding: 0; border: 0; border-left: 1px solid var(--color-sand-2); background: var(--color-cream); color: var(--color-ink); box-shadow: -12px 0 80px #0a1b3426; overflow-y: auto; }
+.marketing-dialog::backdrop { background: #0a1b3473; backdrop-filter: blur(3px); }
+.marketing-dialog-heading { display: flex; align-items: center; gap: 13px; padding: 25px 28px; background: white; }
+.marketing-dialog-heading > div:nth-child(2) { flex: 1; min-width: 0; }
+.marketing-dialog-heading p { color: var(--color-sage-d); font: 9px var(--font-mono); margin-bottom: 5px; }
+.marketing-dialog-heading h2 { font-size: 23px; letter-spacing: -.035em; line-height: 1.15; }
+.marketing-dialog-heading > button { display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 32px; border: 1px solid var(--color-sand-2); border-radius: 50%; cursor: pointer; }
+.marketing-dialog-heading > button svg { width: 14px; height: 14px; }
+.marketing-tabs { display: flex; align-items: center; gap: 22px; padding-inline: 28px; border-bottom: 1px solid var(--color-sand-2); background: white; }
+.marketing-tabs button { padding: 14px 0; border-bottom: 2px solid transparent; color: var(--color-ink-3); font-size: 12px; cursor: pointer; }
+.marketing-tabs button[aria-pressed="true"] { border-color: var(--color-navy); color: var(--color-ink); font-weight: 550; }
+.marketing-tabs > span { margin-left: auto; color: var(--color-navy-3); font: 8px var(--font-mono); letter-spacing: .07em; }
+.marketing-analysis, .marketing-composer { padding: 20px 24px; }
+.marketing-analysis > section { margin-top: 20px; }
+.marketing-analysis h3 { font-size: 14px; font-weight: 600; letter-spacing: -.015em; }
+.marketing-analysis-role .eyebrow { font-size: 9px; color: var(--color-sage-d); }
+.marketing-analysis-role h3 { font-size: 23px; margin-top: 9px; font-weight: 500; line-height: 1.2; }
+.marketing-analysis-role .marketing-agency-note { padding: 10px 12px; border: 1px solid var(--color-sand-2); border-radius: 6px; font-size: 11px; color: var(--color-ink-2); background: var(--color-sand); margin-top: 15px; }
+.marketing-analysis section > p { margin-top: 10px; color: var(--color-ink-2); font-size: 13px; line-height: 1.7; }
+.marketing-analysis section .marketing-analysis-action { color: var(--color-ink); font-weight: 550; }
+.marketing-human { display: flex; gap: 10px; align-items: flex-start; margin-top: 15px; padding: 12px 14px; border-radius: 7px; background: #7aa3d612; color: var(--color-navy-3); font-size: 12px; line-height: 1.6; }
+.marketing-human svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 3px; }
+.marketing-analysis figure { margin-top: 14px; padding: 14px 16px; border: 1px solid var(--color-sand-2); border-radius: 8px; background: white; }
+.marketing-analysis blockquote { font-size: 13px; line-height: 1.6; }
+.marketing-analysis figcaption { font-size: 10px; color: var(--color-ink-3); margin-top: 8px; }
+.marketing-analysis figcaption a { text-decoration: underline; text-underline-offset: 3px; }
+.marketing-analysis section .marketing-source-date { font-size: 10px; color: var(--color-ink-3); }
+.marketing-analysis-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--color-sand-2); }
+.marketing-analysis-footer > a { font-size: 11px; color: var(--color-navy-3); }
+.marketing-analysis-footer > button { font-size: 12px; }
+.marketing-composer-notice { display: flex; gap: 8px; align-items: center; padding: 10px 12px; margin-bottom: 20px; border-radius: 6px; background: #7aa3d612; font-size: 11px; color: var(--color-navy-3); }
+.marketing-composer-notice svg { width: 12px; height: 12px; flex-shrink: 0; }
+.marketing-composer label { display: flex; flex-direction: column; gap: 7px; font-size: 11px; color: var(--color-ink-2); margin-top: 17px; }
+.marketing-composer input, .marketing-composer textarea { width: 100%; min-width: 0; border: 1px solid var(--color-sand-2); border-radius: 7px; padding: 10px 12px; background: white; color: var(--color-ink); font-size: 12px; line-height: 1.65; outline: none; }
+.marketing-composer input:focus, .marketing-composer textarea:focus { border-color: var(--color-navy-3); }
+.marketing-composer textarea { resize: vertical; min-height: 280px; }
+.marketing-recipient-note { margin-top: 7px; font-size: 10px; line-height: 1.5; color: var(--color-ink-3); }
+.marketing-recipient-note a { text-decoration: underline; text-underline-offset: 3px; color: var(--color-navy-3); }
+.marketing-compose-actions { display: flex; align-items: center; gap: 19px; margin-top: 20px; }
+.marketing-compose-actions > button { font-size: 11px; cursor: pointer; }
+.marketing-compose-actions > button:last-child { margin-left: auto; }
+.marketing-compose-actions svg { width: 14px; height: 14px; }
+.marketing-send-explanation { text-align: right; margin-top: 10px; color: var(--color-ink-3); font-size: 10px; }
+.marketing-send-confirmation { display: flex; align-items: flex-start; gap: 9px; padding: 12px 14px; margin-top: 15px; border: 1px solid #7c87684d; border-radius: 7px; background: #7c876812; color: var(--color-sage-d); font-size: 12px; line-height: 1.5; }
+.marketing-send-confirmation svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 2px; }
+.marketing-secondary { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; width: min(100%, 1240px); margin-inline: auto; padding: 0 26px 24px; }
+.marketing-secondary details { padding: 13px 18px; border: 1px solid var(--color-sand-2); border-radius: 10px; background: white; align-self: start; }
+.marketing-secondary summary { color: var(--color-ink-2); font-size: 12px; font-weight: 550; cursor: pointer; }
+.marketing-secondary summary span { float: right; color: var(--color-ink-3); font-weight: 400; }
+.marketing-secondary ul { margin-top: 16px; }
+.marketing-secondary li { padding-block: 12px; border-top: 1px solid var(--color-sand-2); font-size: 12px; }
+.marketing-secondary li > span, .marketing-secondary li > small { display: block; color: var(--color-ink-3); margin-top: 5px; font-size: 11px; }
+.marketing-secondary pre { margin: 18px 0; white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--font-sans); font-size: 12px; line-height: 1.7; }
+.marketing-secondary details > p { margin-top: 14px; font-size: 11px; color: var(--color-ink-3); }
+.marketing-page button:focus-visible, .marketing-page a:focus-visible, .marketing-page select:focus-visible, .marketing-search:focus-within { outline: 2px solid var(--color-sky); outline-offset: 3px; }
+@media (max-width: 900px) {
+  .marketing-main { padding: 26px 20px 20px; }
+  .marketing-topbar > div { padding-inline: 20px; }
+  .marketing-heading h1 { font-size: 29px; }
+  .marketing-table th, .marketing-table td { padding-inline: 15px; }
+  .marketing-filters { flex-wrap: wrap; }
+  .marketing-search { flex-basis: 100%; }
+  .marketing-table { min-width: 760px; }
+  .marketing-secondary { padding-inline: 20px; }
+}
+@media (max-width: 600px) {
+  .marketing-topbar > div { padding: 15px; gap: 10px; }
+  .marketing-wordmark { font-size: 22px; gap: 10px; }
+  .marketing-wordmark span { padding-left: 10px; font-size: 10px; }
+  .marketing-topbar nav { gap: 14px; font-size: 10px; }
+  .marketing-topbar nav svg { display: none; }
+  .marketing-main { padding: 23px 14px 18px; }
+  .marketing-heading { flex-wrap: wrap; gap: 14px; }
+  .marketing-heading h1 { font-size: 27px; }
+  .marketing-demo-badge { font-size: 9px; padding: 5px 9px; }
+  .marketing-companies { margin-top: 22px; }
+  .marketing-section-heading { padding: 18px 16px 0; align-items: flex-start; }
+  .marketing-section-heading h2 { font-size: 16px; }
+  .marketing-section-heading p { font-size: 10px; }
+  .marketing-section-heading > span { font-size: 9px; padding-top: 3px; }
+  .marketing-filters { padding: 16px; gap: 8px; }
+  .marketing-filters > label:not(.marketing-search) { flex: 1; min-width: 0; }
+  .marketing-filters select { width: 100%; max-width: none; font-size: 10px; padding-left: 8px; padding-right: 14px; }
+  .marketing-pagination { padding: 12px 16px; font-size: 10px; }
+  .marketing-pagination > div { gap: 12px; }
+  .marketing-secondary { grid-template-columns: 1fr; gap: 12px; padding: 0 14px 25px; }
+  .marketing-activity { padding: 17px; }
+  .marketing-dialog-heading { padding: 20px; }
+  .marketing-dialog-heading h2 { font-size: 21px; }
+  .marketing-tabs { padding-inline: 20px; }
+  .marketing-analysis, .marketing-composer { padding: 22px 20px; }
+  .marketing-analysis-role h3 { font-size: 21px; }
+  .marketing-compose-actions { gap: 14px; }
+  .marketing-compose-actions > button:last-child { padding: 10px 12px; font-size: 11px; }
+  .marketing-analysis-footer { align-items: flex-start; flex-direction: column; }
+}
+
+.marketing-topbar nav button { color: var(--color-on-dark-2); cursor: pointer; font-size: 12px; }
+.marketing-overview { display: flex; align-items: center; gap: 30px; margin-top: 18px; padding: 13px 22px; border: 1px solid var(--color-sand-2); border-radius: 11px; background: white; }
+.marketing-pie-summary { display: flex; align-items: center; gap: 20px; flex: 1; min-width: 0; }
+.marketing-pie { position: relative; width: 118px; height: 118px; flex-shrink: 0; }
+.marketing-pie svg { width: 100%; height: 100%; }
+.marketing-pie circle { transition: opacity .15s; }
+.marketing-pie > button { position: absolute; inset: 22px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; }
+.marketing-pie strong { font-size: 27px; font-weight: 550; line-height: 1; letter-spacing: -.045em; }
+.marketing-pie span { font-size: 9px; color: var(--color-ink-3); margin-top: 5px; }
+.marketing-pie-legend { flex: 1; min-width: 135px; max-width: 230px; }
+.marketing-pie-legend h2 { font-size: 12px; font-weight: 550; margin-bottom: 9px; }
+.marketing-pie-legend > button { display: flex; align-items: center; gap: 8px; width: 100%; padding: 5px 6px; margin-left: -6px; border-radius: 4px; font-size: 11px; cursor: pointer; }
+.marketing-pie-legend > button:hover, .marketing-pie-legend > button[aria-pressed="true"] { background: #7aa3d614; }
+.marketing-pie-legend i { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.marketing-pie-legend button > span { flex: 1; text-align: left; color: var(--color-ink-2); }
+.marketing-pie-legend strong { font-size: 11px; font-weight: 550; }
+.marketing-pie-legend small { width: 30px; text-align: right; color: var(--color-ink-3); font-size: 9px; }
+.marketing-counts { display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; gap: 22px; flex: 1; border-left: 1px solid var(--color-sand-2); padding-left: 30px; }
+.marketing-counts dt { font-size: 10px; color: var(--color-ink-3); }
+.marketing-counts dd { font-size: 29px; font-weight: 550; line-height: 1; letter-spacing: -.04em; margin-top: 10px; }
+.marketing-login { display: flex; align-items: center; justify-content: center; flex-direction: column; min-height: 100dvh; padding: 28px 20px; background: radial-gradient(ellipse at 15% 15%, #7aa3d60b, transparent 60%), var(--color-cream); color: var(--color-ink); }
+.marketing-login-card { width: min(100%, 390px); padding: 34px; border: 1px solid var(--color-sand-2); border-radius: 15px; background: white; box-shadow: 0 15px 60px #0a1b3406; }
+.marketing-login-brand { display: flex; align-items: baseline; gap: 12px; font-size: 26px; letter-spacing: -.04em; font-weight: 600; }
+.marketing-login-brand span { font-size: 11px; font-weight: 400; letter-spacing: 0; color: var(--color-ink-3); }
+.marketing-login-card h1 { margin-top: 36px; font-size: 30px; letter-spacing: -.04em; }
+.marketing-login-card > p { margin-top: 10px; font-size: 12px; color: var(--color-ink-3); }
+.marketing-login-form { display: flex; flex-direction: column; gap: 18px; margin-top: 28px; }
+.marketing-login-form label { display: flex; flex-direction: column; gap: 8px; font-size: 12px; color: var(--color-ink-2); }
+.marketing-login-form input { min-width: 0; width: 100%; padding: 11px 13px; border: 1px solid var(--color-sand-2); border-radius: 7px; background: var(--color-cream); color: var(--color-ink); font-size: 14px; outline: none; }
+.marketing-login-form input:focus { border-color: var(--color-sky); outline: 2px solid #7aa3d622; }
+.marketing-login-form button { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 4px; padding: 12px 15px; border-radius: 7px; color: var(--color-ivory); background: var(--color-navy); font-size: 13px; font-weight: 550; cursor: pointer; }
+.marketing-login-form button:hover:not(:disabled) { background: var(--color-navy-3); }
+.marketing-login-form button:disabled { opacity: .6; cursor: wait; }
+.marketing-login-form button svg { width: 15px; height: 15px; }
+.marketing-login-form > p { font-size: 11px; color: var(--color-clay); }
+.marketing-login-back { margin-top: 22px; color: var(--color-ink-3); font-size: 11px; }
+.marketing-login a:focus-visible, .marketing-login button:focus-visible { outline: 2px solid var(--color-sky); outline-offset: 4px; }
+@media (max-width: 900px) {
+  .marketing-overview { gap: 20px; padding: 12px 18px; }
+  .marketing-pie-summary { gap: 14px; }
+  .marketing-counts { gap: 15px; padding-left: 20px; }
+  .marketing-counts dd { font-size: 25px; }
+}
+@media (max-width: 600px) {
+  .marketing-main { padding-top: 18px; }
+  .marketing-heading { align-items: center; gap: 10px; }
+  .marketing-demo-badge { font-size: 8px; }
+  .marketing-overview { flex-direction: column; align-items: stretch; gap: 15px; margin-top: 15px; padding: 14px 16px; }
+  .marketing-pie-summary { gap: 22px; }
+  .marketing-pie { width: 108px; height: 108px; }
+  .marketing-pie-legend { max-width: none; }
+  .marketing-counts { padding: 14px 0 0; border-left: 0; border-top: 1px solid var(--color-sand-2); text-align: center; }
+  .marketing-counts dt { font-size: 9px; }
+  .marketing-counts dd { font-size: 23px; margin-top: 7px; }
+  .marketing-topbar nav { gap: 12px; }
+  .marketing-topbar nav button { font-size: 10px; }
+  .marketing-login-card { padding: 28px; }
+}
+
+.invitation-preview { padding: 16px; border: 1px solid var(--color-sand-2); border-radius: 9px; background: var(--color-cream); }
+.invitation-preview h3 { font-size: 13px; font-weight: 550; }
+.invitation-preview p, .invitation-actions p { font-size: 12px; color: var(--color-ink-3); margin: 8px 0 14px; }
+.invitation-preview > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.marketing-compose-actions { flex-wrap: wrap; }
+.marketing-compose-actions button:disabled { opacity: .5; cursor: default; }
+.invitation-card { width: min(100%, 540px); }
+.invitation-card h1 { font-size: 28px; overflow-wrap: anywhere; }
+.invitation-card > .btn { margin-top: 22px; }
+.invitation-card > p { line-height: 1.7; }
+.invitation-actions { margin-top: 25px; border-top: 1px solid var(--color-sand-2); padding-top: 16px; }
+.invitation-actions button { margin: 0 8px 8px 0; }
+.response-note { padding: 0 22px 12px; font-size: 11px; color: var(--color-ink-3); }
+.response-status { display: inline-block; border-radius: 5px; padding: 5px 9px; white-space: nowrap; font-size: 11px; }
+.response-status.is-interested { color: #245e4d; background: #387b6817; }
+.response-status.is-declined { color: #955940; background: #b4766017; }
+.response-status.is-pending { color: #426791; background: #7aa3d617; }
+
+.marketing-topbar nav.dashboard-navigation { gap: 5px; padding: 4px; border: 1px solid #ffffff13; border-radius: 12px; background: #ffffff06; }
+.dashboard-navigation > a, .dashboard-navigation .dashboard-signout { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 37px; padding: 9px 13px; border-radius: 8px; font-size: 11px; font-weight: 500; transition: background .15s, color .15s; white-space: nowrap; }
+.dashboard-navigation > a:hover, .dashboard-navigation .dashboard-signout:hover { color: white; background: #ffffff10; }
+.dashboard-navigation > a[aria-current="page"] { background: #c8dbf3; color: #0a1b34; box-shadow: 0 2px 5px #00000012; }
+.dashboard-navigation > a[aria-current="page"] svg { opacity: .75; }
+.dashboard-navigation .dashboard-game-link { color: #d5e6ff; }
+.dashboard-navigation > form { margin-left: 4px; padding-left: 4px; border-left: 1px solid #ffffff1a; }
+.dashboard-navigation .dashboard-signout { color: #b8c1ce; cursor: pointer; }
+.dashboard-navigation a:focus-visible, .dashboard-navigation button:focus-visible { outline: 2px solid #c8dbf3; outline-offset: 2px; }
+.dashboard-fetch { margin-top: 18px; padding: 13px 16px; background: #edf2f8; border: 1px solid #d7e1ee; border-radius: 10px; }
+.dashboard-fetch form { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.dashboard-fetch form > div { display: flex; flex-direction: column; gap: 4px; }
+.dashboard-fetch strong { font-size: 12px; font-weight: 600; }
+.dashboard-fetch span { font-size: 10px; color: var(--color-ink-3); }
+.dashboard-fetch button { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 7px; background: #0a1b34; color: white; font-size: 11px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.dashboard-fetch button:hover { background: #203b61; }
+.dashboard-fetch button:disabled { opacity: .65; cursor: wait; }
+.dashboard-fetch button svg { width: 14px; height: 14px; }
+.dashboard-fetch > p { margin-top: 9px; font-size: 11px; line-height: 1.5; }
+.dashboard-fetch .is-success { color: #245e4d; }
+.dashboard-fetch .is-error { color: #955940; }
+@media (max-width: 700px) {
+  .marketing-topbar > div { flex-wrap: wrap; gap: 12px; padding: 12px 14px; }
+  .marketing-topbar nav.dashboard-navigation { flex: 1; justify-content: flex-end; }
+  .dashboard-navigation > a, .dashboard-navigation .dashboard-signout { padding: 8px 10px; font-size: 10px; }
+  .dashboard-navigation .dashboard-game-link > svg:last-child { display: none; }
+}
+@media (max-width: 480px) {
+  .marketing-topbar nav.dashboard-navigation { width: 100%; flex-basis: 100%; justify-content: space-between; }
+  .dashboard-navigation > a, .dashboard-navigation .dashboard-signout { padding: 8px; gap: 5px; }
+  .dashboard-navigation > a > svg, .dashboard-navigation .dashboard-signout svg { display: none; }
+  .dashboard-fetch { padding: 12px; }
+}
