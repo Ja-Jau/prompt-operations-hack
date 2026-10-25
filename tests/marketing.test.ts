@@ -53,3 +53,18 @@ test("the marketing demo send has no network or email delivery path", () => {
   const moduleSource = readFileSync("src/lib/outreach/marketing.ts", "utf8");
   assert.doesNotMatch(moduleSource, /\bfetch\s*\(|sendMail\s*\(|createTransport\s*\(/);
 });
+
+test("emails without response storage retain their body and usable links without a broken no-thanks button", async () => {
+  const { invitationEmailHtml } = await import("../src/lib/outreach/marketing");
+  const company = companies.find((item) => item.velhoCase)!;
+  const links = { game: "https://example.test/", interested: "https://velho.io/", declined: "" };
+  const draft = draftOpportunityEmail(company, contactSheet(company), `https://example.test/brief/${company.id}`, roleSolution(company), links);
+  const html = invitationEmailHtml(draft, links);
+  assert.ok(html.includes(company.name));
+  assert.ok(html.includes("We noticed your"));
+  assert.ok(html.includes('href="https://velho.io/"'));
+  assert.ok(html.includes('href="https://example.test/"'));
+  assert.ok(!html.includes('href=""'));
+  assert.ok(!html.includes("No thanks"));
+  assert.ok(!draft.body.includes("No thanks:"));
+});

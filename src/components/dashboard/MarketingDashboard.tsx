@@ -15,12 +15,15 @@ import { PriorityChart } from "./PriorityChart";
 import "./marketing.css";
 
 export type MarketingProspect = { company: HiringCompany; solution: RoleSolution; contacts: ContactSheet; score: number; tier: Tier; staffing: boolean };
+export type MarketingDashboardData = { prospects: MarketingProspect[]; totalCompanies: number; updatedAt: string; automatic?: boolean; lastRefreshError?: string | null };
 type Draft = EmailDraft & { token: string; links: InvitationLinks };
 type DemoActivity = { companyId: string; company: string; to: string; at: string };
 const PAGE_SIZE = 5;
 
 /** Draft editing stays local; demo invitations and responses persist without email delivery. */
-export function MarketingDashboard({ prospects, totalCompanies, updatedAt, automatic = false, lastRefreshError = null }: { prospects: MarketingProspect[]; totalCompanies: number; updatedAt: string; automatic?: boolean; lastRefreshError?: string | null }) {
+export function MarketingDashboard(initialData: MarketingDashboardData) {
+  const [loadedData, setLoadedData] = useState<MarketingDashboardData | null>(null);
+  const { prospects, totalCompanies, updatedAt, automatic = false, lastRefreshError = null } = loadedData ?? initialData;
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
   const [filter, setFilter] = useState<"all" | "reviewed" | "employers">("all");
@@ -56,14 +59,19 @@ export function MarketingDashboard({ prospects, totalCompanies, updatedAt, autom
   async function ensureDraft(prospect: MarketingProspect, regenerate = false) {
     if (busy || (!regenerate && drafts[prospect.company.id])) return;
     setBusy(true); setError("");
+    const origin = window.location.origin;
+    // Composing an email must work even when demo-response storage is unavailable.
+    const fallbackLinks = { game: `${origin}/`, interested: "https://velho.io/", declined: "" };
+    const fallback = draftOpportunityEmail(prospect.company, prospect.contacts, `${origin}/brief/${prospect.company.id}`, prospect.solution, fallbackLinks);
+    setDrafts((previous) => ({ ...previous, [prospect.company.id]: { ...fallback, token: "", links: fallbackLinks } }));
+    setSimulated((previous) => ({ ...previous, [prospect.company.id]: false })); setCopied(false);
     try {
       const token = await prepareInvitation(prospect.company.id);
-      const origin = window.location.origin;
       const links = { game: `${origin}/respond/${token}?choice=game`, interested: `${origin}/respond/${token}?choice=interested`, declined: `${origin}/respond/${token}?choice=declined` };
       const generated = draftOpportunityEmail(prospect.company, prospect.contacts, `${origin}/brief/${prospect.company.id}`, prospect.solution, links);
       setDrafts((previous) => ({ ...previous, [prospect.company.id]: { ...generated, token, links } }));
       setSimulated((previous) => ({ ...previous, [prospect.company.id]: false })); setCopied(false);
-    } catch { setError("Could not prepare the invitation. Please try again."); }
+    } catch { setError("Your draft is ready to copy or download. Response tracking is unavailable; the contact button opens Velho directly."); }
     finally { setBusy(false); }
   }
   function open(prospect: MarketingProspect, compose: boolean) {
@@ -105,7 +113,7 @@ export function MarketingDashboard({ prospects, totalCompanies, updatedAt, autom
 
   return <main className="marketing-main">
     <div className="marketing-heading"><h1>Marketing dashboard</h1><span className="marketing-demo-badge"><i /> Demo · no emails sent</span></div>
-    <FetchJobAds updatedAt={updatedAt} automatic={automatic} lastError={lastRefreshError} />
+    <FetchJobAds updatedAt={updatedAt} automatic={automatic} lastError={lastRefreshError} onFetched={(data) => { setLoadedData(data); setQuery(""); setArea("all"); setFilter("all"); setTier("all"); setPage(0); }} />
     <section className="marketing-overview" aria-label="Company analysis overview">
       <PriorityChart counts={counts} selected={tier} onSelect={(value) => { setTier(value); setPage(0); }} />
       <dl className="marketing-counts">{[
@@ -148,7 +156,7 @@ export function MarketingDashboard({ prospects, totalCompanies, updatedAt, autom
           <section className="invitation-preview"><h3>Email preview</h3><div className="email-rendered-preview" dangerouslySetInnerHTML={{ __html: invitationEmailHtml(draft, draft.links) }} /></section>
           {simulated[selected.company.id] && <p className="marketing-send-confirmation" role="status"><Icon name="check" /> Demo complete. No email was sent to {draft.to}.</p>}
           {copyError && <p role="status" className="text-xs text-ink-3">Rich-text copying is unavailable. Download the HTML email to keep its buttons.</p>}
-          <div className="marketing-compose-actions"><button type="button" onClick={copyDraft}>{copied ? "Email copied" : "Copy email"}</button><button type="button" onClick={downloadEmail}>Download HTML</button><button type="button" disabled={busy} onClick={() => ensureDraft(selected, true)}>New invitation</button><button type="submit" disabled={busy || simulated[selected.company.id]} className="btn btn-dark btn-sm" aria-describedby="marketing-send-explanation">{busy ? "Saving…" : simulated[selected.company.id] ? "Demo recorded" : "Send demo"}<Icon name="arrowRight" /></button></div>
+          <div className="marketing-compose-actions"><button type="button" onClick={copyDraft}>{copied ? "Email copied" : "Copy email"}</button><button type="button" onClick={downloadEmail}>Download HTML</button><button type="button" disabled={busy} onClick={() => ensureDraft(selected, true)}>New invitation</button><button type="submit" disabled={busy || !draft.token || simulated[selected.company.id]} className="btn btn-dark btn-sm" aria-describedby="marketing-send-explanation">{busy ? "Saving…" : simulated[selected.company.id] ? "Demo recorded" : "Send demo"}<Icon name="arrowRight" /></button></div>
           <p id="marketing-send-explanation" className="marketing-send-explanation">Saves a demo invitation for response tracking. No email is delivered. </p>
         </form>}
         {tab === "email" && !draft && <p className="marketing-analysis">{busy ? "Preparing invitation…" : <button onClick={() => ensureDraft(selected)}>Prepare invitation</button>}</p>}
