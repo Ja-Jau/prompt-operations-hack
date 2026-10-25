@@ -5,7 +5,7 @@ import { seededRandom } from "@/lib/game/random";
 /** A company needs this many verified quotes to be a case. Keep in sync with pipeline/import_jobs.py. */
 export const MIN_CASE_QUOTES = 2;
 /** Picks per case. With more cards than picks, a case can be lost. */
-export const MAX_GUESSES = 6;
+export const MAX_GUESSES = 5;
 
 const LEGAL_SUFFIX = /\s*\b(oyj|oy|ab|ltd|inc|gmbh|abp|ry)\b\.?/gi;
 
@@ -64,29 +64,33 @@ export type Clue =
   | { kind: "map"; title: string; openRoles: number; cities: string[] }
   | { kind: "chips"; title: string; items: string[] }
   | { kind: "analyst"; title: string; note: string }
-  | { kind: "fact"; title: string; text: string };
+  | { kind: "fact"; title: string; text: string }
+  | { kind: "name"; title: string; first: string; wordLengths: number[] };
 
-/** The last clue: the name's first letter and length, so the final pick is always winnable. */
+/** The last clue: the name as letter boxes with only the first letter filled in, one row per word. */
 function nameClue(company: HiringCompany): Clue {
-  const words = shortName(company).split(/\s+/).filter((w) => /\p{L}/u.test(w));
-  const letters = words.join("").replace(/[^\p{L}]/gu, "").length;
-  const shape = words.length === 1 ? `${letters} letters` : `${words.length} words, ${letters} letters`;
-  return { kind: "fact", title: "Their name", text: `Starts with “${words[0][0].toUpperCase()}”, ${shape}` };
+  const words = shortName(company)
+    .split(/\s+/)
+    .map((w) => w.replace(/[^\p{L}\d]/gu, ""))
+    .filter(Boolean);
+  return { kind: "name", title: "Their name", first: words[0][0].toUpperCase(), wordLengths: words.map((w) => w.length) };
 }
 
 /**
  * The clues in reveal order: one at the start, one more per wrong pick or free clue.
  * All from the job ads themselves, going from the quote to things anyone can place (the jobs,
- * the cities), ending with the name's first letter so the last pick is always winnable.
+ * the cities), ending with the name's first letter, which unlocks only on the last pick.
  */
 export function caseClues(company: HiringCompany): Clue[] {
-  const [a, b] = company.jobAds.ads;
+  const [a] = company.jobAds.ads;
+  const jobs = [...new Set(company.titlesEn.map((t) => redact(t, company)).filter(Boolean))].slice(0, 4);
   return [
     { kind: "quote", title: "From a job ad", ad: a },
-    { kind: "chips", title: "Jobs they're hiring for", items: company.titles.slice(0, 4).map((t) => redact(t, company)) },
+    { kind: "chips", title: "Jobs they're hiring for", items: jobs },
     { kind: "map", title: "Where they hire", openRoles: company.jobAds.checked, cities: company.locations.slice(0, 4) },
-    { kind: "quote", title: "Another of their job ads", ad: b },
-    { kind: "chips", title: "What they hire for", items: company.functions },
+    ...(company.funHint || company.velhoCase
+      ? [{ kind: "analyst" as const, title: "Velho's take", note: redact(company.funHint ?? company.velhoCase!.analystHint, company) }]
+      : []),
     nameClue(company),
   ];
 }

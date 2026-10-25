@@ -16,6 +16,9 @@
     "titles": [
       "Inside Sales and Marketing Specialist, ABB Robotics"
     ],
+    "titlesEn": [
+      "Inside Sales and Marketing Specialist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -23,12 +26,16 @@
         {
           "title": "Inside Sales and Marketing Specialist, ABB Robotics",
           "quote": "Tehtäviin kuuluu markkinoinnin tuottamien liidien käsittely, asiakaskontaktit puhelimitse, sähköpostilla ja virtuaalisesti sekä myyntiprosessin tukeminen ja Salesforce-tietojen ylläpito.",
-          "url": "https://www.jobly.fi/tyopaikka/inside-sales-and-marketing-specialist-abb-robotics-2779964"
+          "url": "https://www.jobly.fi/tyopaikka/inside-sales-and-marketing-specialist-abb-robotics-2779964",
+          "titleEn": "Inside Sales and Marketing Specialist",
+          "quoteEn": "Handle the leads from marketing, call and email customers, and keep Salesforce up to date."
         },
         {
           "title": "Inside Sales and Marketing Specialist, ABB Robotics",
           "quote": "ylläpidät asiakastietoja Salesforce-järjestelmässä",
-          "url": "https://www.jobly.fi/tyopaikka/inside-sales-and-marketing-specialist-abb-robotics-2779964"
+          "url": "https://www.jobly.fi/tyopaikka/inside-sales-and-marketing-specialist-abb-robotics-2779964",
+          "titleEn": "Inside Sales and Marketing Specialist",
+          "quoteEn": "ylläpidät asiakastietoja Salesforce-järjestelmässä"
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -46,7 +53,8 @@
       "adoptNote": "Show the specialist a ready draft of each update to accept, so the CRM stays theirs.",
       "serviceArea": "Customer follow-up"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Their robots never get tired. Their CRM still needs a human to fill it in."
   },
   {
     "id": "ai-roots",
@@ -66,6 +74,9 @@
     "titles": [
       "Freelance GCP Data Engineers (multiple positions)"
     ],
+    "titlesEn": [
+      "Freelance GCP Data Engineers (multiple positions)"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -74,7 +85,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "aallon-group-oyj",
@@ -95,6 +107,10 @@
       "En specialist inom ekonomiförvaltning till Åbolands skärgård / Taloushallinnon asiantuntija Turun saaristoon",
       "Taloushallinnon asiantuntija Haapavesi, Kärsämäki tai muu Pohjois-Pohjanmaa"
     ],
+    "titlesEn": [
+      "En specialist inom ekonomiförvaltning till Åbolands skärgård / Taloushallinnon asiantuntija Turun saaristoon",
+      "Taloushallinnon asiantuntija Haapavesi, Kärsämäki tai muu Pohjois-Pohjanmaa"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -103,7 +119,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "aaltovoima-pohjoinen-oy",
@@ -123,6 +140,9 @@
     "titles": [
       "HR-konsultti, Rovaniemi"
     ],
+    "titlesEn": [
+      "HR-konsultti, Rovaniemi"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -131,7 +151,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "akaan-vuokra-asunnot-oy",
@@ -150,6 +171,9 @@
     "titles": [
       "Kirjanpitäjä/hallintosihteeri"
     ],
+    "titlesEn": [
+      "Kirjanpitäjä/hallintosihteeri"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -157,14 +181,17 @@
         {
           "title": "Kirjanpitäjä/hallintosihteeri",
           "quote": "Tehtäviisi kuuluu kirjanpito, tilinpäätösten ja veroilmoitusten laatiminen, palkanlaskenta, ostoreskontra sekä vuokravalvonta ja perintätoimet maksukehotuksista ulosottoon saakka.",
-          "url": "https://www.jobly.fi/tyopaikka/kirjanpitaja-hallintosihteeri-2785133"
+          "url": "https://www.jobly.fi/tyopaikka/kirjanpitaja-hallintosihteeri-2785133",
+          "titleEn": "Kirjanpitäjä/hallintosihteeri",
+          "quoteEn": "Tehtäviisi kuuluu kirjanpito, tilinpäätösten ja veroilmoitusten laatiminen, palkanlaskenta, ostoreskontra sekä vuokravalvonta ja perintätoimet maksukehotuksista ulosottoon saakka."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "aktia",
@@ -183,6 +210,9 @@
     "titles": [
       "Premium Banker - Pohjanmaa"
     ],
+    "titlesEn": [
+      "Premium Banker - Pohjanmaa"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -191,7 +221,8 @@
       "fetchedAt": "2026-10-20"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "amerplast-oy",
@@ -210,6 +241,9 @@
     "titles": [
       "HR Specialist"
     ],
+    "titlesEn": [
+      "HR Specialist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -217,14 +251,17 @@
         {
           "title": "HR Specialist",
           "quote": "Vastuullesi kuuluu palkka-aineistojen valmistelu ja yhteistyö ulkoistetun palkanlaskennan kumppanin kanssa.",
-          "url": "https://www.jobly.fi/tyopaikka/hr-specialist-2781072"
+          "url": "https://www.jobly.fi/tyopaikka/hr-specialist-2781072",
+          "titleEn": "HR Specialist",
+          "quoteEn": "Vastuullesi kuuluu palkka-aineistojen valmistelu ja yhteistyö ulkoistetun palkanlaskennan kumppanin kanssa."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "ardor-oy",
@@ -244,6 +281,9 @@
     "titles": [
       "Tuotannon ja projektien assistentti, Ardor Oy"
     ],
+    "titlesEn": [
+      "Tuotannon ja projektien assistentti, Ardor Oy"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -252,7 +292,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "are-oy",
@@ -271,6 +312,9 @@
     "titles": [
       "Projektipäällikkö (sähkö), Äänekoski"
     ],
+    "titlesEn": [
+      "Projektipäällikkö (sähkö), Äänekoski"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -279,7 +323,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "aspia",
@@ -326,6 +371,9 @@
     "titles": [
       "Senior HR-Konsultti: Tekoäly, HR-transformaatio ja organisaation uudistuminen"
     ],
+    "titlesEn": [
+      "Senior HR-Konsultti: Tekoäly, HR-transformaatio ja organisaation uudistuminen"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -334,7 +382,8 @@
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "avila-oy",
@@ -353,6 +402,9 @@
     "titles": [
       "Avila Oy - Coordinator, Office & Marketing"
     ],
+    "titlesEn": [
+      "Avila Oy - Coordinator, Office & Marketing"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -361,7 +413,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "beneq",
@@ -380,6 +433,9 @@
     "titles": [
       "Sourcing Manager"
     ],
+    "titlesEn": [
+      "Sourcing Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -388,7 +444,8 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "beneq-oy",
@@ -409,6 +466,10 @@
       "Sourcing Manager",
       "Warehouse Operator"
     ],
+    "titlesEn": [
+      "Sourcing Manager",
+      "Warehouse Operator"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -417,7 +478,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "berner-oy",
@@ -436,6 +498,9 @@
     "titles": [
       "HRIS Manager, Berner Oy"
     ],
+    "titlesEn": [
+      "HRIS Manager, Berner Oy"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -444,7 +509,8 @@
       "fetchedAt": "2026-10-20"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "biolin-scientific-oy",
@@ -463,6 +529,9 @@
     "titles": [
       "Production Specialist"
     ],
+    "titlesEn": [
+      "Production Specialist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -470,12 +539,16 @@
         {
           "title": "Production Specialist",
           "quote": "Tehtäviisi kuuluu materiaalien keräys, kokoonpano, testaus, poikkeamien kirjaus, pakkaus ja ERP-järjestelmän päivittäinen käyttö.",
-          "url": "https://www.jobly.fi/tyopaikka/production-specialist-2784318"
+          "url": "https://www.jobly.fi/tyopaikka/production-specialist-2784318",
+          "titleEn": "Production Specialist",
+          "quoteEn": "Pick, assemble, test, log deviations, pack. And update the ERP every single day."
         },
         {
           "title": "Production Specialist",
           "quote": "Tehtäviisi kuuluvat myös tuotteiden pakkaaminen ja kirjaaminen lähetystä varten, ja ERP-järjestelmä on päivittäinen työkalusi.",
-          "url": "https://www.jobly.fi/tyopaikka/production-specialist-2784318"
+          "url": "https://www.jobly.fi/tyopaikka/production-specialist-2784318",
+          "titleEn": "Production Specialist",
+          "quoteEn": "Tehtäviisi kuuluvat myös tuotteiden pakkaaminen ja kirjaaminen lähetystä varten, ja ERP-järjestelmä on päivittäinen työkalusi."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -493,7 +566,8 @@
       "adoptNote": "Design it with the people at the bench and keep it to one tap per entry.",
       "serviceArea": "Field reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Science gear assembled by hand in Tapiola, Espoo. Every hiccup gets typed into the ERP, also by hand."
   },
   {
     "id": "broman-group-oy",
@@ -513,6 +587,10 @@
       "Buyer, metsästys, retkeily ja lemmikkitarvikkeet",
       "Purchasing Sustainability Specialist"
     ],
+    "titlesEn": [
+      "Buyer, hunting, outdoor and pet supplies",
+      "Purchasing Sustainability Specialist"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 2,
@@ -520,12 +598,16 @@
         {
           "title": "Purchasing Sustainability Specialist",
           "quote": "Selvität ja kokoat tarvittavia vastuullisuustietoja yhdessä hankinnan ja toimittajien kanssa sekä huolehdit dokumentaatiosta ja tietojen tallentamisen koordinoinnista.",
-          "url": "https://www.jobly.fi/tyopaikka/purchasing-sustainability-specialist-2778537"
+          "url": "https://www.jobly.fi/tyopaikka/purchasing-sustainability-specialist-2778537",
+          "titleEn": "Purchasing Sustainability Specialist",
+          "quoteEn": "Chase sustainability data from suppliers and keep the paperwork in order."
         },
         {
           "title": "Buyer, metsästys, retkeily ja lemmikkitarvikkeet",
           "quote": "Huolehdit tuotedatan laadusta ja ylläpidosta sekä teet yhteistyötä markkinoinnin ja muiden sisäisten sidosryhmien kanssa.",
-          "url": "https://www.jobly.fi/tyopaikka/buyer-metsastys-retkeily-ja-lemmikkitarvikkeet-2782677"
+          "url": "https://www.jobly.fi/tyopaikka/buyer-metsastys-retkeily-ja-lemmikkitarvikkeet-2782677",
+          "titleEn": "Buyer, hunting, outdoor and pet supplies",
+          "quoteEn": "Huolehdit tuotedatan laadusta ja ylläpidosta sekä teet yhteistyötä markkinoinnin ja muiden sisäisten sidosryhmien kanssa."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -543,7 +625,8 @@
       "adoptNote": "Start with the largest suppliers and keep the purchasing team as the contact point.",
       "serviceArea": "Management reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "They sell gear for hunting, hiking and pets, and someone has to chase every supplier for sustainability data."
   },
   {
     "id": "compute-nordic-finland-oy",
@@ -568,6 +651,9 @@
     "titles": [
       "Security Specialist, Compute Nordic Finland, Mikkeli"
     ],
+    "titlesEn": [
+      "Security Specialist, Compute Nordic Finland, Mikkeli"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -576,7 +662,8 @@
       "fetchedAt": "2026-10-20"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "csc-tieteen-tietotekniikan-keskus-oy",
@@ -595,6 +682,9 @@
     "titles": [
       "HR-asiantuntija"
     ],
+    "titlesEn": [
+      "HR Specialist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -602,12 +692,16 @@
         {
           "title": "HR-asiantuntija",
           "quote": "palkka-aineiston tuottaminen ulkoistettuun palkanlaskentaan",
-          "url": "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848"
+          "url": "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848",
+          "titleEn": "HR Specialist",
+          "quoteEn": "Produce the payroll data for an outsourced payroll provider."
         },
         {
           "title": "HR-asiantuntija",
           "quote": "palkanlaskenta-aineiston tuottamisen automatisointi, HR-järjestelmien ja datanhallinnan parantaminen)",
-          "url": "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848"
+          "url": "https://www.jobly.fi/tyopaikka/hr-asiantuntija-2775848",
+          "titleEn": "HR Specialist",
+          "quoteEn": "palkanlaskenta-aineiston tuottamisen automatisointi, HR-järjestelmien ja datanhallinnan parantaminen)"
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -625,7 +719,8 @@
       "adoptNote": "Run the automated file next to the manual one for two pay cycles before switching.",
       "serviceArea": "Management reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "An IT centre for science that still hands its payroll data over the old-fashioned way."
   },
   {
     "id": "cts-nordics-oy",
@@ -644,6 +739,9 @@
     "titles": [
       "Purchasing Manager"
     ],
+    "titlesEn": [
+      "Purchasing Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -652,7 +750,8 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "career-fi",
@@ -671,6 +770,9 @@
     "titles": [
       "Myynti- ja rekrytointiasiantuntija, Horeca-ala – Etelä-Suomi"
     ],
+    "titlesEn": [
+      "Myynti- ja rekrytointiasiantuntija, Horeca-ala – Etelä-Suomi"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -679,7 +781,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "casemet-oy",
@@ -699,6 +802,9 @@
     "titles": [
       "Procurement Specialist"
     ],
+    "titlesEn": [
+      "Procurement Specialist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -706,14 +812,17 @@
         {
           "title": "Procurement Specialist",
           "quote": "Tehtäviisi kuuluu muun muassa ostotilausten ja tilausvahvistusten käsittelyä, toimitusten ja hankintaan liittyvien poikkeamien seurantaa, toimittajien kartoittamista sekä kaupallisiin neuvotteluihin osallistumista.",
-          "url": "https://www.jobly.fi/tyopaikka/procurement-specialist-2777113"
+          "url": "https://www.jobly.fi/tyopaikka/procurement-specialist-2777113",
+          "titleEn": "Procurement Specialist",
+          "quoteEn": "Tehtäviisi kuuluu muun muassa ostotilausten ja tilausvahvistusten käsittelyä, toimitusten ja hankintaan liittyvien poikkeamien seurantaa, toimittajien kartoittamista sekä kaupallisiin neuvotteluihin osallistumista."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "compass-group-finland-oy",
@@ -732,6 +841,9 @@
     "titles": [
       "Palveluvastaava Ärrävaaraan"
     ],
+    "titlesEn": [
+      "Palveluvastaava Ärrävaaraan"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -739,14 +851,17 @@
         {
           "title": "Palveluvastaava Ärrävaaraan",
           "quote": "Vastaat koko toimipaikan keittiötoiminnoista ja toimit esihenkilönä, eli vastaat ruoanvalmistuksesta, tilausten tekemisestä, laskutuksesta, omavalvonnasta, hävikin hallinnasta sekä asiakaspalvelusta.",
-          "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-arravaaraan-2778922"
+          "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-arravaaraan-2778922",
+          "titleEn": "Palveluvastaava Ärrävaaraan",
+          "quoteEn": "Vastaat koko toimipaikan keittiötoiminnoista ja toimit esihenkilönä, eli vastaat ruoanvalmistuksesta, tilausten tekemisestä, laskutuksesta, omavalvonnasta, hävikin hallinnasta sekä asiakaspalvelusta."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "dhl-supply-chain-danfoss",
@@ -765,6 +880,9 @@
     "titles": [
       "Logistiikkatyöntekijä DHL Danfoss, Runsor"
     ],
+    "titlesEn": [
+      "Logistiikkatyöntekijä DHL Danfoss, Runsor"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -773,7 +891,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "dna",
@@ -797,6 +916,10 @@
       "Myyntineuvottelija, DNA, Kuopio",
       "Myyntineuvottelija, DNA, Turku"
     ],
+    "titlesEn": [
+      "Myyntineuvottelija, DNA, Kuopio",
+      "Myyntineuvottelija, DNA, Turku"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -805,7 +928,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "danfoss",
@@ -824,6 +948,9 @@
     "titles": [
       "Sourcing Project Manager"
     ],
+    "titlesEn": [
+      "Sourcing Project Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -832,7 +959,8 @@
       "fetchedAt": "2026-10-06"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "danone-finland-oy",
@@ -851,6 +979,9 @@
     "titles": [
       "HR Manager Finland"
     ],
+    "titlesEn": [
+      "HR Manager Finland"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -859,7 +990,8 @@
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "deloitte",
@@ -878,6 +1010,9 @@
     "titles": [
       "HR Business Partner"
     ],
+    "titlesEn": [
+      "HR Business Partner"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -886,7 +1021,8 @@
       "fetchedAt": "2026-10-14"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "destia-oy",
@@ -930,6 +1066,18 @@
       "Työmaapäällikkö, Pirkanmaan rakentamisurakat",
       "Työmaapäällikkö,Tuulivoimahankkeet"
     ],
+    "titlesEn": [
+      "Commercial Project Manager (QS Manager)",
+      "Project Engineer",
+      "Commercial Project Manager",
+      "Safety Manager (HS Lead)",
+      "Site Manager",
+      "Turvallisuuspäällikkö",
+      "Site Engineer, wind power projects",
+      "Työmaapäällikkö, Etelä-Suomi",
+      "Työmaapäällikkö, Pirkanmaan rakentamisurakat",
+      "Työmaapäällikkö,Tuulivoimahankkeet"
+    ],
     "jobAds": {
       "checked": 11,
       "manual": 2,
@@ -937,17 +1085,23 @@
         {
           "title": "Työmaainsinööri, Tuulivoimahankkeet",
           "quote": "Tehtävä sisältää aikataulujen laadinnan ja seurannan, määrähallinnan ja raportoinnin, talouden seurannan, lisä- ja muutostöiden hallinnan sekä viranomaisyhteistyön.",
-          "url": "https://www.jobly.fi/tyopaikka/tyomaainsinoori-tuulivoimahankkeet-2771498"
+          "url": "https://www.jobly.fi/tyopaikka/tyomaainsinoori-tuulivoimahankkeet-2771498",
+          "titleEn": "Site Engineer, wind power projects",
+          "quoteEn": "Schedules, quantities, costs, change orders and the authorities. Track it all, report it all."
         },
         {
           "title": "Projektin kaupallinen päällikkö",
           "quote": "määrien, kustannusten ja toteuman seuranta sekä poikkeamien analysointi",
-          "url": "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396"
+          "url": "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396",
+          "titleEn": "Commercial Project Manager",
+          "quoteEn": "määrien, kustannusten ja toteuman seuranta sekä poikkeamien analysointi"
         },
         {
           "title": "Projektin kaupallinen päällikkö",
           "quote": "aliurakoitsijoiden ja toimittajien sopimusten, kustannusten ja laskutuksen seuranta",
-          "url": "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396"
+          "url": "https://www.jobly.fi/tyopaikka/projektin-kaupallinen-paallikko-2775396",
+          "titleEn": "Commercial Project Manager",
+          "quoteEn": "aliurakoitsijoiden ja toimittajien sopimusten, kustannusten ja laskutuksen seuranta"
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -965,7 +1119,8 @@
       "adoptNote": "Build it with one project team first and use their weekly report as the test.",
       "serviceArea": "Management reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Wind farm sites where someone counts every quantity, cost and change order."
   },
   {
     "id": "dinolla-oy",
@@ -988,6 +1143,9 @@
     "titles": [
       "Puheterapeutti (alihankkija): Huoletonta yrittäjyyttä – täysi tuki työllesi vain 25 % provisiolla"
     ],
+    "titlesEn": [
+      "Puheterapeutti (alihankkija): Huoletonta yrittäjyyttä – täysi tuki työllesi vain 25 % provisiolla"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -996,7 +1154,8 @@
       "fetchedAt": "2026-10-09"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "dottir",
@@ -1015,6 +1174,9 @@
     "titles": [
       "Event & Workplace Coordinator"
     ],
+    "titlesEn": [
+      "Event & Workplace Coordinator"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1023,7 +1185,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "eaton",
@@ -1054,6 +1217,10 @@
       "Global Category Manager - Electronic Components",
       "Product Line Sales Manager (Distributed Power Quality) - Nordics"
     ],
+    "titlesEn": [
+      "Global Category Manager - Electronic Components",
+      "Product Line Sales Manager (Distributed Power Quality) - Nordics"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -1062,7 +1229,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "eltel-networks-oy",
@@ -1083,6 +1251,10 @@
       "Hankintainsinööri",
       "Procurement Specialist, Data Centers"
     ],
+    "titlesEn": [
+      "Hankintainsinööri",
+      "Procurement Specialist, Data Centers"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -1091,7 +1263,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "energiavirasto",
@@ -1111,6 +1284,9 @@
     "titles": [
       "Energiatehokkuuden asiantuntija"
     ],
+    "titlesEn": [
+      "Energiatehokkuuden asiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1119,7 +1295,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "fvr-suomen-rokotetutkimus",
@@ -1140,6 +1317,9 @@
     "titles": [
       "Data- ja AI-asiantuntija"
     ],
+    "titlesEn": [
+      "Data- ja AI-asiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1148,7 +1328,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "finanssiala-ry",
@@ -1167,6 +1348,9 @@
     "titles": [
       "Henkivakuutustoimintaan perehtynyt asiantuntija"
     ],
+    "titlesEn": [
+      "Henkivakuutustoimintaan perehtynyt asiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1175,7 +1359,8 @@
       "fetchedAt": "2026-10-20"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "finferries-suomen-lauttaliikenne",
@@ -1194,6 +1379,9 @@
     "titles": [
       "REKRY: Harjoittelija hankintatoimintoihin / Praktikant till inköpsverksamheten"
     ],
+    "titlesEn": [
+      "REKRY: Harjoittelija hankintatoimintoihin / Praktikant till inköpsverksamheten"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1202,7 +1390,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "flaktgroup-finland-oy",
@@ -1221,6 +1410,9 @@
     "titles": [
       "Projekti-insinööri datakeskusprojekteihin"
     ],
+    "titlesEn": [
+      "Projekti-insinööri datakeskusprojekteihin"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1229,7 +1421,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "forcit-group",
@@ -1248,6 +1441,9 @@
     "titles": [
       "Palveluhenkilö / Kuljettaja (Tuusula), FORCIT Explosives"
     ],
+    "titlesEn": [
+      "Palveluhenkilö / Kuljettaja (Tuusula), FORCIT Explosives"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1256,7 +1452,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "gasum-oyj",
@@ -1275,6 +1472,9 @@
     "titles": [
       "Senior Trader"
     ],
+    "titlesEn": [
+      "Senior Trader"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1283,7 +1483,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "greenstep-oy",
@@ -1310,6 +1511,12 @@
       "Senior Accounting Specialist, Tampere",
       "Senior Accounting Specialist, Turku"
     ],
+    "titlesEn": [
+      "Customer Excellence Assistant",
+      "Customer Success Manager / Senior Customer Success Manager",
+      "Senior Accounting Specialist, Tampere",
+      "Senior Accounting Specialist, Turku"
+    ],
     "jobAds": {
       "checked": 4,
       "manual": 2,
@@ -1317,12 +1524,16 @@
         {
           "title": "Customer Excellence Assistant",
           "quote": "…asiakasdatan raportointi ja oikeellisuuden varmistaminen, asiakastyytyvyyskyselyjen ja exit-prosessin back office -tehtävät sekä sisäisten sidosryhmien tukeminen.",
-          "url": "https://www.jobly.fi/tyopaikka/customer-excellence-assistant-2778839"
+          "url": "https://www.jobly.fi/tyopaikka/customer-excellence-assistant-2778839",
+          "titleEn": "Customer Excellence Assistant",
+          "quoteEn": "Report customer data, check it's right, and run the back office for customer surveys."
         },
         {
           "title": "Senior Accounting Specialist, Turku",
           "quote": "Työnkuvasi sisältää kuukausikirjanpitoa, tilinpäätösten sekä veroilmoitusten tekoa ja raportointia, mutta myös asiakkaidemme konsultointia ja heidän taloushallinnon prosessiensa ohjaamista tehokkaammiksi.",
-          "url": "https://www.jobly.fi/tyopaikka/senior-accounting-specialist-turku-2769235"
+          "url": "https://www.jobly.fi/tyopaikka/senior-accounting-specialist-turku-2769235",
+          "titleEn": "Senior Accounting Specialist, Turku",
+          "quoteEn": "Työnkuvasi sisältää kuukausikirjanpitoa, tilinpäätösten sekä veroilmoitusten tekoa ja raportointia, mutta myös asiakkaidemme konsultointia ja heidän taloushallinnon prosessiensa ohjaamista tehokkaammiksi."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -1340,7 +1551,8 @@
       "adoptNote": "Show flagged records in the CRM the team already uses.",
       "serviceArea": "Customer follow-up"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Accountants in Turku and Tampere who also run customer surveys from the back office."
   },
   {
     "id": "hus",
@@ -1368,6 +1580,12 @@
       "Palvelutyöntekijä Meilahti",
       "Palveluvastaava Ruokapalvelut Jorvin sairaala"
     ],
+    "titlesEn": [
+      "Ward Secretary, open application",
+      "Buyer",
+      "Service Worker, Meilahti",
+      "Food Services Lead, Jorvi Hospital"
+    ],
     "jobAds": {
       "checked": 5,
       "manual": 2,
@@ -1375,12 +1593,16 @@
         {
           "title": "Osastonsihteeri Avoin haku",
           "quote": "Työhösi kuuluu potilaiden sisään- ja uloskirjaukset, ajanvaraukset ja tutkimustilaukset, asiakirjojen käsittely, läheteliikenne sekä monikanavainen asiakaspalvelu…",
-          "url": "https://www.jobly.fi/tyopaikka/osastonsihteeri-avoin-haku-2775468"
+          "url": "https://www.jobly.fi/tyopaikka/osastonsihteeri-avoin-haku-2775468",
+          "titleEn": "Ward Secretary, open application",
+          "quoteEn": "Check patients in and out, book appointments, order tests, handle referrals."
         },
         {
           "title": "Palveluvastaava Ruokapalvelut Jorvin sairaala",
           "quote": "Palveluvastaavana vastaat päivittäisestä operatiivisesta työnjohtamisesta, tilauksista, kassatyöskentelystä, osastoyhteistyöstä ja työntekijöiden perehdyttämisestä.",
-          "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-ruokapalvelut-jorvin-sairaala-2782930"
+          "url": "https://www.jobly.fi/tyopaikka/palveluvastaava-ruokapalvelut-jorvin-sairaala-2782930",
+          "titleEn": "Food Services Lead, Jorvi Hospital",
+          "quoteEn": "Palveluvastaavana vastaat päivittäisestä operatiivisesta työnjohtamisesta, tilauksista, kassatyöskentelystä, osastoyhteistyöstä ja työntekijöiden perehdyttämisestä."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -1398,7 +1620,8 @@
       "adoptNote": "Secretaries confirm every draft, so responsibility stays where it is today.",
       "serviceArea": "Quotes and order intake"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Hospital wards where the secretary juggles check-ins, test orders and referrals all day."
   },
   {
     "id": "hankkija-oy",
@@ -1417,6 +1640,9 @@
     "titles": [
       "Puutarhavastaava, Hankkija Eura"
     ],
+    "titlesEn": [
+      "Puutarhavastaava, Hankkija Eura"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1425,7 +1651,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "hartela-oy",
@@ -1444,6 +1671,9 @@
     "titles": [
       "Laskentapäällikkö"
     ],
+    "titlesEn": [
+      "Laskentapäällikkö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1452,7 +1682,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "heimondo-finland-oy",
@@ -1471,6 +1702,9 @@
     "titles": [
       "Perintäasiantuntija"
     ],
+    "titlesEn": [
+      "Perintäasiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -1478,14 +1712,17 @@
         {
           "title": "Perintäasiantuntija",
           "quote": "Laadit maksusopimuksia ja maksusuunnitelmia, seuraat niiden toteutumista ja reagoit maksuviiveisiin.",
-          "url": "https://www.jobly.fi/tyopaikka/perintaasiantuntija-2782196"
+          "url": "https://www.jobly.fi/tyopaikka/perintaasiantuntija-2782196",
+          "titleEn": "Perintäasiantuntija",
+          "quoteEn": "Laadit maksusopimuksia ja maksusuunnitelmia, seuraat niiden toteutumista ja reagoit maksuviiveisiin."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-20"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "helmihunter-oy",
@@ -1504,6 +1741,9 @@
     "titles": [
       "Tekninen projektipäällikkö, Varustelu Look"
     ],
+    "titlesEn": [
+      "Tekninen projektipäällikkö, Varustelu Look"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1512,7 +1752,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "helsingin-asumisoikeus-oy",
@@ -1531,6 +1772,9 @@
     "titles": [
       "Analyst"
     ],
+    "titlesEn": [
+      "Analyst"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1539,7 +1783,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "helsingin-kaupunki",
@@ -1564,6 +1809,13 @@
       "Ruokapalvelutyöntekijä, Myllypuron seniorikeskus",
       "Vahtimestari, Helsingin sotepe-toimialan aulapalvelut, sijaisuudet"
     ],
+    "titlesEn": [
+      "Asiakasmaksupäällikkö, asiakasmaksupäätökset ja asiantuntijatuki",
+      "Asiantuntija, rekrytoinnin strateginen kehittäminen",
+      "Henkilöstösuunnittelupäällikkö",
+      "Ruokapalvelutyöntekijä, Myllypuron seniorikeskus",
+      "Vahtimestari, Helsingin sotepe-toimialan aulapalvelut, sijaisuudet"
+    ],
     "jobAds": {
       "checked": 5,
       "manual": 0,
@@ -1572,7 +1824,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "helsingin-yliopisto",
@@ -1600,6 +1853,16 @@
       "Promootioharjoittelija (korkeakouluharjoittelija) lääketieteellisen tiedekunnan promootioon",
       "Ympäristö- ja maatalousekonomian yliopistonlehtori"
     ],
+    "titlesEn": [
+      "Johtava asiantuntija, jatkuva oppiminen",
+      "Koordinaattori CERN-yhteistyöhön (osa-aikainen)",
+      "Koulutuskoordinaattori",
+      "Opetusavustaja kevääksi 2027",
+      "Postdoctoral Researcher in Economics",
+      "Promootioharjoittelija (korkeakouluharjoittelija) filosofisen tiedekunnan promootioon",
+      "Promootioharjoittelija (korkeakouluharjoittelija) lääketieteellisen tiedekunnan promootioon",
+      "Ympäristö- ja maatalousekonomian yliopistonlehtori"
+    ],
     "jobAds": {
       "checked": 8,
       "manual": 0,
@@ -1608,7 +1871,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "helsinki-shipyard",
@@ -1627,6 +1891,9 @@
     "titles": [
       "Document Controller"
     ],
+    "titlesEn": [
+      "Document Controller"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -1634,14 +1901,17 @@
         {
           "title": "Document Controller",
           "quote": "Dokumenttien arkistointi sekä loppudokumentaation kokoaminen projektien luovutusvaiheessa",
-          "url": "https://www.jobly.fi/tyopaikka/document-controller-2778655"
+          "url": "https://www.jobly.fi/tyopaikka/document-controller-2778655",
+          "titleEn": "Document Controller",
+          "quoteEn": "Dokumenttien arkistointi sekä loppudokumentaation kokoaminen projektien luovutusvaiheessa"
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "henkilostoliiga",
@@ -1660,6 +1930,9 @@
     "titles": [
       "Ostaja teollisuusyritykseen"
     ],
+    "titlesEn": [
+      "Ostaja teollisuusyritykseen"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1668,7 +1941,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "henkilostovuokraus-yhtio-kipina-oy",
@@ -1687,6 +1961,9 @@
     "titles": [
       "Asiakkuuspäällikkö"
     ],
+    "titlesEn": [
+      "Asiakkuuspäällikkö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1695,7 +1972,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "hitachi-energy",
@@ -1721,6 +1999,11 @@
       "Sales Manager",
       "Senior PSCM"
     ],
+    "titlesEn": [
+      "Project Engineer",
+      "Sales Manager",
+      "Senior PSCM"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 0,
@@ -1729,7 +2012,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "huoltovarmuuskeskus",
@@ -1748,6 +2032,9 @@
     "titles": [
       "Hankinta-asiantuntija"
     ],
+    "titlesEn": [
+      "Hankinta-asiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1756,7 +2043,8 @@
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "ilmarinen",
@@ -1775,6 +2063,9 @@
     "titles": [
       "HR-asiantuntija (perhevapaansijaisuus)"
     ],
+    "titlesEn": [
+      "HR-asiantuntija (perhevapaansijaisuus)"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1783,7 +2074,8 @@
       "fetchedAt": "2026-10-14"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "j-rinta-jouppi-oy",
@@ -1802,6 +2094,9 @@
     "titles": [
       "Autojen sisäänostaja, Kuopio"
     ],
+    "titlesEn": [
+      "Autojen sisäänostaja, Kuopio"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1810,7 +2105,8 @@
       "fetchedAt": "2026-10-06"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "jtt-sales-oy",
@@ -1829,6 +2125,9 @@
     "titles": [
       "Telemyynti"
     ],
+    "titlesEn": [
+      "Telemyynti"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1837,7 +2136,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "kone",
@@ -1861,6 +2161,9 @@
     "titles": [
       "HR Operations & Payroll Specialist, Nordic"
     ],
+    "titlesEn": [
+      "HR Operations & Payroll Specialist, Nordic"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -1868,14 +2171,17 @@
         {
           "title": "HR Operations & Payroll Specialist, Nordic",
           "quote": "Acting as the key interface towards the outsourced payroll provider, the role ensures accurate payroll execution, data integrity, compliance and efficient people administration throughout the employee lifecycle.",
-          "url": "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500"
+          "url": "https://www.jobly.fi/tyopaikka/hr-operations-payroll-specialist-nordic-2785500",
+          "titleEn": "HR Operations & Payroll Specialist, Nordic",
+          "quoteEn": "Acting as the key interface towards the outsourced payroll provider, the role ensures accurate payroll execution, data integrity, compliance and efficient people administration throughout the employee lifecycle."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": "kone"
+    "gameCompanyId": "kone",
+    "funHint": null
   },
   {
     "id": "kpmg",
@@ -1898,6 +2204,12 @@
       "Cloud Security Specialist",
       "Sisäisen tarkastuksen ja riskienhallinnan asiantuntija"
     ],
+    "titlesEn": [
+      "Administrative Assistant",
+      "Application Security Tester",
+      "Cloud Security Specialist",
+      "Sisäisen tarkastuksen ja riskienhallinnan asiantuntija"
+    ],
     "jobAds": {
       "checked": 4,
       "manual": 1,
@@ -1905,14 +2217,17 @@
         {
           "title": "Administrative Assistant",
           "quote": "Toimit tärkeänä apuna tarkastusraporttien ja muiden asiakirjojen ja esitysten stilisoinnissa, CRM-asiakasrekisterin ylläpitämisessä sekä sisäisissä riskienhallinnan prosesseissamme",
-          "url": "https://www.jobly.fi/tyopaikka/administrative-assistant-2780708"
+          "url": "https://www.jobly.fi/tyopaikka/administrative-assistant-2780708",
+          "titleEn": "Administrative Assistant",
+          "quoteEn": "Toimit tärkeänä apuna tarkastusraporttien ja muiden asiakirjojen ja esitysten stilisoinnissa, CRM-asiakasrekisterin ylläpitämisessä sekä sisäisissä riskienhallinnan prosesseissamme"
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "kaiku-hr",
@@ -1931,6 +2246,9 @@
     "titles": [
       "Maarakennustyöntekijä / kaivinkoneen perämies"
     ],
+    "titlesEn": [
+      "Maarakennustyöntekijä / kaivinkoneen perämies"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -1939,7 +2257,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "kaskea-group",
@@ -1958,6 +2277,9 @@
     "titles": [
       "Tarjouslaskentainsinööri (konepajateollisuus)"
     ],
+    "titlesEn": [
+      "Tarjouslaskentainsinööri (konepajateollisuus)"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -1965,14 +2287,17 @@
         {
           "title": "Tarjouslaskentainsinööri (konepajateollisuus)",
           "quote": "Laadit tuoterakenteita ja työvaihetietoja ERP-järjestelmään sekä pidät yhteyttä asiakkaisiin puhelimitse ja sähköpostitse.",
-          "url": "https://www.jobly.fi/tyopaikka/tekninen-tarjouslaskija-konepajateollisuus-2778632"
+          "url": "https://www.jobly.fi/tyopaikka/tekninen-tarjouslaskija-konepajateollisuus-2778632",
+          "titleEn": "Tarjouslaskentainsinööri (konepajateollisuus)",
+          "quoteEn": "Laadit tuoterakenteita ja työvaihetietoja ERP-järjestelmään sekä pidät yhteyttä asiakkaisiin puhelimitse ja sähköpostitse."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "katrium",
@@ -2003,6 +2328,10 @@
       "HR-harjoittelija - Etäharjoittelu",
       "Launch Your International Career: Remote Business Internship at Katrium"
     ],
+    "titlesEn": [
+      "HR-harjoittelija - Etäharjoittelu",
+      "Launch Your International Career: Remote Business Internship at Katrium"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -2011,7 +2340,8 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "kela",
@@ -2036,6 +2366,10 @@
       "Harjoittelija, perintätehtävät",
       "Harjoittelija, sijoitustoiminta"
     ],
+    "titlesEn": [
+      "Harjoittelija, perintätehtävät",
+      "Harjoittelija, sijoitustoiminta"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -2044,7 +2378,8 @@
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "kymppivoima-oy",
@@ -2063,6 +2398,9 @@
     "titles": [
       "Energy & Asset Controller"
     ],
+    "titlesEn": [
+      "Energy & Asset Controller"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2071,7 +2409,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "karkkainen-oy",
@@ -2095,6 +2434,9 @@
     "titles": [
       "Retkeilyn tuotepäällikkö, Kärkkäinen Oy"
     ],
+    "titlesEn": [
+      "Retkeilyn tuotepäällikkö, Kärkkäinen Oy"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2103,7 +2445,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "lapland-hotels",
@@ -2127,6 +2470,11 @@
       "Vastaanottovirkailija yötyöhön, Lapland Hotels Olos, Muonio",
       "Vastaanottovirkailija, Lapland Hotels Kilpis, Kilpisjärvi"
     ],
+    "titlesEn": [
+      "Night Receptionist, Kilpisjärvi",
+      "Night Receptionist, Muonio",
+      "Receptionist, Kilpisjärvi"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 1,
@@ -2134,12 +2482,16 @@
         {
           "title": "Vastaanottovirkailija yötyöhön, Lapland Hotels Olos, Muonio",
           "quote": "Työhön kuuluvat vastaanoton perusasiakaspalvelutehtävät, tulo- ja lähtöselvitykset sekä yövuoron raportointi-, laskutus-, seuraavan päivän valmistelu-, varausten tarkistus-, yleisten tilojen siivous-, aulabaarin anniskelu- ja kokousvalmistelutehtävät.",
-          "url": "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689"
+          "url": "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689",
+          "titleEn": "Night Receptionist, Muonio",
+          "quoteEn": "Night shift: check guests in, do the reports and billing, check tomorrow's bookings, and pour at the lobby bar."
         },
         {
           "title": "Vastaanottovirkailija yötyöhön, Lapland Hotels Olos, Muonio",
           "quote": "erilaiset raportointi- ja laskutustehtävät.",
-          "url": "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689"
+          "url": "https://www.jobly.fi/tyopaikka/vastaanottovirkailija-yotyohon-lapland-hotels-olos-muonio-2770689",
+          "titleEn": "Night Receptionist, Muonio",
+          "quoteEn": "erilaiset raportointi- ja laskutustehtävät."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -2157,7 +2509,8 @@
       "adoptNote": "Let one hotel's night team shape the report before rolling it out to others.",
       "serviceArea": "Management reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Up north, the night receptionist also does the billing, the reports and the bar."
   },
   {
     "id": "lassila-tikanoja-oyj",
@@ -2181,6 +2534,11 @@
       "Kuorma-autonkuljettaja Pieksämäelle",
       "Tuotantotyöntekijä Liedon kuormalavayksikköön"
     ],
+    "titlesEn": [
+      "Business Controller, Helsinki",
+      "Truck Driver, Pieksämäki",
+      "Production Worker, pallet unit in Lieto"
+    ],
     "jobAds": {
       "checked": 5,
       "manual": 2,
@@ -2188,12 +2546,16 @@
         {
           "title": "Tuotantotyöntekijä Liedon kuormalavayksikköön",
           "quote": "Työ pitää sisällään kuormalavojen lajittelua, jota tehdään sekä käsin että koneellisesti, sekä lastaus- ja lastinpurkutyötä, jota tapahtuu trukilla.",
-          "url": "https://www.jobly.fi/tyopaikka/tuotantotyontekija-liedon-kuormalavayksikkoon-2776046"
+          "url": "https://www.jobly.fi/tyopaikka/tuotantotyontekija-liedon-kuormalavayksikkoon-2776046",
+          "titleEn": "Production Worker, pallet unit in Lieto",
+          "quoteEn": "Sort pallets, partly by hand, then load and unload them with a forklift."
         },
         {
           "title": "Business Controller Helsinkiin",
           "quote": "Tehtäviin kuuluu kuukausiraportointi, ennusteiden ja budjettien laatiminen ja seuranta, kannattavuusanalyysit sekä johdon taloudellinen sparraus.",
-          "url": "https://www.jobly.fi/tyopaikka/business-controller-helsinkiin-2785458"
+          "url": "https://www.jobly.fi/tyopaikka/business-controller-helsinkiin-2785458",
+          "titleEn": "Business Controller, Helsinki",
+          "quoteEn": "Tehtäviin kuuluu kuukausiraportointi, ennusteiden ja budjettien laatiminen ja seuranta, kannattavuusanalyysit sekä johdon taloudellinen sparraus."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -2211,7 +2573,8 @@
       "adoptNote": "Pilot on one line with the people who sort today, and measure their time before and after.",
       "serviceArea": "Robotics and physical automation"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Pallets piling up in Lieto, and some of them get sorted by hand."
   },
   {
     "id": "loviisan-kaupunki",
@@ -2230,6 +2593,9 @@
     "titles": [
       "Hankintapäällikkö"
     ],
+    "titlesEn": [
+      "Hankintapäällikkö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2238,7 +2604,8 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "luotea-oyj",
@@ -2264,6 +2631,11 @@
       "Kokoaikainen kohdevastaava/siivooja, Turku",
       "Palveluvastaava pääkaupunkiseudulle"
     ],
+    "titlesEn": [
+      "Elintarvikehygienian esihenkilö, Pori",
+      "Kokoaikainen kohdevastaava/siivooja, Turku",
+      "Palveluvastaava pääkaupunkiseudulle"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 0,
@@ -2272,7 +2644,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "maahanmuuttovirasto",
@@ -2292,6 +2665,9 @@
     "titles": [
       "HR-juristi (hakuaikaa jatkettu 2.11.2026 asti)"
     ],
+    "titlesEn": [
+      "HR-juristi (hakuaikaa jatkettu 2.11.2026 asti)"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2300,7 +2676,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "maakuntien-tilakeskus",
@@ -2319,6 +2696,9 @@
     "titles": [
       "Kokenut asiantuntija, kiinteistötalous ja tilahallinta"
     ],
+    "titlesEn": [
+      "Kokenut asiantuntija, kiinteistötalous ja tilahallinta"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2327,7 +2707,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "mentek-advisors-oy",
@@ -2346,6 +2727,9 @@
     "titles": [
       "Tekninen hankinta- ja ostoasiantuntija / JTK Power Oy"
     ],
+    "titlesEn": [
+      "Tekninen hankinta- ja ostoasiantuntija / JTK Power Oy"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -2353,14 +2737,17 @@
         {
           "title": "Tekninen hankinta- ja ostoasiantuntija / JTK Power Oy",
           "quote": "Ostolaskujen tarkastaminen",
-          "url": "https://www.jobly.fi/tyopaikka/tekninen-hankinta-ja-ostoasiantuntija-jtk-power-oy-2784413"
+          "url": "https://www.jobly.fi/tyopaikka/tekninen-hankinta-ja-ostoasiantuntija-jtk-power-oy-2784413",
+          "titleEn": "Tekninen hankinta- ja ostoasiantuntija / JTK Power Oy",
+          "quoteEn": "Ostolaskujen tarkastaminen"
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "metso",
@@ -2379,6 +2766,9 @@
     "titles": [
       "Senior Project Planner"
     ],
+    "titlesEn": [
+      "Senior Project Planner"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2387,7 +2777,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "minjon-oy",
@@ -2406,6 +2797,9 @@
     "titles": [
       "Legal Recruiter @ Minjon"
     ],
+    "titlesEn": [
+      "Legal Recruiter @ Minjon"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -2414,7 +2808,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "mipro-oy",
@@ -2433,6 +2828,9 @@
     "titles": [
       "Projektipäällikkö"
     ],
+    "titlesEn": [
+      "Projektipäällikkö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2441,7 +2839,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "ntg-air-ocean-oy",
@@ -2460,6 +2859,9 @@
     "titles": [
       "Lento-osaston asiakaspalvelutehtävät"
     ],
+    "titlesEn": [
+      "Lento-osaston asiakaspalvelutehtävät"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -2467,14 +2869,17 @@
         {
           "title": "Lento-osaston asiakaspalvelutehtävät",
           "quote": "Lähetyksien laskutus ja kuluseuranta",
-          "url": "https://www.jobly.fi/tyopaikka/lento-osaston-asiakaspalvelutehtavat-2784183"
+          "url": "https://www.jobly.fi/tyopaikka/lento-osaston-asiakaspalvelutehtavat-2784183",
+          "titleEn": "Lento-osaston asiakaspalvelutehtävät",
+          "quoteEn": "Lähetyksien laskutus ja kuluseuranta"
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "neste-oyj",
@@ -2505,6 +2910,12 @@
       "Senior Refinery Data Engineer",
       "Solution Manager"
     ],
+    "titlesEn": [
+      "HR Specialist",
+      "Senior Business Controller",
+      "Senior Refinery Data Engineer",
+      "Solution Manager"
+    ],
     "jobAds": {
       "checked": 4,
       "manual": 0,
@@ -2513,7 +2924,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": "neste"
+    "gameCompanyId": "neste",
+    "funHint": null
   },
   {
     "id": "nextpharma-oy",
@@ -2532,6 +2944,9 @@
     "titles": [
       "HR Manager lääketehtaaseen"
     ],
+    "titlesEn": [
+      "HR Manager lääketehtaaseen"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2540,7 +2955,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "nicole-beauty",
@@ -2559,6 +2975,9 @@
     "titles": [
       "HOITOLATYÖNTEKIJÄ"
     ],
+    "titlesEn": [
+      "HOITOLATYÖNTEKIJÄ"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2567,7 +2986,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "nordic-career",
@@ -2592,6 +3012,9 @@
     "titles": [
       "Myynti- ja rekrytointiasiantuntija, Horeca-ala – Etelä-Suomi"
     ],
+    "titlesEn": [
+      "Myynti- ja rekrytointiasiantuntija, Horeca-ala – Etelä-Suomi"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2600,7 +3023,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "normet",
@@ -2621,6 +3045,9 @@
     "titles": [
       "Sourcing Specialist"
     ],
+    "titlesEn": [
+      "Sourcing Specialist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2629,7 +3056,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "nostokonepalvelu-oy",
@@ -2650,6 +3078,10 @@
       "Ajojärjestelijä Nostokonepalveluille",
       "Myyntisihteeri Nostokonepalveluille"
     ],
+    "titlesEn": [
+      "Dispatcher",
+      "Sales Secretary"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 2,
@@ -2657,17 +3089,23 @@
         {
           "title": "Myyntisihteeri Nostokonepalveluille",
           "quote": "Tehtäviisi kuuluu monipuoliset back office -tehtävät kuten moniyritysten laskutus, asiakkaiden perustaminen järjestelmiin, sisäinen laskutus, kustannusjaot ja HR-rekisterin ylläpito käyttäen yrityksen ERP-järjestelmää ja Heeros-ohjelmistoa.",
-          "url": "https://www.jobly.fi/tyopaikka/myyntisihteeri-nostokonepalveluille-2780041"
+          "url": "https://www.jobly.fi/tyopaikka/myyntisihteeri-nostokonepalveluille-2780041",
+          "titleEn": "Sales Secretary",
+          "quoteEn": "Invoice several companies, set up customers, split costs and keep the HR register. All in the ERP."
         },
         {
           "title": "Ajojärjestelijä Nostokonepalveluille",
           "quote": "Lisäksi huolehdit nosto- ja kuljetustapahtumien laskutustietojen oikeellisuudesta toiminnanohjausjärjestelmässä.",
-          "url": "https://www.jobly.fi/tyopaikka/ajojarjestelija-nostokonepalveluille-2784144"
+          "url": "https://www.jobly.fi/tyopaikka/ajojarjestelija-nostokonepalveluille-2784144",
+          "titleEn": "Dispatcher",
+          "quoteEn": "Lisäksi huolehdit nosto- ja kuljetustapahtumien laskutustietojen oikeellisuudesta toiminnanohjausjärjestelmässä."
         },
         {
           "title": "Ajojärjestelijä Nostokonepalveluille",
           "quote": "Ajojärjestelijänä vastaat nostureiden, kuljetusten ja henkilöstöresurssien päivittäisestä suunnittelusta ja järjestelystä.",
-          "url": "https://www.jobly.fi/tyopaikka/ajojarjestelija-nostokonepalveluille-2784144"
+          "url": "https://www.jobly.fi/tyopaikka/ajojarjestelija-nostokonepalveluille-2784144",
+          "titleEn": "Dispatcher",
+          "quoteEn": "Ajojärjestelijänä vastaat nostureiden, kuljetusten ja henkilöstöresurssien päivittäisestä suunnittelusta ja järjestelystä."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -2685,7 +3123,8 @@
       "adoptNote": "Start with one company's billing and let the office approve each batch before it goes out.",
       "serviceArea": "Scheduling and dispatch"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Cranes in Turku. Every invoice gets checked twice, by two different people."
   },
   {
     "id": "olvi-oyj",
@@ -2705,6 +3144,9 @@
     "titles": [
       "Sourcing Analyst"
     ],
+    "titlesEn": [
+      "Sourcing Analyst"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -2712,14 +3154,17 @@
         {
           "title": "Sourcing Analyst",
           "quote": "We are looking for someone who is motivated to develop data-driven decision-making and build solutions where data, analytics and automation help reduce manual work, including through the use of AI.",
-          "url": "https://www.jobly.fi/tyopaikka/sourcing-analyst-2784860"
+          "url": "https://www.jobly.fi/tyopaikka/sourcing-analyst-2784860",
+          "titleEn": "Sourcing Analyst",
+          "quoteEn": "We are looking for someone who is motivated to develop data-driven decision-making and build solutions where data, analytics and automation help reduce manual work, including through the use of AI."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "oy-scandic-trading-house-ltd",
@@ -2739,6 +3184,9 @@
     "titles": [
       "Ostaja"
     ],
+    "titlesEn": [
+      "Buyer"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2747,7 +3195,8 @@
       "fetchedAt": "2026-10-05"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "palvelualojen-tyonantajat-palta",
@@ -2766,6 +3215,9 @@
     "titles": [
       "Johtava asiantuntija, talous ja tilastot"
     ],
+    "titlesEn": [
+      "Johtava asiantuntija, talous ja tilastot"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2774,7 +3226,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "poliisi",
@@ -2794,6 +3247,9 @@
     "titles": [
       "Talousasiantuntija 40.14.02 - hakuaikaa jatkettu"
     ],
+    "titlesEn": [
+      "Talousasiantuntija 40.14.02 - hakuaikaa jatkettu"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2802,7 +3258,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "porvoon-kaupunki-borga-stad",
@@ -2822,6 +3279,9 @@
     "titles": [
       "Hankinta-asiantuntija"
     ],
+    "titlesEn": [
+      "Hankinta-asiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2830,7 +3290,8 @@
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "rainmaker",
@@ -2853,6 +3314,10 @@
       "Myynnillinen asiakaspalvelija, pk-seutu",
       "Tiiminvetäjä myyntiin, Uusimaa"
     ],
+    "titlesEn": [
+      "Myynnillinen asiakaspalvelija, pk-seutu",
+      "Tiiminvetäjä myyntiin, Uusimaa"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -2861,7 +3326,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "red-hat-holdings-ltd",
@@ -2880,6 +3346,9 @@
     "titles": [
       "Asiakaspalvelija"
     ],
+    "titlesEn": [
+      "Asiakaspalvelija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2888,7 +3357,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "ricoh-finland",
@@ -2908,6 +3378,9 @@
     "titles": [
       "Finance Manager, Ricoh Finland, Espoo"
     ],
+    "titlesEn": [
+      "Finance Manager, Ricoh Finland, Espoo"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2916,7 +3389,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "riihimaen-kaupunki",
@@ -2935,6 +3409,9 @@
     "titles": [
       "Hankintapäällikkö"
     ],
+    "titlesEn": [
+      "Hankintapäällikkö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2943,7 +3420,8 @@
       "fetchedAt": "2026-10-09"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "robit-finland-oy",
@@ -2962,6 +3440,9 @@
     "titles": [
       "HR Manager"
     ],
+    "titlesEn": [
+      "HR Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2970,7 +3451,8 @@
       "fetchedAt": "2026-10-14"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "robit-finland-oy-ltd",
@@ -2989,6 +3471,9 @@
     "titles": [
       "HR Manager"
     ],
+    "titlesEn": [
+      "HR Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -2997,7 +3482,8 @@
       "fetchedAt": "2026-10-14"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "rovaniemen-koulutuskuntayhtyma",
@@ -3016,6 +3502,9 @@
     "titles": [
       "Henkilöstöjohtaja/REDU"
     ],
+    "titlesEn": [
+      "Henkilöstöjohtaja/REDU"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3024,7 +3513,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "rukakeskus-oy",
@@ -3043,6 +3533,9 @@
     "titles": [
       "Asiakaspalvelija Rukalle ja Kuusamoon"
     ],
+    "titlesEn": [
+      "Asiakaspalvelija Rukalle ja Kuusamoon"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3051,7 +3544,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sok",
@@ -3070,6 +3564,9 @@
     "titles": [
       "Kehityspäällikkö (talousjärjestelmät ja -prosessit)"
     ],
+    "titlesEn": [
+      "Kehityspäällikkö (talousjärjestelmät ja -prosessit)"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3078,7 +3575,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sos-international-oy",
@@ -3097,6 +3595,9 @@
     "titles": [
       "Assistance Coordinator, SOS International"
     ],
+    "titlesEn": [
+      "Assistance Coordinator, SOS International"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3105,7 +3606,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sandvik",
@@ -3126,6 +3628,10 @@
       "Order Delivery Coordinator",
       "Supervisor, Logistics/Manufacturing"
     ],
+    "titlesEn": [
+      "Order Delivery Coordinator",
+      "Supervisor, Logistics/Manufacturing"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 1,
@@ -3133,12 +3639,16 @@
         {
           "title": "Order Delivery Coordinator",
           "quote": "Receiving and processing customer orders for mining and tunnelling equipment and components, including validating the commercial and technical information of orders and ensuring accurate order handling throughout the process.",
-          "url": "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040"
+          "url": "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040",
+          "titleEn": "Order Delivery Coordinator",
+          "quoteEn": "Receive customer orders for mining and tunnelling equipment and validate every commercial and technical detail."
         },
         {
           "title": "Order Delivery Coordinator",
           "quote": "Preparing export documentation and invoices in compliance with prevailing laws and regulations.",
-          "url": "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040"
+          "url": "https://www.jobly.fi/tyopaikka/order-delivery-coordinator-2785040",
+          "titleEn": "Order Delivery Coordinator",
+          "quoteEn": "Preparing export documentation and invoices in compliance with prevailing laws and regulations."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -3156,7 +3666,8 @@
       "adoptNote": "Let the order desk review every drafted order for two weeks, then only the flagged ones.",
       "serviceArea": "Quotes and order intake"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "Mining machines from Tampere, and a person reads every single order."
   },
   {
     "id": "sandvik-mining-and-construction-oy",
@@ -3178,6 +3689,10 @@
       "HR Manager, Talent Acquisition",
       "HR Specialist, Talent Acquisition"
     ],
+    "titlesEn": [
+      "HR Manager, Talent Acquisition",
+      "HR Specialist, Talent Acquisition"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -3186,7 +3701,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "savon-koulutuskuntayhtyma",
@@ -3209,6 +3725,9 @@
     "titles": [
       "Avoin haku, Tukipalvelut"
     ],
+    "titlesEn": [
+      "Avoin haku, Tukipalvelut"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3217,7 +3736,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sector-alarm",
@@ -3237,6 +3757,9 @@
     "titles": [
       "Suomenkielinen Asiakaspalvelija"
     ],
+    "titlesEn": [
+      "Suomenkielinen Asiakaspalvelija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3245,7 +3768,8 @@
       "fetchedAt": "2026-10-20"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "securitas-oy",
@@ -3264,6 +3788,9 @@
     "titles": [
       "Henkilöstösuunnittelija Kouvolaan"
     ],
+    "titlesEn": [
+      "Henkilöstösuunnittelija Kouvolaan"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -3271,14 +3798,17 @@
         {
           "title": "Henkilöstösuunnittelija Kouvolaan",
           "quote": "Päivittäisessä työssäsi hoidat työvuoro- ja poissaolojärjestelyt sekä toimit tiiviissä yhteistyössä sisäisten sidosryhmien kanssa.",
-          "url": "https://www.jobly.fi/tyopaikka/henkilostosuunnittelija-kouvolaan-2779883"
+          "url": "https://www.jobly.fi/tyopaikka/henkilostosuunnittelija-kouvolaan-2779883",
+          "titleEn": "Henkilöstösuunnittelija Kouvolaan",
+          "quoteEn": "Päivittäisessä työssäsi hoidat työvuoro- ja poissaolojärjestelyt sekä toimit tiiviissä yhteistyössä sisäisten sidosryhmien kanssa."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "select-service-partner-finland",
@@ -3300,6 +3830,9 @@
     "titles": [
       "Loungetyöntekijöitä, Helsinki-Vantaan lentoasema, SSP Finland"
     ],
+    "titlesEn": [
+      "Loungetyöntekijöitä, Helsinki-Vantaan lentoasema, SSP Finland"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3308,7 +3841,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "senaatti-kiinteistot",
@@ -3327,6 +3861,9 @@
     "titles": [
       "Tekoälyasiantuntija"
     ],
+    "titlesEn": [
+      "Tekoälyasiantuntija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3335,7 +3872,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sihti",
@@ -3359,6 +3897,10 @@
       "Ajoneuvonosturinkuljettajaa Etelä-Suomen alueelle",
       "Torninosturinkuljettaja"
     ],
+    "titlesEn": [
+      "Ajoneuvonosturinkuljettajaa Etelä-Suomen alueelle",
+      "Torninosturinkuljettaja"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -3367,7 +3909,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sipoon-kunta-sibbo-kommun",
@@ -3386,6 +3929,9 @@
     "titles": [
       "Investointipäällikkö, Yhdyskunta ja ympäristö"
     ],
+    "titlesEn": [
+      "Investointipäällikkö, Yhdyskunta ja ympäristö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3394,7 +3940,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sodexo-oy",
@@ -3420,6 +3967,12 @@
       "Toimitilakoordinaattori (Facility Coordinator) Espooseen",
       "Työharjoittelu/koulutussopimus 2026 - 2027"
     ],
+    "titlesEn": [
+      "Monipalvelutyöntekijä Helsinkiin",
+      "Puhdistuspalvelun esihenkilö Ouluun",
+      "Toimitilakoordinaattori (Facility Coordinator) Espooseen",
+      "Työharjoittelu/koulutussopimus 2026 - 2027"
+    ],
     "jobAds": {
       "checked": 4,
       "manual": 0,
@@ -3428,7 +3981,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "sonepar-suomi-oy",
@@ -3447,6 +4001,9 @@
     "titles": [
       "Category Manager"
     ],
+    "titlesEn": [
+      "Category Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3455,7 +4012,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "specim-spectral-imaging-oy-ltd",
@@ -3474,6 +4032,9 @@
     "titles": [
       "Purchasing Manager"
     ],
+    "titlesEn": [
+      "Purchasing Manager"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3482,7 +4043,8 @@
       "fetchedAt": "2026-10-17"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "st1-oy",
@@ -3503,6 +4065,10 @@
       "Senior Finance Data Analyst",
       "Senior Project Manager"
     ],
+    "titlesEn": [
+      "Senior Finance Data Analyst",
+      "Senior Project Manager"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 1,
@@ -3510,17 +4076,23 @@
         {
           "title": "Senior Finance Data Analyst",
           "quote": "Are you a Senior Finance Data Analyst who sees opportunities where others see manual work?",
-          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782"
+          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782",
+          "titleEn": "Senior Finance Data Analyst",
+          "quoteEn": "Do you see opportunities where others see manual work?"
         },
         {
           "title": "Senior Finance Data Analyst",
           "quote": "Identify repetitive, manual and insight-intensive Finance activities where automation, AI or analytics can create meaningful value.",
-          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782"
+          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782",
+          "titleEn": "Senior Finance Data Analyst",
+          "quoteEn": "Identify repetitive, manual and insight-intensive Finance activities where automation, AI or analytics can create meaningful value."
         },
         {
           "title": "Senior Finance Data Analyst",
           "quote": "Your mission is to convert those foundations into practical solutions that reduce manual work, accelerate insight and help Finance teams make better decisions.",
-          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782"
+          "url": "https://www.jobly.fi/tyopaikka/senior-finance-data-analyst-2775782",
+          "titleEn": "Senior Finance Data Analyst",
+          "quoteEn": "Your mission is to convert those foundations into practical solutions that reduce manual work, accelerate insight and help Finance teams make better decisions."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -3538,7 +4110,8 @@
       "adoptNote": "Pair the fixes with the new analyst so they own them after launch.",
       "serviceArea": "Management reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "They're hiring someone whose whole job is hunting down manual work in finance."
   },
   {
     "id": "staria-oyj",
@@ -3561,6 +4134,10 @@
       "Palkanlaskennan Trainee-ohjelma 2027",
       "Senior Payroll Specialist | International Payroll Environment"
     ],
+    "titlesEn": [
+      "Palkanlaskennan Trainee-ohjelma 2027",
+      "Senior Payroll Specialist | International Payroll Environment"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -3569,7 +4146,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "stora-enso-oyj",
@@ -3592,6 +4170,10 @@
       "Business Unit Controller, Business Unit Oulu",
       "Category Manager, IT And Professional Services"
     ],
+    "titlesEn": [
+      "Business Unit Controller, Business Unit Oulu",
+      "Category Manager, IT And Professional Services"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 0,
@@ -3600,7 +4182,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "suomen-rakennuslogistiikka-oy",
@@ -3619,6 +4202,9 @@
     "titles": [
       "Rakennuslogistiikkatyöntekijöitä Jyväskylään (PIKAHAKU)"
     ],
+    "titlesEn": [
+      "Rakennuslogistiikkatyöntekijöitä Jyväskylään (PIKAHAKU)"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3627,7 +4213,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "tampereen-kaupunki",
@@ -3648,6 +4235,10 @@
       "Erityisasiantuntija / Työllisyys- ja kasvupalvelut, Osaamisen ja työllistymisen palveluratkaisut",
       "Hankintapäällikkö / Hankintapalvelut"
     ],
+    "titlesEn": [
+      "Erityisasiantuntija / Työllisyys- ja kasvupalvelut, Osaamisen ja työllistymisen palveluratkaisut",
+      "Hankintapäällikkö / Hankintapalvelut"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 0,
@@ -3656,7 +4247,8 @@
       "fetchedAt": "2026-10-24"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "tampereen-yliopisto",
@@ -3680,6 +4272,11 @@
       "Harjoittelija, opiskelija- ja hakijapalvelut",
       "Tutkijakoulutuksen asiantuntija Tampereen yliopiston tutkijakouluun"
     ],
+    "titlesEn": [
+      "Assistant Professor (Tenure-track) in Economics / Apulaisprofessori (tenure track), taloustiede",
+      "Harjoittelija, opiskelija- ja hakijapalvelut",
+      "Tutkijakoulutuksen asiantuntija Tampereen yliopiston tutkijakouluun"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 0,
@@ -3688,7 +4285,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "telia-finland-oyj",
@@ -3707,6 +4305,9 @@
     "titles": [
       "Head of People & Culture, Telia Finland"
     ],
+    "titlesEn": [
+      "Head of People & Culture, Telia Finland"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3715,7 +4316,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "tempu-oy",
@@ -3735,6 +4337,9 @@
     "titles": [
       "Taksinkuljettaja (Bolt & Uber) - Alihankkija"
     ],
+    "titlesEn": [
+      "Taksinkuljettaja (Bolt & Uber) - Alihankkija"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3743,7 +4348,8 @@
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "terveystalo",
@@ -3762,6 +4368,9 @@
     "titles": [
       "(Senior) HR Specialist, HRIS & AI"
     ],
+    "titlesEn": [
+      "(Senior) HR Specialist, HRIS & AI"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 1,
@@ -3769,12 +4378,16 @@
         {
           "title": "(Senior) HR Specialist, HRIS & AI",
           "quote": "Työsi vahvistaa HR-palveluiden tehokkuutta, laatua ja skaalautuvuutta sekä vähentää manuaalista työtä.",
-          "url": "https://www.jobly.fi/tyopaikka/senior-hr-specialist-hris-ai-2781972"
+          "url": "https://www.jobly.fi/tyopaikka/senior-hr-specialist-hris-ai-2781972",
+          "titleEn": "(Senior) HR Specialist, HRIS & AI",
+          "quoteEn": "Make HR services more efficient and cut down the manual work."
         },
         {
           "title": "(Senior) HR Specialist, HRIS & AI",
           "quote": "Selvität häiriöitä ja havaittuja poikkeamia, koordinoit korjauksia sekä huolehdit siitä, että prosessit toimivat ja tieto liikkuu järjestelmien välillä laadukkaasti.",
-          "url": "https://www.jobly.fi/tyopaikka/senior-hr-specialist-hris-ai-2781972"
+          "url": "https://www.jobly.fi/tyopaikka/senior-hr-specialist-hris-ai-2781972",
+          "titleEn": "(Senior) HR Specialist, HRIS & AI",
+          "quoteEn": "Selvität häiriöitä ja havaittuja poikkeamia, koordinoit korjauksia sekä huolehdit siitä, että prosessit toimivat ja tieto liikkuu järjestelmien välillä laadukkaasti."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -3792,7 +4405,8 @@
       "adoptNote": "Start with the integration that causes the most tickets and track tickets before and after.",
       "serviceArea": "Management reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "A healthcare company that wants HR data to move between systems without people carrying it."
   },
   {
     "id": "tietoakseli-group",
@@ -3821,6 +4435,9 @@
     "titles": [
       "Mepco HRM Product Owner"
     ],
+    "titlesEn": [
+      "Mepco HRM Product Owner"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3829,7 +4446,8 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "tilitoimisto-taloushotelli-oy",
@@ -3848,6 +4466,9 @@
     "titles": [
       "Tilinpäätöstaitoinen, tekoälystä innostunut kirjanpitäjä | 100 % etätyö"
     ],
+    "titlesEn": [
+      "Tilinpäätöstaitoinen, tekoälystä innostunut kirjanpitäjä | 100 % etätyö"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -3855,14 +4476,17 @@
         {
           "title": "Tilinpäätöstaitoinen, tekoälystä innostunut kirjanpitäjä | 100 % etätyö",
           "quote": "Perinteisten tilitoimistojen paperinpyörittely tuskin jatkuu enää kovin pitkään.",
-          "url": "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-tekoalysta-innostunut-kirjanpitaja-100-etatyo-2779593"
+          "url": "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-tekoalysta-innostunut-kirjanpitaja-100-etatyo-2779593",
+          "titleEn": "Tilinpäätöstaitoinen, tekoälystä innostunut kirjanpitäjä | 100 % etätyö",
+          "quoteEn": "Perinteisten tilitoimistojen paperinpyörittely tuskin jatkuu enää kovin pitkään."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-15"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "tribedo-oy",
@@ -3881,6 +4505,9 @@
     "titles": [
       "Solution Analyst - lainaprosessit"
     ],
+    "titlesEn": [
+      "Solution Analyst - lainaprosessit"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3889,7 +4516,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "twoday-oy",
@@ -3908,6 +4536,9 @@
     "titles": [
       "Talent Acquisition Business Partner"
     ],
+    "titlesEn": [
+      "Talent Acquisition Business Partner"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -3916,7 +4547,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "upm",
@@ -3945,6 +4577,11 @@
       "Manager, Treasury Accounting",
       "Specialist/Senior Specialist, Payroll Services"
     ],
+    "titlesEn": [
+      "Director, IT Sourcing Category",
+      "Manager, Treasury Accounting",
+      "Specialist/Senior Specialist, Payroll Services"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 1,
@@ -3952,14 +4589,17 @@
         {
           "title": "Specialist/Senior Specialist, Payroll Services",
           "quote": "You will contribute to payroll and time management transformation projects, coordinate with external providers and internal stakeholders, perform pre- and post-payroll reconciliations, and ensure legal and tax compliance.",
-          "url": "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327"
+          "url": "https://www.jobly.fi/tyopaikka/specialist-senior-specialist-payroll-services-2778327",
+          "titleEn": "Specialist/Senior Specialist, Payroll Services",
+          "quoteEn": "You will contribute to payroll and time management transformation projects, coordinate with external providers and internal stakeholders, perform pre- and post-payroll reconciliations, and ensure legal and tax compliance."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": "upm"
+    "gameCompanyId": "upm",
+    "funHint": null
   },
   {
     "id": "uggla-engineering-oy",
@@ -3980,6 +4620,10 @@
       "Cost Manager - Kouvola",
       "Project Planner datakeskusprojektiin - Mikkeli"
     ],
+    "titlesEn": [
+      "Cost Manager, Kouvola",
+      "Project Planner for a data centre project, Mikkeli"
+    ],
     "jobAds": {
       "checked": 2,
       "manual": 1,
@@ -3987,12 +4631,16 @@
         {
           "title": "Project Planner datakeskusprojektiin - Mikkeli",
           "quote": "Päivittäisiin tehtäviisi kuuluu tiedon kerääminen työmaalta, projektinjohdolta ja urakoitsijoilta, aikataulujen päivittäminen sekä eri työvaiheiden yhteensovittaminen.",
-          "url": "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287"
+          "url": "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287",
+          "titleEn": "Project Planner for a data centre project, Mikkeli",
+          "quoteEn": "Every day: collect updates from the site, the managers and the contractors, then update the schedule."
         },
         {
           "title": "Project Planner datakeskusprojektiin - Mikkeli",
           "quote": "Seuraat projektin etenemistä suhteessa tavoitteisiin, tunnistat mahdollisia aikatauluriskejä ja tuotat raportteja projektiorganisaation tueksi.",
-          "url": "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287"
+          "url": "https://www.jobly.fi/tyopaikka/project-planner-datakeskusprojektiin-mikkeli-2771287",
+          "titleEn": "Project Planner for a data centre project, Mikkeli",
+          "quoteEn": "Seuraat projektin etenemistä suhteessa tavoitteisiin, tunnistat mahdollisia aikatauluriskejä ja tuotat raportteja projektiorganisaation tueksi."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -4010,7 +4658,8 @@
       "adoptNote": "Make reporting from site take one minute on a phone, or it won't happen.",
       "serviceArea": "Field reporting"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "A data centre is going up in Mikkeli, and the planner starts every day by chasing updates."
   },
   {
     "id": "vuorenmaa-yhtiot-oy",
@@ -4029,6 +4678,9 @@
     "titles": [
       "Ostaja, Vuorenmaa Yhtiöt Oy"
     ],
+    "titlesEn": [
+      "Ostaja, Vuorenmaa Yhtiöt Oy"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4037,7 +4689,8 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "vahterus-oy",
@@ -4057,6 +4710,9 @@
     "titles": [
       "People & Culture Generalist"
     ],
+    "titlesEn": [
+      "People & Culture Generalist"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4065,7 +4721,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "valmet",
@@ -4097,6 +4754,11 @@
       "Service Coordinator/Engineer",
       "Technical Documentation Manager"
     ],
+    "titlesEn": [
+      "Manager, Group Control",
+      "Service Coordinator/Engineer",
+      "Technical Documentation Manager"
+    ],
     "jobAds": {
       "checked": 3,
       "manual": 2,
@@ -4104,12 +4766,16 @@
         {
           "title": "Manager, Group Control",
           "quote": "Partner with Finance Development and relevant process owners to identify and define AI-enabled improvements to reporting and planning controls, validation and reconciliation, and support their implementation.",
-          "url": "https://www.jobly.fi/tyopaikka/manager-group-control-2777996"
+          "url": "https://www.jobly.fi/tyopaikka/manager-group-control-2777996",
+          "titleEn": "Manager, Group Control",
+          "quoteEn": "Find where AI can help with reporting, validation and reconciliation."
         },
         {
           "title": "Service Coordinator/Engineer",
           "quote": "Planning/coordinating/administrating service jobs globally by using our extensive service network.",
-          "url": "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000"
+          "url": "https://www.jobly.fi/tyopaikka/service-coordinator-engineer-2767000",
+          "titleEn": "Service Coordinator/Engineer",
+          "quoteEn": "Planning/coordinating/administrating service jobs globally by using our extensive service network."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -4127,7 +4793,8 @@
       "adoptNote": "Coordinators approve each proposed schedule until the suggestions are right most of the time.",
       "serviceArea": "Scheduling and dispatch"
     },
-    "gameCompanyId": "valmet"
+    "gameCompanyId": "valmet",
+    "funHint": "A global engineering group whose finance team wants AI to do the reconciling."
   },
   {
     "id": "veikkaus",
@@ -4146,6 +4813,9 @@
     "titles": [
       "Head of Analytics & Insights"
     ],
+    "titlesEn": [
+      "Head of Analytics & Insights"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4154,7 +4824,8 @@
       "fetchedAt": "2026-10-21"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "verohallinto",
@@ -4194,6 +4865,9 @@
     "titles": [
       "Ryhmäpäällikkö, vt.13"
     ],
+    "titlesEn": [
+      "Ryhmäpäällikkö, vt.13"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4202,7 +4876,8 @@
       "fetchedAt": "2026-10-22"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "wasatalent-oy",
@@ -4221,6 +4896,9 @@
     "titles": [
       "REKRYTOINTIKONSULTTI"
     ],
+    "titlesEn": [
+      "REKRYTOINTIKONSULTTI"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4229,7 +4907,8 @@
       "fetchedAt": "2026-10-14"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "weidmuller",
@@ -4249,6 +4928,9 @@
     "titles": [
       "Technical Support, Weidmüller, Vantaa"
     ],
+    "titlesEn": [
+      "Technical Support, Weidmüller, Vantaa"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4257,7 +4939,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "wihanto-oy",
@@ -4276,6 +4959,9 @@
     "titles": [
       "Kirjanpitäjä"
     ],
+    "titlesEn": [
+      "Kirjanpitäjä"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 1,
@@ -4283,14 +4969,17 @@
         {
           "title": "Kirjanpitäjä",
           "quote": "Kirjanpitäjänä vastaat itsenäisesti pienen konsernin koko taloushallinnosta, mukaan lukien kuukausikirjanpito, osto- ja myyntireskontra, laskujen tiliöinti ja maksuliikenne sekä vuokrien laskutus.",
-          "url": "https://www.jobly.fi/tyopaikka/kirjanpitaja-2776564"
+          "url": "https://www.jobly.fi/tyopaikka/kirjanpitaja-2776564",
+          "titleEn": "Kirjanpitäjä",
+          "quoteEn": "Kirjanpitäjänä vastaat itsenäisesti pienen konsernin koko taloushallinnosta, mukaan lukien kuukausikirjanpito, osto- ja myyntireskontra, laskujen tiliöinti ja maksuliikenne sekä vuokrien laskutus."
         }
       ],
       "source": "Open job ads on Jobly.fi",
       "fetchedAt": "2026-10-19"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "workpower-oy",
@@ -4338,6 +5027,18 @@
       "Yhdistelmäajoneuvonkuljettaja, jakelutehtävät, Kouvola",
       "Yhdistelmäajoneuvonkuljettaja, kappaletavarajakelu, Lahti"
     ],
+    "titlesEn": [
+      "Truck Driver, PostNord parcel delivery, Uusimaa",
+      "Truck Driver, earthmoving and hook-lift truck, Tuusula",
+      "Earthmoving Truck Driver and Machine Operator, Tampere",
+      "Buyer for Bucher Hydraulics",
+      "Tilinpäätöstaitoinen kirjanpitäjä, Nättinummen Isännöinti Oy, Turku",
+      "Täysperävaununkuljettaja, koukkuauto",
+      "Vaihtolava-auton kuljettaja, koukku, CE, Vantaa",
+      "Spare Parts Salesperson for West Diesel Engineering, Forssa",
+      "Yhdistelmäajoneuvonkuljettaja, jakelutehtävät, Kouvola",
+      "Yhdistelmäajoneuvonkuljettaja, kappaletavarajakelu, Lahti"
+    ],
     "jobAds": {
       "checked": 10,
       "manual": 3,
@@ -4345,17 +5046,23 @@
         {
           "title": "Varaosamyyjä West Diesel Engineering Oy:lle Forssaan",
           "quote": "Lisäksi osallistut saapuvan tavaran vastaanottoon ja varaston ylläpitoon sekä kirjaat tilaukset ja toimitukset toiminnanohjausjärjestelmään.",
-          "url": "https://www.jobly.fi/tyopaikka/varaosamyyja-west-diesel-engineering-oylle-forssaan-2785410"
+          "url": "https://www.jobly.fi/tyopaikka/varaosamyyja-west-diesel-engineering-oylle-forssaan-2785410",
+          "titleEn": "Spare Parts Salesperson for West Diesel Engineering, Forssa",
+          "quoteEn": "Receive deliveries, keep the warehouse in order, and type every order into the ERP."
         },
         {
           "title": "Ostaja Bucher Hydraulics Oy:lle",
           "quote": "Työtehtäviisi kuuluvat ostotilausten tekeminen ERP-järjestelmässä, tilausvahvistusten käsittely, toimitusaikojen seuranta sekä mahdollisten poikkeamien selvittäminen.",
-          "url": "https://www.jobly.fi/tyopaikka/ostaja-bucher-hydraulics-oylle-2783369"
+          "url": "https://www.jobly.fi/tyopaikka/ostaja-bucher-hydraulics-oylle-2783369",
+          "titleEn": "Buyer for Bucher Hydraulics",
+          "quoteEn": "Työtehtäviisi kuuluvat ostotilausten tekeminen ERP-järjestelmässä, tilausvahvistusten käsittely, toimitusaikojen seuranta sekä mahdollisten poikkeamien selvittäminen."
         },
         {
           "title": "Tilinpäätöstaitoinen kirjanpitäjä, Nättinummen Isännöinti Oy, Turku",
           "quote": "Työtehtäviisi kuuluvat kuukausikirjanpito, pankkiaineistojen käsittely, tilinpäätösten laatiminen, arvonlisäveroasiat sekä laskutukseen liittyvät tehtävät.",
-          "url": "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-kirjanpitaja-nattinummen-isannointi-oy-turku-2785407"
+          "url": "https://www.jobly.fi/tyopaikka/tilinpaatostaitoinen-kirjanpitaja-nattinummen-isannointi-oy-turku-2785407",
+          "titleEn": "Tilinpäätöstaitoinen kirjanpitäjä, Nättinummen Isännöinti Oy, Turku",
+          "quoteEn": "Työtehtäviisi kuuluvat kuukausikirjanpito, pankkiaineistojen käsittely, tilinpäätösten laatiminen, arvonlisäveroasiat sekä laskutukseen liittyvät tehtävät."
         }
       ],
       "source": "Open job ads on Jobly.fi",
@@ -4373,7 +5080,8 @@
       "adoptNote": "Flag mismatches in the buyer's existing inbox rather than in a new tool.",
       "serviceArea": "Quotes and order intake"
     },
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": "They hire truck drivers, buyers and spare-parts sellers, for other companies."
   },
   {
     "id": "wartsila",
@@ -4407,6 +5115,13 @@
       "People Analytics Partner",
       "Senior Advisor"
     ],
+    "titlesEn": [
+      "Category Manager",
+      "Global Travel Manager",
+      "Maintenance processes and tools Expert",
+      "People Analytics Partner",
+      "Senior Advisor"
+    ],
     "jobAds": {
       "checked": 5,
       "manual": 0,
@@ -4415,7 +5130,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": "wartsila"
+    "gameCompanyId": "wartsila",
+    "funHint": null
   },
   {
     "id": "yit-housing-oy",
@@ -4436,6 +5152,9 @@
     "titles": [
       "Työturvallisuusinsinööri rakennusalalle Itä- & Pohjois-Suomeen, YIT Asuminen"
     ],
+    "titlesEn": [
+      "Työturvallisuusinsinööri rakennusalalle Itä- & Pohjois-Suomeen, YIT Asuminen"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4444,7 +5163,8 @@
       "fetchedAt": "2026-10-23"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   },
   {
     "id": "yit-oyj",
@@ -4463,6 +5183,9 @@
     "titles": [
       "Hankintainsinööri Turkuun"
     ],
+    "titlesEn": [
+      "Hankintainsinööri Turkuun"
+    ],
     "jobAds": {
       "checked": 1,
       "manual": 0,
@@ -4471,6 +5194,7 @@
       "fetchedAt": "2026-10-13"
     },
     "velhoCase": null,
-    "gameCompanyId": null
+    "gameCompanyId": null,
+    "funHint": null
   }
 ]

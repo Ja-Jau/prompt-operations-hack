@@ -70,10 +70,11 @@ So we built two things on one dataset:
 
 ## How to play
 
-1. Read the clue: a verbatim quote from a real, open job ad, with the company name blanked.
-2. Pick the company from **nine cards**. You have **six picks**.
+1. Read the clue: a quote from a real, open job ad, with the company name taken out.
+2. Pick the company from **nine cards**. You have **five picks**.
 3. Each wrong pick tells you something (for example "Answer also hires in Tampere") and
-   unlocks the next clue: the hiring map, a second quote, the job functions, an analyst note.
+   unlocks the next clue: the jobs they're hiring for, the cities, and finally the first letter
+   of the name. Quotes and job titles are translated into English.
 4. Stuck? Use the **Velho hint** once per case for a free clue.
 5. The reveal shows the company, how many of its open ads describe work software could take
    over, and what Velho would do about it. Share your result, or play another case.
@@ -83,7 +84,7 @@ text gives nothing away:
 
 ```
 Who's hiring? Case No. 12
-Solved in 3/6
+Solved in 3/5
 ○ ● ✓
 https://…
 ```

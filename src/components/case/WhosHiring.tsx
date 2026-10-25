@@ -195,8 +195,14 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   const options = caseOptions(target, companies, ranks);
   const picked = new Map(feedback.map((f) => [f.company.id, f]));
   // One clue per wrong pick, plus one free clue from the analyst lifeline.
-  const revealed = Math.min(feedback.length + 1 + (saved.tipUsed ? 1 : 0), clues.length);
   const picksLeft = MAX_GUESSES - feedback.length;
+  // The name clue is last and is held back until the final pick; the Velho hint can't unlock it.
+  // One clue at the start and one per wrong pick (a right pick ends the case, it opens nothing).
+  const wrongPicks = feedback.filter((f) => !f.correct).length;
+  const nameIndex = clues.findIndex((c) => c.kind === "name");
+  const earlyClues = nameIndex === -1 ? clues.length : nameIndex;
+  const unlocked = Math.min(wrongPicks + 1 + (saved.tipUsed ? 1 : 0), earlyClues);
+  const revealed = nameIndex !== -1 && wrongPicks >= MAX_GUESSES - 1 ? clues.length : unlocked;
   const askAnalyst = () => {
     update({ tipUsed: true });
     setMenuOpen(false);
@@ -212,7 +218,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
 
         <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
-        {!saved.tipUsed && revealed < clues.length && (
+        {!saved.tipUsed && revealed < earlyClues && (
           <div className="mt-3 flex justify-center">
             <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
               <Icon name="spark" /> Velho hint
