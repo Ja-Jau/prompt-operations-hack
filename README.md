@@ -1,28 +1,59 @@
 # Firmle
 
-**A daily company-guessing game and a marketing dashboard built around real Finnish job ads.**
+**Guess the firm from its job ads. Spot the work a machine should be doing.**
 
 Prompt Operations Hackathon · Velho challenge · Startup Sauna, Espoo · 24–25 October 2026
 
-Velho helps companies reduce repetitive work. Job ads provide concrete clues about that
-work: entering data, maintaining spreadsheets, processing invoices, and moving information
-between systems. Firmle turns those clues into a game people can share. The marketing
-dashboard helps Velho review the same kind of signals and prepare conversations with companies.
+## The problem
 
-## What the project includes
+Cold AI pitches to CEOs get ignored, even though their own job ads show exactly where
+routine work slows them down.
 
-| Feature | What it does |
-|---|---|
-| **Firmle** | Read real job-ad clues and guess the company from nine choices. Five guesses, a daily case, practice cases, hints, and shareable results. |
-| **Higher or lower** | Compare sourced company metrics across five rounds or an endless game. Uses the committed dataset. |
-| **Marketing dashboard** | Browse companies from saved Jobly ads, review evidence, filter opportunities, and compose invitation emails. |
-| **Company responses** | Track interested/declined invitation responses and game-link visits when response storage is available. |
-| **Company briefs** | Printable evidence-based notes for companies in the bundled game dataset. |
-| **Outreach demo** | Review ranked targets and editable email proposals. Sending is simulated. |
+## What we built
 
-The CEO game prototypes remain in the codebase but are not in the public game navigation.
+Firmle is a free daily browser game that turns that public data into marketing for Velho.
 
-## Run locally
+- **Firmle:** Wordle for firms. Guess the Finnish company from its real job ads in five
+  picks. Each wrong pick unlocks a clue: a quote from an ad, the jobs they're hiring for,
+  where they hire, Velho's take, and finally the first letter. The reveal shows how many of
+  the company's open ads describe work software could take over, links to a one-page CEO
+  brief, and asks "Want this analysis for your company?"
+- **Higher or lower:** compare two real companies on revenue, growth, admin costs, time
+  holding stock or repetitive work in job ads. Every figure links to its source, and the
+  end screen invites players to see how their own company ranks.
+- **For Velho:** a marketing dashboard of who is hiring for routine work, the leads the
+  games collect, and an outreach desk that drafts emails from the same evidence. Nothing is
+  sent without approval.
+
+## How it works, and what's AI about it
+
+- **Data:** a pipeline collects job ads from Jobly and audited annual reports (ESEF
+  filings). Missing figures are left out, never invented.
+- **Supabase:** the marketing dashboard runs on a Supabase Postgres database. A GitHub
+  Actions worker fetches fresh Jobly ads every hour, flags phrases that describe routine
+  work and saves them to Supabase, so the dashboard stays current without a redeploy.
+- **AI:** an LLM reads the job ads, picks the quotes that show routine work, translates them
+  to English and writes Velho's take on each company. Every quote is checked word for word
+  against the original ad, and a person reviews it before it ships. All of this runs ahead
+  of time, so the live game is fast and never shows an unchecked claim.
+- **Funnel:** play daily, then share your result, see Velho's angle in the reveal and leave
+  your details. Leads go straight to Velho's dashboard.
+
+```mermaid
+flowchart LR
+    A[Jobly ads + annual reports] --> B[Pipeline + LLM, checked by a person]
+    B --> C[Firmle and Higher or lower]
+    A --> D[Hourly worker] --> E[Supabase] --> F[Velho dashboard]
+    C -- leads --> F
+```
+
+## What's next
+
+- Grow from the current cases to a new firm every day.
+- Connect leads to Velho's CRM and send each one a brief for their own company.
+- Let any company look itself up, not just the ones in the game.
+
+## Run it
 
 ```bash
 git clone https://github.com/Ja-Jau/prompt-operations-hack.git
@@ -31,183 +62,53 @@ npm install
 npm run dev
 ```
 
-Open these pages:
-
-| URL | Purpose |
+| URL | What it is |
 |---|---|
 | `http://localhost:3000` | Firmle and Higher or lower |
-| `http://localhost:3000/velho` | Marketing dashboard |
+| `http://localhost:3000/velho` | Marketing dashboard (demo login **admin / admin**) |
 | `http://localhost:3000/velho/responses` | Invitation responses |
-| `http://localhost:3000/outreach` | Outreach demo |
-| `http://localhost:3000/brief/<company-id>` | Brief for a supported company |
+| `http://localhost:3000/outreach` | Outreach desk |
+| `http://localhost:3000/brief/<company-id>` | One-page CEO brief |
 
-Dashboard demo login: **admin / admin**. Sessions last eight hours.
-The public games need no API keys. To connect the dashboard to Supabase, copy
-`.env.example` to `.env.local` and fill in the two server variables below.
-Restart `npm run dev` after changing environment variables.
+The games need no API keys. To connect the dashboard to Supabase, copy `.env.example` to
+`.env.local`, fill in the variables below and restart `npm run dev`.
 
-## How the live dashboard pipeline works
+## Supabase setup
 
-```mermaid
-flowchart LR
-    A[GitHub Actions: hourly] --> B[Python Jobly scraper]
-    B --> C[Phrase matching and evidence extraction]
-    C --> D[Supabase: saved ads]
-    D --> E[Next.js server]
-    E --> F[Marketing dashboard]
-```
-
-1. **Schedule:** the **Refresh dashboard Jobly ads** GitHub Actions workflow runs hourly
-   at minute 17 UTC, or manually through **Actions → Run workflow**. It runs independently
-   of website visitors and does not require a Python process on Vercel.
-2. **Collect:** `pipeline/sync_dashboard_jobs.py` claims a database refresh lock and calls
-   `collect_ads()` in `pipeline/refresh_dashboard_jobs.py`. Each attempt rotates through
-   one of twelve Jobly categories and fetches up to ten ads. The underlying source parser
-   is `velho-game-data/scraper/jobly.py`.
-3. **Flag:** the `TASK` regular expression in `pipeline/refresh_dashboard_jobs.py` looks
-   for explicit English and Finnish phrases describing repetitive tasks. A match saves a
-   verbatim excerpt of up to 25 words. Ads without a match are saved too.
-4. **Store:** the Python worker calls the Supabase function `finish_dashboard_job_refresh`.
-   Ads are inserted or updated in `dashboard_job_ads`, keyed by their Jobly URL.
-   `dashboard_job_refresh` tracks category rotation, refresh status, and the lock.
-   A successful batch and its timestamp are committed together. Failed batches keep the
-   last saved data; overlapping workers are prevented.
-5. **Display:** `/velho` reads the saved sample through the website server. All sampled
-   companies appear, with flagged opportunities first. Companies without matches are
-   labelled **Needs review**. **View analysis** shows evidence and saved source-ad links.
-   **Flagged only**, search, and other filters narrow the company list.
-
-**Fetch job ads** reads the latest Supabase sample and updates the company list, counts,
-and timestamp directly. It clears filters and returns to the first page. It does not
-start a new scrape. If Supabase has not changed since the last fetch, the list can stay
-identical. Data updates do not require a website redeployment.
-
-Ads not refreshed for 30 days remain stored but are excluded from dashboard rankings.
-This is a recent sample, not a complete census or a guarantee that every ad is still open.
-Keyword matching can miss differently worded tasks or flag a phrase without understanding
-its context; every opportunity needs human review. It is **not an AI assessment**.
-
-## Supabase setup and Vercel deployment
-
-1. In Supabase **SQL Editor**, run the complete
+1. In the Supabase **SQL Editor**, run the
    [dashboard migration](supabase/migrations/202610250001_dashboard_job_ads.sql).
-2. Add these values to **GitHub → repository → Settings → Secrets and variables → Actions**:
+2. Add `SUPABASE_URL` and `SUPABASE_SECRET_KEY` to **GitHub → Settings → Secrets and
+   variables → Actions** (for the hourly worker) and to **Vercel → Settings → Environment
+   Variables** (for the website). Keep the key server-side: never prefix it with
+   `NEXT_PUBLIC_` or commit it.
+3. Run **Actions → Refresh dashboard Jobly ads → Run workflow** once, then open `/velho`.
 
-   ```text
-   SUPABASE_URL=https://your-project.supabase.co
-   SUPABASE_SECRET_KEY=sb_secret_your_actual_key
-   ```
-
-3. Import this repository into Vercel as a **Next.js** project with root directory `./`.
-   Add the same two variables to **Vercel → project → Settings → Environment Variables**
-   for the deployment environments you use, then deploy or redeploy.
-4. In GitHub **Actions → Refresh dashboard Jobly ads → Run workflow**, run the first batch.
-   Check the workflow result and the `dashboard_job_ads` table, then open `/velho`.
-
-GitHub secrets configure the background worker; Vercel variables separately configure the
-website. Both need the credentials for the same Supabase project. In Vercel, enter the
-variable name and value separately: the value must contain only the raw key, without
-quotes or `SUPABASE_SECRET_KEY=`. Keep the key server-side; never prefix it with
-`NEXT_PUBLIC_` or commit it to Git.
-
-The database uses Row Level Security and grants no access to browser roles. The website
-server reads it using the secret key after the dashboard login check. Anyone with the
-shared demo login can view the dashboard; this is not individual-account authentication.
-
-See the [detailed Supabase and worker guide](supabase/README.md) for setup, manual worker
-execution, scheduling limits, and troubleshooting.
-
-## Email drafts and responses
-
-**Draft email** immediately composes an editable invitation from the company and its evidence.
-**Copy email** copies HTML and plain text; **Download HTML** exports the formatted draft.
-No email transport is configured. **Send demo** records an event only and sends nothing.
-
-When invitation storage is available, draft links lead to `/respond/<token>`. Contact and
-no-thanks choices are saved via POST; game visits are recorded separately. Repeated clicks
-do not create duplicate invitations, and recipients can change their preference. The
-Responses dashboard polls every five seconds while visible and shows interested and
-declined responses; unanswered invitations contribute to the response-rate denominator.
-
-**Responses and invitations are not stored in Supabase.** They use Upstash Redis when
-`KV_REST_API_URL` and `KV_REST_API_TOKEN` (or the equivalent
-`UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`) are configured. Otherwise they use
-`.data/invitations.json` for local demos. Leads similarly use Redis or `.data/leads.json`.
-Local files are not reliable persistent storage on Vercel.
-
-If response storage fails, composing and exporting the email still works. The contact
-button opens Velho directly, the unsupported no-thanks link is omitted, and demo-send
-tracking is disabled. Supabase job-ad storage and response storage are separate.
-
-## Game datasets and AI
-
-Firmle uses curated job-ad evidence in `src/data/hiring.json`. The import pipeline checks
-quotes against source descriptions before publishing the game dataset. Higher or lower
-uses `src/data/game_companies.json` and `src/data/efficiency.json` for sourced metrics.
-These bundled datasets are separate from the live Supabase dashboard sample.
-
-The former **Refresh company data** workflow has been removed. Higher or lower has no
-scheduled refresh; its dataset changes only when refreshed files are committed and deployed.
-
-```bash
-pip install -r pipeline/requirements.txt
-python pipeline/import_jobs.py       # Verify quotes and rebuild Firmle data
-python pipeline/build_cases.py       # Optional AI-assisted case writing
-npm run data:refresh                 # Refresh company discovery and efficiency data
-```
-
-The optional Claude-powered scripts prepare case explanations offline. The hourly Jobly
-worker and live games do not require an AI API key. See
-[pipeline/EFFICIENCY.md](pipeline/EFFICIENCY.md) for metric definitions and coverage.
+The database uses Row Level Security and grants nothing to browser roles; only the website
+server reads it, after the dashboard login. See the [Supabase guide](supabase/README.md)
+for details and troubleshooting.
 
 ## Environment variables
 
 | Variable | Purpose |
 |---|---|
-| `SUPABASE_URL` | Project URL for saved dashboard ads; configure in the web app and GitHub Actions. |
-| `SUPABASE_SECRET_KEY` | Raw server secret for dashboard reads and worker writes; configure in both places. |
-| `DASHBOARD_SESSION_SECRET` | Deployment-specific signing key for dashboard sessions. |
-| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Optional Upstash storage for invitations, responses, and leads. The `UPSTASH_REDIS_REST_*` aliases are also supported. |
-| `NEXT_PUBLIC_VELHO_URL` | Destination for the app's Velho links; defaults to `https://velho.io/`. |
-| `NEXT_PUBLIC_LOGO_DEV_TOKEN` | Optional logo.dev token for company logos. |
-| `ANTHROPIC_API_KEY` | Optional offline AI case-writing pipeline. |
-
-Without Supabase configuration, the dashboard can display bundled demo data and existing
-local samples. **Fetch job ads** asks for configuration rather than starting a local scraper.
+| `SUPABASE_URL`, `SUPABASE_SECRET_KEY` | Dashboard database, for the website and the GitHub Actions worker |
+| `DASHBOARD_SESSION_SECRET` | Signing key for dashboard sessions |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Optional Upstash Redis for leads and responses (falls back to `.data/` locally) |
+| `NEXT_PUBLIC_VELHO_URL` | Where Velho links point; defaults to `https://velho.io/` |
+| `NEXT_PUBLIC_LOGO_DEV_TOKEN` | Optional company logos |
+| `ANTHROPIC_API_KEY` | Optional, for the offline AI case-writing pipeline |
 
 ## Code map
 
-| Location | Responsibility |
+| Location | What's there |
 |---|---|
-| `src/components/case/` | Firmle game, clues, and reveal |
+| `src/components/case/` | Firmle |
 | `src/components/game/` | Higher or lower |
-| `src/components/dashboard/` | Marketing dashboard, drafts, and responses |
-| `src/lib/dashboard/job-ads.ts` | Read Supabase samples and group ads by company |
-| `src/lib/dashboard/prospects.ts` | Include all companies, rank opportunities, and label unflagged samples |
-| `src/lib/outreach/` | Scoring, contact suggestions, email templates, and invitation storage |
-| `pipeline/sync_dashboard_jobs.py` | Scheduled worker and Supabase writes |
-| `pipeline/refresh_dashboard_jobs.py` | Category rotation, bounded fetching, and task patterns |
-| `velho-game-data/scraper/` | Jobly parsing, HTTP fetching, caching, and robots access checks |
-| `.github/workflows/refresh-dashboard-jobs.yml` | Hourly worker schedule |
-| `supabase/migrations/` | Database schema and refresh functions |
-| `src/data/` | Committed game datasets |
+| `src/components/dashboard/` | Marketing dashboard, drafts and responses |
+| `src/lib/outreach/` | Scoring, email drafts and invitations |
+| `pipeline/` | Job-ad import, quote checking, AI case writing, financial metrics, Supabase worker |
+| `supabase/migrations/` | Dashboard database schema |
+| `src/data/` | Game datasets |
 
-## Validation and current limits
-
-```bash
-npm run lint
-npm run build
-npm run test:game
-.venv/bin/python tests/dashboard-jobs.test.py
-.venv/bin/python tests/dashboard-sync.test.py
-```
-
-Python checks require the scraper dependencies in `velho-game-data/requirements.txt`.
-The stack is Next.js 16, React 19, TypeScript, Tailwind CSS v4, Python, GitHub Actions,
-and Supabase Postgres.
-
-This is a prototype. Contact inboxes can be derived suggestions and require verification.
-Emails and proposals need human review. Newly discovered dashboard companies may not have
-printable briefs because briefs currently use the bundled game dataset. Demo credentials
-are shared, response persistence needs Redis on a hosted deployment, and keyword flags
-are a shortlist rather than a company-level judgment.
+Built with Next.js 16, React 19, TypeScript, Tailwind CSS v4, Python, GitHub Actions and
+Supabase.
