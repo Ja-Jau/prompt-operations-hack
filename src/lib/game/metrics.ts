@@ -28,8 +28,8 @@ export const METRICS: Record<MetricId, Metric> = {
   growthGap: {
     id: "growthGap",
     title: "Growth vs headcount",
-    label: "revenue growth minus employee growth",
-    question: "Does revenue growth outpace employee growth by more or fewer percentage points than at",
+    label: "revenue growth − employee growth",
+    question: "Higher or lower growth gap than",
     explanation: "Year-on-year revenue growth minus employee growth. A positive gap means sales grew faster than headcount.",
     opportunity: "Velho helps teams handle growth without adding the same amount of routine work.",
     value: valueFor("growthGap"),
@@ -41,8 +41,8 @@ export const METRICS: Record<MetricId, Metric> = {
   manualAds: {
     id: "manualAds",
     title: "Repetitive tasks in job ads",
-    label: "of sampled ads mention repetitive tasks",
-    question: "Do a higher or lower share of sampled ads mention repetitive tasks than at",
+    label: "sampled ads mentioning repetitive tasks",
+    question: "Higher or lower share than",
     explanation: "Every sampled ad is checked against the same explicit-task rules. Software names alone do not count.",
     opportunity: "Velho starts with the task: less copying, reconciling and updating by hand.",
     value: valueFor("manualAds"),
@@ -54,8 +54,8 @@ export const METRICS: Record<MetricId, Metric> = {
   adminRatio: {
     id: "adminRatio",
     title: "Administrative expenses",
-    label: "of revenue spent on administration",
-    question: "Does administration account for a higher or lower share of revenue than at",
+    label: "revenue spent on administration",
+    question: "Higher or lower admin share than",
     explanation: "Separately reported administrative expenses divided by revenue. Combined selling and administrative costs are excluded.",
     opportunity: "Velho looks for repeatable admin steps that teams can simplify or automate.",
     value: valueFor("adminRatio"),
@@ -67,8 +67,8 @@ export const METRICS: Record<MetricId, Metric> = {
   inventoryDays: {
     id: "inventoryDays",
     title: "Time holding stock",
-    label: "estimated inventory days",
-    question: "Does this company hold stock for more or fewer days than",
+    label: "estimated time holding stock",
+    question: "More or fewer inventory days than",
     explanation: "Average opening and closing inventory divided by annual cost of sales, multiplied by days in the year.",
     opportunity: "Velho connects purchasing, stock data and planning so people can act sooner.",
     value: valueFor("inventoryDays"),

@@ -1,31 +1,25 @@
 import type { ReactNode } from "react";
 import { Icon } from "@/components/ui/Icon";
 
-/** The room stays in place while the projected slides and presenter captions change. */
-export function BoardroomScene({ children, confidence, stage }: {
+/** A focused, site-themed workspace for the CEO decision cards. */
+export function BoardroomScene({ children, stage }: {
   children: ReactNode;
-  confidence: number;
   stage: "intro" | "playing" | "results";
 }) {
   return (
-    <main className="boardroom-scene" data-stage={stage} aria-label="First-person view from the CEO’s seat in a boardroom">
-      {/* eslint-disable-next-line @next/next/no-img-element -- decorative game environment */}
-      <img src="/images/ceo/boardroom.webp" alt="" aria-hidden="true" className="boardroom-environment" fetchPriority="high" />
-      <div className="boardroom-vignette" aria-hidden="true" />
-      <div className="boardroom-projector-beam" aria-hidden="true" />
-      <div className="boardroom-pressure" aria-hidden="true" />
-      {stage !== "intro" && <aside className="boardroom-confidence" data-low={confidence < 35} aria-label={`Board confidence: ${confidence} percent`}>
-        <div><Icon name="target" /><span>Board confidence</span><strong>{confidence}%</strong></div>
-        <div className="boardroom-confidence-track"><span style={{ width: `${confidence}%` }} /></div>
-      </aside>}
-      {children}
+    <main className="boardroom-scene" data-stage={stage} aria-label="CEO decision game">
+      <header className="ceo-stage-header">
+        <span className="ceo-stage-label">{stage === "intro" ? "The leadership challenge" : stage === "results" ? "Your results" : "POV: You are the CEO"}</span>
+
+      </header>
+      <div className="boardroom-stage">{children}</div>
     </main>
   );
 }
 
 export function ProjectorScreen({ children, label, progress = 0, className = "" }: { children: ReactNode; label: string; progress?: number; className?: string }) {
   return (
-    <section className={`boardroom-projector ${className}`} aria-label="Projected presentation">
+    <section className={`boardroom-projector ${className}`} aria-label="CEO decision card">
       <div className="boardroom-projector-rail">
         <span className="boardroom-projector-brand"><Icon name="spark" /> Velho</span>
         <span className="boardroom-slide-label">{label}</span>

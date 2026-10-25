@@ -235,7 +235,6 @@ export function Game({ companies, onGameChange }: Props) {
         <div className="higher-lower-category pointer-events-none absolute inset-x-0 top-0 z-20 bg-transparent px-4 py-3 text-center text-ivory [text-shadow:0_2px_12px_rgb(0_0_0/0.7)] sm:py-4">
           <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-on-dark sm:text-xs">Round {index + 1}{mode === "five" ? `/${rounds.length}` : " · Endless"}</p>
           <h1 className="mt-1 text-[clamp(20px,3vw,34px)] font-semibold leading-tight tracking-tight text-sky">{metric.title}</h1>
-          <p className="mx-auto mt-1 hidden max-w-2xl text-sm text-on-dark sm:block">{metric.explanation}</p>
         </div>
 
         <CompanyPanel company={left} metric={round.metric} revealed />
@@ -296,7 +295,6 @@ export function Game({ companies, onGameChange }: Props) {
           {ui && (
             <div className="animate-rise flex flex-col items-center gap-2">
               <p className="text-[17px] font-semibold">{ui.message}</p>
-              <p className="hidden max-w-sm text-sm text-on-dark sm:block">{metric.opportunity}</p>
               <button onClick={advance} className="btn btn-light btn-sm">
                 {mode === "five" && index + 1 >= rounds.length ? "See result" : "Next"} <Icon name="arrowRight" />
               </button>

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
 import { Icon } from "@/components/ui/Icon";
 import { VELHO_URL } from "@/lib/velho";
-import { boardConfidence, buildCeoRun, CEO_ROUND_MS, CEO_ROUNDS, evaluateDecision, remainingTime, type CeoDecision } from "@/lib/ceo/game";
+import { buildCeoRun, CEO_ROUND_MS, CEO_ROUNDS, evaluateDecision, remainingTime, type CeoDecision } from "@/lib/ceo/game";
 import type { CeoScenario } from "@/lib/ceo/scenarios";
 import { BoardroomScene, ProjectorScreen } from "./BoardroomScene";
 import "./boardroom.css";
@@ -79,7 +79,7 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
   return (
     <div className="ceo-decision" data-urgent={urgent} data-outcome={decision ? decision.correct ? "correct" : "wrong" : "waiting"}>
       <ProjectorScreen label={`${number}/${CEO_ROUNDS} · ${scenario.topic}`} progress={number} className="boardroom-question">
-        <h1 id="ceo-scenario-title" className="ceo-scenario-title">{scenario.title}</h1>
+        <div className="ceo-question-heading"><h1 id="ceo-scenario-title" className="ceo-scenario-title">{scenario.title}</h1><p className="ceo-situation">{scenario.situation}</p></div>
         <div className="ceo-choices" role="group" aria-label="Choose your next move">
           {scenario.choices.map((choice, i) => {
             const right = Boolean(decision && choice.correct);
@@ -96,31 +96,27 @@ function TimedDecision({ scenario, number, onAnswer, onNext, last }: {
             );
           })}
         </div>
-        <div className="ceo-timer" aria-label="Decision timer">
-          <div className="ceo-timer-label">
-            <span>{decision ? "Locked" : urgent ? "Decide now" : "Time left"}</span>
-            <span className="ceo-time-pill"><Icon name="clock" /><span role="timer" aria-live="off">{(remaining / 1000).toFixed(1)}<small> SEC</small></span></span>
-          </div>
-          <div role="progressbar" aria-label="Time remaining" aria-valuemin={0} aria-valuemax={CEO_ROUND_MS / 1000} aria-valuenow={Math.round(remaining / 100) / 10} className="ceo-timer-track">
-            <div className="ceo-timer-fill" style={{ transform: `scaleX(${remaining / CEO_ROUND_MS})` }} />
-          </div>
-          <span className="sr-only" role="status">{urgent ? `${seconds} seconds remaining` : ""}</span>
-        </div>
-      </ProjectorScreen>
-      <aside className="boardroom-briefing" aria-live="polite" aria-atomic="true">
-        <div className="boardroom-speaker"><Icon name="quote" /><span>COO</span><span className="boardroom-speaker-line" /></div>
         {decision ? (
-          <div className="boardroom-response">
+          <div className="ceo-answer-feedback" role="status" aria-live="polite">
             <div>
-              <p className="boardroom-response-title"><Icon name={decision.correct ? "check" : "cross"} />{decision.timedOut ? "Time’s up." : decision.correct ? "Approved." : "Reconsider."}</p>
+              <p className="ceo-feedback-title"><Icon name={decision.correct ? "check" : "cross"} />{decision.timedOut ? "Time’s up." : decision.correct ? "Good call." : "Reconsider."}</p>
               <p>{decision.timedOut ? correct.explanation : selected?.explanation}</p>
             </div>
             <button ref={nextButton} onClick={onNext} className="boardroom-next">{last ? "Results" : "Next"}<Icon name="arrowRight" /></button>
           </div>
         ) : (
-          <div className="boardroom-response"><p>{scenario.situation}</p></div>
+          <div className="ceo-timer" aria-label="Decision timer">
+            <div className="ceo-timer-label">
+              <span>{urgent ? "Decide now" : "Time left"}</span>
+              <span className="ceo-time-pill"><Icon name="clock" /><span role="timer" aria-live="off">{(remaining / 1000).toFixed(1)}<small> SEC</small></span></span>
+            </div>
+            <div role="progressbar" aria-label="Time remaining" aria-valuemin={0} aria-valuemax={CEO_ROUND_MS / 1000} aria-valuenow={Math.round(remaining / 100) / 10} className="ceo-timer-track">
+              <div className="ceo-timer-fill" style={{ transform: `scaleX(${remaining / CEO_ROUND_MS})` }} />
+            </div>
+            <span className="sr-only" role="status">{urgent ? `${seconds} seconds remaining` : ""}</span>
+          </div>
         )}
-      </aside>
+      </ProjectorScreen>
     </div>
   );
 }
@@ -166,13 +162,13 @@ export function CeoGame({ onGameChange }: Props) {
   return (
     <div className="ceo-game flex min-h-0 flex-1 flex-col overflow-hidden bg-navy text-ivory">
       <TopBar game="ceo" onGameChange={onGameChange} status={stage === "playing" ? `Score ${score}/${CEO_ROUNDS}` : undefined} />
-      <BoardroomScene confidence={boardConfidence(answers)} stage={stage}>
+      <BoardroomScene stage={stage}>
           {stage === "intro" && (
               <ProjectorScreen label="CEO simulation" className="boardroom-opening">
                 <div className="ceo-opening-emblem" aria-hidden="true"><Icon name="target" /></div>
                 <h1 id="ceo-title">POV: You are<br /><span>the CEO.</span></h1>
                 <p className="ceo-opening-copy">5 decisions. {CEO_ROUND_MS / 1000} seconds each.</p>
-                <button onClick={start} className="boardroom-start">Start meeting <Icon name="arrowRight" /></button>
+                <button onClick={start} className="boardroom-start">Start game <Icon name="arrowRight" /></button>
               </ProjectorScreen>
           )}
           {stage === "playing" && rounds[index] && (
