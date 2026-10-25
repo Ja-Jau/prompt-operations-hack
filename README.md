@@ -130,6 +130,26 @@ warning glow in the final ten seconds. The generated backdrop is stored locally 
 | **Invited** | "Want this analysis for your company?" Leaving a name and email on a reveal or a brief creates a lead. Nobody is cold-contacted, because the player asks first. | `LeadForm.tsx`, `/api/leads` |
 | **In the room** | The dashboard ranks companies by how much of their hiring is routine work. Each one gets a printable CEO brief built only from its own public ads, plus a draft opener. Velho decides whether to use it. | `/velho`, `/brief/[id]`, `src/lib/signals.ts` |
 
+## Outreach desk (demo)
+
+`/outreach` is Velho's side of the funnel turned proactive: instead of waiting for players to
+leave a lead, it finds the companies worth inviting to play and drafts the invitation.
+
+| Step | What it does | Where in the code |
+|---|---|---|
+| **1. Find targets** | Scores every hiring company on routine-work ads, share, breadth (cities, functions) and whether Velho's take is ready. Staffing agencies are flagged and de-prioritised because their ads describe clients' work. | `src/lib/outreach/targets.ts` |
+| **2. Compile** | Quotes, locations, functions, the first fix and the brief link, per company. | `src/app/outreach/page.tsx` |
+| **3. Resolve contacts** | Domain from the pipeline when known, otherwise *derived* from the name and labelled as such. Role inboxes only (`info@`, `talous@`, `hr@`…), never a guessed personal address, plus the decision-maker role to look up with a LinkedIn search. Every contact carries a confidence. | `src/lib/outreach/contacts.ts` |
+| **4. Draft & send** | A proposal email that quotes the ad verbatim, links the game and the brief and asks for 30 minutes. Editable in the page. | `src/lib/outreach/email.ts`, `src/components/outreach/` |
+
+**The Send button is a demo and sends nothing.** `POST /api/outreach` validates the drafts, waits
+a moment so the batch visibly drains, and appends rows marked `simulated: true` to
+`.data/outreach-log.json`. There is no SMTP client, mail API or mail library anywhere in the
+project; `npm run test:outreach` fails if one is ever added to the outreach code or
+`package.json`. A production version would hand each draft to a person at Velho for approval.
+
+Like `/velho`, the page is gated by `DASHBOARD_KEY` when that variable is set.
+
 ## Why the content can be trusted
 
 Saying something wrong about a real company in front of its CEO is the one mistake this
@@ -274,7 +294,7 @@ We'd rather say it than have you find it.
 |---|---|---|
 | **Lead storage when hosted** | Leads save locally, but not on Vercel (read-only file system). | Replace the two functions in `src/lib/leads.ts` with a KV store or a Google Sheet. Nothing else changes. |
 | **"Rank your company" only knows the game's companies** | In Higher or lower, any other name gets "isn't in the game yet". The live AI lookup was removed to keep the site free of API keys. | Add companies to the dataset, or bring back a live lookup. |
-| **Higher or lower figures unverified** | Revenue and headcount for its 21 companies are approximate, and none are checked against annual reports. | Check each one against its annual report and set `verified` in `pipeline/data/companies.csv`. |
+| **Public metric coverage** | Higher or lower uses precomputed, sourced observations refreshed by the scheduled pipeline. Companies without disclosed inputs skip the affected category. | Add tested report adapters and additional job sources to expand coverage. |
 | **Data is a snapshot** | 222 ads scraped once from Jobly.fi. Over time cases point to ads that have closed. | Run the scraper and `import_jobs.py` on a schedule, for example a nightly GitHub Action. |
 | **Only 16 cases** | After 16 days the daily case repeats. | More scraping, and more quotes in `curated_signals.json`. `build_cases.py` drafts Velho's take, a person approves it. |
 | **One job board** | Only Jobly.fi is used. Duunitori's API is off-limits by its robots.txt. | Add companies' own careers pages, which most large Finnish companies publish. |

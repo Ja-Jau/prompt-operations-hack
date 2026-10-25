@@ -1974,5 +1974,10 @@
     "ads": [],
     "error": "HTTP Error 403: Forbidden",
     "sampledAt": "2026-10-24T19:21:48.396242+00:00"
+  },
+  "helsingin-kaupunki-2666f0ea": {
+    "ads": [],
+    "error": "HTTP Error 403: Forbidden",
+    "sampledAt": "2026-10-25T04:58:17.593385+00:00"
   }
 }
