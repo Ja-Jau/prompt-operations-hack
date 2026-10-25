@@ -1,8 +1,5 @@
 import "server-only";
-import { execFile } from "node:child_process";
-import { promisify } from "node:util";
-import { existsSync } from "node:fs";
-import { mkdir, open, readFile, rename, stat, unlink, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getHiringCompanies } from "@/lib/data/companies";
 import type { HiringCompany } from "@/types/company";
@@ -10,8 +7,6 @@ import type { HiringCompany } from "@/types/company";
 type Sample = { companyId: string; companyName: string; title: string; quote: string; url: string; location: string; category: string; fetchedAt: string };
 type Snapshot = { ads: Sample[]; updatedAt: string; runs: number; lastError?: string | null };
 const file = path.join(process.cwd(), ".data", "dashboard-job-ads.json");
-const lockFile = `${file}.lock`;
-const exec = promisify(execFile);
 
 export function dashboardUsesSupabase(): boolean {
   return Boolean(process.env.SUPABASE_URL || process.env.SUPABASE_SECRET_KEY);
@@ -74,33 +69,7 @@ export async function getDashboardCompanies(): Promise<{ companies: HiringCompan
 }
 
 export async function refreshDashboardJobs(): Promise<{ checked: number; flagged: number }> {
-  if (dashboardUsesSupabase()) throw new Error("Ads refresh automatically in the background. You can also run Refresh dashboard Jobly ads from GitHub Actions.");
-  await mkdir(path.dirname(file), { recursive: true });
-  // A stale lock can remain if the server was interrupted. Jobs time out after three minutes.
-  try { if (Date.now() - (await stat(lockFile)).mtimeMs > 240_000) await unlink(lockFile); }
-  catch (error) { if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error; }
-  let lock;
-  try { lock = await open(lockFile, "wx"); }
-  catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "EEXIST") throw new Error("A job-ad refresh is already running. Try again shortly.");
-    throw error;
-  }
-  try {
-    const previous = await snapshot();
-    let stdout: string;
-    try {
-      ({ stdout } = await exec(process.env.DASHBOARD_PYTHON ?? (existsSync(path.join(process.cwd(), ".venv/bin/python")) ? path.join(process.cwd(), ".venv/bin/python") : "python3"), [path.join(process.cwd(), "pipeline", "refresh_dashboard_jobs.py"), String(previous.runs)], { timeout: 180_000, maxBuffer: 1024 * 1024 }));
-    } catch (error) {
-      console.error("Dashboard job-ad fetch failed", error instanceof Error ? error.message : "unknown error");
-      throw new Error("Job-ad fetch failed. Check Python and scraper dependencies, source access, and the server log. Existing data was kept.");
-    }
-    const result = JSON.parse(stdout) as { ads: Sample[] };
-    if (!Array.isArray(result.ads) || !result.ads.length) throw new Error("No readable job ads found. Existing data was kept.");
-    const merged = new Map(previous.ads.map((ad) => [ad.url, ad]));
-    for (const ad of result.ads) merged.set(ad.url, ad);
-    const next: Snapshot = { ads: [...merged.values()], updatedAt: new Date().toISOString(), runs: previous.runs + 1 };
-    await writeFile(`${file}.tmp`, JSON.stringify(next, null, 2));
-    await rename(`${file}.tmp`, file);
-    return { checked: result.ads.length, flagged: result.ads.filter((ad) => ad.quote).length };
-  } finally { await lock.close(); await unlink(lockFile); }
+  if (!dashboardUsesSupabase()) throw new Error("Add SUPABASE_URL and SUPABASE_SECRET_KEY to the app environment to load saved job ads.");
+  const state = await snapshot();
+  return { checked: state.ads.length, flagged: state.ads.filter((ad) => ad.quote).length };
 }

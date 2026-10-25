@@ -4,6 +4,9 @@ GitHub Actions runs the Python scraper every hour at minute 17 (UTC), independen
 of the website. Each attempt rotates to one of twelve Jobly categories and reads up
 to ten ads. Successful batches are saved directly to Supabase; `/velho` reads them
 on each page request. Opening the dashboard does not start a scrape.
+The **Fetch job ads** button reads the latest Supabase sample and refreshes the
+dashboard's company list, scores, and update timestamp. It does not wait for or
+start a Jobly scrape; the hourly worker collects new ads independently.
 
 ## One-time setup
 
@@ -50,9 +53,9 @@ Only the server secret can read ads or invoke the refresh functions.
   the scraper does not check every saved ad for closure on every run.
 - Supabase mode uses only saved ad samples for rankings. Until the first successful
   run, the dashboard has no sampled companies. Bundled game data stays unchanged.
-- Without either Supabase variable, local demos retain file storage and the manual
-  **Fetch job ads** button. Partial Supabase configuration raises an error rather
-  than silently writing a local file.
+- Without either Supabase variable, local demos can display bundled data and existing
+  file samples. **Fetch job ads** asks for Supabase configuration. The web app never
+  launches a scraper or writes refreshed ads to a local file.
 - GitHub scheduled jobs can be delayed; they run from the default branch. Public
   repositories' scheduled workflows may be disabled after 60 days without repository
   activity. Check Actions if updates stop. Changing Vercel variables requires redeployment;

@@ -99,8 +99,8 @@ Switch to **Endless** for unlimited random rounds, including after wrong guesses
 **Finish** to see and share your score. Each mode tracks its own best score.
 Sources and tips open in dialogs so the game fits on one page.
 
-A GitHub Actions workflow discovers companies and refreshes a rotating batch every six
-hours. Run `npm run data:refresh` locally for the same routine. The company pool grows
+Run `npm run data:refresh` locally to discover companies and refresh their data.
+Higher or lower uses the committed dataset; it has no scheduled refresh workflow. The company pool grows
 from the public Finnish filing index and Jobly listings rather than a fixed list. See the
 [efficiency data guide](pipeline/EFFICIENCY.md) for definitions, coverage and validation.
 Missing disclosures are excluded from play. `src/data/efficiency.json` supplies these
@@ -343,16 +343,13 @@ without a browser visit or a running web server. Follow the
 [database and secrets setup](supabase/README.md) to create the tables, configure
 Vercel and GitHub, and run the first batch. Ads are updated by URL; failed batches
 keep the previous data. Samples older than 30 days are excluded from rankings.
+The **Fetch job ads** button reloads the latest saved ads from Supabase into the
+dashboard. The hourly background worker collects new ads independently.
 
 **Local mode (without Supabase):**
 
-**Fetch job ads** on `/velho` automatically reads a current Jobly category listing and up to ten ad pages, flags explicit repetitive-task phrases, and saves verbatim evidence. Each successful fetch rotates to the next category. The dashboard reloads its opportunity scores from the saved sample; existing game snapshots remain unchanged. Automatically flagged evidence is a keyword-based shortlist for review, not an AI audit. Companies sampled by the refresh show counts for that saved sample. Unvisited companies retain their existing snapshot.
-
-Run on a Node server with Python 3 and a writable `.data/` directory:
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r velho-game-data/requirements.txt
-```
-
-The app automatically uses `.venv/bin/python`, or `python3` if no virtual environment exists. Set `DASHBOARD_PYTHON` to use another interpreter. The dashboard scraper keeps robots access checks and block detection. Normal requests run consecutively without a fixed delay; failed-request retries still back off. Small batches reduce waiting: crawl rules are cached for 24 hours, listings for two minutes, and ad pages for 15 minutes. Source timestamps are preserved on cache hits. There is no fixed spacing between normal dashboard requests and no additional one-minute app cooldown. Fetches time out after three minutes and cannot overlap. Failed fetches preserve the saved dataset. This local worker is not suitable for a short-lived serverless deployment without moving the scraper to a separate worker; no simulated success is shown when fetching is unavailable.
+The dashboard can display bundled demo data and an existing `.data/dashboard-job-ads.json`
+sample. **Fetch job ads** requires the Supabase variables in `.env.local`; otherwise it
+shows a configuration message. The web app does not launch the Python scraper.
+The independent worker flags explicit repetitive-task phrases and stores short verbatim
+evidence for review. See the [worker setup](supabase/README.md) to run it manually.
