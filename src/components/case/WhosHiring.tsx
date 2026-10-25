@@ -80,8 +80,16 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   useEffect(() => {
     const today = dailyCase(companies);
     setDailyTarget(today);
-    if (today) setDailySaved(load(today.id));
     setHelpOpen(!seenHelp());
+    if (!today) return;
+    const saved = load(today.id);
+    setDailySaved(saved);
+    // Already finished today's case: open a fresh practice case instead of the old result.
+    const finished = saved.gaveUp || saved.guesses.includes(today.id) || saved.guesses.length >= MAX_GUESSES;
+    if (finished) {
+      const others = caseCompanies(companies).filter((c) => c.id !== today.id);
+      if (others.length > 0) setPracticeTarget(others[Math.floor(Math.random() * others.length)]);
+    }
   }, [companies]);
 
   const target = practiceTarget ?? dailyTarget;
@@ -187,8 +195,14 @@ export function WhosHiring({ companies, onGameChange }: Props) {
   const options = caseOptions(target, companies, ranks);
   const picked = new Map(feedback.map((f) => [f.company.id, f]));
   // One clue per wrong pick, plus one free clue from the analyst lifeline.
-  const revealed = Math.min(feedback.length + 1 + (saved.tipUsed ? 1 : 0), clues.length);
   const picksLeft = MAX_GUESSES - feedback.length;
+  // The name clue is last and is held back until the final pick; the Velho hint can't unlock it.
+  // One clue at the start and one per wrong pick (a right pick ends the case, it opens nothing).
+  const wrongPicks = feedback.filter((f) => !f.correct).length;
+  const nameIndex = clues.findIndex((c) => c.kind === "name");
+  const earlyClues = nameIndex === -1 ? clues.length : nameIndex;
+  const unlocked = Math.min(wrongPicks + 1 + (saved.tipUsed ? 1 : 0), earlyClues);
+  const revealed = nameIndex !== -1 && wrongPicks >= MAX_GUESSES - 1 ? clues.length : unlocked;
   const askAnalyst = () => {
     update({ tipUsed: true });
     setMenuOpen(false);
@@ -204,6 +218,13 @@ export function WhosHiring({ companies, onGameChange }: Props) {
         <PageTitle title="Who's hiring?" eyebrow={`${label} · Read the evidence, pick the company`} />
 
         <Evidence key={target.id} clues={clues} revealed={revealed} company={target} />
+        {!saved.tipUsed && revealed < earlyClues && (
+          <div className="mt-3 flex justify-center">
+            <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
+              <Icon name="spark" /> Velho hint
+            </button>
+          </div>
+        )}
 
         <div className="mt-8 flex items-center justify-between gap-3">
           <p className="eyebrow text-sage-d">Which company is hiring for this?</p>
@@ -265,7 +286,7 @@ export function WhosHiring({ companies, onGameChange }: Props) {
             }}
           />
         </div>
-        <div className="mt-6 flex flex-col items-center gap-4">
+        <div className="mt-6 flex justify-center">
           <div className="flex items-center gap-3 text-ink-2" aria-label={`${picksLeft} picks remaining`}>
             <span>Picks remaining:</span>
             <span className="flex gap-2">
@@ -277,11 +298,6 @@ export function WhosHiring({ companies, onGameChange }: Props) {
               ))}
             </span>
           </div>
-          {!saved.tipUsed && revealed < clues.length && (
-            <button onClick={askAnalyst} className="btn btn-line btn-sm rounded-full">
-              <Icon name="spark" /> Velho hint
-            </button>
-          )}
         </div>
       </main>
     </div>

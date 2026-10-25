@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { GameCompany as Company, HiringCompany } from "@/types/company";
 import { WhosHiring } from "@/components/case/WhosHiring";
 import { Game } from "@/components/game/Game";
+import { CeoGame } from "@/components/ceo/CeoGame";
 import type { GameId } from "./TopBar";
 
 type Props = {
@@ -13,9 +14,10 @@ type Props = {
   hiring: HiringCompany[];
 };
 
-/** Switches between the daily case (main game) and Higher/Lower (bonus). */
+/** Switches between the hiring case, Higher/Lower and the timed CEO game. */
 export function AppShell({ companies, hiring }: Props) {
   const [game, setGame] = useState<GameId>("case");
+  if (game === "ceo") return <CeoGame onGameChange={setGame} />;
   return game === "case" ? (
     <WhosHiring companies={hiring} onGameChange={setGame} />
   ) : (

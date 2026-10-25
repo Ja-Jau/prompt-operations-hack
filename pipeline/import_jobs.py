@@ -31,6 +31,10 @@ VELHO_CASES_PATH = ROOT / "pipeline" / "data" / "velho_cases.json"
 COMPANIES_JSON = ROOT / "src" / "data" / "companies.json"
 HIRING_OUT = ROOT / "src" / "data" / "hiring.json"
 JOB_ADS_OUT = ROOT / "pipeline" / "data" / "job_ads.json"
+DOMAINS_PATH = ROOT / "pipeline" / "data" / "company_domains.json"
+TRANSLATIONS_PATH = ROOT / "pipeline" / "data" / "translations.json"
+FUN_HINTS_PATH = ROOT / "pipeline" / "data" / "fun_hints.json"
+LOGO_DIR = ROOT / "public" / "logos"
 
 SOURCE = "Open job ads on Jobly.fi"
 MIN_CASE_QUOTES = 2  # keep in sync with MIN_CASE_QUOTES in src/lib/case/cases.ts
@@ -76,6 +80,11 @@ def main() -> None:
     claude_cases = json.loads(VELHO_CASES_PATH.read_text(encoding="utf-8")) if VELHO_CASES_PATH.exists() else {}
     known = {c["name"].casefold(): c for c in json.loads(COMPANIES_JSON.read_text(encoding="utf-8"))}
     jobs_by_id = {job["id"]: job for job in jobs}
+    domains = json.loads(DOMAINS_PATH.read_text(encoding="utf-8")) if DOMAINS_PATH.exists() else {}
+    # English for the game; the original stays for the verbatim check. Text already in English maps to itself.
+    english = json.loads(TRANSLATIONS_PATH.read_text(encoding="utf-8")) if TRANSLATIONS_PATH.exists() else {}
+    en = lambda text: english.get(text, text)
+    fun_hints = json.loads(FUN_HINTS_PATH.read_text(encoding="utf-8")) if FUN_HINTS_PATH.exists() else {}
 
     by_company: dict[str, list[dict]] = defaultdict(list)
     for job in jobs:
@@ -97,7 +106,8 @@ def main() -> None:
             if not check_verbatim(q["quote"], job["description_raw"]):
                 errors.append(f"{name}: quote not found word for word in job {q['job']}: {q['quote'][:60]}…")
                 continue
-            ads.append({"title": squash(job["job_title"]), "quote": q["quote"], "url": job["url"]})
+            title = squash(job["job_title"])
+            ads.append({"title": title, "quote": q["quote"], "url": job["url"], "titleEn": en(title), "quoteEn": en(q["quote"])})
 
         locations = sorted({loc.strip() for job in company_jobs for loc in (job.get("location") or "").split(",") if loc.strip()})
         functions = sorted({FUNCTIONS_EN.get(job.get("site_category"), job.get("site_category") or "Other") for job in company_jobs})
@@ -110,14 +120,15 @@ def main() -> None:
             {
                 "id": company_id,
                 "name": name,
-                "domain": match["domain"] if match else None,
+                "domain": match["domain"] if match else next(iter(domains.get(company_id, [])), None),
                 "brandColor": match["brandColor"] if match else "#3b5379",
-                "logo": match["logo"] if match else None,
+                "logo": (match and match["logo"]) or (f"/logos/{company_id}.png" if (LOGO_DIR / f"{company_id}.png").exists() else None),
                 "image": match["image"] if match else None,
                 "imageCredit": match["imageCredit"] if match else None,
                 "locations": locations,
                 "functions": functions,
                 "titles": sorted({squash(job["job_title"]) for job in company_jobs}),
+                "titlesEn": [en(t) for t in sorted({squash(job["job_title"]) for job in company_jobs})],
                 "jobAds": {
                     "checked": len(company_jobs),
                     # Ads with at least one quote describing routine work.
@@ -128,6 +139,7 @@ def main() -> None:
                 },
                 "velhoCase": velho_case,
                 "gameCompanyId": match["id"] if match else None,
+                "funHint": fun_hints.get(company_id) if velho_case else None,
             }
         )
 

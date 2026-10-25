@@ -1,0 +1,468 @@
+{
+  "_comment": "Website of each hiring company (src/data/hiring.json id), for its logo. Several candidates are tried in order by fetch_hiring_logos.py.",
+  "abb-robotics-finland-oy": [
+    "abb.com"
+  ],
+  "ai-roots": [
+    "airoots.fi",
+    "airoots.ai",
+    "airoots.com",
+    "www.airoots.fi"
+  ],
+  "aallon-group-oyj": [
+    "aallon.fi"
+  ],
+  "aaltovoima-pohjoinen-oy": [
+    "aaltovoima.fi"
+  ],
+  "akaan-vuokra-asunnot-oy": [
+    "akaanvuokra-asunnot.fi",
+    "akaanvuokraasunnot.fi"
+  ],
+  "aktia": [
+    "aktia.fi"
+  ],
+  "amerplast-oy": [
+    "amerplast.com",
+    "amerplast.fi"
+  ],
+  "ardor-oy": [
+    "ardor.fi"
+  ],
+  "are-oy": [
+    "are.fi"
+  ],
+  "aspia": [
+    "aspia.fi"
+  ],
+  "avila-oy": [
+    "avila.fi"
+  ],
+  "beneq": [
+    "beneq.com"
+  ],
+  "beneq-oy": [
+    "beneq.com"
+  ],
+  "berner-oy": [
+    "berner.fi"
+  ],
+  "biolin-scientific-oy": [
+    "biolinscientific.com"
+  ],
+  "broman-group-oy": [
+    "bromangroup.fi",
+    "broman.fi",
+    "bromangroup.com"
+  ],
+  "compute-nordic-finland-oy": [
+    "computenordic.com",
+    "computenordic.fi",
+    "computenordic.se"
+  ],
+  "csc-tieteen-tietotekniikan-keskus-oy": [
+    "csc.fi"
+  ],
+  "cts-nordics-oy": [
+    "ctsnordics.com",
+    "ctsnordics.fi"
+  ],
+  "career-fi": [
+    "career.fi"
+  ],
+  "casemet-oy": [
+    "casemet.fi",
+    "casemet.com"
+  ],
+  "compass-group-finland-oy": [
+    "compass-group.fi",
+    "compass-group.com"
+  ],
+  "dhl-supply-chain-danfoss": [
+    "dhl.com",
+    "dhl.fi",
+    "www.dhl.com"
+  ],
+  "dna": [
+    "dna.fi",
+    "www.dna.fi"
+  ],
+  "danfoss": [
+    "danfoss.com"
+  ],
+  "danone-finland-oy": [
+    "danone.fi",
+    "danone.com"
+  ],
+  "deloitte": [
+    "deloitte.com"
+  ],
+  "destia-oy": [
+    "destia.fi"
+  ],
+  "dinolla-oy": [
+    "dinolla.fi"
+  ],
+  "dottir": [
+    "dottir.fi",
+    "dottir.com"
+  ],
+  "eaton": [
+    "eaton.com",
+    "www.eaton.com"
+  ],
+  "eltel-networks-oy": [
+    "eltelnetworks.fi",
+    "eltelnetworks.com"
+  ],
+  "energiavirasto": [
+    "energiavirasto.fi",
+    "www.energiavirasto.fi"
+  ],
+  "fvr-suomen-rokotetutkimus": [
+    "rokotetutkimus.fi",
+    "vaccineresearch.fi",
+    "www.rokotetutkimus.fi"
+  ],
+  "finanssiala-ry": [
+    "finanssiala.fi"
+  ],
+  "finferries-suomen-lauttaliikenne": [
+    "finferries.fi"
+  ],
+  "flaktgroup-finland-oy": [
+    "flaktgroup.com"
+  ],
+  "forcit-group": [
+    "forcit.fi",
+    "forcitgroup.com"
+  ],
+  "gasum-oyj": [
+    "gasum.com",
+    "gasum.fi"
+  ],
+  "greenstep-oy": [
+    "greenstep.fi"
+  ],
+  "hus": [
+    "hus.fi"
+  ],
+  "hankkija-oy": [
+    "hankkija.fi"
+  ],
+  "hartela-oy": [
+    "hartela.fi"
+  ],
+  "heimondo-finland-oy": [
+    "heimondo.fi",
+    "heimondo.com"
+  ],
+  "helmihunter-oy": [
+    "helmihunter.fi"
+  ],
+  "helsingin-asumisoikeus-oy": [
+    "haso.fi"
+  ],
+  "helsingin-kaupunki": [
+    "hel.fi"
+  ],
+  "helsingin-yliopisto": [
+    "helsinki.fi",
+    "www.helsinki.fi"
+  ],
+  "helsinki-shipyard": [
+    "helsinkishipyard.fi"
+  ],
+  "henkilostoliiga": [
+    "henkilostoliiga.fi"
+  ],
+  "henkilostovuokraus-yhtio-kipina-oy": [
+    "kipinaoy.fi",
+    "kipina.fi"
+  ],
+  "hitachi-energy": [
+    "hitachienergy.com"
+  ],
+  "huoltovarmuuskeskus": [
+    "huoltovarmuuskeskus.fi"
+  ],
+  "ilmarinen": [
+    "ilmarinen.fi"
+  ],
+  "j-rinta-jouppi-oy": [
+    "rinta-jouppi.com",
+    "rinta-jouppi.fi"
+  ],
+  "jtt-sales-oy": [
+    "jttsales.fi",
+    "jtt.fi"
+  ],
+  "kone": [
+    "kone.com"
+  ],
+  "kpmg": [
+    "kpmg.com"
+  ],
+  "kaiku-hr": [
+    "kaikuhr.fi",
+    "kaikuhr.com"
+  ],
+  "kaskea-group": [
+    "kaskea.fi",
+    "kaskea.com"
+  ],
+  "katrium": [
+    "katrium.fi",
+    "katrium.com"
+  ],
+  "kela": [
+    "kela.fi"
+  ],
+  "kymppivoima-oy": [
+    "kymppivoima.fi"
+  ],
+  "karkkainen-oy": [
+    "karkkainen.com"
+  ],
+  "lapland-hotels": [
+    "laplandhotels.com"
+  ],
+  "lassila-tikanoja-oyj": [
+    "lt.fi"
+  ],
+  "loviisan-kaupunki": [
+    "loviisa.fi"
+  ],
+  "luotea-oyj": [
+    "luotea.fi",
+    "luotea.com",
+    "www.luotea.fi"
+  ],
+  "maahanmuuttovirasto": [
+    "migri.fi"
+  ],
+  "maakuntien-tilakeskus": [
+    "maakuntientilakeskus.fi"
+  ],
+  "mentek-advisors-oy": [
+    "mentek.fi",
+    "mentekadvisors.fi",
+    "mentekadvisors.com"
+  ],
+  "metso": [
+    "metso.com"
+  ],
+  "minjon-oy": [
+    "minjon.fi"
+  ],
+  "mipro-oy": [
+    "mipro.fi"
+  ],
+  "ntg-air-ocean-oy": [
+    "ntg.com",
+    "ntgairocean.fi"
+  ],
+  "neste-oyj": [
+    "neste.com",
+    "neste.fi",
+    "www.neste.com"
+  ],
+  "nextpharma-oy": [
+    "nextpharma.com"
+  ],
+  "nicole-beauty": [
+    "nicolebeauty.fi"
+  ],
+  "nordic-career": [
+    "nordiccareer.fi",
+    "nordiccareer.com",
+    "www.nordiccareer.fi"
+  ],
+  "normet": [
+    "normet.com"
+  ],
+  "nostokonepalvelu-oy": [
+    "nostokonepalvelu.fi"
+  ],
+  "olvi-oyj": [
+    "olvi.fi"
+  ],
+  "oy-scandic-trading-house-ltd": [
+    "scandictradinghouse.fi",
+    "scandictradinghouse.com"
+  ],
+  "palvelualojen-tyonantajat-palta": [
+    "palta.fi",
+    "www.palta.fi"
+  ],
+  "poliisi": [
+    "poliisi.fi"
+  ],
+  "porvoon-kaupunki-borga-stad": [
+    "porvoo.fi"
+  ],
+  "rainmaker": [
+    "rainmaker.fi"
+  ],
+  "red-hat-holdings-ltd": [
+    "redhat.com",
+    "www.redhat.com"
+  ],
+  "ricoh-finland": [
+    "ricoh.fi"
+  ],
+  "riihimaen-kaupunki": [
+    "riihimaki.fi"
+  ],
+  "robit-finland-oy": [
+    "robitgroup.com"
+  ],
+  "robit-finland-oy-ltd": [
+    "robitgroup.com"
+  ],
+  "rovaniemen-koulutuskuntayhtyma": [
+    "redu.fi"
+  ],
+  "rukakeskus-oy": [
+    "ruka.fi"
+  ],
+  "sok": [
+    "sok.fi"
+  ],
+  "sos-international-oy": [
+    "sos.fi",
+    "sos.dk"
+  ],
+  "sandvik": [
+    "sandvik.com"
+  ],
+  "sandvik-mining-and-construction-oy": [
+    "sandvik.com"
+  ],
+  "savon-koulutuskuntayhtyma": [
+    "sakky.fi"
+  ],
+  "sector-alarm": [
+    "sectoralarm.fi"
+  ],
+  "securitas-oy": [
+    "securitas.fi",
+    "securitas.com"
+  ],
+  "select-service-partner-finland": [
+    "foodtravelexperts.com",
+    "ssp.fi"
+  ],
+  "senaatti-kiinteistot": [
+    "senaatti.fi"
+  ],
+  "sihti": [
+    "sihti.fi",
+    "sihti.com",
+    "www.sihti.fi"
+  ],
+  "sipoon-kunta-sibbo-kommun": [
+    "sipoo.fi"
+  ],
+  "sodexo-oy": [
+    "sodexo.fi",
+    "sodexo.com"
+  ],
+  "sonepar-suomi-oy": [
+    "sonepar.fi"
+  ],
+  "specim-spectral-imaging-oy-ltd": [
+    "specim.com",
+    "specim.fi"
+  ],
+  "st1-oy": [
+    "st1.fi"
+  ],
+  "staria-oyj": [
+    "staria.fi"
+  ],
+  "stora-enso-oyj": [
+    "storaenso.com"
+  ],
+  "suomen-rakennuslogistiikka-oy": [
+    "rakennuslogistiikka.fi",
+    "suomenrakennuslogistiikka.fi"
+  ],
+  "tampereen-kaupunki": [
+    "tampere.fi"
+  ],
+  "tampereen-yliopisto": [
+    "tuni.fi"
+  ],
+  "telia-finland-oyj": [
+    "telia.fi"
+  ],
+  "tempu-oy": [
+    "tempu.fi",
+    "tempu.com"
+  ],
+  "terveystalo": [
+    "terveystalo.com"
+  ],
+  "tietoakseli-group": [
+    "tietoakseli.fi"
+  ],
+  "tilitoimisto-taloushotelli-oy": [
+    "taloushotelli.fi"
+  ],
+  "tribedo-oy": [
+    "tribedo.fi",
+    "tribedo.com"
+  ],
+  "twoday-oy": [
+    "twoday.fi",
+    "twoday.com"
+  ],
+  "upm": [
+    "upm.com"
+  ],
+  "uggla-engineering-oy": [
+    "uggla.fi",
+    "ugglaengineering.fi",
+    "uggla.com"
+  ],
+  "vuorenmaa-yhtiot-oy": [
+    "vuorenmaa.fi"
+  ],
+  "vahterus-oy": [
+    "vahterus.com"
+  ],
+  "valmet": [
+    "valmet.com",
+    "www.valmet.com",
+    "valmet.fi"
+  ],
+  "veikkaus": [
+    "veikkaus.fi"
+  ],
+  "verohallinto": [
+    "vero.fi"
+  ],
+  "wasatalent-oy": [
+    "wasatalent.fi"
+  ],
+  "weidmuller": [
+    "weidmueller.com"
+  ],
+  "wihanto-oy": [
+    "wihanto.fi",
+    "wihanto.com"
+  ],
+  "workpower-oy": [
+    "workpower.fi"
+  ],
+  "wartsila": [
+    "wartsila.com"
+  ],
+  "yit-housing-oy": [
+    "yit.fi"
+  ],
+  "yit-oyj": [
+    "yit.fi"
+  ]
+}

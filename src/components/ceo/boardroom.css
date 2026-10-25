@@ -1,0 +1,250 @@
+/* The live presentation is aligned with the screen in the boardroom artwork. */
+.boardroom-scene {
+  --projector-ink: var(--color-ivory);
+  --projector-accent: var(--color-sky);
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-navy);
+}
+.boardroom-environment { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; user-select: none; }
+.boardroom-vignette, .boardroom-pressure, .boardroom-projector-beam { position: absolute; inset: 0; pointer-events: none; }
+.boardroom-vignette { background: radial-gradient(ellipse at 50% 25%, transparent 32%, rgb(2 8 13 / 0.15) 65%, rgb(2 8 13 / 0.66)); }
+.boardroom-pressure { z-index: 6; box-shadow: inset 0 0 140px transparent; transition: box-shadow 1s; }
+.boardroom-scene:has([data-urgent="true"]) .boardroom-pressure { box-shadow: inset 0 0 140px rgb(159 48 30 / 0.42); }
+.boardroom-projector-beam {
+  z-index: 1;
+  inset: 0 18% 42%;
+  background: linear-gradient(180deg, rgb(224 236 241 / 0.1), transparent);
+  clip-path: polygon(48% 0, 52% 0, 98% 100%, 2% 100%);
+  animation: projector-hum 8s ease-in-out infinite;
+}
+.boardroom-confidence { position: absolute; right: 22px; top: 18px; z-index: 7; width: 190px; padding: 12px 14px; border: 1px solid rgb(122 163 214 / 0.25); border-radius: 12px; background: rgb(8 19 25 / 0.76); backdrop-filter: blur(16px); box-shadow: 0 8px 24px rgb(0 0 0 / 0.15); }
+.boardroom-confidence > div:first-child { display: flex; align-items: center; gap: 7px; font: 9px var(--font-mono); color: var(--color-on-dark); }
+.boardroom-confidence svg { width: 13px; height: 13px; color: var(--color-sky); }
+.boardroom-confidence strong { margin-left: auto; font-size: 12px; font-weight: 500; color: #fffaf1; }
+.boardroom-confidence-track { height: 4px; margin-top: 10px; background: rgb(255 255 255 / 0.1); border-radius: 10px; overflow: hidden; }
+.boardroom-confidence-track > span { display: block; height: 100%; border-radius: inherit; background: var(--color-sky); transition: width 0.7s ease, background 0.7s; }
+.boardroom-confidence[data-low="true"] .boardroom-confidence-track > span { background: #d9a78c; }
+.boardroom-projector {
+  position: absolute;
+  z-index: 3;
+  top: 5.2%;
+  left: 25.95%;
+  width: 48.35%;
+  height: 45.5%;
+  min-height: 340px;
+  max-height: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--projector-ink);
+  background: radial-gradient(ellipse at 50% 0%, #183354, var(--color-navy));
+  border: 3px solid #294665;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #0b1113, 0 0 40px rgb(232 238 226 / 0.13), 0 18px 28px rgb(0 0 0 / 0.4);
+}
+.boardroom-projector::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(0deg, transparent 0 3px, rgb(25 49 58 / 0.012) 3px 4px); }
+.boardroom-projector-rail { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-shrink: 0; padding: 11px 18px; border-bottom: 1px solid rgb(122 163 214 / 0.2); background: rgb(10 27 52 / 0.45); font: 9px var(--font-mono); color: var(--color-on-dark-2); }
+.boardroom-projector-brand { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 12px; font-weight: 650; letter-spacing: -0.03em; color: var(--color-sky); }
+.boardroom-projector-brand svg { width: 13px; height: 13px; }
+.boardroom-slide-label { margin-left: auto; }
+.boardroom-slide-progress { display: flex; gap: 4px; }
+.boardroom-slide-progress > i { width: 5px; height: 5px; border-radius: 50%; background: #3b5379; }
+.boardroom-slide-progress > .is-complete { background: var(--color-sky); }
+.boardroom-projector-content { flex: 1; min-height: 0; overflow: hidden; padding: clamp(12px, 1.4vw, 22px); animation: slide-arrives 280ms ease-out both; }
+.ceo-scenario-title { max-width: 25ch; font-size: clamp(23px, 2.1vw, 34px); line-height: 1.13; letter-spacing: -0.035em; text-wrap: balance; }
+.ceo-choices { display: grid; gap: 8px; margin-top: 18px; }
+.ceo-choice { position: relative; display: flex; align-items: center; gap: 11px; width: 100%; padding: 10px 12px; border: 1px solid #3b5379; border-radius: 8px; background: rgb(122 163 214 / 0.09); box-shadow: 0 2px 3px rgb(23 49 58 / 0.03); text-align: left; font-size: clamp(13px, 0.98vw, 15px); font-weight: 500; line-height: 1.35; cursor: pointer; transition: background 150ms, border-color 150ms, box-shadow 150ms, transform 150ms; }
+.ceo-choice > span:nth-child(2) { flex: 1; }
+.ceo-choice:hover:not(:disabled), .ceo-choice:focus-visible { border-color: var(--color-sky); background: #213d60; box-shadow: 0 4px 12px rgb(44 74 66 / 0.09); transform: translateY(-1px); }
+.ceo-choice:focus-visible { outline: 2px solid var(--color-sky); outline-offset: 3px; }
+.ceo-choice:active:not(:disabled) { transform: translateY(0); }
+.ceo-choice:disabled { cursor: default; }
+.ceo-choice-number { display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 27px; height: 27px; border: 1px solid #3b5379; border-radius: 6px; background: #213d60; color: var(--color-on-dark-2); font: 10px var(--font-mono); transition: background 150ms; }
+.ceo-choice-number svg { width: 14px; height: 14px; }
+.ceo-choice-arrow { width: 15px; height: 15px; flex-shrink: 0; color: var(--color-sky); opacity: 0; transform: translateX(-4px); transition: opacity 150ms, transform 150ms; }
+.ceo-choice:is(:hover, :focus-visible):not(:disabled) .ceo-choice-arrow { opacity: 1; transform: none; }
+.ceo-choice-correct { border-color: var(--color-sky); background: #25476c; box-shadow: inset 3px 0 var(--color-sky); }
+.ceo-choice-correct .ceo-choice-number { color: white; background: #476f9f; border-color: #476f9f; }
+.ceo-choice-wrong { border-color: #c79c85; background: #f4e5dd; box-shadow: inset 3px 0 #b87c60; }
+.ceo-choice-wrong .ceo-choice-number { color: white; background: #a97056; border-color: #a97056; }
+[data-outcome="correct"] .ceo-choice:not(.ceo-choice-correct), [data-outcome="wrong"] .ceo-choice:not(.ceo-choice-correct):not(.ceo-choice-wrong) { opacity: 0.6; }
+.ceo-timer { margin-top: 16px; }
+.ceo-timer-label { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 7px; font: 9px var(--font-mono); color: var(--color-on-dark-2); }
+.ceo-time-pill { display: inline-flex; align-items: center; gap: 5px; color: var(--color-sky); }
+.ceo-time-pill > svg { width: 13px; height: 13px; }
+.ceo-timer-label [role="timer"] { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.ceo-timer-label small { font-size: 8px; font-weight: 400; }
+.ceo-timer-track { height: 5px; background: #294665; border-radius: 10px; overflow: hidden; }
+.ceo-timer-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, #527db3, var(--color-sky)); transform-origin: left; transition: transform 75ms linear, background 500ms; }
+[data-urgent="true"] .ceo-timer-fill { background: linear-gradient(90deg, #b0603f, #d4a171); }
+[data-urgent="true"] .ceo-timer-label, [data-urgent="true"] .ceo-time-pill { color: #a15b3f; }
+.boardroom-briefing { position: absolute; z-index: 8; bottom: 18%; left: 25.95%; width: 48.35%; padding: 14px 18px; color: var(--color-on-dark); border: 1px solid rgb(122 163 214 / 0.25); border-radius: 12px; background: linear-gradient(120deg, rgb(11 22 27 / 0.91), rgb(15 26 30 / 0.86)); box-shadow: 0 12px 32px rgb(0 0 0 / 0.28); backdrop-filter: blur(18px); transition: border-color 250ms; }
+.boardroom-speaker { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; font: 9px var(--font-mono); color: var(--color-sky); }
+.boardroom-speaker > svg { width: 12px; height: 12px; }
+.boardroom-speaker-line { flex: 1; height: 1px; margin-left: 3px; background: linear-gradient(90deg, rgb(122 163 214 / 0.25), transparent); }
+.boardroom-response { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.boardroom-response > div { flex: 1; }
+.boardroom-briefing p { font-size: clamp(12px, 0.95vw, 14px); line-height: 1.5; }
+.boardroom-response-title { display: flex; align-items: center; gap: 5px; margin-bottom: 3px; font-weight: 600; color: var(--color-ivory); }
+.boardroom-response-title > svg { width: 13px; height: 13px; }
+[data-outcome="correct"] .boardroom-response-title { color: #b5d2f6; }
+[data-outcome="wrong"] .boardroom-response-title { color: #edc1a6; }
+[data-outcome="correct"] .boardroom-briefing { border-color: rgb(122 163 214 / 0.5); }
+.boardroom-next, .boardroom-start { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; gap: 12px; padding: 12px 16px; border: 1px solid transparent; border-radius: 7px; background: var(--color-sky); color: var(--color-navy); font-size: 12px; font-weight: 600; line-height: 1.2; cursor: pointer; box-shadow: 0 3px 10px rgb(0 0 0 / 0.08); transition: background 150ms, transform 150ms, box-shadow 150ms; }
+.boardroom-next:hover { background: var(--color-ivory); transform: translateY(-1px); box-shadow: 0 5px 14px rgb(0 0 0 / 0.15); }
+.boardroom-next:focus-visible, .boardroom-start:focus-visible { outline: 2px solid var(--color-sky); outline-offset: 4px; }
+.boardroom-start { padding: 13px 18px; background: var(--color-sky); color: var(--color-navy); font-size: 13px; }
+.boardroom-start:hover { background: var(--color-ivory); transform: translateY(-1px); box-shadow: 0 5px 16px rgb(41 79 66 / 0.2); }
+.boardroom-start svg, .boardroom-next svg { transition: transform 150ms; }
+.boardroom-start:hover svg, .boardroom-next:hover svg { transform: translateX(2px); }
+.boardroom-opening .boardroom-projector-content { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(ellipse at 50% 35%, rgb(122 163 214 / 0.14), transparent 70%); }
+.ceo-opening-emblem { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; margin-bottom: 14px; border: 1px solid #3b5379; border-radius: 12px; background: #213d60; color: var(--color-sky); }
+.ceo-opening-emblem > svg { width: 20px; height: 20px; }
+.boardroom-opening h1 { font-size: clamp(36px, 4vw, 60px); line-height: 1.02; letter-spacing: -0.055em; }
+.boardroom-opening h1 > span { color: var(--color-sky); }
+.ceo-opening-copy { margin-top: 14px; font-size: 12px; color: var(--color-on-dark-2); }
+.boardroom-opening .boardroom-start { margin-top: 20px; }
+/* Two clear priorities: your score, then the next step with Velho. */
+.boardroom-debrief .boardroom-projector-content { display: grid; grid-template-columns: 0.85fr 1.15fr; padding: 0; }
+.ceo-result-summary { min-width: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 13px; padding: clamp(16px, 2vw, 28px); }
+.ceo-result-summary h1 { font-size: clamp(19px, 1.8vw, 27px); line-height: 1.12; letter-spacing: -0.03em; }
+.ceo-final-score { flex-shrink: 0; line-height: 1; }
+.ceo-final-score > strong { font-size: clamp(46px, 5vw, 74px); letter-spacing: -0.07em; }
+.ceo-final-score > span { margin-left: 3px; font-size: 24px; color: var(--color-sky); }
+.ceo-final-score > small { display: block; margin-top: 6px; font: 8px var(--font-mono); color: var(--color-on-dark-2); }
+.ceo-personal-best { font: 9px var(--font-mono); color: var(--color-on-dark-2); }
+.ceo-result-dots { display: flex; flex-wrap: wrap; gap: 5px; }
+.ceo-result-dots > li { display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; border-radius: 6px; background: #efdfd3; color: #a77559; }
+.ceo-result-dots svg { width: 12px; height: 12px; }
+.ceo-result-dots [data-correct="true"] { background: #25476c; color: #b5d2f6; }
+.ceo-result-invitation { min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: clamp(16px, 2vw, 28px); color: #fffaf1; background: radial-gradient(ellipse at 100% 0%, #315783, var(--color-navy) 85%); }
+.ceo-result-brand { display: flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; color: var(--color-sky); }
+.ceo-result-brand svg { width: 16px; height: 16px; }
+.ceo-result-invitation h2 { font-size: clamp(22px, 2.3vw, 36px); line-height: 1.08; letter-spacing: -0.04em; }
+.ceo-result-invitation h2 span { color: #b5d2f6; }
+.ceo-result-invitation > p { font-size: clamp(11px, 0.95vw, 14px); line-height: 1.5; color: var(--color-on-dark); }
+.ceo-velho-link { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; padding: 14px 16px; border-radius: 8px; color: var(--color-navy); background: var(--color-sky); font-size: clamp(13px, 1.2vw, 17px); font-weight: 650; box-shadow: 0 6px 20px rgb(0 0 0 / 0.17); transition: background 150ms, transform 150ms; }
+.ceo-velho-link:hover { background: var(--color-ivory); transform: translateY(-1px); }
+.ceo-velho-link:focus-visible { outline: 2px solid var(--color-ivory); outline-offset: 4px; }
+.ceo-velho-link svg { flex-shrink: 0; width: 18px; height: 18px; }
+.ceo-debrief-actions { display: flex; flex-wrap: wrap; gap: 14px; font-size: 10px; }
+.ceo-debrief-actions button { cursor: pointer; color: var(--color-on-dark-2); }
+.ceo-debrief-actions button:hover { color: var(--color-sky); }
+.ceo-debrief-actions button:focus-visible { outline: 2px solid var(--color-sky); outline-offset: 3px; }
+@keyframes projector-hum { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.5; } }
+@keyframes slide-arrives { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 1000px) {
+  .boardroom-projector { left: 18%; width: 64%; height: 54%; }
+  .boardroom-environment { object-fit: cover; }
+  .boardroom-briefing { left: 18%; width: 64%; bottom: 17%; }
+  .boardroom-confidence { width: 170px; }
+}
+@media (max-width: 700px) {
+  .boardroom-confidence { top: 10px; right: 14px; width: 164px; padding: 9px 11px; }
+  .boardroom-projector { top: 10%; left: 5%; width: 90%; height: 62%; min-height: 0; max-height: none; }
+  .boardroom-projector-content { padding: 18px; }
+  .boardroom-projector-rail { padding: 10px 12px; gap: 8px; font-size: 8px; }
+  .boardroom-slide-progress { gap: 3px; }
+  .boardroom-slide-progress > i { width: 4px; height: 4px; }
+  .ceo-scenario-title { font-size: 26px; }
+  .ceo-choice { padding: 10px; font-size: 13px; }
+  .ceo-choice-arrow { display: none; }
+  .boardroom-briefing { left: 5%; width: 90%; bottom: 6%; padding: 12px 14px; }
+  .boardroom-response { gap: 12px; }
+  .boardroom-response .boardroom-next { padding: 10px 12px; }
+  .boardroom-opening h1 { font-size: clamp(38px, 10vw, 54px); }
+}
+@media (max-height: 900px) and (min-width: 701px), (max-height: 740px) {
+  .boardroom-projector-content { padding: 12px 16px; }
+  .boardroom-projector-rail { padding-block: 8px; }
+  .ceo-scenario-title { font-size: clamp(22px, 1.8vw, 28px); }
+  .ceo-choices { margin-top: 12px; gap: 6px; }
+  .ceo-choice { padding: 7px 10px; font-size: 12px; }
+  .ceo-choice-number { width: 23px; height: 23px; }
+  .ceo-timer { margin-top: 10px; }
+  .ceo-opening-emblem { width: 32px; height: 32px; margin-bottom: 10px; border-radius: 9px; }
+  .boardroom-opening h1 { font-size: clamp(34px, 3.6vw, 48px); }
+  .ceo-opening-copy { margin-top: 10px; }
+  .boardroom-opening .boardroom-start { margin-top: 15px; }
+  .ceo-result-summary { gap: 10px; }
+  .ceo-result-invitation { gap: 12px; }
+}
+@media (min-width: 701px) and (max-height: 680px) {
+  .boardroom-projector { height: 57%; min-height: 0; }
+  .boardroom-briefing { bottom: 7%; }
+}
+@media (max-width: 700px) and (max-height: 740px) {
+  .boardroom-projector { top: 10%; height: 60%; }
+  .boardroom-projector-content { padding: 14px; }
+  .boardroom-opening h1 { font-size: 38px; }
+  .boardroom-briefing { bottom: 4%; }
+  .boardroom-briefing p { font-size: 11px; line-height: 1.4; }
+  .boardroom-speaker { font-size: 8px; }
+}
+@media (max-height: 500px) {
+  .boardroom-projector { top: 4%; left: 18%; width: 64%; height: 65%; min-height: 0; }
+  .boardroom-confidence { display: none; }
+  .boardroom-briefing { left: 8%; width: 84%; bottom: 2%; padding: 8px 12px; }
+  .boardroom-speaker { margin-bottom: 4px; font-size: 8px; }
+  .boardroom-briefing p { font-size: 10px; }
+  .boardroom-response { flex-wrap: nowrap; }
+  .boardroom-next { padding: 8px; font-size: 10px; }
+}
+/* Bound the slide's three sections instead of letting its body scroll. */
+.boardroom-projector { container-type: size; }
+.boardroom-question .boardroom-projector-content { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: clamp(6px, 2.8cqh, 12px); }
+.boardroom-question .ceo-scenario-title { max-width: none; margin: 0; font-size: clamp(18px, min(2.1vw, 7.5cqh), 29px); line-height: 1.12; }
+.boardroom-question .ceo-choices { min-height: 0; grid-template-rows: repeat(3, minmax(0, 1fr)); gap: clamp(5px, 1.8cqh, 8px); margin: 0; }
+.boardroom-question .ceo-choice { min-height: 0; padding: clamp(5px, 1.7cqh, 9px) 10px; font-size: clamp(12px, min(1vw, 4.2cqh), 14px); line-height: 1.25; }
+.boardroom-question .ceo-choice-number { width: clamp(20px, 7cqh, 26px); height: clamp(20px, 7cqh, 26px); }
+.boardroom-question .ceo-timer { margin: 0; }
+.boardroom-question .ceo-timer-label { margin-bottom: 5px; }
+.boardroom-opening .boardroom-projector-content { padding-block: 12px; }
+.boardroom-opening h1 { font-size: clamp(30px, min(4vw, 13cqh), 54px); }
+.ceo-opening-emblem { flex-shrink: 0; width: clamp(24px, 8cqh, 36px); height: clamp(24px, 8cqh, 36px); margin-bottom: 10px; }
+.boardroom-opening .boardroom-start { margin-top: 14px; }
+@media (max-width: 700px) {
+  .boardroom-question .ceo-scenario-title { font-size: clamp(19px, 6.6cqh, 25px); }
+  .boardroom-question .ceo-choice { font-size: 13px; }
+  .ceo-result-summary, .ceo-result-invitation { padding: 14px; gap: 12px; }
+  .ceo-result-summary h1 { font-size: 20px; }
+  .ceo-final-score > strong { font-size: 52px; }
+  .ceo-result-dots { gap: 4px; }
+  .ceo-result-dots > li { width: 18px; height: 18px; border-radius: 4px; }
+  .ceo-result-invitation h2 { font-size: 24px; }
+  .ceo-velho-link { padding: 12px 10px; font-size: 13px; }
+}
+@media (max-height: 600px) {
+  .boardroom-projector { top: 3%; left: 10%; width: 80%; height: calc(100% - 86px); min-height: 0; max-height: none; }
+  .boardroom-projector-rail { padding: 6px 12px; }
+  .boardroom-projector-content { padding: 10px 14px; }
+  .boardroom-question .boardroom-projector-content { gap: 6px; }
+  .boardroom-question .ceo-scenario-title { font-size: 18px; line-height: 1.1; }
+  .boardroom-question .ceo-choices { grid-template-rows: none; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .boardroom-question .ceo-choice { flex-wrap: wrap; align-content: center; gap: 6px; padding: 6px 8px; font-size: 11px; }
+  .boardroom-question .ceo-choice > span:nth-child(2) { flex-basis: calc(100% - 28px); }
+  .ceo-choice-arrow { display: none; }
+  .boardroom-briefing { left: 10%; width: 80%; bottom: 2%; padding: 8px 12px; }
+  .boardroom-speaker { margin-bottom: 3px; }
+  .boardroom-briefing p { font-size: 10px; line-height: 1.3; }
+  .boardroom-next { padding: 8px 10px; }
+  .boardroom-opening .ceo-opening-emblem { display: none; }
+  .boardroom-opening h1 { font-size: 30px; }
+  .ceo-opening-copy { margin-top: 7px; font-size: 11px; }
+  .boardroom-opening .boardroom-start { padding: 9px 13px; margin-top: 10px; }
+  .ceo-result-summary, .ceo-result-invitation { gap: 7px; padding: 10px 14px; }
+  .ceo-result-summary h1 { font-size: 18px; }
+  .ceo-final-score > strong { font-size: 40px; }
+  .ceo-final-score > small, .ceo-result-brand { display: none; }
+  .ceo-result-invitation h2 { font-size: 24px; }
+  .ceo-velho-link { padding: 10px 12px; font-size: 14px; }
+  .ceo-result-dots > li { width: 18px; height: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .boardroom-projector-beam, .boardroom-projector-content { animation: none; }
+  .boardroom-confidence-track > span, .boardroom-pressure, .ceo-timer-fill, .ceo-choice, .ceo-choice-arrow, .boardroom-next, .boardroom-start, .boardroom-start svg, .boardroom-next svg { transition: none; }
+}

@@ -72,10 +72,11 @@ So we built two things on one dataset:
 
 ## How to play
 
-1. Read the clue: a verbatim quote from a real, open job ad, with the company name blanked.
-2. Pick the company from **nine cards**. You have **six picks**.
+1. Read the clue: a quote from a real, open job ad, with the company name taken out.
+2. Pick the company from **nine cards**. You have **five picks**.
 3. Each wrong pick tells you something (for example "Answer also hires in Tampere") and
-   unlocks the next clue: the hiring map, a second quote, the job functions, an analyst note.
+   unlocks the next clue: the jobs they're hiring for, the cities, and finally the first letter
+   of the name. Quotes and job titles are translated into English.
 4. Stuck? Use the **Velho hint** once per case for a free clue.
 5. The reveal shows the company, how many of its open ads describe work software could take
    over, and what Velho would do about it. Share your result, or play another case.
@@ -85,7 +86,7 @@ text gives nothing away:
 
 ```
 Who's hiring? Case No. 12
-Solved in 3/6
+Solved in 3/5
 ○ ● ✓
 https://…
 ```
@@ -106,6 +107,21 @@ from the public Finnish filing index and Jobly listings rather than a fixed list
 [efficiency data guide](pipeline/EFFICIENCY.md) for definitions, coverage and validation.
 Missing disclosures are excluded from play. `src/data/efficiency.json` supplies these
 metrics; `src/data/game_companies.json` supplies automatically discovered company metadata.
+
+## POV: You are the CEO
+
+A first-person boardroom game in the top navigation: sit at the head of the table while
+the COO presents live questions and choices on the projector. Five fictional business decisions, three choices
+per question, and a 20-second timer bar under the choices. Pick the process improvement
+before the clock runs out. Wrong answers and timeouts reveal the better move and let you
+continue. Each play shuffles the scenarios and answer positions. The result shows your
+score, personal best and a link to velho.io.
+
+Scenarios live in `src/lib/ceo/scenarios.ts`; timing and grading rules are in
+`src/lib/ceo/game.ts`. The timer starts when you select **Start the board meeting**. The fictional board-confidence
+meter responds to decisions, presenter captions explain outcomes, and the room gains a
+warning glow in the final ten seconds. The generated backdrop is stored locally at
+`public/images/ceo/boardroom.webp`; all questions and choices remain interactive HTML.
 
 ## How it gets Velho into the room
 
@@ -280,7 +296,7 @@ We'd rather say it than have you find it.
 |---|---|---|
 | **Lead storage when hosted** | Leads save locally, but not on Vercel (read-only file system). | Replace the two functions in `src/lib/leads.ts` with a KV store or a Google Sheet. Nothing else changes. |
 | **"Rank your company" only knows the game's companies** | In Higher or lower, any other name gets "isn't in the game yet". The live AI lookup was removed to keep the site free of API keys. | Add companies to the dataset, or bring back a live lookup. |
-| **Higher or lower figures unverified** | Revenue and headcount for its 21 companies are approximate, and none are checked against annual reports. | Check each one against its annual report and set `verified` in `pipeline/data/companies.csv`. |
+| **Public metric coverage** | Higher or lower uses precomputed, sourced observations refreshed by the scheduled pipeline. Companies without disclosed inputs skip the affected category. | Add tested report adapters and additional job sources to expand coverage. |
 | **Data is a snapshot** | 222 ads scraped once from Jobly.fi. Over time cases point to ads that have closed. | Run the scraper and `import_jobs.py` on a schedule, for example a nightly GitHub Action. |
 | **Only 16 cases** | After 16 days the daily case repeats. | More scraping, and more quotes in `curated_signals.json`. `build_cases.py` drafts Velho's take, a person approves it. |
 | **One job board** | Only Jobly.fi is used. Duunitori's API is off-limits by its robots.txt. | Add companies' own careers pages, which most large Finnish companies publish. |
