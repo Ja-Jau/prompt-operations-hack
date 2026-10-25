@@ -3066,13 +3066,51 @@
     }
   },
   "lei-74370031y7rk5h88cq48": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 2753500000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370031Y7RK5H88CQ48/2025-12-31/ESEF/FI/1/74370031Y7RK5H88CQ48-2025-12-31-en/reports/74370031Y7RK5H88CQ48-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.7535e+09"
+          }
+        ],
+        "inputs": {
+          "revenue": 2753500000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:37.201686+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -6.600862,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370031Y7RK5H88CQ48/2025-12-31/ESEF/FI/1/74370031Y7RK5H88CQ48-2025-12-31-en/reports/74370031Y7RK5H88CQ48-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.7535e+09; ifrs-full:Revenue [c-2] = 2.9481e+09"
+          }
+        ],
+        "inputs": {
+          "revenue": 2753500000.0,
+          "previousRevenue": 2948100000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:37.201686+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
@@ -3088,35 +3126,188 @@
     }
   },
   "lei-7437003nx7wwvrt6aj55": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 665275000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437003NX7WWVRT6AJ55/2025-12-31/ESEF/FI/0/7437003NX7WWVRT6AJ55-2025-12-31-1-fi/reports/7437003NX7WWVRT6AJ55-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 6.65275e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 665275000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:44.350787+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 1.273849,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437003NX7WWVRT6AJ55/2025-12-31/ESEF/FI/0/7437003NX7WWVRT6AJ55-2025-12-31-1-fi/reports/7437003NX7WWVRT6AJ55-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 6.65275e+08; ifrs-full:Revenue [ctx-2] = 6.56907e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 665275000.0,
+          "previousRevenue": 656907000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:44.350787+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 7.72222,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437003NX7WWVRT6AJ55/2025-12-31/ESEF/FI/0/7437003NX7WWVRT6AJ55-2025-12-31-1-fi/reports/7437003NX7WWVRT6AJ55-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 6.65275e+08; ifrs-full:AdministrativeExpense [ctx-1] = 5.1374e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 665275000.0,
+          "administrativeExpenses": 51374000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:44.350787+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 72.527963,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437003NX7WWVRT6AJ55/2025-12-31/ESEF/FI/0/7437003NX7WWVRT6AJ55-2025-12-31-1-fi/reports/7437003NX7WWVRT6AJ55-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [ctx-3] = 7.7955e+07; ifrs-full:Inventories [ctx-4] = 7.6247e+07; ifrs-full:CostOfSales [ctx-1] = 3.88014e+08"
+          }
+        ],
+        "inputs": {
+          "inventory": 77955000.0,
+          "previousInventory": 76247000.0,
+          "costOfSales": 388014000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:44.350787+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437003wyxjusv27q316": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 108076000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437003WYXJUSV27Q316/2025-12-31/ESEF/FI/0/7437003WYXJUSV27Q316-2025-12-31-1-en/reports/7437003WYXJUSV27Q316-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.08076e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 108076000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:46.498273+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -3.416474,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437003WYXJUSV27Q316/2025-12-31/ESEF/FI/0/7437003WYXJUSV27Q316-2025-12-31-1-en/reports/7437003WYXJUSV27Q316-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.08076e+08; ifrs-full:Revenue [c-2] = 1.11899e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 108076000.0,
+          "previousRevenue": 111899000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:46.498273+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700498l5thnqwvl66": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 63033000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700498L5THNQWVL66/2025-12-31/ESEF/FI/1/743700498L5THNQWVL66-2025-12-31-en/reports/743700498L5THNQWVL66-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 6.3033e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 63033000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:48.415346+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 9.392409,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700498L5THNQWVL66/2025-12-31/ESEF/FI/1/743700498L5THNQWVL66-2025-12-31-en/reports/743700498L5THNQWVL66-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 6.3033e+07; ifrs-full:Revenue [c-2] = 5.7621e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 63033000.0,
+          "previousRevenue": 57621000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:48.415346+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
@@ -3132,178 +3323,941 @@
     }
   },
   "lei-7437004xd6u0ffdct507": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 797113000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437004XD6U0FFDCT507/2025-12-31/ESEF/FI/0/7437004XD6U0FFDCT507-2025-12-31-en/reports/7437004XD6U0FFDCT507-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 7.97113e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 797113000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:53.553611+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 2.205505,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437004XD6U0FFDCT507/2025-12-31/ESEF/FI/0/7437004XD6U0FFDCT507-2025-12-31-en/reports/7437004XD6U0FFDCT507-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 7.97113e+08; ifrs-full:Revenue [ctx-2] = 7.79912e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 797113000.0,
+          "previousRevenue": 779912000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:53.553611+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-74370058mtrledochv67": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 652300000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370058MTRLEDOCHV67/2025-12-31/ESEF/FI/0/74370058MTRLEDOCHV67-2025-12-31-1-en/reports/74370058MTRLEDOCHV67-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 6.523e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 652300000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:55.371271+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -7.402544,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370058MTRLEDOCHV67/2025-12-31/ESEF/FI/0/74370058MTRLEDOCHV67-2025-12-31-1-en/reports/74370058MTRLEDOCHV67-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 6.523e+08; ifrs-full:Revenue [c4] = 7.04447e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 652300000.0,
+          "previousRevenue": 704447000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:55.371271+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-74370058zyob0giyut38": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 8386000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370058ZYOB0GIYUT38/2025-12-31/ESEF/FI/0/74370058ZYOB0GIYUT38-2025-12-31-1-fi/reports/74370058ZYOB0GIYUT38-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 8.386e+06"
+          }
+        ],
+        "inputs": {
+          "revenue": 8386000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:57.200659+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -15.938252,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370058ZYOB0GIYUT38/2025-12-31/ESEF/FI/0/74370058ZYOB0GIYUT38-2025-12-31-1-fi/reports/74370058ZYOB0GIYUT38-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 8.386e+06; ifrs-full:Revenue [ctx-2] = 9.976e+06"
+          }
+        ],
+        "inputs": {
+          "revenue": 8386000.0,
+          "previousRevenue": 9976000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:57.200659+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 11.519199,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370058ZYOB0GIYUT38/2025-12-31/ESEF/FI/0/74370058ZYOB0GIYUT38-2025-12-31-1-fi/reports/74370058ZYOB0GIYUT38-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 8.386e+06; ifrs-full:AdministrativeExpense [ctx-1] = 966000"
+          }
+        ],
+        "inputs": {
+          "revenue": 8386000.0,
+          "administrativeExpenses": 966000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:57.200659+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437006i5533r06ju690": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 361417000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437006I5533R06JU690/2025-12-31/ESEF/FI/0/7437006I5533R06JU690-2025-12-31-1-en/reports/7437006I5533R06JU690-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 3.61417e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 361417000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:59.184274+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 0.109966,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437006I5533R06JU690/2025-12-31/ESEF/FI/0/7437006I5533R06JU690-2025-12-31-1-en/reports/7437006I5533R06JU690-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 3.61417e+08; ifrs-full:Revenue [ctx-2] = 3.6102e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 361417000.0,
+          "previousRevenue": 361020000.0
+        },
+        "fetchedAt": "2026-10-25T11:48:59.184274+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437007n96fk4n3wht09": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 21611100.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007N96FK4N3WHT09/2025-12-31/ESEF/FI/0/7437007N96FK4N3WHT09-2025-12-31-1-fi/reports/7437007N96FK4N3WHT09-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.16111e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 21611100.0
+        },
+        "fetchedAt": "2026-10-25T11:49:01.067783+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -2.434763,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007N96FK4N3WHT09/2025-12-31/ESEF/FI/0/7437007N96FK4N3WHT09-2025-12-31-1-fi/reports/7437007N96FK4N3WHT09-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.16111e+07; ifrs-full:Revenue [ctx-2] = 2.21504e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 21611100.0,
+          "previousRevenue": 22150410.0
+        },
+        "fetchedAt": "2026-10-25T11:49:01.067783+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 21.184294,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007N96FK4N3WHT09/2025-12-31/ESEF/FI/0/7437007N96FK4N3WHT09-2025-12-31-1-fi/reports/7437007N96FK4N3WHT09-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.16111e+07; ifrs-full:AdministrativeExpense [ctx-1] = 4.57816e+06"
+          }
+        ],
+        "inputs": {
+          "revenue": 21611100.0,
+          "administrativeExpenses": 4578159.0
+        },
+        "fetchedAt": "2026-10-25T11:49:01.067783+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 1592.948008,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007N96FK4N3WHT09/2025-12-31/ESEF/FI/0/7437007N96FK4N3WHT09-2025-12-31-1-fi/reports/7437007N96FK4N3WHT09-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [ctx-3] = 384433; ifrs-full:Inventories [ctx-4] = 352312; ifrs-full:CostOfSales [ctx-1] = 84407"
+          }
+        ],
+        "inputs": {
+          "inventory": 384433.0,
+          "previousInventory": 352312.0,
+          "costOfSales": 84407.0
+        },
+        "fetchedAt": "2026-10-25T11:49:01.067783+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437007ypuoqz8ov1r42": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 455200000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007YPUOQZ8OV1R42/2025-12-31/ESEF/FI/0/7437007YPUOQZ8OV1R42-2025-12-31-1-en/reports/7437007YPUOQZ8OV1R42-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 4.552e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 455200000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:02.673013+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 0.618921,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007YPUOQZ8OV1R42/2025-12-31/ESEF/FI/0/7437007YPUOQZ8OV1R42-2025-12-31-1-en/reports/7437007YPUOQZ8OV1R42-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 4.552e+08; ifrs-full:Revenue [c4] = 4.524e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 455200000.0,
+          "previousRevenue": 452400000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:02.673013+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 8.963093,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437007YPUOQZ8OV1R42/2025-12-31/ESEF/FI/0/7437007YPUOQZ8OV1R42-2025-12-31-1-en/reports/7437007YPUOQZ8OV1R42-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 4.552e+08; ifrs-full:AdministrativeExpense [c1] = 4.08e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 455200000.0,
+          "administrativeExpenses": 40800000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:02.673013+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-74370083282nhip4qd02": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 224200000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370083282NHIP4QD02/2025-12-31/ESEF/FI/0/74370083282NHIP4QD02-2025-12-31-1-fi/reports/74370083282NHIP4QD02-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.242e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 224200000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:05.505816+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -1.146384,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370083282NHIP4QD02/2025-12-31/ESEF/FI/0/74370083282NHIP4QD02-2025-12-31-1-fi/reports/74370083282NHIP4QD02-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.242e+08; ifrs-full:Revenue [c-2] = 2.268e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 224200000.0,
+          "previousRevenue": 226800000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:05.505816+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 4.950937,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370083282NHIP4QD02/2025-12-31/ESEF/FI/0/74370083282NHIP4QD02-2025-12-31-1-fi/reports/74370083282NHIP4QD02-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.242e+08; ifrs-full:AdministrativeExpense [c-1] = 1.11e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 224200000.0,
+          "administrativeExpenses": 11100000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:05.505816+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 73.327985,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370083282NHIP4QD02/2025-12-31/ESEF/FI/0/74370083282NHIP4QD02-2025-12-31-1-fi/reports/74370083282NHIP4QD02-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 3.28e+07; ifrs-full:Inventories [c-4] = 2.98e+07; ifrs-full:CostOfSales [c-1] = 1.558e+08"
+          }
+        ],
+        "inputs": {
+          "inventory": 32800000.0,
+          "previousInventory": 29800000.0,
+          "costOfSales": 155800000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:05.505816+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-74370089attsnbxjvt29": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 15732000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370089ATTSNBXJVT29/2025-12-31/ESEF/FI/0/74370089ATTSNBXJVT29-2025-12-31-1-en/reports/74370089ATTSNBXJVT29-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.5732e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 15732000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:08.041819+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 10.144928,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/74370089ATTSNBXJVT29/2025-12-31/ESEF/FI/0/74370089ATTSNBXJVT29-2025-12-31-1-en/reports/74370089ATTSNBXJVT29-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.5732e+07; ifrs-full:Revenue [ctx-2] = 1.4283e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 15732000.0,
+          "previousRevenue": 14283000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:08.041819+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437008rmk8bswn39t09": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 87212000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437008RMK8BSWN39T09/2025-12-31/ESEF/FI/1/7437008RMK8BSWN39T09-2025-12-31-1-en/reports/7437008RMK8BSWN39T09-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 8.7212e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 87212000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:10.573929+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -2.810529,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437008RMK8BSWN39T09/2025-12-31/ESEF/FI/1/7437008RMK8BSWN39T09-2025-12-31-1-en/reports/7437008RMK8BSWN39T09-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 8.7212e+07; ifrs-full:Revenue [ctx-2] = 8.9734e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 87212000.0,
+          "previousRevenue": 89734000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:10.573929+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 6.293859,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437008RMK8BSWN39T09/2025-12-31/ESEF/FI/1/7437008RMK8BSWN39T09-2025-12-31-1-en/reports/7437008RMK8BSWN39T09-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 8.7212e+07; ifrs-full:AdministrativeExpense [ctx-1] = 5.489e+06"
+          }
+        ],
+        "inputs": {
+          "revenue": 87212000.0,
+          "administrativeExpenses": 5489000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:10.573929+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 72.004807,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437008RMK8BSWN39T09/2025-12-31/ESEF/FI/1/7437008RMK8BSWN39T09-2025-12-31-1-en/reports/7437008RMK8BSWN39T09-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [ctx-3] = 1.2051e+07; ifrs-full:Inventories [ctx-4] = 1.2491e+07; ifrs-full:CostOfSales [ctx-1] = 6.2203e+07"
+          }
+        ],
+        "inputs": {
+          "inventory": 12051000.0,
+          "previousInventory": 12491000.0,
+          "costOfSales": 62203000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:10.573929+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437009ivywgee4s7b77": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 17096000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437009IVYWGEE4S7B77/2025-12-31/ESEF/FI/0/7437009IVYWGEE4S7B77-2025-12-31-1-en/reports/7437009IVYWGEE4S7B77-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [D20251231] = 1.7096e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 17096000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:12.501454+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 13.670213,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437009IVYWGEE4S7B77/2025-12-31/ESEF/FI/0/7437009IVYWGEE4S7B77-2025-12-31-1-en/reports/7437009IVYWGEE4S7B77-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [D20251231] = 1.7096e+07; ifrs-full:Revenue [D20241231] = 1.504e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 17096000.0,
+          "previousRevenue": 15040000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:12.501454+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437009tb42o2ab3jw91": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 227500000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437009TB42O2AB3JW91/2025-12-31/ESEF/FI/0/7437009TB42O2AB3JW91-2025-12-31-1-en/reports/7437009TB42O2AB3JW91-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.275e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 227500000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:14.598606+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 2.987777,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/7437009TB42O2AB3JW91/2025-12-31/ESEF/FI/0/7437009TB42O2AB3JW91-2025-12-31-1-en/reports/7437009TB42O2AB3JW91-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.275e+08; ifrs-full:Revenue [ctx-2] = 2.209e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 227500000.0,
+          "previousRevenue": 220900000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:14.598606+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700al68pux6jms644": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 16532000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700AL68PUX6JMS644/2025-12-31/ESEF/FI/0/743700AL68PUX6JMS644-2025-12-31-1-fi/reports/743700AL68PUX6JMS644-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.6532e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 16532000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:16.446409+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 2.270337,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700AL68PUX6JMS644/2025-12-31/ESEF/FI/0/743700AL68PUX6JMS644-2025-12-31-1-fi/reports/743700AL68PUX6JMS644-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.6532e+07; ifrs-full:Revenue [c-2] = 1.6165e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 16532000.0,
+          "previousRevenue": 16165000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:16.446409+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700ax3tiwvl1lc349": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 348230000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700AX3TIWVL1LC349/2025-12-31/ESEF/FI/0/743700AX3TIWVL1LC349-2025-12-31-1-fi/reports/743700AX3TIWVL1LC349-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 3.4823e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 348230000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:18.977403+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -2.311829,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700AX3TIWVL1LC349/2025-12-31/ESEF/FI/0/743700AX3TIWVL1LC349-2025-12-31-1-fi/reports/743700AX3TIWVL1LC349-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 3.4823e+08; ifrs-full:Revenue [c-2] = 3.56471e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 348230000.0,
+          "previousRevenue": 356471000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:18.977403+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700cjrqru0007gn59": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 138643000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700CJRQRU0007GN59/2025-12-31/ESEF/FI/0/743700CJRQRU0007GN59-2025-12-31-0-fi/reports/743700CJRQRU0007GN59-2025-12-31-0-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [D20251231] = 1.38643e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 138643000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:21.207887+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 4.617277,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700CJRQRU0007GN59/2025-12-31/ESEF/FI/0/743700CJRQRU0007GN59-2025-12-31-0-fi/reports/743700CJRQRU0007GN59-2025-12-31-0-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [D20251231] = 1.38643e+08; ifrs-full:Revenue [D20241231] = 1.32524e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 138643000.0,
+          "previousRevenue": 132524000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:21.207887+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700dohlqienktc391": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 1447600000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700DOHLQIENKTC391/2025-12-31/ESEF/FI/1/743700DOHLQIENKTC391-2025-12-31-en/reports/743700DOHLQIENKTC391-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 1.4476e+09"
+          }
+        ],
+        "inputs": {
+          "revenue": 1447600000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:23.446580+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -4.850795,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700DOHLQIENKTC391/2025-12-31/ESEF/FI/1/743700DOHLQIENKTC391-2025-12-31-en/reports/743700DOHLQIENKTC391-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 1.4476e+09; ifrs-full:RevenueFromContractsWithCustomers [c-2] = 1.5214e+09"
+          }
+        ],
+        "inputs": {
+          "revenue": 1447600000.0,
+          "previousRevenue": 1521400000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:23.446580+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700dyz6r1qnlwqa56": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 358000000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700DYZ6R1QNLWQA56/2025-12-31/ESEF/FI/0/743700DYZ6R1QNLWQA56-2025-12-31-en/reports/743700DYZ6R1QNLWQA56-2025-12-31-0-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 3.58e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 358000000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:25.613654+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 3.140305,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700DYZ6R1QNLWQA56/2025-12-31/ESEF/FI/0/743700DYZ6R1QNLWQA56-2025-12-31-en/reports/743700DYZ6R1QNLWQA56-2025-12-31-0-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 3.58e+08; ifrs-full:Revenue [c4] = 3.471e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 358000000.0,
+          "previousRevenue": 347100000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:25.613654+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
@@ -3319,46 +4273,160 @@
     }
   },
   "lei-743700epluwxe25hgm03": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 152671000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700EPLUWXE25HGM03/2025-12-31/ESEF/FI/0/743700EPLUWXE25HGM03-2025-12-31-1-en/reports/743700EPLUWXE25HGM03-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.52671e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 152671000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:38.604223+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 1.524149,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700EPLUWXE25HGM03/2025-12-31/ESEF/FI/0/743700EPLUWXE25HGM03-2025-12-31-1-en/reports/743700EPLUWXE25HGM03-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.52671e+08; ifrs-full:Revenue [ctx-2] = 1.50379e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 152671000.0,
+          "previousRevenue": 150379000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:38.604223+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700f6clx8jmydep21": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 204546000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700F6CLX8JMYDEP21/2025-12-31/ESEF/FI/0/743700F6CLX8JMYDEP21-2025-12-31-1-fi/reports/743700F6CLX8JMYDEP21-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.04546e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 204546000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:42.078939+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 5.447497,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700F6CLX8JMYDEP21/2025-12-31/ESEF/FI/0/743700F6CLX8JMYDEP21-2025-12-31-1-fi/reports/743700F6CLX8JMYDEP21-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.04546e+08; ifrs-full:Revenue [ctx-2] = 1.93979e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 204546000.0,
+          "previousRevenue": 193979000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:42.078939+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700ftbnxaun57rh30": {
     "metrics": {},
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "revenue": "Revenue not reported",
+      "revenueGrowth": "Needs revenue for two full years",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700g00629v99pe435": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 175539000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700G00629V99PE435/2025-12-31/ESEF/FI/0/743700G00629V99PE435-2025-12-31-1-fi/reports/743700G00629V99PE435-2025-12-31-1-fi.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 1.75539e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 175539000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:49.783502+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -14.196683,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700G00629V99PE435/2025-12-31/ESEF/FI/0/743700G00629V99PE435-2025-12-31-1-fi/reports/743700G00629V99PE435-2025-12-31-1-fi.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 1.75539e+08; ifrs-full:Revenue [c4] = 2.04583e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 175539000.0,
+          "previousRevenue": 204583000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:49.783502+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
@@ -3385,123 +4453,541 @@
     }
   },
   "lei-743700go2xu2zyydkw67": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 216281000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700GO2XU2ZYYDKW67/2025-12-31/ESEF/FI/0/qtgroupoyj-2025-12-31-1-en/reports/qtgroupoyj-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.16281e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 216281000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:57.768741+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 3.452548,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700GO2XU2ZYYDKW67/2025-12-31/ESEF/FI/0/qtgroupoyj-2025-12-31-1-en/reports/qtgroupoyj-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.16281e+08; ifrs-full:Revenue [c-2] = 2.09063e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 216281000.0,
+          "previousRevenue": 209063000.0
+        },
+        "fetchedAt": "2026-10-25T11:49:57.768741+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700gsl41h2dxzy963": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 29512000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700GSL41H2DXZY963/2025-12-31/ESEF/FI/0/743700GSL41H2DXZY963-2025-12-31-1-fi/reports/743700GSL41H2DXZY963-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.9512e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 29512000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:00.047551+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -11.439203,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700GSL41H2DXZY963/2025-12-31/ESEF/FI/0/743700GSL41H2DXZY963-2025-12-31-1-fi/reports/743700GSL41H2DXZY963-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 2.9512e+07; ifrs-full:Revenue [ctx-2] = 3.3324e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 29512000.0,
+          "previousRevenue": 33324000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:00.047551+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700hohmohaanhff73": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 188585000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700HOHMOHAANHFF73/2025-12-31/ESEF/FI/1/743700HOHMOHAANHFF73-2025-12-31-1-en/reports/743700HOHMOHAANHFF73-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.88585e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 188585000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:02.988665+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -2.241978,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700HOHMOHAANHFF73/2025-12-31/ESEF/FI/1/743700HOHMOHAANHFF73-2025-12-31-1-en/reports/743700HOHMOHAANHFF73-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.88585e+08; ifrs-full:Revenue [ctx-2] = 1.9291e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 188585000.0,
+          "previousRevenue": 192910000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:02.988665+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700hsiesz75x06h10": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 108354109.13,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700HSIESZ75X06H10/2025-12-31/ESEF/FI/0/743700HSIESZ75X06H10-2025-12-31-1-fi/reports/743700HSIESZ75X06H10-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.08354e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 108354109.13
+        },
+        "fetchedAt": "2026-10-25T11:50:06.291221+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -4.975746,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700HSIESZ75X06H10/2025-12-31/ESEF/FI/0/743700HSIESZ75X06H10-2025-12-31-1-fi/reports/743700HSIESZ75X06H10-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 1.08354e+08; ifrs-full:Revenue [ctx-2] = 1.14028e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 108354109.13,
+          "previousRevenue": 114027844.62
+        },
+        "fetchedAt": "2026-10-25T11:50:06.291221+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700hxwtm31zhbxw13": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 46735000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700HXWTM31ZHBXW13/2025-12-31/ESEF/FI/0/743700HXWTM31ZHBXW13-2025-12-31-fi/reports/743700HXWTM31ZHBXW13-2025-12-31-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 4.6735e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 46735000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:08.754696+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -8.126757,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700HXWTM31ZHBXW13/2025-12-31/ESEF/FI/0/743700HXWTM31ZHBXW13-2025-12-31-fi/reports/743700HXWTM31ZHBXW13-2025-12-31-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [ctx-1] = 4.6735e+07; ifrs-full:Revenue [ctx-2] = 5.0869e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 46735000.0,
+          "previousRevenue": 50869000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:08.754696+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700i27e0fwsxlkk04": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 109677000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700I27E0FWSXLKK04/2025-12-31/ESEF/FI/0/reveniogroup-2025-12-31-0-en/reports/reveniogroup-2025-12-31-0-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 1.09677e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 109677000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:10.714678+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 5.950713,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700I27E0FWSXLKK04/2025-12-31/ESEF/FI/0/reveniogroup-2025-12-31-0-en/reports/reveniogroup-2025-12-31-0-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 1.09677e+08; ifrs-full:RevenueFromContractsWithCustomers [c-2] = 1.03517e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 109677000.0,
+          "previousRevenue": 103517000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:10.714678+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700ie9nqgf9yzai97": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 508855000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700IE9NQGF9YZAI97/2025-12-31/ESEF/FI/0/must-2025-12-31-1-en/reports/must-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 5.08855e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 508855000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:12.467688+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "revenueGrowth": "Needs revenue for two full years",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700ifqi6w89m1iy95": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 952300000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700IFQI6W89M1IY95/2025-12-31/ESEF/FI/0/743700IFQI6W89M1IY95-2025-12-31-1-en/reports/743700IFQI6W89M1IY95-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 9.523e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 952300000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:14.334317+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 1.297734,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700IFQI6W89M1IY95/2025-12-31/ESEF/FI/0/743700IFQI6W89M1IY95-2025-12-31-1-en/reports/743700IFQI6W89M1IY95-2025-12-31-1-en.html",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c1] = 9.523e+08; ifrs-full:Revenue [c4] = 9.401e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 952300000.0,
+          "previousRevenue": 940100000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:14.334317+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700ilu1pl86iw3429": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 327100000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700ILU1PL86IW3429/2025-12-31/ESEF/FI/0/743700ILU1PL86IW3429-2025-12-31-1-en/reports/743700ILU1PL86IW3429-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 3.271e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 327100000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:16.310659+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 4.605053,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700ILU1PL86IW3429/2025-12-31/ESEF/FI/0/743700ILU1PL86IW3429-2025-12-31-1-en/reports/743700ILU1PL86IW3429-2025-12-31-1-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 3.271e+08; ifrs-full:Revenue [c-2] = 3.127e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 327100000.0,
+          "previousRevenue": 312700000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:16.310659+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700j2wo3j6xgfpg77": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 57140000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700J2WO3J6XGFPG77/2025-12-31/ESEF/FI/0/743700J2WO3J6XGFPG77-2025-12-31-0-fi/reports/743700J2WO3J6XGFPG77-2025-12-31-0-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 5.714e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 57140000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:19.278981+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": -8.003413,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700J2WO3J6XGFPG77/2025-12-31/ESEF/FI/0/743700J2WO3J6XGFPG77-2025-12-31-0-fi/reports/743700J2WO3J6XGFPG77-2025-12-31-0-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 5.714e+07; ifrs-full:Revenue [c-2] = 6.2111e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 57140000.0,
+          "previousRevenue": 62111000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:19.278981+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      },
+      "adminRatio": {
+        "value": 14.716486,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700J2WO3J6XGFPG77/2025-12-31/ESEF/FI/0/743700J2WO3J6XGFPG77-2025-12-31-0-fi/reports/743700J2WO3J6XGFPG77-2025-12-31-0-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 5.714e+07; ifrs-full:AdministrativeExpense [c-1] = 8.409e+06"
+          }
+        ],
+        "inputs": {
+          "revenue": 57140000.0,
+          "administrativeExpenses": 8409000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:19.278981+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700j7nht5olsj3b78": {
-    "metrics": {},
+    "metrics": {
+      "revenue": {
+        "value": 212768000.0,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700J7NHT5OLSJ3B78/2025-12-31/ESEF/FI/0/743700J7NHT5OLSJ3B78-2025-12-31-1-fi/reports/743700J7NHT5OLSJ3B78-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.12768e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 212768000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:21.995331+00:00",
+        "note": "Reported revenue for 2025, in euros."
+      },
+      "revenueGrowth": {
+        "value": 4.989218,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "revenue-growth",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/743700J7NHT5OLSJ3B78/2025-12-31/ESEF/FI/0/743700J7NHT5OLSJ3B78-2025-12-31-1-fi/reports/743700J7NHT5OLSJ3B78-2025-12-31-1-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 2.12768e+08; ifrs-full:Revenue [c-2] = 2.02657e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 212768000.0,
+          "previousRevenue": 202657000.0
+        },
+        "fetchedAt": "2026-10-25T11:50:21.995331+00:00",
+        "note": "Revenue change from 2024 to 2025. Acquisitions, divestments and prices affect it."
+      }
+    },
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },

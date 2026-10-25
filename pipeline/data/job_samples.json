@@ -1979,5 +1979,10 @@
     "ads": [],
     "error": "HTTP Error 403: Forbidden",
     "sampledAt": "2026-10-25T04:58:17.593385+00:00"
+  },
+  "lei-74370031y7rk5h88cq48": {
+    "ads": [],
+    "error": "HTTP Error 403: Forbidden",
+    "sampledAt": "2026-10-25T11:48:35.283360+00:00"
   }
 }

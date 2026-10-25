@@ -2163,5 +2163,1861 @@
       "employees": null,
       "previousEmployees": null
     }
+  },
+  "lei-74370031y7rk5h88cq48": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/74370031Y7RK5H88CQ48/2025-12-31/ESEF/FI/1/74370031Y7RK5H88CQ48-2025-12-31-en/reports/74370031Y7RK5H88CQ48-2025-12-31-en.xhtml",
+    "fetchedAt": "2026-10-25T11:48:37.201686+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 2753500000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370031Y7RK5H88CQ48"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 2948100000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370031Y7RK5H88CQ48"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 306900000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-79",
+        "instant": "2025-12-31",
+        "entity": "74370031Y7RK5H88CQ48"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 307900000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-80",
+        "instant": "2024-12-31",
+        "entity": "74370031Y7RK5H88CQ48"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437003nx7wwvrt6aj55": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437003NX7WWVRT6AJ55/2025-12-31/ESEF/FI/0/7437003NX7WWVRT6AJ55-2025-12-31-1-fi/reports/7437003NX7WWVRT6AJ55-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:48:44.350787+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 665275000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s2__2__7",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437003NX7WWVRT6AJ55"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 51374000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s2__2__11",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437003NX7WWVRT6AJ55"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 388014000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s2__2__8",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437003NX7WWVRT6AJ55"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 656907000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s2__3__7",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437003NX7WWVRT6AJ55"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 77955000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s3__2__15",
+        "instant": "2025-12-31",
+        "entity": "7437003NX7WWVRT6AJ55"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 76247000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s3__3__15",
+        "instant": "2024-12-31",
+        "entity": "7437003NX7WWVRT6AJ55"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437003wyxjusv27q316": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437003WYXJUSV27Q316/2025-12-31/ESEF/FI/0/7437003WYXJUSV27Q316-2025-12-31-1-en/reports/7437003WYXJUSV27Q316-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:48:46.498273+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 108076000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437003WYXJUSV27Q316"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 111899000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437003WYXJUSV27Q316"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700498l5thnqwvl66": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700498L5THNQWVL66/2025-12-31/ESEF/FI/1/743700498L5THNQWVL66-2025-12-31-en/reports/743700498L5THNQWVL66-2025-12-31-en.xhtml",
+    "fetchedAt": "2026-10-25T11:48:48.415346+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 63033000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-7",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700498L5THNQWVL66"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 57621000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-8",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700498L5THNQWVL66"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437004xd6u0ffdct507": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437004XD6U0FFDCT507/2025-12-31/ESEF/FI/0/7437004XD6U0FFDCT507-2025-12-31-en/reports/7437004XD6U0FFDCT507-2025-12-31-en.xhtml",
+    "fetchedAt": "2026-10-25T11:48:53.553611+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 797113000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437004XD6U0FFDCT507"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 779912000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437004XD6U0FFDCT507"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 176451000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s3__3__14",
+        "instant": "2025-12-31",
+        "entity": "7437004XD6U0FFDCT507"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 173245000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s3__4__14",
+        "instant": "2024-12-31",
+        "entity": "7437004XD6U0FFDCT507"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-74370058mtrledochv67": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/74370058MTRLEDOCHV67/2025-12-31/ESEF/FI/0/74370058MTRLEDOCHV67-2025-12-31-1-en/reports/74370058MTRLEDOCHV67-2025-12-31-1-en.html",
+    "fetchedAt": "2026-10-25T11:48:55.371271+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 652300000.0,
+        "unit": "EUR",
+        "contextId": "c1",
+        "factId": "ID_217",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370058MTRLEDOCHV67"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 704447000.0,
+        "unit": "EUR",
+        "contextId": "c4",
+        "factId": "ID_218",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370058MTRLEDOCHV67"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 3974000.0,
+        "unit": "EUR",
+        "contextId": "c2",
+        "factId": "ID_159",
+        "instant": "2025-12-31",
+        "entity": "74370058MTRLEDOCHV67"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 4503000.0,
+        "unit": "EUR",
+        "contextId": "c3",
+        "factId": "ID_160",
+        "instant": "2024-12-31",
+        "entity": "74370058MTRLEDOCHV67"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-74370058zyob0giyut38": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/74370058ZYOB0GIYUT38/2025-12-31/ESEF/FI/0/74370058ZYOB0GIYUT38-2025-12-31-1-fi/reports/74370058ZYOB0GIYUT38-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:48:57.200659+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 8386000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__2__7",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370058ZYOB0GIYUT38"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 966000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__2__14",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370058ZYOB0GIYUT38"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 4394000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__2__8",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370058ZYOB0GIYUT38"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 9976000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__3__7",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370058ZYOB0GIYUT38"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437006i5533r06ju690": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437006I5533R06JU690/2025-12-31/ESEF/FI/0/7437006I5533R06JU690-2025-12-31-1-en/reports/7437006I5533R06JU690-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:48:59.184274+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 361417000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437006I5533R06JU690"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 361020000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437006I5533R06JU690"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 636000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s2__3__15",
+        "instant": "2025-12-31",
+        "entity": "7437006I5533R06JU690"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 658000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s2__4__15",
+        "instant": "2024-12-31",
+        "entity": "7437006I5533R06JU690"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437007n96fk4n3wht09": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437007N96FK4N3WHT09/2025-12-31/ESEF/FI/0/7437007N96FK4N3WHT09-2025-12-31-1-fi/reports/7437007N96FK4N3WHT09-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:01.067783+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 21611100.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437007N96FK4N3WHT09"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 4578159.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__11",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437007N96FK4N3WHT09"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 84407.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__6",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437007N96FK4N3WHT09"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 22150410.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437007N96FK4N3WHT09"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 384433.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s2__4__12",
+        "instant": "2025-12-31",
+        "entity": "7437007N96FK4N3WHT09"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 352312.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s2__5__12",
+        "instant": "2024-12-31",
+        "entity": "7437007N96FK4N3WHT09"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437007ypuoqz8ov1r42": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437007YPUOQZ8OV1R42/2025-12-31/ESEF/FI/0/7437007YPUOQZ8OV1R42-2025-12-31-1-en/reports/7437007YPUOQZ8OV1R42-2025-12-31-1-en.html",
+    "fetchedAt": "2026-10-25T11:49:02.673013+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 455200000.0,
+        "unit": "EUR",
+        "contextId": "c1",
+        "factId": "ID_189",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437007YPUOQZ8OV1R42"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 40800000.0,
+        "unit": "EUR",
+        "contextId": "c1",
+        "factId": "ID_197",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437007YPUOQZ8OV1R42"
+      },
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 452400000.0,
+        "unit": "EUR",
+        "contextId": "c4",
+        "factId": "ID_190",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437007YPUOQZ8OV1R42"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-74370083282nhip4qd02": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/74370083282NHIP4QD02/2025-12-31/ESEF/FI/0/74370083282NHIP4QD02-2025-12-31-1-fi/reports/74370083282NHIP4QD02-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:05.505816+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 224200000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370083282NHIP4QD02"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 11100000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-9",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370083282NHIP4QD02"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 155800000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-3",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370083282NHIP4QD02"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 226800000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370083282NHIP4QD02"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 32800000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-91",
+        "instant": "2025-12-31",
+        "entity": "74370083282NHIP4QD02"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 29800000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-92",
+        "instant": "2024-12-31",
+        "entity": "74370083282NHIP4QD02"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-74370089attsnbxjvt29": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/74370089ATTSNBXJVT29/2025-12-31/ESEF/FI/0/74370089ATTSNBXJVT29-2025-12-31-1-en/reports/74370089ATTSNBXJVT29-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:08.041819+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 15732000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s3__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "74370089ATTSNBXJVT29"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 14283000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s3__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "74370089ATTSNBXJVT29"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 799000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s4__3__14",
+        "instant": "2025-12-31",
+        "entity": "74370089ATTSNBXJVT29"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1029000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s4__4__14",
+        "instant": "2024-12-31",
+        "entity": "74370089ATTSNBXJVT29"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437008rmk8bswn39t09": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437008RMK8BSWN39T09/2025-12-31/ESEF/FI/1/7437008RMK8BSWN39T09-2025-12-31-1-en/reports/7437008RMK8BSWN39T09-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:10.573929+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 87212000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437008RMK8BSWN39T09"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 5489000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__10",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437008RMK8BSWN39T09"
+      },
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 62203000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__6",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437008RMK8BSWN39T09"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 89734000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437008RMK8BSWN39T09"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 12051000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s3__3__13",
+        "instant": "2025-12-31",
+        "entity": "7437008RMK8BSWN39T09"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 12491000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s3__4__13",
+        "instant": "2024-12-31",
+        "entity": "7437008RMK8BSWN39T09"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437009ivywgee4s7b77": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437009IVYWGEE4S7B77/2025-12-31/ESEF/FI/0/7437009IVYWGEE4S7B77-2025-12-31-1-en/reports/7437009IVYWGEE4S7B77-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:12.501454+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 17096000.0,
+        "unit": "EUR",
+        "contextId": "D20251231",
+        "factId": "Tag13",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437009IVYWGEE4S7B77"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 15040000.0,
+        "unit": "EUR",
+        "contextId": "D20241231",
+        "factId": "Tag21",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437009IVYWGEE4S7B77"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 2382000.0,
+        "unit": "EUR",
+        "contextId": "I20251231",
+        "factId": "Tag64",
+        "instant": "2025-12-31",
+        "entity": "7437009IVYWGEE4S7B77"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1961000.0,
+        "unit": "EUR",
+        "contextId": "I20241231",
+        "factId": "Tag93",
+        "instant": "2024-12-31",
+        "entity": "7437009IVYWGEE4S7B77"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-7437009tb42o2ab3jw91": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/7437009TB42O2AB3JW91/2025-12-31/ESEF/FI/0/7437009TB42O2AB3JW91-2025-12-31-1-en/reports/7437009TB42O2AB3JW91-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:14.598606+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 227500000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "7437009TB42O2AB3JW91"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 220900000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "7437009TB42O2AB3JW91"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 84400000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s3__3__17",
+        "instant": "2025-12-31",
+        "entity": "7437009TB42O2AB3JW91"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 84200000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s3__4__17",
+        "instant": "2024-12-31",
+        "entity": "7437009TB42O2AB3JW91"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700al68pux6jms644": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700AL68PUX6JMS644/2025-12-31/ESEF/FI/0/743700AL68PUX6JMS644-2025-12-31-1-fi/reports/743700AL68PUX6JMS644-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:16.446409+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 16532000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-34",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700AL68PUX6JMS644"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 16165000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-35",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700AL68PUX6JMS644"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700ax3tiwvl1lc349": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700AX3TIWVL1LC349/2025-12-31/ESEF/FI/0/743700AX3TIWVL1LC349-2025-12-31-1-fi/reports/743700AX3TIWVL1LC349-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:18.977403+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 348230000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700AX3TIWVL1LC349"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 356471000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700AX3TIWVL1LC349"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 44438000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-71",
+        "instant": "2025-12-31",
+        "entity": "743700AX3TIWVL1LC349"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 37683000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-72",
+        "instant": "2024-12-31",
+        "entity": "743700AX3TIWVL1LC349"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700cjrqru0007gn59": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700CJRQRU0007GN59/2025-12-31/ESEF/FI/0/743700CJRQRU0007GN59-2025-12-31-0-fi/reports/743700CJRQRU0007GN59-2025-12-31-0-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:21.207887+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 138643000.0,
+        "unit": "EUR",
+        "contextId": "D20251231",
+        "factId": "Tag1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700CJRQRU0007GN59"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 132524000.0,
+        "unit": "EUR",
+        "contextId": "D20241231",
+        "factId": "Tag29",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700CJRQRU0007GN59"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 26914000.0,
+        "unit": "EUR",
+        "contextId": "I20251231",
+        "factId": "Tag96",
+        "instant": "2025-12-31",
+        "entity": "743700CJRQRU0007GN59"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 24896000.0,
+        "unit": "EUR",
+        "contextId": "I20241231",
+        "factId": "Tag71",
+        "instant": "2024-12-31",
+        "entity": "743700CJRQRU0007GN59"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700dohlqienktc391": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700DOHLQIENKTC391/2025-12-31/ESEF/FI/1/743700DOHLQIENKTC391-2025-12-31-en/reports/743700DOHLQIENKTC391-2025-12-31-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:23.446580+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 1447600000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "f-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700DOHLQIENKTC391"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 1521400000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "f-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700DOHLQIENKTC391"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 4100000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "f-65",
+        "instant": "2025-12-31",
+        "entity": "743700DOHLQIENKTC391"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 3600000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "f-66",
+        "instant": "2024-12-31",
+        "entity": "743700DOHLQIENKTC391"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700dyz6r1qnlwqa56": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700DYZ6R1QNLWQA56/2025-12-31/ESEF/FI/0/743700DYZ6R1QNLWQA56-2025-12-31-en/reports/743700DYZ6R1QNLWQA56-2025-12-31-0-en.html",
+    "fetchedAt": "2026-10-25T11:49:25.613654+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 358000000.0,
+        "unit": "EUR",
+        "contextId": "c1",
+        "factId": "ID_227",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700DYZ6R1QNLWQA56"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 347100000.0,
+        "unit": "EUR",
+        "contextId": "c4",
+        "factId": "ID_228",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700DYZ6R1QNLWQA56"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 11400000.0,
+        "unit": "EUR",
+        "contextId": "c2",
+        "factId": "ID_177",
+        "instant": "2025-12-31",
+        "entity": "743700DYZ6R1QNLWQA56"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 11900000.0,
+        "unit": "EUR",
+        "contextId": "c3",
+        "factId": "ID_178",
+        "instant": "2024-12-31",
+        "entity": "743700DYZ6R1QNLWQA56"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700epluwxe25hgm03": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700EPLUWXE25HGM03/2025-12-31/ESEF/FI/0/743700EPLUWXE25HGM03-2025-12-31-1-en/reports/743700EPLUWXE25HGM03-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:38.604223+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 152671000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s4__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700EPLUWXE25HGM03"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 150379000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s4__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700EPLUWXE25HGM03"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700f6clx8jmydep21": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700F6CLX8JMYDEP21/2025-12-31/ESEF/FI/0/743700F6CLX8JMYDEP21-2025-12-31-1-fi/reports/743700F6CLX8JMYDEP21-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:42.078939+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 204546000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s2__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700F6CLX8JMYDEP21"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 193979000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s2__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700F6CLX8JMYDEP21"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 60243000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s4__3__14",
+        "instant": "2025-12-31",
+        "entity": "743700F6CLX8JMYDEP21"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 60242000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s4__4__14",
+        "instant": "2024-12-31",
+        "entity": "743700F6CLX8JMYDEP21"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700ftbnxaun57rh30": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700FTBNXAUN57RH30/2025-12-31/ESEF/FI/0/743700FTBNXAUN57RH30-2025-12-31-1-fi/reports/743700FTBNXAUN57RH30-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:49:47.663424+00:00",
+    "facts": {
+      "revenue": null,
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 128869000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-29",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700FTBNXAUN57RH30"
+      },
+      "costOfSales": null,
+      "previousRevenue": null,
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700g00629v99pe435": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700G00629V99PE435/2025-12-31/ESEF/FI/0/743700G00629V99PE435-2025-12-31-1-fi/reports/743700G00629V99PE435-2025-12-31-1-fi.html",
+    "fetchedAt": "2026-10-25T11:49:49.783502+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 175539000.0,
+        "unit": "EUR",
+        "contextId": "c1",
+        "factId": "ID_216",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700G00629V99PE435"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 204583000.0,
+        "unit": "EUR",
+        "contextId": "c4",
+        "factId": "ID_217",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700G00629V99PE435"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 15439000.0,
+        "unit": "EUR",
+        "contextId": "c2",
+        "factId": "ID_154",
+        "instant": "2025-12-31",
+        "entity": "743700G00629V99PE435"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 23505000.0,
+        "unit": "EUR",
+        "contextId": "c3",
+        "factId": "ID_155",
+        "instant": "2024-12-31",
+        "entity": "743700G00629V99PE435"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700go2xu2zyydkw67": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700GO2XU2ZYYDKW67/2025-12-31/ESEF/FI/0/qtgroupoyj-2025-12-31-1-en/reports/qtgroupoyj-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:49:57.768741+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 216281000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-2",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700GO2XU2ZYYDKW67"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 209063000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-3",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700GO2XU2ZYYDKW67"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 849000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-52",
+        "instant": "2025-12-31",
+        "entity": "743700GO2XU2ZYYDKW67"
+      },
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700gsl41h2dxzy963": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700GSL41H2DXZY963/2025-12-31/ESEF/FI/0/743700GSL41H2DXZY963-2025-12-31-1-fi/reports/743700GSL41H2DXZY963-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:50:00.047551+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 29512000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700GSL41H2DXZY963"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 33324000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700GSL41H2DXZY963"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 9045000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s2__3__15",
+        "instant": "2025-12-31",
+        "entity": "743700GSL41H2DXZY963"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 9545000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s2__4__15",
+        "instant": "2024-12-31",
+        "entity": "743700GSL41H2DXZY963"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700hohmohaanhff73": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700HOHMOHAANHFF73/2025-12-31/ESEF/FI/1/743700HOHMOHAANHFF73-2025-12-31-1-en/reports/743700HOHMOHAANHFF73-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:50:02.988665+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 188585000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700HOHMOHAANHFF73"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 192910000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700HOHMOHAANHFF73"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700hsiesz75x06h10": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700HSIESZ75X06H10/2025-12-31/ESEF/FI/0/743700HSIESZ75X06H10-2025-12-31-1-fi/reports/743700HSIESZ75X06H10-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:50:06.291221+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 108354109.13,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f1__s3__3__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700HSIESZ75X06H10"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 114027844.62,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f1__s3__4__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700HSIESZ75X06H10"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 5508067.02,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f1__s4__3__17",
+        "instant": "2025-12-31",
+        "entity": "743700HSIESZ75X06H10"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 5373451.48,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f1__s4__4__17",
+        "instant": "2024-12-31",
+        "entity": "743700HSIESZ75X06H10"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700hxwtm31zhbxw13": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700HXWTM31ZHBXW13/2025-12-31/ESEF/FI/0/743700HXWTM31ZHBXW13-2025-12-31-fi/reports/743700HXWTM31ZHBXW13-2025-12-31-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:50:08.754696+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 46735000.0,
+        "unit": "EUR",
+        "contextId": "ctx-1",
+        "factId": "f0__s1__2__5",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700HXWTM31ZHBXW13"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 50869000.0,
+        "unit": "EUR",
+        "contextId": "ctx-2",
+        "factId": "f0__s1__3__5",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700HXWTM31ZHBXW13"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 9000.0,
+        "unit": "EUR",
+        "contextId": "ctx-3",
+        "factId": "f0__s2__2__15",
+        "instant": "2025-12-31",
+        "entity": "743700HXWTM31ZHBXW13"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 34000.0,
+        "unit": "EUR",
+        "contextId": "ctx-4",
+        "factId": "f0__s2__3__15",
+        "instant": "2024-12-31",
+        "entity": "743700HXWTM31ZHBXW13"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700i27e0fwsxlkk04": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700I27E0FWSXLKK04/2025-12-31/ESEF/FI/0/reveniogroup-2025-12-31-0-en/reports/reveniogroup-2025-12-31-0-en.xhtml",
+    "fetchedAt": "2026-10-25T11:50:10.714678+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 109677000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700I27E0FWSXLKK04"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": {
+        "concept": "ifrs-full:CostOfSales",
+        "value": 31877000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-11",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700I27E0FWSXLKK04"
+      },
+      "previousRevenue": {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "value": 103517000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700I27E0FWSXLKK04"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700ie9nqgf9yzai97": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700IE9NQGF9YZAI97/2025-12-31/ESEF/FI/0/must-2025-12-31-1-en/reports/must-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:50:12.467688+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 508855000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700IE9NQGF9YZAI97"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": null,
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 77817000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-67",
+        "instant": "2025-12-31",
+        "entity": "743700IE9NQGF9YZAI97"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 66455000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-68",
+        "instant": "2024-12-31",
+        "entity": "743700IE9NQGF9YZAI97"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700ifqi6w89m1iy95": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700IFQI6W89M1IY95/2025-12-31/ESEF/FI/0/743700IFQI6W89M1IY95-2025-12-31-1-en/reports/743700IFQI6W89M1IY95-2025-12-31-1-en.html",
+    "fetchedAt": "2026-10-25T11:50:14.334317+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 952300000.0,
+        "unit": "EUR",
+        "contextId": "c1",
+        "factId": "ID_224",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700IFQI6W89M1IY95"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 940100000.0,
+        "unit": "EUR",
+        "contextId": "c4",
+        "factId": "ID_225",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700IFQI6W89M1IY95"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 163800000.0,
+        "unit": "EUR",
+        "contextId": "c2",
+        "factId": "ID_166",
+        "instant": "2025-12-31",
+        "entity": "743700IFQI6W89M1IY95"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 169600000.0,
+        "unit": "EUR",
+        "contextId": "c3",
+        "factId": "ID_167",
+        "instant": "2024-12-31",
+        "entity": "743700IFQI6W89M1IY95"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700ilu1pl86iw3429": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700ILU1PL86IW3429/2025-12-31/ESEF/FI/0/743700ILU1PL86IW3429-2025-12-31-1-en/reports/743700ILU1PL86IW3429-2025-12-31-1-en.xhtml",
+    "fetchedAt": "2026-10-25T11:50:16.310659+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 327100000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-1",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700ILU1PL86IW3429"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 312700000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-2",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700ILU1PL86IW3429"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 800000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-71",
+        "instant": "2025-12-31",
+        "entity": "743700ILU1PL86IW3429"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 700000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-72",
+        "instant": "2024-12-31",
+        "entity": "743700ILU1PL86IW3429"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700j2wo3j6xgfpg77": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700J2WO3J6XGFPG77/2025-12-31/ESEF/FI/0/743700J2WO3J6XGFPG77-2025-12-31-0-fi/reports/743700J2WO3J6XGFPG77-2025-12-31-0-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:50:19.278981+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 57140000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-11",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700J2WO3J6XGFPG77"
+      },
+      "administrativeExpenses": {
+        "concept": "ifrs-full:AdministrativeExpense",
+        "value": 8409000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-19",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700J2WO3J6XGFPG77"
+      },
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 62111000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-12",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700J2WO3J6XGFPG77"
+      },
+      "inventory": null,
+      "previousInventory": null,
+      "employees": null,
+      "previousEmployees": null
+    }
+  },
+  "lei-743700j7nht5olsj3b78": {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "days": 365,
+    "scope": "consolidated",
+    "currency": "EUR",
+    "employeeBasis": null,
+    "sourceUrl": "https://filings.xbrl.org/743700J7NHT5OLSJ3B78/2025-12-31/ESEF/FI/0/743700J7NHT5OLSJ3B78-2025-12-31-1-fi/reports/743700J7NHT5OLSJ3B78-2025-12-31-1-fi.xhtml",
+    "fetchedAt": "2026-10-25T11:50:21.995331+00:00",
+    "facts": {
+      "revenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 212768000.0,
+        "unit": "EUR",
+        "contextId": "c-1",
+        "factId": "fact-8",
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "entity": "743700J7NHT5OLSJ3B78"
+      },
+      "administrativeExpenses": null,
+      "costOfSales": null,
+      "previousRevenue": {
+        "concept": "ifrs-full:Revenue",
+        "value": 202657000.0,
+        "unit": "EUR",
+        "contextId": "c-2",
+        "factId": "fact-9",
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "entity": "743700J7NHT5OLSJ3B78"
+      },
+      "inventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1276000.0,
+        "unit": "EUR",
+        "contextId": "c-3",
+        "factId": "fact-86",
+        "instant": "2025-12-31",
+        "entity": "743700J7NHT5OLSJ3B78"
+      },
+      "previousInventory": {
+        "concept": "ifrs-full:Inventories",
+        "value": 1852000.0,
+        "unit": "EUR",
+        "contextId": "c-4",
+        "factId": "fact-87",
+        "instant": "2024-12-31",
+        "entity": "743700J7NHT5OLSJ3B78"
+      },
+      "employees": null,
+      "previousEmployees": null
+    }
   }
 }

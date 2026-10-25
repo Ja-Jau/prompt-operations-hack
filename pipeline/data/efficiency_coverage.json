@@ -1424,17 +1424,18 @@
     "financialFetchedAt": null
   },
   "lei-74370031y7rk5h88cq48": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:37.201686+00:00"
   },
   "lei-7437003b5wfboiefy714": {
     "available": [],
@@ -1446,47 +1447,50 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No supported unsegmented facts for the requested year",
     "financialFetchedAt": null
   },
   "lei-7437003nx7wwvrt6aj55": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:44.350787+00:00"
   },
   "lei-7437003wyxjusv27q316": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:46.498273+00:00"
   },
   "lei-743700498l5thnqwvl66": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:48.415346+00:00"
   },
   "lei-7437004genttqhmnq407": {
     "available": [],
@@ -1498,216 +1502,232 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "Report exceeds download size limit",
     "financialFetchedAt": null
   },
   "lei-7437004xd6u0ffdct507": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:53.553611+00:00"
   },
   "lei-74370058mtrledochv67": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:55.371271+00:00"
   },
   "lei-74370058zyob0giyut38": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:57.200659+00:00"
   },
   "lei-7437006i5533r06ju690": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:48:59.184274+00:00"
   },
   "lei-7437007n96fk4n3wht09": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:01.067783+00:00"
   },
   "lei-7437007ypuoqz8ov1r42": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:02.673013+00:00"
   },
   "lei-74370083282nhip4qd02": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:05.505816+00:00"
   },
   "lei-74370089attsnbxjvt29": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:08.041819+00:00"
   },
   "lei-7437008rmk8bswn39t09": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio",
+      "inventoryDays"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:10.573929+00:00"
   },
   "lei-7437009ivywgee4s7b77": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:12.501454+00:00"
   },
   "lei-7437009tb42o2ab3jw91": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:14.598606+00:00"
   },
   "lei-743700al68pux6jms644": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:16.446409+00:00"
   },
   "lei-743700ax3tiwvl1lc349": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:18.977403+00:00"
   },
   "lei-743700cjrqru0007gn59": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:21.207887+00:00"
   },
   "lei-743700dohlqienktc391": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:23.446580+00:00"
   },
   "lei-743700dyz6r1qnlwqa56": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:25.613654+00:00"
   },
   "lei-743700eig9tdb5qnzs09": {
     "available": [],
@@ -1719,60 +1739,63 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "Report exceeds download size limit",
     "financialFetchedAt": null
   },
   "lei-743700epluwxe25hgm03": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:38.604223+00:00"
   },
   "lei-743700f6clx8jmydep21": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:42.078939+00:00"
   },
   "lei-743700ftbnxaun57rh30": {
     "available": [],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "revenue": "Revenue not reported",
+      "revenueGrowth": "Needs revenue for two full years",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:47.663424+00:00"
   },
   "lei-743700g00629v99pe435": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:49.783502+00:00"
   },
   "lei-743700gb29fxc0vxf414": {
     "available": [],
@@ -1784,7 +1807,7 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "Report exceeds download size limit",
     "financialFetchedAt": null
   },
   "lei-743700gc62jlhfbund16": {
@@ -1797,151 +1820,162 @@
       "inventoryDays": "No supported public financial report imported",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
-    "fetchError": null,
+    "fetchError": "No supported unsegmented facts for the requested year",
     "financialFetchedAt": null
   },
   "lei-743700go2xu2zyydkw67": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:49:57.768741+00:00"
   },
   "lei-743700gsl41h2dxzy963": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:00.047551+00:00"
   },
   "lei-743700hohmohaanhff73": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:02.988665+00:00"
   },
   "lei-743700hsiesz75x06h10": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:06.291221+00:00"
   },
   "lei-743700hxwtm31zhbxw13": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:08.754696+00:00"
   },
   "lei-743700i27e0fwsxlkk04": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:10.714678+00:00"
   },
   "lei-743700ie9nqgf9yzai97": {
-    "available": [],
+    "available": [
+      "revenue"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "revenueGrowth": "Needs revenue for two full years",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:12.467688+00:00"
   },
   "lei-743700ifqi6w89m1iy95": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:14.334317+00:00"
   },
   "lei-743700ilu1pl86iw3429": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:16.310659+00:00"
   },
   "lei-743700j2wo3j6xgfpg77": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth",
+      "adminRatio"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:19.278981+00:00"
   },
   "lei-743700j7nht5olsj3b78": {
-    "available": [],
+    "available": [
+      "revenue",
+      "revenueGrowth"
+    ],
     "missing": {
-      "revenue": "No supported public financial report imported",
-      "revenueGrowth": "No supported public financial report imported",
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     },
     "fetchError": null,
-    "financialFetchedAt": null
+    "financialFetchedAt": "2026-10-25T11:50:21.995331+00:00"
   },
   "lei-743700jiw1lauzdh9012": {
     "available": [],
