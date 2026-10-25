@@ -32,6 +32,16 @@ export function draftOpportunityEmail(company: HiringCompany, contacts: ContactS
 /** Safe HTML for the demo email preview or export; never delivers an email. */
 export function invitationEmailHtml(draft: EmailDraft, links: InvitationLinks): string {
   const escape = (value: string) => value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]!);
-  const button = (label: string, url: string, primary = false) => `<a href="${escape(url)}" style="display:inline-block;padding:12px 18px;margin:6px 8px 6px 0;border:1px solid #0a1b34;border-radius:6px;background:${primary ? "#0a1b34" : "#ffffff"};color:${primary ? "#ffffff" : "#0a1b34"};text-decoration:none">${label}</a>`;
-  return `<html><body style="font-family:Arial,sans-serif;color:#0a1b34;max-width:600px;margin:auto;padding:24px"><h1 style="font-size:24px">Play. Discover. Improve.</h1><p style="white-space:pre-wrap;line-height:1.6">${escape(draft.body)}</p>${button("Play the Velho game", links.game, true)}<p>Explore what Velho could improve at your company:</p>${button("Yes, contact me", links.interested, true)}${button("No thanks", links.declined)}<p style="font-size:12px">Confirm your choice on the linked page.</p></body></html>`;
+  const button = (label: string, url: string, primary = false) => `<a href="${escape(url)}" target="_blank" rel="noreferrer" style="display:inline-block;padding:12px 18px;margin:6px 8px 6px 0;border:1px solid #0a1b34;border-radius:6px;background:${primary ? "#0a1b34" : "#ffffff"};color:${primary ? "#ffffff" : "#0a1b34"};font-size:14px;font-weight:600;text-decoration:none">${label}</a>`;
+  const paragraphs = draft.body.split(/\n\s*\n/).map((paragraph) => {
+    // CTA destinations live in the buttons, never as visible tracking URLs.
+    const text = paragraph.split("\n").filter((line) => !line.includes(links.interested) && !line.includes(links.declined)).join("\n").replaceAll(links.game, "").replace(/Try Firmle, the Velho game:\s*$/, "Try Firmle, the Velho game.").trim();
+    if (!text) return "";
+    const parts = text.split(/(https?:\/\/[^\s<>"”]+)/g);
+    const content = parts.map((part) => /^https?:\/\//.test(part)
+      ? `<a href="${escape(part)}" target="_blank" rel="noreferrer" style="color:#426791">${part.includes("/brief/") ? "View company brief" : part === "https://velho.io/" ? "velho.io" : "Open link"}</a>`
+      : escape(part).replaceAll("\n", "<br />")).join("");
+    return `<p style="margin:0 0 16px;line-height:1.65;font-size:14px">${content}</p>`;
+  }).join("");
+  return `<div style="font-family:Arial,sans-serif;color:#0a1b34;max-width:600px;margin:auto;padding:24px;background:#ffffff"><h1 style="font-size:24px;margin:0 0 24px">Play. Discover. Improve.</h1>${paragraphs}<div style="margin-top:20px">${button("Play the Velho game", links.game, true)}</div><p style="font-size:14px;line-height:1.6">Explore what Velho could improve at your company:</p>${button("Contact Velho", links.interested, true)}${button("No thanks", links.declined)}</div>`;
 }

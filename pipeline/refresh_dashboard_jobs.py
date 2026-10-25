@@ -1,6 +1,6 @@
-"""Bounded dashboard refresh: one rotating Jobly category, five current ad pages.
+"""Bounded dashboard refresh: one rotating Jobly category, up to ten ad pages with short-lived caching.
 
-Print JSON only. Reuses the source parser, robots checks and throttling; no AI key needed.
+Print JSON only. Reuses the source parser and robots access checks; no AI key needed.
 The app passes a category offset. Only explicit task descriptions are flagged, never
 an Excel skill requirement on its own. Quotes remain verbatim and at most 25 words.
 """
@@ -9,13 +9,17 @@ from __future__ import annotations
 import json
 import re
 import sys
+import time
 import unicodedata
 from pathlib import Path
+from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "velho-game-data"))
-from scraper.fetch import PoliteFetcher, USER_AGENT
+from scraper.fetch import PoliteFetcher
 from scraper.jobly import BASE, CATEGORIES, parse_ad, parse_listing
+
+MAX_ADS = 10
 
 TASK = re.compile(
     r"\b(manual(?:ly)?\s+(?:data|entry|report|invoice|reconcil|process)|data entry|"
@@ -41,22 +45,28 @@ def repetitive_quote(description: str) -> str:
 
 
 class FreshFetcher(PoliteFetcher):
-    def _get_raw(self, url: str) -> str:
-        # Refreshes need current pages rather than the scraper's permanent HTML cache.
-        return self._request(url)
+    def __init__(self, source: str):
+        # Dashboard batches run consecutively; only failed-request retries back off.
+        super().__init__(source, min_interval=0)
+        self.page_fetched_at = {}
 
-    def _allowed(self, url: str) -> bool:
-        allowed = super()._allowed(url)
-        parsed = urlparse(url)
-        rules = self._robots[f"{parsed.scheme}://{parsed.netloc}"]
-        self.min_interval = max(self.min_interval, rules.crawl_delay(USER_AGENT) or rules.crawl_delay("*") or 0)
-        return allowed
+    def _get_raw(self, url: str) -> str:
+        cache = self._cache_path(url)
+        ttl = 86400 if url.endswith("/robots.txt") else 120 if "/tyopaikat/" in url else 900
+        if cache.exists() and 0 <= time.time() - cache.stat().st_mtime < ttl:
+            self.page_fetched_at[url] = cache.stat().st_mtime
+            return cache.read_text(encoding="utf-8")
+        text = self._request(url)
+        cache.write_text(text, encoding="utf-8")
+        self.page_fetched_at[url] = cache.stat().st_mtime
+        return text
+
 
 
 def main():
     offset = int(sys.argv[1]) if len(sys.argv) > 1 else 0
     slug, category = CATEGORIES[offset % len(CATEGORIES)]
-    fetcher = FreshFetcher("jobly-dashboard", min_interval=10)
+    fetcher = FreshFetcher("jobly-dashboard")
     try:
         hints = parse_listing(fetcher.get(f"{BASE}/tyopaikat/{slug}"), category)
         # Fixed source URL boundary even if a listing contains an unexpected external link.
@@ -76,9 +86,10 @@ def main():
                     "companyId": re.sub(r"[^a-z0-9]+", "-", ascii_name.lower()).strip("-"),
                     "companyName": job["company_name"], "title": job["job_title"],
                     "quote": repetitive_quote(job["description_raw"]), "url": job["url"],
-                    "location": job["location"], "category": category, "fetchedAt": job["scraped_at"],
+                    "location": job["location"], "category": category,
+                    "fetchedAt": datetime.fromtimestamp(fetcher.page_fetched_at[hint["url"]], timezone.utc).isoformat(timespec="seconds"),
                 })
-            if len(seen) >= 5:
+            if len(seen) >= MAX_ADS:
                 break
         if not ads:
             raise RuntimeError("No readable job descriptions found. Existing data was kept.")

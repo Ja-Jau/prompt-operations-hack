@@ -58,7 +58,6 @@ export async function refreshDashboardJobs(): Promise<{ checked: number; flagged
   }
   try {
     const previous = await snapshot();
-    if (previous.updatedAt && Date.now() - Date.parse(previous.updatedAt) < 60_000) throw new Error("Please wait a minute before fetching another batch.");
     let stdout: string;
     try {
       ({ stdout } = await exec(process.env.DASHBOARD_PYTHON ?? (existsSync(path.join(process.cwd(), ".venv/bin/python")) ? path.join(process.cwd(), ".venv/bin/python") : "python3"), [path.join(process.cwd(), "pipeline", "refresh_dashboard_jobs.py"), String(previous.runs)], { timeout: 180_000, maxBuffer: 1024 * 1024 }));

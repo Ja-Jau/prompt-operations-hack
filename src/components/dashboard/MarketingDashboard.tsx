@@ -20,7 +20,7 @@ type DemoActivity = { companyId: string; company: string; to: string; at: string
 const PAGE_SIZE = 5;
 
 /** Draft editing stays local; demo invitations and responses persist without email delivery. */
-export function MarketingDashboard({ prospects, totalCompanies, leadCount, updatedAt }: { prospects: MarketingProspect[]; totalCompanies: number; leadCount: number; updatedAt: string }) {
+export function MarketingDashboard({ prospects, totalCompanies, updatedAt }: { prospects: MarketingProspect[]; totalCompanies: number; updatedAt: string }) {
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
   const [filter, setFilter] = useState<"all" | "reviewed" | "employers">("all");
@@ -59,7 +59,7 @@ export function MarketingDashboard({ prospects, totalCompanies, leadCount, updat
     try {
       const token = await prepareInvitation(prospect.company.id);
       const origin = window.location.origin;
-      const links = { game: `${origin}/`, interested: `${origin}/respond/${token}?choice=interested`, declined: `${origin}/respond/${token}?choice=declined` };
+      const links = { game: `${origin}/respond/${token}?choice=game`, interested: `${origin}/respond/${token}?choice=interested`, declined: `${origin}/respond/${token}?choice=declined` };
       const generated = draftOpportunityEmail(prospect.company, prospect.contacts, `${origin}/brief/${prospect.company.id}`, prospect.solution, links);
       setDrafts((previous) => ({ ...previous, [prospect.company.id]: { ...generated, token, links } }));
       setSimulated((previous) => ({ ...previous, [prospect.company.id]: false })); setCopied(false);
@@ -76,10 +76,21 @@ export function MarketingDashboard({ prospects, totalCompanies, leadCount, updat
     setDrafts((previous) => ({ ...previous, [selectedId]: { ...previous[selectedId], ...patch } }));
     setSimulated((previous) => ({ ...previous, [selectedId]: false })); setCopied(false);
   }
-  async function copyDraft(html = false) {
+  async function copyDraft() {
     if (!draft) return;
-    try { await navigator.clipboard.writeText(html ? invitationEmailHtml(draft, draft.links) : `To: ${draft.to}\nSubject: ${draft.subject}\n\n${draft.body}`); setCopied(true); setCopyError(false); }
-    catch { setCopyError(true); }
+    try {
+      await navigator.clipboard.write([new ClipboardItem({
+        "text/html": new Blob([invitationEmailHtml(draft, draft.links)], { type: "text/html" }),
+        "text/plain": new Blob([draft.body], { type: "text/plain" }),
+      })]);
+      setCopied(true); setCopyError(false);
+    } catch { setCopyError(true); }
+  }
+  function downloadEmail() {
+    if (!draft) return;
+    const url = URL.createObjectURL(new Blob([invitationEmailHtml(draft, draft.links)], { type: "text/html" }));
+    const link = document.createElement("a"); link.href = url; link.download = "velho-invitation.html";
+    link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
   async function simulateSend() {
     if (!selected || !draft || busy) return;
@@ -98,7 +109,7 @@ export function MarketingDashboard({ prospects, totalCompanies, leadCount, updat
     <section className="marketing-overview" aria-label="Company analysis overview">
       <PriorityChart counts={counts} selected={tier} onSelect={(value) => { setTier(value); setPage(0); }} />
       <dl className="marketing-counts">{[
-        { label: "Analyzed", value: totalCompanies }, { label: "Ads flagged", value: manual }, { label: "Enquiries", value: leadCount },
+        { label: "Analyzed", value: totalCompanies }, { label: "Ads flagged", value: manual },
       ].map((stat) => <div key={stat.label}><dt>{stat.label}</dt><dd>{stat.value}</dd></div>)}</dl>
     </section>
     <section className="marketing-companies" aria-labelledby="marketing-companies-title">
@@ -133,11 +144,11 @@ export function MarketingDashboard({ prospects, totalCompanies, leadCount, updat
           <label>To<input type="email" required disabled={simulated[selected.company.id] || busy} value={draft.to} onChange={(event) => updateDraft({ to: event.target.value })} autoComplete="off" /></label>
           <p className="marketing-recipient-note">Suggested inbox · verify. <a href={selected.contacts.contactPageSearch} target="_blank" rel="noreferrer">Contacts ↗</a></p>
           <label>Subject<input required disabled={simulated[selected.company.id] || busy} maxLength={300} value={draft.subject} onChange={(event) => updateDraft({ subject: event.target.value })} /></label>
-          <label>Message<textarea required disabled={simulated[selected.company.id] || busy} value={draft.body} onChange={(event) => updateDraft({ body: event.target.value })} rows={10} /></label>
-          <section className="invitation-preview"><h3>Email buttons</h3><p>Recipients confirm their choice on the linked page.</p><div><a className="btn btn-dark btn-sm" href={draft.links.game} target="_blank" rel="noreferrer">Play the Velho game ↗</a><a className="btn btn-dark btn-sm" href={draft.links.interested} target="_blank" rel="noreferrer">Yes, contact me</a><a className="btn btn-outline btn-sm" href={draft.links.declined} target="_blank" rel="noreferrer">No thanks</a></div></section>
+          <details className="email-edit-message"><summary>Edit message</summary><label><span className="sr-only">Message</span><textarea required disabled={simulated[selected.company.id] || busy} value={draft.body} onChange={(event) => updateDraft({ body: event.target.value })} rows={10} /></label></details>
+          <section className="invitation-preview"><h3>Email preview</h3><div className="email-rendered-preview" dangerouslySetInnerHTML={{ __html: invitationEmailHtml(draft, draft.links) }} /></section>
           {simulated[selected.company.id] && <p className="marketing-send-confirmation" role="status"><Icon name="check" /> Demo complete. No email was sent to {draft.to}.</p>}
-          {copyError && <p role="status" className="text-xs text-ink-3">Clipboard unavailable. You can select and copy the draft text.</p>}
-          <div className="marketing-compose-actions"><button type="button" onClick={() => copyDraft()}>{copied ? "Copied" : "Copy text"}</button><button type="button" onClick={() => copyDraft(true)}>Copy HTML</button><button type="button" disabled={busy} onClick={() => ensureDraft(selected, true)}>New invitation</button><button type="submit" disabled={busy || simulated[selected.company.id]} className="btn btn-dark btn-sm" aria-describedby="marketing-send-explanation">{busy ? "Saving…" : simulated[selected.company.id] ? "Demo recorded" : "Send demo"}<Icon name="arrowRight" /></button></div>
+          {copyError && <p role="status" className="text-xs text-ink-3">Rich-text copying is unavailable. Download the HTML email to keep its buttons.</p>}
+          <div className="marketing-compose-actions"><button type="button" onClick={copyDraft}>{copied ? "Email copied" : "Copy email"}</button><button type="button" onClick={downloadEmail}>Download HTML</button><button type="button" disabled={busy} onClick={() => ensureDraft(selected, true)}>New invitation</button><button type="submit" disabled={busy || simulated[selected.company.id]} className="btn btn-dark btn-sm" aria-describedby="marketing-send-explanation">{busy ? "Saving…" : simulated[selected.company.id] ? "Demo recorded" : "Send demo"}<Icon name="arrowRight" /></button></div>
           <p id="marketing-send-explanation" className="marketing-send-explanation">Saves a demo invitation for response tracking. No email is delivered. </p>
         </form>}
         {tab === "email" && !draft && <p className="marketing-analysis">{busy ? "Preparing invitation…" : <button onClick={() => ensureDraft(selected)}>Prepare invitation</button>}</p>}

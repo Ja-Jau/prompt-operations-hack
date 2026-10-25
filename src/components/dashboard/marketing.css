@@ -176,7 +176,7 @@
 .marketing-pie-legend button > span { flex: 1; text-align: left; color: var(--color-ink-2); }
 .marketing-pie-legend strong { font-size: 11px; font-weight: 550; }
 .marketing-pie-legend small { width: 30px; text-align: right; color: var(--color-ink-3); font-size: 9px; }
-.marketing-counts { display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; gap: 22px; flex: 1; border-left: 1px solid var(--color-sand-2); padding-left: 30px; }
+.marketing-counts { display: grid; grid-template-columns: repeat(2, 1fr); align-items: center; gap: 22px; flex: 1; border-left: 1px solid var(--color-sand-2); padding-left: 30px; }
 .marketing-counts dt { font-size: 10px; color: var(--color-ink-3); }
 .marketing-counts dd { font-size: 29px; font-weight: 550; line-height: 1; letter-spacing: -.04em; margin-top: 10px; }
 .marketing-login { display: flex; align-items: center; justify-content: center; flex-direction: column; min-height: 100dvh; padding: 28px 20px; background: radial-gradient(ellipse at 15% 15%, #7aa3d60b, transparent 60%), var(--color-cream); color: var(--color-ink); }
@@ -269,3 +269,43 @@
   .dashboard-navigation > a > svg, .dashboard-navigation .dashboard-signout svg { display: none; }
   .dashboard-fetch { padding: 12px; }
 }
+
+.invitation-landing { padding: 34px 36px; }
+.invitation-landing-icon { display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; margin-top: 32px; border-radius: 17px; background: #e7eef8; color: #294f83; }
+.invitation-landing-icon svg { width: 26px; height: 26px; }
+.invitation-landing.is-contact .invitation-landing-icon { background: #e4f0eb; color: #387b68; }
+.invitation-landing.is-declined .invitation-landing-icon { background: #f0ede5; color: #746e61; }
+.invitation-landing > .invitation-eyebrow { margin-top: 20px; color: var(--color-ink-3); font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.invitation-landing > h1 { margin-top: 8px; max-width: 380px; font-size: clamp(28px, 5vw, 36px); line-height: 1.12; letter-spacing: -.045em; }
+.invitation-landing > .invitation-description { margin-top: 16px; font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; }
+.invitation-game-facts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 22px; }
+.invitation-game-facts span { padding: 6px 9px; border-radius: 5px; background: #f0f4f9; color: #426791; font-size: 10px; }
+.invitation-landing .invitation-primary { display: flex; justify-content: space-between; width: 100%; gap: 16px; margin-top: 26px; padding: 14px 17px; border-radius: 8px; font-size: 13px; }
+.invitation-primary svg { width: 16px; height: 16px; }
+.invitation-landing .invitation-secondary { display: block; margin-top: 17px; text-align: center; font-size: 11px; color: var(--color-ink-3); }
+.invitation-confirm-form > p, .invitation-draft-notice { margin-top: 24px; font-size: 12px; line-height: 1.7; color: var(--color-ink-3); overflow-wrap: anywhere; }
+.invitation-confirm-form strong { color: var(--color-ink-2); font-weight: 500; }
+.invitation-landing > .invitation-demo-note { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--color-sand-2); font-size: 10px; }
+@media (max-width: 480px) { .invitation-landing { padding: 28px 24px; } }
+
+.dashboard-fetch { margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent; }
+.dashboard-fetch form { justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+.dashboard-fetch button { padding: 8px 11px; font-size: 10px; }
+.dashboard-fetch > p { text-align: right; }
+.invitation-click-status { margin-top: 20px; padding: 12px 14px; border-radius: 7px; background: #f0f4f9; color: #426791; font-size: 12px; line-height: 1.6; }
+.invitation-click-status.is-saved { background: #e4f0eb; color: #245e4d; }
+.invitation-click-status button { margin-top: 8px; text-decoration: underline; cursor: pointer; }
+.response-error { color: #955940; }
+.marketing-section-heading > button:disabled { opacity: .55; cursor: wait; }
+.email-edit-message summary { font-size: 12px; cursor: pointer; color: var(--color-ink-3); }
+.email-edit-message textarea { margin-top: 12px; width: 100%; }
+.invitation-preview .email-rendered-preview { display: block; margin-top: 12px; border: 1px solid var(--color-sand-2); border-radius: 8px; overflow: hidden; background: white; }
+
+.invitation-minimal { width: min(100%, 480px); padding: 24px 12px; }
+.invitation-minimal .marketing-login-brand { margin-bottom: 48px; }
+.invitation-minimal > .invitation-eyebrow { margin-top: 0; }
+.invitation-minimal > .invitation-description { margin-top: 18px; }
+.invitation-minimal .invitation-click-status { padding: 0; border-radius: 0; background: transparent; margin-top: 18px; font-size: 12px; }
+.invitation-minimal .invitation-click-status.is-saved { background: transparent; }
+.invitation-minimal > .invitation-demo-note { padding-top: 0; border-top: 0; color: var(--color-ink-3); font-size: 10px; margin-top: 36px; }
+@media (max-width: 480px) { .invitation-minimal { padding: 20px 4px; } }

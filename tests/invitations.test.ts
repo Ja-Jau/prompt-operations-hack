@@ -33,4 +33,55 @@ test("invitation email includes game, company proposal and both tracked response
   assert.ok(!html.includes("<script>"));
   assert.ok(html.includes(`href="${links.interested}"`));
   assert.ok(html.includes(`href="${links.declined}"`));
+  const visible = invitationEmailHtml(draft, links).replace(/<[^>]+>/g, "");
+  assert.ok(!visible.includes("https://"));
+  assert.ok(visible.includes("Contact Velho"));
+  assert.ok(visible.includes("Play the Velho game"));
+});
+
+test("responses persist across processes and retain game visits without double-counting", async () => {
+  const { mkdtempSync, rmSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const { join, resolve } = await import("node:path");
+  const { spawnSync } = await import("node:child_process");
+  const directory = mkdtempSync(join(tmpdir(), "velho-response-test-"));
+  const modulePath = resolve(__dirname, "../src/lib/outreach/invitations.js");
+  const env = { ...process.env };
+  for (const key of ["KV_REST_API_URL", "KV_REST_API_TOKEN", "UPSTASH_REDIS_REST_URL", "UPSTASH_REDIS_REST_TOKEN"]) delete env[key];
+  const run = (code: string) => {
+    const result = spawnSync(process.execPath, ["-e", `const store = require(${JSON.stringify(modulePath)}); (async () => { ${code} })().catch(error => { console.error(error); process.exit(1); });`], { cwd: directory, env, encoding: "utf8" });
+    assert.equal(result.status, 0, result.stderr);
+    return result.stdout.trim();
+  };
+  try {
+    const token = run(`const invitation = store.newInvitation("example", "Example"); invitation.sentAt = new Date().toISOString(); await store.saveInvitation(invitation); console.log(invitation.token);`);
+    run(`const invitation = await store.findInvitation(${JSON.stringify(token)}); await store.saveInvitation({ ...store.applyResponse(invitation, "interested"), gameClickedAt: "2026-10-25T12:00:00Z" });`);
+    assert.equal(run(`console.log(JSON.stringify(store.responseCounts(await store.readInvitations())));`), '{"interested":1,"declined":0,"pending":0}');
+    run(`const invitation = await store.findInvitation(${JSON.stringify(token)}); await store.saveInvitation(store.applyResponse(invitation, "declined"));`);
+    const stored = JSON.parse(run(`console.log(JSON.stringify(await store.findInvitation(${JSON.stringify(token)})));`));
+    assert.equal(stored.response, "declined");
+    assert.equal(stored.gameClickedAt, "2026-10-25T12:00:00Z");
+    assert.equal(run(`console.log(JSON.stringify(store.responseCounts(await store.readInvitations())));`), '{"interested":0,"declined":1,"pending":0}');
+  } finally { rmSync(directory, { recursive: true, force: true }); }
+});
+
+test("draft-preview clicks appear in response snapshots without becoming email sends", async () => {
+  const { applyInvitationClick, invitationResponseSnapshot } = await import("../src/lib/outreach/invitations");
+  const draft = newInvitation("preview", "Preview company");
+  assert.equal(invitationResponseSnapshot([draft]).rows.length, 0);
+  const interested = applyInvitationClick(draft, "interested");
+  assert.equal(interested.sentAt, null);
+  assert.ok(interested.previewedAt);
+  const snapshot = invitationResponseSnapshot([interested]);
+  assert.deepEqual(snapshot.counts, { interested: 1, declined: 0, pending: 0 });
+  assert.equal(snapshot.rows[0].preview, true);
+  assert.equal(snapshot.rows[0].to, "Draft preview");
+  assert.equal(snapshot.rows[0].status, "interested");
+  const declined = applyInvitationClick(interested, "declined");
+  const played = applyInvitationClick(declined, "game");
+  assert.equal(played.response, "declined");
+  assert.ok(played.gameClickedAt);
+  assert.deepEqual(invitationResponseSnapshot([played]).counts, { interested: 0, declined: 1, pending: 0 });
+  const gameOnly = applyInvitationClick(draft, "game");
+  assert.deepEqual(invitationResponseSnapshot([gameOnly]).counts, { interested: 0, declined: 0, pending: 1 });
 });
