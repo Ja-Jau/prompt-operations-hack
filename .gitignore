@@ -43,6 +43,7 @@ next-env.d.ts
 __pycache__/
 .venv/
 /pipeline/.cache/
+/velho-game-data/data/raw/
 
 # leads collected by the game
 .data/

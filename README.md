@@ -190,6 +190,10 @@ The curated quotes and Velho's takes for the 16 cases are in
 
 The visual style follows velho.io: cream and navy, the Geist font, plain language.
 
+Scraped HTML pages under `velho-game-data/data/raw/` are a local download cache,
+ignored by Git. The scraper recreates them when needed; the website uses the
+processed JSON in `src/data/`. Keep processed data committed, not downloaded pages.
+
 ## Project structure
 
 ```
