@@ -2390,36 +2390,36 @@
   "lei-52990007axnss4pnx352": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-529900c4p88aphfz5h47": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-529900hekoenjhpnn480": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-529900m13gm4vste6w80": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
@@ -2433,65 +2433,145 @@
     }
   },
   "lei-5493002b0govf42kwx33": {
-    "metrics": {},
+    "metrics": {
+      "adminRatio": {
+        "value": 8.430251,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/5493002B0GOVF42KWX33/2025-12-31/ESEF/FI/0/5493002B0GOVF42KWX33-2025-12-31-fi/reports/5493002B0GOVF42KWX33-2025-12-31-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:RevenueFromContractsWithCustomers [c-1] = 1.5563e+09; ifrs-full:AdministrativeExpense [c-1] = 1.312e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 1556300000.0,
+          "administrativeExpenses": 131200000.0
+        },
+        "fetchedAt": "2026-10-25T04:58:33.226177+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 103.83968,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/5493002B0GOVF42KWX33/2025-12-31/ESEF/FI/0/5493002B0GOVF42KWX33-2025-12-31-fi/reports/5493002B0GOVF42KWX33-2025-12-31-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 2.848e+08; ifrs-full:Inventories [c-4] = 3.338e+08; ifrs-full:CostOfSales [c-1] = 1.0872e+09"
+          }
+        ],
+        "inputs": {
+          "inventory": 284800000.0,
+          "previousInventory": 333800000.0,
+          "costOfSales": 1087200000.0
+        },
+        "fetchedAt": "2026-10-25T04:58:33.226177+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-5493009zdbvg2co1o689": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-549300ef0cdeqzbma096": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-549300ew2km4krokqv31": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-549300p8n0p6kdgtj206": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-549300r0vn9c371w0e07": {
-    "metrics": {},
+    "metrics": {
+      "adminRatio": {
+        "value": 7.671756,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/549300R0VN9C371W0E07/2025-12-31/ESEF/FI/1/549300R0VN9C371W0E07-2025-12-31-en/reports/549300R0VN9C371W0E07-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 5.24e+09; ifrs-full:AdministrativeExpense [c-1] = 4.02e+08"
+          }
+        ],
+        "inputs": {
+          "revenue": 5240000000.0,
+          "administrativeExpenses": 402000000.0
+        },
+        "fetchedAt": "2026-10-25T04:58:43.464226+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 194.902415,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/549300R0VN9C371W0E07/2025-12-31/ESEF/FI/1/549300R0VN9C371W0E07-2025-12-31-en/reports/549300R0VN9C371W0E07-2025-12-31-en.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 1.903e+09; ifrs-full:Inventories [c-4] = 1.9e+09; ifrs-full:CostOfSales [c-1] = 3.561e+09"
+          }
+        ],
+        "inputs": {
+          "inventory": 1903000000.0,
+          "previousInventory": 1900000000.0,
+          "costOfSales": 3561000000.0
+        },
+        "fetchedAt": "2026-10-25T04:58:43.464226+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-549300uwb1air85bm957": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
@@ -2539,89 +2619,129 @@
       }
     },
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported"
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales"
     }
   },
   "lei-636700z25zqxlmz3cy73": {
-    "metrics": {},
+    "metrics": {
+      "adminRatio": {
+        "value": 5.369243,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "administrative-expenses-only",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/636700Z25ZQXLMZ3CY73/2025-12-31/ESEF/FI/0/636700Z25ZQXLMZ3CY73-2025-12-31-fi/reports/636700Z25ZQXLMZ3CY73-2025-12-31-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Revenue [c-1] = 1.7414e+09; ifrs-full:AdministrativeExpense [c-1] = 9.35e+07"
+          }
+        ],
+        "inputs": {
+          "revenue": 1741400000.0,
+          "administrativeExpenses": 93500000.0
+        },
+        "fetchedAt": "2026-10-25T04:58:49.531490+00:00",
+        "note": "Reported administrative expenses / revenue. Selling expenses and combined SG&A are excluded. Accounting policies and industry affect this ratio."
+      },
+      "inventoryDays": {
+        "value": 127.453333,
+        "year": 2025,
+        "period": "FY 2025",
+        "scope": "consolidated",
+        "definition": "average-inventory-over-cost-of-sales",
+        "sources": [
+          {
+            "url": "https://filings.xbrl.org/636700Z25ZQXLMZ3CY73/2025-12-31/ESEF/FI/0/636700Z25ZQXLMZ3CY73-2025-12-31-fi/reports/636700Z25ZQXLMZ3CY73-2025-12-31-fi.xhtml",
+            "label": "Financial statements 2025",
+            "evidence": "ifrs-full:Inventories [c-3] = 4.606e+08; ifrs-full:Inventories [c-4] = 4.373e+08; ifrs-full:CostOfSales [c-1] = 1.2857e+09"
+          }
+        ],
+        "inputs": {
+          "inventory": 460600000.0,
+          "previousInventory": 437300000.0,
+          "costOfSales": 1285700000.0
+        },
+        "fetchedAt": "2026-10-25T04:58:49.531490+00:00",
+        "note": "Average opening and closing inventory / annual cost of sales × days in the year. An accounting estimate, not the measured age of each item. Industry and seasonality matter."
+      }
+    },
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437000iqjs6zc1fr041": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437000na1i6y1oqwl24": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437000pn6e448npgy86": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437000tb0ghdhlpx677": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437000zp669lkutz738": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-74370016pw2v4w02lx91": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-7437001aezhll3uex093": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
   "lei-743700205jamgm80qd88": {
     "metrics": {},
     "missing": {
-      "growthGap": "No supported public financial report imported",
-      "adminRatio": "No supported public financial report imported",
-      "inventoryDays": "No supported public financial report imported",
+      "growthGap": "Needs revenue and the same employee-count definition for two full years",
+      "adminRatio": "Administrative expenses not separately disclosed, or inputs invalid",
+      "inventoryDays": "Needs opening and closing inventory and separately reported cost of sales",
       "manualAds": "Needs at least 3 distinct, non-empty ads sampled within 90 days"
     }
   },
