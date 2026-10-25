@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import type { HiringCompany } from "@/types/company";
 import { redact, type Clue } from "@/lib/case/cases";
 import { Icon } from "@/components/ui/Icon";
@@ -60,25 +61,49 @@ function ClueBody({ clue, company }: { clue: Clue; company: HiringCompany }) {
   }
 }
 
-/** The unlocked clues, each introduced by what it is, with the next one teased at the bottom. */
+/**
+ * One clue at a time, so the options stay in view. Tabs switch between the unlocked
+ * clues; a newly unlocked clue opens by itself. The next locked one is teased at the bottom.
+ */
 export function Evidence({ clues, revealed, company }: { clues: Clue[]; revealed: number; company: HiringCompany }) {
+  const [view, setView] = useState({ revealed, active: revealed - 1 });
+  // A new clue was unlocked: jump to it (adjusting state while rendering, no effect needed).
+  if (view.revealed !== revealed) setView({ revealed, active: revealed - 1 });
+  const active = Math.min(view.active, revealed - 1);
+  const clue = clues[active];
   const next = clues[revealed];
   return (
     <section className="card px-5 md:px-6">
-      <ol>
-        {clues.slice(0, revealed).map((clue, i) => {
-          const isNew = revealed > 1 && i === revealed - 1;
+      <div role="tablist" aria-label="Clues" className="-mx-1 flex gap-1.5 overflow-x-auto px-1 pt-4">
+        {clues.map((c, i) => {
+          const unlocked = i < revealed;
+          const selected = i === active;
           return (
-            <li key={i} className={`border-t border-sand-2 py-5 first:border-t-0 ${isNew ? "animate-rise" : ""}`}>
-              <p className="eyebrow mb-2 flex items-center gap-2 text-ink-3">
-                {clue.title}
-                {isNew && <span className="h-1.5 w-1.5 rounded-full bg-clay" aria-label="New clue" />}
-              </p>
-              <ClueBody clue={clue} company={company} />
-            </li>
+            <button
+              key={i}
+              role="tab"
+              aria-selected={selected}
+              disabled={!unlocked}
+              onClick={() => setView({ revealed, active: i })}
+              className={`flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full px-3 py-1.5 text-[13px] font-medium transition ${
+                selected
+                  ? "bg-navy text-ivory"
+                  : unlocked
+                    ? "border border-sand-2 bg-white text-ink-2 hover:border-navy-3 hover:text-ink"
+                    : "border border-dashed border-sand-2 text-ink-3"
+              }`}
+            >
+              {!unlocked && <Icon name="lock" className="h-3 w-3" />}
+              {unlocked ? c.title : i + 1}
+            </button>
           );
         })}
-      </ol>
+      </div>
+      {clue && (
+        <div key={active} role="tabpanel" className="animate-rise py-5">
+          <ClueBody clue={clue} company={company} />
+        </div>
+      )}
       {next && (
         <p className="flex items-center gap-2 border-t border-sand-2 py-3.5 text-sm text-ink-3">
           <Icon name="lock" className="h-3.5 w-3.5" />
