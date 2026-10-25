@@ -69,7 +69,7 @@ export function linkedInPost(target: HiringCompany, gameUrl: string): string {
     ``,
     `"${redact(quote.quote, target)}"`,
     ``,
-    `Can you guess who? Today's Who's hiring? case, made from real open job ads:`,
+    `Can you guess who? Today's Firmle case, made from real open job ads:`,
     gameUrl,
     ``,
     `Every day we read Finnish job ads and find work software could take over.`,

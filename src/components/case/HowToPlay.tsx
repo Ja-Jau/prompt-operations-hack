@@ -4,7 +4,7 @@ import { Icon, type IconName } from "@/components/ui/Icon";
 
 const STEPS: { icon: IconName; text: string }[] = [
   { icon: "quote", text: "Read real quotes from a company's job ads." },
-  { icon: "target", text: "Pick the company from nine cards. Six tries." },
+  { icon: "target", text: "Pick the company from nine cards. Five tries." },
   { icon: "spark", text: "Each miss unlocks a clue and a hint about the answer." },
 ];
 

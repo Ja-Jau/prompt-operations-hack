@@ -1,4 +1,4 @@
-# Who's hiring?
+# Firmle
 
 **A daily case game for Finnish business people, built from real job ads, that turns players into Velho conversations.**
 
@@ -9,7 +9,7 @@
 > their time goes every day without meaning to: in their **job ads**, with lines like
 > "update the price lists in Excel" or "enter orders into the ERP".
 >
-> **Who's hiring?** makes that into a daily puzzle. Read quotes from real open job ads and
+> **Firmle** (like Wordle, but for firms) makes that into a daily puzzle. Read quotes from real open job ads and
 > guess which of nine Finnish companies posted them. The reveal shows how much of that
 > company's hiring is work software could take over, and how Velho would fix it. Players
 > share their result, and the people who play are the people Velho wants to meet.
@@ -33,7 +33,7 @@ Then open:
 
 | URL | What it is |
 |---|---|
-| http://localhost:3000 | **Who's hiring?**: today's case (the main game) |
+| http://localhost:3000 | **Firmle**: today's case (the main game) |
 `destia-oy`, `terveystalo`) |
 
 Higher or lower, the bonus game, is in the top bar.
@@ -70,10 +70,11 @@ So we built two things on one dataset:
 
 ## How to play
 
-1. Read the clue: a verbatim quote from a real, open job ad, with the company name blanked.
-2. Pick the company from **nine cards**. You have **six picks**.
+1. Read the clue: a quote from a real, open job ad, with the company name taken out.
+2. Pick the company from **nine cards**. You have **five picks**.
 3. Each wrong pick tells you something (for example "Answer also hires in Tampere") and
-   unlocks the next clue: the hiring map, a second quote, the job functions, an analyst note.
+   unlocks the next clue: the jobs they're hiring for, the cities, and finally the first letter
+   of the name. Quotes and job titles are translated into English.
 4. Stuck? Use the **Velho hint** once per case for a free clue.
 5. The reveal shows the company, how many of its open ads describe work software could take
    over, and what Velho would do about it. Share your result, or play another case.
@@ -82,8 +83,8 @@ There is one case per day, the same for everyone, plus unlimited practice cases.
 text gives nothing away:
 
 ```
-Who's hiring? Case No. 12
-Solved in 3/6
+Firmle Case No. 12
+Solved in 3/5
 ○ ● ✓
 https://…
 ```
@@ -128,6 +129,26 @@ warning glow in the final ten seconds. The generated backdrop is stored locally 
 | **Understood** | Every reveal is a small Velho case study: real quotes, the share of routine-work ads, the first thing to fix and which Velho service fixes it. | `CaseReveal.tsx`, `pipeline/data/curated_signals.json` |
 | **Invited** | "Want this analysis for your company?" Leaving a name and email on a reveal or a brief creates a lead. Nobody is cold-contacted, because the player asks first. | `LeadForm.tsx`, `/api/leads` |
 | **In the room** | The dashboard ranks companies by how much of their hiring is routine work. Each one gets a printable CEO brief built only from its own public ads, plus a draft opener. Velho decides whether to use it. | `/velho`, `/brief/[id]`, `src/lib/signals.ts` |
+
+## Outreach desk (demo)
+
+`/outreach` is Velho's side of the funnel turned proactive: instead of waiting for players to
+leave a lead, it finds the companies worth inviting to play and drafts the invitation.
+
+| Step | What it does | Where in the code |
+|---|---|---|
+| **1. Find targets** | Scores every hiring company on routine-work ads, share, breadth (cities, functions) and whether Velho's take is ready. Staffing agencies are flagged and de-prioritised because their ads describe clients' work. | `src/lib/outreach/targets.ts` |
+| **2. Compile** | Quotes, locations, functions, the first fix and the brief link, per company. | `src/app/outreach/page.tsx` |
+| **3. Resolve contacts** | Domain from the pipeline when known, otherwise *derived* from the name and labelled as such. Role inboxes only (`info@`, `talous@`, `hr@`…), never a guessed personal address, plus the decision-maker role to look up with a LinkedIn search. Every contact carries a confidence. | `src/lib/outreach/contacts.ts` |
+| **4. Draft & send** | A proposal email that quotes the ad verbatim, links the game and the brief and asks for 30 minutes. Editable in the page. | `src/lib/outreach/email.ts`, `src/components/outreach/` |
+
+**The Send button is a demo and sends nothing.** `POST /api/outreach` validates the drafts, waits
+a moment so the batch visibly drains, and appends rows marked `simulated: true` to
+`.data/outreach-log.json`. There is no SMTP client, mail API or mail library anywhere in the
+project; `npm run test:outreach` fails if one is ever added to the outreach code or
+`package.json`. A production version would hand each draft to a person at Velho for approval.
+
+Like `/velho`, the page is gated by `DASHBOARD_KEY` when that variable is set.
 
 ## Why the content can be trusted
 
@@ -174,13 +195,13 @@ The visual style follows velho.io: cream and navy, the Geist font, plain languag
 ```
 src/
   app/
-    page.tsx                  # the game (Who's hiring? + Higher or lower)
+    page.tsx                  # the game (Firmle + Higher or lower)
     velho/page.tsx            # Velho's signals dashboard
     brief/[id]/page.tsx       # printable one-page CEO brief per company
     api/leads/route.ts        # POST: save a lead
     api/companies/route.ts    # GET: company data, where a live source would plug in
   components/
-    case/                     # Who's hiring?: game, clues, option cards, reveal, how to play
+    case/                     # Firmle: game, clues, option cards, reveal, how to play
     game/                     # Higher or lower
     leads/LeadForm.tsx
     layout/                   # shared top bar, page title, game switcher
@@ -190,7 +211,7 @@ src/
     leads.ts                  # lead storage
     velho.ts                  # Velho's service areas and link
   data/                       # generated by the pipeline, don't edit by hand
-    hiring.json               #   companies with open ads (Who's hiring?)
+    hiring.json               #   companies with open ads (Firmle)
     companies.json            #   companies with revenue/headcount (Higher or lower)
 pipeline/                     # Python, run before the demo, never during it
   import_jobs.py              #   scraped ads + curated quotes → src/data/hiring.json (verifies quotes)

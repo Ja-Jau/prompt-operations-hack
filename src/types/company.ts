@@ -60,13 +60,25 @@ export type HiringCompany = {
   functions: string[];
   /** Titles of every open ad. */
   titles: string[];
+  /** The same titles in English (pipeline/data/translations.json), in the same order. */
+  titlesEn: string[];
   jobAds: JobAds;
   velhoCase: VelhoCase | null;
   /** The same company in Higher or lower, if it's there. */
   gameCompanyId: string | null;
+  /** A playful hint for the daily case (pipeline/data/fun_hints.json), or null. */
+  funHint: string | null;
 };
 
-export type JobAd = { title: string; quote: string; url: string };
+export type JobAd = {
+  title: string;
+  /** Verbatim from the ad, in its own language. */
+  quote: string;
+  url: string;
+  /** English for the game; the same as the original when the ad was in English. */
+  titleEn: string;
+  quoteEn: string;
+};
 
 export type JobAds = {
   /** Open ads that were read. */
