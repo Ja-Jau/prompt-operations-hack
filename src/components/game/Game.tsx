@@ -4,12 +4,12 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { GameCompany as Company } from "@/types/company";
 import { METRICS } from "@/lib/game/metrics";
 import { availableRounds, buildRandomRun, nextEndlessRound, type Round } from "@/lib/game/sequence";
-import { rankTitle, shareText } from "@/lib/game/share";
-import { VELHO_URL } from "@/lib/velho";
+import { shareText } from "@/lib/game/share";
 import { TopBar, type GameId } from "@/components/layout/TopBar";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { CompanyPanel } from "./CompanyPanel";
 import { RollingNumber } from "./RollingNumber";
+import { RunResult } from "./RunResult";
 import { VelhoTip } from "./VelhoTip";
 
 type Phase = "guess" | "rolling" | "revealed" | "done";
@@ -166,61 +166,20 @@ export function Game({ companies, onGameChange }: Props) {
   };
 
   if (phase === "done") {
-    const total = mode === "five" ? 5 : answered;
-    const accuracy = total ? Math.round((score / total) * 100) : 0;
-
     return (
-      <div className="higher-lower higher-lower-results relative isolate flex min-h-0 flex-1 flex-col overflow-hidden bg-navy text-ivory">
+      <div className="higher-lower flex min-h-0 flex-1 flex-col overflow-y-auto">
         {topBar}
-        <main className="relative mx-auto flex min-h-0 w-full max-w-[1080px] flex-1 items-center justify-center p-3 sm:p-6">
-          <div className="higher-lower-results-card animate-rise grid w-full overflow-hidden rounded-3xl border border-line-dark bg-navy-2/70 shadow-2xl md:grid-cols-[0.9fr_1.1fr]">
-            <section aria-labelledby="result-title" className="higher-lower-result-score flex min-w-0 flex-col justify-center gap-4 p-5 sm:p-8 md:gap-6 md:p-10">
-              <p className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.14em] text-on-dark-2 sm:text-xs">
-                <Icon name="check" className="h-4 w-4 text-sky" />
-                Run complete · {mode === "five" ? "5 rounds" : "Endless"}
-              </p>
-              <div className="flex items-center gap-5 md:flex-col md:items-start md:gap-4">
-                <p className="shrink-0 font-semibold leading-none tracking-[-0.07em]" aria-label={`${score} correct out of ${total}`}>
-                  <span className="text-[clamp(64px,10dvh,120px)] text-ivory">{score}</span>
-                  <span className="ml-1 text-[clamp(24px,4dvh,40px)] tracking-tight text-sky">/{total}</span>
-                </p>
-                <h1 id="result-title" className="max-w-xs text-[clamp(22px,3vw,36px)] leading-tight tracking-tight">{rankTitle(score)}</h1>
-              </div>
-              <div>
-                <div className="mb-2 flex justify-between font-mono text-xs text-on-dark">
-                  <span>{accuracy}% correct</span>
-                  <span>Best {Math.max(best, score)}</span>
-                </div>
-                <div role="progressbar" aria-label="Correct answers" aria-valuemin={0} aria-valuemax={total} aria-valuenow={score} className="h-1.5 overflow-hidden rounded-full bg-white/10">
-                  <div className="h-full rounded-full bg-sky" style={{ width: `${accuracy}%` }} />
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-x-5 gap-y-2">
-                <button onClick={() => start(mode)} className="inline-flex items-center gap-2 rounded py-1 text-sm font-medium text-on-dark transition hover:text-ivory focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky">
-                  <Icon name="play" /> Play again
-                </button>
-                <button onClick={share} className="inline-flex items-center gap-2 rounded py-1 text-sm font-medium text-on-dark transition hover:text-ivory focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky">
-                  <Icon name={copied ? "check" : "arrowUp"} /> {copied ? "Copied!" : "Share result"}
-                </button>
-              </div>
-            </section>
-            <section aria-labelledby="velho-next-step" className="higher-lower-result-velho relative isolate flex min-w-0 flex-col justify-center gap-4 border-t border-line-dark p-5 sm:p-8 md:gap-6 md:border-l md:border-t-0 md:p-10">
-              <p className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.14em] text-sky sm:text-xs">
-                <Icon name="spark" className="h-4 w-4" /> Make your next move
-              </p>
-              <h2 id="velho-next-step" className="max-w-md text-[clamp(28px,4.2vw,48px)] leading-[1.08] tracking-[-0.04em]">
-                Less manual work.<br /><span className="text-sky">More room to grow.</span>
-              </h2>
-              <p className="higher-lower-result-description max-w-sm text-sm leading-relaxed text-on-dark md:text-base">
-                What could your team do with more time? Velho helps companies simplify repetitive work and make everyday operations more efficient.
-              </p>
-              <a href={VELHO_URL} target="_blank" rel="noopener noreferrer" className="group flex w-full items-center justify-between gap-4 rounded-xl bg-sky px-5 py-4 text-lg font-semibold text-navy shadow-[0_8px_32px_rgb(122_163_214/0.2)] transition hover:bg-ivory hover:shadow-[0_8px_40px_rgb(122_163_214/0.35)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory">
-                Visit velho.io
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-navy/10 transition group-hover:translate-x-1"><Icon name="arrowRight" className="h-5 w-5" /></span>
-              </a>
-            </section>
-          </div>
-        </main>
+        <RunResult
+          last={rounds[index]?.right}
+          score={score}
+          total={mode === "five" ? 5 : answered}
+          best={best}
+          mode={mode}
+          copied={copied}
+          onPlayAgain={() => start(mode)}
+          onShare={share}
+          onPlayFirmle={() => onGameChange("case")}
+        />
       </div>
     );
   }

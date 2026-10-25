@@ -189,26 +189,6 @@
   }
 }
 
-.higher-lower-results {
-  background-image: radial-gradient(ellipse at 80% 80%, rgb(122 163 214 / 0.14), transparent 60%);
-}
-.higher-lower-result-velho {
-  background-image: radial-gradient(ellipse at 100% 0%, rgb(122 163 214 / 0.18), transparent 75%);
-}
-
-@media (max-height: 740px) and (max-width: 767px) {
-  .higher-lower-result-score,
-  .higher-lower-result-velho { gap: 0.75rem; padding: 1rem 1.25rem; }
-  .higher-lower-result-description { font-size: 13px; line-height: 1.45; }
-}
-@media (max-height: 500px) {
-  .higher-lower-results-card { grid-template-columns: 0.9fr 1.1fr; }
-  .higher-lower-result-score,
-  .higher-lower-result-velho { gap: 0.75rem; padding: 1rem; }
-  .higher-lower-result-velho { border-top: 0; border-left: 1px solid var(--color-line-dark); }
-  .higher-lower-result-description { display: none; }
-}
-
 /* Keep both comparisons and their actions inside the game viewport. */
 .higher-lower-board > .higher-lower-panel {
   padding-top: 7rem;
