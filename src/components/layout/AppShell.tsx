@@ -10,7 +10,7 @@ import type { GameId } from "./TopBar";
 type Props = {
   /** Higher or lower's discovered companies and sourced observations. */
   companies: Company[];
-  /** Companies with open job ads, for Who's hiring? */
+  /** Companies with open job ads, for Firmle */
   hiring: HiringCompany[];
 };
 

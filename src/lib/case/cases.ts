@@ -190,5 +190,5 @@ export function caseShareText(opts: {
   // ✓ found it, ● warm guess, ○ cold guess. Plain symbols, no emoji, no spoilers.
   const grid = opts.feedback.map((f) => (f.correct ? "✓" : f.closeness >= 0.6 ? "●" : "○")).join(" ");
   const score = opts.solved ? `Solved in ${opts.feedback.length}/${MAX_GUESSES}` : `Not solved (${MAX_GUESSES}/${MAX_GUESSES})`;
-  return `Who's hiring? ${opts.label}\n${score}\n${grid}\n${opts.url}`;
+  return `Firmle ${opts.label}\n${score}\n${grid}\n${opts.url}`;
 }

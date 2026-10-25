@@ -11,5 +11,5 @@ export function rankTitle(score: number): string {
 }
 
 export function shareText(opts: { score: number; url: string; mode?: "five" | "endless"; total?: number }): string {
-  return `Tehokas Higher or Lower${opts.mode === "endless" ? " · Endless" : ""}\nScore ${opts.score}/${opts.mode === "endless" ? opts.total ?? 0 : 5}\n${rankTitle(opts.score)}\n${opts.url}`;
+  return `Firmle Higher or Lower${opts.mode === "endless" ? " · Endless" : ""}\nScore ${opts.score}/${opts.mode === "endless" ? opts.total ?? 0 : 5}\n${rankTitle(opts.score)}\n${opts.url}`;
 }
